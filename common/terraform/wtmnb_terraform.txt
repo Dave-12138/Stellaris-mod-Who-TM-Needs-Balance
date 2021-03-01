@@ -75,6 +75,28 @@ terraform_link = {
 }
 
 terraform_link = {
+	from = pc_gaia
+	to = pc_wtmnb_tech
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+}
+
+terraform_link = {
 	from = pc_city
 	to = pc_gaia
 	energy = 10000
@@ -147,6 +169,52 @@ terraform_link = {
 	potential = {
 		has_technology = tech_wtmnb_fortress
 		has_authority = auth_warshipgirls
+	}
+}
+
+terraform_link = {
+	from = pc_wsg_port
+	to = pc_swim
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+		has_authority = auth_warshipgirls
+	}
+}
+
+terraform_link = {
+	from = pc_shenhai
+	to = pc_swim
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+		has_authority = auth_shenhai
 	}
 }
 

@@ -1,0 +1,19 @@
+trait_pc_wtmnb_tech_preference = {
+	randomized = no
+	sorting_priority = 30
+	opposites = {
+		"trait_repugnant"
+	}
+	leader_age_max = 15
+	leader_age_min = 10
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+		MACHINE
+		OTHER
+	}
+	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_tech_preference.dds"
+	modifier = {
+		pc_wtmnb_tech_habitability = 3
+	}
+}

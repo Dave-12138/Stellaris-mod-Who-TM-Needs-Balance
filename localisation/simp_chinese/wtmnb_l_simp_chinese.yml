@@ -153,7 +153,7 @@
  decision_wtmnb_planet_extend_desc:0 "增加30最大区划数"
 ##################
  
- pc_wtmnb_tech:0 "大型实验室"
+ pc_wtmnb_tech:0 "行星级实验室"
  pc_wtmnb_tech_desc:0 "居住体验极差，哪有让人直接睡实验室的"
  mod_pc_wtmnb_tech_habitability:0 "$pc_wtmnb_tech$宜居性"
 ##
