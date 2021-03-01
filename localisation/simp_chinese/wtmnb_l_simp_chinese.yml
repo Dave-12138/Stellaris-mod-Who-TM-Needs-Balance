@@ -1,4 +1,6 @@
 ﻿l_simp_chinese:
+ sm_wtmnb_super_trade_hub:0 "无人机超级贸易网络"
+ sm_wtmnb_super_trade_hub_desc:0 "高效的军制式超光速无人机能将小半个银河系划入星区收集范围"
 #################
  wtmnb_fortress:0 "月光王座"
  wtmnb_fortress_plural:0 "月光王座"
@@ -16,7 +18,7 @@
  WTMNB_EDEN_STAR:0 "伊甸之星"
  WTMNB_EDEN_STAR_DESC:0 "操纵引力，甚至扭曲时空，啊，多么野蛮的能力。"
  WTMNB_2ND_KEY:0 "千界一乘"
- WTMNB_FORT_CORE:0 "核心"
+ WTMNB_FORT_CORE:0 "月光王座"
  EDEN_STAR_AURA:0 "伊甸之星"
  aura_eden_star:0 "各向异性相对论效应"
  swtmnb:0 "$wtmnb_fortress$"
