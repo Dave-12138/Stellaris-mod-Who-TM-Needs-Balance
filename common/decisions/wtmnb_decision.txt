@@ -124,3 +124,22 @@ decision_wtmnb_molten = {
 		weight = 0
 	}
 }
+
+decision_wtmnb_planet_extend = {
+	enactment_time = 1
+	icon = planet_4th_modifier
+	owned_planets_only = yes
+	potential = {
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				has_component = WTMNB_4TH_KEY
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = wtmnb_planet_ex
+			days = -1
+		}
+	}
+}
