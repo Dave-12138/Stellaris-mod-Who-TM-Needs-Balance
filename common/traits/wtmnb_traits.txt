@@ -1,12 +1,10 @@
-wtmnb_trait_toy = {
+trait_wtmnb_toy = {
 	cost = 0
-	initial = no
+	initial = yes
 	randomized = no
-	modification = no
+	modification = yes
 	immortal_leaders = yes
-	opposites = {
-		"trait_repugnant"
-	}
+
 	leader_age_max = 15
 	leader_age_min = 10
 	allowed_archetypes = {
@@ -15,13 +13,13 @@ wtmnb_trait_toy = {
 		MACHINE
 		OTHER
 	}
-	icon = "gfx/interface/icons/traits/wtmnb_trait_toy.dds"
+	icon = "gfx/interface/icons/traits/trait_wtmnb_toy.dds"
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
 	modifier = {
 		pop_happiness = 10
-		planet_jobs_produces_mult = 1
+		planet_jobs_produces_mult = 1.5
 		pop_demotion_time_mult = -1
 		planet_pops_upkeep_mult = -1.5
 		pop_amenities_usage_mult = -1.5
@@ -32,13 +30,13 @@ wtmnb_trait_toy = {
 	}
 }
 
-wtmnb_leader_trait_toy = {
+leader_trait_wtmnb_toy = {
 	cost = 0
 	initial = no
 	randomized = no
 	modification = no
 	immortal_leaders = yes
-	icon = "gfx/interface/icons/traits/wtmnb_trait_toy.dds"
+	icon = "gfx/interface/icons/traits/trait_wtmnb_toy.dds"
 	leader_trait = {
 		general
 		governor
@@ -89,5 +87,5 @@ wtmnb_leader_trait_toy = {
 		country_government_civic_points_add = 10
 		##############
 	}
-	custom_tooltip = wtmnb_leader_trait_toy_modifier
+	custom_tooltip = leader_trait_wtmnb_toy_modifier
 }

@@ -32,11 +32,13 @@
  WTMNB_4TH_KEY:0 "第四神之键"
  WTMNB_4TH_KEY_DESC:0 "操控气候"
 #################
- wtmnb_trait_toy:0 "圣痕"
- wtmnb_trait_toy_desc:0 "这个物种[This.GetSpeciesName]在奇怪的部位有形状奇怪的$wtmnb_trait_toy$。"
- wtmnb_leader_trait_toy:0 "$wtmnb_trait_toy$"
- wtmnb_leader_trait_toy_modifier:0 "该领袖可以轻松胜任§Y$ruler$§!、§Y$general$§!、§Y$governor$§!、§Y$admiral$§!、§Y$scientist$§!"
- wtmnb_leader_trait_toy_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$wtmnb_leader_trait_toy$。"
+ trait_wtmnb_toy:0 "圣痕"
+ trait_wtmnb_toy_desc:0 "这个物种[This.GetSpeciesName]在奇怪的部位有形状奇怪的$trait_wtmnb_toy$。"
+ leader_trait_wtmnb_toy:0 "$trait_wtmnb_toy$"
+ leader_trait_wtmnb_toy_modifier:0 "该领袖可以轻松胜任§Y$ruler$§!、§Y$general$§!、§Y$governor$§!、§Y$admiral$§!、§Y$scientist$§!"
+ leader_trait_wtmnb_toy_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_toy$。"
+ trait_pc_wtmnb_tech_preference:0 "$pc_wtmnb_tech$偏好"
+ trait_pc_wtmnb_tech_preference_desc:0 "$trait_pc_arctic_preference_desc$\n但是这么喜欢实验室难道不是肝帝？"
 #####################
  WTMNB_PLANET_KILLER_SHIELDER:0 "$PLANET_KILLER_SHIELDER$ Plus Pro"
  WTMNB_PLANET_KILLER_SHIELDER_DESC:0 "从外部看，似乎多了一层屏障。"
@@ -139,7 +141,7 @@
  dont_mind_machine_can_sex:0 "不要问为什么不管是不是有机两性繁殖的物种都能性派对，这当然是量子力学"
  REMOVE_PLANET_EFFECT:0 "§Y[This.GetName]§!蒸发"
  can_molt_planet:0 "可以在行星决策中选择将行星焚毁"
- 
+ ringworld_will_be_not_colonizable:0 "居住区被击毁"
 ####################
  decision_wtmnb_create_pop:0 "集体性派对"
  decision_wtmnb_create_pop_desc:0 "开展全球级集体性派对，没有避孕措施那种"
@@ -149,6 +151,11 @@
  decision_wtmnb_molten_desc:0 "燃尽的大地（笑"
  decision_wtmnb_planet_extend:0 "可用区划拓展"
  decision_wtmnb_planet_extend_desc:0 "增加30最大区划数"
+##################
+ 
+ pc_wtmnb_tech:0 "大型实验室"
+ pc_wtmnb_tech_desc:0 "居住体验极差，哪有让人直接睡实验室的"
+ mod_pc_wtmnb_tech_habitability:0 "$pc_wtmnb_tech$宜居性"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"
  lgate_tool:0 "$lgate$工具"

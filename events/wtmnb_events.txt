@@ -201,7 +201,7 @@ planet_event = {
 						}
 						modify_species = {
 							species = owner_species
-							add_trait = wtmnb_trait_toy
+							add_trait = trait_wtmnb_toy
 							add_traits_at_start_of_list = yes
 							change_scoped_species = yes
 							effect = {
@@ -213,7 +213,7 @@ planet_event = {
 						modify_species = {
 							species = owner_species
 							base = none
-							add_trait = wtmnb_trait_toy
+							add_trait = trait_wtmnb_toy
 							add_traits_at_start_of_list = yes
 							change_scoped_species = yes
 							effect = {
@@ -230,8 +230,8 @@ planet_event = {
 								gender = indeterminable
 							}
 						}
-						add_ruler_trait = wtmnb_leader_trait_toy
-						add_trait = wtmnb_leader_trait_toy
+						add_ruler_trait = leader_trait_wtmnb_toy
+						add_trait = leader_trait_wtmnb_toy
 						#change_species = event_target:new_wtm_species
 					}
 					every_pool_leader = {
@@ -241,8 +241,8 @@ planet_event = {
 								gender = indeterminable
 							}
 						}
-						add_ruler_trait = wtmnb_leader_trait_toy
-						add_trait = wtmnb_leader_trait_toy
+						add_ruler_trait = leader_trait_wtmnb_toy
+						add_trait = leader_trait_wtmnb_toy
 						#change_species = event_target:new_wtm_species
 					}
 				}
@@ -252,7 +252,7 @@ planet_event = {
 					modify_species = {
 						species = this
 						base = none
-						add_trait = wtmnb_trait_toy
+						add_trait = trait_wtmnb_toy
 						add_traits_at_start_of_list = yes
 						change_scoped_species = yes
 					}
@@ -282,7 +282,7 @@ country_event = {
 	trigger = {
 		from = {
 			species = {
-				has_trait = wtmnb_trait_toy
+				has_trait = trait_wtmnb_toy
 			}
 			OR = {
 				gender = female
@@ -292,8 +292,8 @@ country_event = {
 	}
 	immediate = {
 		from = {
-			add_ruler_trait = wtmnb_leader_trait_toy
-			add_trait = wtmnb_leader_trait_toy
+			add_ruler_trait = leader_trait_wtmnb_toy
+			add_trait = leader_trait_wtmnb_toy
 		}
 	}
 }
@@ -306,19 +306,19 @@ country_event = {
 	trigger = {
 		any_owned_leader = {
 			leader_age >= 15
-			has_trait = wtmnb_leader_trait_toy
+			has_trait = leader_trait_wtmnb_toy
 		}
 	}
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				has_trait = wtmnb_leader_trait_toy
+				has_trait = leader_trait_wtmnb_toy
 			}
 			set_age = 12
 		}
 		every_pool_leader = {
 			limit = {
-				has_trait = wtmnb_leader_trait_toy
+				has_trait = leader_trait_wtmnb_toy
 			}
 			set_age = 12
 		}
