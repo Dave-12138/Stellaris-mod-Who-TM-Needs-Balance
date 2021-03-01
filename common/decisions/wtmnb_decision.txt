@@ -69,12 +69,6 @@ decision_wtmnb_molten = {
 	effect = {
 		if = {
 			limit = {
-				is_ringworld = no
-			}
-			change_pc = pc_molten
-		}
-		else_if = {
-			limit = {
 				OR = {
 					is_planet_class = pc_habitat
 					is_planet_class = pc_habitat_shielded
@@ -82,8 +76,21 @@ decision_wtmnb_molten = {
 			}
 			remove_planet = yes
 		}
-		else = {
+		else_if = {
+			limit = {
+				is_ringworld = yes
+			}
 			change_pc = pc_ringworld_tech_damaged
+		}
+		else = {
+			random_list = {
+				50 = {
+					change_pc = pc_nuked
+				}
+				50 = {
+					change_pc = pc_molten
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -114,7 +121,10 @@ decision_wtmnb_molten = {
 						remove_planet = yes
 					}
 					else = {
-						change_pc = pc_ringworld_seam
+						custom_tooltip = "ringworld_will_be_not_colonizable"
+						hidden_effect = {
+							change_pc = pc_ringworld_seam
+						}
 					}
 				}
 			}
