@@ -1,0 +1,21 @@
+entity = {
+	name = "star_shield_alt_ambient_wtmnb_effect_entity"
+	pdxmesh = "planet_shield_effect_mesh"
+	scale = 50	# much bigger dyson sphere scale
+	game_data = {
+		bloom_factor = 1.2
+		uv_animation_speed = 2
+		uv_animation_direction = {
+			0
+			-0.02
+		}
+	}
+	locator = {
+		name = "root"
+		position = {
+			0
+			0
+			0
+		}
+	}
+}

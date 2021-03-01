@@ -1,0 +1,8 @@
+swtmnb = {
+	potential = {
+		has_starbase_size = wtmnb_fortress
+	}
+	weight_modifier = {
+		base = 10000
+	}
+}

@@ -1,0 +1,473 @@
+dyson_wtmnb = {
+	entity = "star_shield_alt_ambient_wtmnb_effect_entity"
+	construction_entity = "star_shield_alt_ambient_wtmnb_effect_entity"
+	portrait = GFX_megastructure_dyson_sphere_background
+	place_entity_on_planet_plane = yes
+	entity_offset = {
+		x = 0
+		y = 0
+	}
+	build_time = 30
+	country_modifier = {
+		country_resource_max_add = 3000000
+		country_admin_cap_add = 100
+	}
+	station_modifier = {
+		starbase_trade_collection_range_add = 1000
+		starbase_trade_protection_range_add = 1000
+	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 100
+			influence = 100
+		}
+		produces = {
+			energy = 1000000
+			minerals = 1000000
+			influence = 20
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_black_hole_neutron_star_pulsar"
+			NOT = {
+				is_star_class = sc_black_hole
+				is_star_class = sc_neutron_star
+				is_star_class = sc_pulsar
+			}
+		}
+		custom_tooltip = {
+			fail_text = requires_no_existing_dyson_sphere
+			from = {
+				NOT = {
+					any_owned_megastructure = {
+						is_megastructure_type = dyson_wtmnb
+					}
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = {
+					has_anomaly = yes
+				}
+			}
+		}
+	}
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 0.1
+			starbase = {
+				NOT = {
+					has_starbase_size >= starbase_starfortress
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = {
+						is_same_value = from
+					}
+				}
+			}
+		}
+	}
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			set_country_flag = dyson_wtmnb_built
+		}
+		fromfrom.planet = {
+			if = {
+				limit = {
+					has_orbital_station = yes
+				}
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+			set_planet_size = 40
+		}
+	}
+}
+
+wtmnb_love_mark = {
+	entity = "interstellar_assembly_stage_4_entity"
+	construction_entity = "interstellar_assembly_stage_4_entity"
+	portrait = "GFX_mega_art_installation_background"
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -27
+		y = -27
+	}
+	ai_weight = {
+		factor = 0
+	}
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 1000
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "target_must_exist"
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "not_for_yourself"
+			NOT = {
+				is_inside_border = from
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "not_for_yourself"
+				NOT = {
+					owner = {
+						is_same_empire = from
+					}
+				}
+			}
+		}
+	}
+	on_build_complete = {
+		owner = {
+			every_owned_megastructure = {
+				if = {
+					limit = {
+						is_megastructure_type = wtmnb_love_mark
+						NOT = {
+							is_same_value = fromfrom
+						}
+					}
+					remove_megastructure = this
+				}
+			}
+			while = {
+				limit = {
+					from = {
+						their_opinion = {
+							who = prev
+							value < 1000
+						}
+					}
+				}
+				add_opinion_modifier = {
+					who = fromfrom.owner
+					modifier = opinion_wtmnb_1
+				}
+			}
+		}
+	}
+}
+
+unbox_dyson_wtmnb = {
+	entity = ""
+	portrait = GFX_nullobject
+	build_time = 1
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = -200
+		}
+	}
+	potential = {
+		owner = {
+			has_edict = wtmnb_edict_7
+		}
+	}
+	on_build_complete = {
+		from = {
+			remove_country_flag = dyson_wtmnb_built
+		}
+		remove_megastructure = fromfrom
+	}
+	upgrade_from = {
+		dyson_wtmnb
+	}
+}
+
+unbox_lmark_wtmnb = {
+	entity = ""
+	portrait = GFX_nullobject
+	build_time = 1
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 100
+		}
+	}
+	potential = {
+		owner = {
+			has_edict = wtmnb_edict_7
+		}
+	}
+	on_build_complete = {
+		remove_megastructure = fromfrom
+		owner = {
+			country_event = {
+				id = wtmnb.8
+			}
+		}
+	}
+	upgrade_from = {
+		wtmnb_love_mark
+	}
+}
+
+wtmnb_foundry = {
+	entity = "matter_decompressor_stage_3_entity"
+	construction_entity = "matter_decompressor_stage_3_construction_entity"
+	portrait = "GFX_megastructure_matter_decompressor_background"
+	entity_offset = {
+		x = -15
+		y = -15
+	}
+	rotate_to_center = yes
+	scale_offset = yes
+	place_entity_on_planet_plane = no
+	build_time = 30
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 10000
+			influence = 50
+		}
+		upkeep = {
+			minerals = 1000
+		}
+		produces = {
+			consumer_goods = 1000
+			rare_crystals = 20
+			exotic_gases = 20
+			volatile_motes = 20
+		}
+	}
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		# custom_tooltip = {
+		# 	fail_text = "requires_black_hole"
+		# 	is_star_class = sc_black_hole
+		# }
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = {
+					has_anomaly = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				not = {
+					has_planet_flag = wtmnb_foundry_built
+				}
+			}
+		}
+	}
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+		fromfrom.planet = {
+			if = {
+				limit = {
+					has_orbital_station = yes
+				}
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+			set_planet_flag = wtmnb_foundry_built
+		}
+	}
+}
+
+unbox_foundry_wtmnb = {
+	entity = ""
+	portrait = GFX_nullobject
+	build_time = 1
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 100
+		}
+	}
+	potential = {
+		owner = {
+			has_edict = wtmnb_edict_7
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			remove_planet_flag = wtmnb_foundry_built
+		}
+		remove_megastructure = fromfrom
+	}
+	upgrade_from = {
+		wtmnb_foundry
+	}
+}
+
+wtmnb_portal = {
+	entity = "gateway_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = GFX_evt_l-gateway
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+	}
+	potential = {
+		OR = {
+			has_ascension_perk = ap_galactic_wonders_megacorp
+			has_ascension_perk = ap_galactic_wonders_utopia
+			has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = requires_no_existing_megastructure
+			not = {
+				any_system_megastructure = {
+					is_megastructure_type = wtmnb_portal
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "portal_in_neighbor"
+			NOT = {
+				any_neighbor_system = {
+					any_system_megastructure = {
+						is_megastructure_type = wtmnb_portal
+					}
+				}
+			}
+		}
+	}
+	build_outside_gravity_well = yes
+	on_build_complete = {
+		if = {
+			limit = {
+				NOT = {
+					from = {
+						has_country_flag = wtmnb_portal
+					}
+				}
+			}
+			from = {
+				set_country_flag = wtmnb_portal
+			}
+			save_global_event_target_as = wtmnb_portal_start
+		}
+		else = {
+			add_hyperlane = {
+				from = event_target:wtmnb_portal_start
+				to = THIS
+			}
+			event_target:wtmnb_portal_start = {
+				every_system_megastructure = {
+					limit = {
+						is_megastructure_type = wtmnb_portal
+					}
+					remove_megastructure = this
+				}
+			}
+			from = {
+				country_event = {
+					id = wtmnb.5
+				}
+				remove_country_flag = wtmnb_portal
+			}
+			remove_megastructure = fromfrom
+		}
+	}
+}
+
+unbox_mega_shipyard = {
+	entity = ""
+	portrait = GFX_nullobject
+	build_time = 1
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 100
+		}
+	}
+	potential = {
+		owner = {
+			has_edict = wtmnb_edict_7
+		}
+	}
+	on_build_complete = {
+		owner = {
+			remove_country_flag = built_mega_shipyard_site
+		}
+		remove_star_flag = mega_shipyard_built
+		remove_megastructure = fromfrom
+	}
+	upgrade_from = {
+		mega_shipyard_3
+	}
+}

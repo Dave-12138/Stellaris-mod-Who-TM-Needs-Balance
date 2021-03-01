@@ -1,0 +1,93 @@
+wtmnb_trait_toy = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	opposites = {
+		"trait_repugnant"
+	}
+	leader_age_max = 15
+	leader_age_min = 10
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+		MACHINE
+		OTHER
+	}
+	icon = "gfx/interface/icons/traits/wtmnb_trait_toy.dds"
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	modifier = {
+		pop_happiness = 10
+		planet_jobs_produces_mult = 1
+		pop_demotion_time_mult = -1
+		planet_pops_upkeep_mult = -1.5
+		pop_amenities_usage_mult = -1.5
+		planet_amenities_add = 1
+		army_damage_mult = 100
+		army_collateral_damage_mult = 100
+		species_empire_size_mult = -1
+	}
+}
+
+wtmnb_leader_trait_toy = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	icon = "gfx/interface/icons/traits/wtmnb_trait_toy.dds"
+	leader_trait = {
+		general
+		governor
+		admiral
+		ruler
+		scientist
+	}
+	leader_class = {
+		general
+		governor
+		admiral
+		ruler
+		scientist
+	}
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	modifier = {
+		all_technology_research_speed = 1
+		science_ship_survey_speed = 10
+		ship_archeaological_site_clues_add = 15
+		ship_archaeological_site_excavation_speed_mult = 10000
+		ship_anomaly_research_speed_mult = 35
+		###################
+		planet_buildings_cost_mult = -1
+		planet_districts_cost_mult = -1
+		planet_building_build_speed_mult = 100
+		planet_jobs_food_produces_mult = 0.5
+		deposit_blockers_cost_mult = -1
+		planet_clear_blocker_time_mult = -1
+		planet_decision_enact_speed_mult = 10000
+		planet_stability_add = 100
+		planet_crime_add = -150
+		planet_army_build_speed_mult = 50
+		planet_colony_development_speed_mult = 100
+		planet_jobs_upkeep_mult = -2
+		##############
+		terraform_speed_mult = 250
+		shipsize_starbase_outpost_build_speed_mult = 500
+		shipclass_military_special_build_speed_mult = 1000
+		shipclass_mining_station_build_speed_mult = 1000
+		shipclass_research_station_build_speed_mult = 1000
+		planet_structures_upkeep_mult = -2
+		megastructure_build_speed_mult = 5000
+		country_government_civic_points_add = 10
+		##############
+	}
+	custom_tooltip = wtmnb_leader_trait_toy_modifier
+}

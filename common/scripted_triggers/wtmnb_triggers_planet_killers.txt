@@ -1,0 +1,40 @@
+can_destroy_planet_with_WTMNB_PLANET_KILLER_SHIELDER = {
+	custom_tooltip = {
+		fail_text = is_shielded
+		NOR = {
+			is_planet_class = pc_shielded
+			is_planet_class = pc_ringworld_shielded
+			is_planet_class = pc_habitat_shielded
+		}
+	}
+}
+
+can_destroy_planet_with_WTMNB_WEAPON_W = {
+	custom_tooltip = {
+		fail_text = requires_colonized_planet
+		OR = {
+			is_colony = yes
+			custom_tooltip = {
+				success_text = "lgate_tool"
+				AND = {
+					is_star = yes
+					solar_system = {
+						has_any_megastructure = yes
+						any_system_megastructure = {
+							is_megastructure_type = lgate_base
+						}
+					}
+					NAND = {
+						from.owner = {
+							exists = event_target:gray_owner
+							check_variable = {
+								which = num_lcluster_clues
+								value > 6
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

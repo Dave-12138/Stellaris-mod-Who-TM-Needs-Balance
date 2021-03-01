@@ -1,0 +1,308 @@
+terraform_link = {
+	from = pc_molten
+	to = pc_gaia
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_gas_giant
+	to = pc_gaia
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_gaia
+	to = pc_city
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+}
+
+terraform_link = {
+	from = pc_city
+	to = pc_gaia
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+		custom_tooltip = "you_wont_know_it_can_be_return"
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+}
+
+terraform_link = {
+	from = pc_gaia
+	to = pc_prostitution_city
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+		any_owned_pop = {
+			OR = {
+				has_trait = trait_DC_ethic_carnalism
+				has_trait = trait_DC_ethic_asceticism
+				has_trait = trait_DC_ethic_parasite_mind
+				has_trait = trait_DC_ethic_lust_skynet
+			}
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_gaia
+	to = pc_wsg_port
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+		has_authority = auth_warshipgirls
+	}
+}
+
+terraform_link = {
+	from = pc_gaia
+	to = pc_shenhai
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+		has_authority = auth_shenhai
+	}
+}
+
+terraform_link = {
+	from = pc_ringworld_habitable
+	to = pc_ringworld_habitable_wsg
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+		has_authority = auth_warshipgirls
+	}
+}
+
+terraform_link = {
+	from = pc_ringworld_seam
+	to = pc_ringworld_habitable
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+}
+
+terraform_link = {
+	from = pc_ringworld_seam_damaged
+	to = pc_ringworld_habitable
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+}
+
+terraform_link = {
+	from = pc_ringworld_tech
+	to = pc_ringworld_habitable
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+}
+
+terraform_link = {
+	from = pc_ringworld_tech_damaged
+	to = pc_ringworld_habitable
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+}
+
+terraform_link = {
+	from = pc_ringworld_habitable
+	to = pc_ringworld_habitable_sh
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+		has_authority = auth_shenhai
+	}
+}

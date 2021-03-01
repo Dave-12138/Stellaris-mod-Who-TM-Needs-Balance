@@ -1,0 +1,47 @@
+opinion_wtmnb_1 = {
+	opinion = {
+		modifier = {
+			add = 2000
+			always = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+}
+#2和3是一样的，叠加确保足够涩（？
+opinion_wtmnb_2 = {
+	trigger = {
+		has_edict = wtmnb_edict_8
+	}
+	opinion = {
+		modifier = {
+			add = 2000
+			from = {
+				any_owned_megastructure = {
+					is_megastructure_type = wtmnb_love_mark
+				}
+			}
+		}
+	}
+}
+
+opinion_wtmnb_3 = {
+	trigger = {
+		has_edict = wtmnb_edict_8
+	}
+	opinion = {
+		modifier = {
+			add = 2000
+			from = {
+				any_owned_megastructure = {
+					is_megastructure_type = wtmnb_love_mark
+				}
+			}
+		}
+	}
+}

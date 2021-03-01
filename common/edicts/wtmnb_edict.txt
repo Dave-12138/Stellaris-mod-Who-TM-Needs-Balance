@@ -1,0 +1,244 @@
+wtmnb_edict = {
+	length = 1
+	icon = GFX_nullobject
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	prerequisites = {
+		"tech_starbase_1"
+	}
+	effect = {
+		give_technology = {
+			tech = tech_automated_exploration
+			message = no
+		}
+		give_technology = {
+			tech = tech_wtmnb_fortress
+			message = no
+		}
+		give_technology = {
+			tech = tech_terrestrial_sculpting
+			message = no
+		}
+		if = {
+			limit = {
+				has_global_flag = giga_has_host
+			}
+			give_technology = {
+				tech = giga_tech_planetary_computer
+				message = no
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = has_wsg_mod
+			}
+			give_technology = {
+				tech = giga_tech_planetary_computer
+				message = no
+			}
+		}
+		set_global_flag = wtmnb_edict_checked
+	}
+	potential = {
+		NOR = {
+			any_ship = {
+				is_ship_size = wtmnb_fortress
+			}
+			has_global_flag = wtmnb_edict_checked
+		}
+	}
+	allow = {
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+wtmnb_edict_2 = {
+	#羽渡尘
+	icon = GFX_nullobject
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	effect = {
+		set_government_cooldown = no
+	}
+	prerequisites = {
+		"tech_starbase_1"
+	}
+	potential = {
+		is_ai = no
+	}
+	allow = {
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# wtmnb_edict_3 = {
+# 	#ID
+# 	icon = GFX_nullobject
+# 	length = -1
+# 	resources = {
+# 		category = edicts
+# 		cost = {
+# 			influence = 0
+# 		}
+# 	}
+# 	modifier = {
+# 	}
+# 	prerequisites = {
+# 		"tech_starbase_1"
+# 	}
+# 	effect = {
+# 		give_technology = {
+# 			tech = "tech_repeatable_ascension_perks"
+# 		}
+# 	}
+# 	potential = {
+# 		is_ai = no
+# 	}
+# 	allow = {
+# 		is_ai = no
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }
+# wtmnb_edict_4 = {
+# 	#ID
+# 	icon = GFX_nullobject
+# 	length = -1
+# 	resources = {
+# 		category = edicts
+# 		cost = {
+# 			influence = 0
+# 		}
+# 	}
+# 	modifier = {
+# 		country_base_engineering_research_produces_add = 1000
+# 		country_base_society_research_produces_add = 1000
+# 		country_base_physics_research_produces_add = 1000
+# 		country_engineering_research_produces_mult = 500
+# 		country_society_research_produces_mult = 500
+# 		country_physics_research_produces_mult = 500
+# 	}
+# 	prerequisites = {
+# 		"tech_starbase_1"
+# 	}
+# 	potential = {
+# 		is_ai = no
+# 	}
+# 	allow = {
+# 		is_ai = no
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }
+# wtmnb_edict_5 = {
+# 	#ID
+# 	icon = GFX_nullobject
+# 	length = -1
+# 	resources = {
+# 		category = edicts
+# 		cost = {
+# 			influence = 0
+# 		}
+# 	}
+# 	modifier = {
+# 		science_ship_survey_speed = 300
+# 		ship_anomaly_research_speed_mult = 500
+# 	}
+# 	prerequisites = {
+# 		"tech_starbase_1"
+# 	}
+# 	potential = {
+# 		is_ai = no
+# 	}
+# 	allow = {
+# 		is_ai = no
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }
+wtmnb_edict_6 = {
+	icon = GFX_nullobject
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		country_trust_growth = 500
+		country_trust_cap_add = 50000
+	}
+	prerequisites = {
+		"tech_starbase_1"
+	}
+	potential = {
+		is_ai = no
+	}
+	allow = {
+		is_ai = no
+	}
+}
+
+wtmnb_edict_7 = {
+	icon = GFX_nullobject
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		custom_tooltip = "now_you_can_unbuilt_some_mega"
+	}
+	prerequisites = {
+		"tech_starbase_1"
+	}
+	potential = {
+		is_ai = no
+	}
+	allow = {
+		is_ai = no
+	}
+}
+
+wtmnb_edict_8 = {
+	icon = GFX_nullobject
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+	}
+	prerequisites = {
+		"tech_starbase_1"
+	}
+	potential = {
+		is_ai = no
+	}
+	allow = {
+		is_ai = no
+	}
+}

@@ -1,0 +1,53 @@
+namespace = wtmnb_joke
+country_event = {
+	id = wtmnb_joke.0
+	is_triggered_only = yes
+	picture = GFX_evt_psionics
+	title = "wtmnb_joke.0.title"
+	desc = "wtmnb_joke.0.text"
+	option = {
+		name = wtmnb_joke.0.a
+		trigger = {
+			has_ethic = ethic_fanatic_materialist
+		}
+		#唯物+
+	}
+	option = {
+		name = wtmnb_joke.0.a
+		trigger = {
+			has_ethic = ethic_materialist
+		}
+		#唯物
+	}
+	option = {
+		name = wtmnb_joke.0.b
+		trigger = {
+			has_ethic = ethic_authoritarian
+		}
+		#威权
+	}
+	option = {
+		name = wtmnb_joke.0.b
+		trigger = {
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		#威权+
+	}
+	option = {
+		name = wtmnb_joke.0.c
+		trigger = {
+			has_ethic = ethic_xenophobe
+		}
+		#排外
+	}
+	option = {
+		name = wtmnb_joke.0.c
+		trigger = {
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		#排外+
+	}
+	option = {
+		name = wtmnb_joke.0.d
+	}
+}

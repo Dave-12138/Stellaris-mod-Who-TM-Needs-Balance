@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_blackhole_aura"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_blackhole_aura.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_shield_aura"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_shield_aura.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_wtmnb_weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_wtmnb_flt"
+		texturefile = "gfx/interface/icons/ship_parts/wtmnb_2nd_key.dds"
+	}
+	spriteType = {
+		name = "GFX_megastructure_wtmnb_orbit"
+		texturefile = "gfx/interface/planetview/habitat.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_thruster_wtmnb"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_Alajato.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_eden_star"
+		texturefile = "gfx/interface/icons/ship_parts/Eden_wtmnb.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_wtmnb_destructor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_destructor.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_4th_key"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_4th_key.dds"
+	}
+}

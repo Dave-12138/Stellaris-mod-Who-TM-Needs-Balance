@@ -1,0 +1,22 @@
+tech_wtmnb_fortress = {
+	icon = tech_starbase_5
+	cost = @tier5cost2
+	area = engineering
+	tier = 5
+	category = {
+		propulsion
+	}
+	weight = 0
+	is_dangerous = yes
+	modifier = {
+		country_naval_cap_add = 100
+	}
+	ai_weight = {
+		factor = 0
+	}
+	potential = {
+		OR = {
+			is_ai = no
+		}
+	}
+}

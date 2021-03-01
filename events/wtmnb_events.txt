@@ -1,0 +1,343 @@
+namespace = wtmnb
+
+planet_event = {
+	id = wtmnb.0
+	pre_triggers = {
+		has_owner = yes
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_orbital_bombardment_stance = wtmnb_doom2
+			has_orbital_bombardment_stance = wtmnb_doom2
+		}
+		planet_devastation >= 1
+		FROM = {
+			OR = {
+				has_technology = tech_wtmnb_fortress
+			}
+		}
+		NOT = {
+			is_planet_class = pc_ai
+		}
+	}
+	immediate = {
+		save_event_target_as = doomed_planet_owner
+		
+		#remove_all_buildings = yes
+		random_owned_pop = {
+			kill_pop = yes
+		}
+		every_planet_army = {
+			remove_army = yes
+		}
+		if = {
+			limit = { is_colony = no }
+			event_target:doomed_planet_owner = {
+				add_static_war_exhaustion = {
+					attacker = from
+					location = root
+					value_for_planet_destruction = 1
+				}
+				#country_event = { id = wtmnb.1 } 
+			}
+			from = {
+				country_event = {
+					id = wtmnb.1
+				}
+			}
+		}
+		#destroy_colony = yes
+		#remove_modifier = "natural_beauty"
+		#remove_modifier = "atmospheric_aphrodisiac"
+		#remove_modifier = "atmospheric_hallucinogen"
+		#remove_modifier = "lush_planet"		
+		remove_modifier = "dangerous_wildlife"
+	}
+}
+
+country_event = {
+	id = wtmnb.1
+	title = wtmnb.1.name
+	#picture = GFX_evt_wsg_bombardment
+	desc = wtmnb.1.desc
+	show_sound = event_super_explosion
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		custom_tooltip = nobody_exist
+	}
+}
+
+country_event = {
+	id = wtmnb.2
+	is_triggered_only = yes
+	trigger = {
+		federation = {
+			OR = {
+				federation_cohesion < 80
+				federation_level < 5
+			}
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = wtmnb_love_mark
+		}
+	}
+	hide_window = yes
+	immediate = {
+		federation = {
+			add_cohesion = 200
+			add_federation_experience = 66666
+		}
+	}
+}
+
+
+
+country_event = {
+	is_triggered_only = yes
+	id = wtmnb.3
+	title = let_we_see_whats_in_lgate
+	desc = {
+		text = graygoo.10.name
+		trigger = {	has_global_flag = gray_goo_crisis_set }
+	}
+	desc = {
+		text = graygoo.120_title
+		trigger = {	has_global_flag = gray_goo_empire_set }
+	}
+	desc = {
+		text = nanite_space_dragon_baby
+		trigger = {	has_global_flag = dragon_season	}
+	}
+	desc = {
+		text = graygoo.500.title
+		trigger = {
+			NOR = {
+				has_global_flag = gray_goo_crisis_set
+				has_global_flag = gray_goo_empire_set
+				has_global_flag = dragon_season
+			}
+		}
+	}
+	option = {
+		name = unremarkable
+	}
+	option = {
+		name = federations2.61.A.neutral
+	}
+	option = {
+		name = why_not_gray
+		trigger = {
+			OR = {
+				has_global_flag = gray_goo_crisis_set
+				has_global_flag = gray_goo_empire_set
+				has_global_flag = dragon_season
+			}
+			NOT = {
+				exists = event_target:gray_owner
+			}
+		}
+		country_event = {
+			id = graygoo.401
+		}
+	}
+}
+
+planet_event = {
+	id = wtmnb.4
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				is_star = yes
+				solar_system = {
+					any_system_megastructure = {
+						is_megastructure_type = lgate_base
+					}
+				}
+			}
+			from.owner = {
+				if = {
+					limit = {
+						check_variable = {
+							which = num_lcluster_clues
+							value < 7
+						}
+					}
+					give_technology = {
+						tech = tech_repeatable_lcluster_clue
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:gray_owner
+						}
+					}
+					country_event = {
+						id = wtmnb.3
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				owner = {
+					if = {
+						limit = {
+							OR = {
+								has_ethic = ethic_xenophobe
+								has_ethic = ethic_fanatic_xenophobe
+								has_authority = auth_hive_mind
+								has_authority = auth_machine_intelligence
+							}
+						}
+						modify_species = {
+							species = owner_species
+							add_trait = wtmnb_trait_toy
+							add_traits_at_start_of_list = yes
+							change_scoped_species = yes
+							effect = {
+								save_event_target_as = new_wtm_species
+							}
+						}
+					}
+					else = {
+						modify_species = {
+							species = owner_species
+							base = none
+							add_trait = wtmnb_trait_toy
+							add_traits_at_start_of_list = yes
+							change_scoped_species = yes
+							effect = {
+								save_event_target_as = new_wtm_species
+							}
+						}
+					}
+					change_species = event_target:new_wtm_species
+					set_built_species = event_target:new_wtm_species
+					every_owned_leader = {
+						limit = {
+							OR = {
+								gender = female
+								gender = indeterminable
+							}
+						}
+						add_ruler_trait = wtmnb_leader_trait_toy
+						add_trait = wtmnb_leader_trait_toy
+						#change_species = event_target:new_wtm_species
+					}
+					every_pool_leader = {
+						limit = {
+							OR = {
+								gender = female
+								gender = indeterminable
+							}
+						}
+						add_ruler_trait = wtmnb_leader_trait_toy
+						add_trait = wtmnb_leader_trait_toy
+						#change_species = event_target:new_wtm_species
+					}
+				}
+			}
+			else = {
+				every_owned_pop = {
+					modify_species = {
+						species = this
+						base = none
+						add_trait = wtmnb_trait_toy
+						add_traits_at_start_of_list = yes
+						change_scoped_species = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb.5
+	is_triggered_only = yes
+	title = hyperlane_built
+	desc = hyperlane_built_detai
+	option = {
+		name = federations2.61.A.neutral
+		hidden_effect = {
+			clear_global_event_target = wtmnb_portal_start
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb.6
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			species = {
+				has_trait = wtmnb_trait_toy
+			}
+			OR = {
+				gender = female
+				gender = indeterminable
+			}
+		}
+	}
+	immediate = {
+		from = {
+			add_ruler_trait = wtmnb_leader_trait_toy
+			add_trait = wtmnb_leader_trait_toy
+		}
+	}
+}
+
+#永远长不大，好耶
+country_event = {
+	id = wtmnb.7
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_leader = {
+			leader_age >= 15
+			has_trait = wtmnb_leader_trait_toy
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_trait = wtmnb_leader_trait_toy
+			}
+			set_age = 12
+		}
+		every_pool_leader = {
+			limit = {
+				has_trait = wtmnb_leader_trait_toy
+			}
+			set_age = 12
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb.8
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			root = {
+				remove_opinion_modifier = {
+					who = prev
+					modifier = opinion_wtmnb_1
+				}
+			}
+		}
+	}
+}
+

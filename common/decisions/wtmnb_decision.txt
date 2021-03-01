@@ -1,0 +1,126 @@
+decision_wtmnb_create_pop = {
+	owned_planets_only = yes
+	enactment_time = 270
+	icon = wtmnb_welt3
+	potential = {
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				has_component = WTMNB_STIGMA_TERMINAL
+			}
+		}
+	}
+	allow = {
+		custom_tooltip = "dont_mind_machine_can_sex"
+	}
+	effect = {
+		custom_tooltip = "add_20_pop"
+		hidden_effect = {
+			random_owned_pop = {
+				species = {
+					save_event_target_as = rand_sp
+				}
+			}
+			while = {
+				count = 20
+				create_pop = {
+					species = event_target:rand_sp
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			num_pops > 200
+		}
+	}
+}
+
+decision_wtmnb_reroll = {
+	enactment_time = 0
+	icon = decision_wtmnb_create_pop
+	potential = {
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				has_component = WTMNB_4TH_KEY
+			}
+		}
+	}
+	effect = {
+		reroll_deposits = yes
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_wtmnb_molten = {
+	enactment_time = 1
+	icon = wtmnb_destructor
+	potential = {
+		is_star = no
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				has_component = WTMNB_DESTRUCTOR
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				is_ringworld = no
+			}
+			change_pc = pc_molten
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_habitat
+					is_planet_class = pc_habitat_shielded
+				}
+			}
+			remove_planet = yes
+		}
+		else = {
+			change_pc = pc_ringworld_tech_damaged
+		}
+		if = {
+			limit = {
+				is_colonizable = no
+			}
+			every_owned_pop = {
+				kill_pop = yes
+			}
+		}
+		random_list = {
+			10 = {
+			}
+			30 = {
+				change_planet_size = 5
+			}
+			30 = {
+				if = {
+					limit = {
+						planet_size > 5
+					}
+					change_planet_size = -5
+				}
+				else = {
+					if = {
+						limit = {
+							is_ringworld = no
+						}
+						remove_planet = yes
+					}
+					else = {
+						change_pc = pc_ringworld_seam
+					}
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
