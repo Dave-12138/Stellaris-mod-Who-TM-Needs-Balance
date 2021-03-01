@@ -142,4 +142,7 @@ decision_wtmnb_planet_extend = {
 			days = -1
 		}
 	}
+	ai_weight = {
+		weight = 80
+	}
 }
