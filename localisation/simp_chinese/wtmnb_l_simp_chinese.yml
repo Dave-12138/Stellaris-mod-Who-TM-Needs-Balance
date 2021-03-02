@@ -51,9 +51,9 @@
  FLEETORDER_DESTROY_PLANET_WITH_WTMNB_WEAPON_W:0 "正在准备对$PLANET|Y$使用$WTMNB_WEAPON_W|M$"
  MESSAGE_DESC_FOR_WTMNB_WEAPON_W:0 "被施加了某种操作。"
 ################################
- dyson_wtmnb:0 "戴森云+"
+ dyson_wtmnb:0 "以太锚点"
  dyson_wtmnb_DESC:0 "图片与实物相似度99.9999999%\n出于某些人点了作弊按钮的原因，效率非常可观。"
- dyson_wtmnb_MEGASTRUCTURE_DETAILS:0 "数以亿计的小型太阳能电池板阵列将组成戴森云环绕我们的恒星，出于某些人点了作弊按钮的原因，效率非常可观。"
+ dyson_wtmnb_MEGASTRUCTURE_DETAILS:0 "“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
  unbox_dyson_wtmnb:0 "拆解"
  unbox_dyson_wtmnb_DESC:0 "其实只是因为点不到恒星本身所以决定加了这个拆解"
  unbox_dyson_wtmnb_MEGASTRUCTURE_DETAILS:0 "建错了？拆！" 

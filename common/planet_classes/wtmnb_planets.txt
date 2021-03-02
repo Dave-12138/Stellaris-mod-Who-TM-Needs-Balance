@@ -4,6 +4,7 @@ pc_wtmnb_tech = {
 	modifier = {
 		planet_housing_add = 2
 		job_researcher_add = 500
+		job_head_researcher_add = 50
 		planet_jobs_produces_mult = 1
 		pop_housing_usage_mult = -1
 		pop_environment_tolerance = 0
