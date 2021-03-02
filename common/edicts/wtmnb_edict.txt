@@ -23,24 +23,24 @@ wtmnb_edict = {
 			tech = tech_terrestrial_sculpting
 			message = no
 		}
-		if = {
-			limit = {
-				has_global_flag = giga_has_host
-			}
-			give_technology = {
-				tech = giga_tech_planetary_computer
-				message = no
-			}
-		}
-		if = {
-			limit = {
-				has_global_flag = has_wsg_mod
-			}
-			give_technology = {
-				tech = giga_tech_planetary_computer
-				message = no
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		has_global_flag = giga_has_host
+		# 	}
+		# 	give_technology = {
+		# 		tech = giga_tech_planetary_computer
+		# 		message = no
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		has_global_flag = has_wsg_mod
+		# 	}
+		# 	give_technology = {
+		# 		tech = giga_tech_planetary_computer
+		# 		message = no
+		# 	}
+		# }
 		set_global_flag = wtmnb_edict_checked
 	}
 	potential = {
