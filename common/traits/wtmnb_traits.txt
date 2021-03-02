@@ -4,7 +4,6 @@ trait_wtmnb_toy = {
 	randomized = no
 	modification = yes
 	immortal_leaders = yes
-
 	leader_age_max = 15
 	leader_age_min = 10
 	allowed_archetypes = {
@@ -12,6 +11,12 @@ trait_wtmnb_toy = {
 		LITHOID
 		MACHINE
 		OTHER
+		MONSTER
+		PARASITE
+		WHORE
+		LOVEMACHINE
+		WARSHIPGIRL
+		SHENHAI
 	}
 	icon = "gfx/interface/icons/traits/trait_wtmnb_toy.dds"
 	prerequisites = {

@@ -10,6 +10,12 @@ trait_pc_wtmnb_tech_preference = {
 		BIOLOGICAL
 		LITHOID
 		MACHINE
+		MONSTER
+		PARASITE
+		WHORE
+		LOVEMACHINE
+		WARSHIPGIRL
+		SHENHAI
 		OTHER
 	}
 	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_tech_preference.dds"
