@@ -6,7 +6,7 @@ pc_wtmnb_tech = {
 		planet_housing_add = 2
 		planet_jobs_produces_mult = 1
 		pop_housing_usage_mult = -1
-		pop_environment_tolerance = -0.1
+		pop_environment_tolerance = 0.5
 	}
 	picture = pc_ai
 	tile_set = pc_ai
@@ -35,6 +35,7 @@ pc_wtmnb_tech = {
 		max = @habitable_moon_max_size
 	}
 	colonizable = yes
+	district_set = city_world
 	starting_planet = no
 	show_city = no
 }

@@ -24,6 +24,32 @@ terraform_link = {
 		}
 	}
 }
+terraform_link = {
+	from = pc_nuked
+	to = pc_gaia
+	energy = 10000
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		has_technology = tech_wtmnb_fortress
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+		}
+	}
+}
 
 terraform_link = {
 	from = pc_gas_giant
