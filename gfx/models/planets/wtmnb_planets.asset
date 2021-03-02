@@ -1,0 +1,34 @@
+entity = {
+	name = "wtmnb_tech_planet_01_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	#planet surface texture override	
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "city_planet_arthropoid_01_diffuse.dds"
+		texture_normal = "city_planet_arthropoid_01_normal.dds"
+		texture_specular = "city_planet_arthropoid_01_specular.dds"
+		shader = "PdxMeshPlanetEmissive"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse.dds"
+		texture_normal = "poles_barren_1_normal.dds"
+		texture_specular = "poles_barren_1_specular.dds"
+	}
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_world_machine"
+			}
+		}
+	}
+}

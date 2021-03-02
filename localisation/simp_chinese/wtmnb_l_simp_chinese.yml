@@ -103,6 +103,9 @@
 #######################
  wtmnb_planet_ex:0 "第四神之键"
  wtmnb_planet_ex_desc:0 "别问原理，别问"
+###################
+ deposit_wtmnb_tech:0 "$pc_wtmnb_tech$"
+ deposit_wtmnb_tech_desc:0 "$pc_wtmnb_tech_desc$"
 ##################
  bombardment_wtmnb_doom:0 "地表融解"
  bombardment_wtmnb_doom_name:0 "热能解离轨道轰炸"

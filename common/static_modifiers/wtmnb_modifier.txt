@@ -1,5 +1,6 @@
 wtmnb_planet_ex = {
 	planet_max_districts_add = 30
+	planet_max_buildings_add = 15
 	icon = "gfx/interface/icons/planet_modifiers/planet_4th_modifier.dds"
 	icon_frame = 1
 }

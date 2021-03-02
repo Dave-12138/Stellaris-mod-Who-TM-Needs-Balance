@@ -91,6 +91,12 @@ terraform_link = {
 			}
 		}
 	}
+	effect = {
+		FROM = {
+			reroll_deposits = yes
+			#add_deposit = deposit_wtmnb_tech
+		}
+	}
 	potential = {
 		has_technology = tech_wtmnb_fortress
 	}

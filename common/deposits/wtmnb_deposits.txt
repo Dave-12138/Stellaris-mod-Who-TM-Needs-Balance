@@ -1,0 +1,41 @@
+deposit_wtmnb_tech = {
+	is_for_colonizeable = yes
+	icon = d_station_reactor
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		job_brain_drone_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		job_calculator_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = no
+				is_machine_empire = no
+			}
+		}
+		job_researcher_per_pop = 1
+	}
+	potential = {
+		is_planet_class = pc_wtmnb_tech
+		NOT = {
+			has_deposit = deposit_wtmnb_tech
+		}
+	}
+	drop_weight = {
+		weight = 1000
+	}
+}
