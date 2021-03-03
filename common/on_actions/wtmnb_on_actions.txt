@@ -30,9 +30,3 @@ on_leader_spawned = {
 		wtmnb.6 #新生成的领袖加圣痕
 	}
 }
-
-on_game_start = {
-	events = {
-		wtmportrait.0
-	}
-}

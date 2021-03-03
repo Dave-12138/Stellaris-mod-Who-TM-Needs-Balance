@@ -33,7 +33,7 @@
  WTMNB_4TH_KEY_DESC:0 "操控气候"
 #################
  trait_wtmnb_toy:0 "圣痕"
- trait_wtmnb_toy_desc:0 "这个物种[This.GetSpeciesName]在奇怪的部位有形状奇怪的$trait_wtmnb_toy$。"
+ trait_wtmnb_toy_desc:0 "这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_toy$。"
  leader_trait_wtmnb_toy:0 "$trait_wtmnb_toy$"
  leader_trait_wtmnb_toy_modifier:0 "该领袖可以轻松胜任§Y$ruler$§!、§Y$general$§!、§Y$governor$§!、§Y$admiral$§!、§Y$scientist$§!"
  leader_trait_wtmnb_toy_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_toy$。"
