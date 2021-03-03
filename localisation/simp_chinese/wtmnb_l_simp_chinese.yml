@@ -167,7 +167,7 @@
 ##################
  
  pc_wtmnb_prometheus:0 "普罗米修斯"
- pc_wtmnb_prometheus_desc:0 "强大的人工智能将整个星球表面化为终端，能在短短几天之内改变星球特化方向\n§L(COLONY_DESIGNATION_MANUALLY_PICKED)§!"
+ pc_wtmnb_prometheus_desc:0 "强大的人工智能将整个星球表面化为终端，能在短短几天之内改变星球特化方向\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"

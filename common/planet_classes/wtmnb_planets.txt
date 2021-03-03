@@ -38,4 +38,68 @@ pc_wtmnb_prometheus = {
 	district_set = standard
 	starting_planet = no
 	show_city = no
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_research
+		}
+		text = deposit_wtmnb_prometheus_research
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_foundry
+		}
+		text = deposit_wtmnb_prometheus_alloy
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_refinery
+		}
+		text = deposit_wtmnb_prometheus_rare
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			NOR = {
+				has_designation = col_refinery
+				has_designation = col_foundry
+				has_designation = col_factory
+				has_designation = col_generator
+				has_designation = col_farming
+				has_designation = col_mining
+				has_designation = col_research
+			}
+		}
+		text = deposit_wtmnb_prometheus_normal
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_factory
+		}
+		text = deposit_wtmnb_prometheus_goods
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_generator
+		}
+		text = deposit_wtmnb_prometheus_energy
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_farming
+		}
+		text = deposit_wtmnb_prometheus_food
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_mining
+		}
+		text = deposit_wtmnb_prometheus_mineral
+	}
 }

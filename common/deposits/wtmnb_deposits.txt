@@ -33,13 +33,6 @@ deposit_wtmnb_prometheus = {
 		}
 		job_researcher_per_pop = 1
 	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			has_designation = col_research
-		}
-		text = deposit_wtmnb_prometheus_research
-	}
 	#合金
 	triggered_planet_modifier = {
 		potential = {
@@ -72,13 +65,6 @@ deposit_wtmnb_prometheus = {
 		}
 		job_foundry_per_pop = 1
 	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			has_designation = col_foundry
-		}
-		text = deposit_wtmnb_prometheus_alloy
-	}
 	#天然气/水晶/易爆微粒
 	triggered_planet_modifier = {
 		potential = {
@@ -107,13 +93,6 @@ deposit_wtmnb_prometheus = {
 			job_chemist_drone_per_pop = 0.34
 			job_translucer_drone_per_pop = 0.34
 		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			has_designation = col_refinery
-		}
-		text = deposit_wtmnb_prometheus_rare
 	}
 	#默认（舰容行政
 	triggered_planet_modifier = {
@@ -175,21 +154,6 @@ deposit_wtmnb_prometheus = {
 		job_warrior_drone_per_pop = 0.5
 		job_coordinator_per_pop = 0.5
 	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			NOR = {
-				has_designation = col_refinery
-				has_designation = col_foundry
-				has_designation = col_factory
-				has_designation = col_generator
-				has_designation = col_farming
-				has_designation = col_mining
-				has_designation = col_research
-			}
-		}
-		text = deposit_wtmnb_prometheus_normal
-	}
 	#消费品
 	triggered_planet_modifier = {
 		potential = {
@@ -214,13 +178,6 @@ deposit_wtmnb_prometheus = {
 		modifier = {
 			job_artisan_drone_per_pop = 1
 		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			has_designation = col_factory
-		}
-		text = deposit_wtmnb_prometheus_goods
 	}
 	#发电
 	triggered_planet_modifier = {
@@ -260,14 +217,6 @@ deposit_wtmnb_prometheus = {
 			job_fe_acolyte_generator_per_pop = 1
 		}
 	}
-	
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			has_designation = col_generator
-		}
-		text = deposit_wtmnb_prometheus_energy
-	}
 	#农业
 	triggered_planet_modifier = {
 		potential = {
@@ -306,13 +255,6 @@ deposit_wtmnb_prometheus = {
 			job_fe_acolyte_farm_per_pop = 1
 		}
 	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			has_designation = col_farming
-		}
-		text = deposit_wtmnb_prometheus_food
-	}
 	#矿
 	triggered_planet_modifier = {
 		potential = {
@@ -350,13 +292,6 @@ deposit_wtmnb_prometheus = {
 		modifier = {
 			job_fe_acolyte_mine_per_pop = 1
 		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			has_designation = col_mining
-		}
-		text = deposit_wtmnb_prometheus_mineral
 	}
 	################
 	potential = {
