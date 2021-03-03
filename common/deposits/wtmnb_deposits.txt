@@ -1,12 +1,14 @@
 deposit_wtmnb_tech = {
 	is_for_colonizeable = yes
 	icon = d_station_reactor
+	#科研
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_hive_empire = yes
 			}
+			has_designation = col_research
 		}
 		job_brain_drone_per_pop = 1
 	}
@@ -16,6 +18,7 @@ deposit_wtmnb_tech = {
 			owner = {
 				is_machine_empire = yes
 			}
+			has_designation = col_research
 		}
 		job_calculator_per_pop = 1
 	}
@@ -26,9 +29,336 @@ deposit_wtmnb_tech = {
 				is_hive_empire = no
 				is_machine_empire = no
 			}
+			has_designation = col_research
 		}
 		job_researcher_per_pop = 1
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_research
+		}
+		text = deposit_wtmnb_tech_research
+	}
+	#合金
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+			has_designation = col_foundry
+		}
+		job_alloy_drone_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+			has_designation = col_foundry
+		}
+		job_fabricator_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = no
+				is_machine_empire = no
+			}
+			has_designation = col_foundry
+		}
+		job_foundry_per_pop = 1
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_foundry
+		}
+		text = deposit_wtmnb_tech_alloy
+	}
+	#天然气/水晶/易爆微粒
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_designation = col_refinery
+		}
+		modifier = {
+			job_gas_refiner_per_pop = 0.34
+			job_chemist_per_pop = 0.34
+			job_translucer_per_pop = 0.34
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_refinery
+		}
+		modifier = {
+			job_gas_refiner_drone_per_pop = 0.34
+			job_chemist_drone_per_pop = 0.34
+			job_translucer_drone_per_pop = 0.34
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_refinery
+		}
+		text = deposit_wtmnb_tech_rare
+	}
+	#默认（舰容行政
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			NOR = {
+				has_designation = col_refinery
+				has_designation = col_foundry
+				has_designation = col_factory
+				has_designation = col_generator
+				has_designation = col_farming
+				has_designation = col_mining
+				has_designation = col_research
+			}
+		}
+		modifier = {
+			job_soldier_per_pop = 0.5
+			job_bureaucrat_per_pop = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+			NOR = {
+				has_designation = col_refinery
+				has_designation = col_foundry
+				has_designation = col_factory
+				has_designation = col_generator
+				has_designation = col_farming
+				has_designation = col_mining
+				has_designation = col_research
+			}
+		}
+		job_warrior_drone_per_pop = 0.5
+		job_synapse_drone_per_pop = 0.5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+			NOR = {
+				has_designation = col_refinery
+				has_designation = col_foundry
+				has_designation = col_factory
+				has_designation = col_generator
+				has_designation = col_farming
+				has_designation = col_mining
+				has_designation = col_research
+			}
+		}
+		job_warrior_drone_per_pop = 0.5
+		job_coordinator_per_pop = 0.5
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			NOR = {
+				has_designation = col_refinery
+				has_designation = col_foundry
+				has_designation = col_factory
+				has_designation = col_generator
+				has_designation = col_farming
+				has_designation = col_mining
+				has_designation = col_research
+			}
+		}
+		text = deposit_wtmnb_tech_normal
+	}
+	#消费品
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_designation = col_factory
+		}
+		modifier = {
+			job_artisan_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_factory
+		}
+		modifier = {
+			job_artisan_drone_per_pop = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_factory
+		}
+		text = deposit_wtmnb_tech_goods
+	}
+	#发电
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_generator
+		}
+		modifier = {
+			job_technician_drone_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			has_designation = col_generator
+		}
+		modifier = {
+			job_technician_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+			has_designation = col_generator
+		}
+		modifier = {
+			job_fe_acolyte_generator_per_pop = 1
+		}
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_generator
+		}
+		text = deposit_wtmnb_tech_energy
+	}
+	#农业
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_farming
+		}
+		modifier = {
+			job_agri_drone_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			has_designation = col_farming
+		}
+		modifier = {
+			job_farmer_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+			has_designation = col_farming
+		}
+		modifier = {
+			job_fe_acolyte_farm_per_pop = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_farming
+		}
+		text = deposit_wtmnb_tech_food
+	}
+	#矿
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_mining
+		}
+		modifier = {
+			job_mining_drone_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			has_designation = col_mining
+		}
+		modifier = {
+			job_miner_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+			has_designation = col_mining
+		}
+		modifier = {
+			job_fe_acolyte_mine_per_pop = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			has_designation = col_mining
+		}
+		text = deposit_wtmnb_tech_mineral
+	}
+	################
 	potential = {
 		is_planet_class = pc_wtmnb_tech
 		NOT = {

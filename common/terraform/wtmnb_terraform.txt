@@ -1,6 +1,6 @@
 terraform_link = {
 	from = pc_molten
-	to = pc_gaia
+	to = pc_wtmnb_tech
 	energy = 10000
 	duration = 30
 	condition = {
@@ -26,7 +26,7 @@ terraform_link = {
 }
 terraform_link = {
 	from = pc_nuked
-	to = pc_gaia
+	to = pc_wtmnb_tech
 	energy = 10000
 	duration = 30
 	condition = {
@@ -53,7 +53,7 @@ terraform_link = {
 
 terraform_link = {
 	from = pc_gas_giant
-	to = pc_gaia
+	to = pc_wtmnb_tech
 	energy = 10000
 	duration = 30
 	condition = {
@@ -79,7 +79,7 @@ terraform_link = {
 }
 
 terraform_link = {
-	from = pc_gaia
+	from = pc_wtmnb_tech
 	to = pc_city
 	energy = 10000
 	duration = 30
@@ -95,14 +95,20 @@ terraform_link = {
 			}
 		}
 	}
+	
+	effect = {
+		FROM = {
+			clear_deposits = yes
+		}
+	}
 	potential = {
 		has_technology = tech_wtmnb_fortress
 	}
 }
 
 terraform_link = {
-	from = pc_gaia
-	to = pc_wtmnb_tech
+	from = pc_wtmnb_tech
+	to = pc_gaia
 	energy = 10000
 	duration = 30
 	condition = {
@@ -120,7 +126,6 @@ terraform_link = {
 	effect = {
 		FROM = {
 			reroll_deposits = yes
-			#add_deposit = deposit_wtmnb_tech
 		}
 	}
 	potential = {
@@ -130,7 +135,7 @@ terraform_link = {
 
 terraform_link = {
 	from = pc_city
-	to = pc_gaia
+	to = pc_wtmnb_tech
 	energy = 10000
 	duration = 30
 	condition = {
@@ -144,7 +149,6 @@ terraform_link = {
 				}
 			}
 		}
-		custom_tooltip = "you_wont_know_it_can_be_return"
 	}
 	potential = {
 		has_technology = tech_wtmnb_fortress
@@ -152,7 +156,7 @@ terraform_link = {
 }
 
 terraform_link = {
-	from = pc_gaia
+	from = pc_wtmnb_tech
 	to = pc_prostitution_city
 	energy = 10000
 	duration = 30
@@ -182,7 +186,7 @@ terraform_link = {
 }
 
 terraform_link = {
-	from = pc_gaia
+	from = pc_wtmnb_tech
 	to = pc_wsg_port
 	energy = 10000
 	duration = 30
@@ -251,7 +255,7 @@ terraform_link = {
 }
 
 terraform_link = {
-	from = pc_gaia
+	from = pc_wtmnb_tech
 	to = pc_shenhai
 	energy = 10000
 	duration = 30

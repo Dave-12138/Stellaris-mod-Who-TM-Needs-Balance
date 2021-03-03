@@ -106,6 +106,14 @@
 ###################
  deposit_wtmnb_tech:0 "$pc_wtmnb_tech$"
  deposit_wtmnb_tech_desc:0 "$pc_wtmnb_tech_desc$"
+ deposit_wtmnb_tech_research:0 "这颗$pc_wtmnb_tech$星球目前针对§Y研究§!方向特化"
+ deposit_wtmnb_tech_alloy:0 "这颗$pc_wtmnb_tech$星球目前针对§Y铸造§!方向特化"
+ deposit_wtmnb_tech_rare:0 "这颗$pc_wtmnb_tech$星球目前针对§Y精炼§!方向特化"
+ deposit_wtmnb_tech_normal:0 "这颗$pc_wtmnb_tech$星球目前未针对某一方向特化，因此其目前作为官僚办公地"
+ deposit_wtmnb_tech_goods:0 "这颗$pc_wtmnb_tech$星球目前针对§Y轻工业§!方向特化"
+ deposit_wtmnb_tech_energy:0 "这颗$pc_wtmnb_tech$星球目前针对§Y能源产出§!方向特化"
+ deposit_wtmnb_tech_food:0 "这颗$pc_wtmnb_tech$星球目前针对§Y农业§!方向特化"
+ deposit_wtmnb_tech_mineral:0 "这颗$pc_wtmnb_tech$星球目前针对§Y矿产§!方向特化"
 ##################
  bombardment_wtmnb_doom:0 "地表融解"
  bombardment_wtmnb_doom_name:0 "热能解离轨道轰炸"
@@ -139,7 +147,6 @@
  opinion_wtmnb_3:0 "口服电脑配件"
 ####################
  terraform_needs_4th_key:0 "需要§B$WTMNB_4TH_KEY$§!"
- you_wont_know_it_can_be_return:0 "打死你也想不到这玩意还能改回来"
  add_20_pop:0 "增加20个£pops£人口，物种随机"
  dont_mind_machine_can_sex:0 "不要问为什么不管是不是有机两性繁殖的物种都能性派对，这当然是量子力学"
  REMOVE_PLANET_EFFECT:0 "§Y[This.GetName]§!蒸发"
@@ -156,9 +163,9 @@
  decision_wtmnb_planet_extend_desc:0 "增加30最大区划数"
 ##################
  
- pc_wtmnb_tech:0 "行星级实验室"
- pc_wtmnb_tech_desc:0 "居住体验极差，哪有让人直接睡实验室的"
- mod_pc_wtmnb_tech_habitability:0 "$pc_wtmnb_tech$宜居性"
+ pc_wtmnb_tech:0 "普罗米修斯"
+ pc_wtmnb_tech_desc:0 "强大的人工智能将整个星球表面化为终端，能在短短几天之内改变星球特化方向"
+ mod_pc_wtmnb_tech_habitability:0 "$pc_wtmnb_tech$星球宜居性"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"
  lgate_tool:0 "$lgate$工具"

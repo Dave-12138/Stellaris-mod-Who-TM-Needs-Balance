@@ -35,7 +35,7 @@ pc_wtmnb_tech = {
 		max = @habitable_moon_max_size
 	}
 	colonizable = yes
-	district_set = city_world
+	district_set = standard
 	starting_planet = no
 	show_city = no
 }
