@@ -135,6 +135,35 @@ decision_wtmnb_molten = {
 	}
 }
 
+decision_wtmnb_prometheus = {
+	enactment_time = 1
+	icon = wtmnb_destructor
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+	}
+	potential = {
+		is_star = no
+		is_ringworld = no
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				has_component = WTMNB_4TH_KEY
+				has_component = EDEN_STAR_AURA
+			}
+		}
+	}
+	effect = {
+		change_pc = pc_wtmnb_prometheus
+		reroll_deposits = yes
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
 decision_wtmnb_planet_extend = {
 	enactment_time = 1
 	icon = planet_4th_modifier

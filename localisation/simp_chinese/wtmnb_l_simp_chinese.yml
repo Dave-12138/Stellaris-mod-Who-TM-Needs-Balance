@@ -161,6 +161,8 @@
  decision_wtmnb_molten_desc:0 "燃尽的大地（笑"
  decision_wtmnb_planet_extend:0 "可用区划拓展"
  decision_wtmnb_planet_extend_desc:0 "增加30最大区划数"
+ decision_wtmnb_prometheus:0 "普罗米修斯计划"
+ decision_wtmnb_prometheus_desc:0 "将行星改造为§Y$pc_wtmnb_prometheus$§!星球"
 ##################
  
  pc_wtmnb_prometheus:0 "普罗米修斯"
