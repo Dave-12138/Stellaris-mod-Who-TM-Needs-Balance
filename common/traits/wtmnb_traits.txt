@@ -34,6 +34,7 @@ trait_wtmnb_toy = {
 		army_damage_mult = 100
 		army_collateral_damage_mult = 100
 		species_empire_size_mult = -1
+		planet_crime_add = -1
 	}
 }
 
