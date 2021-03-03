@@ -147,6 +147,7 @@
  opinion_wtmnb_3:0 "口服电脑配件"
 ####################
  terraform_needs_4th_key:0 "需要§B$WTMNB_4TH_KEY$§!"
+ terraform_needs_4th_key_and_eden_star:0 "需要§B$WTMNB_4TH_KEY$§!和§B$EDEN_STAR_AURA$§!"
  add_20_pop:0 "增加20个£pops£人口，物种随机"
  dont_mind_machine_can_sex:0 "不要问为什么不管是不是有机两性繁殖的物种都能性派对，这当然是量子力学"
  REMOVE_PLANET_EFFECT:0 "§Y[This.GetName]§!蒸发"

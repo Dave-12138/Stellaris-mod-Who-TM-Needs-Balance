@@ -5,25 +5,40 @@ terraform_link = {
 	duration = 30
 	condition = {
 		custom_tooltip = {
-			fail_text = terraform_needs_4th_key
+			fail_text = terraform_needs_4th_key_and_eden_star
 			from = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
+						has_component = EDEN_STAR_AURA
 					}
 				}
 			}
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = EDEN_STAR_AURA
+					}
+				}
+			}
+		}
 	}
 	effect = {
 		from = {
 			reroll_deposits = yes
 		}
 	}
+	ai_weight = {
+		weight = 1000
+	}
 }
+
 terraform_link = {
 	from = pc_nuked
 	to = pc_wtmnb_prometheus
@@ -31,45 +46,29 @@ terraform_link = {
 	duration = 30
 	condition = {
 		custom_tooltip = {
-			fail_text = terraform_needs_4th_key
+			fail_text = terraform_needs_4th_key_and_eden_star
 			from = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
+						has_component = EDEN_STAR_AURA
 					}
 				}
 			}
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
-	}
-	effect = {
-		from = {
-			reroll_deposits = yes
-		}
-	}
-}
-
-terraform_link = {
-	from = pc_gas_giant
-	to = pc_wtmnb_prometheus
-	energy = 10000
-	duration = 30
-	condition = {
-		custom_tooltip = {
-			fail_text = terraform_needs_4th_key
+		OR = {
+			has_technology = tech_wtmnb_fortress
 			from = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
+						has_component = EDEN_STAR_AURA
 					}
 				}
 			}
 		}
-	}
-	potential = {
-		has_technology = tech_wtmnb_fortress
 	}
 	effect = {
 		from = {
@@ -95,14 +94,22 @@ terraform_link = {
 			}
 		}
 	}
-	
 	effect = {
 		FROM = {
 			clear_deposits = yes
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -129,7 +136,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -140,18 +156,29 @@ terraform_link = {
 	duration = 30
 	condition = {
 		custom_tooltip = {
-			fail_text = terraform_needs_4th_key
+			fail_text = terraform_needs_4th_key_and_eden_star
 			from = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
+						has_component = EDEN_STAR_AURA
 					}
 				}
 			}
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = EDEN_STAR_AURA
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -173,7 +200,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 		any_owned_pop = {
 			OR = {
 				has_trait = trait_DC_ethic_carnalism
@@ -203,7 +239,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 		has_authority = auth_warshipgirls
 	}
 }
@@ -226,7 +271,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 		has_authority = auth_warshipgirls
 	}
 }
@@ -249,7 +303,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 		has_authority = auth_shenhai
 	}
 }
@@ -272,7 +335,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 		has_authority = auth_shenhai
 	}
 }
@@ -295,7 +367,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 		has_authority = auth_warshipgirls
 	}
 }
@@ -318,7 +399,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -340,7 +430,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -362,7 +461,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -384,7 +492,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -406,7 +523,16 @@ terraform_link = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
 		has_authority = auth_shenhai
 	}
 }
