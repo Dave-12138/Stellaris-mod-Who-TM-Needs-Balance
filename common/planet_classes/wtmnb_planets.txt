@@ -1,5 +1,5 @@
-pc_wtmnb_tech = {
-	entity = "wtmnb_tech_planet"
+pc_wtmnb_prometheus = {
+	entity = "wtmnb_prometheus_planet"
 	entity_scale = @planet_standard_scale
 	modifier = {
 		planet_max_districts_add = -300

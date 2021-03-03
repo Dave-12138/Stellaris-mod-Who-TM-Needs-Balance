@@ -1,4 +1,4 @@
-deposit_wtmnb_tech = {
+deposit_wtmnb_prometheus = {
 	is_for_colonizeable = yes
 	icon = d_station_reactor
 	#科研
@@ -38,7 +38,7 @@ deposit_wtmnb_tech = {
 			exists = owner
 			has_designation = col_research
 		}
-		text = deposit_wtmnb_tech_research
+		text = deposit_wtmnb_prometheus_research
 	}
 	#合金
 	triggered_planet_modifier = {
@@ -77,7 +77,7 @@ deposit_wtmnb_tech = {
 			exists = owner
 			has_designation = col_foundry
 		}
-		text = deposit_wtmnb_tech_alloy
+		text = deposit_wtmnb_prometheus_alloy
 	}
 	#天然气/水晶/易爆微粒
 	triggered_planet_modifier = {
@@ -113,7 +113,7 @@ deposit_wtmnb_tech = {
 			exists = owner
 			has_designation = col_refinery
 		}
-		text = deposit_wtmnb_tech_rare
+		text = deposit_wtmnb_prometheus_rare
 	}
 	#默认（舰容行政
 	triggered_planet_modifier = {
@@ -188,7 +188,7 @@ deposit_wtmnb_tech = {
 				has_designation = col_research
 			}
 		}
-		text = deposit_wtmnb_tech_normal
+		text = deposit_wtmnb_prometheus_normal
 	}
 	#消费品
 	triggered_planet_modifier = {
@@ -220,7 +220,7 @@ deposit_wtmnb_tech = {
 			exists = owner
 			has_designation = col_factory
 		}
-		text = deposit_wtmnb_tech_goods
+		text = deposit_wtmnb_prometheus_goods
 	}
 	#发电
 	triggered_planet_modifier = {
@@ -266,7 +266,7 @@ deposit_wtmnb_tech = {
 			exists = owner
 			has_designation = col_generator
 		}
-		text = deposit_wtmnb_tech_energy
+		text = deposit_wtmnb_prometheus_energy
 	}
 	#农业
 	triggered_planet_modifier = {
@@ -311,7 +311,7 @@ deposit_wtmnb_tech = {
 			exists = owner
 			has_designation = col_farming
 		}
-		text = deposit_wtmnb_tech_food
+		text = deposit_wtmnb_prometheus_food
 	}
 	#矿
 	triggered_planet_modifier = {
@@ -356,13 +356,13 @@ deposit_wtmnb_tech = {
 			exists = owner
 			has_designation = col_mining
 		}
-		text = deposit_wtmnb_tech_mineral
+		text = deposit_wtmnb_prometheus_mineral
 	}
 	################
 	potential = {
-		is_planet_class = pc_wtmnb_tech
+		is_planet_class = pc_wtmnb_prometheus
 		NOT = {
-			has_deposit = deposit_wtmnb_tech
+			has_deposit = deposit_wtmnb_prometheus
 		}
 	}
 	drop_weight = {

@@ -1,4 +1,4 @@
-trait_pc_wtmnb_tech_preference = {
+trait_pc_wtmnb_prometheus_preference = {
 	randomized = no
 	sorting_priority = 30
 	opposites = {
@@ -20,8 +20,8 @@ trait_pc_wtmnb_tech_preference = {
 		SHENHAI
 		OTHER
 	}
-	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_tech_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_prometheus_preference.dds"
 	modifier = {
-		pc_wtmnb_tech_habitability = 3
+		pc_wtmnb_prometheus_habitability = 3
 	}
 }
