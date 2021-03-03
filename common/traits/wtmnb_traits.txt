@@ -10,13 +10,15 @@ trait_wtmnb_toy = {
 		BIOLOGICAL
 		LITHOID
 		MACHINE
-		OTHER
 		MONSTER
 		PARASITE
 		WHORE
+		INNOCENTSHOJO
+		TENTACLE
 		LOVEMACHINE
 		WARSHIPGIRL
 		SHENHAI
+		OTHER
 	}
 	icon = "gfx/interface/icons/traits/trait_wtmnb_toy.dds"
 	prerequisites = {

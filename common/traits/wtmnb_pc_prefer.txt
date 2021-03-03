@@ -13,6 +13,8 @@ trait_pc_wtmnb_tech_preference = {
 		MONSTER
 		PARASITE
 		WHORE
+		INNOCENTSHOJO
+		TENTACLE
 		LOVEMACHINE
 		WARSHIPGIRL
 		SHENHAI
