@@ -270,7 +270,7 @@ utility_component_template = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 100
 	}
 }
 
@@ -298,7 +298,7 @@ utility_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 100
 	}
 }
 
@@ -322,6 +322,6 @@ utility_component_template = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 100
 	}
 }

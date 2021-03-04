@@ -2,6 +2,12 @@ decision_wtmnb_create_pop = {
 	owned_planets_only = yes
 	enactment_time = 270
 	icon = wtmnb_welt3
+	resources = {
+		category = decisions
+		cost = {
+			energy = 100
+		}
+	}
 	potential = {
 		any_fleet_in_orbit = {
 			any_owned_ship = {
@@ -137,12 +143,12 @@ decision_wtmnb_molten = {
 
 decision_wtmnb_prometheus = {
 	enactment_time = 1
-	icon = wtmnb_destructor
+	icon = wtmnb_4th_key
 	resources = {
 		category = decisions
 		cost = {
-			alloys = 15000
-			energy = 15000
+			alloys = 8000
+			energy = 8000
 		}
 	}
 	potential = {
@@ -163,7 +169,7 @@ decision_wtmnb_prometheus = {
 		reroll_deposits = yes
 	}
 	ai_weight = {
-		weight = 0
+		weight = 1000
 	}
 }
 
@@ -185,6 +191,6 @@ decision_wtmnb_planet_extend = {
 		}
 	}
 	ai_weight = {
-		weight = 80
+		weight = 0
 	}
 }
