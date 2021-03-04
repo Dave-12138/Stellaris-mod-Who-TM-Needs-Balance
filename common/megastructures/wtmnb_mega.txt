@@ -49,14 +49,6 @@ dyson_wtmnb = {
 			}
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_black_hole_neutron_star_pulsar"
-			NOT = {
-				is_star_class = sc_black_hole
-				is_star_class = sc_neutron_star
-				is_star_class = sc_pulsar
-			}
-		}
-		custom_tooltip = {
 			fail_text = requires_no_existing_dyson_sphere
 			from = {
 				NOT = {
@@ -117,7 +109,7 @@ dyson_wtmnb = {
 					dismantle = yes
 				}
 			}
-			set_planet_size = 40
+			set_planet_size = 35
 		}
 	}
 }

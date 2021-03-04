@@ -154,6 +154,9 @@ decision_wtmnb_prometheus = {
 				has_component = EDEN_STAR_AURA
 			}
 		}
+		NOT = {
+			is_planet_class = pc_wtmnb_prometheus
+		}
 	}
 	effect = {
 		change_pc = pc_wtmnb_prometheus
