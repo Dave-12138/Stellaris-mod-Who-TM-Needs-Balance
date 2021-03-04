@@ -1,5 +1,4 @@
 namespace = wtmnb
-
 planet_event = {
 	id = wtmnb.0
 	pre_triggers = {
@@ -23,8 +22,9 @@ planet_event = {
 		}
 	}
 	immediate = {
-		save_event_target_as = doomed_planet_owner
-		
+		owner = {
+			save_event_target_as = doomed_planet_owner
+		}
 		#remove_all_buildings = yes
 		random_owned_pop = {
 			kill_pop = yes
@@ -33,7 +33,9 @@ planet_event = {
 			remove_army = yes
 		}
 		if = {
-			limit = { is_colony = no }
+			limit = {
+				is_colony = no
+			}
 			event_target:doomed_planet_owner = {
 				add_static_war_exhaustion = {
 					attacker = from
@@ -94,23 +96,27 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	is_triggered_only = yes
 	id = wtmnb.3
 	title = let_we_see_whats_in_lgate
 	desc = {
 		text = graygoo.10.name
-		trigger = {	has_global_flag = gray_goo_crisis_set }
+		trigger = {
+			has_global_flag = gray_goo_crisis_set
+		}
 	}
 	desc = {
 		text = graygoo.120_title
-		trigger = {	has_global_flag = gray_goo_empire_set }
+		trigger = {
+			has_global_flag = gray_goo_empire_set
+		}
 	}
 	desc = {
 		text = nanite_space_dragon_baby
-		trigger = {	has_global_flag = dragon_season	}
+		trigger = {
+			has_global_flag = dragon_season
+		}
 	}
 	desc = {
 		text = graygoo.500.title
@@ -340,4 +346,3 @@ country_event = {
 		}
 	}
 }
-
