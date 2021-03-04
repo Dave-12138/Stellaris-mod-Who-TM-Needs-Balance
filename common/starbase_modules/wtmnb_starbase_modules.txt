@@ -8,6 +8,7 @@ wtmnb_super_trade_hub = {
 		owner = {
 			has_technology = tech_wtmnb_fortress
 		}
+		is_gestalt = no
 	}
 	resources = {
 		category = starbase_modules

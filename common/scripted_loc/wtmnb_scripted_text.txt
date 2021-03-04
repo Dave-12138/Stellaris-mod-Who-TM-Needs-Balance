@@ -1,0 +1,59 @@
+defined_text = {
+	name = GetPrometheusDesc
+	text = {
+		trigger = {
+			has_designation = col_research
+		}
+		localization_key = pc_wtmnb_prometheus_research
+	}
+	text = {
+		trigger = {
+			has_designation = col_foundry
+		}
+		localization_key = pc_wtmnb_prometheus_alloy
+	}
+	text = {
+		trigger = {
+			has_designation = col_refinery
+		}
+		localization_key = pc_wtmnb_prometheus_rare
+	}
+	text = {
+		trigger = {
+			NOR = {
+				has_designation = col_refinery
+				has_designation = col_foundry
+				has_designation = col_factory
+				has_designation = col_generator
+				has_designation = col_farming
+				has_designation = col_mining
+				has_designation = col_research
+			}
+		}
+		localization_key = pc_wtmnb_prometheus_normal
+	}
+	text = {
+		trigger = {
+			has_designation = col_factory
+		}
+		localization_key = pc_wtmnb_prometheus_goods
+	}
+	text = {
+		trigger = {
+			has_designation = col_generator
+		}
+		localization_key = pc_wtmnb_prometheus_energy
+	}
+	text = {
+		trigger = {
+			has_designation = col_farming
+		}
+		localization_key = pc_wtmnb_prometheus_food
+	}
+	text = {
+		trigger = {
+			has_designation = col_mining
+		}
+		localization_key = pc_wtmnb_prometheus_mineral
+	}
+}
