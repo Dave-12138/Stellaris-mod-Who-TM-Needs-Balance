@@ -28,6 +28,7 @@ defined_text = {
 				has_designation = col_farming
 				has_designation = col_mining
 				has_designation = col_research
+				has_designation = col_fortress
 			}
 		}
 		localization_key = pc_wtmnb_prometheus_normal
@@ -37,6 +38,12 @@ defined_text = {
 			has_designation = col_factory
 		}
 		localization_key = pc_wtmnb_prometheus_goods
+	}
+	text = {
+		trigger = {
+			has_designation = col_fortress
+		}
+		localization_key = pc_wtmnb_prometheus_fortress
 	}
 	text = {
 		trigger = {

@@ -75,9 +75,9 @@ deposit_wtmnb_prometheus = {
 			has_designation = col_refinery
 		}
 		modifier = {
-			job_gas_refiner_per_pop = 0.34
-			job_chemist_per_pop = 0.34
-			job_translucer_per_pop = 0.34
+			job_gas_refiner_per_pop = 0.3
+			job_chemist_per_pop = 0.3
+			job_translucer_per_pop = 0.3
 		}
 	}
 	triggered_planet_modifier = {
@@ -89,12 +89,12 @@ deposit_wtmnb_prometheus = {
 			has_designation = col_refinery
 		}
 		modifier = {
-			job_gas_refiner_drone_per_pop = 0.34
-			job_chemist_drone_per_pop = 0.34
-			job_translucer_drone_per_pop = 0.34
+			job_gas_refiner_drone_per_pop = 0.3
+			job_chemist_drone_per_pop = 0.3
+			job_translucer_drone_per_pop = 0.3
 		}
 	}
-	#默认（舰容行政
+	#默认（行政
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -109,11 +109,11 @@ deposit_wtmnb_prometheus = {
 				has_designation = col_farming
 				has_designation = col_mining
 				has_designation = col_research
+				has_designation = col_fortress
 			}
 		}
 		modifier = {
-			job_soldier_per_pop = 0.5
-			job_bureaucrat_per_pop = 0.5
+			job_bureaucrat_per_pop = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -130,10 +130,10 @@ deposit_wtmnb_prometheus = {
 				has_designation = col_farming
 				has_designation = col_mining
 				has_designation = col_research
+				has_designation = col_fortress
 			}
 		}
-		job_warrior_drone_per_pop = 0.5
-		job_synapse_drone_per_pop = 0.5
+		job_synapse_drone_per_pop = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -149,10 +149,10 @@ deposit_wtmnb_prometheus = {
 				has_designation = col_farming
 				has_designation = col_mining
 				has_designation = col_research
+				has_designation = col_fortress
 			}
 		}
-		job_warrior_drone_per_pop = 0.5
-		job_coordinator_per_pop = 0.5
+		job_coordinator_per_pop = 1
 	}
 	#消费品
 	triggered_planet_modifier = {
@@ -177,6 +177,31 @@ deposit_wtmnb_prometheus = {
 		}
 		modifier = {
 			job_artisan_drone_per_pop = 1
+		}
+	}
+	#舰容
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_designation = col_fortress
+		}
+		modifier = {
+			job_soldier_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_fortress
+		}
+		modifier = {
+			job_warrior_drone_per_pop = 1
 		}
 	}
 	#发电
@@ -303,4 +328,28 @@ deposit_wtmnb_prometheus = {
 	drop_weight = {
 		weight = 1000
 	}
+}
+
+deposit_wtmnb_prometheus_rubbish = {
+	is_for_colonizeable = yes
+	icon = d_station_reactor
+	category = deposit_cat_blockers
+	potential = {
+		is_planet_class = pc_wtmnb_prometheus
+		has_deposit = deposit_wtmnb_prometheus
+	}
+	drop_weight = {
+		weight = 500
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 500
+			alloys = -100
+		}
+	}
+	can_be_cleared = {
+		always = yes
+	}
+	time = 30
 }

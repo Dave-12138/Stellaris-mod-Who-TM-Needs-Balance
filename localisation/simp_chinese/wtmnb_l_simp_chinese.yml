@@ -38,7 +38,7 @@
  leader_trait_wtmnb_toy_modifier:0 "该领袖可以轻松胜任§Y$ruler$§!、§Y$general$§!、§Y$governor$§!、§Y$admiral$§!、§Y$scientist$§!"
  leader_trait_wtmnb_toy_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_toy$。"
  trait_pc_wtmnb_prometheus_preference:0 "$pc_wtmnb_prometheus$偏好"
- trait_pc_wtmnb_prometheus_preference_desc:0 "$trait_pc_arctic_preference_desc$\n但是这么喜欢实验室难道不是肝帝？"
+ trait_pc_wtmnb_prometheus_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 #####################
  WTMNB_PLANET_KILLER_SHIELDER:0 "$PLANET_KILLER_SHIELDER$ Plus Pro"
  WTMNB_PLANET_KILLER_SHIELDER_DESC:0 "从外部看，似乎多了一层屏障。"
@@ -106,6 +106,8 @@
 ###################
  deposit_wtmnb_prometheus:0 "$pc_wtmnb_prometheus$"
  deposit_wtmnb_prometheus_desc:0 "$pc_wtmnb_prometheus_desc_normal$"
+ deposit_wtmnb_prometheus_rubbish:0 "边角余料"
+ deposit_wtmnb_prometheus_rubbish_desc:0 "好像是星球建设留下的边角料，扔进锻炉应该能回收利用\n不过毕竟堆放的地方不起眼，不管也行"
 
 ##################
  bombardment_wtmnb_doom:0 "地表融解"
@@ -170,6 +172,8 @@
  pc_wtmnb_prometheus_energy:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y能源产出§!方向特化"
  pc_wtmnb_prometheus_food:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y农业§!方向特化"
  pc_wtmnb_prometheus_mineral:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y矿产§!方向特化"
+ pc_wtmnb_prometheus_fortress:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y堡垒§!方向特化"
+
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"
