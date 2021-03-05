@@ -97,4 +97,10 @@ defined_text = {
 		}
 		localization_key = pc_wtmnb_prometheus_sex
 	}
+	text = {
+		trigger = {
+			has_designation = col_faith
+		}
+		localization_key = pc_wtmnb_prometheus_sage
+	}
 }

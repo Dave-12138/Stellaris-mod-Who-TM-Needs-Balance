@@ -202,6 +202,31 @@ deposit_wtmnb_prometheus = {
 			job_ai_sex_master_drone_per_pop = 1
 		}
 	}
+	#信仰
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_designation = col_faith
+		}
+		modifier = {
+			job_ai_sage_master_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_faith
+		}
+		modifier = {
+			job_ai_sex_sage_drone_per_pop = 1
+		}
+	}
 	#发电
 	triggered_planet_modifier = {
 		potential = {

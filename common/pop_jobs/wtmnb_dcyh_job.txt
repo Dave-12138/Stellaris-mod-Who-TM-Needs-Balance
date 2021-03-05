@@ -25,6 +25,7 @@ ai_sex_master = {
 		}
 	}
 }
+
 ai_sex_master_drone = {
 	is_capped_by_modifier = yes
 	icon = full_time_sex_toy
@@ -49,6 +50,39 @@ ai_sex_master_drone = {
 				}
 			}
 			sr_ten = 8
+		}
+	}
+}
+ai_sage_master = {
+	is_capped_by_modifier = yes
+	icon = job_holy_singer
+	category = specialist
+	weight = {
+		weight = 15
+	}
+	resources = {
+		category = planet_holyclergy
+		produces = {
+			holylight_crystal = 4
+			sr_christian = 2
+			sr_beauty = 1
+		}
+	}
+}
+
+ai_sage_master_drone = {
+	is_capped_by_modifier = yes
+	icon = job_holy_singer
+	category = complex_drone
+	weight = {
+		weight = 15
+	}
+	resources = {
+		category = planet_holyclergy
+		produces = {
+			holylight_crystal = 4
+			sr_christian = 2
+			sr_beauty = 1
 		}
 	}
 }

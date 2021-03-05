@@ -152,6 +152,15 @@
  job_ai_sex_master_drone_plural:0 "$job_ai_sex_master$"
  job_ai_sex_master_drone_desc:0 "$job_ai_sex_master_desc$"
  mod_job_ai_sex_master_drone_add:0 "$job_ai_sex_master$"
+
+ job_ai_sage_master:0 "朝圣者"
+ job_ai_sage_master_plural:0 "$job_ai_sage_master$"
+ job_ai_sage_master_desc:0 "斋戒三日，沐浴却衣，受引及诣而不可妄自行步；如是至贡朝礼毕，方知开明。"
+ mod_job_ai_sage_master_add:0 "$job_ai_sage_master$"
+ job_ai_sage_master_drone:0 "$job_ai_sage_master$"
+ job_ai_sage_master_drone_plural:0 "$job_ai_sage_master$"
+ job_ai_sage_master_drone_desc:0 "$job_ai_sage_master_desc$"
+ mod_job_ai_sage_master_drone_add:0 "$job_ai_sage_master$"
 ####################
  terraform_needs_4th_key:0 "需要§B$WTMNB_4TH_KEY$§!"
  terraform_needs_4th_key_and_eden_star:0 "需要§B$WTMNB_4TH_KEY$§!和§B$EDEN_STAR_AURA$§!"
@@ -189,7 +198,7 @@
  pc_wtmnb_prometheus_pantsu:0 "这颗$pc_wtmnb_prometheus$星球目前填满了胖次"
  pc_wtmnb_prometheus_pantsu2:0 "这颗$pc_wtmnb_prometheus$星球上的居民几乎全员真空甚至全裸，却都在头上套了从别人屁股上扒下来的胖次"
  pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球正在射精"
-
+ pc_wtmnb_prometheus_sage:0 "这颗$pc_wtmnb_prometheus$星球是圣器"
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"
