@@ -20,15 +20,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOR = {
-				has_designation = col_refinery
-				has_designation = col_foundry
-				has_designation = col_factory
-				has_designation = col_generator
-				has_designation = col_farming
-				has_designation = col_mining
-				has_designation = col_research
-				has_designation = col_fortress
+			OR = {
+				is_planet_specialized = yes
+				has_owner = no
 			}
 		}
 		localization_key = pc_wtmnb_prometheus_normal
@@ -59,8 +53,48 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_designation = col_wg_pantsu
+			any_owned_pop = {
+				NOR = {
+					has_trait = trait_DC_ethic_carnalism
+					has_trait = trait_DC_ethic_asceticism
+					has_trait = trait_DC_ethic_parasite_mind
+					has_trait = trait_DC_ethic_lust_skynet
+				}
+			}
+		}
+		localization_key = pc_wtmnb_prometheus_pantsu
+	}
+	text = {
+		trigger = {
+			has_designation = col_wg_pantsu
+			any_owned_pop = {
+				OR = {
+					has_trait = trait_DC_ethic_carnalism
+					has_trait = trait_DC_ethic_asceticism
+					has_trait = trait_DC_ethic_parasite_mind
+					has_trait = trait_DC_ethic_lust_skynet
+				}
+			}
+		}
+		localization_key = pc_wtmnb_prometheus_pantsu2
+	}
+	text = {
+		trigger = {
+			has_designation = col_sh_srse
+		}
+		localization_key = pc_wtmnb_prometheus_srse
+	}
+	text = {
+		trigger = {
 			has_designation = col_mining
 		}
 		localization_key = pc_wtmnb_prometheus_mineral
+	}
+	text = {
+		trigger = {
+			has_designation = col_prostitution
+		}
+		localization_key = pc_wtmnb_prometheus_sex
 	}
 }

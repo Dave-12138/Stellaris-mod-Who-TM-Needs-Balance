@@ -31,6 +31,8 @@
  WTMNB_DESTRUCTOR_DESC:0 "§R破坏之键§!"
  WTMNB_4TH_KEY:0 "第四神之键"
  WTMNB_4TH_KEY_DESC:0 "操控气候"
+ WTMNB_GRAND_KEY:0 "神之键"
+ WTMNB_GRAND_KEY_DESC:0 "引导使用虚数权能的工具"
 #################
  trait_wtmnb_toy:0 "圣痕"
  trait_wtmnb_toy_desc:0 "这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_toy$。"
@@ -140,6 +142,16 @@
  opinion_wtmnb_1:0 "强制发情"
  opinion_wtmnb_2:0 "口服电脑配件"
  opinion_wtmnb_3:0 "口服电脑配件"
+###############
+
+ job_ai_sex_master:0 "AI性爱终端"
+ job_ai_sex_master_plural:0 "$job_ai_sex_master$"
+ job_ai_sex_master_desc:0 "只要将身心交给AI，随着一次又一次高潮到昏迷再被内射的涨感撑醒，资源就会自己变多的神奇职业。\n§S这并非遵从欲望，而是被更庞大存在的欲望所支配、吞噬。§!"
+ mod_job_ai_sex_master_add:0 "$job_ai_sex_master$"
+ job_ai_sex_master_drone:0 "$job_ai_sex_master$"
+ job_ai_sex_master_drone_plural:0 "$job_ai_sex_master$"
+ job_ai_sex_master_drone_desc:0 "$job_ai_sex_master_desc$"
+ mod_job_ai_sex_master_drone_add:0 "$job_ai_sex_master$"
 ####################
  terraform_needs_4th_key:0 "需要§B$WTMNB_4TH_KEY$§!"
  terraform_needs_4th_key_and_eden_star:0 "需要§B$WTMNB_4TH_KEY$§!和§B$EDEN_STAR_AURA$§!"
@@ -173,6 +185,10 @@
  pc_wtmnb_prometheus_food:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y农业§!方向特化"
  pc_wtmnb_prometheus_mineral:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y矿产§!方向特化"
  pc_wtmnb_prometheus_fortress:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y堡垒§!方向特化"
+ pc_wtmnb_prometheus_srse:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y深海能源生产§!方向特化"
+ pc_wtmnb_prometheus_pantsu:0 "这颗$pc_wtmnb_prometheus$星球目前填满了胖次"
+ pc_wtmnb_prometheus_pantsu2:0 "这颗$pc_wtmnb_prometheus$星球上的居民几乎全员真空甚至全裸，却都在头上套了从别人屁股上扒下来的胖次"
+ pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球正在射精"
 
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
 ##

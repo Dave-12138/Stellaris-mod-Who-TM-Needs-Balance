@@ -101,16 +101,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_gestalt = no
 			}
-			NOR = {
-				has_designation = col_refinery
-				has_designation = col_foundry
-				has_designation = col_factory
-				has_designation = col_generator
-				has_designation = col_farming
-				has_designation = col_mining
-				has_designation = col_research
-				has_designation = col_fortress
-			}
+			is_planet_specialized = yes
 		}
 		modifier = {
 			job_bureaucrat_per_pop = 1
@@ -122,16 +113,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_hive_empire = yes
 			}
-			NOR = {
-				has_designation = col_refinery
-				has_designation = col_foundry
-				has_designation = col_factory
-				has_designation = col_generator
-				has_designation = col_farming
-				has_designation = col_mining
-				has_designation = col_research
-				has_designation = col_fortress
-			}
+			is_planet_specialized = yes
 		}
 		job_synapse_drone_per_pop = 1
 	}
@@ -141,16 +123,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_machine_empire = yes
 			}
-			NOR = {
-				has_designation = col_refinery
-				has_designation = col_foundry
-				has_designation = col_factory
-				has_designation = col_generator
-				has_designation = col_farming
-				has_designation = col_mining
-				has_designation = col_research
-				has_designation = col_fortress
-			}
+			is_planet_specialized = yes
 		}
 		job_coordinator_per_pop = 1
 	}
@@ -202,6 +175,31 @@ deposit_wtmnb_prometheus = {
 		}
 		modifier = {
 			job_warrior_drone_per_pop = 1
+		}
+	}
+	#欲都
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_designation = col_prostitution
+		}
+		modifier = {
+			job_ai_sex_master_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_designation = col_prostitution
+		}
+		modifier = {
+			job_ai_sex_master_drone_per_pop = 1
 		}
 	}
 	#发电
@@ -278,6 +276,37 @@ deposit_wtmnb_prometheus = {
 		}
 		modifier = {
 			job_fe_acolyte_farm_per_pop = 1
+		}
+	}
+	#胖次
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_designation = col_wg_pantsu
+		}
+		modifier = {
+			job_wsg_shop_pantsu_collector_per_pop = 1
+		}
+	}
+	#深海能源核心
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_designation = col_sh_srse
+			has_authority = auth_warshipgirls
+		}
+		modifier = {
+			job_wsg_job_wsg_senergy_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_designation = col_sh_srse
+			has_authority = auth_shenhai
+		}
+		modifier = {
+			job_wsg_job_sh_senergy_per_pop = 1
 		}
 	}
 	#矿

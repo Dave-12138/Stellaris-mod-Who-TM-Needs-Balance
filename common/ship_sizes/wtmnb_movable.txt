@@ -49,7 +49,10 @@ wtmnb_fortress = {
 	combat_disengage_chance = 1
 	required_component_set = "ftl_components"
 	required_component_set = "ship_aura_components"
-	required_component_set = "ship_aura_components"
+	required_component_set = "WTMNB_GRAND_KEY"
+	required_component_set = "WTMNB_GRAND_KEY"
+	required_component_set = "WTMNB_GRAND_KEY"
+	required_component_set = "WTMNB_GRAND_KEY"
 	possible_starbase = {
 		has_starbase_size >= starbase_outpost
 	}

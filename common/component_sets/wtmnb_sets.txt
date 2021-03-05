@@ -4,11 +4,6 @@ component_set = {
 	icon_frame = 1
 }
 
-# component_set = {
-# 	key = "WTMNB_EDEN_STAR"
-# 	icon = "GFX_ship_part_eden_star"
-# 	icon_frame = 1
-# }
 component_set = {
 	key = "WTMNB_PLANET_KILLER_SHIELDER"
 	icon = "GFX_ship_part_global_pacifier"
@@ -16,18 +11,8 @@ component_set = {
 }
 
 component_set = {
-	key = "WTMNB_STIGMA_TERMINAL"
-	icon = GFX_ship_part_blackhole_aura
-	icon_frame = 1
-}
-
-component_set = {
-	key = "WTMNB_DESTRUCTOR"
-	icon = GFX_ship_part_wtmnb_destructor
-	icon_frame = 1
-}
-component_set = {
-	key = "WTMNB_4TH_KEY"
-	icon = GFX_ship_part_4th_key
+	key = "WTMNB_GRAND_KEY"
+	required_component_set = yes
+	icon = "GFX_ship_part_sensor"
 	icon_frame = 1
 }

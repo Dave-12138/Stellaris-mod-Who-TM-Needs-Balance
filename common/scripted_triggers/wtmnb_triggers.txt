@@ -1,0 +1,14 @@
+is_planet_specialized = {
+	NOR = {
+		has_designation = col_refinery
+		has_designation = col_foundry
+		has_designation = col_factory
+		has_designation = col_generator
+		has_designation = col_farming
+		has_designation = col_mining
+		has_designation = col_research
+		has_designation = col_fortress
+		has_designation = col_wg_pantsu
+		has_designation = col_prostitution
+	}
+}

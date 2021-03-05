@@ -203,7 +203,7 @@ utility_component_template = {
 	size_restriction = {
 		wtmnb_fortress
 	}
-	component_set = "ship_aura_components"
+	component_set = "WTMNB_GRAND_KEY"
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
@@ -259,7 +259,7 @@ utility_component_template = {
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
-	component_set = "WTMNB_STIGMA_TERMINAL"
+	component_set = "WTMNB_GRAND_KEY"
 	size_restriction = {
 		wtmnb_fortress
 	}
@@ -271,10 +271,6 @@ utility_component_template = {
 	}
 	ai_weight = {
 		weight = 100
-		modifier = {
-			factor = 0
-			has_component = WTMNB_STIGMA_TERMINAL
-		}
 	}
 }
 
@@ -287,7 +283,7 @@ utility_component_template = {
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
-	component_set = "WTMNB_DESTRUCTOR"
+	component_set = "WTMNB_GRAND_KEY"
 	size_restriction = {
 		wtmnb_fortress
 	}
@@ -303,10 +299,6 @@ utility_component_template = {
 	
 	ai_weight = {
 		weight = 100
-		modifier = {
-			factor = 0
-			has_component = WTMNB_DESTRUCTOR
-		}
 	}
 }
 
@@ -319,7 +311,7 @@ utility_component_template = {
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
-	component_set = "WTMNB_4TH_KEY"
+	component_set = "WTMNB_GRAND_KEY"
 	size_restriction = {
 		wtmnb_fortress
 	}
@@ -331,9 +323,5 @@ utility_component_template = {
 	}
 	ai_weight = {
 		weight = 100
-		modifier = {
-			factor = 0
-			has_component = WTMNB_4TH_KEY
-		}
 	}
 }

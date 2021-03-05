@@ -1,0 +1,54 @@
+ai_sex_master = {
+	is_capped_by_modifier = yes
+	icon = full_time_sex_toy
+	category = specialist
+	weight = {
+		weight = 15
+	}
+	resources = {
+		category = planet_erotic
+		produces = {
+			love_juice = 8
+			excellent_slave = 2
+			sr_beauty = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_ten
+						amount > 1
+					}
+				}
+			}
+			sr_ten = 8
+		}
+	}
+}
+ai_sex_master_drone = {
+	is_capped_by_modifier = yes
+	icon = full_time_sex_toy
+	category = complex_drone
+	weight = {
+		weight = 15
+	}
+	resources = {
+		category = planet_erotic
+		produces = {
+			love_juice = 8
+			excellent_slave = 2
+			sr_beauty = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_ten
+						amount > 1
+					}
+				}
+			}
+			sr_ten = 8
+		}
+	}
+}
