@@ -101,7 +101,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_gestalt = no
 			}
-			is_planet_specialized = yes
+			is_planet_specialized = no
 		}
 		modifier = {
 			job_bureaucrat_per_pop = 1
@@ -113,7 +113,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_hive_empire = yes
 			}
-			is_planet_specialized = yes
+			is_planet_specialized = no
 		}
 		job_synapse_drone_per_pop = 1
 	}
@@ -123,7 +123,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_machine_empire = yes
 			}
-			is_planet_specialized = yes
+			is_planet_specialized = no
 		}
 		job_coordinator_per_pop = 1
 	}

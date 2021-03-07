@@ -1,5 +1,5 @@
 is_planet_specialized = {
-	NOR = {
+	OR = {
 		has_designation = col_refinery
 		has_designation = col_foundry
 		has_designation = col_factory

@@ -55,7 +55,7 @@ ai_sex_master_drone = {
 }
 ai_sage_master = {
 	is_capped_by_modifier = yes
-	icon = job_holy_singer
+	icon = holy_singer
 	category = specialist
 	weight = {
 		weight = 15
@@ -72,7 +72,7 @@ ai_sage_master = {
 
 ai_sage_master_drone = {
 	is_capped_by_modifier = yes
-	icon = job_holy_singer
+	icon = holy_singer
 	category = complex_drone
 	weight = {
 		weight = 15
