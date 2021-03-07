@@ -212,6 +212,7 @@ planet_event = {
 						change_scoped_species = yes
 						effect = {
 							save_event_target_as = new_wtm_species
+							set_species_homeworld = root
 						}
 					}
 					# }
@@ -261,6 +262,9 @@ planet_event = {
 						add_traits_at_start_of_list = yes
 						change_scoped_species = yes
 						ideal_planet_class = root
+						effect = {
+							set_species_homeworld = root
+						}
 					}
 				}
 			}
