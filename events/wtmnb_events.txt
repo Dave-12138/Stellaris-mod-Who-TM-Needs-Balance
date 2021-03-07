@@ -260,6 +260,7 @@ planet_event = {
 						add_trait = trait_wtmnb_toy
 						add_traits_at_start_of_list = yes
 						change_scoped_species = yes
+						ideal_planet_class = root
 					}
 				}
 			}
