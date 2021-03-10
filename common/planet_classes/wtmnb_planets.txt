@@ -5,8 +5,8 @@ pc_wtmnb_prometheus = {
 		planet_max_districts_add = -300
 		planet_housing_add = 2
 		planet_jobs_produces_mult = 1
-		pop_housing_usage_mult = -1
 		pop_environment_tolerance = -0.2
+		
 	}
 	picture = pc_ai
 	tile_set = pc_ai

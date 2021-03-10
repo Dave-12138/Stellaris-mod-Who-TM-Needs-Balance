@@ -188,6 +188,7 @@ deposit_wtmnb_prometheus = {
 		}
 		modifier = {
 			job_ai_sex_master_per_pop = 1
+			custom_tooltip = "job_ai_sex_master_effect_desc"
 		}
 	}
 	triggered_planet_modifier = {
@@ -200,6 +201,7 @@ deposit_wtmnb_prometheus = {
 		}
 		modifier = {
 			job_ai_sex_master_drone_per_pop = 1
+			custom_tooltip = "job_ai_sex_master_drone_effect_desc"
 		}
 	}
 	#信仰

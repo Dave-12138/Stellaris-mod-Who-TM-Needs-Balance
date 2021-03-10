@@ -26,13 +26,12 @@ trait_wtmnb_toy = {
 		"tech_wtmnb_fortress"
 	}
 	modifier = {
-		pop_happiness = 10
+		pop_happiness = 1
 		planet_jobs_produces_mult = 1.5
 		pop_demotion_time_mult = -1
-		planet_pops_upkeep_mult = -1.5
 		pop_amenities_usage_mult = -1.5
 		planet_amenities_add = 1
-		army_damage_mult = 100
+		army_damage_mult = 1000
 		army_collateral_damage_mult = 100
 		species_empire_size_mult = -1
 		planet_crime_add = -1

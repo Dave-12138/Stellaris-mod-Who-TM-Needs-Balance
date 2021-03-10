@@ -24,5 +24,6 @@ trait_pc_wtmnb_prometheus_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_prometheus_preference.dds"
 	modifier = {
 		pc_wtmnb_prometheus_habitability = 3
+		pop_housing_usage_mult = -10
 	}
 }

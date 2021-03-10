@@ -256,14 +256,22 @@ planet_event = {
 			}
 			else = {
 				every_owned_pop = {
-					modify_species = {
-						species = this
-						add_trait = trait_wtmnb_toy
-						add_traits_at_start_of_list = yes
-						change_scoped_species = yes
-						ideal_planet_class = root
-						effect = {
+					limit = {
+						NAND = {
+							has_trait = trait_wtmnb_toy
+							ideal_planet_class = root
+						}
+					}
+					root = {
+						modify_species = {
+							species = prev
+							add_trait = trait_wtmnb_toy
+							add_traits_at_start_of_list = yes
+							change_scoped_species = yes
+							ideal_planet_class = root
+							#effect = {
 							set_species_homeworld = root
+							#}
 						}
 					}
 				}

@@ -1,0 +1,52 @@
+namespace = wtmnb_dc
+planet_event = {
+	id = wtmnb_dc.1
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	hide_window = yes
+	immediate = {
+		random_owned_pop = {
+			limit = {
+				OR = {
+					has_job = ai_sex_master
+					has_job = ai_sex_master_drone
+				}
+			}
+			modify_species = {
+				change_scoped_species = yes
+				add_trait = trait_fanatic_seminal_addiction
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb_dc.2
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_pop = {
+			OR = {
+				has_job = ai_sex_master
+				has_job = ai_sex_master_drone
+			}
+		}
+	}
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_pop = {
+					OR = {
+						has_job = ai_sex_master
+						has_job = ai_sex_master_drone
+					}
+				}
+			}
+			planet_event = {
+				id = wtmnb_dc.1
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+trait_fanatic_seminal_addiction = {
+	icon = "gfx/interface/icons/traits/trait_addiction.dds"
+	modifier = {
+		pop_environment_tolerance = 200
+		pop_habitability = -100
+		planet_pops_upkeep_mult = -150
+		pop_happiness = 100
+	}
+	allowed_archetypes = {
+		MONSTER
+		PARASITE
+		WHORE
+		INNOCENTSHOJO
+		TENTACLE
+		LOVEMACHINE
+		WARSHIPGIRL
+		SHENHAI
+		TOUHOUGIRLS
+		OTHER
+	}
+}
