@@ -42,8 +42,8 @@
  trait_pc_wtmnb_prometheus_preference:0 "$pc_wtmnb_prometheus$偏好"
  trait_pc_wtmnb_prometheus_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 ##################
- trait_fanatic_seminal_addiction:0 "极端精液成瘾"
- trait_fanatic_seminal_addiction_desc:0 "物种完全靠饮用精液维生"
+ trait_fanatic_seminal_addiction:0 "沉醉"
+ trait_fanatic_seminal_addiction_desc:0 "这个物种无法适应另外的任何一种生活方式了"
 #####################
  WTMNB_PLANET_KILLER_SHIELDER:0 "$PLANET_KILLER_SHIELDER$ Plus Pro"
  WTMNB_PLANET_KILLER_SHIELDER_DESC:0 "从外部看，似乎多了一层屏障。"
