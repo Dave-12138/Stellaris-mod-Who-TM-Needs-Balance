@@ -16,7 +16,7 @@ opinion_wtmnb_1 = {
 #2和3是一样的，叠加确保足够涩（？
 opinion_wtmnb_2 = {
 	trigger = {
-		has_edict = wtmnb_edict_8
+		has_edict = wtmnb_edict_5
 	}
 	opinion = {
 		modifier = {
@@ -32,7 +32,7 @@ opinion_wtmnb_2 = {
 
 opinion_wtmnb_3 = {
 	trigger = {
-		has_edict = wtmnb_edict_8
+		has_edict = wtmnb_edict_5
 	}
 	opinion = {
 		modifier = {

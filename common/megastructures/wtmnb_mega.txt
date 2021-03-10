@@ -109,7 +109,6 @@ dyson_wtmnb = {
 					dismantle = yes
 				}
 			}
-			set_planet_size = 35
 		}
 	}
 }
@@ -202,7 +201,7 @@ unbox_dyson_wtmnb = {
 	}
 	potential = {
 		owner = {
-			has_edict = wtmnb_edict_7
+			has_edict = wtmnb_edict_4
 		}
 	}
 	on_build_complete = {
@@ -228,7 +227,7 @@ unbox_lmark_wtmnb = {
 	}
 	potential = {
 		owner = {
-			has_edict = wtmnb_edict_7
+			has_edict = wtmnb_edict_4
 		}
 	}
 	on_build_complete = {
@@ -347,7 +346,7 @@ unbox_foundry_wtmnb = {
 	}
 	potential = {
 		owner = {
-			has_edict = wtmnb_edict_7
+			has_edict = wtmnb_edict_4
 		}
 	}
 	on_build_complete = {
@@ -449,7 +448,7 @@ unbox_mega_shipyard = {
 	}
 	potential = {
 		owner = {
-			has_edict = wtmnb_edict_7
+			has_edict = wtmnb_edict_4
 		}
 	}
 	on_build_complete = {

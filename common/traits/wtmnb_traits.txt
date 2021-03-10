@@ -94,8 +94,8 @@ leader_trait_wtmnb_toy = {
 		megastructure_build_speed_mult = 5000
 		country_government_civic_points_add = 10
 		##############
-		ship_weapon_range_mult = 10
-		ship_engagement_range_mult = 10
+		ship_weapon_range_mult = 1
+		ship_engagement_range_mult = 1
 	}
 	custom_tooltip = leader_trait_wtmnb_toy_modifier
 }
