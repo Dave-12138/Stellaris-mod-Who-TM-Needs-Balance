@@ -33,7 +33,7 @@ trait_wtmnb_toy = {
 		planet_amenities_add = 1
 		army_damage_mult = 1000
 		army_collateral_damage_mult = 100
-		species_empire_size_mult = -1
+		species_empire_size_mult = 1
 		planet_crime_add = -1
 	}
 }
@@ -94,6 +94,8 @@ leader_trait_wtmnb_toy = {
 		megastructure_build_speed_mult = 5000
 		country_government_civic_points_add = 10
 		##############
+		ship_weapon_range_mult = 10
+		ship_engagement_range_mult = 10
 	}
 	custom_tooltip = leader_trait_wtmnb_toy_modifier
 }
