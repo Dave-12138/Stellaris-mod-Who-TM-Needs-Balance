@@ -23,6 +23,68 @@ ai_sex_master = {
 			}
 			sr_ten = 8
 		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+			}
+			consumer_goods = 4
+			food = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_pantsu
+						amount > 1
+					}
+				}
+			}
+			sr_pantsu = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_neo
+						amount > 1
+					}
+				}
+			}
+			sr_neo = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_alpha
+						amount > 1
+					}
+				}
+			}
+			sr_alpha = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_se
+						amount > 1
+					}
+				}
+			}
+			sr_se = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_solar_energy
+						amount > 1
+					}
+				}
+			}
+			sr_solar_energy = 4
+		}
 	}
 }
 
@@ -51,8 +113,71 @@ ai_sex_master_drone = {
 			}
 			sr_ten = 8
 		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+			}
+			consumer_goods = 4
+			food = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_pantsu
+						amount > 1
+					}
+				}
+			}
+			sr_pantsu = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_neo
+						amount > 1
+					}
+				}
+			}
+			sr_neo = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_alpha
+						amount > 1
+					}
+				}
+			}
+			sr_alpha = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_se
+						amount > 1
+					}
+				}
+			}
+			sr_se = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_solar_energy
+						amount > 1
+					}
+				}
+			}
+			sr_solar_energy = 4
+		}
 	}
 }
+
 ai_sage_master = {
 	is_capped_by_modifier = yes
 	icon = holy_singer

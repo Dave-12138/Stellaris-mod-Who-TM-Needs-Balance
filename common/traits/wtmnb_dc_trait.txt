@@ -6,6 +6,7 @@ trait_fanatic_seminal_addiction = {
 		planet_pops_upkeep_mult = -150
 		pop_happiness = 100
 	}
+	initial = no
 	allowed_archetypes = {
 		MONSTER
 		PARASITE
