@@ -32,6 +32,7 @@ ai_sex_master = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_pantsu
@@ -43,6 +44,7 @@ ai_sex_master = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_neo
@@ -54,6 +56,7 @@ ai_sex_master = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_alpha
@@ -65,6 +68,7 @@ ai_sex_master = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_se
@@ -76,6 +80,7 @@ ai_sex_master = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_solar_energy
@@ -84,6 +89,15 @@ ai_sex_master = {
 				}
 			}
 			sr_solar_energy = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_unlocked_all_traditions = no
+				}
+			}
+			unity = 4
 		}
 	}
 }
@@ -122,6 +136,7 @@ ai_sex_master_drone = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_pantsu
@@ -133,6 +148,7 @@ ai_sex_master_drone = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_neo
@@ -144,6 +160,7 @@ ai_sex_master_drone = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_alpha
@@ -155,6 +172,7 @@ ai_sex_master_drone = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_se
@@ -166,6 +184,7 @@ ai_sex_master_drone = {
 		}
 		produces = {
 			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
 						type = sr_solar_energy
@@ -174,6 +193,15 @@ ai_sex_master_drone = {
 				}
 			}
 			sr_solar_energy = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_unlocked_all_traditions = no
+				}
+			}
+			unity = 4
 		}
 	}
 }

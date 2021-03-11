@@ -7,16 +7,16 @@ trait_fanatic_seminal_addiction = {
 		pop_happiness = 100
 	}
 	initial = no
-	allowed_archetypes = {
-		MONSTER
-		PARASITE
-		WHORE
-		INNOCENTSHOJO
-		TENTACLE
-		LOVEMACHINE
-		WARSHIPGIRL
-		SHENHAI
-		TOUHOUGIRLS
-		OTHER
-	}
+	# allowed_archetypes = {
+	# 	MONSTER
+	# 	PARASITE
+	# 	WHORE
+	# 	INNOCENTSHOJO
+	# 	TENTACLE
+	# 	LOVEMACHINE
+	# 	WARSHIPGIRL
+	# 	SHENHAI
+	# 	TOUHOUGIRLS
+	# 	OTHER
+	# }
 }
