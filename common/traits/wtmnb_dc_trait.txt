@@ -19,4 +19,29 @@ trait_fanatic_seminal_addiction = {
 	# 	TOUHOUGIRLS
 	# 	OTHER
 	# }
+	custom_tooltip = "trait_fanatic_seminal_addiction_tip"
+}
+
+trait_fanatic_seminal_addiction_s = {
+	icon = "gfx/interface/icons/traits/trait_addiction.dds"
+	modifier = {
+		pop_environment_tolerance = -200
+		pc_wtmnb_prometheus_habitability = 300
+		planet_pops_upkeep_mult = -150
+		pop_happiness = 100
+	}
+	initial = no
+	# allowed_archetypes = {
+	# 	MONSTER
+	# 	PARASITE
+	# 	WHORE
+	# 	INNOCENTSHOJO
+	# 	TENTACLE
+	# 	LOVEMACHINE
+	# 	WARSHIPGIRL
+	# 	SHENHAI
+	# 	TOUHOUGIRLS
+	# 	OTHER
+	# }
+	custom_tooltip = "trait_fanatic_seminal_addiction_s_tip"
 }

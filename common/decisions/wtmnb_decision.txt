@@ -34,7 +34,13 @@ decision_wtmnb_create_pop = {
 		weight = 5000
 		modifier = {
 			factor = 0
-			num_pops > 200
+			any_owned_pop = {
+				OR = {
+					is_unemployed = yes
+					has_job = nojob_sexslave
+					has_job = nojob_sexslave2
+				}
+			}
 		}
 	}
 }
@@ -215,7 +221,7 @@ decision_wtmnb_prometheus = {
 		reroll_deposits = yes
 	}
 	ai_weight = {
-		weight = 1000
+		weight = 5000
 	}
 }
 

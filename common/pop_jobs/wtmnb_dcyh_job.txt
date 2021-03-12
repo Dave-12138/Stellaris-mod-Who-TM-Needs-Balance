@@ -3,7 +3,7 @@ ai_sex_master = {
 	icon = full_time_sex_toy
 	category = specialist
 	weight = {
-		weight = 15
+		weight = 20
 	}
 	resources = {
 		category = planet_erotic
@@ -28,7 +28,68 @@ ai_sex_master = {
 				has_trait = trait_fanatic_seminal_addiction
 			}
 			consumer_goods = 4
-			food = 4
+			food = 8
+			energy = 8
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_fuka
+						amount > 1
+					}
+				}
+			}
+			sr_fuka = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_lingli
+						amount > 1
+					}
+				}
+			}
+			sr_lingli = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_living_metal
+						amount > 1
+					}
+				}
+			}
+			sr_living_metal = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = nanites
+						amount > 1
+					}
+				}
+			}
+			nanites = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_dark_matter
+						amount > 1
+					}
+				}
+			}
+			sr_dark_matter = 4
 		}
 		produces = {
 			trigger = {
@@ -97,7 +158,7 @@ ai_sex_master = {
 					has_unlocked_all_traditions = no
 				}
 			}
-			unity = 4
+			unity = 8
 		}
 	}
 }
@@ -107,7 +168,7 @@ ai_sex_master_drone = {
 	icon = full_time_sex_toy
 	category = complex_drone
 	weight = {
-		weight = 15
+		weight = 20
 	}
 	resources = {
 		category = planet_erotic
@@ -132,7 +193,68 @@ ai_sex_master_drone = {
 				has_trait = trait_fanatic_seminal_addiction
 			}
 			consumer_goods = 4
-			food = 4
+			food = 8
+			energy = 8
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_fuka
+						amount > 1
+					}
+				}
+			}
+			sr_fuka = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_lingli
+						amount > 1
+					}
+				}
+			}
+			sr_lingli = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_living_metal
+						amount > 1
+					}
+				}
+			}
+			sr_living_metal = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = nanites
+						amount > 1
+					}
+				}
+			}
+			nanites = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = sr_dark_matter
+						amount > 1
+					}
+				}
+			}
+			sr_dark_matter = 4
 		}
 		produces = {
 			trigger = {
@@ -201,7 +323,7 @@ ai_sex_master_drone = {
 					has_unlocked_all_traditions = no
 				}
 			}
-			unity = 4
+			unity = 8
 		}
 	}
 }
@@ -211,14 +333,157 @@ ai_sage_master = {
 	icon = holy_singer
 	category = specialist
 	weight = {
-		weight = 15
+		weight = 20
 	}
 	resources = {
 		category = planet_holyclergy
+		upkeep = {
+			trigger={
+				has_trait = trait_DC_ethic_asceticism
+			}
+			love_juice = 1
+		}
 		produces = {
 			holylight_crystal = 4
 			sr_christian = 2
 			sr_beauty = 1
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+			}
+			consumer_goods = 4
+			food = 8
+			energy = 8
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_fuka
+						amount > 1
+					}
+				}
+			}
+			sr_fuka = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_lingli
+						amount > 1
+					}
+				}
+			}
+			sr_lingli = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_living_metal
+						amount > 1
+					}
+				}
+			}
+			sr_living_metal = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = nanites
+						amount > 1
+					}
+				}
+			}
+			nanites = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_dark_matter
+						amount > 1
+					}
+				}
+			}
+			sr_dark_matter = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_pantsu
+						amount > 1
+					}
+				}
+			}
+			sr_pantsu = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_neo
+						amount > 1
+					}
+				}
+			}
+			sr_neo = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_alpha
+						amount > 1
+					}
+				}
+			}
+			sr_alpha = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_se
+						amount > 1
+					}
+				}
+			}
+			sr_se = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_solar_energy
+						amount > 1
+					}
+				}
+			}
+			sr_solar_energy = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_unlocked_all_traditions = no
+				}
+			}
+			unity = 8
 		}
 	}
 }
@@ -228,14 +493,157 @@ ai_sage_master_drone = {
 	icon = holy_singer
 	category = complex_drone
 	weight = {
-		weight = 15
+		weight = 20
 	}
 	resources = {
 		category = planet_holyclergy
+		upkeep = {
+			trigger={
+				has_trait = trait_DC_ethic_asceticism
+			}
+			love_juice = 1
+		}
 		produces = {
 			holylight_crystal = 4
 			sr_christian = 2
 			sr_beauty = 1
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+			}
+			consumer_goods = 4
+			food = 8
+			energy = 8
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_fuka
+						amount > 1
+					}
+				}
+			}
+			sr_fuka = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_lingli
+						amount > 1
+					}
+				}
+			}
+			sr_lingli = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_living_metal
+						amount > 1
+					}
+				}
+			}
+			sr_living_metal = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = nanites
+						amount > 1
+					}
+				}
+			}
+			nanites = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_dark_matter
+						amount > 1
+					}
+				}
+			}
+			sr_dark_matter = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_pantsu
+						amount > 1
+					}
+				}
+			}
+			sr_pantsu = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_neo
+						amount > 1
+					}
+				}
+			}
+			sr_neo = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_alpha
+						amount > 1
+					}
+				}
+			}
+			sr_alpha = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_se
+						amount > 1
+					}
+				}
+			}
+			sr_se = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_solar_energy
+						amount > 1
+					}
+				}
+			}
+			sr_solar_energy = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_unlocked_all_traditions = no
+				}
+			}
+			unity = 8
 		}
 	}
 }

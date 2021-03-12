@@ -5,12 +5,6 @@ component_set = {
 }
 
 component_set = {
-	key = "WTMNB_PLANET_KILLER_SHIELDER"
-	icon = "GFX_ship_part_global_pacifier"
-	icon_frame = 1
-}
-
-component_set = {
 	key = "WTMNB_GRAND_KEY"
 	required_component_set = yes
 	icon = "GFX_ship_part_sensor"

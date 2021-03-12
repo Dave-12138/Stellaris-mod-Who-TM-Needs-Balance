@@ -1,0 +1,35 @@
+﻿l_simp_chinese:
+ job_ai_sex_master:0 "AI性爱终端"
+ job_ai_sex_master_plural:0 "$job_ai_sex_master$"
+ job_ai_sex_master_desc:0 "只要将身心交给AI，随着一次又一次高潮到昏迷再被内射的涨感撑醒，资源就会自己变多的神奇职业。\n§S这并非遵从欲望，而是被更庞大存在的欲望所支配、吞噬。§!"
+ job_ai_sex_master_effect_desc:0 "存在£pop£人口从事$job_ai_sex_master$职业时，AI产出£love_juice£$love_juice$、£excellent_slave£$excellent_slave$、£sr_beauty£$sr_beauty$"
+ mod_job_ai_sex_master_add:0 "$job_ai_sex_master$"
+#
+ job_ai_sex_master_drone:0 "$job_ai_sex_master$"
+ job_ai_sex_master_drone_plural:0 "$job_ai_sex_master$"
+ job_ai_sex_master_drone_desc:0 "$job_ai_sex_master_desc$"
+ job_ai_sex_master_drone_effect_desc:0 "$job_ai_sex_master_effect_desc$"
+ mod_job_ai_sex_master_drone_add:0 "$job_ai_sex_master$"
+
+ job_ai_sage_master:0 "朝圣者"
+ job_ai_sage_master_plural:0 "$job_ai_sage_master$"
+ job_ai_sage_master_desc:0 "斋戒三日，沐浴褪衣，受引及诣而不可妄自行步；如是至贡朝礼毕，却处身，方知开明。\n-可能需要£love_juice£润滑剂"
+ mod_job_ai_sage_master_add:0 "$job_ai_sage_master$"
+ job_ai_sage_master_drone:0 "$job_ai_sage_master$"
+ job_ai_sage_master_drone_plural:0 "$job_ai_sage_master$"
+ job_ai_sage_master_drone_desc:0 "$job_ai_sage_master_desc$"
+ mod_job_ai_sage_master_drone_add:0 "$job_ai_sage_master$"
+###########
+ trait_fanatic_seminal_addiction:0 "沉醉"
+ trait_fanatic_seminal_addiction_desc:0 "这个物种无法适应除此之外的任何一种生活方式了"
+ trait_fanatic_seminal_addiction_tip:0 "难以在其他星球居住"
+
+ trait_fanatic_seminal_addiction_s:0 "解心"
+ trait_fanatic_seminal_addiction_s_desc:0 "这个物种将令其移居的意图视为夺爱"
+
+ trait_fanatic_seminal_addiction_s_tip:0 "不再需要额外润滑剂\n难以在其他星球居住"
+
+#########
+ decision_wtmnb_dc_create_pop:0 "人工授精"
+ decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
+########

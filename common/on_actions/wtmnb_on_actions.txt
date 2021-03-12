@@ -6,28 +6,26 @@ on_planet_bombarded = {
 
 on_monthly_pulse_country = {
 	events = {
-		wtmnb.2 #联邦锁团结
-		wtmnb.7 #锁年龄
-		wtmnb_dc.2 #多彩
+		#联邦锁团结
+		wtmnb.2
+		#锁年龄
+		wtmnb.7
+		#多彩
+		wtmnb_dc.2
+		wtmnb_dc.4
 	}
 }
 
-on_destroy_planet_with_WTMNB_PLANET_KILLER_SHIELDER = {
-	events = {
-		planet_destruction.200
-		planet_destruction.600
-	}
-}
-
+#巨像
 on_destroy_planet_with_WTMNB_WEAPON_W = {
-	
 	events = {
-		wtmnb.4
+		wtmnb.9
 	}
 }
 
 on_leader_spawned = {
 	events = {
-		wtmnb.6 #新生成的领袖加圣痕
+		#新生成的领袖加特质
+		wtmnb.6
 	}
 }

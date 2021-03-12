@@ -17,16 +17,39 @@ planet_event = {
 					has_trait = trait_fanatic_seminal_addiction
 				}
 			}
-			modify_species = {
-				change_scoped_species = yes
-				add_trait = trait_fanatic_seminal_addiction
-			}
-			if = {
-				limit = {
-					has_global_flag = DCHTP_INSTALLED
+			ROOT = {
+				if = {
+					limit = {
+						any_owned_species = {
+							is_subspecies = prevprev
+							has_trait = trait_fanatic_seminal_addiction
+						}
+					}
+					random_owned_species = {
+						limit = {
+							is_subspecies = prevprev
+							has_trait = trait_fanatic_seminal_addiction
+						}
+						prevprev = {
+							change_species = prev
+						}
+					}
 				}
-				species = {
-					change_species_portrait = annalis
+				else = {
+					prev = {
+						modify_species = {
+							change_scoped_species = yes
+							add_trait = trait_fanatic_seminal_addiction
+						}
+						if = {
+							limit = {
+								has_global_flag = DCHTP_INSTALLED
+							}
+							species = {
+								change_species_portrait = annalis
+							}
+						}
+					}
 				}
 			}
 		}
@@ -60,6 +83,94 @@ country_event = {
 			}
 			planet_event = {
 				id = wtmnb_dc.1
+			}
+		}
+	}
+}
+planet_event = {
+	id = wtmnb_dc.3
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	hide_window = yes
+	immediate = {
+		random_owned_pop = {
+			limit = {
+				OR = {
+					has_job = ai_sage_master
+					has_job = ai_sage_master_drone
+				}
+				NOT = {
+					has_trait = trait_fanatic_seminal_addiction_s
+				}
+			}
+			ROOT = {
+				if = {
+					limit = {
+						any_owned_species = {
+							is_subspecies = prevprev
+							has_trait = trait_fanatic_seminal_addiction_s
+						}
+					}
+					random_owned_species = {
+						limit = {
+							is_subspecies = prevprev
+							has_trait = trait_fanatic_seminal_addiction_s
+						}
+						prevprev = {
+							change_species = prev
+						}
+					}
+				}
+				else = {
+					prev = {
+						modify_species = {
+							change_scoped_species = yes
+							add_trait = trait_fanatic_seminal_addiction_s
+						}
+						# if = {
+						# 	limit = {
+						# 		has_global_flag = DCHTP_INSTALLED
+						# 	}
+						# 	species = {
+						# 		change_species_portrait = annalis
+						# 	}
+						# }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb_dc.4
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_pop = {
+			OR = {
+				has_job = ai_sage_master
+				has_job = ai_sage_master_drone
+			}
+			NOT = {
+				has_trait = trait_fanatic_seminal_addiction_s
+			}
+		}
+	}
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_pop = {
+					OR = {
+						has_job = ai_sage_master
+						has_job = ai_sage_master_drone
+					}
+				}
+			}
+			planet_event = {
+				id = wtmnb_dc.3
 			}
 		}
 	}

@@ -8,8 +8,8 @@ planet_event = {
 	is_triggered_only = yes
 	trigger = {
 		OR = {
-			has_orbital_bombardment_stance = wtmnb_doom2
-			has_orbital_bombardment_stance = wtmnb_doom2
+			has_orbital_bombardment_stance = wtmnb_doom
+			has_orbital_bombardment_stance = wtmnb_doom
 		}
 		planet_devastation >= 1
 		FROM = {
@@ -50,11 +50,6 @@ planet_event = {
 				}
 			}
 		}
-		#destroy_colony = yes
-		#remove_modifier = "natural_beauty"
-		#remove_modifier = "atmospheric_aphrodisiac"
-		#remove_modifier = "atmospheric_hallucinogen"
-		#remove_modifier = "lush_planet"		
 		remove_modifier = "dangerous_wildlife"
 	}
 }
@@ -69,7 +64,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = EXCELLENT
-		custom_tooltip = nobody_exist
+		custom_tooltip = wtmnb.1.a
 	}
 }
 
@@ -99,7 +94,7 @@ country_event = {
 country_event = {
 	is_triggered_only = yes
 	id = wtmnb.3
-	title = let_we_see_whats_in_lgate
+	title = wtmnb.3.title
 	desc = {
 		text = graygoo.10.name
 		trigger = {
@@ -135,7 +130,7 @@ country_event = {
 		name = federations2.61.A.neutral
 	}
 	option = {
-		name = why_not_gray
+		name = wtmnb.3.c
 		trigger = {
 			OR = {
 				has_global_flag = gray_goo_crisis_set
@@ -152,139 +147,11 @@ country_event = {
 	}
 }
 
-planet_event = {
-	id = wtmnb.4
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		if = {
-			limit = {
-				is_star = yes
-				solar_system = {
-					any_system_megastructure = {
-						is_megastructure_type = lgate_base
-					}
-				}
-			}
-			from.owner = {
-				if = {
-					limit = {
-						check_variable = {
-							which = num_lcluster_clues
-							value < 7
-						}
-					}
-					give_technology = {
-						tech = tech_repeatable_lcluster_clue
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							exists = event_target:gray_owner
-						}
-					}
-					country_event = {
-						id = wtmnb.3
-					}
-				}
-			}
-		}
-		else = {
-			if = {
-				limit = {
-					is_capital = yes
-				}
-				owner = {
-					# if = {
-					# 	limit = {
-					# 		OR = {
-					# 			has_ethic = ethic_xenophobe
-					# 			has_ethic = ethic_fanatic_xenophobe
-					# 			has_authority = auth_hive_mind
-					# 			has_authority = auth_machine_intelligence
-					# 		}
-					# 	}
-					modify_species = {
-						species = owner_species
-						add_trait = trait_wtmnb_toy
-						add_traits_at_start_of_list = yes
-						change_scoped_species = yes
-						effect = {
-							save_event_target_as = new_wtm_species
-							set_species_homeworld = root
-						}
-					}
-					# }
-					# else = {
-					# 	modify_species = {
-					# 		species = owner_species
-					# 		base = none
-					# 		add_trait = trait_wtmnb_toy
-					# 		add_traits_at_start_of_list = yes
-					# 		change_scoped_species = yes
-					# 		effect = {
-					# 			save_event_target_as = new_wtm_species
-					# 		}
-					# 	}
-					# }
-					change_species = event_target:new_wtm_species
-					set_built_species = event_target:new_wtm_species
-					every_owned_leader = {
-						limit = {
-							OR = {
-								gender = female
-								gender = indeterminable
-							}
-						}
-						add_ruler_trait = leader_trait_wtmnb_toy
-						add_trait = leader_trait_wtmnb_toy
-						#change_species = event_target:new_wtm_species
-					}
-					every_pool_leader = {
-						limit = {
-							OR = {
-								gender = female
-								gender = indeterminable
-							}
-						}
-						add_ruler_trait = leader_trait_wtmnb_toy
-						add_trait = leader_trait_wtmnb_toy
-						#change_species = event_target:new_wtm_species
-					}
-				}
-			}
-			else = {
-				every_owned_pop = {
-					limit = {
-						NAND = {
-							has_trait = trait_wtmnb_toy
-							ideal_planet_class = root
-						}
-					}
-					root = {
-						modify_species = {
-							species = prev
-							add_trait = trait_wtmnb_toy
-							add_traits_at_start_of_list = yes
-							change_scoped_species = yes
-							ideal_planet_class = root
-							#effect = {
-							set_species_homeworld = root
-							#}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
 country_event = {
 	id = wtmnb.5
 	is_triggered_only = yes
-	title = hyperlane_built
-	desc = hyperlane_built_detai
+	title = wtmnb.5.name
+	desc = wtmnb.5.desc
 	option = {
 		name = federations2.61.A.neutral
 		hidden_effect = {
@@ -293,6 +160,7 @@ country_event = {
 	}
 }
 
+#新领袖
 country_event = {
 	id = wtmnb.6
 	is_triggered_only = yes
@@ -353,6 +221,215 @@ country_event = {
 				remove_opinion_modifier = {
 					who = prev
 					modifier = opinion_wtmnb_1
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = wtmnb.9
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			save_event_target_as = wtmnb_planet_killer_ship
+		}
+		save_event_target_as = wtmnb_planet_killer_target
+		from.owner = {
+			country_event = {
+				id = wtmnb.10
+			}
+		}
+	}
+}
+
+#巨像事件
+country_event = {
+	id = wtmnb.10
+	is_triggered_only = yes
+	title = wtmnb.10.name
+	desc = wtmnb.10.desc
+	location = from
+	option = {
+		name = wtmnb.10.a
+		custom_tooltip = wtmnb.10.a.tip
+	}
+	option = {
+		trigger = {
+			from = {
+				is_capital = yes
+			}
+		}
+		name = wtmnb.10.b
+		custom_tooltip = wtmnb.10.b.tip
+		hidden_effect = {
+			event_target:wtmnb_planet_killer_target = {
+				owner = {
+					modify_species = {
+						species = owner_species
+						add_trait = trait_wtmnb_toy
+						add_traits_at_start_of_list = yes
+						change_scoped_species = yes
+						effect = {
+							save_event_target_as = new_wtm_species
+							set_species_homeworld = event_target:wtmnb_planet_killer_target
+						}
+					}
+					change_species = event_target:new_wtm_species
+					set_built_species = event_target:new_wtm_species
+					every_owned_leader = {
+						limit = {
+							OR = {
+								gender = female
+								gender = indeterminable
+							}
+						}
+						add_ruler_trait = leader_trait_wtmnb_toy
+						add_trait = leader_trait_wtmnb_toy
+						#change_species = event_target:new_wtm_species
+					}
+					every_pool_leader = {
+						limit = {
+							OR = {
+								gender = female
+								gender = indeterminable
+							}
+						}
+						add_ruler_trait = leader_trait_wtmnb_toy
+						add_trait = leader_trait_wtmnb_toy
+						#change_species = event_target:new_wtm_species
+					}
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = {
+				is_colony = yes
+			}
+		}
+		name = wtmnb.10.c
+		custom_tooltip = wtmnb.10.c.tip
+		hidden_effect = {
+			event_target:wtmnb_planet_killer_target = {
+				every_owned_pop = {
+					limit = {
+						NAND = {
+							has_trait = trait_wtmnb_toy
+							ideal_planet_class = event_target:wtmnb_planet_killer_target
+						}
+					}
+					prev = {
+						modify_species = {
+							species = prev
+							add_trait = trait_wtmnb_toy
+							add_traits_at_start_of_list = yes
+							change_scoped_species = yes
+							ideal_planet_class = event_target:wtmnb_planet_killer_target
+							set_species_homeworld = event_target:wtmnb_planet_killer_target
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from.solar_system = {
+				any_system_megastructure = {
+					is_megastructure_type = lgate_base
+				}
+			}
+		}
+		name = wtmnb.10.d
+		custom_tooltip = wtmnb.3.title
+		hidden_effect = {
+			country_event = {
+				id = wtmnb.3
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = {
+				is_star = no
+				NOR = {
+					is_planet_class = pc_shielded
+					is_planet_class = pc_ringworld_shielded
+					is_planet_class = pc_habitat_shielded
+				}
+			}
+		}
+		name = wtmnb.10.e
+		hidden_effect = {
+			from = {
+				planet_event = {
+					id = planet_destruction.200
+				}
+				planet_event = {
+					id = planet_destruction.600
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = {
+				is_star = no
+				NOR = {
+					is_planet_class = pc_broken
+					is_planet_class = pc_shattered
+				}
+			}
+		}
+		name = wtmnb.10.f
+		hidden_effect = {
+			from = {
+				planet_event = {
+					id = planet_destruction.100
+				}
+				planet_event = {
+					id = planet_destruction.110
+				}
+				planet_event = {
+					id = planet_destruction.600
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = {
+				NOR = {
+					is_star = no
+					is_planet_class = pc_black_hole
+				}
+			}
+			event_target:wtmnb_planet_killer_ship = {
+				any_owned_ship = {
+					has_component = EDEN_STAR_AURA
+				}
+			}
+		}
+		name = wtmnb.10.g
+		from.solar_system = {
+			every_system_planet = {
+				if = {
+					limit = {
+						is_colony = yes
+					}
+					every_owned_pop = {
+						kill_pop = yes
+					}
+				}
+				change_pc = pc_black_hole
+				reroll_deposits = yes
+			}
+			every_neighbor_system = {
+				remove_hyperlane = {
+					from = THIS
+					to = prev
 				}
 			}
 		}

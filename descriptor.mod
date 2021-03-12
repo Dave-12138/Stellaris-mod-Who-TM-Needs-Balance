@@ -1,6 +1,6 @@
-version="2.1"
+version="2.2"
 tags={
-	"Spaceships"
+	"Cheat"
 }
 name="WhoTMNeedsBalance"
 picture="thumbnail.png"
