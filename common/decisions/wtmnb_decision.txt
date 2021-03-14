@@ -10,7 +10,7 @@ decision_wtmnb_create_pop = {
 	potential = {
 		any_fleet_in_orbit = {
 			any_owned_ship = {
-				has_component = WTMNB_STIGMA_TERMINAL
+				has_component = WTMNB_6TH_KEY
 			}
 		}
 	}

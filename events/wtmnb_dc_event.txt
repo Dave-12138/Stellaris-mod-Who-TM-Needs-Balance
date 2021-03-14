@@ -1,4 +1,5 @@
 namespace = wtmnb_dc
+#多彩namespace
 planet_event = {
 	id = wtmnb_dc.1
 	is_triggered_only = yes
@@ -87,6 +88,7 @@ country_event = {
 		}
 	}
 }
+
 planet_event = {
 	id = wtmnb_dc.3
 	is_triggered_only = yes
@@ -174,4 +176,157 @@ country_event = {
 			}
 		}
 	}
+}
+
+###########
+country_event = {
+	id = wtmnb_dc.1000
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		event_target:wtmnb_target.owner = {
+			add_opinion_modifier = {
+				who = root
+				modifier = opinion_wtmnb_dc_r
+			}
+			ruler = {
+				set_leader_flag = wtmnb_dc_r
+				save_event_target_as = dc_r_ruler
+				random_list = {
+					50 = {
+						modifier = {
+							factor = 0
+							species = {
+								OR = {
+									is_ugly_pop = yes
+									is_inorganic_species = yes
+								}
+							}
+						}
+						modifier = {
+							factor = 0
+							NOT = {
+								gender = female
+							}
+						}
+						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+					}
+					50 = {
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							factor = 4
+							species = {
+								has_trait = trait_DC_ethic_asceticism
+							}
+						}
+						modifier = {
+							factor = 0
+							OR = {
+								species = {
+									is_has_lust_trait = yes
+								}
+								has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+								has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+							}
+						}
+						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+					}
+					50 = {
+						modifier = {
+							factor = 8
+							root.owner_species = {
+								has_trait = trait_lust_missionary
+							}
+						}
+						modifier = {
+							factor = 0.5
+							species = {
+								has_trait = trait_DC_ethic_asceticism
+							}
+						}
+						remove_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+					}
+					50 = {
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_owned_leader = {
+					gender = male
+				}
+			}
+			country_event = {
+				id = wtmnb_dc.1011
+			}
+			event_target:wtmnb_target = {
+				owner = {
+					country_event = {
+						id = wtmnb_dc.1021
+					}
+				}
+			}
+		}
+		else = {
+			country_event = {
+				id = wtmnb_dc.1010
+			}
+			event_target:wtmnb_target = {
+				owner = {
+					country_event = {
+						id = wtmnb_dc.1020
+					}
+				}
+			}
+		}
+	}
+}
+
+#dc_r owner方提醒
+country_event = {
+	id = wtmnb_dc.1010
+	is_triggered_only = yes
+	picture = "gfx/portraits/city_sets/0_2_room.dds"
+	title = wtmnb_dc.1010.name
+	desc = wtmnb_dc.1010.desc
+	option = {
+		name = wtmnb_dc.1010.a
+		add_resource = {
+			influence = 1000
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb_dc.1011
+	is_triggered_only = yes
+	picture = "gfx/portraits/city_sets/0_3_room.dds"
+	title = wtmnb_dc.1010.name
+	desc = wtmnb_dc.1011.desc
+	option = {
+		name = wtmnb_dc.1010.a
+		add_resource = {
+			influence = 1000
+		}
+	}
+}
+
+#target方提醒
+country_event = {
+	id = wtmnb_dc.1020
+	is_triggered_only = yes
+	picture = "gfx/portraits/city_sets/0_2_room.dds"
+	title = wtmnb_dc.1020.name
+}
+
+country_event = {
+	id = wtmnb_dc.1021
+	is_triggered_only = yes
+	picture = "gfx/portraits/city_sets/0_3_room.dds"
+	title = wtmnb_dc.1020.name
 }

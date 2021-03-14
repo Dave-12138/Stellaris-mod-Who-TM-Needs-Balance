@@ -19,7 +19,7 @@ on_monthly_pulse_country = {
 #巨像
 on_destroy_planet_with_WTMNB_WEAPON_W = {
 	events = {
-		wtmnb.9
+		wtmnb.1000
 	}
 }
 

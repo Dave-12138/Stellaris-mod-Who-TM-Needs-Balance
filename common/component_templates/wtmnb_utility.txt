@@ -75,63 +75,7 @@ utility_component_template = {
 	}
 }
 
-utility_component_template = {
-	key = "SHIP_UNBREAKABLE"
-	size = medium
-	icon = "GFX_ship_part_shield_aura"
-	icon_frame = 1
-	power = 20000
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 5
-		}
-	}
-	size_restriction = {
-		battleship
-	}
-	component_set = "sensor_components"
-	prerequisites = {
-		"tech_wtmnb_fortress"
-	}
-	friendly_aura = {
-		name = "aura_unbreakable_shield"
-		system_wide = yes
-		radius = 20000
-		apply_on = ships
-		stack_info = {
-			id = unbreakable_shield
-			priority = 20
-		}
-		modifier = {
-			ship_hull_regen_add_perc = 1
-			ship_armor_regen_add_perc = 1
-			ship_armor_add = 100
-			ship_armor_mult = 100
-			ship_evasion_add = 1000
-			ship_evasion_mult = 1000
-			ship_speed_mult = 100000
-			ship_orbital_bombardment_mult = 10000
-			ship_windup_mult = -2
-			ship_ftl_jumpdrive_range_mult = 7.5
-			ship_jumpdrive_cooldown_mult = -1
-		}
-		graphics = {
-			area_effect = {
-				entity = "circle_area_entity"
-				dynamic_scale = yes
-			}
-			ship_effect = {
-				entity = "ship_aura_positive_entity"
-				dynamic_scale = no
-			}
-		}
-	}
-	ai_weight = {
-		weight = 100
-	}
-}
-
+#光环列表
 utility_component_template = {
 	key = "SHIP_UNBREAKABLE_SHARE"
 	size = medium
@@ -143,10 +87,6 @@ utility_component_template = {
 		cost = {
 			alloys = 5
 		}
-	}
-	size_restriction = {
-		titan
-		wtmnb_fortress
 	}
 	component_set = "ship_aura_components"
 	prerequisites = {
@@ -193,7 +133,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_eden_star"
 	icon_frame = 1
-	power = 500
+	power = 5000
 	resources = {
 		category = ship_components
 		cost = {
@@ -206,6 +146,37 @@ utility_component_template = {
 	component_set = "WTMNB_GRAND_KEY"
 	prerequisites = {
 		"tech_wtmnb_fortress"
+	}
+	friendly_aura = {
+		name = "aura_eden_star"
+		radius = 20000
+		apply_on = ships
+		system_wide = yes
+		stack_info = {
+			id = eden_star_f
+			priority = 20
+		}
+		modifier = {
+			ship_hull_regen_add_perc = 20
+			ship_armor_regen_add_perc = 20
+			ship_evasion_add = 1000
+			ship_evasion_mult = 1000
+			ship_speed_mult = 100000
+			ship_orbital_bombardment_mult = 10000
+			ship_windup_mult = -2
+			ship_ftl_jumpdrive_range_mult = 7.5
+			ship_jumpdrive_cooldown_mult = -2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
 	}
 	hostile_aura = {
 		name = "aura_eden_star"
@@ -251,18 +222,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "WTMNB_STIGMA_TERMINAL"
+	key = "WTMNB_6TH_KEY"
 	size = aux
-	icon = GFX_ship_part_blackhole_aura
+	icon = GFX_ship_part_wtmnb_6th_key
 	icon_frame = 1
-	power = -100
+	power = 5000
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
 	component_set = "WTMNB_GRAND_KEY"
-	size_restriction = {
-		wtmnb_fortress
-	}
 	resources = {
 		category = ship_components
 		cost = {
@@ -279,14 +247,11 @@ utility_component_template = {
 	size = aux
 	icon = GFX_ship_part_wtmnb_destructor
 	icon_frame = 1
-	power = -100
+	power = 5000
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
 	component_set = "WTMNB_GRAND_KEY"
-	size_restriction = {
-		wtmnb_fortress
-	}
 	resources = {
 		category = ship_components
 		cost = {
@@ -296,7 +261,6 @@ utility_component_template = {
 	modifier = {
 		custom_tooltip = "can_molt_planet"
 	}
-	
 	ai_weight = {
 		weight = 100
 	}
@@ -305,16 +269,13 @@ utility_component_template = {
 utility_component_template = {
 	key = "WTMNB_4TH_KEY"
 	size = aux
-	icon = GFX_ship_part_4th_key
+	icon = GFX_ship_part_wtmnb_4th_key
 	icon_frame = 1
-	power = -100
+	power = 5000
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
 	component_set = "WTMNB_GRAND_KEY"
-	size_restriction = {
-		wtmnb_fortress
-	}
 	resources = {
 		category = ship_components
 		cost = {

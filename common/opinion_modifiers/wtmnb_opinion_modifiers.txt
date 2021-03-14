@@ -13,7 +13,8 @@ opinion_wtmnb_1 = {
 		}
 	}
 }
-#2和3是一样的，叠加确保足够涩（？
+
+#2和3是一样的
 opinion_wtmnb_2 = {
 	trigger = {
 		has_edict = wtmnb_edict_5

@@ -1,4 +1,5 @@
 ﻿l_simp_chinese:
+#多彩单列一个文件
  job_ai_sex_master:0 "AI性爱终端"
  job_ai_sex_master_plural:0 "$job_ai_sex_master$"
  job_ai_sex_master_desc:0 "只要将身心交给AI，随着一次又一次高潮到昏迷再被内射的涨感撑醒，资源就会自己变多的神奇职业。\n§S这并非遵从欲望，而是被更庞大存在的欲望所支配、吞噬。§!"
@@ -28,8 +29,30 @@
  trait_fanatic_seminal_addiction_s_desc:0 "这个物种将令其移居的意图视为夺爱"
 
  trait_fanatic_seminal_addiction_s_tip:0 "不再需要额外润滑剂\n难以在其他星球居住"
+##################
+ leader_trait_ruler_wtmnb_dc_r:0 "心理阴影"
+ leader_trait_ruler_wtmnb_dc_r_desc:0 ""
 
+ leader_trait_ruler_wtmnb_dc_r2:0 "强暴经历"
+ leader_trait_ruler_wtmnb_dc_r2_desc:0 ""
+
+ leader_trait_ruler_wtmnb_dc_r3:0 "妊娠"
+ leader_trait_ruler_wtmnb_dc_r3_desc:0 "这位统治者处于显而易见的妊娠状态"
 #########
  decision_wtmnb_dc_create_pop:0 "人工授精"
- decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
+ decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位预先女体化改造的居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
 ########
+ wtmnb_diplomacy.1.dc_r:0 "§H[wtmnb_target.Owner.GetRulerName]§!（多彩专属，没写完"
+
+ wtmnb_dc.1010.name:0 "[wtmnb_target.Owner.GetRulerTitle]被"
+ wtmnb_dc.1010.desc0:0 "[wtmnb_target.Owner.GetRulerTitle][dc_r_ruler.GetName]与几位随从在众目睽睽之下被[From.GetName]特使\n场面一度十分混乱。\n"
+ wtmnb_dc.1010.desc:0 "$wtmnb_dc.1010.desc0$"
+ wtmnb_dc.1010.a:0 "很好"
+
+ wtmnb_dc.1011.desc:0 "$wtmnb_dc.1010.desc0$"
+
+ wtmnb_dc.1020.name:0 "$wtmnb_dc.1010.desc0$"
+
+##########
+ opinion_wtmnb_dc_r:0 ""
+ 

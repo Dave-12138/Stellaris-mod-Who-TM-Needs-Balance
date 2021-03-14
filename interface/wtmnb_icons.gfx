@@ -16,6 +16,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/wtmnb_2nd_key.dds"
 	}
 	spriteType = {
+		name = "GFX_ship_part_wtmnb_6th_key"
+		texturefile = "gfx/interface/icons/ship_parts/wtmnb_6nd_key.dds"
+	}
+	spriteType = {
 		name = "GFX_megastructure_wtmnb_orbit"
 		texturefile = "gfx/interface/planetview/habitat.dds"
 	}
@@ -32,7 +36,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_destructor.dds"
 	}
 	spriteType = {
-		name = "GFX_ship_part_4th_key"
+		name = "GFX_ship_part_wtmnb_4th_key"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_4th_key.dds"
 	}
 }

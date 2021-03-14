@@ -1,0 +1,230 @@
+namespace = wtmnb_diplomacy
+country_event = {
+	id = wtmnb_diplomacy.1
+	is_triggered_only = yes
+	title = wtmnb_diplomacy.1.name
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				is_friendly_to = root
+				is_gestalt = yes
+			}
+		}
+		text = wtmnb_diplomacy.1.friendly.desc
+	}
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				is_friendly_to = root
+				is_gestalt = no
+			}
+		}
+		text = wtmnb_diplomacy.1.friendly_gestalt.desc
+	}
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				is_loyal_to = root
+			}
+		}
+		text = wtmnb_diplomacy.1.loyal.desc
+	}
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				is_disloyal_to = root
+			}
+		}
+		text = wtmnb_diplomacy.1.disloyal.desc
+	}
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				is_unfriendly_to = root
+			}
+		}
+		text = wtmnb_diplomacy.1.insult.desc
+	}
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				is_neutral_to = root
+			}
+		}
+		text = wtmnb_diplomacy.1.neutral.desc
+	}
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				is_fallen_machine_empire = yes
+			}
+		}
+		text = wtmnb_diplomacy.1.machine_dad.desc
+	}
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:wtmnb_target.owner.ruler
+		room = event_target:wtmnb_target.owner.ruler
+		planet_background = event_target:wtmnb_target
+		graphical_culture = event_target:wtmnb_target
+	}
+	option = {
+		name = wtmnb_diplomacy.1.a
+	}
+	option = {
+		name = wtmnb_diplomacy.1.b
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				exists = ruler
+				is_gestalt = no
+			}
+		}
+		custom_tooltip = wtmnb_diplomacy.1.b.desc
+		hidden_effect = {
+			country_event = {
+				id = wtmnb_diplomacy.1000
+			}
+		}
+	}
+	#多彩
+	option = {
+		name = wtmnb_diplomacy.1.dc_r
+		trigger = {
+			event_target:wtmnb_target = {
+				owner.ruler = {
+					species = {
+						is_ugly_pop = no
+						is_inorganic_species = no
+					}
+					NOT = {
+						gender = female
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = wtmnb_dc.1000
+			}
+		}
+	}
+}
+
+#行刺
+country_event = {
+	id = wtmnb_diplomacy.1000
+	is_triggered_only = yes
+	title = wtmnb_diplomacy.1000.name
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				opinion = {
+					who = root
+					value >= 20
+				}
+			}
+		}
+		text = wtmnb_diplomacy.1000.friendly.desc
+	}
+	desc = {
+		trigger = {
+			event_target:wtmnb_target.owner = {
+				opinion = {
+					who = root
+					value < 20
+				}
+			}
+		}
+		text = wtmnb_diplomacy.1000.desc
+	}
+	immediate = {
+		event_target:wtmnb_target.owner = {
+			ruler = {
+				save_event_target_as = deadruler
+				kill_leader = {
+					type = ruler
+					show_notification = no
+				}
+			}
+			add_opinion_modifier = {
+				who = root
+				modifier = opinion_insult
+			}
+			country_event = {
+				id = wtmnb_diplomacy.1001
+			}
+		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1000.a
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+	option = {
+		name = wtmnb_diplomacy.1000.b
+		trigger = {
+			opinion = {
+				who = event_target:wtmnb_target.owner
+				value > 40
+			}
+		}
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+	option = {
+		name = wtmnb_diplomacy.1000.c
+		trigger = {
+			opinion = {
+				who = event_target:wtmnb_target
+				value < -30
+			}
+		}
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+	option = {
+		name = wtmnb_diplomacy.1000.d
+		trigger = {
+			OR = {
+				has_ethic = ethic_fanatic_xenophobe
+				has_ethic = ethic_xenophobe
+			}
+		}
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+}
+
+#遇害
+country_event = {
+	id = wtmnb_diplomacy.1001
+	is_triggered_only = yes
+	title = wtmnb_diplomacy.1001.name
+	desc = wtmnb_diplomacy.1001.desc
+	immediate = {
+		add_modifier = {
+			modifier = humiliated
+			days = 1800
+		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1001.a
+		trigger = {
+			opinion = {
+				who = from
+				value > 40
+			}
+		}
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+	option = {
+		name = wtmnb_diplomacy.1001.b
+		trigger = {
+			opinion = {
+				who = from
+				value < -40
+			}
+		}
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+	option = {
+		name = wtmnb_diplomacy.1001.c
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+}

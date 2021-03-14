@@ -228,16 +228,16 @@ country_event = {
 }
 
 planet_event = {
-	id = wtmnb.9
+	id = wtmnb.1000
 	is_triggered_only = yes
 	immediate = {
 		from = {
 			save_event_target_as = wtmnb_planet_killer_ship
 		}
-		save_event_target_as = wtmnb_planet_killer_target
+		save_event_target_as = wtmnb_target
 		from.owner = {
 			country_event = {
-				id = wtmnb.10
+				id = wtmnb.1001
 			}
 		}
 	}
@@ -245,14 +245,14 @@ planet_event = {
 
 #巨像事件
 country_event = {
-	id = wtmnb.10
+	id = wtmnb.1001
 	is_triggered_only = yes
-	title = wtmnb.10.name
-	desc = wtmnb.10.desc
+	title = wtmnb.1001.name
+	desc = wtmnb.1001.desc
 	location = from
 	option = {
-		name = wtmnb.10.a
-		custom_tooltip = wtmnb.10.a.tip
+		name = wtmnb.1001.a
+		custom_tooltip = wtmnb.1001.a.tip
 	}
 	option = {
 		trigger = {
@@ -260,10 +260,10 @@ country_event = {
 				is_capital = yes
 			}
 		}
-		name = wtmnb.10.b
-		custom_tooltip = wtmnb.10.b.tip
+		name = wtmnb.1001.b
+		custom_tooltip = wtmnb.1001.b.tip
 		hidden_effect = {
-			event_target:wtmnb_planet_killer_target = {
+			event_target:wtmnb_target = {
 				owner = {
 					modify_species = {
 						species = owner_species
@@ -272,7 +272,7 @@ country_event = {
 						change_scoped_species = yes
 						effect = {
 							save_event_target_as = new_wtm_species
-							set_species_homeworld = event_target:wtmnb_planet_killer_target
+							set_species_homeworld = event_target:wtmnb_target
 						}
 					}
 					change_species = event_target:new_wtm_species
@@ -309,15 +309,15 @@ country_event = {
 				is_colony = yes
 			}
 		}
-		name = wtmnb.10.c
-		custom_tooltip = wtmnb.10.c.tip
+		name = wtmnb.1001.c
+		custom_tooltip = wtmnb.1001.c.tip
 		hidden_effect = {
-			event_target:wtmnb_planet_killer_target = {
+			event_target:wtmnb_target = {
 				every_owned_pop = {
 					limit = {
 						NAND = {
 							has_trait = trait_wtmnb_toy
-							ideal_planet_class = event_target:wtmnb_planet_killer_target
+							ideal_planet_class = event_target:wtmnb_target
 						}
 					}
 					prev = {
@@ -326,8 +326,8 @@ country_event = {
 							add_trait = trait_wtmnb_toy
 							add_traits_at_start_of_list = yes
 							change_scoped_species = yes
-							ideal_planet_class = event_target:wtmnb_planet_killer_target
-							set_species_homeworld = event_target:wtmnb_planet_killer_target
+							ideal_planet_class = event_target:wtmnb_target
+							set_species_homeworld = event_target:wtmnb_target
 						}
 					}
 				}
@@ -342,7 +342,7 @@ country_event = {
 				}
 			}
 		}
-		name = wtmnb.10.d
+		name = wtmnb.1001.d
 		custom_tooltip = wtmnb.3.title
 		hidden_effect = {
 			country_event = {
@@ -361,7 +361,7 @@ country_event = {
 				}
 			}
 		}
-		name = wtmnb.10.e
+		name = wtmnb.1001.e
 		hidden_effect = {
 			from = {
 				planet_event = {
@@ -383,7 +383,7 @@ country_event = {
 				}
 			}
 		}
-		name = wtmnb.10.f
+		name = wtmnb.1001.f
 		hidden_effect = {
 			from = {
 				planet_event = {
@@ -401,8 +401,8 @@ country_event = {
 	option = {
 		trigger = {
 			from = {
-				NOR = {
-					is_star = no
+				is_star = yes
+				NOT = {
 					is_planet_class = pc_black_hole
 				}
 			}
@@ -412,7 +412,7 @@ country_event = {
 				}
 			}
 		}
-		name = wtmnb.10.g
+		name = wtmnb.1001.g
 		from.solar_system = {
 			every_system_planet = {
 				if = {
@@ -423,8 +423,22 @@ country_event = {
 						kill_pop = yes
 					}
 				}
-				change_pc = pc_black_hole
-				reroll_deposits = yes
+				if = {
+					limit = {
+						is_planet_class = pc_ai
+					}
+					add_planet_devastation = 55
+				}
+				else_if = {
+					limit = {
+						is_ringworld = yes
+					}
+					change_pc = pc_ringworld_habitable_damaged
+				}
+				else = {
+					change_pc = pc_black_hole
+					reroll_deposits = yes
+				}
 			}
 			every_neighbor_system = {
 				remove_hyperlane = {

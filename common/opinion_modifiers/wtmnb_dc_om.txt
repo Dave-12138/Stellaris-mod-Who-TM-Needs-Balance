@@ -1,0 +1,31 @@
+opinion_wtmnb_dc_r = {
+	opinion = {
+		base = -300
+		modifier = {
+			add = 300
+			ruler = {
+				has_leader_flag = wtmnb_dc_r
+				NOT = {
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				}
+			}
+		}
+		modifier = {
+			add = 500
+			ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			}
+		}
+	}
+	unique = yes
+	monthly = yes
+	decay = {
+		base = 8
+		modifier = {
+			factor = 0
+			ruler = {
+				has_leader_flag = wtmnb_dc_r
+			}
+		}
+	}
+}
