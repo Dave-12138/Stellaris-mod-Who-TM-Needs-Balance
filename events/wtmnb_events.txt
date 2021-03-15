@@ -230,6 +230,7 @@ country_event = {
 planet_event = {
 	id = wtmnb.1000
 	is_triggered_only = yes
+	hide_window = yes
 	immediate = {
 		from = {
 			save_event_target_as = wtmnb_planet_killer_ship
@@ -250,10 +251,12 @@ country_event = {
 	title = wtmnb.1001.name
 	desc = wtmnb.1001.desc
 	location = from
+	#取消
 	option = {
 		name = wtmnb.1001.a
 		custom_tooltip = wtmnb.1001.a.tip
 	}
+	#特质
 	option = {
 		trigger = {
 			from = {
@@ -303,6 +306,7 @@ country_event = {
 			}
 		}
 	}
+	#特质
 	option = {
 		trigger = {
 			from = {
@@ -334,6 +338,7 @@ country_event = {
 			}
 		}
 	}
+	#l星门
 	option = {
 		trigger = {
 			from.solar_system = {
@@ -350,6 +355,7 @@ country_event = {
 			}
 		}
 	}
+	#安乐天使
 	option = {
 		trigger = {
 			from = {
@@ -373,6 +379,7 @@ country_event = {
 			}
 		}
 	}
+	#碎星
 	option = {
 		trigger = {
 			from = {
@@ -398,6 +405,7 @@ country_event = {
 			}
 		}
 	}
+	#黑洞
 	option = {
 		trigger = {
 			from = {
@@ -446,6 +454,21 @@ country_event = {
 					to = prev
 				}
 			}
+		}
+	}
+	#外交窗口
+	option = {
+		name = wtmnb.1001.h
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = {
+					is_same_empire = root
+				}
+			}
+		}
+		country_event = {
+			id = wtmnb_diplomacy.1
 		}
 	}
 }

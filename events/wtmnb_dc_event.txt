@@ -185,10 +185,6 @@ country_event = {
 	hide_window = yes
 	immediate = {
 		event_target:wtmnb_target.owner = {
-			add_opinion_modifier = {
-				who = root
-				modifier = opinion_wtmnb_dc_r
-			}
 			ruler = {
 				set_leader_flag = wtmnb_dc_r
 				save_event_target_as = dc_r_ruler
@@ -205,9 +201,7 @@ country_event = {
 						}
 						modifier = {
 							factor = 0
-							NOT = {
-								gender = female
-							}
+							gender = male
 						}
 						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
 					}
@@ -254,32 +248,39 @@ country_event = {
 					}
 				}
 			}
+			add_opinion_modifier = {
+				who = root
+				modifier = opinion_wtmnb_dc_r
+			}
 		}
-		if = {
-			limit = {
-				any_owned_leader = {
-					gender = male
+		random_list = {
+			30 = {
+				country_event = {
+					id = wtmnb_dc.1011
 				}
-			}
-			country_event = {
-				id = wtmnb_dc.1011
-			}
-			event_target:wtmnb_target = {
-				owner = {
-					country_event = {
-						id = wtmnb_dc.1021
+				event_target:wtmnb_target = {
+					owner = {
+						country_event = {
+							id = wtmnb_dc.1021
+						}
 					}
 				}
 			}
-		}
-		else = {
-			country_event = {
-				id = wtmnb_dc.1010
-			}
-			event_target:wtmnb_target = {
-				owner = {
-					country_event = {
-						id = wtmnb_dc.1020
+			0 = {
+				modifier = {
+					add = 50
+					any_owned_leader = {
+						gender = male
+					}
+				}
+				country_event = {
+					id = wtmnb_dc.1010
+				}
+				event_target:wtmnb_target = {
+					owner = {
+						country_event = {
+							id = wtmnb_dc.1020
+						}
 					}
 				}
 			}
@@ -291,7 +292,7 @@ country_event = {
 country_event = {
 	id = wtmnb_dc.1010
 	is_triggered_only = yes
-	picture = "gfx/portraits/city_sets/0_2_room.dds"
+	picture = GFX_evt_CM_daily11
 	title = wtmnb_dc.1010.name
 	desc = wtmnb_dc.1010.desc
 	option = {
@@ -299,19 +300,25 @@ country_event = {
 		add_resource = {
 			influence = 1000
 		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
 	}
 }
 
 country_event = {
 	id = wtmnb_dc.1011
 	is_triggered_only = yes
-	picture = "gfx/portraits/city_sets/0_3_room.dds"
+	picture = GFX_evt_CM_chain21
 	title = wtmnb_dc.1010.name
 	desc = wtmnb_dc.1011.desc
 	option = {
 		name = wtmnb_dc.1010.a
 		add_resource = {
 			influence = 1000
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
 		}
 	}
 }
@@ -320,13 +327,25 @@ country_event = {
 country_event = {
 	id = wtmnb_dc.1020
 	is_triggered_only = yes
-	picture = "gfx/portraits/city_sets/0_2_room.dds"
+	picture = GFX_evt_CM_daily11
 	title = wtmnb_dc.1020.name
+	option = {
+		name = wtmnb_dc.1020.a
+		ruler = {
+			show_dc_r_desc = yes
+		}
+	}
 }
 
 country_event = {
 	id = wtmnb_dc.1021
 	is_triggered_only = yes
-	picture = "gfx/portraits/city_sets/0_3_room.dds"
+	picture = GFX_evt_CM_chain21
 	title = wtmnb_dc.1020.name
+	option = {
+		name = wtmnb_dc.1020.a
+		ruler = {
+			show_dc_r_desc = yes
+		}
+	}
 }

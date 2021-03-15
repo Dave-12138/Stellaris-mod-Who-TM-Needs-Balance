@@ -97,7 +97,7 @@ country_event = {
 						is_inorganic_species = no
 					}
 					NOT = {
-						gender = female
+						gender = male
 					}
 				}
 			}
@@ -105,6 +105,48 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = wtmnb_dc.1000
+			}
+		}
+	}
+	#宣战
+	option = {
+		name = wtmnb_diplomacy.1.c
+		custom_tooltip = wtmnb_diplomacy.1.c.desc
+		trigger = {
+			NOT = {
+				is_overlord_to = event_target:wtmnb_target.owner
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = wtmnb_diplomacy.1100
+				days = 30
+			}
+		}
+	}
+	#宣战
+	option = {
+		name = wtmnb_diplomacy.1.d
+		custom_tooltip = wtmnb_diplomacy.1.d.desc
+		hidden_effect = {
+			country_event = {
+				id = wtmnb_diplomacy.1101
+				days = 30
+			}
+		}
+	}
+	#释放附庸
+	option = {
+		name = wtmnb_diplomacy.1.e
+		custom_tooltip = wtmnb_diplomacy.1.e.desc
+		trigger = {
+			is_overlord_to = event_target:wtmnb_target.owner
+		}
+		hidden_effect = {
+			event_target:wtmnb_target.owner = {
+				set_subject_of = {
+					who = none
+				}
 			}
 		}
 	}
@@ -226,5 +268,77 @@ country_event = {
 	option = {
 		name = wtmnb_diplomacy.1001.c
 		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
+}
+
+#宣战
+country_event = {
+	id = wtmnb_diplomacy.1100
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				is_at_war_with = event_target:wtmnb_target.owner
+			}
+			if = {
+				limit = {
+					has_authority = auth_corporate
+				}
+				set_war_goal = {
+					type = wg_megacorp_subjugate
+					target = event_target:wtmnb_target.owner
+					enemy = event_target:wtmnb_target.owner
+				}
+			}
+			else = {
+				set_war_goal = {
+					type = wg_subjugation
+					target = event_target:wtmnb_target.owner
+					enemy = event_target:wtmnb_target.owner
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_authority = auth_corporate
+				}
+				declare_war = {
+					target = event_target:wtmnb_target.owner
+					attacker_war_goal = wg_megacorp_subjugate
+				}
+			}
+			else = {
+				declare_war = {
+					target = event_target:wtmnb_target.owner
+					attacker_war_goal = wg_subjugation
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb_diplomacy.1101
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				is_at_war_with = event_target:wtmnb_target.owner
+			}
+			set_war_goal = {
+				type = wg_cleansing
+				target = event_target:wtmnb_target.owner
+				enemy = event_target:wtmnb_target.owner
+			}
+		}
+		else = {
+			declare_war = {
+				target = event_target:wtmnb_target.owner
+				attacker_war_goal = wg_cleansing
+			}
+		}
 	}
 }

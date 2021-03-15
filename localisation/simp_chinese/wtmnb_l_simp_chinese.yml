@@ -3,7 +3,7 @@
  sm_wtmnb_super_trade_hub_desc:0 "高效的军制式超光速无人机能将小半个银河系划入星区收集范围"
 #################
  wtmnb_fortress:0 "月光王座"
- wtmnb_fortress_plural:0 "月光王座"
+ wtmnb_fortress_plural:0 "$wtmnb_fortress$"
  aura_unbreakable_shield_wide:0 "自由领域"
  SHIP_UNBREAKABLE_SHARE:0 "Anti力场"
  WTMNB_WEAPON:0 "§M月光王座§!"
@@ -123,6 +123,7 @@
  wtmnb.1001.e:0 "$PLANET_KILLER_SHIELDER$"
  wtmnb.1001.f:0 "$PLANET_KILLER_CRACKER$"
  wtmnb.1001.g:0 "$EDEN_STAR_AURA$"
+ wtmnb.1001.h:0 "外交频道"
 #############
  wtmnb_joke.0.title:0 "贴吧新闻"
  wtmnb_joke.0.text:0 "近日，一位吧友熬夜玩群星时被母亲要求打完这局就睡觉"
@@ -139,10 +140,15 @@
  wtmnb_diplomacy.1.disloyal.desc:0 "[Root.GetSpeciesNameInsult]，你们这群杂碎一定会后悔的。"
  wtmnb_diplomacy.1.insult.desc:0 "哦？原来是[Root.GetSpeciesName]吗？真是不好意思，你们和缇扬奇的粪便太相像了。"
  wtmnb_diplomacy.1.neutral.desc:0 "继续，我在听。"
- wtmnb_diplomacy.1.a:0 "没什么事，我改变主意了。"
+ wtmnb_diplomacy.1.a:0 "没事了，我改变主意了。"
  wtmnb_diplomacy.1.b:0 "刺杀[wtmnb_target.Owner.GetRulerTitle]§H[wtmnb_target.Owner.GetRulerName]§!"
  wtmnb_diplomacy.1.b.desc:0 "§H[wtmnb_target.Owner.GetRulerName]§!死亡\n[wtmnb_target.Owner.GetName]被羞辱"
-
+ wtmnb_diplomacy.1.c:0 "宣战(附庸)"
+ wtmnb_diplomacy.1.c.desc:0 "达成战争目标后§H[wtmnb_target.Owner.GetName]§!成为§H[Root.GetName]§!的附庸/子公司\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
+ wtmnb_diplomacy.1.d:0 "宣战(净化)"
+ wtmnb_diplomacy.1.d.desc:0 "§R全面战争§!\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
+ wtmnb_diplomacy.1.e:0 "释放附庸"
+ wtmnb_diplomacy.1.e.desc:0 "给予§H[wtmnb_target.Owner.GetName]§!完整主权"
 
  wtmnb_diplomacy.1000.name:0 "[deadruler.GetName]死于急性崩坏能感染"
  wtmnb_diplomacy.1000.friendly.desc:0 "随着[deadruler.GetName]身上紫色裂样纹路的突然出现与迅速扩大，现场友好轻松的气氛戛然而止\n短短几分钟后[deadruler.GetName]被宣布死亡，现场的[wtmnb_target.Owner.GetSpeciesNamePlural]眼中充满了悲伤与不解。。"
@@ -202,8 +208,6 @@
  pc_wtmnb_prometheus_srse:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y深海能源生产§!方向特化"
  pc_wtmnb_prometheus_pantsu:0 "这颗$pc_wtmnb_prometheus$星球目前填满了胖次"
  pc_wtmnb_prometheus_pantsu2:0 "这颗$pc_wtmnb_prometheus$星球上的居民几乎全员真空甚至全裸，却都在头上套了从别人屁股上扒下来的胖次"
- pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球正在射精"
- pc_wtmnb_prometheus_sage:0 "这颗$pc_wtmnb_prometheus$星球是圣器"
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"

@@ -4,11 +4,11 @@ wtmnb_super_trade_hub = {
 	construction_days = 180
 	initial = yes
 	potential = {
+		has_starbase_module = trading_hub
 		exists = owner
 		owner = {
 			has_technology = tech_wtmnb_fortress
 		}
-		is_gestalt = no
 	}
 	resources = {
 		category = starbase_modules

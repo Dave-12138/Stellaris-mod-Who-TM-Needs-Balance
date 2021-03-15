@@ -34,7 +34,7 @@
  leader_trait_ruler_wtmnb_dc_r_desc:0 ""
 
  leader_trait_ruler_wtmnb_dc_r2:0 "强暴经历"
- leader_trait_ruler_wtmnb_dc_r2_desc:0 ""
+ leader_trait_ruler_wtmnb_dc_r2_desc:0 "斯德哥尔摩"
 
  leader_trait_ruler_wtmnb_dc_r3:0 "妊娠"
  leader_trait_ruler_wtmnb_dc_r3_desc:0 "这位统治者处于显而易见的妊娠状态"
@@ -42,17 +42,25 @@
  decision_wtmnb_dc_create_pop:0 "人工授精"
  decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位预先女体化改造的居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
 ########
- wtmnb_diplomacy.1.dc_r:0 "§H[wtmnb_target.Owner.GetRulerName]§!（多彩专属，没写完"
+ wtmnb_diplomacy.1.dc_r:0 "§H[wtmnb_target.Owner.GetRulerName]§!（多彩专属event，coming soon"
 
  wtmnb_dc.1010.name:0 "[wtmnb_target.Owner.GetRulerTitle]被"
- wtmnb_dc.1010.desc0:0 "[wtmnb_target.Owner.GetRulerTitle][dc_r_ruler.GetName]与几位随从在众目睽睽之下被[From.GetName]特使\n场面一度十分混乱。\n"
+ wtmnb_dc.1010.desc0:0 "[wtmnb_target.Owner.GetRulerTitle][dc_r_ruler.GetName]与几位随从在众目睽睽之下被[From.GetName]特使\n"
  wtmnb_dc.1010.desc:0 "$wtmnb_dc.1010.desc0$"
  wtmnb_dc.1010.a:0 "很好"
 
  wtmnb_dc.1011.desc:0 "$wtmnb_dc.1010.desc0$"
 
  wtmnb_dc.1020.name:0 "$wtmnb_dc.1010.desc0$"
-
+ wtmnb_dc.1020.a:0 "wtmnb_dc.1020.a"
 ##########
- opinion_wtmnb_dc_r:0 ""
+ opinion_wtmnb_dc_r:0 "opinion_wtmnb_dc_r"
  
+##########
+ leader_trait_ruler_wtmnb_dc_r_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r$§!特质"
+ leader_trait_ruler_wtmnb_dc_r2_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r2$§!特质"
+ leader_trait_ruler_wtmnb_dc_r3_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r3$§!特质"
+#########
+ 
+ pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球正在射精"
+ pc_wtmnb_prometheus_sage:0 "这颗$pc_wtmnb_prometheus$星球是圣器"
