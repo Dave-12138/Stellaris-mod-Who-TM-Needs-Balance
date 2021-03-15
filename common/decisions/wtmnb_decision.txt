@@ -44,60 +44,10 @@ decision_wtmnb_create_pop = {
 		}
 	}
 }
-decision_wtmnb_dc_create_pop = {
-	owned_planets_only = yes
-	enactment_time = 270
-	icon = decision_alien_transforming
-	resources = {
-		category = decisions
-		cost = {
-			energy = 100
-		}
-	}
-	potential = {
-		is_planet_class = pc_wtmnb_prometheus
-		any_owned_pop = {
-			OR = {
-				has_trait = trait_DC_ethic_carnalism
-				has_trait = trait_DC_ethic_asceticism
-				has_trait = trait_DC_ethic_parasite_mind
-				has_trait = trait_DC_ethic_lust_skynet
-			}
-		}
-	}
-	effect = {
-		custom_tooltip = "add_20_pop"
-		hidden_effect = {
-			random_owned_pop = {
-				limit = {
-					NOR = {
-						is_species_class = MACHINE
-						is_species_class = ROBOT
-					}
-				}
-				species = {
-					save_event_target_as = rand_sp
-				}
-			}
-			while = {
-				count = 20
-				create_pop = {
-					species = event_target:rand_sp
-				}
-			}
-		}
-	}
-	ai_weight = {
-		weight = 5000
-		modifier = {
-			factor = 0
-			num_pops > 100
-		}
-	}
-}
+
 decision_wtmnb_reroll = {
 	enactment_time = 0
-	icon = decision_wtmnb_create_pop
+	icon = wtmnb_4th_key
 	potential = {
 		any_fleet_in_orbit = {
 			any_owned_ship = {
