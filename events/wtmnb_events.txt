@@ -460,10 +460,12 @@ country_event = {
 	option = {
 		name = wtmnb.1001.h
 		trigger = {
-			exists = owner
-			owner = {
-				NOT = {
-					is_same_empire = root
+			from = {
+				exists = owner
+				owner = {
+					NOT = {
+						is_same_empire = root
+					}
 				}
 			}
 		}
