@@ -147,7 +147,7 @@
  wtmnb_diplomacy.1.c.desc:0 "达成战争目标后§H[wtmnb_target.Owner.GetName]§!成为§H[Root.GetName]§!的附庸/子公司\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
  wtmnb_diplomacy.1.d:0 "宣战(净化)"
  wtmnb_diplomacy.1.d.desc:0 "§R全面战争§!\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
- wtmnb_diplomacy.1.e:0 "释放附庸"
+ wtmnb_diplomacy.1.e:0 "宣布§H[wtmnb_target.Owner.GetName]§!独立"
  wtmnb_diplomacy.1.e.desc:0 "给予§H[wtmnb_target.Owner.GetName]§!完整主权"
 
  wtmnb_diplomacy.1000.name:0 "[deadruler.GetName]死于急性崩坏能感染"
@@ -164,6 +164,17 @@
  wtmnb_diplomacy.1001.a:0 "为什么？我们做错了什么？"
  wtmnb_diplomacy.1001.b:0 "他们会为此付出代价"
  wtmnb_diplomacy.1001.c:0 "准备葬礼。"
+
+ wtmnb_diplomacy.1100.name:0 "与§H[wtmnb_target.Owner.GetName]§!的战争"
+ wtmnb_diplomacy.1100.desc:0 "我们将将与§H[wtmnb_target.Owner.GetName]§!战争的目标重新设置为附庸"
+ wtmnb_diplomacy.1100.desc2:0 "我们将向§H[wtmnb_target.Owner.GetName]§!宣战，目的是让对方成为我们的附庸"
+ wtmnb_diplomacy.1100.a:0 "臣服，或是灭亡"
+ wtmnb_diplomacy.1100.c:0 "不，我另有安排"
+ 
+ 
+ wtmnb_diplomacy.1101.desc:0 "我们将将与§H[wtmnb_target.Owner.GetName]§!战争的目标重新设置为净化"
+ wtmnb_diplomacy.1101.desc2:0 "我们将向§H[wtmnb_target.Owner.GetName]§!宣战，目的是让对方从银河系消失"
+ wtmnb_diplomacy.1101.a:0 "让我们开始吧"
 ########
  tech_wtmnb_fortress:0 "虚数内能导论"
  tech_wtmnb_fortress_desc:0 "热力学第二定律有这样一个表述：一个系统的熵如果下降，就必然会引起另一个系统的熵以更大的幅度上升。从信息的角度来看，这相当于，信息高度混沌化的普通环境，与信息高度秩序化的负熵环境之间，存在巨大的信息不对称。历史研究表明，崩坏能和这种信息不对称具有强烈的伴生关系。而在数学上，属于坍缩次元的虚数内能，与作为发散次元——也就是我们平常能感知到的四维时空——的热力表征的实数内能，在数学上可以通过高维复函数进行统一的表达，其结果可以在微观尺度上预测崩坏的波动。因此，当前的研究者普遍猜想，这种“虚数内能”就是崩坏能，或者至少是崩坏能的重要组成部分。"

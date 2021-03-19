@@ -62,15 +62,18 @@ country_event = {
 		text = wtmnb_diplomacy.1.machine_dad.desc
 	}
 	diplomatic = yes
+	#图
 	picture_event_data = {
 		portrait = event_target:wtmnb_target.owner.ruler
 		room = event_target:wtmnb_target.owner.ruler
 		planet_background = event_target:wtmnb_target
 		graphical_culture = event_target:wtmnb_target
 	}
+	#取消
 	option = {
 		name = wtmnb_diplomacy.1.a
 	}
+	#kill ruler
 	option = {
 		name = wtmnb_diplomacy.1.b
 		trigger = {
@@ -91,6 +94,7 @@ country_event = {
 		name = wtmnb_diplomacy.1.dc_r
 		trigger = {
 			event_target:wtmnb_target = {
+				exists = owner.ruler
 				owner.ruler = {
 					species = {
 						is_ugly_pop = no
@@ -140,7 +144,7 @@ country_event = {
 		name = wtmnb_diplomacy.1.e
 		custom_tooltip = wtmnb_diplomacy.1.e.desc
 		trigger = {
-			is_overlord_to = event_target:wtmnb_target.owner
+			exists = event_target:wtmnb_target.owner.overlord
 		}
 		hidden_effect = {
 			event_target:wtmnb_target.owner = {
@@ -200,6 +204,12 @@ country_event = {
 	option = {
 		name = wtmnb_diplomacy.1000.a
 		custom_tooltip = wtmnb_diplomacy.1000.tip
+		if = {
+			limit = {
+				exists = event_target:deadruler
+			}
+			custom_tooltip = "exists = event_target:deadruler"
+		}
 	}
 	option = {
 		name = wtmnb_diplomacy.1000.b
@@ -275,70 +285,114 @@ country_event = {
 country_event = {
 	id = wtmnb_diplomacy.1100
 	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		if = {
-			limit = {
+	title = wtmnb_diplomacy.1100.name
+	desc = {
+		text = wtmnb_diplomacy.1100.desc
+		trigger = {
+			is_at_war_with = event_target:wtmnb_target.owner
+		}
+	}
+	desc = {
+		text = wtmnb_diplomacy.1100.desc2
+		trigger = {
+			NOT = {
 				is_at_war_with = event_target:wtmnb_target.owner
 			}
-			if = {
-				limit = {
-					has_authority = auth_corporate
-				}
-				set_war_goal = {
-					type = wg_megacorp_subjugate
-					target = event_target:wtmnb_target.owner
-					enemy = event_target:wtmnb_target.owner
-				}
+		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1100.a
+		trigger = {
+			is_at_war_with = event_target:wtmnb_target.owner
+		}
+		if = {
+			limit = {
+				has_authority = auth_corporate
 			}
-			else = {
-				set_war_goal = {
-					type = wg_subjugation
-					target = event_target:wtmnb_target.owner
-					enemy = event_target:wtmnb_target.owner
-				}
+			set_war_goal = {
+				type = wg_megacorp_subjugate
+				target = event_target:wtmnb_target.owner
+				enemy = event_target:wtmnb_target.owner
 			}
 		}
 		else = {
-			if = {
-				limit = {
-					has_authority = auth_corporate
-				}
-				declare_war = {
-					target = event_target:wtmnb_target.owner
-					attacker_war_goal = wg_megacorp_subjugate
-				}
-			}
-			else = {
-				declare_war = {
-					target = event_target:wtmnb_target.owner
-					attacker_war_goal = wg_subjugation
-				}
+			set_war_goal = {
+				type = wg_subjugation
+				target = event_target:wtmnb_target.owner
+				enemy = event_target:wtmnb_target.owner
 			}
 		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1100.a
+		trigger = {
+			NOT = {
+				is_at_war_with = event_target:wtmnb_target.owner
+			}
+		}
+		if = {
+			limit = {
+				has_authority = auth_corporate
+			}
+			declare_war = {
+				target = event_target:wtmnb_target.owner
+				attacker_war_goal = wg_megacorp_subjugate
+			}
+		}
+		else = {
+			declare_war = {
+				target = event_target:wtmnb_target.owner
+				attacker_war_goal = wg_subjugation
+			}
+		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1100.c
 	}
 }
 
 country_event = {
 	id = wtmnb_diplomacy.1101
 	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		if = {
-			limit = {
+	title = wtmnb_diplomacy.1100.name
+	desc = {
+		text = wtmnb_diplomacy.1101.desc
+		trigger = {
+			is_at_war_with = event_target:wtmnb_target.owner
+		}
+	}
+	desc = {
+		text = wtmnb_diplomacy.1101.desc2
+		trigger = {
+			NOT = {
 				is_at_war_with = event_target:wtmnb_target.owner
 			}
-			set_war_goal = {
-				type = wg_cleansing
-				target = event_target:wtmnb_target.owner
-				enemy = event_target:wtmnb_target.owner
+		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1101.a
+		trigger = {
+			is_at_war_with = event_target:wtmnb_target.owner
+		}
+		set_war_goal = {
+			type = wg_cleansing
+			target = event_target:wtmnb_target.owner
+			enemy = event_target:wtmnb_target.owner
+		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1101.a
+		trigger = {
+			NOT = {
+				is_at_war_with = event_target:wtmnb_target.owner
 			}
 		}
-		else = {
-			declare_war = {
-				target = event_target:wtmnb_target.owner
-				attacker_war_goal = wg_cleansing
-			}
+		declare_war = {
+			target = event_target:wtmnb_target.owner
+			attacker_war_goal = wg_cleansing
 		}
+	}
+	option = {
+		name = wtmnb_diplomacy.1100.c
 	}
 }

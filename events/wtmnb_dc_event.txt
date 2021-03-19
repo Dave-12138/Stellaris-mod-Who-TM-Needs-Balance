@@ -293,7 +293,7 @@ country_event = {
 	id = wtmnb_dc.1010
 	is_triggered_only = yes
 	picture = GFX_evt_CM_daily11
-	title = wtmnb_dc.1010.name
+	title = wtmnb_dc.1000.name
 	desc = wtmnb_dc.1010.desc
 	option = {
 		name = wtmnb_dc.1010.a
@@ -310,10 +310,10 @@ country_event = {
 	id = wtmnb_dc.1011
 	is_triggered_only = yes
 	picture = GFX_evt_CM_chain21
-	title = wtmnb_dc.1010.name
+	title = wtmnb_dc.1000.name
 	desc = wtmnb_dc.1011.desc
 	option = {
-		name = wtmnb_dc.1010.a
+		name = wtmnb_dc.1011.a
 		add_resource = {
 			influence = 1000
 		}
@@ -329,9 +329,72 @@ country_event = {
 	is_triggered_only = yes
 	picture = GFX_evt_CM_daily11
 	title = wtmnb_dc.1020.name
+	#描述
+	desc = {
+		text = wtmnb_dc.1020.desc.1
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+			}
+		}
+	}
+	desc = {
+		text = wtmnb_dc.1020.desc.2
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			}
+		}
+	}
+	#选项
 	option = {
 		name = wtmnb_dc.1020.a
-		ruler = {
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+			}
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.b
+		trigger = {
+			owner_species = {
+				has_trait = trait_DC_ethic_asceticism
+			}
+			is_gestalt = no
+		}
+		event_target:dc_r_ruler = {
+			kill_leader = {
+				type = ruler
+				show_notification = no
+			}
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.c
+		trigger = {
+			owner_species = {
+				has_trait = trait_DC_ethic_carnalism
+			}
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			}
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.d
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			}
+		}
+		event_target:dc_r_ruler = {
 			show_dc_r_desc = yes
 		}
 	}
@@ -342,9 +405,72 @@ country_event = {
 	is_triggered_only = yes
 	picture = GFX_evt_CM_chain21
 	title = wtmnb_dc.1020.name
+	#描述
+	desc = {
+		text = wtmnb_dc.1020.desc.1
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+			}
+		}
+	}
+	desc = {
+		text = wtmnb_dc.1020.desc.2
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			}
+		}
+	}
+	#选项
 	option = {
 		name = wtmnb_dc.1020.a
-		ruler = {
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+			}
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.b
+		trigger = {
+			owner_species = {
+				has_trait = trait_DC_ethic_asceticism
+			}
+			is_gestalt = no
+		}
+		event_target:dc_r_ruler = {
+			kill_leader = {
+				type = ruler
+				show_notification = no
+			}
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.c
+		trigger = {
+			owner_species = {
+				has_trait = trait_DC_ethic_carnalism
+			}
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			}
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.d
+		trigger = {
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			}
+		}
+		event_target:dc_r_ruler = {
 			show_dc_r_desc = yes
 		}
 	}

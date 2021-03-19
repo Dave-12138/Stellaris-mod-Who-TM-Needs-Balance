@@ -31,10 +31,10 @@
  trait_fanatic_seminal_addiction_s_tip:0 "不再需要额外润滑剂\n难以在其他星球居住"
 ##################
  leader_trait_ruler_wtmnb_dc_r:0 "心理阴影"
- leader_trait_ruler_wtmnb_dc_r_desc:0 ""
+ leader_trait_ruler_wtmnb_dc_r_desc:0 "一次绝望无助的经历让这位统治者"
 
- leader_trait_ruler_wtmnb_dc_r2:0 "强暴经历"
- leader_trait_ruler_wtmnb_dc_r2_desc:0 "斯德哥尔摩"
+ leader_trait_ruler_wtmnb_dc_r2:0 "政治技巧"
+ leader_trait_ruler_wtmnb_dc_r2_desc:0 "这位统治者自某场特殊经历后开始习惯于在床上解决政治问题"
 
  leader_trait_ruler_wtmnb_dc_r3:0 "妊娠"
  leader_trait_ruler_wtmnb_dc_r3_desc:0 "这位统治者处于显而易见的妊娠状态"
@@ -42,17 +42,26 @@
  decision_wtmnb_dc_create_pop:0 "人工授精"
  decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位预先女体化改造的居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
 ########
- wtmnb_diplomacy.1.dc_r:0 "§H[wtmnb_target.Owner.GetRulerName]§!（多彩专属event，coming soon"
 
- wtmnb_dc.1010.name:0 "[wtmnb_target.Owner.GetRulerTitle]被"
- wtmnb_dc.1010.desc0:0 "[wtmnb_target.Owner.GetRulerTitle][dc_r_ruler.GetName]与几位随从在众目睽睽之下被[From.GetName]特使\n"
- wtmnb_dc.1010.desc:0 "$wtmnb_dc.1010.desc0$"
- wtmnb_dc.1010.a:0 "很好"
 
- wtmnb_dc.1011.desc:0 "$wtmnb_dc.1010.desc0$"
+ wtmnb_diplomacy.1.dc_r:0 "对§H[wtmnb_target.Owner.GetRulerName]§!图谋不轨"
 
- wtmnb_dc.1020.name:0 "$wtmnb_dc.1010.desc0$"
- wtmnb_dc.1020.a:0 "wtmnb_dc.1020.a"
+ wtmnb_dc.1000.name:0 "[wtmnb_target.Owner.GetRulerTitle]被当众猥亵"
+ wtmnb_dc.1000.desc:0 "[wtmnb_target.Owner.GetRulerTitle][dc_r_ruler.GetName]与几位随从在众目睽睽之下被[From.GetName]特使强暴"
+
+ wtmnb_dc.1010.desc:0 "$wtmnb_dc.1000.desc$\n等到群众被疏散，现场只剩下了倒在味道浓厚的混合液体中的§H[dc_r_ruler.GetName]§!"
+ wtmnb_dc.1010.a:0 "中出"
+
+ wtmnb_dc.1011.desc:0 "$wtmnb_dc.1000.desc$\n等到群众被疏散，现场只剩下了失去意识的§H[dc_r_ruler.GetName]§!"
+ wtmnb_dc.1011.a:0 "那支双头龙是不是有点太粗了？"
+
+ wtmnb_dc.1020.name:0 "$wtmnb_dc.1000.name$"
+ wtmnb_dc.1020.desc.1:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人清醒后不愿提及此事"
+ wtmnb_dc.1020.desc.2:0 "$wtmnb_dc.1000.desc$至于失去意识，清醒后似乎仍沉浸在余韵中"
+ wtmnb_dc.1020.a:0 "照顾当事人情绪，他人不得再提起——最后我们需要拟定复仇计划"
+ wtmnb_dc.1020.b:0 "帮她体面，然后，准备回击"
+ wtmnb_dc.1020.c:0 "还有这等好事？"
+ wtmnb_dc.1020.d:0 "你等会，你再说一遍当事人什么反应？"
 ##########
  opinion_wtmnb_dc_r:0 "opinion_wtmnb_dc_r"
  
@@ -63,4 +72,4 @@
 #########
  
  pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球HSO"
- pc_wtmnb_prometheus_sage:0 "这颗$pc_wtmnb_prometheus$星球是圣地"
+ pc_wtmnb_prometheus_sage:0 "这颗$pc_wtmnb_prometheus$星球是圣域"
