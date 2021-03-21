@@ -149,6 +149,10 @@
  wtmnb_diplomacy.1.d.desc:0 "§R全面战争§!\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
  wtmnb_diplomacy.1.e:0 "宣布§H[wtmnb_target.Owner.GetName]§!独立"
  wtmnb_diplomacy.1.e.desc:0 "给予§H[wtmnb_target.Owner.GetName]§!完整主权"
+ wtmnb_diplomacy.1.f:0 "关闭边境"
+ wtmnb_diplomacy.1.f.desc:0 "关闭边境"
+ wtmnb_diplomacy.1.g:0 "开放边境"
+ wtmnb_diplomacy.1.g.desc:0 "开放边境"
 
  wtmnb_diplomacy.1000.name:0 "[deadruler.GetName]死于急性崩坏能感染"
  wtmnb_diplomacy.1000.friendly.desc:0 "随着[deadruler.GetName]身上紫色裂样纹路的突然出现与迅速扩大，现场友好轻松的气氛戛然而止\n短短几分钟后[deadruler.GetName]被宣布死亡，现场的[wtmnb_target.Owner.GetSpeciesNamePlural]眼中充满了悲伤与不解。。"

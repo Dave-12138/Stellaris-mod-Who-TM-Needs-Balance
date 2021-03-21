@@ -154,6 +154,36 @@ country_event = {
 			}
 		}
 	}
+	#关闭边境
+	option = {
+		name = wtmnb_diplomacy.1.f
+		custom_tooltip = wtmnb_diplomacy.1.f.desc
+		trigger = {
+			NOT = {
+				has_closed_borders = event_target:wtmnb_target.owner
+			}
+		}
+		hidden_effect = {
+			set_closed_borders = {
+				who = event_target:wtmnb_target.owner
+				status = yes
+			}
+		}
+	}
+	#开放边境
+	option = {
+		name = wtmnb_diplomacy.1.g
+		custom_tooltip = wtmnb_diplomacy.1.g.desc
+		trigger = {
+			has_closed_borders = event_target:wtmnb_target.owner
+		}
+		hidden_effect = {
+			set_closed_borders = {
+				who = event_target:wtmnb_target.owner
+				status = no
+			}
+		}
+	}
 }
 
 #行刺
@@ -204,12 +234,6 @@ country_event = {
 	option = {
 		name = wtmnb_diplomacy.1000.a
 		custom_tooltip = wtmnb_diplomacy.1000.tip
-		if = {
-			limit = {
-				exists = event_target:deadruler
-			}
-			custom_tooltip = "exists = event_target:deadruler"
-		}
 	}
 	option = {
 		name = wtmnb_diplomacy.1000.b

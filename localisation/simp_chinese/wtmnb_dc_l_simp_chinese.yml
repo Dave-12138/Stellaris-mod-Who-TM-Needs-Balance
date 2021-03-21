@@ -58,10 +58,13 @@
  wtmnb_dc.1020.name:0 "$wtmnb_dc.1000.name$"
  wtmnb_dc.1020.desc.1:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人清醒后不愿提及此事"
  wtmnb_dc.1020.desc.2:0 "$wtmnb_dc.1000.desc$至于失去意识，清醒后似乎仍沉浸在余韵中"
+ wtmnb_dc.1020.desc.3:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人目前情绪稳定"
  wtmnb_dc.1020.a:0 "照顾当事人情绪，他人不得再提起——最后我们需要拟定复仇计划"
  wtmnb_dc.1020.b:0 "帮她体面，然后，准备回击"
  wtmnb_dc.1020.c:0 "还有这等好事？"
  wtmnb_dc.1020.d:0 "你等会，你再说一遍当事人什么反应？"
+ wtmnb_dc.1020.e:0 "你这魅魔当的实在不合格"
+ wtmnb_dc.1020.f:0 "你他妈竟敢动我老婆？？"
 ##########
  opinion_wtmnb_dc_r:0 "opinion_wtmnb_dc_r"
  

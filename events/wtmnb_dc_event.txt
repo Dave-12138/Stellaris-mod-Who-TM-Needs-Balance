@@ -204,6 +204,12 @@ country_event = {
 							gender = male
 						}
 						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+						prev = {
+							country_event = {
+								id = wtmnb_dc.1100
+								days = 270
+							}
+						}
 					}
 					50 = {
 					}
@@ -346,12 +352,25 @@ country_event = {
 			}
 		}
 	}
+	desc = {
+		text = wtmnb_dc.1020.desc.3
+		trigger = {
+			event_target:dc_r_ruler = {
+				NOR = {
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				}
+			}
+		}
+	}
 	#选项
 	option = {
 		name = wtmnb_dc.1020.a
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				NOT = {
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+				}
 			}
 		}
 		event_target:dc_r_ruler = {
@@ -372,6 +391,9 @@ country_event = {
 				show_notification = no
 			}
 		}
+		ai_chance = {
+			factor = 0.1
+		}
 	}
 	option = {
 		name = wtmnb_dc.1020.c
@@ -385,6 +407,10 @@ country_event = {
 		}
 		event_target:dc_r_ruler = {
 			show_dc_r_desc = yes
+			add_skill = 1000
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -396,6 +422,32 @@ country_event = {
 		}
 		event_target:dc_r_ruler = {
 			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.e
+		trigger = {
+			owner_species = {
+				has_trait = trait_DC_ethic_carnalism
+			}
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+			}
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.f
+		trigger = {
+			has_civic = civic_Hport
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
@@ -422,12 +474,25 @@ country_event = {
 			}
 		}
 	}
+	desc = {
+		text = wtmnb_dc.1020.desc.3
+		trigger = {
+			event_target:dc_r_ruler = {
+				NOR = {
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				}
+			}
+		}
+	}
 	#选项
 	option = {
 		name = wtmnb_dc.1020.a
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				NOT = {
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+				}
 			}
 		}
 		event_target:dc_r_ruler = {
@@ -448,6 +513,9 @@ country_event = {
 				show_notification = no
 			}
 		}
+		ai_chance = {
+			factor = 0.1
+		}
 	}
 	option = {
 		name = wtmnb_dc.1020.c
@@ -461,6 +529,10 @@ country_event = {
 		}
 		event_target:dc_r_ruler = {
 			show_dc_r_desc = yes
+			add_skill = 1000
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -472,6 +544,51 @@ country_event = {
 		}
 		event_target:dc_r_ruler = {
 			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.e
+		trigger = {
+			owner_species = {
+				has_trait = trait_DC_ethic_carnalism
+			}
+			event_target:dc_r_ruler = {
+				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+			}
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+	}
+	option = {
+		name = wtmnb_dc.1020.f
+		trigger = {
+			has_civic = civic_Hport
+		}
+		event_target:dc_r_ruler = {
+			show_dc_r_desc = yes
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb_dc.1100
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				exists = ruler
+				ruler = {
+					is_same_value = event_target:dc_r_ruler
+				}
+			}
+			ruler = {
+				remove_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+			}
 		}
 	}
 }
