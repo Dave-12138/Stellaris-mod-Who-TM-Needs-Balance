@@ -39,4 +39,23 @@ spriteTypes = {
 		name = "GFX_ship_part_wtmnb_4th_key"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_4th_key.dds"
 	}
+	spriteType = {
+		name = "GFX_fleet_order_button_ground_support_wtmnb_doom"
+		texturefile = "gfx/interface/fleet_view/wtmnb_bombardment_stances.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 12
+			animationdelay = 0
+			animationblendmode = "overlay"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0 y = 0 }
+			animationtexturescale = { x = 1 y = 1 }
+			animationframes = { 1 2 3 }
+		}
+	}
 }

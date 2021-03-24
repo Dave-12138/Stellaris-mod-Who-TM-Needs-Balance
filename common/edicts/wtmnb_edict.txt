@@ -23,6 +23,9 @@ wtmnb_edict = {
 			tech = tech_terrestrial_sculpting
 			message = no
 		}
+		add_resource = {
+			alloys = 10000
+		}
 		# if = {
 		# 	limit = {
 		# 		has_global_flag = giga_has_host
@@ -85,7 +88,6 @@ wtmnb_edict_2 = {
 		weight = 0
 	}
 }
-
 
 wtmnb_edict_3 = {
 	icon = GFX_nullobject

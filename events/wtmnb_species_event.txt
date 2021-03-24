@@ -1,0 +1,302 @@
+namespace = wtmnb_species
+country_event = {
+	id = wtmnb_species.1
+	is_triggered_only = yes
+	title = wtmnb_species.1.name
+	desc = wtmnb_species.1.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:wtmnb_target.owner.leader
+		planet_background = event_target:wtmnb_target.owner
+		graphical_culture = event_target:wtmnb_target.owner
+		city_level = event_target:wtmnb_target.owner
+		room = event_target:wtmnb_target.owner
+	}
+	option = {
+		name = wtmnb_species.1.0
+	}
+	option = {
+		name = wtmnb_species.1.a
+		trigger = {
+			has_global_flag = has_wsg_mod
+		}
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_wsg = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.b
+		trigger = {
+			has_global_flag = has_wsg_mod
+		}
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_sh = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.c
+		trigger = {
+			any_country = {
+				OR = {
+					has_country_flag = carnalism_flag
+					has_country_flag = asceticism_flag
+					has_country_flag = parasite_mind_flag
+					has_country_flag = lust_skynet_flag
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_suc = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.d
+		trigger = {
+			any_country = {
+				OR = {
+					has_country_flag = carnalism_flag
+					has_country_flag = asceticism_flag
+					has_country_flag = parasite_mind_flag
+					has_country_flag = lust_skynet_flag
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_inn = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.e
+		trigger = {
+			any_country = {
+				OR = {
+					has_country_flag = carnalism_flag
+					has_country_flag = asceticism_flag
+					has_country_flag = parasite_mind_flag
+					has_country_flag = lust_skynet_flag
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_mwn = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.p
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_hum = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.q
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_mam = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.r
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_rep = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.s
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_avi = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.t
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_art = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.u
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_mol = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.v
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_fun = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.w
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_robot = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.x
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_machine = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.y
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_lithoid = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.z
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_necroid = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wtmnb_species.100
+	is_triggered_only = yes
+	diplomatic = yes
+	title = wtmnb_species.100.name
+	desc = wtmnb_species.100.desc
+	picture_event_data = {
+		portrait = event_target:wtmnb_target.owner.leader
+		planet_background = event_target:wtmnb_target.owner
+		graphical_culture = event_target:wtmnb_target.owner
+		city_level = event_target:wtmnb_target.owner
+		room = event_target:wtmnb_target.owner
+	}
+	option = {
+		name = wtmnb_species.100.0
+	}
+	option = {
+		name = wtmnb_species.100.a
+		is_dialog_only = yes
+		response_text = wtmnb_species.100.a
+		event_target:wtmnb_target = {
+			if = {
+				limit = {
+					any_owned_species = {
+						has_trait = trait_hive_mind
+					}
+				}
+				every_owned_species = {
+					prev = {
+						modify_species = {
+							species = prev
+							remove_trait = trait_hive_mind
+							change_scoped_species = yes
+						}
+					}
+				}
+			}
+			else = {
+				every_owned_species = {
+					prev = {
+						modify_species = {
+							species = prev
+							add_trait = trait_hive_mind
+							change_scoped_species = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.100.b
+		is_dialog_only = yes
+		response_text = wtmnb_species.100.b
+		event_target:wtmnb_target = {
+			if = {
+				limit = {
+					any_owned_species = {
+						has_trait = trait_machine_unit
+					}
+				}
+				every_owned_species = {
+					prev = {
+						modify_species = {
+							species = prev
+							remove_trait = trait_machine_unit
+							change_scoped_species = yes
+						}
+					}
+				}
+			}
+			else = {
+				every_owned_species = {
+					prev = {
+						modify_species = {
+							species = prev
+							add_trait = trait_machine_unit
+							change_scoped_species = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.100.c
+		is_dialog_only = yes
+		response_text = wtmnb_species.100.c
+		event_target:wtmnb_target = {
+			if = {
+				limit = {
+					any_owned_species = {
+						has_trait = trait_mechanical
+					}
+				}
+				every_owned_species = {
+					prev = {
+						modify_species = {
+							species = prev
+							remove_trait = trait_mechanical
+							change_scoped_species = yes
+						}
+					}
+				}
+			}
+			else = {
+				every_owned_species = {
+					prev = {
+						modify_species = {
+							species = prev
+							add_trait = trait_mechanical
+							change_scoped_species = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -96,9 +96,9 @@
  deposit_wtmnb_prometheus_rubbish_desc:0 "好像是星球建设留下的边角料，扔进锻炉应该能回收利用\n不过毕竟堆放的地方不起眼，不管也行"
 
 ##################
- bombardment_wtmnb_doom:0 "部署猎杀部队"
- bombardment_wtmnb_doom_name:0 "部署猎杀部队"
- bombardment_wtmnb_doom_desc:0 "$bombardment_wtmnb_doom$不会损伤建筑，大概。\n-对§Y军团§!造成§R无法挽回的§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§R无法挽回的§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-一旦星球破坏度达到1%，开始§R屠杀§!星球上所有人口。"
+ bombardment_wtmnb_doom:0 "人工清洗"
+ bombardment_wtmnb_doom_name:0 "$bombardment_wtmnb_doom$"
+ bombardment_wtmnb_doom_desc:0 "$bombardment_wtmnb_doom$不会损伤建筑，大概。\n-对§Y军团§!造成§R难以估计的§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§R难以估计的§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-无差别§R屠杀§!星球上所有人口。\n-对无人口的AI星球没有战略意义。"
 ###################
  wtmnb.1.name:0 "§H[From.GetName]§!已成无人之境"
  wtmnb.1.desc:0 "§H[From.GetName]§!上能称之为人口的东西都被我们的舰队干掉了！"
@@ -119,11 +119,13 @@
  wtmnb.1001.b.tip:0 "[From.Owner.GetSpeciesName]被赋予§H$trait_wtmnb_toy$§!特质，包括领袖"
  wtmnb.1001.c:0 "圣痕计划([From.GetName])"
  wtmnb.1001.c.tip:0 "[From.GetName]上所有人口:\n获得§H$trait_wtmnb_toy$§!特质\n宜居星球被设为[wtmnb_target.GetClassName]"
- wtmnb.1001.d:0 "$lgate$观测"
- wtmnb.1001.e:0 "$PLANET_KILLER_SHIELDER$"
- wtmnb.1001.f:0 "$PLANET_KILLER_CRACKER$"
- wtmnb.1001.g:0 "$EDEN_STAR_AURA$"
- wtmnb.1001.h:0 "外交频道"
+ wtmnb.1001.d:0 "行星级人口物种重构"
+ wtmnb.1001.e:0 "行星级人口物种修饰"
+ wtmnb.1001.f:0 "$lgate$观测"
+ wtmnb.1001.g:0 "$PLANET_KILLER_SHIELDER$"
+ wtmnb.1001.h:0 "$PLANET_KILLER_CRACKER$"
+ wtmnb.1001.i:0 "$EDEN_STAR_AURA$"
+ wtmnb.1001.j:0 "外交频道"
 #############
  wtmnb_joke.0.title:0 "贴吧新闻"
  wtmnb_joke.0.text:0 "近日，一位吧友熬夜玩群星时被母亲要求打完这局就睡觉"
@@ -179,6 +181,35 @@
  wtmnb_diplomacy.1101.desc:0 "我们将将与§H[wtmnb_target.Owner.GetName]§!战争的目标重新设置为净化"
  wtmnb_diplomacy.1101.desc2:0 "我们将向§H[wtmnb_target.Owner.GetName]§!宣战，目的是让对方从银河系消失"
  wtmnb_diplomacy.1101.a:0 "让我们开始吧"
+####################
+ wtmnb_species.1.name:0 "物种列表"
+ wtmnb_species.1.desc:0 "将目标星球所有物种改造为："
+ wtmnb_species.1.0:0 "取消"
+ wtmnb_species.1.a:0 "$Warship_Girls$"
+ wtmnb_species.1.b:0 "$ShenHai$"
+#中间三个多彩，下面从f开始
+ wtmnb_species.1.f:0 "$REPLACE_ME$" #暂未使用
+
+#空着一段，把原版放最后
+ wtmnb_species.1.p:0 "$HUM$"
+ wtmnb_species.1.q:0 "$MAM$"
+ wtmnb_species.1.r:0 "$REP$"
+ wtmnb_species.1.s:0 "$AVI$"
+ wtmnb_species.1.t:0 "$ART$"
+ wtmnb_species.1.u:0 "$MOL$"
+ wtmnb_species.1.v:0 "$FUN$"
+ wtmnb_species.1.w:0 "$ROBOT$"
+ wtmnb_species.1.x:0 "$MACHINE$"
+ wtmnb_species.1.y:0 "$LITHOID$"
+ wtmnb_species.1.z:0 "$NECROID$"
+
+
+ wtmnb_species.100.name:0 "物种特殊特质微调"
+ wtmnb_species.100.desc:0 "物种特殊特质微调"
+ wtmnb_species.100.0:0 "退出"
+ wtmnb_species.100.a:0 "$trait_hive_mind$"
+ wtmnb_species.100.b:0 "$trait_machine_unit$"
+ wtmnb_species.100.c:0 "$trait_mechanical$"
 ########
  tech_wtmnb_fortress:0 "虚数内能导论"
  tech_wtmnb_fortress_desc:0 "热力学第二定律有这样一个表述：一个系统的熵如果下降，就必然会引起另一个系统的熵以更大的幅度上升。从信息的角度来看，这相当于，信息高度混沌化的普通环境，与信息高度秩序化的负熵环境之间，存在巨大的信息不对称。历史研究表明，崩坏能和这种信息不对称具有强烈的伴生关系。而在数学上，属于坍缩次元的虚数内能，与作为发散次元——也就是我们平常能感知到的四维时空——的热力表征的实数内能，在数学上可以通过高维复函数进行统一的表达，其结果可以在微观尺度上预测崩坏的波动。因此，当前的研究者普遍猜想，这种“虚数内能”就是崩坏能，或者至少是崩坏能的重要组成部分。"

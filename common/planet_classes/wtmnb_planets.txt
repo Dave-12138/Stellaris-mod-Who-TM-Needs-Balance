@@ -5,7 +5,7 @@ pc_wtmnb_prometheus = {
 		planet_max_districts_add = -300
 		planet_housing_add = 2
 		planet_jobs_produces_mult = 1
-		pop_environment_tolerance = -0.2
+		pop_environment_tolerance = 0.75
 		
 	}
 	picture = pc_ai
@@ -36,6 +36,5 @@ pc_wtmnb_prometheus = {
 	}
 	colonizable = yes
 	starting_planet = no
-	ideal = yes
 	show_city = no
 }

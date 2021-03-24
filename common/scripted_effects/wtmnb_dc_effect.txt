@@ -18,3 +18,136 @@ show_dc_r_desc = {
 		custom_tooltip = leader_trait_ruler_wtmnb_dc_r3_added
 	}
 }
+
+wtmnb_planet_species_to_suc = {
+	every_owned_species = {
+		limit = {
+			NOT = {
+				is_species_class = "SUC"
+			}
+		}
+		create_species = {
+			class = "SUC"
+			is_mod = yes
+			name = this
+			plural = this
+			portrait = this
+			traits = this
+			homeworld = prev
+		}
+		modify_species = {
+			species = last_created_species
+			remove_trait = trait_DC_ethic_asceticism
+			add_trait = trait_DC_ethic_carnalism
+			add_traits_at_start_of_list = yes
+		}
+		modify_species = {
+			species = last_created_species
+			remove_trait = trait_DC_ethic_parasite_mind
+			add_trait = trait_sensitive_vagina
+			add_traits_at_start_of_list = yes
+		}
+		modify_species = {
+			species = last_created_species
+			remove_trait = trait_DC_ethic_lust_skynet
+			add_trait = trait_big_breasts
+			add_traits_at_start_of_list = yes
+		}
+		wtmnb_normal_species_fix = yes
+		prev = {
+			every_owned_pop = {
+				limit = {
+					is_same_species = prevprev
+				}
+				change_species = last_created_species
+			}
+		}
+	}
+}
+
+wtmnb_planet_species_to_inn = {
+	every_owned_species = {
+		limit = {
+			NOT = {
+				is_species_class = "INN"
+			}
+		}
+		create_species = {
+			class = "INN"
+			is_mod = yes
+			name = this
+			plural = this
+			portrait = this
+			traits = this
+			homeworld = prev
+		}
+		modify_species = {
+			change_scoped_species = yes
+			add_trait = trait_DC_ethic_asceticism
+			remove_trait = trait_DC_ethic_carnalism
+		}
+		modify_species = {
+			change_scoped_species = yes
+			remove_trait = trait_DC_ethic_parasite_mind
+		}
+		modify_species = {
+			change_scoped_species = yes
+			remove_trait = trait_DC_ethic_lust_skynet
+		}
+		wtmnb_normal_species_fix = yes
+		prev = {
+			every_owned_pop = {
+				limit = {
+					is_same_species = prevprev
+				}
+				change_species = last_created_species
+			}
+		}
+	}
+}
+
+wtmnb_planet_species_to_mwn = {
+	every_owned_species = {
+		limit = {
+			NOT = {
+				is_species_class = "MWN"
+			}
+		}
+		create_species = {
+			class = "MWN"
+			is_mod = yes
+			name = this
+			plural = this
+			portrait = random
+			traits = this
+			homeworld = prev
+		}
+		modify_species = {
+			species = last_created_species
+			remove_trait = trait_DC_ethic_asceticism
+			add_trait = trait_DC_ethic_carnalism
+			add_traits_at_start_of_list = yes
+		}
+		modify_species = {
+			species = last_created_species
+			remove_trait = trait_DC_ethic_parasite_mind
+			add_trait = trait_sensitive_vagina
+			add_traits_at_start_of_list = yes
+		}
+		modify_species = {
+			species = last_created_species
+			remove_trait = trait_DC_ethic_lust_skynet
+			add_trait = trait_big_breasts
+			add_traits_at_start_of_list = yes
+		}
+		wtmnb_normal_species_fix = yes
+		prev = {
+			every_owned_pop = {
+				limit = {
+					is_same_species = prevprev
+				}
+				change_species = last_created_species
+			}
+		}
+	}
+}

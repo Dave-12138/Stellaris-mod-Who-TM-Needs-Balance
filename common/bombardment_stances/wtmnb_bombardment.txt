@@ -4,7 +4,7 @@ wtmnb_doom = {
 			has_technology = tech_wtmnb_fortress
 		}
 	}
-	icon_frame = 5
+	icon_frame = 3
 	default = yes
 	stop_when_armies_dead = no
 	abduct_pops = no
