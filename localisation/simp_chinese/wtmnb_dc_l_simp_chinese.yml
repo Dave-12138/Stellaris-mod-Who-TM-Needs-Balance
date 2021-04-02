@@ -14,7 +14,7 @@
 
  job_ai_sage_master:0 "朝圣者"
  job_ai_sage_master_plural:0 "$job_ai_sage_master$"
- job_ai_sage_master_desc:0 "斋戒三日，沐浴褪衣，受引及诣而不可妄自行步；如是至贡朝礼毕，却处身，方知开明。\n-可能需要£love_juice£润滑剂"
+ job_ai_sage_master_desc:0 "-可能需要£love_juice£润滑剂"
  mod_job_ai_sage_master_add:0 "$job_ai_sage_master$"
  job_ai_sage_master_drone:0 "$job_ai_sage_master$"
  job_ai_sage_master_drone_plural:0 "$job_ai_sage_master$"
@@ -71,7 +71,7 @@
  wtmnb_species.1.d:0 "$INN$"
  wtmnb_species.1.e:0 "$MWN$"
 ##########
- opinion_wtmnb_dc_r:0 "opinion_wtmnb_dc_r"
+ opinion_wtmnb_dc_r:0 "性侵"
  
 ##########
  leader_trait_ruler_wtmnb_dc_r_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r$§!特质"
@@ -79,5 +79,5 @@
  leader_trait_ruler_wtmnb_dc_r3_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r3$§!特质"
 #########
  
- pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球HSO"
+ pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球正在举行性爱派对"
  pc_wtmnb_prometheus_sage:0 "这颗$pc_wtmnb_prometheus$星球是圣域"

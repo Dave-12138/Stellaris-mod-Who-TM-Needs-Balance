@@ -4,7 +4,7 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_wtmnb_weapon"
 	icon_frame = 1
-	firing_arc = 35
+	firing_arc = 45
 	min_range = 10
 	use_ship_kill_target = no
 	damage = {
@@ -29,7 +29,7 @@ weapon_component_template = {
 		"tech_wtmnb_fortress"
 	}
 	component_set = "WTMNB_WEAPON"
-	projectile_gfx = "tachyon_lance"
+	projectile_gfx = "wtmnb_lance"
 	tags = {
 		weapon_type_energy
 	}

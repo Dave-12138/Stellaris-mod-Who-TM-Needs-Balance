@@ -299,6 +299,7 @@ country_event = {
 	id = wtmnb_dc.1010
 	is_triggered_only = yes
 	picture = GFX_evt_CM_daily11
+	show_sound = event_CM_excited02
 	title = wtmnb_dc.1000.name
 	desc = wtmnb_dc.1010.desc
 	option = {
@@ -316,6 +317,7 @@ country_event = {
 	id = wtmnb_dc.1011
 	is_triggered_only = yes
 	picture = GFX_evt_CM_chain21
+	show_sound = event_CM_excited02
 	title = wtmnb_dc.1000.name
 	desc = wtmnb_dc.1011.desc
 	option = {
@@ -334,6 +336,7 @@ country_event = {
 	id = wtmnb_dc.1020
 	is_triggered_only = yes
 	picture = GFX_evt_CM_daily11
+	show_sound = event_CM_excited02
 	title = wtmnb_dc.1020.name
 	#描述
 	desc = {
@@ -456,6 +459,7 @@ country_event = {
 	id = wtmnb_dc.1021
 	is_triggered_only = yes
 	picture = GFX_evt_CM_chain21
+	show_sound = event_CM_excited02
 	title = wtmnb_dc.1020.name
 	#描述
 	desc = {
@@ -584,10 +588,24 @@ country_event = {
 				exists = ruler
 				ruler = {
 					is_same_value = event_target:dc_r_ruler
+					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
 				}
 			}
 			ruler = {
 				remove_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+			}
+			create_half_species = {
+				species_one = ruler.species
+				species_two = event_target:wtmnb_planet_killer_ship.owner.owner_species
+			}
+			create_leader = {
+				class = random
+				species = last_created_species
+				set_age = 1
+				traits = {
+					trait = leader_trait_wtmnb_toy
+				}
+				skill = 10
 			}
 		}
 	}
