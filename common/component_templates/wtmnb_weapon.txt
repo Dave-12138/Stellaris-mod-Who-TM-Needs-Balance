@@ -4,7 +4,6 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_wtmnb_weapon"
 	icon_frame = 1
-	firing_arc = 45
 	min_range = 10
 	use_ship_kill_target = no
 	damage = {
@@ -23,7 +22,7 @@ weapon_component_template = {
 	shield_damage = 100
 	armor_damage = 100
 	hull_damage = 10.25
-	tracking = 0.6
+	tracking = 1
 	power = -250
 	prerequisites = {
 		"tech_wtmnb_fortress"
@@ -141,7 +140,6 @@ weapon_component_template = {
 	projectile_gfx = "tachyon_lance"
 	tags = {
 		weapon_type_energy
-		weapon_type_point_defense
 	}
 	ai_tags = {
 		weapon_role_anti_armor
