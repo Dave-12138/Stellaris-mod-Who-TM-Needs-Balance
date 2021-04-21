@@ -161,9 +161,6 @@ ai_sex_master = {
 		produces = {
 			trigger = {
 				has_trait = trait_fanatic_seminal_addiction
-				owner = {
-					has_unlocked_all_traditions = no
-				}
 			}
 			unity = 8
 		}
@@ -333,9 +330,6 @@ ai_sex_master_drone = {
 		produces = {
 			trigger = {
 				has_trait = trait_fanatic_seminal_addiction
-				owner = {
-					has_unlocked_all_traditions = no
-				}
 			}
 			unity = 8
 		}
