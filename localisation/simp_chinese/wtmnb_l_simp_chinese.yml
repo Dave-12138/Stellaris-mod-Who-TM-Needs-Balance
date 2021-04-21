@@ -240,6 +240,7 @@
 ##################
  
  pc_wtmnb_prometheus:0 "普罗米修斯"
+ pc_wtmnb_prometheus_adj:0 "$pc_wtmnb_prometheus$"
  pc_wtmnb_prometheus_desc:0 "[Root.GetPrometheusDesc]\n--------------\n$pc_wtmnb_prometheus_desc_normal$"
  pc_wtmnb_prometheus_desc_normal:0 "强大的人工智能将整个星球表面化为终端，能在短短几天之内改变星球特化方向\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
  pc_wtmnb_prometheus_research:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y研究§!方向特化"

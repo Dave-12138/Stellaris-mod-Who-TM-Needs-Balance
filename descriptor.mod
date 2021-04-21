@@ -2,6 +2,7 @@ version="2.6"
 tags={
 	"Cheat"
 }
-name="WhoTMNeedsBalance"
 picture="thumbnail.png"
+name="Who Tm Needs Balance?"
 supported_version="3.0.*"
+remote_file_id="2463706913"
