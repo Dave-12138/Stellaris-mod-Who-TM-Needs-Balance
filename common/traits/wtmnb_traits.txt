@@ -101,5 +101,5 @@ leader_trait_wtmnb_toy = {
 		ship_weapon_range_mult = 1
 		ship_engagement_range_mult = 1
 	}
-	custom_tooltip = leader_trait_wtmnb_toy_modifier
+	#custom_tooltip = leader_trait_wtmnb_toy_modifier
 }

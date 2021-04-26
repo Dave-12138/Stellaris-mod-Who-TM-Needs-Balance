@@ -95,6 +95,11 @@
  deposit_wtmnb_prometheus_desc:0 "$pc_wtmnb_prometheus_desc_normal$"
  deposit_wtmnb_prometheus_rubbish:0 "Leftover bits of material"
  deposit_wtmnb_prometheus_rubbish_desc:0 "It seems to be like the scraps of planet building that should be able to recycle by throwing into the forge."
+##################
+
+ district_database:0 "Database"
+ district_database_desc:0 "Databases are used for SAVING pop.\n§L-Hey, did you see that guy who went into I/O?§!"
+ district_database_plural:0 "$district_database$s"
 
 ##################
  bombardment_wtmnb_doom:0 "Purification"

@@ -1,0 +1,37 @@
+district_database = {
+	base_buildtime = 4
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = prometheus_world
+	}
+	potential = {
+		exists = owner
+		uses_district_set = prometheus_world
+	}
+	allow = {
+	}
+	conversion_ratio = 0.5
+	resources = {
+		category = planet_districts
+		cost = {
+			alloy = 10
+		}
+		upkeep = {
+			energy = 2
+		}
+		produces = {
+			unity = 100
+		}
+		produces = {
+			trigger = {
+				country_uses_food = yes
+			}
+			food = 100
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_max_buildings_add = 2
+	}
+}

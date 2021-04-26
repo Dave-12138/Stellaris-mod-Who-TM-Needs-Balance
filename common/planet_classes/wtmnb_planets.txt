@@ -2,7 +2,7 @@ pc_wtmnb_prometheus = {
 	entity = "wtmnb_prometheus_planet"
 	entity_scale = @planet_standard_scale
 	modifier = {
-		planet_max_districts_add = -300
+		#planet_max_districts_add = -300
 		planet_housing_add = 2
 		planet_jobs_produces_mult = 1
 		pop_environment_tolerance = 0.75
@@ -37,4 +37,5 @@ pc_wtmnb_prometheus = {
 	colonizable = yes
 	starting_planet = no
 	show_city = no
+	district_set = prometheus_world
 }

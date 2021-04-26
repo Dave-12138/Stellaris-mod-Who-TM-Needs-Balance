@@ -94,6 +94,11 @@
  deposit_wtmnb_prometheus_desc:0 "$pc_wtmnb_prometheus_desc_normal$"
  deposit_wtmnb_prometheus_rubbish:0 "边角余料"
  deposit_wtmnb_prometheus_rubbish_desc:0 "好像是星球建设留下的边角料，扔进锻炉应该能回收利用\n不过毕竟堆放的地方不起眼，不管也行"
+##################
+ 
+ district_database:0 "数据库"
+ district_database_desc:0 " - 和学校机房不同，这里可不用戴套。\n - 我是说鞋套。"
+ district_database_plural:0 "$district_database$"
 
 ##################
  bombardment_wtmnb_doom:0 "人工清洗"
