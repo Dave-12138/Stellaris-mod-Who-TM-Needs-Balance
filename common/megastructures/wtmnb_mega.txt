@@ -30,6 +30,7 @@ dyson_wtmnb = {
 	}
 	potential = {
 		has_technology = tech_wtmnb_fortress
+		has_country_flag = wtmnb_order
 	}
 	possible = {
 		exists = starbase
@@ -133,6 +134,7 @@ wtmnb_love_mark = {
 	}
 	potential = {
 		has_technology = tech_wtmnb_fortress
+		has_country_flag = wtmnb_order
 	}
 	possible = {
 		custom_tooltip = {
@@ -376,6 +378,7 @@ wtmnb_portal = {
 			has_ascension_perk = ap_galactic_wonders_utopia
 			has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
 		}
+		has_technology = tech_wtmnb_fortress
 	}
 	possible = {
 		custom_tooltip = {

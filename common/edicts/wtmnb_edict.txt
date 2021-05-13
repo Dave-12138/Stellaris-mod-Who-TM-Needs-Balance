@@ -44,7 +44,10 @@ wtmnb_edict = {
 		# 		message = no
 		# 	}
 		# }
-		set_global_flag = wtmnb_edict_checked
+		hidden_effect = {
+			set_global_flag = wtmnb_edict_checked
+			set_country_flag = wtmnb_order
+		}
 	}
 	potential = {
 		NOR = {

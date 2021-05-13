@@ -68,6 +68,10 @@ wtmnb_fortress = {
 		}
 	}
 	potential_construction = {
+		exists = owner
+		owner = {
+			has_country_flag = wtmnb_order
+		}
 		OR = {
 			is_scope_type = starbase
 			is_scope_type = megastructure
