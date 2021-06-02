@@ -78,7 +78,7 @@
  edict_wtmnb_edict:0 "Void Archives"
  edict_wtmnb_edict_desc:0 "Some technology"
  edict_wtmnb_edict_2:0 "Phoenix Down"
- edict_wtmnb_edict_2_desc:0 "Hey, time goes faster inside"
+ edict_wtmnb_edict_2_desc:0 "Hey, time goes faster inside!\n§LReset CD of editing Civics and Gov type.§!"
  edict_wtmnb_edict_3:0 "信じてるぜ?"
  edict_wtmnb_edict_3_desc:0 "信じてるよ!"
  edict_wtmnb_edict_4:0 "$unbox_lmark_wtmnb$ mode"
