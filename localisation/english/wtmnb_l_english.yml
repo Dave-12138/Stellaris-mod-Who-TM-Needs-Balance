@@ -254,6 +254,5 @@
  pc_wtmnb_prometheus_fortress:0 "$pc_wtmnb_prometheus_desc_pre$£job_soldier£Fortress§!"
  pc_wtmnb_prometheus_srse:0 "$pc_wtmnb_prometheus_desc_pre$£sh_senergy£$sh_senergy$§!"
  pc_wtmnb_prometheus_pantsu:0 "This $pc_wtmnb_prometheus$ planet holds so much pantsu"
- pc_wtmnb_prometheus_pantsu2:0 "This $pc_wtmnb_prometheus$ planet holds so much pantsu, which seems to be the only clothes"
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$ World Habitability"
 ##
