@@ -9,6 +9,7 @@ is_planet_specialized = {
 		has_designation = col_research
 		has_designation = col_fortress
 		has_designation = col_wg_pantsu
+		has_designation = col_wg_neo_alpha
 		has_designation = col_prostitution
 		has_designation = col_faith
 		has_designation = col_sh_srse

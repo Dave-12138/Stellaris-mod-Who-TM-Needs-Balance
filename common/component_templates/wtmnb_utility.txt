@@ -193,8 +193,9 @@ utility_component_template = {
 			ship_speed_reduction = 9
 			ship_windup_mult = 200
 			ship_fire_rate_mult = -2000
-			ship_armor_penetration_mult = -10000
-			ship_shield_penetration_mult = -10000
+			ship_armor_penetration_mult = -10
+			ship_shield_penetration_mult = -10
+			ship_accuracy_mult = -2000
 		}
 		damage_per_day = {
 			shield_damage = 100000

@@ -315,6 +315,17 @@ deposit_wtmnb_prometheus = {
 			job_wsg_shop_pantsu_collector_per_pop = 1
 		}
 	}
+	#NEO+Alpha
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_designation = col_wg_neo_alpha
+		}
+		modifier = {
+			job_wsg_neo_producer_per_pop = 0.5
+			job_wsg_alpha_per_pop = 0.5
+		}
+	}
 	#深海能源核心
 	triggered_planet_modifier = {
 		potential = {

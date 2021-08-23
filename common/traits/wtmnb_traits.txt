@@ -71,6 +71,7 @@ leader_trait_wtmnb_toy = {
 		spy_network_daily_value_mult = 100.0
 		intel_decryption_add = 2000
 		intel_encryption_add = 2000
+		spy_network_levels_add = 200
 		first_contact_clues_add = 200
 		ship_archeaological_site_clues_add = 15
 		ship_archaeological_site_excavation_speed_mult = 10000

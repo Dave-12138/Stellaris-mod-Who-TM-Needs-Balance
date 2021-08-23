@@ -251,6 +251,7 @@
  pc_wtmnb_prometheus_mineral:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£minerals£矿产§!方向特化"
  pc_wtmnb_prometheus_fortress:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£job_soldier£堡垒§!方向特化"
  pc_wtmnb_prometheus_srse:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£sh_senergy£深海能源生产§!方向特化"
+ pc_wtmnb_prometheus_neo_alpha:0 "这颗$pc_wtmnb_prometheus$星球目前针对£sr_neo£ §YNEO§!与£sr_alpha£ §YAlpha Crystals§!生产方向特化"
  pc_wtmnb_prometheus_pantsu:0 "这颗$pc_wtmnb_prometheus$星球目前填满了胖次"
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
 ##

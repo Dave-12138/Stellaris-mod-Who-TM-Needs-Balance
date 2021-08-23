@@ -78,6 +78,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_designation = col_wg_neo_alpha
+		}
+		localization_key = pc_wtmnb_prometheus_neo_alpha
+	}
+	text = {
+		trigger = {
 			has_designation = col_sh_srse
 		}
 		localization_key = pc_wtmnb_prometheus_srse
