@@ -2,13 +2,18 @@ district_seedbed = {
 	base_buildtime = 4
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		exists = from
-		has_designation = col_prostitution
+		always = no
 		uses_district_set = prometheus_world
 	}
 	potential = {
 		exists = owner
+		num_pops > 0
 		has_designation = col_prostitution
+		
+		NOR = {
+			has_designation = col_default_machine
+			has_designation = col_default
+		}
 		uses_district_set = prometheus_world
 	}
 	allow = {

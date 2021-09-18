@@ -25,13 +25,92 @@ district_database = {
 		}
 		produces = {
 			trigger = {
-				country_uses_food = yes
+				is_planet_specialized = no
+			}
+			unity = 500
+		}
+		produces = {
+			trigger = {
+				has_designation = col_research
+			}
+			physics_research = 30
+			engineering_research = 30
+			society_research = 30
+		}
+		produces = {
+			trigger = {
+				has_designation = col_foundry
+			}
+			alloys = 100
+		}
+		upkeep = {
+			trigger = {
+				has_designation = col_foundry
+			}
+			minerals = 80
+		}
+		produces = {
+			trigger = {
+				has_designation = col_refinery
+			}
+			exotic_gases = 10
+			rare_crystals = 10
+			volatile_motes = 10
+		}
+		produces = {
+			trigger = {
+				has_designation = col_factory
+			}
+			consumer_goods = 100
+		}
+		produces = {
+			trigger = {
+				has_designation = col_fortress
+			}
+			country_naval_cap_add = 100
+			pop_defense_armies_add = 100
+		}
+		produces = {
+			trigger = {
+				has_designation = col_generator
+			}
+			energy = 100
+		}
+		produces = {
+			trigger = {
+				has_designation = col_farming
 			}
 			food = 100
+		}
+		produces = {
+			trigger = {
+				has_designation = col_wg_pantsu
+			}
+			sr_pantsu = 100
+		}
+		produces = {
+			trigger = {
+				has_designation = col_wg_neo_alpha
+			}
+			sr_neo = 100
+			sr_alpha = 100
+		}
+		produces = {
+			trigger = {
+				has_designation = col_sh_srse
+			}
+			sr_se = 100
+		}
+		produces = {
+			trigger = {
+				has_designation = col_mining
+			}
+			minerals = 100
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 20
 		planet_max_buildings_add = 2
+		planet_jobs_produces_mult = 0.1
 	}
 }

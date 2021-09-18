@@ -92,6 +92,22 @@ country_event = {
 		}
 	}
 	option = {
+		name = wtmnb_species.1.f
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_Azur_Lane_k = yes
+			}
+		}
+	}
+	option = {
+		name = wtmnb_species.1.o
+		hidden_effect = {
+			event_target:wtmnb_target = {
+				wtmnb_planet_species_to_plant = yes
+			}
+		}
+	}
+	option = {
 		name = wtmnb_species.1.p
 		hidden_effect = {
 			event_target:wtmnb_target = {

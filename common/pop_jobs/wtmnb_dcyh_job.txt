@@ -284,6 +284,30 @@ ai_sex_master_drone = {
 				has_trait = trait_fanatic_seminal_addiction
 				owner = {
 					has_resource = {
+						type = mind_club
+						amount > 1
+					}
+				}
+			}
+			mind_club = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
+						type = azur_red_diamond
+						amount > 1
+					}
+				}
+			}
+			azur_red_diamond = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction
+				owner = {
+					has_resource = {
 						type = sr_neo
 						amount > 1
 					}

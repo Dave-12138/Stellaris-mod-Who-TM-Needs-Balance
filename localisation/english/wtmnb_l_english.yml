@@ -190,6 +190,7 @@
  wtmnb_species.1.f:0 "$REPLACE_ME$" #暂未使用
 
 #空着一段，把原版放最后
+ wtmnb_species.1.o:0 "$PLANT$"
  wtmnb_species.1.p:0 "$HUM$"
  wtmnb_species.1.q:0 "$MAM$"
  wtmnb_species.1.r:0 "$REP$"
@@ -236,6 +237,8 @@
  decision_wtmnb_planet_extend_desc:0 "max district count  + 30 "
  decision_wtmnb_prometheus:0 "Plan.$pc_wtmnb_prometheus$"
  decision_wtmnb_prometheus_desc:0 "Change planet class into §Y$pc_wtmnb_prometheus$§!"
+ decision_wtmnb_break_border:0 "Break the closing borders"
+ decision_wtmnb_break_border_desc:0 "Trick them by using eden star."
 ##################
  
  pc_wtmnb_prometheus:0 "Prometheus"
@@ -243,10 +246,12 @@
  pc_wtmnb_prometheus_desc:0 "[Root.GetPrometheusDesc]\n--------------\n$pc_wtmnb_prometheus_desc_normal$"
  pc_wtmnb_prometheus_desc_normal:0 "Brilliant artificial intelligence surfaces an entire planet as a terminal that can change the Designation of a planet in just a few days\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
  pc_wtmnb_prometheus_desc_pre:0 "This $pc_wtmnb_prometheus$ planet holds tendency toward §Y"
+ pc_wtmnb_prometheus_off:0 "This $pc_wtmnb_prometheus$ planet seems not working at all."
  pc_wtmnb_prometheus_research:0 "$pc_wtmnb_prometheus_desc_pre$£job_researcher£Research§!"
  pc_wtmnb_prometheus_alloy:0 "$pc_wtmnb_prometheus_desc_pre$£alloys£Forge§!"
  pc_wtmnb_prometheus_rare:0 "$pc_wtmnb_prometheus_desc_pre$£exotic_gases£Refinery§!"
- pc_wtmnb_prometheus_normal:0 "This $pc_wtmnb_prometheus$ planet holds no tendency, which made it be a £job_bureaucrat£$col_bureau$"
+ pc_wtmnb_prometheus_normal:0 "This $pc_wtmnb_prometheus$ planet is standing by."
+ pc_wtmnb_prometheus_bureaucrat:0 "$pc_wtmnb_prometheus_desc_pre$£job_bureaucrat£$col_bureau$§!"
  pc_wtmnb_prometheus_goods:0 "$pc_wtmnb_prometheus_desc_pre$£consumer_goods£Industrial§!"
  pc_wtmnb_prometheus_energy:0 "$pc_wtmnb_prometheus_desc_pre$£energy£Generator§!"
  pc_wtmnb_prometheus_food:0 "$pc_wtmnb_prometheus_desc_pre$£food£Farming§!"
@@ -256,3 +261,24 @@
  pc_wtmnb_prometheus_pantsu:0 "This $pc_wtmnb_prometheus$ planet holds so much pantsu"
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$ World Habitability"
 ##
+
+ job_ai_wtmnb_cleck:0 "Unworker"
+ job_ai_wtmnb_cleck_plural:0 "$job_ai_wtmnb_cleck$"
+ job_ai_wtmnb_cleck_desc:0 "Just...nothing to do."
+ mod_job_ai_wtmnb_cleck_add:0 "$job_ai_wtmnb_cleck$"
+ mod_job_ai_wtmnb_cleck_per_pop:0 "add $job_ai_wtmnb_cleck$"
+ job_ai_wtmnb_drone:0 "Unworker"
+ job_ai_wtmnb_drone_plural:0 "$job_ai_wtmnb_drone$"
+ job_ai_wtmnb_drone_desc:0 "$job_ai_wtmnb_cleck_desc$"
+ mod_job_ai_wtmnb_drone_add:0 "$job_ai_wtmnb_drone$"
+ mod_job_ai_wtmnb_drone_per_pop:0 "add $job_ai_wtmnb_drone$"
+ job_ai_wtmnb_master:0 "Device Keeper"
+ job_ai_wtmnb_master_plural:0 "$job_ai_wtmnb_master$s"
+ job_ai_wtmnb_master_desc:0 "Look at the monitor and do nothing."
+ mod_job_ai_wtmnb_master_add:0 "$job_ai_wtmnb_master$"
+ mod_job_ai_wtmnb_master_per_pop:0 "add $job_ai_wtmnb_master$"
+ job_ai_wtmnb_master_drone:0 "Device Keeper"
+ job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master$s"
+ job_ai_wtmnb_master_drone_desc:0 "Look at the monitor and do nothing."
+ mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master$"
+ mod_job_ai_wtmnb_master_drone_per_pop:0 "add $job_ai_wtmnb_master$ "

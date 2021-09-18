@@ -186,9 +186,10 @@
  wtmnb_species.1.a:0 "$Warship_Girls$"
  wtmnb_species.1.b:0 "$ShenHai$"
 #中间三个多彩，下面从f开始
- wtmnb_species.1.f:0 "$REPLACE_ME$" #暂未使用
+ wtmnb_species.1.f:0 "$Azur_Lane_k$" #暂未使用
 
 #空着一段，把原版放最后
+ wtmnb_species.1.o:0 "$PLANT$"
  wtmnb_species.1.p:0 "$HUM$"
  wtmnb_species.1.q:0 "$MAM$"
  wtmnb_species.1.r:0 "$REP$"
@@ -235,16 +236,20 @@
  decision_wtmnb_planet_extend_desc:0 "增加30最大区划数"
  decision_wtmnb_prometheus:0 "普罗米修斯计划"
  decision_wtmnb_prometheus_desc:0 "将行星改造为§Y$pc_wtmnb_prometheus$§!星球"
+ decision_wtmnb_break_border:0 "开放边境"
+ decision_wtmnb_break_border_desc:0 "借由引力干涉，无视边境封锁"
 ##################
  
  pc_wtmnb_prometheus:0 "普罗米修斯"
  pc_wtmnb_prometheus_adj:0 "$pc_wtmnb_prometheus$"
  pc_wtmnb_prometheus_desc:0 "[Root.GetPrometheusDesc]\n--------------\n$pc_wtmnb_prometheus_desc_normal$"
  pc_wtmnb_prometheus_desc_normal:0 "强大的人工智能将整个星球表面化为终端，能在短短几天之内改变星球特化方向\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
+ pc_wtmnb_prometheus_off:0 "这颗$pc_wtmnb_prometheus$星球目前处于休眠"
+ pc_wtmnb_prometheus_normal:0 "这颗$pc_wtmnb_prometheus$星球目前处于待机"
  pc_wtmnb_prometheus_research:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£job_researcher£研究§!方向特化"
  pc_wtmnb_prometheus_alloy:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£alloys£铸造§!方向特化"
  pc_wtmnb_prometheus_rare:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£exotic_gases£精炼§!方向特化"
- pc_wtmnb_prometheus_normal:0 "这颗$pc_wtmnb_prometheus$星球目前未针对某一方向特化，因此其目前作为£job_bureaucrat£官僚办公地"
+ pc_wtmnb_prometheus_bureaucrat:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£job_bureaucrat£行政管理§!方向特化"
  pc_wtmnb_prometheus_goods:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£consumer_goods£轻工业§!方向特化"
  pc_wtmnb_prometheus_energy:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£energy£能源产出§!方向特化"
  pc_wtmnb_prometheus_food:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£food£农业§!方向特化"
@@ -254,5 +259,31 @@
  pc_wtmnb_prometheus_neo_alpha:0 "这颗$pc_wtmnb_prometheus$星球目前针对£sr_neo£ §YNEO§!与£sr_alpha£ §YAlpha Crystals§!生产方向特化"
  pc_wtmnb_prometheus_pantsu:0 "这颗$pc_wtmnb_prometheus$星球目前填满了胖次"
  mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
+###############
+
+ job_ai_wtmnb_cleck:0 "自由职业者"
+ job_ai_wtmnb_cleck_plural:0 "$job_ai_wtmnb_cleck$"
+ job_ai_wtmnb_cleck_desc:0 "虽然在这颗星球上闲着才是常态，但这种连象征性的工作也没有的情况或许是孤例。"
+ mod_job_ai_wtmnb_cleck_add:0 "$job_ai_wtmnb_cleck$岗位"
+ mod_job_ai_wtmnb_cleck_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_wtmnb_cleck_add£"
+ mod_job_ai_wtmnb_cleck_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_cleck$岗位"
+ job_ai_wtmnb_drone:0 "闲置子个体"
+ job_ai_wtmnb_drone_plural:0 "$job_ai_wtmnb_drone$"
+ job_ai_wtmnb_drone_desc:0 "现在这样闲就像现在这样闲，回想上次这样闲还是上次。"
+ mod_job_ai_wtmnb_drone_add:0 "$job_ai_wtmnb_drone$岗位"
+ mod_job_ai_wtmnb_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_drone$岗位"
+ mod_job_ai_wtmnb_drone_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_wtmnb_drone_add£"
+ job_ai_wtmnb_master:0 "设备维护工"
+ job_ai_wtmnb_master_plural:0 "$job_ai_wtmnb_master$"
+ job_ai_wtmnb_master_desc:0 "每天的工作是看着屏幕发呆"
+ mod_job_ai_wtmnb_master_add:0 "$job_ai_wtmnb_master$岗位"
+ mod_job_ai_wtmnb_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master$岗位$"
+ mod_job_ai_wtmnb_master_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_wtmnb_master_add£"
+ job_ai_wtmnb_master_drone:0 "设备维护子个体"
+ job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master$"
+ job_ai_wtmnb_master_drone_desc:0 "$job_ai_wtmnb_master_desc$"
+ mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master$岗位"
+ mod_job_ai_wtmnb_master_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master_drone$岗位"
+ mod_job_ai_wtmnb_master_drone_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_wtmnb_master_drone_add£"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"

@@ -32,6 +32,14 @@ terraform_link = {
 	effect = {
 		from = {
 			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_prometheus
+					}
+				}
+				add_deposit = deposit_wtmnb_prometheus
+			}
 		}
 	}
 	ai_weight = {
@@ -73,6 +81,14 @@ terraform_link = {
 	effect = {
 		from = {
 			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_prometheus
+					}
+				}
+				add_deposit = deposit_wtmnb_prometheus
+			}
 		}
 	}
 }

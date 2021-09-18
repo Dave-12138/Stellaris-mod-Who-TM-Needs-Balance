@@ -1,46 +1,65 @@
-ai_sage_master = {
+ai_wtmnb_cleck = {
 	is_capped_by_modifier = yes
-	icon = holy_singer
-	category = specialist
+	building_icon = building_capital
+	icon = clerk
+	category = worker
 	weight = {
 		weight = 10
-		modifier = {
-			factor = 3
-			OR = {
-				has_trait = trait_fanatic_seminal_addiction_s
-				owner = {
-					has_civic = civic_sage_worshipping
-				}
-			}
-		}
+	}
+	possible = {
+		always = yes
+	}
+}
+
+ai_wtmnb_drone = {
+	is_capped_by_modifier = yes
+	building_icon = building_capital
+	icon = clerk
+	category = simple_drone
+	weight = {
+		weight = 10
+	}
+	possible = {
+		always = yes
+	}
+}
+
+ai_wtmnb_master = {
+	is_capped_by_modifier = yes
+	building_icon = building_capital
+	category = specialist
+	icon = clerk
+	weight = {
+		weight = 10
+	}
+	possible = {
 	}
 	resources = {
-		category = planet_holyclergy
+		category = planet_jobs
 		upkeep = {
+			energy = 1
+		}
+		
+		produces = {
+			
+			influence = 0.4
+			energy = 20
+
+		}
+		produces = {
 			trigger = {
-				has_trait = trait_DC_ethic_asceticism
-				NOT = {
-					has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_ten
+						amount > 1
+					}
 				}
 			}
-			love_juice = 1
-		}
-		produces = {
-			holylight_crystal = 4
-			sr_christian = 2
-			sr_beauty = 1
+			sr_ten = 8
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
-			}
-			consumer_goods = 4
-			food = 8
-			energy = 8
-		}
-		produces = {
-			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_fuka
@@ -52,7 +71,7 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_lingli
@@ -64,7 +83,7 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_living_metal
@@ -76,7 +95,7 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = nanites
@@ -88,7 +107,7 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_dark_matter
@@ -100,7 +119,7 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_pantsu
@@ -112,7 +131,67 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = sr_neo
+						amount > 1
+					}
+				}
+			}
+			sr_neo = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = sr_alpha
+						amount > 1
+					}
+				}
+			}
+			sr_alpha = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = sr_se
+						amount > 1
+					}
+				}
+			}
+			sr_se = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = azur_shippartbox
+						amount > 1
+					}
+				}
+			}
+			azur_shippartbox = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = sr_solar_energy
+						amount > 1
+					}
+				}
+			}
+			sr_solar_energy = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = mind_club
@@ -124,7 +203,7 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = azur_red_diamond
@@ -136,104 +215,48 @@ ai_sage_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
-				owner = {
-					has_resource = {
-						type = sr_neo
-						amount > 1
-					}
-				}
-			}
-			sr_neo = 4
-		}
-		produces = {
-			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
-				owner = {
-					has_resource = {
-						type = sr_alpha
-						amount > 1
-					}
-				}
-			}
-			sr_alpha = 4
-		}
-		produces = {
-			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
-				owner = {
-					has_resource = {
-						type = sr_se
-						amount > 1
-					}
-				}
-			}
-			sr_se = 4
-		}
-		produces = {
-			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
-				owner = {
-					has_resource = {
-						type = sr_solar_energy
-						amount > 1
-					}
-				}
-			}
-			sr_solar_energy = 4
-		}
-		produces = {
-			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 			}
 			unity = 8
 		}
 	}
 }
 
-ai_sage_master_drone = {
+ai_wtmnb_master_drone = {
 	is_capped_by_modifier = yes
-	icon = holy_singer
+	building_icon = building_capital
 	category = complex_drone
+	icon = clerk
 	weight = {
 		weight = 10
-		modifier = {
-			factor = 3
-			OR = {
-				has_trait = trait_fanatic_seminal_addiction_s
-				owner = {
-					has_civic = civic_sage_worshipping
-				}
-			}
-		}
+	}
+	possible = {
 	}
 	resources = {
-		category = planet_holyclergy
+		category = planet_jobs
 		upkeep = {
+			energy = 1
+		}
+		produces = {
+			
+			influence = 0.4
+			energy = 20
+
+		}
+		produces = {
 			trigger = {
-				has_trait = trait_DC_ethic_asceticism
-				NOT = {
-					has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_ten
+						amount > 1
+					}
 				}
 			}
-			love_juice = 1
-		}
-		produces = {
-			holylight_crystal = 4
-			sr_christian = 2
-			sr_beauty = 1
+			sr_ten = 8
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
-			}
-			consumer_goods = 4
-			food = 8
-			energy = 8
-		}
-		produces = {
-			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_fuka
@@ -245,7 +268,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_lingli
@@ -257,7 +280,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_living_metal
@@ -269,7 +292,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = nanites
@@ -281,7 +304,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_dark_matter
@@ -293,7 +316,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_pantsu
@@ -305,7 +328,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_neo
@@ -317,7 +340,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_alpha
@@ -329,7 +352,7 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_se
@@ -341,7 +364,19 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = azur_shippartbox
+						amount > 1
+					}
+				}
+			}
+			azur_shippartbox = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
 				owner = {
 					has_resource = {
 						type = sr_solar_energy
@@ -353,7 +388,31 @@ ai_sage_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = mind_club
+						amount > 1
+					}
+				}
+			}
+			mind_club = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
+				owner = {
+					has_resource = {
+						type = azur_red_diamond
+						amount > 1
+					}
+				}
+			}
+			azur_red_diamond = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_pc_wtmnb_prometheus_preference
 			}
 			unity = 8
 		}

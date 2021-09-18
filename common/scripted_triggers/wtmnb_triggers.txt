@@ -13,5 +13,12 @@ is_planet_specialized = {
 		has_designation = col_prostitution
 		has_designation = col_faith
 		has_designation = col_sh_srse
+		has_designation = azur_city1
+		has_designation = azur_cityG
+		has_designation = azur_cityS
+		has_designation = col_bureau
+		has_designation = col_capital
+		has_designation = col_capital_hive
+		has_designation = col_capital_machine
 	}
 }

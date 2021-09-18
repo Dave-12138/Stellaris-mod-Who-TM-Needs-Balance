@@ -90,6 +90,7 @@ wtmnb_planet_species_to_sh = {
 					change_scoped_species = yes
 					add_trait = sh_trait_shenhai
 					remove_trait = wsg_trait_warshipgirls
+					remove_trait = trait_azurlanegirls
 				}
 				wtmnb_sh_ap_species_fix = yes
 				wtmnb_normal_species_fix = yes
@@ -105,8 +106,70 @@ wtmnb_planet_species_to_sh = {
 		}
 	}
 }
+wtmnb_planet_species_to_Azur_Lane_k = {
+	every_owned_species = {
+		limit = {
+			NOT = {
+				is_species_class = "Azur_Lane_k"
+			}
+		}
+		create_species = {
+			class = "Azur_Lane_k"
+			is_mod = yes
+			name = this
+			plural = this
+			portrait = this
+			traits = this
+			homeworld = prev
+			effect = {
+				modify_species = {
+					change_scoped_species = yes
+					add_trait = trait_azurlanegirls
+					remove_trait = sh_trait_shenhai
+					remove_trait = wsg_trait_warshipgirls
+				}
+				wtmnb_normal_species_fix = yes
+			}
+		}
+		prev = {
+			every_owned_pop = {
+				limit = {
+					is_same_species = prevprev
+				}
+				change_species = last_created_species
+			}
+		}
+	}
+}
 
 #原版种族
+wtmnb_planet_species_to_plant = {
+	every_owned_species = {
+		limit = {
+			NOT = {
+				is_species_class = "PLANT"
+			}
+		}
+		create_species = {
+			class = "PLANT"
+			is_mod = yes
+			name = this
+			plural = this
+			portrait = this
+			traits = this
+			homeworld = prev
+		}
+		wtmnb_normal_species_fix = yes
+		prev = {
+			every_owned_pop = {
+				limit = {
+					is_same_species = prevprev
+				}
+				change_species = last_created_species
+			}
+		}
+	}
+}
 wtmnb_planet_species_to_hum = {
 	every_owned_species = {
 		limit = {

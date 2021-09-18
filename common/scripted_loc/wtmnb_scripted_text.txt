@@ -2,54 +2,76 @@ defined_text = {
 	name = GetPrometheusDesc
 	text = {
 		trigger = {
+			has_owner = no
+		}
+		localization_key = pc_wtmnb_prometheus_off
+	}
+	text = {
+		trigger = {
+			num_pops > 0
 			has_designation = col_research
 		}
 		localization_key = pc_wtmnb_prometheus_research
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_foundry
 		}
 		localization_key = pc_wtmnb_prometheus_alloy
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_refinery
 		}
 		localization_key = pc_wtmnb_prometheus_rare
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			is_planet_specialized = no
 		}
 		localization_key = pc_wtmnb_prometheus_normal
 	}
 	text = {
 		trigger = {
+			num_pops > 0
+			has_designation = col_bureau
+		}
+		localization_key = pc_wtmnb_prometheus_bureaucrat
+	}
+	text = {
+		trigger = {
+			num_pops > 0
 			has_designation = col_factory
 		}
 		localization_key = pc_wtmnb_prometheus_goods
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_fortress
 		}
 		localization_key = pc_wtmnb_prometheus_fortress
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_generator
 		}
 		localization_key = pc_wtmnb_prometheus_energy
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_farming
 		}
 		localization_key = pc_wtmnb_prometheus_food
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_wg_pantsu
 			any_owned_pop = {
 				NOR = {
@@ -64,6 +86,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_wg_pantsu
 			any_owned_pop = {
 				OR = {
@@ -78,30 +101,46 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_wg_neo_alpha
 		}
 		localization_key = pc_wtmnb_prometheus_neo_alpha
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_sh_srse
 		}
 		localization_key = pc_wtmnb_prometheus_srse
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_mining
 		}
 		localization_key = pc_wtmnb_prometheus_mineral
 	}
 	text = {
 		trigger = {
+			num_pops > 0
+			OR = {
+				has_designation = azur_city1
+				has_designation = azur_cityG
+				has_designation = azur_cityS
+			}
+		}
+		localization_key = pc_wtmnb_prometheus_azur
+	}
+	text = {
+		trigger = {
+			num_pops > 0
 			has_designation = col_prostitution
 		}
 		localization_key = pc_wtmnb_prometheus_sex
 	}
 	text = {
 		trigger = {
+			num_pops > 0
 			has_designation = col_faith
 		}
 		localization_key = pc_wtmnb_prometheus_sage

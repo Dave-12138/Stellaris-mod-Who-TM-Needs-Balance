@@ -57,6 +57,15 @@ decision_wtmnb_reroll = {
 	}
 	effect = {
 		reroll_deposits = yes
+		if = {
+			limit = {
+				is_planet_class = pc_wtmnb_prometheus
+				NOT = {
+					has_deposit = deposit_wtmnb_prometheus
+				}
+			}
+			add_deposit = deposit_wtmnb_prometheus
+		}
 	}
 	ai_weight = {
 		weight = 0
@@ -143,6 +152,54 @@ decision_wtmnb_molten = {
 	}
 }
 
+decision_wtmnb_break_border = {
+	enactment_time = 1
+	icon = Eden_wtmnb
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 8000
+			energy = 8000
+		}
+	}
+	potential = {
+		is_star = yes
+		any_fleet_in_orbit = {
+			any_owned_ship = {
+				has_component = EDEN_STAR_AURA
+			}
+		}
+	}
+	allow = {
+		solar_system = {
+			any_neighbor_system = {
+				exists = owner
+				owner = {
+					has_closed_borders = from
+				}
+			}
+		}
+	}
+	effect = {
+		solar_system = {
+			every_neighbor_system = {
+				limit = {
+					exists = owner
+					owner = {
+						has_closed_borders = from
+					}
+				}
+				owner = {
+					set_closed_borders = {
+						who = from
+						status = no
+					}
+				}
+			}
+		}
+	}
+}
+
 decision_wtmnb_prometheus = {
 	enactment_time = 1
 	icon = wtmnb_4th_key
@@ -169,6 +226,14 @@ decision_wtmnb_prometheus = {
 	effect = {
 		change_pc = pc_wtmnb_prometheus
 		reroll_deposits = yes
+		if = {
+			limit = {
+				NOT = {
+					has_deposit = deposit_wtmnb_prometheus
+				}
+			}
+			add_deposit = deposit_wtmnb_prometheus
+		}
 	}
 	ai_weight = {
 		weight = 5000

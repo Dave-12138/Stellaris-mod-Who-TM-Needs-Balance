@@ -1,6 +1,9 @@
 deposit_wtmnb_prometheus = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	icon = d_station_reactor
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	category = deposit_cat_rare
 	#科研
 	triggered_planet_modifier = {
 		potential = {
@@ -39,6 +42,7 @@ deposit_wtmnb_prometheus = {
 			exists = owner
 			owner = {
 				is_hive_empire = yes
+				is_catalytic_empire = no
 			}
 			has_designation = col_foundry
 		}
@@ -49,6 +53,7 @@ deposit_wtmnb_prometheus = {
 			exists = owner
 			owner = {
 				is_machine_empire = yes
+				is_catalytic_empire = no
 			}
 			has_designation = col_foundry
 		}
@@ -58,12 +63,34 @@ deposit_wtmnb_prometheus = {
 		potential = {
 			exists = owner
 			owner = {
-				is_hive_empire = no
-				is_machine_empire = no
+				is_regular_empire = yes
+				is_catalytic_empire = no
 			}
 			has_designation = col_foundry
 		}
 		job_foundry_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_catalytic_empire = yes
+			}
+			has_designation = col_foundry
+		}
+		job_catalytic_technician_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_catalytic_empire = yes
+			}
+			has_designation = col_foundry
+		}
+		job_catalytic_drone_per_pop = 1
 	}
 	#天然气/水晶/易爆微粒
 	triggered_planet_modifier = {
@@ -94,14 +121,14 @@ deposit_wtmnb_prometheus = {
 			job_translucer_drone_per_pop = 0.3
 		}
 	}
-	#默认（行政
+	#行政
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = no
+				is_regular_empire = yes
 			}
-			is_planet_specialized = no
+			has_designation = col_bureau
 		}
 		modifier = {
 			job_bureaucrat_per_pop = 1
@@ -113,7 +140,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_hive_empire = yes
 			}
-			is_planet_specialized = no
+			has_designation = col_bureau
 		}
 		job_synapse_drone_per_pop = 1
 	}
@@ -123,7 +150,7 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_machine_empire = yes
 			}
-			is_planet_specialized = no
+			has_designation = col_bureau
 		}
 		job_coordinator_per_pop = 1
 	}
@@ -133,11 +160,25 @@ deposit_wtmnb_prometheus = {
 			exists = owner
 			owner = {
 				is_gestalt = no
+				is_crafter_empire = no
 			}
 			has_designation = col_factory
 		}
 		modifier = {
 			job_artisan_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_crafter_empire = yes
+			}
+			has_designation = col_factory
+		}
+		modifier = {
+			job_artificer_per_pop = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -175,6 +216,70 @@ deposit_wtmnb_prometheus = {
 		}
 		modifier = {
 			job_warrior_drone_per_pop = 1
+		}
+	}
+	#空
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			is_planet_specialized = no
+		}
+		modifier = {
+			job_ai_wtmnb_cleck_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			is_planet_specialized = no
+		}
+		modifier = {
+			job_ai_wtmnb_drone_per_pop = 1
+		}
+	}
+	#首都
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			is_capital = yes
+		}
+		modifier = {
+			job_ai_wtmnb_master_per_pop = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			is_capital = yes
+		}
+		modifier = {
+			job_ai_wtmnb_master_drone_per_pop = 1
+		}
+	}
+	#azur
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			OR = {
+				has_designation = azur_city1
+				has_designation = azur_cityG
+				has_designation = azur_cityS
+			}
+		}
+		modifier = {
+			job_ai_azur_assistant_per_pop = 1
 		}
 	}
 	#欲都
@@ -398,7 +503,7 @@ deposit_wtmnb_prometheus = {
 }
 
 deposit_wtmnb_prometheus_rubbish = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	icon = d_station_reactor
 	category = deposit_cat_blockers
 	potential = {
