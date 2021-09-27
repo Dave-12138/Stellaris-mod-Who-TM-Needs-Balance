@@ -13,6 +13,8 @@ trait_pc_wtmnb_prometheus_preference = {
 		MONSTER
 		PARASITE
 		WHORE
+		Magical_Bitch
+		Magical_Girl
 		INNOCENTSHOJO
 		TENTACLE
 		LOVEMACHINE

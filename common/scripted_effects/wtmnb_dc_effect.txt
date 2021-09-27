@@ -19,15 +19,15 @@ show_dc_r_desc = {
 	}
 }
 
-wtmnb_planet_species_to_suc = {
+wtmnb_planet_species_to_Magical_Bitch = {
 	every_owned_species = {
 		limit = {
 			NOT = {
-				is_species_class = "SUC"
+				is_species_class = "Magical_Bitch"
 			}
 		}
 		create_species = {
-			class = "SUC"
+			class = "Magical_Bitch"
 			is_mod = yes
 			name = this
 			plural = this
@@ -70,15 +70,15 @@ wtmnb_planet_species_to_suc = {
 	}
 }
 
-wtmnb_planet_species_to_inn = {
+wtmnb_planet_species_to_Magical_Girl = {
 	every_owned_species = {
 		limit = {
 			NOT = {
-				is_species_class = "INN"
+				is_species_class = "Magical_Girl"
 			}
 		}
 		create_species = {
-			class = "INN"
+			class = "Magical_Girl"
 			is_mod = yes
 			name = this
 			plural = this

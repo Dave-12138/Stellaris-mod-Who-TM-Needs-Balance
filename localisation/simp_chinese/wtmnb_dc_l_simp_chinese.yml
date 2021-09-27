@@ -79,8 +79,8 @@
  wtmnb_dc.1020.f:0 "你他妈竟敢动我老婆？？"
 #################
  #魅魔 圣女 魔物娘
- wtmnb_species.1.c:0 "$SUC$" 
- wtmnb_species.1.d:0 "$INN$"
+ wtmnb_species.1.c:0 "$Magical_Bitch$" 
+ wtmnb_species.1.d:0 "$Magical_Girl$"
  wtmnb_species.1.e:0 "$MWN$"
 ##########
  opinion_wtmnb_dc_r:0 "性侵"
