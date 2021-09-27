@@ -55,6 +55,18 @@ ai_sage_master = {
 				has_trait = trait_fanatic_seminal_addiction_s
 				owner = {
 					has_resource = {
+						type = sr_jingling
+						amount > 1
+					}
+				}
+			}
+			sr_jingling = 4
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
 						type = sr_lingli
 						amount > 1
 					}
@@ -230,6 +242,18 @@ ai_sage_master_drone = {
 			consumer_goods = 4
 			food = 8
 			energy = 8
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_fanatic_seminal_addiction_s
+				owner = {
+					has_resource = {
+						type = sr_jingling
+						amount > 1
+					}
+				}
+			}
+			sr_jingling = 4
 		}
 		produces = {
 			trigger = {

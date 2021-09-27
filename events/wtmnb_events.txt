@@ -396,6 +396,9 @@ country_event = {
 		hidden_effect = {
 			from = {
 				planet_event = {
+					id = crisis.5015
+				}
+				planet_event = {
 					id = planet_destruction.200
 				}
 				planet_event = {
@@ -418,6 +421,9 @@ country_event = {
 		name = wtmnb.1001.h
 		hidden_effect = {
 			from = {
+				planet_event = {
+					id = crisis.5015
+				}
 				planet_event = {
 					id = planet_destruction.100
 				}
@@ -447,6 +453,14 @@ country_event = {
 		}
 		name = wtmnb.1001.i
 		from.solar_system = {
+			every_system_planet = {
+				limit = {
+					is_star = no
+				}
+				planet_event = {
+					id = crisis.5015
+				}
+			}
 			eden_star_zeroth = yes
 		}
 	}
@@ -465,6 +479,22 @@ country_event = {
 		}
 		country_event = {
 			id = wtmnb_diplomacy.1
+		}
+	}
+	option = {
+		name = wtmnb.1001.k
+		trigger = {
+			from = {
+				NOT = {
+					exists = owner
+				}
+				is_colonizable = yes
+			}
+		}
+		from = {
+			create_colony = {
+				owner = prev
+			}
 		}
 	}
 }

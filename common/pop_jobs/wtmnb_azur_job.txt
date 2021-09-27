@@ -242,6 +242,23 @@ ai_azur_assistant = {
 					has_trait = trait_robot_mind_relic_core
 					has_trait = trait_mind_cube_alien
 				}
+				owner = {
+					has_resource = {
+						type = sr_jingling
+						amount > 1
+					}
+				}
+			}
+			sr_jingling = 4
+		}
+		produces = {
+			trigger = {
+				OR = {
+					has_trait = trait_azurlanegirls
+					has_trait = trait_robot_mind_link_core
+					has_trait = trait_robot_mind_relic_core
+					has_trait = trait_mind_cube_alien
+				}
 			}
 			unity = 8
 		}

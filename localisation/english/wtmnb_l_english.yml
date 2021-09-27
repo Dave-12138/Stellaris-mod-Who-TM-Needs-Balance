@@ -132,6 +132,7 @@
  wtmnb.1001.h:0 "$PLANET_KILLER_CRACKER$"
  wtmnb.1001.i:0 "$EDEN_STAR_AURA$"
  wtmnb.1001.j:0 "Diplomaticy"
+ wtmnb.1001.k:0 "Occupation"
 #########
  wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
  wtmnb_diplomacy.1.friendly.desc:0 "Is there anything we can do for you, our friend?"

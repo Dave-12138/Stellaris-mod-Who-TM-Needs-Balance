@@ -1,28 +1,86 @@
 eden_star_zeroth = {
+	
 	every_system_planet = {
-		if = {
-			limit = {
-				is_colony = yes
-			}
-			every_owned_pop = {
-				kill_pop = yes
+		limit = {
+			is_planet_class = pc_ai
+			NOT = {
+				has_planet_flag = machine_lair
 			}
 		}
-		if = {
-			limit = {
-				is_planet_class = pc_ai
-			}
-			add_planet_devastation = 55
+		destroy_machine_world = yes
+	}
+	random_system_planet = {
+		limit = {
+			is_planet_class = pc_ai
+			has_planet_flag = machine_lair
 		}
-		else_if = {
-			limit = {
-				is_ringworld = yes
-			}
-			change_pc = pc_ringworld_habitable_damaged
+		event_target:wtmnb_planet_killer_ship.owner = {
+			save_event_target_as = final_machine_world_destroyer
 		}
-		else = {
-			change_pc = pc_black_hole
-			reroll_deposits = yes
+		stop_crisis_sound = yes
+		planet_event = {
+			id = crisis.2046
+		}
+	}
+	every_system_planet = {
+		limit = {
+			is_colony = yes
+		}
+		planet_event = {
+			id = crisis.5015
+		}
+		every_owned_pop = {
+			kill_pop = yes
+		}
+		remove_all_buildings = yes
+		destroy_colony = yes
+	}
+	every_system_planet = {
+		limit = {
+			is_planet_class = pc_habitat
+		}
+		spawn_habitat_cracker_effect = yes
+		remove_planet = yes
+	}
+	every_system_planet = {
+		limit = {
+			is_ringworld = yes
+		}
+		spawn_ringworld_cracker_effect = yes
+		change_pc = pc_ringworld_habitable_damaged
+	}
+	every_system_planet = {
+		limit = {
+			is_ringworld = no
+		}
+		create_ambient_object = {
+			type = "star_explosion"
+			play_animation_once = yes
+			location = this
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+		change_pc = pc_black_hole
+		reroll_deposits = yes
+	}
+	set_star_class = sc_black_hole
+	every_system_planet = {
+		clear_planet_modifiers = yes
+		prevent_anomaly = yes
+	}
+	every_system_planet = {
+		limit = {
+			exists = {
+				exists = orbital_station
+			}
+			orbital_station = {
+				dismantle = yes
+			}
 		}
 	}
 	every_neighbor_system = {
@@ -106,6 +164,7 @@ wtmnb_planet_species_to_sh = {
 		}
 	}
 }
+
 wtmnb_planet_species_to_Azur_Lane_k = {
 	every_owned_species = {
 		limit = {
@@ -170,6 +229,7 @@ wtmnb_planet_species_to_plant = {
 		}
 	}
 }
+
 wtmnb_planet_species_to_hum = {
 	every_owned_species = {
 		limit = {

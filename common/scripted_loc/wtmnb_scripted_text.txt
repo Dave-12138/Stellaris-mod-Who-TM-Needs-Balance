@@ -44,6 +44,20 @@ defined_text = {
 	text = {
 		trigger = {
 			num_pops > 0
+			has_designation = col_nexus
+		}
+		localization_key = pc_wtmnb_prometheus_bureaucrat
+	}
+	text = {
+		trigger = {
+			num_pops > 0
+			has_designation = col_hive
+		}
+		localization_key = pc_wtmnb_prometheus_bureaucrat
+	}
+	text = {
+		trigger = {
+			num_pops > 0
 			has_designation = col_factory
 		}
 		localization_key = pc_wtmnb_prometheus_goods

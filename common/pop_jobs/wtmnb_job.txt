@@ -50,6 +50,28 @@ ai_wtmnb_master = {
 			trigger = {
 				owner = {
 					has_resource = {
+						type = minor_artifacts
+						amount > 1
+					}
+				}
+			}
+			minor_artifacts = 8
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_jingling
+						amount > 1
+					}
+				}
+			}
+			sr_jingling = 8
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
 						type = sr_ten
 						amount > 1
 					}
@@ -242,6 +264,28 @@ ai_wtmnb_master_drone = {
 			influence = 0.4
 			energy = 20
 
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = minor_artifacts
+						amount > 1
+					}
+				}
+			}
+			minor_artifacts = 8
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_resource = {
+						type = sr_jingling
+						amount > 1
+					}
+				}
+			}
+			sr_jingling = 8
 		}
 		produces = {
 			trigger = {
