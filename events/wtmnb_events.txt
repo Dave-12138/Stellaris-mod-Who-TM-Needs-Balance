@@ -494,6 +494,7 @@ country_event = {
 		from = {
 			create_colony = {
 				owner = prev
+				species = prev
 			}
 		}
 	}
