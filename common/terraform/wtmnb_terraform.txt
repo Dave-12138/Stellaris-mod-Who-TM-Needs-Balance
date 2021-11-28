@@ -1,7 +1,13 @@
 terraform_link = {
 	from = pc_molten
 	to = pc_wtmnb_prometheus
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -50,7 +56,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_nuked
 	to = pc_wtmnb_prometheus
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -96,7 +108,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_wtmnb_prometheus
 	to = pc_city
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -132,7 +150,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_wtmnb_prometheus
 	to = pc_gaia
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -168,7 +192,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_city
 	to = pc_wtmnb_prometheus
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -201,7 +231,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_wtmnb_prometheus
 	to = pc_prostitution_city
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -240,7 +276,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_wtmnb_prometheus
 	to = pc_wsg_port
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -272,7 +314,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_wsg_port
 	to = pc_swim
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -304,7 +352,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_shenhai
 	to = pc_swim
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -336,7 +390,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_wtmnb_prometheus
 	to = pc_shenhai
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -368,7 +428,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_ringworld_habitable
 	to = pc_ringworld_habitable_wsg
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -400,7 +466,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_ringworld_seam
 	to = pc_ringworld_habitable
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -431,7 +503,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_ringworld_seam_damaged
 	to = pc_ringworld_habitable
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -462,7 +540,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_ringworld_tech
 	to = pc_ringworld_habitable
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -493,7 +577,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_ringworld_tech_damaged
 	to = pc_ringworld_habitable
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {
@@ -524,7 +614,13 @@ terraform_link = {
 terraform_link = {
 	from = pc_ringworld_habitable
 	to = pc_ringworld_habitable_sh
-	energy = 10000
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
 	duration = 30
 	condition = {
 		custom_tooltip = {

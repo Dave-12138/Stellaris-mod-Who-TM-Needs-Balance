@@ -132,6 +132,8 @@
  wtmnb.1001.i:0 "$EDEN_STAR_AURA$"
  wtmnb.1001.j:0 "外交频道"
  wtmnb.1001.k:0 "占领"
+ wtmnb.1001.l:0 "创造生态环境"
+ wtmnb.1001.l.desc:0 "既然拥有轻易撼动星辰、逆转生死的力量，在几个小时内依靠“贴膜”技术将一块虚空中的大石头变成生机盎然的星球也并非不可能"
 #########
  wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
  wtmnb_diplomacy.1.friendly.desc:0 "有什么事吗，我们的朋友？"

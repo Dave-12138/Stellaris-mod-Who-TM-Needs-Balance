@@ -481,6 +481,7 @@ country_event = {
 			id = wtmnb_diplomacy.1
 		}
 	}
+	#殖民
 	option = {
 		name = wtmnb.1001.k
 		trigger = {
@@ -497,5 +498,44 @@ country_event = {
 				species = prev
 			}
 		}
+	}
+	#创造植被
+	option = {
+		trigger = {
+			from = {
+				is_star = no
+				NOR = {
+					is_planet_class = pc_habitat
+					is_planet_class = pc_habitat_shielded
+					is_a_habitable_planet_megastructure = yes
+					is_ringworld = yes
+					is_colonizable = yes
+					is_colony = yes
+					planet_size < 6
+				}
+			}
+			event_target:wtmnb_planet_killer_ship = {
+				any_owned_ship = {
+					has_component = EDEN_STAR_AURA
+					has_component = WTMNB_6TH_KEY
+					has_component = WTMNB_4TH_KEY
+				}
+			}
+		}
+		name = wtmnb.1001.l
+		from = {
+			random_list = {
+				10 = {
+					change_pc = pc_gaia
+				}
+				50 = {
+					change_pc = pc_continental
+				}
+				50 = {
+					change_pc = pc_savannah
+				}
+			}
+		}
+		custom_tooltip = "wtmnb.1001.l.desc"
 	}
 }

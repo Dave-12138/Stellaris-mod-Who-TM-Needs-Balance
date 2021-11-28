@@ -197,7 +197,7 @@ utility_component_template = {
 			ship_fire_rate_mult = -2000
 			ship_armor_penetration_mult = -5
 			ship_shield_penetration_mult = -5
-			ship_accuracy_mult = -2000
+			ship_accuracy_mult = -20
 		}
 		damage_per_day = {
 			shield_damage = 100000

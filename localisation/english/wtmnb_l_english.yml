@@ -133,6 +133,8 @@
  wtmnb.1001.i:0 "$EDEN_STAR_AURA$"
  wtmnb.1001.j:0 "Diplomaticy"
  wtmnb.1001.k:0 "Occupation"
+ wtmnb.1001.l:0 "Create ecology"
+ wtmnb.1001.l.desc:0 "Since we have the power to easily shake the stars and reverse life and death, it is not impossible to rely on "filming" technology to turn a huge rock into a pretty colonizable planet within a few hours. "
 #########
  wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
  wtmnb_diplomacy.1.friendly.desc:0 "Is there anything we can do for you, our friend?"

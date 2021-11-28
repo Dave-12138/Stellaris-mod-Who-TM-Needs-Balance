@@ -13,9 +13,11 @@ decision_wtmnb_dc_create_pop = {
 		any_owned_pop = {
 			OR = {
 				has_trait = trait_DC_ethic_carnalism
-				has_trait = trait_DC_ethic_asceticism
 				has_trait = trait_DC_ethic_parasite_mind
 				has_trait = trait_DC_ethic_lust_skynet
+				has_trait = trait_DC_ethic_abstinence
+				has_trait = trait_infested_dc
+				has_trait = trait_infested_dc2
 			}
 		}
 	}

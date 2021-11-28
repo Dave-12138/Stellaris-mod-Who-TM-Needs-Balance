@@ -6,6 +6,7 @@ trait_pc_wtmnb_prometheus_preference = {
 	}
 	leader_age_max = 15
 	leader_age_min = 10
+	ideal_planet_class = pc_wtmnb_prometheus
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -15,6 +16,7 @@ trait_pc_wtmnb_prometheus_preference = {
 		WHORE
 		Magical_Bitch
 		Magical_Girl
+		Lust_Girl
 		INNOCENTSHOJO
 		TENTACLE
 		LOVEMACHINE
