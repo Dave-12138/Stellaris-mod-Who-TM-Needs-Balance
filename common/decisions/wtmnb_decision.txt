@@ -158,7 +158,6 @@ decision_wtmnb_break_border = {
 	resources = {
 		category = decisions
 		cost = {
-			alloys = 8000
 			energy = 8000
 		}
 	}
@@ -194,6 +193,92 @@ decision_wtmnb_break_border = {
 						who = from
 						status = no
 					}
+				}
+			}
+		}
+	}
+}
+
+decision_wtmnb_11th_shield = {
+	enactment_time = 1
+	icon = star_11th_modifier
+	resources = {
+		category = decisions
+		cost = {
+			energy = 8000
+		}
+	}
+	potential = {
+		OR = {
+			is_star = yes
+			solar_system = {
+				has_any_megastructure = yes
+			}
+		}
+		solar_system = {
+			any_ship_in_system = {
+				has_component = WTMNB_11TH_KEY
+				has_component = EDEN_STAR_AURA
+			}
+			NOT = {
+				any_system_planet = {
+					has_modifier = wtmnb_star_11th_modifier
+				}
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		solar_system = {
+			system_star = {
+				add_modifier = {
+					modifier = wtmnb_star_11th_modifier
+					days = -1
+				}
+			}
+		}
+	}
+}
+
+decision_wtmnb_11th_shield_off = {
+	enactment_time = 1
+	icon = star_11th_modifier
+	resources = {
+		category = decisions
+		cost = {
+			
+		}
+	}
+	potential = {
+		OR = {
+			is_star = yes
+			solar_system = {
+				has_any_megastructure = yes
+			}
+		}
+		solar_system = {
+			any_ship_in_system = {
+				has_component = WTMNB_11TH_KEY
+				has_component = EDEN_STAR_AURA
+			}
+			any_system_planet = {
+				has_modifier = wtmnb_star_11th_modifier
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		solar_system = {
+			system_star = {
+				remove_modifier = wtmnb_star_11th_modifier
+			}
+			hidden_effect = {
+				every_system_planet = {
+					remove_modifier = wtmnb_star_11th_modifier
 				}
 			}
 		}

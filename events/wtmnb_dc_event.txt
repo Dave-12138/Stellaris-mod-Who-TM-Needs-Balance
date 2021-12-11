@@ -601,7 +601,7 @@ country_event = {
 			create_leader = {
 				class = random
 				species = last_created_species
-				set_age = 1
+				set_age = 0
 				traits = {
 					trait = leader_trait_wtmnb_toy
 				}

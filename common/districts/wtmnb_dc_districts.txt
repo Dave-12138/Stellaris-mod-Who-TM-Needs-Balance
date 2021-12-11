@@ -8,8 +8,9 @@ district_seedbed = {
 	potential = {
 		exists = owner
 		num_pops > 0
-		has_designation = col_prostitution
-		
+		owner = {
+			is_dc_lust_empire = yes
+		}
 		NOR = {
 			has_designation = col_default_machine
 			has_designation = col_default

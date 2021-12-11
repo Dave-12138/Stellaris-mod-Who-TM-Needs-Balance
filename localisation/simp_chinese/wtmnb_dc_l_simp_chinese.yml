@@ -58,16 +58,16 @@
 #######
  wtmnb_diplomacy.1.dc_r:0 "对§H[wtmnb_target.Owner.GetRulerName]§!图谋不轨"
 
- wtmnb_dc.1000.name:0 "[wtmnb_target.Owner.GetRulerTitle]被当众猥亵"
+ wtmnb_dc.1000.name:0 "[wtmnb_target.Owner.GetRulerTitle]被当众侵犯"
  wtmnb_dc.1000.desc:0 "[wtmnb_target.Owner.GetRulerTitle][dc_r_ruler.GetName]与几位随从在众目睽睽之下被[From.GetName]特使强暴"
 
  wtmnb_dc.1010.desc:0 "$wtmnb_dc.1000.desc$\n等到群众被疏散，现场只剩下了倒在味道浓厚的混合液体中的§H[dc_r_ruler.GetName]§!"
  wtmnb_dc.1010.a:0 "中出"
 
  wtmnb_dc.1011.desc:0 "$wtmnb_dc.1000.desc$\n等到群众被疏散，现场只剩下了失去意识的§H[dc_r_ruler.GetName]§!"
- wtmnb_dc.1011.a:0 "那支双头龙是不是有点太粗了？"
+ wtmnb_dc.1011.a:0 "贴~ "
 
- wtmnb_dc.1020.name:0 "$wtmnb_dc.1000.name$"
+ wtmnb_dc.1020.name:0 " $wtmnb_dc.1000.name$ "
  wtmnb_dc.1020.desc.1:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人清醒后不愿提及此事"
  wtmnb_dc.1020.desc.2:0 "$wtmnb_dc.1000.desc$至于失去意识，清醒后似乎仍沉浸在余韵中"
  wtmnb_dc.1020.desc.3:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人目前情绪稳定"

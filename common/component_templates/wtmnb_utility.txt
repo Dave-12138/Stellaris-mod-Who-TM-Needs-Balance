@@ -153,7 +153,7 @@ utility_component_template = {
 		apply_on = ships
 		system_wide = yes
 		stack_info = {
-			id = eden_star_f
+			id = eden_star
 			priority = 20
 		}
 		modifier = {
@@ -180,12 +180,35 @@ utility_component_template = {
 			}
 		}
 	}
+	ai_weight = {
+		weight = 100
+	}
+}
+utility_component_template = {
+	key = "WTMNB_11TH_KEY"
+	size = medium
+	icon = "GFX_ship_part_Oath_of_Judah"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+		}
+	}
+	size_restriction = {
+		wtmnb_fortress
+	}
+	component_set = "WTMNB_GRAND_KEY"
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
 	hostile_aura = {
-		name = "aura_eden_star"
+		name = "aura_judah"
 		radius = 20000
 		apply_on = ships
 		stack_info = {
-			id = eden_star
+			id = "aura_judah"
 			priority = 1
 		}
 		modifier = {

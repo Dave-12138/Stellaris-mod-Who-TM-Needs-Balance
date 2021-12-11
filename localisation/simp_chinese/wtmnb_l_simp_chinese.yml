@@ -18,6 +18,8 @@
  WTMNB_FORT_CORE:0 "月光王座"
  EDEN_STAR_AURA:0 "伊甸之星"
  aura_eden_star:0 "各向异性相对论效应"
+ WTMNB_11TH_KEY:0 "犹大的誓约"
+ aura_judah:0 "神恩结界"
  swtmnb:0 "$wtmnb_fortress$"
  SHIP_THRUSTER_WTMNB:0 "阿拉哈托"
  WTMNB_6TH_KEY:0 "黑渊百花"
@@ -89,6 +91,9 @@
 #######################
  wtmnb_planet_ex:0 "第四神之键"
  wtmnb_planet_ex_desc:0 "别问原理，别问"
+ wtmnb_star_11th_modifier:0 "$aura_judah$"
+ wtmnb_star_11th_modifier_desc:0 "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
+ avoid_enter_by_jump:0 "阻止其他国家通过跃迁引擎进入本星系"
 ###################
  deposit_wtmnb_prometheus:0 "$pc_wtmnb_prometheus$"
  deposit_wtmnb_prometheus_desc:0 "$pc_wtmnb_prometheus_desc_normal$"
@@ -241,6 +246,10 @@
  decision_wtmnb_prometheus_desc:0 "将行星改造为§Y$pc_wtmnb_prometheus$§!星球"
  decision_wtmnb_break_border:0 "开放边境"
  decision_wtmnb_break_border_desc:0 "借由引力干涉，无视边境封锁"
+ decision_wtmnb_11th_shield:0 "$aura_judah$"
+ decision_wtmnb_11th_shield_desc:0 "在重力井外展开神恩结界，从而阻止跃迁引擎正确定位本星系"
+ decision_wtmnb_11th_shield_off:0 "解除$aura_judah$"
+ decision_wtmnb_11th_shield_off_desc:0 "解除神恩结界，让除我们之外的文明可以使用跃迁引擎折跃进入本星系"
 ##################
  
  pc_wtmnb_prometheus:0 "普罗米修斯"
@@ -283,7 +292,7 @@
  mod_job_ai_wtmnb_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master$岗位$"
  mod_job_ai_wtmnb_master_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_wtmnb_master_add£"
  job_ai_wtmnb_master_drone:0 "设备维护子个体"
- job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master$"
+ job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master_drone$"
  job_ai_wtmnb_master_drone_desc:0 "$job_ai_wtmnb_master_desc$"
  mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master$岗位"
  mod_job_ai_wtmnb_master_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master_drone$岗位"

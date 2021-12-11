@@ -36,12 +36,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 			}
 			consumer_goods = 4
 			food = 8
@@ -49,12 +43,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_fuka
@@ -66,12 +54,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_lingli
@@ -83,12 +65,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_living_metal
@@ -100,12 +76,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = nanites
@@ -117,12 +87,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_dark_matter
@@ -134,12 +98,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_pantsu
@@ -151,12 +109,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_neo
@@ -168,12 +120,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_alpha
@@ -185,12 +131,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_se
@@ -202,12 +142,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = azur_shippartbox
@@ -219,12 +153,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_solar_energy
@@ -236,12 +164,6 @@ ai_azur_assistant = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
 				owner = {
 					has_resource = {
 						type = sr_jingling
@@ -252,14 +174,6 @@ ai_azur_assistant = {
 			sr_jingling = 4
 		}
 		produces = {
-			trigger = {
-				OR = {
-					has_trait = trait_azurlanegirls
-					has_trait = trait_robot_mind_link_core
-					has_trait = trait_robot_mind_relic_core
-					has_trait = trait_mind_cube_alien
-				}
-			}
 			unity = 8
 		}
 	}

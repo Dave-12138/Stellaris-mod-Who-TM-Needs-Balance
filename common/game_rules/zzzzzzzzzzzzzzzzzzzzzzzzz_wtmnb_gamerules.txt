@@ -1,0 +1,111 @@
+# 为了兼容性，直接抄的小伞
+###_[跃迁限制]	z_fw/Teif/古代帝国/wsg/阿夸/SOFE/Giga/Ehof/seooc	####################################
+# Root = country attempting to target system for movement
+# This = system being targeted
+can_enter_system_by_jump = {
+	custom_tooltip = {
+		success_text = "debug: can jump"
+		fail_text = cannot_jump_to_system
+		OR = {
+			#_绝对通行
+			root = {
+				has_country_flag = z_fw_r_celestial_orrey_activited
+			}
+			#_|z_fw|璀璨星图
+			root = {
+				has_country_flag = z_fw_r_cheat_quantum_beacon_activited
+			}
+			#_|z_fw|永恒星炬
+			#_基础条件
+			AND = {
+				# Teif
+				NOT = {
+					root = {
+						is_country_type = teif_primitive
+					}
+				}
+				#_Sealed system
+				OR = {
+					## +Teif
+					NOR = {
+						has_star_flag = sealed_system
+						has_star_flag = fallen_sol_system						# Teif
+					}
+					AND = {
+						#_vanilla
+						root = {
+							has_country_flag = entered_sealed_system
+						}
+						has_star_flag = sealed_system
+					}
+					# Teif
+					AND = {
+						root = {
+							has_country_flag = entered_fallen_sol_system
+						}
+						has_star_flag = fallen_sol_system
+					}
+				}
+				##_特殊星系		+wsg/古代帝国/阿夸/SOFE/Giga/Ehof/seooc
+				NOR = {
+					has_star_flag = lcluster
+					# wsg
+					has_star_flag = wg_sealed_system
+					has_star_flag = wg_psionic_systems
+					# 古代帝国
+					has_star_flag = ag_no_jump_in_system
+					# 阿夸
+					has_star_flag = kuat_initial_system
+					has_star_flag = Kuat_system
+					has_star_flag = Kuat_system_1
+					has_star_flag = Kuat_system_2
+					has_star_flag = Kuat_system_3
+					has_star_flag = Kuat_system_int
+					has_star_flag = Kuat_system_int_1
+					has_star_flag = Kuat_system_int_2
+					has_star_flag = Kuat_system_int_3
+					has_star_flag = Kuat_system_int_4
+					AND = {
+						has_global_flag = starkillerbase_not_passed
+						has_star_flag = starkiller_system
+					}
+					# SOFE
+					has_star_flag = outercluster
+					# Giga
+					has_star_flag = ehof_compound_system
+					has_star_flag = giga_core_03
+					cohesive_system = yes
+					urmazin_system = yes
+					everchanging_system = yes
+					katzen_jump_blocked_system = yes
+					# seooc
+					has_star_flag = nep_Krahen_cluster
+					has_star_flag = nep_Scrus_cluster
+					AND = {
+						has_global_flag = nep_not_pass_Aemethms
+						OR = {
+							has_star_flag = nep_dragon_system
+							has_star_flag = nep_heptagram_cluster
+						}
+					}
+				}
+				OR = {
+					NOR = {
+						any_ship_in_system = {
+							is_ship_size = wtmnb_fortress
+						}
+						any_system_planet = {
+							has_modifier = wtmnb_star_11th_modifier
+						}
+					}
+					root = {
+						any_owned_ship = {
+							is_ship_size = wtmnb_fortress
+							has_component = WTMNB_11TH_KEY
+						}
+					}
+				}
+			}
+		}
+	}
+}

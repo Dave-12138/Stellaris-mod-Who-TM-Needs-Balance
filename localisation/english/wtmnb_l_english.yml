@@ -18,6 +18,8 @@
  WTMNB_FORT_CORE:0 "$wtmnb_fortress$"
  EDEN_STAR_AURA:0 "$WTMNB_EDEN_STAR$"
  aura_eden_star:0 "Anisotropic Relativistic Effect"
+ WTMNB_11TH_KEY:0 "Oath of Judah"
+ aura_judah:0 "Elpsion Pedion"
  swtmnb:0 "$wtmnb_fortress$"
  SHIP_THRUSTER_WTMNB:0 "Alajato"
  SHIP_THRUSTER_WTMNB_DESC:0 "Fly me 2 the moon!"
@@ -74,6 +76,7 @@
  not_for_yourself:0 "We can't do this to ourselves"
  target_must_exist:0 "Have to do this in some empire, inside border."
  portal_in_neighbor:0 "$TRIGGER_FAIL$there's a $wtmnb_portal$ in neighbor solar system."
+
 ##################
  edict_wtmnb_edict:0 "Void Archives"
  edict_wtmnb_edict_desc:0 "Some technology"
@@ -90,6 +93,9 @@
 #######################
  wtmnb_planet_ex:0 "$WTMNB_4TH_KEY$"
  wtmnb_planet_ex_desc:0 "How could it works?"
+ wtmnb_star_11th_modifier:0 "$aura_judah$"
+ wtmnb_star_11th_modifier_desc:0 ""
+ avoid_enter_by_jump:0 "Avoid others enter this system by jump driver"
 ###################
  deposit_wtmnb_prometheus:0 "$pc_wtmnb_prometheus$"
  deposit_wtmnb_prometheus_desc:0 "$pc_wtmnb_prometheus_desc_normal$"
@@ -242,6 +248,10 @@
  decision_wtmnb_prometheus_desc:0 "Change planet class into §Y$pc_wtmnb_prometheus$§!"
  decision_wtmnb_break_border:0 "Break the closing borders"
  decision_wtmnb_break_border_desc:0 "Trick them by using eden star."
+ decision_wtmnb_11th_shield:0 "Elpsion Pedion"
+ decision_wtmnb_11th_shield_desc:0 "Avoid others enter this system by jump driver"
+ decision_wtmnb_11th_shield_off:0 "Cancel Elpsion Pedion"
+ decision_wtmnb_11th_shield_off_desc:0 "Allow others to enter this system by jump driver"
 ##################
  
  pc_wtmnb_prometheus:0 "Prometheus"

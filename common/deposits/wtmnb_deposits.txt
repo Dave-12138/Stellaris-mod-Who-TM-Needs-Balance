@@ -10,6 +10,7 @@ deposit_wtmnb_prometheus = {
 			exists = owner
 			owner = {
 				is_hive_empire = yes
+				# is_dc_mod_empire = no
 			}
 			has_designation = col_research
 		}
@@ -20,6 +21,7 @@ deposit_wtmnb_prometheus = {
 			exists = owner
 			owner = {
 				is_machine_empire = yes
+				# is_dc_mod_empire = no
 			}
 			has_designation = col_research
 		}
@@ -30,11 +32,49 @@ deposit_wtmnb_prometheus = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				is_dc_mod_empire = no
 			}
 			has_designation = col_research
 		}
 		job_researcher_per_pop = 1
 	}
+	# 多彩研究部分
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_dc_lust_empire = yes
+				has_tentacle = no
+			}
+			has_designation = col_research
+		}
+		job_lovejuice_researcher_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_dc_lust_empire = yes
+				has_tentacle = yes
+			}
+			has_designation = col_research
+		}
+		job_tentacle_researcher_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_dc_pure_empire = yes
+			}
+			has_designation = col_research
+		}
+		job_holylight_researcher_per_pop = 1
+	}
+	# 多彩研究结束
 	#合金
 	triggered_planet_modifier = {
 		potential = {
@@ -64,11 +104,52 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_regular_empire = yes
 				is_catalytic_empire = no
+				is_dc_mod_empire = no
 			}
 			has_designation = col_foundry
 		}
 		job_foundry_per_pop = 1
 	}
+	# 多彩合金部分
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_catalytic_empire = no
+				is_dc_lust_empire = yes
+				has_tentacle = no
+			}
+			has_designation = col_foundry
+		}
+		job_love_juice_foundry_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_catalytic_empire = no
+				is_dc_lust_empire = yes
+				has_tentacle = yes
+			}
+			has_designation = col_foundry
+		}
+		job_tentacle_armor_foundry_per_pop = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_catalytic_empire = no
+				is_dc_pure_empire = yes
+			}
+			has_designation = col_foundry
+		}
+		job_holylight_foundry_per_pop = 1
+	}
+	# 多彩合金部分结束
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner

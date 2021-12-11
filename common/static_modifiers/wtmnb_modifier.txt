@@ -4,3 +4,10 @@ wtmnb_planet_ex = {
 	icon = "gfx/interface/icons/planet_modifiers/planet_4th_modifier.dds"
 	icon_frame = 1
 }
+wtmnb_star_11th_modifier={
+	
+	icon = "gfx/interface/icons/planet_modifiers/star_11th_modifier.dds"
+	icon_frame = 1
+	custom_tooltip = "avoid_enter_by_jump"
+
+}

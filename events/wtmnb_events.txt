@@ -453,14 +453,14 @@ country_event = {
 		}
 		name = wtmnb.1001.i
 		from.solar_system = {
-			every_system_planet = {
-				limit = {
-					is_star = no
-				}
-				planet_event = {
-					id = crisis.5015
-				}
-			}
+			# every_system_planet = {
+			# 	limit = {
+			# 		is_star = no
+			# 	}
+			# 	planet_event = {
+			# 		id = crisis.5015
+			# 	}
+			# }
 			eden_star_zeroth = yes
 		}
 	}

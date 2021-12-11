@@ -89,12 +89,13 @@ country_event = {
 			}
 		}
 	}
-	#多彩
+	#多彩 雷普
 	option = {
 		name = wtmnb_diplomacy.1.dc_r
 		trigger = {
 			event_target:wtmnb_target = {
 				exists = owner.ruler
+				has_global_flag = love_between_us
 				owner.ruler = {
 					species = {
 						is_ugly_pop = no

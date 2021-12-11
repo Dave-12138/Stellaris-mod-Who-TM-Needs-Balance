@@ -32,6 +32,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/Eden_wtmnb.dds"
 	}
 	spriteType = {
+		name = "GFX_ship_part_Oath_of_Judah"
+		texturefile = "gfx/interface/icons/ship_parts/Oath_of_Judah.dds"
+	}
+	spriteType = {
 		name = "GFX_ship_part_wtmnb_destructor"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_destructor.dds"
 	}

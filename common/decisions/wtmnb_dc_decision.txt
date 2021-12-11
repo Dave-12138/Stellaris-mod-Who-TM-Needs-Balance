@@ -10,14 +10,13 @@ decision_wtmnb_dc_create_pop = {
 	}
 	potential = {
 		is_planet_class = pc_wtmnb_prometheus
+		owner = {
+			is_dc_lust_empire = yes
+		}
 		any_owned_pop = {
-			OR = {
-				has_trait = trait_DC_ethic_carnalism
-				has_trait = trait_DC_ethic_parasite_mind
-				has_trait = trait_DC_ethic_lust_skynet
-				has_trait = trait_DC_ethic_abstinence
-				has_trait = trait_infested_dc
-				has_trait = trait_infested_dc2
+			NOR = {
+				is_species_class = MACHINE
+				is_species_class = ROBOT
 			}
 		}
 	}
