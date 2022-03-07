@@ -41,14 +41,7 @@ planet_event = {
 						modify_species = {
 							change_scoped_species = yes
 							add_trait = trait_fanatic_seminal_addiction
-						}
-						if = {
-							limit = {
-								has_global_flag = DCHTP_INSTALLED
-							}
-							species = {
-								change_species_portrait = annalis
-							}
+							ideal_planet_class = pc_wtmnb_prometheus
 						}
 					}
 				}
@@ -104,7 +97,7 @@ planet_event = {
 					has_job = ai_sage_master_drone
 				}
 				NOT = {
-					has_trait = trait_fanatic_seminal_addiction_s
+					has_trait = trait_pc_wtmnb_prometheus_preference
 				}
 			}
 			ROOT = {
@@ -112,13 +105,13 @@ planet_event = {
 					limit = {
 						any_owned_species = {
 							is_subspecies = prevprev
-							has_trait = trait_fanatic_seminal_addiction_s
+							has_trait = trait_pc_wtmnb_prometheus_preference
 						}
 					}
 					random_owned_species = {
 						limit = {
 							is_subspecies = prevprev
-							has_trait = trait_fanatic_seminal_addiction_s
+							has_trait = trait_pc_wtmnb_prometheus_preference
 						}
 						prevprev = {
 							change_species = prev
@@ -129,7 +122,8 @@ planet_event = {
 					prev = {
 						modify_species = {
 							change_scoped_species = yes
-							add_trait = trait_fanatic_seminal_addiction_s
+							add_trait = trait_pc_wtmnb_prometheus_preference
+							ideal_planet_class = pc_wtmnb_prometheus
 						}
 						# if = {
 						# 	limit = {
@@ -157,7 +151,7 @@ country_event = {
 				has_job = ai_sage_master_drone
 			}
 			NOT = {
-				has_trait = trait_fanatic_seminal_addiction_s
+				has_trait = trait_pc_wtmnb_prometheus_preference
 			}
 		}
 	}

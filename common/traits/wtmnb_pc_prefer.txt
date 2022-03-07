@@ -30,4 +30,14 @@ trait_pc_wtmnb_prometheus_preference = {
 		pc_wtmnb_prometheus_habitability = 3
 		pop_housing_usage_mult = -10
 	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet={
+				is_planet_class = pc_wtmnb_prometheus
+			}
+		}
+		planet_pops_upkeep_mult = -150
+		pop_happiness = 100
+	}
 }

@@ -29,6 +29,8 @@
  WTMNB_DESTRUCTOR_DESC:0 "§RKey of Destruction series§!"
  WTMNB_4TH_KEY:0 "4th Grand Key"
  WTMNB_4TH_KEY_DESC:0 "Control weather by leading monsoon."
+ WTMNB_8TH_KEY:0 "Phoenix Down"
+ WTMNB_8TH_KEY_DESC:0 "Grand Key which rules minds"
  WTMNB_GRAND_KEY:0 "Grand Key"
  WTMNB_GRAND_KEY_DESC:0 "Machines that guide and control those Power."
 #################
@@ -80,8 +82,8 @@
 ##################
  edict_wtmnb_edict:0 "Void Archives"
  edict_wtmnb_edict_desc:0 "Some technology"
- edict_wtmnb_edict_2:0 "Phoenix Down"
- edict_wtmnb_edict_2_desc:0 "Hey, time goes faster inside!\n§LReset CD of editing Civics and Gov type.§!"
+ edict_wtmnb_edict_2:0 "King Crimson"
+ edict_wtmnb_edict_2_desc:0 "no wait, just skip\n§LReset CD of editing Civics and Gov type.§!"
  edict_wtmnb_edict_3:0 "信じてるぜ?"
  edict_wtmnb_edict_3_desc:0 "信じてるよ!"
  edict_wtmnb_edict_4:0 "$unbox_lmark_wtmnb$ mode"
@@ -103,9 +105,12 @@
  deposit_wtmnb_prometheus_rubbish_desc:0 "It seems to be like the scraps of planet building that should be able to recycle by throwing into the forge."
 ##################
 
- district_database:0 "Database"
- district_database_desc:0 "Databases are used for SAVING pop.\n§L-Hey, did you see that guy who went into I/O?§!"
- district_database_plural:0 "$district_database$s"
+ district_meeting_room:0 "Strategic Fooling Room"
+ district_meeting_room_desc:0 "Empire size? What empire? What size? We are just a developing country"
+ district_meeting_room_plural:0 "$district_meeting_room$s"
+ district_matrix_office:0 "Database"
+ district_matrix_office_desc:0 "Databases are used for SAVING pop.\n§L-Hey, did you see that guy who went into I/O?§!"
+ district_matrix_office_plural:0 "$district_matrix_office$s"
 
 ##################
  bombardment_wtmnb_doom:0 "Purification"
@@ -295,3 +300,13 @@
  job_ai_wtmnb_master_drone_desc:0 "Look at the monitor and do nothing."
  mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master$"
  mod_job_ai_wtmnb_master_drone_per_pop:0 "add $job_ai_wtmnb_master$ "
+
+ job_wtmnb_fooyouist:0 "Strategic Fool Propagandist"
+ job_wtmnb_fooyouist_plural:0 "$job_wtmnb_fooyouist$s"
+ job_wtmnb_fooyouist_desc:0 "We're still natives without entering space, so it is impossible for us to control twenty colonies, "
+ mod_job_wtmnb_fooyouist_add:0 "$job_wtmnb_fooyouist$"
+
+ job_wtmnb_fooyouist_drone:0 "$job_wtmnb_fooyouist$"
+ job_wtmnb_fooyouist_drone_plural:0 "$job_wtmnb_fooyouist_drone$"
+ job_wtmnb_fooyouist_drone_desc:0 "$job_wtmnb_fooyouist_desc$"
+ mod_job_wtmnb_fooyouist_drone_add:0 "$job_wtmnb_fooyouist_drone$"

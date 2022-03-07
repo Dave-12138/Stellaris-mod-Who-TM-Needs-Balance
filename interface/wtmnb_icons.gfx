@@ -20,6 +20,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/wtmnb_6th_key.dds"
 	}
 	spriteType = {
+		name = "GFX_ship_part_wtmnb_8th_key"
+		texturefile = "gfx/interface/icons/ship_parts/wtmnb_8th_key.dds"
+	}
+	spriteType = {
 		name = "GFX_megastructure_wtmnb_orbit"
 		texturefile = "gfx/interface/planetview/habitat.dds"
 	}

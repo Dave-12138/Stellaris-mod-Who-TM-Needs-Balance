@@ -1,0 +1,43 @@
+wtmnb_fooyouist = {
+	is_capped_by_modifier = yes
+	building_icon = building_capital
+	icon = bureaucrat
+	category = specialist
+	weight = {
+		weight = 30
+	}
+	possible = {
+		always = yes
+	}
+	
+	country_modifier = {
+		empire_size_branch_office_mult = -0.1
+		empire_size_districts_mult = -0.1
+		empire_size_systems_mult = -0.1
+		empire_size_colonies_mult = -0.1
+		empire_size_pops_mult = -0.1
+		empire_size_penalty_mult = -0.1
+	}
+}
+
+wtmnb_fooyouist_drone = {
+	is_capped_by_modifier = yes
+	building_icon = building_capital
+	icon = synapse_drone
+	category = complex_drone
+	weight = {
+		weight = 1600
+	}
+	possible = {
+		always = yes
+	}
+	
+	country_modifier = {
+		empire_size_branch_office_mult = -0.1
+		empire_size_districts_mult = -0.1
+		empire_size_systems_mult = -0.1
+		empire_size_colonies_mult = -0.1
+		empire_size_pops_mult = -0.1
+		empire_size_penalty_mult = -0.1
+	}
+}

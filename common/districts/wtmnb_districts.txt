@@ -1,4 +1,4 @@
-district_database = {
+district_matrix_office = {
 	base_buildtime = 4
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
@@ -112,5 +112,82 @@ district_database = {
 		planet_housing_add = 20
 		planet_max_buildings_add = 2
 		planet_jobs_produces_mult = 0.1
+	}
+}
+
+district_meeting_room = {
+	base_buildtime = 4
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = prometheus_world
+	}
+	potential = {
+		exists = owner
+		uses_district_set = prometheus_world
+	}
+	allow = {
+		AND = {
+			exists = owner
+			OR = {
+				has_designation = col_bureau
+				AND = {
+					owner = {
+						is_hive_empire = yes
+					}
+					has_designation = col_hive
+				}
+				AND = {
+					owner = {
+						is_machine_empire = yes
+					}
+					has_designation = col_nexus
+				}
+			}
+		}
+	}
+	conversion_ratio = 0.5
+	resources = {
+		category = planet_districts
+		cost = {
+			alloy = 10
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_designation = col_bureau
+		}
+		modifier = {
+			job_wtmnb_fooyouist_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			OR = {
+				AND = {
+					owner = {
+						is_hive_empire = yes
+					}
+					has_designation = col_hive
+				}
+				AND = {
+					owner = {
+						is_machine_empire = yes
+					}
+					has_designation = col_nexus
+				}
+			}
+		}
+		modifier = {
+			job_wtmnb_fooyouist_drone_add = 1
+		}
 	}
 }

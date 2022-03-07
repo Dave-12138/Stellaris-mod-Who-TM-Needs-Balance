@@ -88,7 +88,19 @@ can_enter_system_by_jump = {
 							has_star_flag = nep_heptagram_cluster
 						}
 					}
+					# 多彩
+					AND = {
+						has_global_flag = love_between_us
+						OR = {
+							has_star_flag = ten_crisis_system
+							any_neighbor_system = {
+								has_star_flag = ten_crisis_system
+							}
+						}
+					}
 				}
+				
+				# 神恩结界
 				OR = {
 					NOR = {
 						any_ship_in_system = {

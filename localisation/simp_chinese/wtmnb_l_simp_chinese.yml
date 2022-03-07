@@ -28,6 +28,9 @@
  WTMNB_DESTRUCTOR_DESC:0 "§R破坏之键§!"
  WTMNB_4TH_KEY:0 "第四神之键"
  WTMNB_4TH_KEY_DESC:0 "操控气候"
+
+ WTMNB_8TH_KEY:0 "羽渡尘"
+ WTMNB_8TH_KEY_DESC:0 "意识之键"
  WTMNB_GRAND_KEY:0 "神之键"
  WTMNB_GRAND_KEY_DESC:0 "引导使用虚数权能的工具"
 #################
@@ -54,7 +57,7 @@
  unbox_dyson_wtmnb_DESC:0 "其实只是因为点不到恒星本身所以决定加了这个拆解"
  unbox_dyson_wtmnb_MEGASTRUCTURE_DETAILS:0 "建错了？拆！" 
  wtmnb_love_mark:0 "情感矩阵"
- wtmnb_love_mark_DESC:0 "在与我们接触时会产生极大愉悦感——通过这种方式可以轻松抬高对方对我们的评价；基于同样的原理，对方帝国所在的联邦会被锁定为最高等级。"
+ wtmnb_love_mark_DESC:0 "在与我们接触时会产生极大愉悦感——通过这种方式可以轻松抬高对方对我们的评价；基于同样的原理，对方帝国所在的联邦会被锁定为最高等级。\n\n其实我本来想直接叫心理定规的"
  wtmnb_love_mark_MEGASTRUCTURE_DETAILS:0 "遗憾的是不开边境就用不了了"
  wtmnb_portal:0 "超空间桥梁建设机组"
  wtmnb_portal_DESC:0 "当第二个机组建设完成时，超空间航路就会生成\n警告：我也不知道同时多个帝国试图用这玩意会发生什么"
@@ -78,8 +81,8 @@
 ##################
  edict_wtmnb_edict:0 "虚空万藏"
  edict_wtmnb_edict_desc:0 "部分科技解锁"
- edict_wtmnb_edict_2:0 "羽渡尘"
- edict_wtmnb_edict_2_desc:0 "“幻境中的时间流速不同”\n§L重置政府改革(调整国民理念、政体)CD§!"
+ edict_wtmnb_edict_2:0 "绯红之王"
+ edict_wtmnb_edict_2_desc:0 "跳过等待政府改革cd的时间\n§L重置政府改革(调整国民理念、政体)CD§!"
  edict_wtmnb_edict_3:0 "心急带路贼？"
  edict_wtmnb_edict_3_desc:0 "心急带路呦！"
  edict_wtmnb_edict_4:0 "巨构拆解模式"
@@ -101,9 +104,12 @@
  deposit_wtmnb_prometheus_rubbish_desc:0 "好像是星球建设留下的边角料，扔进锻炉应该能回收利用\n不过毕竟堆放的地方不起眼，不管也行"
 ##################
  
- district_database:0 "数据库"
- district_database_desc:0 " - 和学校机房不同，这里可不用戴套。\n - 我是说鞋套。"
- district_database_plural:0 "$district_database$"
+ district_meeting_room:0 "战略忽悠会议室"
+ district_meeting_room_desc:0 "帝国规模？什么帝国？什么规模？我们可是发展中国家，你可不要乱讲"
+ district_meeting_room_plural:0 "$district_meeting_room$"
+ district_matrix_office:0 "泛用型多功能办公室"
+ district_matrix_office_desc:0 "成熟的工作都懂得自己完成自己，所以名义上的办公室无论从设计还是使用都是作为配备娱乐设备的住宅。"
+ district_matrix_office_plural:0 "$district_matrix_office$"
 
 ##################
  bombardment_wtmnb_doom:0 "人工清洗"
@@ -297,5 +303,15 @@
  mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master$岗位"
  mod_job_ai_wtmnb_master_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master_drone$岗位"
  mod_job_ai_wtmnb_master_drone_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_wtmnb_master_drone_add£"
+
+ job_wtmnb_fooyouist:0 "战忽宣传员"
+ job_wtmnb_fooyouist_plural:0 "$job_wtmnb_fooyouist$"
+ job_wtmnb_fooyouist_desc:0 "我们还是土著，没上天呢，怎么可能有几十个殖民地，你不要乱讲"
+ mod_job_wtmnb_fooyouist_add:0 "$job_wtmnb_fooyouist$岗位"
+
+ job_wtmnb_fooyouist_drone:0 "战忽宣传子个体"
+ job_wtmnb_fooyouist_drone_plural:0 "$job_wtmnb_fooyouist_drone$"
+ job_wtmnb_fooyouist_drone_desc:0 "$job_wtmnb_fooyouist_desc$"
+ mod_job_wtmnb_fooyouist_drone_add:0 "$job_wtmnb_fooyouist_drone$岗位"
 ##
  wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"

@@ -66,7 +66,7 @@ wtmnb_edict = {
 }
 
 wtmnb_edict_2 = {
-	#羽渡尘
+	#绯红之王
 	icon = GFX_nullobject
 	length = -1
 	resources = {

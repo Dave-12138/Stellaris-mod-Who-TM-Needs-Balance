@@ -39,7 +39,7 @@ wtmnb_fortress = {
 	}
 	num_target_locators = 0
 	base_buildtime = 0
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	#if yes, countries will have an auto-generated design at start
 	default_behavior = carrier
 	prerequisites = {
 		"tech_wtmnb_fortress"
@@ -48,6 +48,7 @@ wtmnb_fortress = {
 	construction_type = starbase_shipyard
 	combat_disengage_chance = 1
 	required_component_set = "ftl_components"
+	required_component_set = "WTMNB_GRAND_KEY"
 	required_component_set = "WTMNB_GRAND_KEY"
 	required_component_set = "WTMNB_GRAND_KEY"
 	required_component_set = "WTMNB_GRAND_KEY"

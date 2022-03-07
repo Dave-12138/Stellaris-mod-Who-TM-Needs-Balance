@@ -267,6 +267,26 @@ utility_component_template = {
 		weight = 100
 	}
 }
+utility_component_template = {
+	key = "WTMNB_8TH_KEY"
+	size = aux
+	icon = GFX_ship_part_wtmnb_8th_key
+	icon_frame = 1
+	power = 5000
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "WTMNB_GRAND_KEY"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 64
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
 
 utility_component_template = {
 	key = "WTMNB_DESTRUCTOR"
