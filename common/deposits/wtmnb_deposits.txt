@@ -220,7 +220,10 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_hive_empire = yes
 			}
-			has_designation = col_hive
+			OR = {
+				has_designation = col_bureau_hive
+				has_designation = col_hive
+			}
 		}
 		job_synapse_drone_per_pop = 1
 	}
@@ -230,7 +233,10 @@ deposit_wtmnb_prometheus = {
 			owner = {
 				is_machine_empire = yes
 			}
-			has_designation = col_nexus
+			OR = {
+				has_designation = col_nexus
+				has_designation = col_bureau_machine
+			}
 		}
 		job_coordinator_per_pop = 1
 	}
