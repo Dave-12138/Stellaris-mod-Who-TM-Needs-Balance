@@ -176,7 +176,6 @@ district_meeting_room = {
 					owner = {
 						is_hive_empire = yes
 					}
-					has_designation = col_hive
 					OR = {
 						has_designation = col_bureau_hive
 						has_designation = col_hive
@@ -186,12 +185,19 @@ district_meeting_room = {
 					owner = {
 						is_machine_empire = yes
 					}
-					has_designation = col_nexus
 					OR = {
 						has_designation = col_nexus
 						has_designation = col_bureau_machine
 					}
 				}
+				
+				AND = {
+					owner = {
+						is_gestalt = yes
+					}
+					has_designation = col_bureau
+				}
+				
 			}
 		}
 		modifier = {
