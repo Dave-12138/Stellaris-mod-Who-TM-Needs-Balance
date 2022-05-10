@@ -11,6 +11,7 @@ trait_pc_wtmnb_prometheus_preference = {
 		BIOLOGICAL
 		LITHOID
 		MACHINE
+		NECROID
 		MONSTER
 		PARASITE
 		WHORE
