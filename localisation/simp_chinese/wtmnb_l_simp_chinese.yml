@@ -20,6 +20,12 @@
 
  WTMNB_SCIENCE_SECTION:0 "$wtmnb_science$"
 
+
+ wtmnb_cannon:0 "浮游炮"
+ wtmnb_cannon_plural:0 "浮游炮"
+ WTMNB_CANNON_CORE:0 "$wtmnb_cannon$"
+ SHIP_GRAPHICS_WTMNB_CANNON_DESC:0 "高机动化浮游炮，瞬息三千六百炮，是居家旅行杀人越货必备法宝"
+
  WTMNB_SCIENCE_REACTOR:0 "虚拟反应堆"
  WTMNB_SCIENCE_REACTOR_DESC:0 "我们做了一个反应堆，但没完全做"
 
@@ -45,6 +51,7 @@
 
  WTMNB_6TH_KEY:0 "黑渊百花"
  WTMNB_6TH_KEY_DESC:0 "第六神之键·创生之键"
+ aura_white_flower:0 "白花"
 
  WTMNB_7TH_KEY:0 "天火圣裁"
  WTMNB_7TH_KEY_DESC:0 "第七神之键·§R破坏之键§!"

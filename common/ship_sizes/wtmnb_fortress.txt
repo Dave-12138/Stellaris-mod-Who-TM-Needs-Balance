@@ -101,7 +101,8 @@ wtmnb_fortress = {
 	possible_starbase = {
 		has_starbase_size >= starbase_outpost
 	}
-	
+	takes_name_from_ship_design = yes
+	uses_name_prefix = no
 	ai_ship_data = {
 		min = 1
 		max = 1

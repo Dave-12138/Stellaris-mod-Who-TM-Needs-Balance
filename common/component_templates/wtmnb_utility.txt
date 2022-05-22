@@ -4,11 +4,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_5"
 	icon_frame = 1
-	power = 250
+	power = 500
 
 	prerequisites = { "tech_wtmnb_fortress" }
 	component_set = "power_core"
-	size_restriction = { wtmnb_science }
+	size_restriction = { wtmnb_science wtmnb_cannon }
 
 }
 # 普普通通 flt
@@ -280,6 +280,30 @@ utility_component_template = {
 			alloys = 64
 		}
 	}
+	friendly_aura = {
+		name = "aura_white_flower"
+		radius = 20000
+		apply_on = ships
+		system_wide = yes
+		stack_info = {
+			id = aura_white_flower
+			priority = 20
+		}
+		modifier = {
+			ship_hull_regen_add_perc = 20
+			ship_armor_regen_add_perc = 20
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
 	ai_weight = {
 		weight = 100
 	}
@@ -361,8 +385,7 @@ utility_component_template = {
 			priority = 20
 		}
 		modifier = {
-			ship_hull_regen_add_perc = 20
-			ship_armor_regen_add_perc = 20
+
 			ship_evasion_add = 1000
 			ship_evasion_mult = 1000
 			ship_speed_mult = 100000

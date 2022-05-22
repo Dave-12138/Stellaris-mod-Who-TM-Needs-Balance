@@ -11,8 +11,8 @@ ship_section_template = {
 
 
 	component_slot = {
-		name = "TITANIC_01"
-		template = "wtmnb_titanic_turret"
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
 		locatorname = "medium_gun_01"
 	}
 
