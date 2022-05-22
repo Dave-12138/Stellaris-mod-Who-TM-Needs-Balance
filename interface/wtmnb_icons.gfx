@@ -12,8 +12,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_weapon.dds"
 	}
 	spriteType = {
-		name = "GFX_ship_part_wtmnb_flt"
+		name = "GFX_ship_part_wtmnb_1st_key"
+		texturefile = "gfx/interface/icons/ship_parts/wtmnb_1st_key.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_wtmnb_2nd_key"
 		texturefile = "gfx/interface/icons/ship_parts/wtmnb_2nd_key.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_wtmnb_flt"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_jump_drive.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_wtmnb_5th_key"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_5th_key.dds"
 	}
 	spriteType = {
 		name = "GFX_ship_part_wtmnb_6th_key"

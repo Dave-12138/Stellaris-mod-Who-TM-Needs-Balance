@@ -16,7 +16,7 @@ terraform_link = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
-						has_component = EDEN_STAR_AURA
+						has_component = WTMNB_9TH_KEY
 					}
 				}
 			}
@@ -29,7 +29,7 @@ terraform_link = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
-						has_component = EDEN_STAR_AURA
+						has_component = WTMNB_9TH_KEY
 					}
 				}
 			}
@@ -71,7 +71,7 @@ terraform_link = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
-						has_component = EDEN_STAR_AURA
+						has_component = WTMNB_9TH_KEY
 					}
 				}
 			}
@@ -84,7 +84,7 @@ terraform_link = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
-						has_component = EDEN_STAR_AURA
+						has_component = WTMNB_9TH_KEY
 					}
 				}
 			}
@@ -207,7 +207,7 @@ terraform_link = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
-						has_component = EDEN_STAR_AURA
+						has_component = WTMNB_9TH_KEY
 					}
 				}
 			}
@@ -220,7 +220,7 @@ terraform_link = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {
 						has_component = WTMNB_4TH_KEY
-						has_component = EDEN_STAR_AURA
+						has_component = WTMNB_9TH_KEY
 					}
 				}
 			}

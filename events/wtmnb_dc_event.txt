@@ -597,7 +597,7 @@ country_event = {
 				species = last_created_species
 				set_age = 0
 				traits = {
-					trait = leader_trait_wtmnb_toy
+					trait = leader_trait_wtmnb_stigmata
 				}
 				skill = 10
 			}

@@ -1,4 +1,4 @@
-trait_wtmnb_toy = {
+trait_wtmnb_stigmata = {
 	cost = 0
 	initial = yes
 	randomized = no
@@ -26,7 +26,7 @@ trait_wtmnb_toy = {
 		TOUHOUGIRLS
 		OTHER
 	}
-	icon = "gfx/interface/icons/traits/trait_wtmnb_toy.dds"
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
@@ -43,13 +43,13 @@ trait_wtmnb_toy = {
 	}
 }
 
-leader_trait_wtmnb_toy = {
+leader_trait_wtmnb_stigmata = {
 	cost = 0
 	initial = no
 	randomized = no
 	modification = no
 	immortal_leaders = yes
-	icon = "gfx/interface/icons/traits/trait_wtmnb_toy.dds"
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
 	leader_trait = {
 		general
 		governor
@@ -108,5 +108,5 @@ leader_trait_wtmnb_toy = {
 		ship_weapon_range_mult = 1
 		ship_engagement_range_mult = 1
 	}
-	#custom_tooltip = leader_trait_wtmnb_toy_modifier
+	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }

@@ -1,4 +1,5 @@
 namespace = wtmnb
+# 轨道轰炸
 planet_event = {
 	id = wtmnb.0
 	pre_triggers = {
@@ -52,7 +53,7 @@ planet_event = {
 		remove_modifier = "dangerous_wildlife"
 	}
 }
-
+# 轨道轰炸 提示（轰炸方）
 country_event = {
 	id = wtmnb.1
 	title = wtmnb.1.name
@@ -66,7 +67,7 @@ country_event = {
 		custom_tooltip = wtmnb.1.a
 	}
 }
-
+# 
 country_event = {
 	id = wtmnb.2
 	is_triggered_only = yes
@@ -89,7 +90,7 @@ country_event = {
 		}
 	}
 }
-
+# l星门
 country_event = {
 	is_triggered_only = yes
 	id = wtmnb.3
@@ -145,7 +146,7 @@ country_event = {
 		}
 	}
 }
-
+# 超空间通道
 country_event = {
 	id = wtmnb.5
 	is_triggered_only = yes
@@ -167,7 +168,7 @@ country_event = {
 	trigger = {
 		from = {
 			species = {
-				has_trait = trait_wtmnb_toy
+				has_trait = trait_wtmnb_stigmata
 			}
 			OR = {
 				gender = female
@@ -177,8 +178,8 @@ country_event = {
 	}
 	immediate = {
 		from = {
-			add_ruler_trait = leader_trait_wtmnb_toy
-			add_trait = leader_trait_wtmnb_toy
+			add_ruler_trait = leader_trait_wtmnb_stigmata
+			add_trait = leader_trait_wtmnb_stigmata
 		}
 	}
 }
@@ -191,25 +192,25 @@ country_event = {
 	trigger = {
 		any_owned_leader = {
 			leader_age >= 15
-			has_trait = leader_trait_wtmnb_toy
+			has_trait = leader_trait_wtmnb_stigmata
 		}
 	}
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				has_trait = leader_trait_wtmnb_toy
+				has_trait = leader_trait_wtmnb_stigmata
 			}
 			set_age = 12
 		}
 		every_pool_leader = {
 			limit = {
-				has_trait = leader_trait_wtmnb_toy
+				has_trait = leader_trait_wtmnb_stigmata
 			}
 			set_age = 12
 		}
 	}
 }
-
+# 好感
 country_event = {
 	id = wtmnb.8
 	hide_window = yes
@@ -223,319 +224,5 @@ country_event = {
 				}
 			}
 		}
-	}
-}
-
-planet_event = {
-	id = wtmnb.1000
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		from = {
-			save_event_target_as = wtmnb_planet_killer_ship
-		}
-		save_event_target_as = wtmnb_target
-		from.owner = {
-			country_event = {
-				id = wtmnb.1001
-			}
-		}
-	}
-}
-
-#巨像事件
-country_event = {
-	id = wtmnb.1001
-	is_triggered_only = yes
-	title = wtmnb.1001.name
-	desc = wtmnb.1001.desc
-	location = from
-	#取消
-	option = {
-		name = wtmnb.1001.a
-		custom_tooltip = wtmnb.1001.a.tip
-	}
-	#特质
-	option = {
-		trigger = {
-			from = {
-				is_capital = yes
-			}
-		}
-		name = wtmnb.1001.b
-		custom_tooltip = wtmnb.1001.b.tip
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				owner = {
-					modify_species = {
-						species = owner_species
-						add_trait = trait_wtmnb_toy
-						add_traits_at_start_of_list = yes
-						change_scoped_species = yes
-						effect = {
-							save_event_target_as = new_wtm_species
-							set_species_homeworld = event_target:wtmnb_target
-						}
-					}
-					change_species = event_target:new_wtm_species
-					set_built_species = event_target:new_wtm_species
-					every_owned_leader = {
-						limit = {
-							OR = {
-								gender = female
-								gender = indeterminable
-							}
-						}
-						add_ruler_trait = leader_trait_wtmnb_toy
-						add_trait = leader_trait_wtmnb_toy
-						#change_species = event_target:new_wtm_species
-					}
-					every_pool_leader = {
-						limit = {
-							OR = {
-								gender = female
-								gender = indeterminable
-							}
-						}
-						add_ruler_trait = leader_trait_wtmnb_toy
-						add_trait = leader_trait_wtmnb_toy
-						#change_species = event_target:new_wtm_species
-					}
-				}
-			}
-		}
-	}
-	#特质
-	option = {
-		trigger = {
-			from = {
-				is_colony = yes
-			}
-		}
-		name = wtmnb.1001.c
-		custom_tooltip = wtmnb.1001.c.tip
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				every_owned_species = {
-					limit = {
-						NAND = {
-							has_trait = trait_wtmnb_toy
-							ideal_planet_class = event_target:wtmnb_target
-						}
-					}
-					prev = {
-						modify_species = {
-							species = prev
-							add_trait = trait_wtmnb_toy
-							add_traits_at_start_of_list = yes
-							change_scoped_species = yes
-							ideal_planet_class = event_target:wtmnb_target
-							set_species_homeworld = event_target:wtmnb_target
-						}
-					}
-				}
-			}
-		}
-	}
-	option = {
-		trigger = {
-			from = {
-				is_colony = yes
-			}
-		}
-		name = wtmnb.1001.d
-		hidden_effect = {
-			country_event = {
-				id = wtmnb_species.1
-			}
-		}
-	}
-	option = {
-		trigger = {
-			from = {
-				is_colony = yes
-			}
-		}
-		name = wtmnb.1001.e
-		hidden_effect = {
-			country_event = {
-				id = wtmnb_species.100
-			}
-		}
-	}
-	#l星门
-	option = {
-		trigger = {
-			from.solar_system = {
-				any_system_megastructure = {
-					is_megastructure_type = lgate_base
-				}
-			}
-		}
-		name = wtmnb.1001.f
-		custom_tooltip = wtmnb.3.title
-		hidden_effect = {
-			country_event = {
-				id = wtmnb.3
-			}
-		}
-	}
-	#安乐天使
-	option = {
-		trigger = {
-			from = {
-				is_star = no
-				NOR = {
-					is_planet_class = pc_shielded
-					is_planet_class = pc_ringworld_shielded
-					is_planet_class = pc_habitat_shielded
-				}
-			}
-		}
-		name = wtmnb.1001.g
-		hidden_effect = {
-			from = {
-				planet_event = {
-					id = crisis.5015
-				}
-				planet_event = {
-					id = planet_destruction.200
-				}
-				planet_event = {
-					id = planet_destruction.600
-				}
-			}
-		}
-	}
-	#碎星
-	option = {
-		trigger = {
-			from = {
-				is_star = no
-				NOR = {
-					is_planet_class = pc_broken
-					is_planet_class = pc_shattered
-				}
-			}
-		}
-		name = wtmnb.1001.h
-		hidden_effect = {
-			from = {
-				planet_event = {
-					id = crisis.5015
-				}
-				planet_event = {
-					id = planet_destruction.100
-				}
-				planet_event = {
-					id = planet_destruction.110
-				}
-				planet_event = {
-					id = planet_destruction.600
-				}
-			}
-		}
-	}
-	#黑洞
-	option = {
-		trigger = {
-			from = {
-				is_star = yes
-				NOT = {
-					is_planet_class = pc_black_hole
-				}
-			}
-			event_target:wtmnb_planet_killer_ship = {
-				any_owned_ship = {
-					has_component = EDEN_STAR_AURA
-				}
-			}
-		}
-		name = wtmnb.1001.i
-		from.solar_system = {
-			# every_system_planet = {
-			# 	limit = {
-			# 		is_star = no
-			# 	}
-			# 	planet_event = {
-			# 		id = crisis.5015
-			# 	}
-			# }
-			eden_star_zeroth = yes
-		}
-	}
-	#外交窗口
-	option = {
-		name = wtmnb.1001.j
-		trigger = {
-			from = {
-				exists = owner
-				owner = {
-					NOT = {
-						is_same_empire = root
-					}
-				}
-			}
-		}
-		country_event = {
-			id = wtmnb_diplomacy.1
-		}
-	}
-	#殖民
-	option = {
-		name = wtmnb.1001.k
-		trigger = {
-			from = {
-				NOT = {
-					exists = owner
-				}
-				is_colonizable = yes
-			}
-		}
-		from = {
-			create_colony = {
-				owner = prev
-				species = prev
-			}
-		}
-	}
-	#创造植被
-	option = {
-		trigger = {
-			from = {
-				is_star = no
-				NOR = {
-					is_planet_class = pc_habitat
-					is_planet_class = pc_habitat_shielded
-					is_a_habitable_planet_megastructure = yes
-					is_ringworld = yes
-					is_colonizable = yes
-					is_colony = yes
-					planet_size < 6
-				}
-			}
-			event_target:wtmnb_planet_killer_ship = {
-				any_owned_ship = {
-					has_component = EDEN_STAR_AURA
-					has_component = WTMNB_6TH_KEY
-					has_component = WTMNB_4TH_KEY
-				}
-			}
-		}
-		name = wtmnb.1001.l
-		from = {
-			random_list = {
-				10 = {
-					change_pc = pc_gaia
-				}
-				50 = {
-					change_pc = pc_continental
-				}
-				50 = {
-					change_pc = pc_savannah
-				}
-			}
-		}
-		custom_tooltip = "wtmnb.1001.l.desc"
 	}
 }

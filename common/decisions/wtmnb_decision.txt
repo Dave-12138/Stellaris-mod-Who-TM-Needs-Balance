@@ -79,7 +79,7 @@ decision_wtmnb_molten = {
 		is_star = no
 		any_fleet_in_orbit = {
 			any_owned_ship = {
-				has_component = WTMNB_DESTRUCTOR
+				has_component = WTMNB_7TH_KEY
 			}
 		}
 	}
@@ -165,7 +165,7 @@ decision_wtmnb_break_border = {
 		is_star = yes
 		any_fleet_in_orbit = {
 			any_owned_ship = {
-				has_component = EDEN_STAR_AURA
+				has_component = WTMNB_9TH_KEY
 			}
 		}
 	}
@@ -218,7 +218,7 @@ decision_wtmnb_11th_shield = {
 		solar_system = {
 			any_ship_in_system = {
 				has_component = WTMNB_11TH_KEY
-				has_component = EDEN_STAR_AURA
+				has_component = WTMNB_9TH_KEY
 			}
 			NOT = {
 				any_system_planet = {
@@ -261,7 +261,7 @@ decision_wtmnb_11th_shield_off = {
 		solar_system = {
 			any_ship_in_system = {
 				has_component = WTMNB_11TH_KEY
-				has_component = EDEN_STAR_AURA
+				has_component = WTMNB_9TH_KEY
 			}
 			any_system_planet = {
 				has_modifier = wtmnb_star_11th_modifier
@@ -301,7 +301,7 @@ decision_wtmnb_prometheus = {
 		any_fleet_in_orbit = {
 			any_owned_ship = {
 				has_component = WTMNB_4TH_KEY
-				has_component = EDEN_STAR_AURA
+				has_component = WTMNB_9TH_KEY
 			}
 		}
 		NOT = {

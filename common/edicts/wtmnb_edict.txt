@@ -1,3 +1,4 @@
+# 初始化
 wtmnb_edict = {
 	length = 1
 	icon = GFX_nullobject
@@ -26,24 +27,6 @@ wtmnb_edict = {
 		add_resource = {
 			alloys = 10000
 		}
-		# if = {
-		# 	limit = {
-		# 		has_global_flag = giga_has_host
-		# 	}
-		# 	give_technology = {
-		# 		tech = giga_tech_planetary_computer
-		# 		message = no
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		has_global_flag = has_wsg_mod
-		# 	}
-		# 	give_technology = {
-		# 		tech = giga_tech_planetary_computer
-		# 		message = no
-		# 	}
-		# }
 		hidden_effect = {
 			set_global_flag = wtmnb_edict_checked
 			set_country_flag = wtmnb_order
@@ -116,28 +99,6 @@ wtmnb_edict_3 = {
 	}
 }
 
-wtmnb_edict_4 = {
-	icon = GFX_nullobject
-	length = -1
-	resources = {
-		category = edicts
-		cost = {
-			influence = 0
-		}
-	}
-	modifier = {
-		custom_tooltip = "now_you_can_unbuilt_some_mega"
-	}
-	prerequisites = {
-		"tech_starbase_1"
-	}
-	potential = {
-		is_ai = no
-	}
-	allow = {
-		is_ai = no
-	}
-}
 
 wtmnb_edict_5 = {
 	icon = GFX_nullobject
