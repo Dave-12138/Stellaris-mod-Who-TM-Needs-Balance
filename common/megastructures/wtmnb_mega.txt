@@ -1,4 +1,4 @@
-dyson_wtmnb = {
+wtmnb_dyson = {
 	entity = "star_shield_alt_ambient_wtmnb_effect_entity"
 	construction_entity = "star_shield_alt_ambient_wtmnb_effect_entity"
 	portrait = GFX_megastructure_dyson_sphere_background
@@ -54,7 +54,7 @@ dyson_wtmnb = {
 			from = {
 				NOT = {
 					any_owned_megastructure = {
-						is_megastructure_type = dyson_wtmnb
+						is_megastructure_type = wtmnb_dyson
 					}
 				}
 			}
@@ -99,7 +99,7 @@ dyson_wtmnb = {
 	on_build_complete = {
 		from = {
 			set_country_flag = has_built_or_repaired_megastructure
-			set_country_flag = dyson_wtmnb_built
+			set_country_flag = wtmnb_dyson_built
 		}
 		fromfrom.planet = {
 			if = {
@@ -191,59 +191,6 @@ wtmnb_love_mark = {
 	}
 }
 
-unbox_dyson_wtmnb = {
-	entity = ""
-	portrait = GFX_nullobject
-	build_time = 1
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = -200
-		}
-	}
-	potential = {
-		owner = {
-			has_edict = wtmnb_edict_4
-		}
-	}
-	on_build_complete = {
-		from = {
-			remove_country_flag = dyson_wtmnb_built
-		}
-		remove_megastructure = fromfrom
-	}
-	upgrade_from = {
-		dyson_wtmnb
-	}
-}
-
-unbox_lmark_wtmnb = {
-	entity = ""
-	portrait = GFX_nullobject
-	build_time = 1
-	resources = {
-		category = megastructures
-		cost = {
-			energy = 100
-		}
-	}
-	potential = {
-		owner = {
-			has_edict = wtmnb_edict_4
-		}
-	}
-	on_build_complete = {
-		remove_megastructure = fromfrom
-		owner = {
-			country_event = {
-				id = wtmnb.8
-			}
-		}
-	}
-	upgrade_from = {
-		wtmnb_love_mark
-	}
-}
 
 wtmnb_foundry = {
 	entity = "matter_decompressor_stage_3_entity"
@@ -336,32 +283,6 @@ wtmnb_foundry = {
 	}
 }
 
-unbox_foundry_wtmnb = {
-	entity = ""
-	portrait = GFX_nullobject
-	build_time = 1
-	resources = {
-		category = megastructures
-		cost = {
-			energy = 100
-		}
-	}
-	potential = {
-		owner = {
-			has_edict = wtmnb_edict_4
-		}
-	}
-	on_build_complete = {
-		fromfrom.planet = {
-			remove_planet_flag = wtmnb_foundry_built
-		}
-		remove_megastructure = fromfrom
-	}
-	upgrade_from = {
-		wtmnb_foundry
-	}
-}
-
 wtmnb_portal = {
 	entity = "gateway_entity"
 	construction_entity = "construction_platform_entity"
@@ -439,29 +360,3 @@ wtmnb_portal = {
 	}
 }
 
-unbox_mega_shipyard = {
-	entity = ""
-	portrait = GFX_nullobject
-	build_time = 1
-	resources = {
-		category = megastructures
-		cost = {
-			energy = 100
-		}
-	}
-	potential = {
-		owner = {
-			has_edict = wtmnb_edict_4
-		}
-	}
-	on_build_complete = {
-		owner = {
-			remove_country_flag = built_mega_shipyard_site
-		}
-		remove_star_flag = mega_shipyard_built
-		remove_megastructure = fromfrom
-	}
-	upgrade_from = {
-		mega_shipyard_3
-	}
-}

@@ -1,0 +1,109 @@
+wtmnb_fortress = {
+	max_speed = 30
+	acceleration = 0.5
+	rotation_speed = 0.1
+	collision_radius = 7
+	graphical_culture = yes
+	max_hitpoints = 1000000
+	entity = "starbase_citadel_entity"
+	formation_priority = @juggernaut_formation_priority
+	modifier = {
+		ship_shield_add = 1000000
+		ship_armor_add = 1000000
+		ship_hull_regen_add_perc = 20
+		ship_armor_regen_add_perc = 20
+		ship_shield_regen_add_perc = 20
+		ship_piracy_suppression_add = 300
+		starbase_shipyard_capacity_add = 512
+		starbase_shipyard_build_cost_mult = -2
+		starbase_shipyard_build_speed_mult = 10000
+		starbase_upgrade_speed_mult = 10000
+		ship_tracking_add = 200
+		ship_evasion_add = 1000
+	}
+	base_buildtime = 0
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @titan_upkeep_energy
+			alloys = @titan_upkeep_alloys
+		}
+	}
+	combat_size_multiplier = 16
+	size_multiplier = 64
+	fleet_slot_size = 64
+	section_slots = {
+		"core" = {
+			locator = "part1"
+		}
+	}
+
+	potential_construction = {
+		exists = owner
+		owner = {
+			has_country_flag = wtmnb_order
+		}
+		OR = {
+			is_scope_type = starbase
+			is_scope_type = megastructure
+		}
+	}
+
+	possible_construction = {
+		AND = {
+			exists = owner
+			owner = {
+				has_country_flag = wtmnb_order
+			}
+			OR = {
+				is_scope_type = starbase
+				is_scope_type = megastructure
+			}
+		}
+	}
+
+	num_target_locators = 40
+	can_have_federation_design = no
+	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes 
+	can_disable = no
+	icon_frame = 6
+	icon = ship_size_military_64
+	ship_class_icon_frame = 26	#35
+
+	default_behavior = carrier
+
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	class = shipclass_starbase
+	construction_type = starbase_shipyard
+
+
+	required_component_set = "WTMNB_GRAND_KEY" #1 虚空万藏
+	required_component_set = "WTMNB_GRAND_KEY" #2 千界一乘
+	# required_component_set = "ftl_components" 
+	required_component_set = "WTMNB_GRAND_KEY" #4 
+	required_component_set = "WTMNB_GRAND_KEY" #5 万物休眠
+	required_component_set = "WTMNB_GRAND_KEY" #6 黑渊白花
+	required_component_set = "WTMNB_GRAND_KEY" #7 天火圣裁
+	required_component_set = "WTMNB_GRAND_KEY" #8 羽渡尘
+	required_component_set = "WTMNB_GRAND_KEY" #9 星海谐律
+	required_component_set = "WTMNB_GRAND_KEY" #11 犹大的誓约
+	
+	orbit_modifier = {
+		ship_orbit_upkeep_mult = -1
+	}
+	ship_modifier = {
+		ship_starting_experience_add = 1000
+	}
+	combat_disengage_chance = 1
+	possible_starbase = {
+		has_starbase_size >= starbase_outpost
+	}
+	
+	ai_ship_data = {
+		min = 1
+		max = 1
+	}
+}

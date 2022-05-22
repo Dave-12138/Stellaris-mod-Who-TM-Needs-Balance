@@ -16,17 +16,17 @@ ship_section_template = {
 	}
 	component_slot = {
 		name = "TITANIC_01"
-		template = "invisible_titanic_fixed"
+		template = "wtmnb_titanic_turret"
 		locatorname = "medium_gun_02"
 	}
 	component_slot = {
 		name = "TITANIC_02"
-		template = "invisible_titanic_fixed"
+		template = "wtmnb_titanic_turret"
 		locatorname = "medium_gun_03"
 	}
 	component_slot = {
 		name = "TITANIC_03"
-		template = "invisible_titanic_fixed"
+		template = "wtmnb_titanic_turret"
 		locatorname = "medium_gun_07"
 	}
 	component_slot = {
