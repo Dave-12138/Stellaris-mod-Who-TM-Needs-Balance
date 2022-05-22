@@ -131,18 +131,29 @@ district_meeting_room = {
 			exists = owner
 			OR = {
 				has_designation = col_bureau
+				has_designation = col_habitat_bureau
 				AND = {
 					owner = {
 						is_hive_empire = yes
 					}
-					has_designation = col_hive
+					OR = {
+						has_designation = col_hive
+						has_designation = col_bureau_hive
+						has_designation = col_habitat_bureau_hive
+					}
 				}
 				AND = {
 					owner = {
 						is_machine_empire = yes
 					}
-					has_designation = col_nexus
+					OR = {
+						has_designation = col_nexus
+						has_designation = col_bureau_machine
+						has_designation = col_habitat_bureau_machine
+					}
 				}
+				has_designation = col_bureau_spiritualist
+				has_designation = col_habitat_bureau_spiritualist
 			}
 		}
 	}
@@ -190,14 +201,12 @@ district_meeting_room = {
 						has_designation = col_bureau_machine
 					}
 				}
-				
 				AND = {
 					owner = {
 						is_gestalt = yes
 					}
 					has_designation = col_bureau
 				}
-				
 			}
 		}
 		modifier = {
