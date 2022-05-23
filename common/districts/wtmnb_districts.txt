@@ -2,12 +2,10 @@ district_matrix_office = {
 	base_buildtime = 4
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		exists = from
-		uses_district_set = prometheus_world
+		has_deposit = deposit_wtmnb_city
 	}
 	potential = {
-		exists = owner
-		uses_district_set = prometheus_world
+		has_deposit = deposit_wtmnb_city
 	}
 	allow = {
 	}
@@ -119,12 +117,10 @@ district_meeting_room = {
 	base_buildtime = 4
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		exists = from
-		uses_district_set = prometheus_world
+		has_deposit = deposit_wtmnb_city
 	}
 	potential = {
-		exists = owner
-		uses_district_set = prometheus_world
+		has_deposit = deposit_wtmnb_city
 	}
 	allow = {
 		AND = {
@@ -188,8 +184,9 @@ district_meeting_room = {
 						is_hive_empire = yes
 					}
 					OR = {
-						has_designation = col_bureau_hive
 						has_designation = col_hive
+						has_designation = col_bureau_hive
+						has_designation = col_habitat_bureau_hive
 					}
 				}
 				AND = {
@@ -199,6 +196,7 @@ district_meeting_room = {
 					OR = {
 						has_designation = col_nexus
 						has_designation = col_bureau_machine
+						has_designation = col_habitat_bureau_machine
 					}
 				}
 				AND = {

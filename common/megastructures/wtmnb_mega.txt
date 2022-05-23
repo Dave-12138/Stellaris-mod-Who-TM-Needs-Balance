@@ -12,10 +12,7 @@ wtmnb_dyson = {
 		country_resource_max_add = 3000000
 		country_admin_cap_add = 100
 	}
-	station_modifier = {
-		starbase_trade_collection_range_add = 1000
-		starbase_trade_protection_range_add = 1000
-	}
+	
 	resources = {
 		category = megastructures
 		cost = {
@@ -24,7 +21,6 @@ wtmnb_dyson = {
 		}
 		produces = {
 			energy = 1000000
-			minerals = 1000000
 			influence = 20
 		}
 	}

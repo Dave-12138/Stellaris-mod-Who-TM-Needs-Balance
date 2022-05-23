@@ -344,4 +344,46 @@ country_event = {
 		}
 		custom_tooltip = "wtmnb_colossus.1001.w.desc"
 	}
+	#建造环世界
+	option = {
+		name = wtmnb_colossus.1001.x
+		trigger = {
+			from = {
+				is_star = yes
+				solar_system = {
+					exists = starbase
+				}
+				is_inside_border = prev
+			}
+			event_target:wtmnb_planet_killer_ship = {
+				any_owned_ship = {
+					has_component = WTMNB_1ST_KEY
+					has_component = WTMNB_4TH_KEY
+					has_component = WTMNB_6TH_KEY
+					has_component = WTMNB_9TH_KEY
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_technology = tech_ring_world
+				}
+			}
+			give_technology = {
+				tech = tech_ring_world
+				message = no
+			}
+		}
+		from = {
+			solar_system = {
+				spawn_megastructure = {
+					type = "ring_world_2_intermediate"
+					planet = prev.star
+					owner = prevprev
+				}
+			}
+		}
+		custom_tooltip = "wtmnb_colossus.1001.x.desc"
+	}
 }

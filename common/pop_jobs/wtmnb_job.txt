@@ -81,7 +81,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_fuka
@@ -93,7 +93,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_lingli
@@ -105,7 +105,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_living_metal
@@ -117,7 +117,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = nanites
@@ -129,7 +129,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_dark_matter
@@ -141,7 +141,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_pantsu
@@ -153,7 +153,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_neo
@@ -165,7 +165,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_alpha
@@ -177,7 +177,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_se
@@ -189,7 +189,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = azur_shippartbox
@@ -201,7 +201,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_solar_energy
@@ -213,7 +213,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = mind_club
@@ -225,7 +225,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = azur_red_diamond
@@ -237,7 +237,7 @@ ai_wtmnb_master = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 			}
 			unity = 8
 		}
@@ -300,7 +300,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_fuka
@@ -312,7 +312,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_lingli
@@ -324,7 +324,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_living_metal
@@ -336,7 +336,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = nanites
@@ -348,7 +348,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_dark_matter
@@ -360,7 +360,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_pantsu
@@ -372,7 +372,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_neo
@@ -384,7 +384,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_alpha
@@ -396,7 +396,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_se
@@ -408,7 +408,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = azur_shippartbox
@@ -420,7 +420,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = sr_solar_energy
@@ -432,7 +432,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = mind_club
@@ -444,7 +444,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 				owner = {
 					has_resource = {
 						type = azur_red_diamond
@@ -456,7 +456,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			trigger = {
-				has_trait = trait_pc_wtmnb_prometheus_preference
+				has_trait = trait_pc_wtmnb_city_preference
 			}
 			unity = 8
 		}

@@ -1,92 +1,7 @@
-
-terraform_link = {
-	from = pc_wtmnb_city
-	to = pc_city
-	resources = {
-		category = terraforming
-		cost = {
-			energy = 10000
-		}
-	}
-	duration = 30
-	condition = {
-		custom_tooltip = {
-			fail_text = terraform_needs_4th_key
-			from = {
-				solar_system = {
-					any_ship_in_system = {
-						has_component = WTMNB_4TH_KEY
-					}
-				}
-			}
-		}
-	}
-	effect = {
-		FROM = {
-			clear_deposits = yes
-		}
-	}
-	potential = {
-		OR = {
-			has_technology = tech_wtmnb_fortress
-			from = {
-				any_fleet_in_orbit = {
-					any_owned_ship = {
-						has_component = WTMNB_4TH_KEY
-					}
-				}
-			}
-		}
-	}
-}
-
-terraform_link = {
-	from = pc_wtmnb_city
-	to = pc_gaia
-	resources = {
-		category = terraforming
-		cost = {
-			energy = 10000
-		}
-	}
-	duration = 30
-	condition = {
-		custom_tooltip = {
-			fail_text = terraform_needs_4th_key
-			from = {
-				solar_system = {
-					any_ship_in_system = {
-						has_component = WTMNB_4TH_KEY
-					}
-				}
-			}
-		}
-	}
-	effect = {
-		FROM = {
-			reroll_deposits = yes
-		}
-	}
-	potential = {
-		OR = {
-			has_technology = tech_wtmnb_fortress
-			from = {
-				any_fleet_in_orbit = {
-					any_owned_ship = {
-						has_component = WTMNB_4TH_KEY
-					}
-				}
-			}
-		}
-	}
-}
-
-
 # 环
-
 terraform_link = {
-	from = pc_ringworld_seam
-	to = pc_ringworld_habitable
+	from = pc_ringworld_habitable
+	to = pc_ringworld_habitable_sh
 	resources = {
 		category = terraforming
 		cost = {
@@ -117,12 +32,13 @@ terraform_link = {
 				}
 			}
 		}
+		has_authority = auth_shenhai
 	}
 }
 
 terraform_link = {
-	from = pc_ringworld_seam_damaged
-	to = pc_ringworld_habitable
+	from = pc_ringworld_habitable
+	to = pc_ringworld_habitable_wsg
 	resources = {
 		category = terraforming
 		cost = {
@@ -153,12 +69,90 @@ terraform_link = {
 				}
 			}
 		}
+		has_authority = auth_warshipgirls
+	}
+}
+# 球
+
+terraform_link = {
+	from = pc_wtmnb_city
+	to = pc_wsg_port
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+		has_authority = auth_warshipgirls
+	}
+}
+
+
+
+terraform_link = {
+	from = pc_wtmnb_city
+	to = pc_shenhai
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+		has_authority = auth_shenhai
 	}
 }
 
 terraform_link = {
-	from = pc_ringworld_tech
-	to = pc_ringworld_habitable
+	from = pc_shenhai
+	to = pc_swim
 	resources = {
 		category = terraforming
 		cost = {
@@ -189,12 +183,13 @@ terraform_link = {
 				}
 			}
 		}
+		has_authority = auth_shenhai
 	}
 }
 
 terraform_link = {
-	from = pc_ringworld_tech_damaged
-	to = pc_ringworld_habitable
+	from = pc_wsg_port
+	to = pc_swim
 	resources = {
 		category = terraforming
 		cost = {
@@ -225,5 +220,6 @@ terraform_link = {
 				}
 			}
 		}
+		has_authority = auth_warshipgirls
 	}
 }

@@ -1,0 +1,44 @@
+
+terraform_link = {
+	from = pc_wtmnb_city
+	to = pc_prostitution_city
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+					}
+				}
+			}
+		}
+		any_owned_pop = {
+			OR = {
+				has_trait = trait_DC_ethic_carnalism
+				has_trait = trait_DC_ethic_asceticism
+				has_trait = trait_DC_ethic_parasite_mind
+				has_trait = trait_DC_ethic_lust_skynet
+			}
+		}
+	}
+}

@@ -90,6 +90,6 @@
  leader_trait_ruler_wtmnb_dc_r3_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r3$§!特质"
 #########
  
- pc_wtmnb_prometheus_sex:0 "这颗$pc_wtmnb_prometheus$星球正在举行性爱派对"
- pc_wtmnb_prometheus_sage:0 "这颗$pc_wtmnb_prometheus$星球是圣域"
- pc_wtmnb_prometheus_pantsu2:0 "这颗$pc_wtmnb_prometheus$星球上的居民几乎全员真空甚至全裸，却都在头上套了从别人屁股上扒下来的胖次"
+ pc_wtmnb_city_sex:0 "这颗$pc_wtmnb_city$星球正在举行性爱派对"
+ pc_wtmnb_city_sage:0 "这颗$pc_wtmnb_city$星球是圣域"
+ pc_wtmnb_city_pantsu2:0 "这颗$pc_wtmnb_city$星球上的居民几乎全员真空甚至全裸，却都在头上套了从别人屁股上扒下来的胖次"

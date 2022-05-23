@@ -1,4 +1,4 @@
-trait_pc_wtmnb_prometheus_preference = {
+trait_pc_wtmnb_city_preference = {
 	randomized = no
 	sorting_priority = 30
 	opposites = {
@@ -6,7 +6,7 @@ trait_pc_wtmnb_prometheus_preference = {
 	}
 	leader_age_max = 15
 	leader_age_min = 10
-	ideal_planet_class = pc_wtmnb_prometheus
+	ideal_planet_class = pc_wtmnb_city
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -24,18 +24,19 @@ trait_pc_wtmnb_prometheus_preference = {
 		WARSHIPGIRL
 		SHENHAI
 		TOUHOUGIRLS
+		UNITED_FLEET
 		OTHER
 	}
-	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_prometheus_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"
 	modifier = {
-		pc_wtmnb_prometheus_habitability = 3
+		pc_wtmnb_city_habitability = 3
 		pop_housing_usage_mult = -10
 	}
 	triggered_pop_modifier = {
 		potential = {
 			exists = planet
 			planet={
-				is_planet_class = pc_wtmnb_prometheus
+				is_planet_class = pc_wtmnb_city
 			}
 		}
 		planet_pops_upkeep_mult = -150

@@ -9,7 +9,7 @@ decision_wtmnb_dc_create_pop = {
 		}
 	}
 	potential = {
-		is_planet_class = pc_wtmnb_prometheus
+		is_planet_class = pc_wtmnb_city
 		owner = {
 			is_dc_lust_empire = yes
 		}

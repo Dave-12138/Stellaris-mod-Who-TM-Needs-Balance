@@ -53,6 +53,7 @@ planet_event = {
 		remove_modifier = "dangerous_wildlife"
 	}
 }
+
 # 轨道轰炸 提示（轰炸方）
 country_event = {
 	id = wtmnb.1
@@ -67,7 +68,8 @@ country_event = {
 		custom_tooltip = wtmnb.1.a
 	}
 }
-# 
+
+# 维持联邦
 country_event = {
 	id = wtmnb.2
 	is_triggered_only = yes
@@ -90,6 +92,7 @@ country_event = {
 		}
 	}
 }
+
 # l星门
 country_event = {
 	is_triggered_only = yes
@@ -146,6 +149,7 @@ country_event = {
 		}
 	}
 }
+
 # 超空间通道
 country_event = {
 	id = wtmnb.5
@@ -210,6 +214,7 @@ country_event = {
 		}
 	}
 }
+
 # 好感
 country_event = {
 	id = wtmnb.8
@@ -223,6 +228,44 @@ country_event = {
 					modifier = opinion_wtmnb_1
 				}
 			}
+		}
+	}
+}
+
+# 轨道轰炸
+planet_event = {
+	id = wtmnb.1000
+	pre_triggers = {
+		has_owner = yes
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_orbital_bombardment_stance = wtmnb_invasion
+			has_orbital_bombardment_stance = wtmnb_invasion
+		}
+		FROM = {
+			OR = {
+				has_technology = tech_wtmnb_fortress
+			}
+		}
+	}
+	immediate = {
+		
+		owner = {
+			save_event_target_as = doomed_planet_owner
+		}
+		every_planet_army = {
+			limit = {
+				is_owned_by = prev.owner
+			}
+			remove_army = yes
+		}
+		create_army = {
+			owner = from
+			species = from
+			type = "robotic_army"
 		}
 	}
 }

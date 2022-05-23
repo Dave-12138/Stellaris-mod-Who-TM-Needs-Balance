@@ -2,4 +2,4 @@
  job_ai_azur_assistant:0 "Port Management Assistant"
  job_ai_azur_assistant_plural:0 "$job_ai_azur_assistant$s"
  job_ai_azur_assistant_desc:0 "$job_ai_azur_assistant$s are playing very important roles on this planet. They are busy in tasting tea, chatting with each other or tasting dessert every day."
- pc_wtmnb_prometheus_azur:0 "This $pc_wtmnb_prometheus$ planet is used as a port for relaxing."
+ pc_wtmnb_city_azur:0 "This $pc_wtmnb_city$ planet is used as a port for relaxing."

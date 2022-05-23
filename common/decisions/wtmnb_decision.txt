@@ -8,8 +8,8 @@ decision_wtmnb_create_pop = {
 		}
 	}
 	potential = {
-		any_fleet_in_orbit = {
-			any_owned_ship = {
+		solar_system = {
+			any_ship_in_system = {
 				has_component = WTMNB_6TH_KEY
 			}
 		}
@@ -59,12 +59,12 @@ decision_wtmnb_reroll = {
 		reroll_deposits = yes
 		if = {
 			limit = {
-				is_planet_class = pc_wtmnb_prometheus
+				is_planet_class = pc_wtmnb_city
 				NOT = {
-					has_deposit = deposit_wtmnb_prometheus
+					has_deposit = deposit_wtmnb_city
 				}
 			}
-			add_deposit = deposit_wtmnb_prometheus
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -163,8 +163,8 @@ decision_wtmnb_break_border = {
 	}
 	potential = {
 		is_star = yes
-		any_fleet_in_orbit = {
-			any_owned_ship = {
+		solar_system = {
+			any_ship_in_system = {
 				has_component = WTMNB_9TH_KEY
 			}
 		}
@@ -248,7 +248,6 @@ decision_wtmnb_11th_shield_off = {
 	resources = {
 		category = decisions
 		cost = {
-			
 		}
 	}
 	potential = {
@@ -285,7 +284,45 @@ decision_wtmnb_11th_shield_off = {
 	}
 }
 
-decision_wtmnb_prometheus = {
+decision_wtmnb_ring_city = {
+	enactment_time = 1
+	icon = wtmnb_4th_key
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 8000
+			energy = 8000
+		}
+	}
+	potential = {
+		is_star = no
+		is_ringworld = yes
+		solar_system = {
+			any_ship_in_system = {
+				has_component = WTMNB_4TH_KEY
+				has_component = WTMNB_9TH_KEY
+			}
+		}
+		NOT = {
+			has_deposit = deposit_wtmnb_city
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_deposit = deposit_wtmnb_city
+				}
+			}
+			add_deposit = deposit_wtmnb_city
+		}
+	}
+	ai_weight = {
+		weight = 5000
+	}
+}
+
+decision_wtmnb_city = {
 	enactment_time = 1
 	icon = wtmnb_4th_key
 	resources = {
@@ -298,26 +335,26 @@ decision_wtmnb_prometheus = {
 	potential = {
 		is_star = no
 		is_ringworld = no
-		any_fleet_in_orbit = {
-			any_owned_ship = {
+		solar_system = {
+			any_ship_in_system = {
 				has_component = WTMNB_4TH_KEY
 				has_component = WTMNB_9TH_KEY
 			}
 		}
 		NOT = {
-			is_planet_class = pc_wtmnb_prometheus
+			is_planet_class = pc_wtmnb_city
 		}
 	}
 	effect = {
-		change_pc = pc_wtmnb_prometheus
+		change_pc = pc_wtmnb_city
 		reroll_deposits = yes
 		if = {
 			limit = {
 				NOT = {
-					has_deposit = deposit_wtmnb_prometheus
+					has_deposit = deposit_wtmnb_city
 				}
 			}
-			add_deposit = deposit_wtmnb_prometheus
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -330,9 +367,22 @@ decision_wtmnb_planet_extend = {
 	icon = planet_4th_modifier
 	owned_planets_only = yes
 	potential = {
-		any_fleet_in_orbit = {
-			any_owned_ship = {
-				has_component = WTMNB_4TH_KEY
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			any_fleet_in_orbit = {
+				any_owned_ship = {
+					has_component = WTMNB_4TH_KEY
+				}
+			}
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			solar_system = {
+				any_ship_in_system = {
+					has_component = WTMNB_4TH_KEY
+				}
 			}
 		}
 	}

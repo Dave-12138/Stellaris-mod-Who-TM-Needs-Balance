@@ -1,0 +1,764 @@
+terraform_link = {
+	from = pc_molten
+	to = pc_wtmnb_city
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+terraform_link = {
+	from = pc_nuked
+	to = pc_wtmnb_city
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_city
+	to = pc_wtmnb_city
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_desert"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_wtmnb_city"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_savannah"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_arctic"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_tundra"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_alpine"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_continental"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_tropical"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = "pc_wtmnb_city"
+	from = "pc_ocean"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			#Ocean Worlds are Aquatic species' paradises
+			factor = 0
+			from = {
+				is_colony = yes
+				pop_percentage = {
+					percentage >= 0.5
+					limit = {
+						has_trait = trait_aquatic
+					}
+				}
+			}
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_wtmnb_city"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+			remove_modifier = terraforming_candidate
+		}
+	}
+	ai_weight = {
+		weight = 10
+	}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_wtmnb_city"
+	resources = {
+		category = terraforming
+		cost = {
+			energy = 10000
+		}
+	}
+	duration = 30
+	condition = {
+		custom_tooltip = {
+			fail_text = terraform_needs_4th_key_and_eden_star
+			from = {
+				solar_system = {
+					any_ship_in_system = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	potential = {
+		OR = {
+			has_technology = tech_wtmnb_fortress
+			from = {
+				any_fleet_in_orbit = {
+					any_owned_ship = {
+						has_component = WTMNB_4TH_KEY
+						has_component = WTMNB_9TH_KEY
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		from = {
+			reroll_deposits = yes
+			if = {
+				limit = {
+					NOT = {
+						has_deposit = deposit_wtmnb_city
+					}
+				}
+				add_deposit = deposit_wtmnb_city
+			}
+			remove_modifier = terraforming_candidate
+		}
+	}
+	ai_weight = {
+		weight = 10
+	}
+}

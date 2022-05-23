@@ -2,7 +2,7 @@ trait_fanatic_seminal_addiction = {
 	icon = "gfx/interface/icons/traits/trait_addiction.dds"
 	modifier = {
 		pop_environment_tolerance = -200
-		pc_wtmnb_prometheus_habitability = 300
+		pc_wtmnb_city_habitability = 300
 		
 	}
 	initial = no

@@ -61,8 +61,8 @@
  leader_trait_wtmnb_stigmata:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_modifier:0 "Best Leader , who could be §Y$ruler$§!,§Y$general$§!,§Y$governor$§!,§Y$admiral$§!,§Y$scientist$§! in same time, in theory. "
  leader_trait_wtmnb_stigmata_desc:0 "This leader holds $leader_trait_wtmnb_stigmata$ on her body."
- trait_pc_wtmnb_prometheus_preference:0 "$pc_wtmnb_prometheus$ Preference"
- trait_pc_wtmnb_prometheus_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+ trait_pc_wtmnb_city_preference:0 "$pc_wtmnb_city$ Preference"
+ trait_pc_wtmnb_city_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 
 #####################
 
@@ -98,7 +98,6 @@
  edict_wtmnb_edict_3_desc:0 "信じてるよ!"
  edict_wtmnb_edict_5:0 "Resonate with $wtmnb_love_mark$"
  edict_wtmnb_edict_5_desc:0 "Significantly increased our rating of empires with emotional matrices within their borders"
- now_you_can_unbuilt_some_mega:0 "We could dismantle several kinds of megastructure."
  reset_gov_cooldown:0 "Cool government reform immediately"
 #######################
  wtmnb_planet_ex:0 "$WTMNB_4TH_KEY$"
@@ -107,10 +106,10 @@
  wtmnb_star_11th_modifier_desc:0 ""
  avoid_enter_by_jump:0 "Avoid others enter this system by jump driver"
 ###################
- deposit_wtmnb_prometheus:0 "$pc_wtmnb_prometheus$"
- deposit_wtmnb_prometheus_desc:0 "$pc_wtmnb_prometheus_desc_normal$"
- deposit_wtmnb_prometheus_rubbish:0 "Leftover bits of material"
- deposit_wtmnb_prometheus_rubbish_desc:0 "It seems to be like the scraps of planet building that should be able to recycle by throwing into the forge."
+ deposit_wtmnb_city:0 "$pc_wtmnb_city$"
+ deposit_wtmnb_city_desc:0 "$pc_wtmnb_city_desc_normal$"
+ deposit_wtmnb_city_rubbish:0 "Leftover bits of material"
+ deposit_wtmnb_city_rubbish_desc:0 "It seems to be like the scraps of planet building that should be able to recycle by throwing into the forge."
 ##################
 
  district_meeting_room:0 "Strategic Fooling Room"
@@ -154,6 +153,8 @@
  wtmnb_colossus.1001.v:0 "Occupation"
  wtmnb_colossus.1001.w:0 "Create ecology"
  wtmnb_colossus.1001.w.desc:0 "Since we have the power to easily shake the stars and reverse life and death, it is not impossible to rely on "filming" technology to turn a huge rock into a pretty colonizable planet within a few hours. "
+ wtmnb_colossus.1001.x:0 "Ring World"
+ wtmnb_colossus.1001.x.desc:0 "we dont need those planet any more"
 #########
  wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
  wtmnb_diplomacy.1.friendly.desc:0 "Is there anything we can do for you, our friend?"
@@ -257,8 +258,10 @@
  decision_wtmnb_molten_desc:0 "Made In Hell"
  decision_wtmnb_planet_extend:0 "Districts expansion"
  decision_wtmnb_planet_extend_desc:0 "max district count  + 30 "
- decision_wtmnb_prometheus:0 "Plan.$pc_wtmnb_prometheus$"
- decision_wtmnb_prometheus_desc:0 "Change planet class into §Y$pc_wtmnb_prometheus$§!"
+ decision_wtmnb_city:0 "Plan.$pc_wtmnb_city$"
+ decision_wtmnb_city_desc:0 "Change planet class into §Y$pc_wtmnb_city$§!"
+ decision_wtmnb_ring_city:0 "$decision_wtmnb_city$"
+ decision_wtmnb_ring_city_desc:0 ""
  decision_wtmnb_break_border:0 "Break the closing borders"
  decision_wtmnb_break_border_desc:0 "Trick them by using eden star."
  decision_wtmnb_11th_shield:0 "Elpsion Pedion"
@@ -267,25 +270,10 @@
  decision_wtmnb_11th_shield_off_desc:0 "Allow others to enter this system by jump driver"
 ##################
  
- pc_wtmnb_prometheus:0 "Prometheus"
- pc_wtmnb_prometheus_adj:0 "$pc_wtmnb_prometheus$"
- pc_wtmnb_prometheus_desc:0 "[Root.GetPrometheusDesc]\n--------------\n$pc_wtmnb_prometheus_desc_normal$"
- pc_wtmnb_prometheus_desc_normal:0 "Brilliant artificial intelligence surfaces an entire planet as a terminal that can change the Designation of a planet in just a few days\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
- pc_wtmnb_prometheus_desc_pre:0 "This $pc_wtmnb_prometheus$ planet holds tendency toward §Y"
- pc_wtmnb_prometheus_off:0 "This $pc_wtmnb_prometheus$ planet seems not working at all."
- pc_wtmnb_prometheus_research:0 "$pc_wtmnb_prometheus_desc_pre$£job_researcher£Research§!"
- pc_wtmnb_prometheus_alloy:0 "$pc_wtmnb_prometheus_desc_pre$£alloys£Forge§!"
- pc_wtmnb_prometheus_rare:0 "$pc_wtmnb_prometheus_desc_pre$£exotic_gases£Refinery§!"
- pc_wtmnb_prometheus_normal:0 "This $pc_wtmnb_prometheus$ planet is standing by."
- pc_wtmnb_prometheus_bureaucrat:0 "$pc_wtmnb_prometheus_desc_pre$£job_bureaucrat£$col_bureau$§!"
- pc_wtmnb_prometheus_goods:0 "$pc_wtmnb_prometheus_desc_pre$£consumer_goods£Industrial§!"
- pc_wtmnb_prometheus_energy:0 "$pc_wtmnb_prometheus_desc_pre$£energy£Generator§!"
- pc_wtmnb_prometheus_food:0 "$pc_wtmnb_prometheus_desc_pre$£food£Farming§!"
- pc_wtmnb_prometheus_mineral:0 "$pc_wtmnb_prometheus_desc_pre$£minerals£Mining§!"
- pc_wtmnb_prometheus_fortress:0 "$pc_wtmnb_prometheus_desc_pre$£job_soldier£Fortress§!"
- pc_wtmnb_prometheus_srse:0 "$pc_wtmnb_prometheus_desc_pre$£sh_senergy£$sh_senergy$§!"
- pc_wtmnb_prometheus_pantsu:0 "This $pc_wtmnb_prometheus$ planet holds so much pantsu"
- mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$ World Habitability"
+ pc_wtmnb_city:0 "Prometheus"
+ pc_wtmnb_city_adj:0 "$pc_wtmnb_city$"
+ pc_wtmnb_city_desc:0 "Brilliant artificial intelligence surfaces an entire planet as a terminal that can change the Designation of a planet in just a few days\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
+ mod_pc_wtmnb_city_habitability:0 "$pc_wtmnb_city$ World Habitability"
 ##
 
  job_ai_wtmnb_cleck:0 "Unworker"
@@ -318,3 +306,8 @@
  job_wtmnb_fooyouist_drone_plural:0 "$job_wtmnb_fooyouist_drone$"
  job_wtmnb_fooyouist_drone_desc:0 "$job_wtmnb_fooyouist_desc$"
  mod_job_wtmnb_fooyouist_drone_add:0 "$job_wtmnb_fooyouist_drone$"
+
+# 
+ col_ring_foundry:0 "$col_foundry$"
+ col_ring_foundry_desc:1 "$col_foundry_desc$"
+ col_ring_foundry_custom:1 "$col_foundry_custom$"

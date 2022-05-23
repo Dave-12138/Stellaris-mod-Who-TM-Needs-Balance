@@ -1,0 +1,165 @@
+#root = planet
+
+@small_planet_threshold = 18
+@free_districts_verylow_threshold = 3
+@free_districts_low_threshold = 5
+@free_districts_medium_threshold = 10
+@free_districts_high_threshold = 15
+@built_districts_low_threshold = 3
+@built_districts_medium_threshold = 4
+@built_districts_high_threshold = 8
+
+# Colony
+
+# Forge Planet
+col_ring_foundry = {
+	icon = GFX_colony_type_foundry
+
+	potential = {
+		uses_district_set = ring_world
+	}
+
+	custom_tooltip = col_foundry_custom
+	planet_modifier = {
+		planet_district_industrial_build_speed_mult = 0.25
+		planet_metallurgists_upkeep_mult = -0.20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_galactic_community_member = yes
+			}
+			OR = {
+				is_active_resolution = "resolution_industry_environmental_ordinance_waivers"
+				is_active_resolution = "resolution_industry_project_cornucopia"
+			}
+		}
+		modifier = {
+			planet_metallurgists_produces_mult = 0.05
+		}
+	}
+
+	weight_modifier = {
+		base = 1
+		modifier = {
+			add = 1
+			owner = {
+				OR = {
+					country_uses_consumer_goods = no
+					has_monthly_income = { resource = consumer_goods value >= 0 }
+				}
+			}
+			OR = {
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 10 }
+						years_passed <= 20
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 20 }
+						years_passed > 20
+						years_passed < 50
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 40 }
+						years_passed > 50
+						years_passed < 75
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 60 }
+						years_passed > 75
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 5
+			has_designation = col_foundry
+		}
+		modifier = {
+			add = 5
+			num_districts = { type = district_industrial value >= @built_districts_medium_threshold }
+		}
+		modifier = {
+			add = 5
+			num_districts = { type = district_rw_industrial value >= @built_districts_low_threshold }
+		}
+		modifier = {
+			add = 5
+			has_building = building_foundry_1
+		}
+		modifier = {
+			add = 10
+			has_building = building_foundry_2
+		}
+		modifier = {
+			add = 10
+			has_building = building_foundry_3
+		}
+		modifier = {
+			factor = 0
+			exists = sector
+			sector = {
+				has_any_sector_focus = yes
+				not = { has_sector_focus = "manufacturing" }
+				not = { has_sector_focus = "balanced" }
+			}
+		}
+	}
+}
+
+# Fortress Planet
+col_ring_fortress = {
+	icon = GFX_colony_type_fortress
+
+	potential = {
+		uses_district_set = ring_world
+	}
+
+	planet_modifier = {
+		planet_building_stronghold_build_speed_mult = 0.25
+		planet_orbital_bombardment_damage = -0.10
+		army_defense_damage_mult = 0.20
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 5
+			has_designation = col_fortress
+		}
+		modifier = {
+			add = 3
+			num_buildings = { type = building_stronghold value >= 2 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value >= 3 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_stronghold value >= 4 }
+		}
+		modifier = {
+			add = 3
+			num_buildings = { type = building_fortress value >= 1 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value >= 2 }
+		}
+		modifier = {
+			factor = 0
+			exists = sector
+			sector = {
+				has_any_sector_focus = yes
+			}
+		}
+	}
+}

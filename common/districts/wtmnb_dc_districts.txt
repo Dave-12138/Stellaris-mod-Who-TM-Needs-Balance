@@ -1,21 +1,20 @@
 district_seedbed = {
+	
 	base_buildtime = 4
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		always = no
-		uses_district_set = prometheus_world
-	}
-	potential = {
 		exists = owner
-		num_pops > 0
 		owner = {
 			is_dc_lust_empire = yes
 		}
-		NOR = {
-			has_designation = col_default_machine
-			has_designation = col_default
+		has_deposit = deposit_wtmnb_city
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_dc_lust_empire = yes
 		}
-		uses_district_set = prometheus_world
+		has_deposit = deposit_wtmnb_city
 	}
 	allow = {
 	}

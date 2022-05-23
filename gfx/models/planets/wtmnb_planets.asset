@@ -1,5 +1,5 @@
 entity = {
-	name = "wtmnb_prometheus_planet_01_entity"
+	name = "wtmnb_city_planet_01_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	#planet surface texture override	
 	meshsettings = {

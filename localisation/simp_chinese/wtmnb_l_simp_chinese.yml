@@ -75,8 +75,8 @@
  leader_trait_wtmnb_stigmata:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_modifier:0 "该领袖可以轻松胜任§Y$ruler$§!、§Y$general$§!、§Y$governor$§!、§Y$admiral$§!、§Y$scientist$§!"
  leader_trait_wtmnb_stigmata_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_stigmata$。"
- trait_pc_wtmnb_prometheus_preference:0 "$pc_wtmnb_prometheus$偏好"
- trait_pc_wtmnb_prometheus_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+ trait_pc_wtmnb_city_preference:0 "$pc_wtmnb_city$偏好"
+ trait_pc_wtmnb_city_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 
 #####################
 
@@ -89,15 +89,15 @@
  wtmnb_dyson:0 "以太锚点"
  wtmnb_dyson_DESC:0 "(图文无关)“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
  wtmnb_dyson_MEGASTRUCTURE_DETAILS:0 "“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
- wtmnb_love_mark:0 "情感矩阵"
- wtmnb_love_mark_DESC:0 "在与我们接触时会产生极大愉悦感——通过这种方式可以轻松抬高对方对我们的评价；基于同样的原理，对方帝国所在的联邦会被锁定为最高等级。\n\n其实我本来想直接叫心理定规的"
- wtmnb_love_mark_MEGASTRUCTURE_DETAILS:0 "遗憾的是不开边境就用不了了"
+ wtmnb_love_mark:0 "《舔狗的自我修养》"
+ wtmnb_love_mark_DESC:0 "其实我本来想直接叫心理定规的"
+ wtmnb_love_mark_MEGASTRUCTURE_DETAILS:0 "把这个放到对方国境内，对方就会成为舔狗\n\n遗憾的是不开边境就用不了了"
  wtmnb_portal:0 "超空间桥梁建设机组"
  wtmnb_portal_DESC:0 "当第二个机组建设完成时，超空间航路就会生成\n警告：我也不知道同时多个帝国试图用这玩意会发生什么"
  wtmnb_portal_MEGASTRUCTURE_DETAILS:0 "将两个$wtmnb_portal$分别建设在两个星系中，可以在两个星系之间生成超空间航道"
  wtmnb_foundry:0 "分子重排机"
  wtmnb_foundry_DESC:0 "对，这就是物质解压器的模型"
- wtmnb_foundry_MEGASTRUCTURE_DETAILS:0 ""
+ wtmnb_foundry_MEGASTRUCTURE_DETAILS:0 "对，这就是物质解压器的模型"
 
  not_for_yourself:0 "不能对自己用"
  target_must_exist:0 "必须在目标境内，即必须存在恒星基地或殖民地"
@@ -107,12 +107,15 @@
  edict_wtmnb_edict_desc:0 "部分科技解锁"
  edict_wtmnb_edict_2:0 "绯红之王"
  edict_wtmnb_edict_2_desc:0 "跳过等待政府改革cd的时间\n§L重置政府改革(调整国民理念、政体)CD§!"
+ reset_gov_cooldown:0 "立即冷却政府改革"
+
  edict_wtmnb_edict_3:0 "心急带路贼？"
  edict_wtmnb_edict_3_desc:0 "心急带路呦！"
- edict_wtmnb_edict_5:0 "与情感矩阵共鸣"
- edict_wtmnb_edict_5_desc:0 "大幅提高我们对境内有情感矩阵的帝国的评价"
- now_you_can_unbuilt_some_mega:0 "现在你可以将部分巨构拆解"
- reset_gov_cooldown:0 "立即冷却政府改革"
+
+ edict_wtmnb_edict_5:0 "给舔狗面子"
+ edict_wtmnb_edict_5_desc:0 "这算让他们舔到了吗"
+ edict_wtmnb_edict_6:0 "我不想努力了"
+ edict_wtmnb_edict_6_desc:0 "点科技累死了，我现在就要自动研究！"
 #######################
  wtmnb_planet_ex:0 "第四神之键"
  wtmnb_planet_ex_desc:0 "别问原理，别问"
@@ -120,23 +123,28 @@
  wtmnb_star_11th_modifier_desc:0 "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
  avoid_enter_by_jump:0 "阻止其他国家通过跃迁引擎进入本星系"
 ###################
- deposit_wtmnb_prometheus:0 "$pc_wtmnb_prometheus$"
- deposit_wtmnb_prometheus_desc:0 "$pc_wtmnb_prometheus_desc_normal$"
- deposit_wtmnb_prometheus_rubbish:0 "边角余料"
- deposit_wtmnb_prometheus_rubbish_desc:0 "好像是星球建设留下的边角料，扔进锻炉应该能回收利用\n不过毕竟堆放的地方不起眼，不管也行"
+ deposit_wtmnb_city:0 "$pc_wtmnb_city$"
+ deposit_wtmnb_city_desc:0 "$pc_wtmnb_city_desc_normal$"
+ deposit_wtmnb_city_rubbish:0 "边角余料"
+ deposit_wtmnb_city_rubbish_desc:0 "好像是星球建设留下的边角料，扔进锻炉应该能回收利用\n不过毕竟堆放的地方不起眼，不管也行"
 ##################
  
  district_meeting_room:0 "战略忽悠会议室"
  district_meeting_room_desc:0 "帝国规模？什么帝国？什么规模？我们可是发展中国家，你可不要乱讲"
  district_meeting_room_plural:0 "$district_meeting_room$"
+
  district_matrix_office:0 "泛用型多功能办公室"
  district_matrix_office_desc:0 "成熟的工作都懂得自己完成自己，所以名义上的办公室无论从设计还是使用都是作为配备娱乐设备的住宅。"
  district_matrix_office_plural:0 "$district_matrix_office$"
 
 ##################
- bombardment_wtmnb_doom:0 "人工清洗"
- bombardment_wtmnb_doom_name:0 "$bombardment_wtmnb_doom$"
+ bombardment_wtmnb_doom:0 "中孑洪流"
+ bombardment_wtmnb_doom_name:0 "中子洪流环保青春版"
  bombardment_wtmnb_doom_desc:0 "$bombardment_wtmnb_doom$不会损伤建筑，大概。\n-对§Y军团§!造成§R难以估计的§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§R难以估计的§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-无差别§R屠杀§!星球上所有人口。\n-对无人口的AI星球没有战略意义。"
+
+ bombardment_wtmnb_invasion:0 "轨道协助登陆作战"
+ bombardment_wtmnb_invasion_name:0 "$bombardment_wtmnb_invasion$"
+ bombardment_wtmnb_invasion_desc:0 "命令一批船舱里的维护机器人作为陆军部队登陆\n-对§Y军团§!造成§R难以估计的§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§G不值一提§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-我们立即占领这颗星球"
 ###################
  wtmnb.1.name:0 "§H[From.GetName]§!已成无人之境"
  wtmnb.1.desc:0 "§H[From.GetName]§!上能称之为人口的东西都被我们的舰队干掉了！"
@@ -168,6 +176,8 @@
  wtmnb_colossus.1001.v:0 "占领"
  wtmnb_colossus.1001.w:0 "创造生态环境"
  wtmnb_colossus.1001.w.desc:0 "既然拥有轻易撼动星辰、逆转生死的力量，在几个小时内依靠“贴膜”技术将一块虚空中的大石头变成生机盎然的星球也并非不可能"
+ wtmnb_colossus.1001.x:0 "建造环世界"
+ wtmnb_colossus.1001.x.desc:0 "我们不需要什么行星了\n\n-小心，别对自己唯一的殖民地所在星系用，否则。。。"
 #########
  wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
  wtmnb_diplomacy.1.friendly.desc:0 "有什么事吗，我们的朋友？"
@@ -250,7 +260,7 @@
  tech_wtmnb_fortress:0 "虚数内能导论"
  tech_wtmnb_fortress_desc:0 "热力学第二定律有这样一个表述：一个系统的熵如果下降，就必然会引起另一个系统的熵以更大的幅度上升。从信息的角度来看，这相当于，信息高度混沌化的普通环境，与信息高度秩序化的负熵环境之间，存在巨大的信息不对称。历史研究表明，崩坏能和这种信息不对称具有强烈的伴生关系。而在数学上，属于坍缩次元的虚数内能，与作为发散次元——也就是我们平常能感知到的四维时空——的热力表征的实数内能，在数学上可以通过高维复函数进行统一的表达，其结果可以在微观尺度上预测崩坏的波动。因此，当前的研究者普遍猜想，这种“虚数内能”就是崩坏能，或者至少是崩坏能的重要组成部分。"
 ###############
- opinion_wtmnb_1:0 "情感矩阵"
+ opinion_wtmnb_1:0 "舔狗"
  opinion_wtmnb_2:0 "$opinion_wtmnb_1$"
  opinion_wtmnb_3:0 "$opinion_wtmnb_1$"
 ###############
@@ -268,38 +278,25 @@
  decision_wtmnb_reroll:0 "地质改造"
  decision_wtmnb_reroll_desc:0 "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
  decision_wtmnb_molten:0 "熔毁"
- decision_wtmnb_molten_desc:0 "燃尽的大地（笑"
+ decision_wtmnb_molten_desc:0 "使用第七律者权柄对星球表面清洗，除了可能蒸发一部分地质结构外，还通常会导致星球不再宜居"
  decision_wtmnb_planet_extend:0 "可用区划拓展"
  decision_wtmnb_planet_extend_desc:0 "增加30最大区划数"
- decision_wtmnb_prometheus:0 "普罗米修斯计划"
- decision_wtmnb_prometheus_desc:0 "将行星改造为§Y$pc_wtmnb_prometheus$§!星球"
+ decision_wtmnb_city:0 "$pc_wtmnb_city$计划"
+ decision_wtmnb_city_desc:0 "将行星改造为§Y$pc_wtmnb_city$§!星球"
+ decision_wtmnb_ring_city:0 "$decision_wtmnb_city$"
+ decision_wtmnb_ring_city_desc:0 ""
  decision_wtmnb_break_border:0 "开放边境"
- decision_wtmnb_break_border_desc:0 "借由引力干涉，无视边境封锁"
+ decision_wtmnb_break_border_desc:0 "让邻国边境对我们开放，但他们可能很快又关闭边境"
  decision_wtmnb_11th_shield:0 "$aura_judah$"
  decision_wtmnb_11th_shield_desc:0 "在重力井外展开神恩结界，从而阻止跃迁引擎正确定位本星系"
  decision_wtmnb_11th_shield_off:0 "解除$aura_judah$"
  decision_wtmnb_11th_shield_off_desc:0 "解除神恩结界，让除我们之外的文明可以使用跃迁引擎折跃进入本星系"
 ##################
  
- pc_wtmnb_prometheus:0 "普罗米修斯"
- pc_wtmnb_prometheus_adj:0 "$pc_wtmnb_prometheus$"
- pc_wtmnb_prometheus_desc:0 "[Root.GetPrometheusDesc]\n--------------\n$pc_wtmnb_prometheus_desc_normal$"
- pc_wtmnb_prometheus_desc_normal:0 "强大的人工智能将整个星球表面化为终端，能在短短几天之内改变星球特化方向\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
- pc_wtmnb_prometheus_off:0 "这颗$pc_wtmnb_prometheus$星球目前处于休眠"
- pc_wtmnb_prometheus_normal:0 "这颗$pc_wtmnb_prometheus$星球目前处于待机"
- pc_wtmnb_prometheus_research:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£job_researcher£研究§!方向特化"
- pc_wtmnb_prometheus_alloy:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£alloys£铸造§!方向特化"
- pc_wtmnb_prometheus_rare:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£exotic_gases£精炼§!方向特化"
- pc_wtmnb_prometheus_bureaucrat:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£job_bureaucrat£行政管理§!方向特化"
- pc_wtmnb_prometheus_goods:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£consumer_goods£轻工业§!方向特化"
- pc_wtmnb_prometheus_energy:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£energy£能源产出§!方向特化"
- pc_wtmnb_prometheus_food:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£food£农业§!方向特化"
- pc_wtmnb_prometheus_mineral:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£minerals£矿产§!方向特化"
- pc_wtmnb_prometheus_fortress:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£job_soldier£堡垒§!方向特化"
- pc_wtmnb_prometheus_srse:0 "这颗$pc_wtmnb_prometheus$星球目前针对§Y£sh_senergy£深海能源生产§!方向特化"
- pc_wtmnb_prometheus_neo_alpha:0 "这颗$pc_wtmnb_prometheus$星球目前针对£sr_neo£ §YNEO§!与£sr_alpha£ §YAlpha Crystals§!生产方向特化"
- pc_wtmnb_prometheus_pantsu:0 "这颗$pc_wtmnb_prometheus$星球目前填满了胖次"
- mod_pc_wtmnb_prometheus_habitability:0 "$pc_wtmnb_prometheus$星球宜居性"
+ pc_wtmnb_city:0 "虚渺之城"
+ pc_wtmnb_city_adj:0 "$pc_wtmnb_city$"
+ pc_wtmnb_city_desc:0 "有机或无机的机械结构取代了这颗星球原本的岩石与土壤\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
+ mod_pc_wtmnb_city_habitability:0 "$pc_wtmnb_city$星球宜居性"
 ###############
 
  job_ai_wtmnb_cleck:0 "自由职业者"
@@ -337,4 +334,10 @@
  job_wtmnb_fooyouist_drone_desc:0 "$job_wtmnb_fooyouist_desc$"
  mod_job_wtmnb_fooyouist_drone_add:0 "$job_wtmnb_fooyouist_drone$岗位"
 ##
- wtmnb_dictionary:0 "influence£influence\nminerals£minerals\nenergy£energy\nfood£food\nsociety£society\nphysics£physics\nengineering£engineering\nblocker£blocker\nconstruction_ship£construction_ship\ncolony_ship£colony_ship\narmy_ship£army_ship\nmilitary_power£military_power\nscience_ship£science_ship\nPop£Pop\ndef£def\nresource_time£resource_time\nm£m\ne£e\nanomaly_level£anomaly_level\nnavy_size£navy_size\nspace_creature£space_creature\n\nship_stats_hitpoints£ship_stats_hitpoints\nship_stats_armor\nship_stats_shield£ship_stats_shield\nship_stats_speed£ship_stats_speed\nship_stats_evasion£ship_stats_evasion\nship_stats_damage£ship_stats_damage\nship_stats_special£ship_stats_special\nship_stats_power£ship_stats_power\nship_stats_maintenance£ship_stats_maintenance"
+# 原版少了环世界冶金规划？
+ col_ring_foundry:0 "铸造型环形世界"
+ col_ring_foundry_desc:1 "此环世界区段的每一个角落，都能感受到无数合金铸造厂所散发出的炽热。"
+ col_ring_foundry_custom:1 "$col_foundry_custom$"
+
+ col_ring_fortress:0 "陆军基地环形世界"
+ col_ring_fortress_desc:1 "该环世界区段到处充斥着轨道大炮、碉堡、要塞等等防御工事，要想入侵此行星或者发动起义是非常困难的。"

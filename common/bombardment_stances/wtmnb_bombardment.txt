@@ -21,3 +21,27 @@ wtmnb_doom = {
 		weight = 0
 	}
 }
+
+wtmnb_invasion = {
+	trigger = {
+		owner = {
+			has_technology = tech_wtmnb_fortress
+			has_country_flag = wtmnb_order
+		}
+	}
+	icon_frame = 3
+	default = no
+	stop_when_armies_dead = no
+	abduct_pops = no
+	planet_damage = 0
+	army_damage = 100
+	kill_pop_chance = {
+		base = 0
+	}
+	min_pops_to_kill_pop = 100
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
