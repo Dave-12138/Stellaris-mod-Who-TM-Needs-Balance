@@ -133,8 +133,12 @@
 
  edict_wtmnb_edict_5:0 "给舔狗面子"
  edict_wtmnb_edict_5_desc:0 "这算让他们舔到了吗"
+
  edict_wtmnb_edict_6:0 "我不想努力了"
  edict_wtmnb_edict_6_desc:0 "点科技累死了，我现在就要自动研究！"
+
+ edict_wtmnb_edict_7:0 "我不想点第一次接触了"
+ edict_wtmnb_edict_7_desc:0 "点第一次接触累死了，我现在就要建立所有通讯！"
 #######################
  wtmnb_planet_ex:0 "第四神之键"
  wtmnb_planet_ex_desc:0 "别问原理，别问"
@@ -356,7 +360,13 @@
 # 原版少了环世界冶金规划？
  col_ring_foundry:0 "铸造型环形世界"
  col_ring_foundry_desc:1 "此环世界区段的每一个角落，都能感受到无数合金铸造厂所散发出的炽热。"
- col_ring_foundry_custom:1 "$col_foundry_custom$"
 
- col_ring_fortress:0 "陆军基地环形世界"
+ col_ring_fortress:0 "驻军型环形世界"
  col_ring_fortress_desc:1 "该环世界区段到处充斥着轨道大炮、碉堡、要塞等等防御工事，要想入侵此行星或者发动起义是非常困难的。"
+
+ col_ring_factory:1 "工业型环形世界"
+ col_ring_factory_desc:1 "此环世界区段充斥着制造厂、作坊、民用工厂。"
+
+
+ col_ring_refinery:0 "精炼型环形世界"
+ col_ring_refinery_desc:1 "此环世界区段的地表已经布满了由管道、炼油厂、酿造厂所组成的广袤的工业网络。所以尽量不要深呼吸。"

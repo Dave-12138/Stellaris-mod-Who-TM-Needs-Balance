@@ -18,6 +18,8 @@ planet_event = {
 }
 
 #巨像事件
+# from是行星
+# fromfrom应该是船
 country_event = {
 	id = wtmnb_colossus.1001
 	is_triggered_only = yes
@@ -119,7 +121,15 @@ country_event = {
 							}
 							add_trait = leader_trait_wtmnb_stigmata_governor
 						}
-						#change_species = event_target:new_wtm_species
+					}
+					every_envoy = {
+						limit = {
+							OR = {
+								gender = female
+								gender = indeterminable
+							}
+						}
+						add_trait = leader_trait_wtmnb_stigmata_envoy
 					}
 				}
 			}
@@ -215,14 +225,11 @@ country_event = {
 		name = wtmnb_colossus.1001.g
 		hidden_effect = {
 			from = {
-				planet_event = {
-					id = crisis.5015
-				}
-				planet_event = {
-					id = planet_destruction.200
-				}
-				planet_event = {
-					id = planet_destruction.600
+				fire_on_action = {
+					on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
+					scopes = {
+						from = event_target:wtmnb_planet_killer_ship
+					}
 				}
 			}
 		}
@@ -241,17 +248,11 @@ country_event = {
 		name = wtmnb_colossus.1001.h
 		hidden_effect = {
 			from = {
-				planet_event = {
-					id = crisis.5015
-				}
-				planet_event = {
-					id = planet_destruction.100
-				}
-				planet_event = {
-					id = planet_destruction.110
-				}
-				planet_event = {
-					id = planet_destruction.600
+				fire_on_action = {
+					on_action = on_destroy_planet_with_PLANET_KILLER_CRACKER
+					scopes = {
+						from = event_target:wtmnb_planet_killer_ship
+					}
 				}
 			}
 		}
@@ -272,6 +273,30 @@ country_event = {
 			}
 		}
 		name = wtmnb_colossus.1001.i
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = cracked_first_star
+				}
+			}
+			set_country_flag = cracked_first_star
+		}
+		# 评价
+		every_playable_country = {
+			limit = {
+				has_communications = ROOT
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_destroying_systems
+					}
+				}
+			}
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = opinion_destroying_systems
+			}
+		}
 		from.solar_system = {
 			# every_system_planet = {
 			# 	limit = {
@@ -311,8 +336,11 @@ country_event = {
 			}
 		}
 		from = {
-			planet_event = {
-				id = planet_destruction.700
+			fire_on_action = {
+				on_action = on_destroy_planet_with_PLANET_KILLER_DELUGE
+				scopes = {
+					from = event_target:wtmnb_planet_killer_ship
+				}
 			}
 		}
 	}

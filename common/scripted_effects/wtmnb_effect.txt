@@ -1,5 +1,54 @@
 eden_star_zeroth = {
-	
+	if = {
+		limit = {
+			exists = event_target:crisis_country
+		}
+		fire_on_action = {
+			on_action = on_destroy_star_system
+			scopes = {
+				from = event_target:crisis_country
+			}
+		}
+	}
+	else = {
+		fire_on_action = {
+			on_action = on_destroy_star_system
+		}
+	}
+	set_star_flag = star_cracked
+	set_star_class = sc_black_hole
+	# 摧毁环境物体
+	every_system_ambient_object = {
+		limit = {
+			# Preserve Unbidden crisis effects
+			NOR = {
+				has_ambient_object_flag = extradimensional_system_effect
+				has_ambient_object_flag = extradimensional_system_effect_2
+			}
+		}
+		destroy_ambient_object = this
+	}
+	# 恒星
+	every_system_planet = {
+		limit = {
+			is_star = yes
+		}
+		create_ambient_object = {
+			type = "star_explosion"
+			play_animation_once = yes
+			location = this
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+		change_pc = pc_black_hole
+		reroll_deposits = yes
+	}
+	# 肃正
 	every_system_planet = {
 		limit = {
 			is_planet_class = pc_ai
@@ -22,12 +71,17 @@ eden_star_zeroth = {
 			id = crisis.2046
 		}
 	}
+	# 殖民地
 	every_system_planet = {
 		limit = {
 			is_colony = yes
 		}
-		planet_event = {
-			id = crisis.5015
+		# 摧毁轨道防御
+		if = {
+			limit = {
+				exists = orbital_defence
+			}
+			destroy_fleet = orbital_defence
 		}
 		every_owned_pop = {
 			kill_pop = yes
@@ -35,6 +89,7 @@ eden_star_zeroth = {
 		remove_all_buildings = yes
 		destroy_colony = yes
 	}
+	# 居住站
 	every_system_planet = {
 		limit = {
 			is_planet_class = pc_habitat
@@ -42,37 +97,48 @@ eden_star_zeroth = {
 		spawn_habitat_cracker_effect = yes
 		remove_planet = yes
 	}
+	# 环世界
 	every_system_planet = {
 		limit = {
-			is_ringworld = yes
+			OR = {
+				is_planet_class = pc_ringworld_tech
+				is_planet_class = pc_ringworld_seam
+				is_ringworld = yes
+			}
 		}
 		spawn_ringworld_cracker_effect = yes
-		change_pc = pc_ringworld_habitable_damaged
+		change_pc = pc_ringworld_tech_damaged
 	}
+	# 行星
 	every_system_planet = {
 		limit = {
-			is_ringworld = no
-		}
-		create_ambient_object = {
-			type = "star_explosion"
-			play_animation_once = yes
-			location = this
-		}
-		last_created_ambient_object = {
-			set_location = {
-				target = prev
-				distance = 0
-				angle = random
+			# 不是恒星
+			is_star = no
+			# 不是小行星
+			is_asteroid = no
+			# 不是环
+			NOR = {
+				change_pc = pc_ringworld_tech_damaged
+				change_pc = pc_ringworld_seam_damaged
+				change_pc = pc_ringworld_habitable_damaged
 			}
 		}
 		change_pc = pc_black_hole
 		reroll_deposits = yes
 	}
-	set_star_class = sc_black_hole
+	# 清除异常与修正
 	every_system_planet = {
 		clear_planet_modifiers = yes
 		prevent_anomaly = yes
 	}
+	# 小行星
+	every_system_planet = {
+		limit = {
+			is_asteroid = yes
+		}
+		clear_deposits = yes
+	}
+	# 轨道站
 	every_system_planet = {
 		limit = {
 			exists = {
@@ -80,6 +146,53 @@ eden_star_zeroth = {
 			}
 			orbital_station = {
 				dismantle = yes
+			}
+		}
+	}
+	# 舰队
+	every_fleet_in_system = {
+		limit = {
+			NAND = {
+				exists = owner
+				owner = {
+					OR = {
+						is_country_type = portal_holder
+						is_country_type = extradimensional
+						is_country_type = extradimensional_2
+						is_country_type = extradimensional_3
+						has_country_flag = wtmnb_order
+					}
+				}
+			}
+		}
+		# 能动的失踪，否则摧毁
+		if = {
+			limit = {
+				exists = event_target:crisis_country
+				is_mobile = yes
+			}
+			set_mia = yes
+		}
+		else = {
+			destroy_fleet = this
+		}
+	}
+	# 摧毁巨构
+	every_system_megastructure = {
+		set_ruined_megastructure = yes
+	}
+	# 
+	star = {
+		create_ambient_object = {
+			type = "destroyed_system"
+			location = this
+		}
+		last_created_ambient_object = {
+			set_ambient_object_flag = destroyed_system_effect
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
 			}
 		}
 	}

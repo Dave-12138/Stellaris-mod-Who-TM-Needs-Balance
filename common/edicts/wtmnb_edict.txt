@@ -13,10 +13,6 @@ wtmnb_edict = {
 	}
 	effect = {
 		give_technology = {
-			tech = tech_automated_exploration
-			message = no
-		}
-		give_technology = {
 			tech = tech_wtmnb_fortress
 			message = no
 		}
@@ -139,6 +135,10 @@ wtmnb_edict_6 = {
 			tech = tech_sapient_ai
 			message = no
 		}
+		give_technology = {
+			tech = tech_automated_exploration
+			message = no
+		}
 	}
 	prerequisites = {
 		"tech_starbase_1"
@@ -149,6 +149,39 @@ wtmnb_edict_6 = {
 			has_technology = tech_positronic_implants
 			has_technology = tech_sapient_ai
 		}
+	}
+	allow = {
+		is_ai = no
+	}
+}
+
+wtmnb_edict_7 = {
+	icon = GFX_nullobject
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	effect = {
+		every_country = {
+			root = {
+				establish_communications = prev
+			}
+		}
+	}
+	prerequisites = {
+		"tech_starbase_1"
+	}
+	potential = {
+		any_playable_country = {
+			NOR = {
+				has_communications = root
+				is_same_value = root
+			}
+		}
+		is_ai = no
 	}
 	allow = {
 		is_ai = no

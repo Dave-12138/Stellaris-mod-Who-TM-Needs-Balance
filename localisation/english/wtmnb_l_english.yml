@@ -118,6 +118,12 @@
  edict_wtmnb_edict_5:0 "Resonate with $wtmnb_love_mark$"
  edict_wtmnb_edict_5_desc:0 "Significantly increased our rating of empires with emotional matrices within their borders"
  reset_gov_cooldown:0 "Cool government reform immediately"
+
+ edict_wtmnb_edict_6:0 "I dont want reseach tech any more"
+ edict_wtmnb_edict_6_desc:0 "Im gonna use auto research now"
+
+ edict_wtmnb_edict_7:0 "I dont want \"first contact\" any more"
+ edict_wtmnb_edict_7_desc:0 "Im gonna establish all communications now"
 #######################
  wtmnb_planet_ex:0 "$WTMNB_4TH_KEY$"
  wtmnb_planet_ex_desc:0 "How could it works?"
@@ -142,6 +148,9 @@
  bombardment_wtmnb_doom:0 "Purification"
  bombardment_wtmnb_doom_name:0 "$bombardment_wtmnb_doom$"
  bombardment_wtmnb_doom_desc:0 "$bombardment_wtmnb_doom$ wont damage buildings, in theory\n- §RFrightening§! damage to §YArmies§!\n- §GNo§! damage to §YPlanet§!\n- §RFrightening§! damage to §YPops§!\n- Will bombard undefended planets\n-Army will be destroy immediately\n- Do nothing to $pc_ai$"
+ bombardment_wtmnb_invasion:0 "Invasion"
+ bombardment_wtmnb_invasion_name:0 "$bombardment_wtmnb_doom$"
+ bombardment_wtmnb_invasion_desc:0 "Our army will Invase the planet immediately \n- §RFrightening§! damage to §YArmies§!\n- §GNo§! damage to §YPlanet§!\n- §GNo§! damage to §YPops§!\n- Will bombard undefended planets\n-Army will be destroy immediately\n- We will controll the planet in one day"
 ###################
  wtmnb.1.name:0 "Nobody on §H[From.GetName]§! now"
  wtmnb.1.desc:0 "Every \"living\" thing is removed §H[From.GetName]§!"
@@ -329,4 +338,13 @@
 # 
  col_ring_foundry:0 "$col_foundry$"
  col_ring_foundry_desc:1 "$col_foundry_desc$"
- col_ring_foundry_custom:1 "$col_foundry_custom$"
+
+ col_ring_fortress:0 "$col_fortress$"
+ col_ring_fortress_desc:1 "$col_fortress_desc$"
+
+ col_ring_factory:1 "$col_factory$"
+ col_ring_factory_desc:1 "$col_factory_desc$"
+
+
+ col_ring_refinery:0 "$col_refinery$"
+ col_ring_refinery_desc:1 "$col_refinery_desc$"

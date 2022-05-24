@@ -7,6 +7,7 @@ is_planet_specialized = {
 		has_designation = col_ecu_research
 		# 天然气水晶
 		has_designation = col_refinery
+		has_designation = col_ring_refinery
 		# 合金
 		has_designation = col_foundry
 		has_designation = col_ring_foundry		# 本mod
@@ -26,7 +27,7 @@ is_planet_specialized = {
 		has_designation = col_mac_factory
 		has_designation = col_ecu_factory
 		has_designation = col_habitat_factory
-		has_designation = col_ring_trade		# 商业环世界算进消费品，虽然不生成消费品
+		has_designation = col_ring_factory		# 本mod
 		# 舰容
 		has_designation = col_fortress
 		has_designation = col_habitat_fortress
@@ -46,6 +47,7 @@ is_planet_specialized = {
 		has_designation = col_generator
 		has_designation = col_habitat_energy
 		has_designation = col_ring_generator
+		has_designation = col_ring_trade		# 普通帝国商业代替发电
 		# 农业
 		has_designation = col_farming
 		has_designation = col_ring_farming

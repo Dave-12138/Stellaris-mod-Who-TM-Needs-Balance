@@ -270,7 +270,10 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = no
 			}
-			has_designation = col_refinery
+			OR = {
+				has_designation = col_refinery
+				has_designation = col_ring_refinery
+			}
 		}
 		modifier = {
 			job_gas_refiner_per_pop = 0.3
@@ -285,7 +288,10 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			has_designation = col_refinery
+			OR = {
+				has_designation = col_refinery
+				has_designation = col_ring_refinery
+			}
 		}
 		modifier = {
 			job_gas_refiner_drone_per_pop = 0.3
@@ -349,7 +355,7 @@ deposit_wtmnb_city = {
 				has_designation = col_mac_factory
 				has_designation = col_ecu_factory
 				has_designation = col_habitat_factory
-				has_designation = col_ring_trade
+				has_designation = col_ring_factory
 			}
 		}
 		modifier = {
@@ -369,7 +375,7 @@ deposit_wtmnb_city = {
 				has_designation = col_mac_factory
 				has_designation = col_ecu_factory
 				has_designation = col_habitat_factory
-				has_designation = col_ring_trade
+				has_designation = col_ring_factory
 			}
 		}
 		modifier = {
@@ -388,7 +394,7 @@ deposit_wtmnb_city = {
 				has_designation = col_mac_factory
 				has_designation = col_ecu_factory
 				has_designation = col_habitat_factory
-				has_designation = col_ring_trade
+				has_designation = col_ring_factory
 			}
 		}
 		modifier = {
@@ -537,6 +543,7 @@ deposit_wtmnb_city = {
 				has_designation = col_generator
 				has_designation = col_habitat_energy
 				has_designation = col_ring_generator
+				has_designation = col_ring_trade
 			}
 		}
 		modifier = {
@@ -555,6 +562,7 @@ deposit_wtmnb_city = {
 				has_designation = col_generator
 				has_designation = col_habitat_energy
 				has_designation = col_ring_generator
+				has_designation = col_ring_trade
 			}
 		}
 		modifier = {
@@ -572,6 +580,7 @@ deposit_wtmnb_city = {
 				has_designation = col_generator
 				has_designation = col_habitat_energy
 				has_designation = col_ring_generator
+				has_designation = col_ring_trade
 			}
 		}
 		modifier = {
