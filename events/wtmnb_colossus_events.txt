@@ -60,8 +60,31 @@ country_event = {
 								gender = indeterminable
 							}
 						}
-						add_ruler_trait = leader_trait_wtmnb_stigmata
-						add_trait = leader_trait_wtmnb_stigmata
+						add_ruler_trait = leader_trait_wtmnb_stigmata_ruler
+						if = {
+							limit = {
+								leader_class = scientist
+							}
+							add_trait = leader_trait_wtmnb_stigmata_scientist
+						}
+						if = {
+							limit = {
+								leader_class = admiral
+							}
+							add_trait = leader_trait_wtmnb_stigmata_admiral
+						}
+						if = {
+							limit = {
+								leader_class = general
+							}
+							add_trait = leader_trait_wtmnb_stigmata_general
+						}
+						if = {
+							limit = {
+								leader_class = governor
+							}
+							add_trait = leader_trait_wtmnb_stigmata_governor
+						}
 						#change_species = event_target:new_wtm_species
 					}
 					every_pool_leader = {
@@ -71,8 +94,31 @@ country_event = {
 								gender = indeterminable
 							}
 						}
-						add_ruler_trait = leader_trait_wtmnb_stigmata
-						add_trait = leader_trait_wtmnb_stigmata
+						add_ruler_trait = leader_trait_wtmnb_stigmata_ruler
+						if = {
+							limit = {
+								leader_class = scientist
+							}
+							add_trait = leader_trait_wtmnb_stigmata_scientist
+						}
+						if = {
+							limit = {
+								leader_class = admiral
+							}
+							add_trait = leader_trait_wtmnb_stigmata_admiral
+						}
+						if = {
+							limit = {
+								leader_class = general
+							}
+							add_trait = leader_trait_wtmnb_stigmata_general
+						}
+						if = {
+							limit = {
+								leader_class = governor
+							}
+							add_trait = leader_trait_wtmnb_stigmata_governor
+						}
 						#change_species = event_target:new_wtm_species
 					}
 				}

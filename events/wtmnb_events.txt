@@ -182,8 +182,37 @@ country_event = {
 	}
 	immediate = {
 		from = {
-			add_ruler_trait = leader_trait_wtmnb_stigmata
-			add_trait = leader_trait_wtmnb_stigmata
+			add_ruler_trait = leader_trait_wtmnb_stigmata_ruler
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_trait_wtmnb_stigmata_scientist
+			}
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait = leader_trait_wtmnb_stigmata_admiral
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_trait_wtmnb_stigmata_general
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				add_trait = leader_trait_wtmnb_stigmata_governor
+			}
+			if = {
+				limit = {
+					leader_class = envoy
+				}
+				add_trait = leader_trait_wtmnb_stigmata_envoy
+			}
 		}
 	}
 }
@@ -196,19 +225,40 @@ country_event = {
 	trigger = {
 		any_owned_leader = {
 			leader_age >= 15
-			has_trait = leader_trait_wtmnb_stigmata
+			OR = {
+				has_trait = leader_trait_wtmnb_stigmata_admiral
+				has_trait = leader_trait_wtmnb_stigmata_envoy
+				has_trait = leader_trait_wtmnb_stigmata_general
+				has_trait = leader_trait_wtmnb_stigmata_governor
+				has_trait = leader_trait_wtmnb_stigmata_scientist
+				has_ruler_trait = leader_trait_wtmnb_stigmata_ruler
+			}
 		}
 	}
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				has_trait = leader_trait_wtmnb_stigmata
+				OR = {
+					has_trait = leader_trait_wtmnb_stigmata_admiral
+					has_trait = leader_trait_wtmnb_stigmata_envoy
+					has_trait = leader_trait_wtmnb_stigmata_general
+					has_trait = leader_trait_wtmnb_stigmata_governor
+					has_trait = leader_trait_wtmnb_stigmata_scientist
+					has_ruler_trait = leader_trait_wtmnb_stigmata_ruler
+				}
 			}
 			set_age = 12
 		}
 		every_pool_leader = {
 			limit = {
-				has_trait = leader_trait_wtmnb_stigmata
+				OR = {
+					has_trait = leader_trait_wtmnb_stigmata_admiral
+					has_trait = leader_trait_wtmnb_stigmata_envoy
+					has_trait = leader_trait_wtmnb_stigmata_general
+					has_trait = leader_trait_wtmnb_stigmata_governor
+					has_trait = leader_trait_wtmnb_stigmata_scientist
+					has_ruler_trait = leader_trait_wtmnb_stigmata_ruler
+				}
 			}
 			set_age = 12
 		}
@@ -252,7 +302,6 @@ planet_event = {
 		}
 	}
 	immediate = {
-		
 		owner = {
 			save_event_target_as = doomed_planet_owner
 		}

@@ -39,12 +39,50 @@ trait_wtmnb_stigmata = {
 		planet_amenities_add = 1
 		army_damage_mult = 1000
 		army_collateral_damage_mult = 100
+		army_starting_experience_mult = 100
 		species_empire_size_mult = 1
 		planet_crime_add = -1
 	}
 }
-
-leader_trait_wtmnb_stigmata = {
+# ruler
+leader_trait_wtmnb_stigmata_ruler = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+	modifier = {
+		spy_network_daily_value_mult = 100.0
+		intel_decryption_add = 2000
+		intel_encryption_add = 2000
+		spy_network_levels_add = 200
+		first_contact_clues_add = 200
+		###################
+		deposit_blockers_cost_mult = -1
+		planet_decision_enact_speed_mult = 10000
+		planet_colony_development_speed_mult = 100
+		##############
+		terraform_speed_mult = 250
+		shipsize_starbase_outpost_build_speed_mult = 500
+		shipclass_military_special_build_speed_mult = 1000
+		shipclass_mining_station_build_speed_mult = 1000
+		shipclass_research_station_build_speed_mult = 1000
+		megastructure_build_speed_mult = 5000
+		country_government_civic_points_add = 10
+		##############
+		ship_engagement_range_mult = 0.5
+	}
+	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
+}
+# general 陆军
+leader_trait_wtmnb_stigmata_general = {
 	cost = 0
 	initial = no
 	randomized = no
@@ -53,35 +91,32 @@ leader_trait_wtmnb_stigmata = {
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
 	leader_trait = {
 		general
-		governor
-		admiral
-		ruler
-		scientist
 	}
 	leader_class = {
 		general
-		governor
-		admiral
-		ruler
-		scientist
-	}
-	ai_categories = {
-		survey
-		physics
-		society
-		engineering
 	}
 	modifier = {
-		all_technology_research_speed = 1
-		science_ship_survey_speed = 10
-		spy_network_daily_value_mult = 100.0
-		intel_decryption_add = 2000
-		intel_encryption_add = 2000
-		spy_network_levels_add = 200
-		first_contact_clues_add = 200
-		ship_archeaological_site_clues_add = 15
-		ship_archaeological_site_excavation_speed_mult = 10000
-		ship_anomaly_research_speed_mult = 35
+		army_damage_mult = 100
+		army_experience_gain_mult = 100
+
+	}
+	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
+}
+# governor 总督
+leader_trait_wtmnb_stigmata_governor = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	leader_trait = {
+		governor
+	}
+	leader_class = {
+		governor
+	}
+	modifier = {
 		###################
 		planet_buildings_cost_mult = -1
 		planet_districts_cost_mult = -1
@@ -96,18 +131,80 @@ leader_trait_wtmnb_stigmata = {
 		planet_army_build_speed_mult = 50
 		planet_colony_development_speed_mult = 100
 		planet_jobs_upkeep_mult = -2
+		planet_structures_upkeep_mult = -2
 		##############
 		terraform_speed_mult = 250
-		shipsize_starbase_outpost_build_speed_mult = 500
-		shipclass_military_special_build_speed_mult = 1000
-		shipclass_mining_station_build_speed_mult = 1000
-		shipclass_research_station_build_speed_mult = 1000
-		planet_structures_upkeep_mult = -2
 		megastructure_build_speed_mult = 5000
-		country_government_civic_points_add = 10
-		##############
+	}
+	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
+}
+# admiral 海军
+leader_trait_wtmnb_stigmata_admiral = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	leader_trait = {
+		admiral
+	}
+	leader_class = {
+		admiral
+	}
+	modifier = {
 		ship_weapon_range_mult = 1
 		ship_engagement_range_mult = 1
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
+}
+# 科学家
+leader_trait_wtmnb_stigmata_scientist = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	leader_trait = {
+		scientist
+	}
+	leader_class = {
+		scientist
+	}
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	modifier = {
+		all_technology_research_speed = 10
+		science_ship_survey_speed = 10
+		ship_archeaological_site_clues_add = 15
+		ship_archaeological_site_excavation_speed_mult = 10000
+		ship_anomaly_research_speed_mult = 35
+	}
+}
+# envoy
+leader_trait_wtmnb_stigmata_envoy = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	leader_trait = {
+		envoy
+	}
+	leader_class = {
+		envoy
+	}
+	modifier = {
+		spy_network_daily_value_mult = 100.0
+		intel_decryption_add = 2000
+		intel_encryption_add = 2000
+		spy_network_levels_add = 200
+		first_contact_clues_add = 200
+	}
 }

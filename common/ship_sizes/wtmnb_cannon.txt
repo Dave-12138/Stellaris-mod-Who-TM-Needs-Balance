@@ -2,12 +2,13 @@
 
 wtmnb_cannon = {
 	max_speed = @speed_slow
-	acceleration = 0.3
-	rotation_speed = 0.2
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @titan_collision_radius
 	max_hitpoints = 100000
 	entity = "titan_bow_entity"
-	size_multiplier = 8
-	fleet_slot_size = 8
+	size_multiplier = 4
+	fleet_slot_size = 4
 	combat_size_multiplier = 8
 	section_slots = { "mid" = { locator = "part1" } }
 	potential_construction = {

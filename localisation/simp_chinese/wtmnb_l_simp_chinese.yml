@@ -72,9 +72,28 @@
 #################
  trait_wtmnb_stigmata:0 "圣痕"
  trait_wtmnb_stigmata_desc:0 "这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_stigmata$。"
+
  leader_trait_wtmnb_stigmata:0 "$trait_wtmnb_stigmata$"
- leader_trait_wtmnb_stigmata_modifier:0 "该领袖可以轻松胜任§Y$ruler$§!、§Y$general$§!、§Y$governor$§!、§Y$admiral$§!、§Y$scientist$§!"
  leader_trait_wtmnb_stigmata_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_stigmata$。"
+
+ leader_trait_wtmnb_stigmata_scientist:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_scientist_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+
+ leader_trait_wtmnb_stigmata_envoy:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_envoy_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+
+ leader_trait_wtmnb_stigmata_admiral:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_admiral_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+
+ leader_trait_wtmnb_stigmata_governor:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_governor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+
+ leader_trait_wtmnb_stigmata_general:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_general_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+
+ leader_trait_wtmnb_stigmata_ruler:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_ruler_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+
  trait_pc_wtmnb_city_preference:0 "$pc_wtmnb_city$偏好"
  trait_pc_wtmnb_city_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 
