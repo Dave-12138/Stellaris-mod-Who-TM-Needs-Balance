@@ -25,6 +25,7 @@ trait_pc_wtmnb_city_preference = {
 		SHENHAI
 		TOUHOUGIRLS
 		UNITED_FLEET
+		LILY
 		OTHER
 	}
 	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"

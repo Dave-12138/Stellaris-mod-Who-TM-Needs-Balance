@@ -12,6 +12,7 @@ country_event = {
 		city_level = event_target:wtmnb_target.owner
 		room = event_target:wtmnb_target.owner
 	}
+	# 取消
 	option = {
 		name = wtmnb_species.1.0
 	}
@@ -26,6 +27,7 @@ country_event = {
 			}
 		}
 	}
+	# 舰R
 	option = {
 		name = wtmnb_species.1.b
 		trigger = {
@@ -37,6 +39,7 @@ country_event = {
 			}
 		}
 	}
+	# 舰R
 	option = {
 		name = wtmnb_species.1.c
 		trigger = {
@@ -55,6 +58,7 @@ country_event = {
 			}
 		}
 	}
+	# 多彩
 	option = {
 		name = wtmnb_species.1.d
 		trigger = {
@@ -73,6 +77,7 @@ country_event = {
 			}
 		}
 	}
+	# 多彩
 	option = {
 		name = wtmnb_species.1.e
 		trigger = {
@@ -91,6 +96,7 @@ country_event = {
 			}
 		}
 	}
+	# 舰B
 	option = {
 		name = wtmnb_species.1.f
 		hidden_effect = {
@@ -99,6 +105,7 @@ country_event = {
 			}
 		}
 	}
+	# 植物
 	option = {
 		name = wtmnb_species.1.o
 		hidden_effect = {
@@ -107,6 +114,7 @@ country_event = {
 			}
 		}
 	}
+	# 人形
 	option = {
 		name = wtmnb_species.1.p
 		hidden_effect = {
@@ -115,6 +123,7 @@ country_event = {
 			}
 		}
 	}
+	# 哺乳类
 	option = {
 		name = wtmnb_species.1.q
 		hidden_effect = {
@@ -123,6 +132,7 @@ country_event = {
 			}
 		}
 	}
+	# 爬行类
 	option = {
 		name = wtmnb_species.1.r
 		hidden_effect = {
@@ -131,6 +141,7 @@ country_event = {
 			}
 		}
 	}
+	# 鸟类
 	option = {
 		name = wtmnb_species.1.s
 		hidden_effect = {
@@ -139,6 +150,7 @@ country_event = {
 			}
 		}
 	}
+	# 节肢类
 	option = {
 		name = wtmnb_species.1.t
 		hidden_effect = {
@@ -147,6 +159,7 @@ country_event = {
 			}
 		}
 	}
+	# 软体类
 	option = {
 		name = wtmnb_species.1.u
 		hidden_effect = {
@@ -155,6 +168,7 @@ country_event = {
 			}
 		}
 	}
+	# 真菌类
 	option = {
 		name = wtmnb_species.1.v
 		hidden_effect = {
@@ -163,6 +177,7 @@ country_event = {
 			}
 		}
 	}
+	# 机器人
 	option = {
 		name = wtmnb_species.1.w
 		hidden_effect = {
@@ -171,6 +186,7 @@ country_event = {
 			}
 		}
 	}
+	# 机械
 	option = {
 		name = wtmnb_species.1.x
 		hidden_effect = {
@@ -179,6 +195,7 @@ country_event = {
 			}
 		}
 	}
+	# 石头
 	option = {
 		name = wtmnb_species.1.y
 		hidden_effect = {
@@ -187,6 +204,7 @@ country_event = {
 			}
 		}
 	}
+	# 死灵
 	option = {
 		name = wtmnb_species.1.z
 		hidden_effect = {

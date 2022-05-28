@@ -25,6 +25,7 @@ trait_wtmnb_stigmata = {
 		SHENHAI
 		TOUHOUGIRLS
 		UNITED_FLEET
+		LILY
 		OTHER
 	}
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
@@ -44,6 +45,7 @@ trait_wtmnb_stigmata = {
 		planet_crime_add = -1
 	}
 }
+
 # ruler
 leader_trait_wtmnb_stigmata_ruler = {
 	cost = 0
@@ -59,7 +61,7 @@ leader_trait_wtmnb_stigmata_ruler = {
 		ruler
 	}
 	modifier = {
-		spy_network_daily_value_mult = 100.0
+		spy_network_daily_value_mult = 100
 		intel_decryption_add = 2000
 		intel_encryption_add = 2000
 		spy_network_levels_add = 200
@@ -76,11 +78,15 @@ leader_trait_wtmnb_stigmata_ruler = {
 		shipclass_research_station_build_speed_mult = 1000
 		megastructure_build_speed_mult = 5000
 		country_government_civic_points_add = 10
+		catapult_range_mult = -1.0
+		catapult_spread_mult = 3
+		quantum_catapult_megastructure_bypass_windup_mult = -1.0
 		##############
 		ship_engagement_range_mult = 0.5
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
+
 # general 陆军
 leader_trait_wtmnb_stigmata_general = {
 	cost = 0
@@ -98,10 +104,10 @@ leader_trait_wtmnb_stigmata_general = {
 	modifier = {
 		army_damage_mult = 100
 		army_experience_gain_mult = 100
-
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
+
 # governor 总督
 leader_trait_wtmnb_stigmata_governor = {
 	cost = 0
@@ -117,6 +123,7 @@ leader_trait_wtmnb_stigmata_governor = {
 		governor
 	}
 	modifier = {
+		pop_demotion_time_mult = -1
 		###################
 		planet_buildings_cost_mult = -1
 		planet_districts_cost_mult = -1
@@ -138,6 +145,7 @@ leader_trait_wtmnb_stigmata_governor = {
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
+
 # admiral 海军
 leader_trait_wtmnb_stigmata_admiral = {
 	cost = 0
@@ -155,9 +163,11 @@ leader_trait_wtmnb_stigmata_admiral = {
 	modifier = {
 		ship_weapon_range_mult = 1
 		ship_engagement_range_mult = 1
+		ships_upkeep_mult = -2
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
+
 # 科学家
 leader_trait_wtmnb_stigmata_scientist = {
 	cost = 0
@@ -183,9 +193,10 @@ leader_trait_wtmnb_stigmata_scientist = {
 		science_ship_survey_speed = 10
 		ship_archeaological_site_clues_add = 15
 		ship_archaeological_site_excavation_speed_mult = 10000
-		ship_anomaly_research_speed_mult = 35
+		ship_anomaly_research_speed_mult = 50
 	}
 }
+
 # envoy
 leader_trait_wtmnb_stigmata_envoy = {
 	cost = 0
@@ -201,7 +212,7 @@ leader_trait_wtmnb_stigmata_envoy = {
 		envoy
 	}
 	modifier = {
-		spy_network_daily_value_mult = 100.0
+		spy_network_daily_value_mult = 100
 		intel_decryption_add = 2000
 		intel_encryption_add = 2000
 		spy_network_levels_add = 200

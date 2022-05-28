@@ -664,7 +664,9 @@ deposit_wtmnb_city = {
 		potential = {
 			exists = owner
 			has_designation = col_sh_srse
-			has_authority = auth_warshipgirls
+			owner = {
+				has_authority = auth_warshipgirls
+			}
 		}
 		modifier = {
 			job_wsg_job_wsg_senergy_per_pop = 1
@@ -675,7 +677,9 @@ deposit_wtmnb_city = {
 		potential = {
 			exists = owner
 			has_designation = col_sh_srse
-			has_authority = auth_shenhai
+			owner = {
+				has_authority = auth_shenhai
+			}
 		}
 		modifier = {
 			job_wsg_job_sh_senergy_per_pop = 1
