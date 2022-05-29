@@ -368,7 +368,12 @@ decision_wtmnb_planet_extend = {
 	owned_planets_only = yes
 	potential = {
 		OR = {
-			has_technology = tech_wtmnb_fortress
+			solar_system = {
+				exists = owner
+				owner = {
+					has_country_flag = wtmnb_order
+				}
+			}
 			any_fleet_in_orbit = {
 				any_owned_ship = {
 					has_component = WTMNB_4TH_KEY

@@ -5,12 +5,12 @@ deposit_wtmnb_city = {
 	should_swap_deposit_on_terraforming = yes
 	category = deposit_cat_rare
 	########## 科研 ##########
+	# 蜂巢
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_hive_empire = yes
-				# is_dc_mod_empire = no
 			}
 			OR = {
 				has_designation = col_research
@@ -21,12 +21,12 @@ deposit_wtmnb_city = {
 		}
 		job_brain_drone_per_pop = 1
 	}
+	# 机械
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_machine_empire = yes
-				# is_dc_mod_empire = no
 			}
 			OR = {
 				has_designation = col_research
@@ -37,11 +37,13 @@ deposit_wtmnb_city = {
 		}
 		job_calculator_per_pop = 1
 	}
+	# 普通
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				# 排除多彩
 				is_dc_mod_empire = no
 			}
 			OR = {
@@ -189,6 +191,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_regular_empire = yes
 				is_catalytic_empire = no
+				# 排除多彩
 				is_dc_mod_empire = no
 			}
 			OR = {
@@ -408,6 +411,11 @@ deposit_wtmnb_city = {
 			exists = owner
 			owner = {
 				is_gestalt = no
+				# 排除
+				NOT = {
+					# 突击莉莉
+					has_technology = tech_AL_LilyManagement
+				}
 			}
 			OR = {
 				has_designation = col_fortress
@@ -417,6 +425,24 @@ deposit_wtmnb_city = {
 		}
 		modifier = {
 			job_soldier_per_pop = 1
+		}
+	}
+	# 突击莉莉
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				has_technology = tech_AL_LilyManagement
+			}
+			OR = {
+				has_designation = col_fortress
+				has_designation = col_habitat_fortress
+				has_designation = col_ring_fortress
+			}
+		}
+		modifier = {
+			job_AL_soldier_per_pop = 1
 		}
 	}
 	# 格式塔

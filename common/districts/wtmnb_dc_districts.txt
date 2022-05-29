@@ -34,7 +34,7 @@ district_seedbed = {
 	planet_modifier = {
 		planet_housing_add = 20
 		planet_max_buildings_add = 2
-		planet_jobs_produces_mult = 3
+		planet_jobs_produces_mult = 12
 	}
 	triggered_desc = {
 		trigger = {

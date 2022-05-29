@@ -1,6 +1,5 @@
 is_dc_lust_empire = {
-	has_global_flag = love_between_us
-	or = {
+	OR = {
 		has_country_flag = carnalism_flag
 		has_country_flag = parasite_mind_flag
 		has_country_flag = lust_skynet_flag
@@ -13,14 +12,13 @@ has_tentacle = {
 }
 
 is_dc_pure_empire = {
-	has_global_flag = love_between_us
 	OR = {
 		has_country_flag = asceticism_flag
 	}
 }
 
 is_dc_mod_empire = {
-	or = {
+	OR = {
 		has_country_flag = asceticism_flag
 		has_country_flag = carnalism_flag
 		has_country_flag = parasite_mind_flag

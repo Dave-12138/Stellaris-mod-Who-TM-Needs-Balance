@@ -66,6 +66,7 @@ leader_trait_wtmnb_stigmata_ruler = {
 		intel_encryption_add = 2000
 		spy_network_levels_add = 200
 		first_contact_clues_add = 200
+		add_base_country_intel = 100
 		###################
 		deposit_blockers_cost_mult = -1
 		planet_decision_enact_speed_mult = 10000
@@ -78,9 +79,10 @@ leader_trait_wtmnb_stigmata_ruler = {
 		shipclass_research_station_build_speed_mult = 1000
 		megastructure_build_speed_mult = 5000
 		country_government_civic_points_add = 10
-		catapult_range_mult = -1.0
+		# 弹弓
+		catapult_range_mult = -1
 		catapult_spread_mult = 3
-		quantum_catapult_megastructure_bypass_windup_mult = -1.0
+		quantum_catapult_megastructure_bypass_windup_mult = -1
 		##############
 		ship_engagement_range_mult = 0.5
 	}
@@ -142,6 +144,7 @@ leader_trait_wtmnb_stigmata_governor = {
 		##############
 		terraform_speed_mult = 250
 		megastructure_build_speed_mult = 5000
+		starbase_upgrade_time_mult = -1
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }

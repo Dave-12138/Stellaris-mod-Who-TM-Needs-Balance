@@ -25,7 +25,7 @@ district_matrix_office = {
 	planet_modifier = {
 		planet_housing_add = 30
 		planet_max_buildings_add = 2
-		planet_jobs_produces_mult = 2
+		planet_jobs_produces_mult = 10
 	}
 }
 
@@ -42,30 +42,20 @@ district_meeting_room = {
 		AND = {
 			exists = owner
 			OR = {
+				# 普通
 				has_designation = col_bureau
 				has_designation = col_habitat_bureau
-				AND = {
-					owner = {
-						is_hive_empire = yes
-					}
-					OR = {
-						has_designation = col_hive
-						has_designation = col_bureau_hive
-						has_designation = col_habitat_bureau_hive
-					}
-				}
-				AND = {
-					owner = {
-						is_machine_empire = yes
-					}
-					OR = {
-						has_designation = col_nexus
-						has_designation = col_bureau_machine
-						has_designation = col_habitat_bureau_machine
-					}
-				}
+				# 唯心
 				has_designation = col_bureau_spiritualist
 				has_designation = col_habitat_bureau_spiritualist
+				# 蜂巢
+				has_designation = col_hive
+				has_designation = col_bureau_hive
+				has_designation = col_habitat_bureau_hive
+				# 智械
+				has_designation = col_nexus
+				has_designation = col_bureau_machine
+				has_designation = col_habitat_bureau_machine
 			}
 		}
 	}
@@ -79,13 +69,15 @@ district_meeting_room = {
 			energy = 2
 		}
 	}
+	planet_modifier = {
+		planet_housing_add = 10
+	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_gestalt = no
 			}
-			has_designation = col_bureau
 		}
 		modifier = {
 			job_wtmnb_fooyouist_add = 1
@@ -94,38 +86,12 @@ district_meeting_room = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			OR = {
-				AND = {
-					owner = {
-						is_hive_empire = yes
-					}
-					OR = {
-						has_designation = col_hive
-						has_designation = col_bureau_hive
-						has_designation = col_habitat_bureau_hive
-					}
-				}
-				AND = {
-					owner = {
-						is_machine_empire = yes
-					}
-					OR = {
-						has_designation = col_nexus
-						has_designation = col_bureau_machine
-						has_designation = col_habitat_bureau_machine
-					}
-				}
-				AND = {
-					owner = {
-						is_gestalt = yes
-					}
-					has_designation = col_bureau
-				}
+			owner = {
+				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_wtmnb_fooyouist_drone_add = 1
-			planet_housing_add = 10
 		}
 	}
 }
