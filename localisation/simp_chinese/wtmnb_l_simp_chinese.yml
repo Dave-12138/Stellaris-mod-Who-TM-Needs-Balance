@@ -132,26 +132,44 @@
  edict_wtmnb_edict_3_desc:0 "心急带路呦！"
 
  edict_wtmnb_edict_5:0 "给舔狗面子"
- edict_wtmnb_edict_5_desc:0 "这算让他们舔到了吗"
+ edict_wtmnb_edict_5_desc:0 "这算让他们舔到了吗\n§L对境内有《舔狗的自我修养》巨构的国家评价大幅提升§!"
 
  edict_wtmnb_edict_6:0 "我不想努力了"
  edict_wtmnb_edict_6_desc:0 "点科技累死了，我现在就要自动研究！"
 
  edict_wtmnb_edict_7:0 "我不想点第一次接触了"
- edict_wtmnb_edict_7_desc:0 "点第一次接触累死了，我现在就要建立所有通讯！"
+ edict_wtmnb_edict_7_desc:0 "点第一次接触累死了，我现在就要建立所有通讯！\n§L(包括虚境，但不包括采矿团之类)§!"
 #######################
  wtmnb_planet_ex:0 "第四神之键"
  wtmnb_planet_ex_desc:0 "别问原理，别问"
  wtmnb_star_11th_modifier:0 "$aura_judah$"
  wtmnb_star_11th_modifier_desc:0 "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
  avoid_enter_by_jump:0 "阻止其他国家通过跃迁引擎进入本星系"
-###################
+
+#       _                      _ _       
+#    __| | ___ _ __   ___  ___(_) |_ ___ 
+#   / _` |/ _ \ '_ \ / _ \/ __| | __/ __|
+#  | (_| |  __/ |_) | (_) \__ \ | |_\__ \
+#   \__,_|\___| .__/ \___/|___/_|\__|___/
+#             |_|                        
+
  deposit_wtmnb_city:0 "$pc_wtmnb_city$"
- deposit_wtmnb_city_desc:0 "$pc_wtmnb_city_desc_normal$"
+ deposit_wtmnb_city_desc:0 "机械智能化辅助系统占据了一片大多数人不会注意到的地方"
  deposit_wtmnb_city_rubbish:0 "边角余料"
  deposit_wtmnb_city_rubbish_desc:0 "好像是星球建设留下的边角料，扔进锻炉应该能回收利用\n不过毕竟堆放的地方不起眼，不管也行"
-##################
- 
+
+ deposit_wtmnb_4th_key_expand:0 "第四神之键"
+ deposit_wtmnb_4th_key_expand_desc:0 "额外开拓的可利用地区"
+
+
+#       _ _     _        _      _       
+#    __| (_)___| |_ _ __(_) ___| |_ ___ 
+#   / _` | / __| __| '__| |/ __| __/ __|
+#  | (_| | \__ \ |_| |  | | (__| |_\__ \
+#   \__,_|_|___/\__|_|  |_|\___|\__|___/
+                                      
+
+
  district_meeting_room:0 "战略忽悠会议室"
  district_meeting_room_desc:0 "帝国规模？什么帝国？什么规模？我们可是发展中国家，你可不要乱讲"
  district_meeting_room_plural:0 "$district_meeting_room$"
@@ -160,7 +178,12 @@
  district_matrix_office_desc:0 "成熟的工作都懂得自己完成自己，所以名义上的办公室无论从设计还是使用都是作为配备娱乐设备的住宅。"
  district_matrix_office_plural:0 "$district_matrix_office$"
 
-##################
+#   _                     _                   _                      _       
+#  | |__   ___  _ __ ___ | |__   __ _ _ __ __| |_ __ ___   ___ _ __ | |_ ___ 
+#  | '_ \ / _ \| '_ ` _ \| '_ \ / _` | '__/ _` | '_ ` _ \ / _ \ '_ \| __/ __|
+#  | |_) | (_) | | | | | | |_) | (_| | | | (_| | | | | | |  __/ | | | |_\__ \
+#  |_.__/ \___/|_| |_| |_|_.__/ \__,_|_|  \__,_|_| |_| |_|\___|_| |_|\__|___/
+                                                                           
  bombardment_wtmnb_doom:0 "中孑洪流"
  bombardment_wtmnb_doom_name:0 "中子洪流环保青春版"
  bombardment_wtmnb_doom_desc:0 "$bombardment_wtmnb_doom$不会损伤建筑，大概。\n-对§Y军团§!造成§R难以估计的§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§R难以估计的§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-无差别§R屠杀§!星球上所有人口。\n-对无人口的AI星球没有战略意义。"
@@ -168,7 +191,12 @@
  bombardment_wtmnb_invasion:0 "轨道协助登陆作战"
  bombardment_wtmnb_invasion_name:0 "$bombardment_wtmnb_invasion$"
  bombardment_wtmnb_invasion_desc:0 "命令一批船舱里的维护机器人作为陆军部队登陆\n-对§Y军团§!造成§R难以估计的§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§G不值一提§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-我们立即占领这颗星球"
-###################
+#                        _       
+#    _____   _____ _ __ | |_ ___ 
+#   / _ \ \ / / _ \ '_ \| __/ __|
+#  |  __/\ V /  __/ | | | |_\__ \
+#   \___| \_/ \___|_| |_|\__|___/
+                               
  wtmnb.1.name:0 "§H[From.GetName]§!已成无人之境"
  wtmnb.1.desc:0 "§H[From.GetName]§!上能称之为人口的东西都被我们的舰队干掉了！"
  wtmnb.1.a:0 "§H[From.GetName]§!无人生还"
@@ -279,7 +307,12 @@
  wtmnb_species.100.a:0 "$trait_hive_mind$"
  wtmnb_species.100.b:0 "$trait_machine_unit$"
  wtmnb_species.100.c:0 "$trait_mechanical$"
-########
+#   _            _     
+#  | |_ ___  ___| |__  
+#  | __/ _ \/ __| '_ \ 
+#  | ||  __/ (__| | | |
+#   \__\___|\___|_| |_|
+                     
  tech_wtmnb_fortress:0 "虚数内能导论"
  tech_wtmnb_fortress_desc:0 "热力学第二定律有这样一个表述：一个系统的熵如果下降，就必然会引起另一个系统的熵以更大的幅度上升。从信息的角度来看，这相当于，信息高度混沌化的普通环境，与信息高度秩序化的负熵环境之间，存在巨大的信息不对称。历史研究表明，崩坏能和这种信息不对称具有强烈的伴生关系。而在数学上，属于坍缩次元的虚数内能，与作为发散次元——也就是我们平常能感知到的四维时空——的热力表征的实数内能，在数学上可以通过高维复函数进行统一的表达，其结果可以在微观尺度上预测崩坏的波动。因此，当前的研究者普遍猜想，这种“虚数内能”就是崩坏能，或者至少是崩坏能的重要组成部分。"
 ###############

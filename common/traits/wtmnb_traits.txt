@@ -80,7 +80,7 @@ leader_trait_wtmnb_stigmata_ruler = {
 		megastructure_build_speed_mult = 5000
 		country_government_civic_points_add = 10
 		# 弹弓
-		catapult_range_mult = -1
+		catapult_range_mult = 10
 		catapult_spread_mult = 3
 		quantum_catapult_megastructure_bypass_windup_mult = -1
 		##############

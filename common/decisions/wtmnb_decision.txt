@@ -392,9 +392,19 @@ decision_wtmnb_planet_extend = {
 		}
 	}
 	effect = {
-		add_modifier = {
-			modifier = wtmnb_planet_ex
-			days = -1
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = wtmnb_planet_ex
+				}
+			}
+			add_modifier = {
+				modifier = wtmnb_planet_ex
+				days = -1
+			}
+		}
+		else = {
+			add_deposit = deposit_wtmnb_4th_key_expand
 		}
 	}
 	ai_weight = {

@@ -4,12 +4,9 @@ wtmnb_edict = {
 	icon = GFX_nullobject
 	resources = {
 		category = edicts
-		cost = {
-			influence = 0
+		upkeep = {
+			energy = 1
 		}
-	}
-	prerequisites = {
-		"tech_starbase_1"
 	}
 	effect = {
 		give_technology = {
@@ -46,19 +43,16 @@ wtmnb_edict = {
 
 wtmnb_edict_2 = {
 	#绯红之王
-	icon = GFX_nullobject
-	length = -1
+	icon = GFX_edict_type_time
+	length = 1
 	resources = {
 		category = edicts
 		cost = {
-			influence = 0
+			unity = 1
 		}
 	}
 	effect = {
 		set_government_cooldown = no
-	}
-	prerequisites = {
-		"tech_starbase_1"
 	}
 	potential = {
 		is_ai = no
@@ -76,16 +70,13 @@ wtmnb_edict_3 = {
 	length = -1
 	resources = {
 		category = edicts
-		cost = {
-			influence = 0
+		upkeep = {
+			energy = 1
 		}
 	}
 	modifier = {
 		country_trust_growth = 500
 		country_trust_cap_add = 50000
-	}
-	prerequisites = {
-		"tech_starbase_1"
 	}
 	potential = {
 		is_ai = no
@@ -100,14 +91,11 @@ wtmnb_edict_5 = {
 	length = -1
 	resources = {
 		category = edicts
-		cost = {
-			influence = 0
+		upkeep = {
+			energy = 1
 		}
 	}
 	modifier = {
-	}
-	prerequisites = {
-		"tech_starbase_1"
 	}
 	potential = {
 		is_ai = no
@@ -122,8 +110,8 @@ wtmnb_edict_6 = {
 	length = -1
 	resources = {
 		category = edicts
-		cost = {
-			influence = 0
+		upkeep = {
+			unity = 1
 		}
 	}
 	effect = {
@@ -139,9 +127,6 @@ wtmnb_edict_6 = {
 			tech = tech_automated_exploration
 			message = no
 		}
-	}
-	prerequisites = {
-		"tech_starbase_1"
 	}
 	potential = {
 		is_ai = no
@@ -160,8 +145,8 @@ wtmnb_edict_7 = {
 	length = -1
 	resources = {
 		category = edicts
-		cost = {
-			influence = 0
+		upkeep = {
+			unity = 1
 		}
 	}
 	effect = {
@@ -170,9 +155,6 @@ wtmnb_edict_7 = {
 				establish_communications = prev
 			}
 		}
-	}
-	prerequisites = {
-		"tech_starbase_1"
 	}
 	potential = {
 		any_playable_country = {

@@ -35,7 +35,7 @@ wtmnb_cannon = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
-
+	default_behavior = carrier
 	resources = {
 		category = ships
 		cost = {
