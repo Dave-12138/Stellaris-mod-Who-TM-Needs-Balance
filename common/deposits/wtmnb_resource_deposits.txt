@@ -1,0 +1,41 @@
+d_wtmnb_star_ruin = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			energy = 1000
+			sr_dark_matter = 100
+			sr_living_metal = 100
+			sr_zro = 100
+			nanites = 100
+			minor_artifacts = 100
+			# 多彩
+			sr_ten = 100
+			love_juice = 100
+			excellent_slave = 100
+			living_tentacles = 100
+			sr_christian = 100
+			holylight_crystal = 100
+			sr_beauty = 100
+			# 舰R
+			sr_se = 100
+			sr_alpha = 100
+			sr_neo = 100
+			sr_pantsu = 100
+			# 更卡巨构
+			sr_solar_energy = 100
+			# 舰B
+			mind_club = 100
+			azur_shippartbox = 100
+			azur_red_diamond = 100
+			# 好像是东方
+			sr_fuka = 100
+			# 应该是游戏人生
+			sr_jingling = 100
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+	potential = {
+		always = no
+	}
+}

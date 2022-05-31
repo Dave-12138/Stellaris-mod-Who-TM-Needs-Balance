@@ -1,0 +1,43 @@
+
+
+default = {
+	ship_of_size_limits = {
+		progenitor_ships_limit
+		titan_ships_limit
+		colossus_ships_limit
+		juggernaut_ships_limit
+		space_dragon_origin_babies_limit
+		# 莉莉
+		lily_college_ship_ships_limit
+		lily_charmship_ship_ships_limit
+		AL_New_Jerusalem_ships_limit
+		# 狐狐の久远之旅 
+		KZ_VOY_command_cruiser_ships_limit
+		KZ_VOY_battle_carrier_ships_limit
+		# azur
+		azur_flagship_limit
+		azur_nsc_battleship_S_limit
+		azur_nsc_carrier_S_limit
+		altair_flagship_limit
+
+		# AOT
+		aot_gatekeeper_ships_limit
+		aot_juggernaut_ships_limit
+		aot_fe_juggernaut_ships_limit
+ 
+		# Darkspace
+		ds_nomads_main_ships_limit
+		ds_nomads_ark_ships_limit
+		ds_nomads_res_ships_limit
+		ds_deathstar_ships_limit
+		ds_endzeit_ships_limit
+		ds_will_ships_limit
+		# Hypertraversal Manipulation Augur
+		htm_augur_ships_limit
+
+		headquarters_ship_limit
+		explorationship_ship_limit
+		# wtmnb
+		wtmnb_fortress_ships_limit
+	}
+}

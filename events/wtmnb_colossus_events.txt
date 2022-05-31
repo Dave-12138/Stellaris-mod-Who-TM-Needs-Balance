@@ -167,6 +167,7 @@ country_event = {
 			}
 		}
 	}
+	# 物种
 	option = {
 		trigger = {
 			from = {
@@ -180,6 +181,7 @@ country_event = {
 			}
 		}
 	}
+	# 物种
 	option = {
 		trigger = {
 			from = {
@@ -298,15 +300,13 @@ country_event = {
 			}
 		}
 		from.solar_system = {
-			# every_system_planet = {
-			# 	limit = {
-			# 		is_star = no
-			# 	}
-			# 	planet_event = {
-			# 		id = crisis.5015
-			# 	}
-			# }
 			eden_star_zeroth = yes
+		}
+		from = {
+			add_deposit = d_wtmnb_star_ruin
+			create_mining_station = {
+				owner = root
+			}
 		}
 	}
 	#水
@@ -426,6 +426,29 @@ country_event = {
 				is_star = yes
 				solar_system = {
 					exists = starbase
+					# 如果存在环则不能建，防止叠叠乐
+					NOR = {
+						any_system_megastructure = {
+							OR = {
+								is_megastructure_type = ring_world_1
+								is_megastructure_type = ring_world_2_intermediate
+								is_megastructure_type = ring_world_2
+								is_megastructure_type = ring_world_3_intermediate
+								is_megastructure_type = ring_world_ruined
+								is_megastructure_type = ring_world_restored
+							}
+						}
+						any_system_planet = {
+							OR = {
+								is_planet_class = pc_ringworld_tech
+								is_planet_class = pc_ringworld_tech_damaged
+								is_planet_class = pc_ringworld_seam
+								is_planet_class = pc_ringworld_seam_damaged
+								is_planet_class = pc_ringworld_habitable
+								is_planet_class = pc_ringworld_habitable_damaged
+							}
+						}
+					}
 				}
 				is_inside_border = prev
 			}

@@ -1,7 +1,7 @@
 # 初始化
 wtmnb_edict = {
 	length = 1
-	icon = GFX_nullobject
+	icon = GFX_edict_type_policy
 	resources = {
 		category = edicts
 		upkeep = {

@@ -833,7 +833,4 @@ deposit_wtmnb_4th_key_expand = {
 	planet_modifier = {
 		planet_max_districts_add = 10
 	}
-	drop_weight = {
-		weight = 1000
-	}
 }

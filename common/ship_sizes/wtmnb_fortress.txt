@@ -29,9 +29,9 @@ wtmnb_fortress = {
 			alloys = @titan_upkeep_alloys
 		}
 	}
-	combat_size_multiplier = 16
-	size_multiplier = 64
-	fleet_slot_size = 64
+	combat_size_multiplier = 32
+	size_multiplier = 32
+	fleet_slot_size = 32
 	section_slots = {
 		"core" = {
 			locator = "part1"
@@ -88,6 +88,7 @@ wtmnb_fortress = {
 	required_component_set = "WTMNB_GRAND_KEY"	#8 羽渡尘
 	required_component_set = "WTMNB_GRAND_KEY"	#9 星海谐律
 	required_component_set = "WTMNB_GRAND_KEY"	#11 犹大的誓约
+	# 没效果
 	orbit_modifier = {
 		ship_orbit_upkeep_mult = -1
 	}
@@ -95,9 +96,7 @@ wtmnb_fortress = {
 		ship_starting_experience_add = 1000
 	}
 	combat_disengage_chance = 1
-	possible_starbase = {
-		has_starbase_size >= starbase_outpost
-	}
+	
 	takes_name_from_ship_design = yes
 	uses_name_prefix = no
 	ai_ship_data = {

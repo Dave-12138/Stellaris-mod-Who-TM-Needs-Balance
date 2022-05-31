@@ -46,7 +46,6 @@ eden_star_zeroth = {
 			}
 		}
 		change_pc = pc_black_hole
-		reroll_deposits = yes
 	}
 	# 肃正
 	every_system_planet = {
@@ -124,12 +123,12 @@ eden_star_zeroth = {
 			}
 		}
 		change_pc = pc_black_hole
-		reroll_deposits = yes
 	}
 	# 清除异常与修正
 	every_system_planet = {
 		clear_planet_modifiers = yes
 		prevent_anomaly = yes
+		clear_deposits = yes
 	}
 	# 小行星
 	every_system_planet = {

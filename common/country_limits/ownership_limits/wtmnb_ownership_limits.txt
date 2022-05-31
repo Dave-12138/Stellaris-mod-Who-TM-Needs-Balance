@@ -1,7 +1,0 @@
-
-
-default = {
-	ship_of_size_limits = {
-		wtmnb_fortress_ships_limit
-	}
-}

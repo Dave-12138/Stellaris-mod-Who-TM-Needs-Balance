@@ -1,11 +1,17 @@
 trait_wtmnb_stigmata = {
 	cost = 0
+	# 是否可以物种修饰或捏国家时添加
 	initial = yes
+	# 是否可以被电脑国家随机出来
 	randomized = no
+	# 是否可以添加或删除
 	modification = yes
+	# 提示该特质有领袖buff，无效果
 	immortal_leaders = yes
+	# 领袖年龄
 	leader_age_max = 15
 	leader_age_min = 10
+	# 物种大类，代表可用于的物种
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -29,9 +35,11 @@ trait_wtmnb_stigmata = {
 		OTHER
 	}
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	# 物种修饰时的前置科技
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
+	# 修正
 	modifier = {
 		pop_happiness = 1
 		planet_jobs_produces_mult = 1.5
