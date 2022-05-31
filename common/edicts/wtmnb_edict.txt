@@ -151,6 +151,13 @@ wtmnb_edict_7 = {
 	}
 	effect = {
 		every_country = {
+			limit = {
+				NOR = {
+					is_same_empire = root
+					# is_country_type = global_event
+				}
+
+			}
 			root = {
 				establish_communications = prev
 			}

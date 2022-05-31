@@ -41,7 +41,7 @@ country_event = {
 		name = wtmnb_colossus.1001.b
 		custom_tooltip = wtmnb_colossus.1001.b.tip
 		hidden_effect = {
-			event_target:wtmnb_target = {
+			from = {
 				owner = {
 					modify_species = {
 						species = owner_species
@@ -145,7 +145,7 @@ country_event = {
 		name = wtmnb_colossus.1001.c
 		custom_tooltip = wtmnb_colossus.1001.c.tip
 		hidden_effect = {
-			event_target:wtmnb_target = {
+			from = {
 				every_owned_species = {
 					limit = {
 						NAND = {
@@ -300,6 +300,22 @@ country_event = {
 			}
 		}
 		from.solar_system = {
+			if = {
+				limit = {
+					NOT = {
+						# 存在正在爆破恒星以外的恒星
+						any_system_planet = {
+							is_star = yes
+							NOT = {
+								is_same_value = event_target:wtmnb_target
+							}
+						}
+					}
+				}
+				# 不存在就打个单身标记
+				set_star_flag = single_blackhole
+			}
+			# boom
 			eden_star_zeroth = yes
 		}
 		from = {
@@ -425,7 +441,6 @@ country_event = {
 			from = {
 				is_star = yes
 				solar_system = {
-					exists = starbase
 					# 如果存在环则不能建，防止叠叠乐
 					NOR = {
 						any_system_megastructure = {
@@ -449,8 +464,20 @@ country_event = {
 							}
 						}
 					}
+					OR = {
+						# 不能有第二个恒星
+						NOT = {
+							any_system_planet = {
+								is_star = yes
+								NOT = {
+									is_same_value = prevprev
+								}
+							}
+						}
+						# 除非 别的是炸出来的
+						has_star_flag = single_blackhole
+					}
 				}
-				is_inside_border = prev
 			}
 			event_target:wtmnb_planet_killer_ship = {
 				any_owned_ship = {
@@ -461,23 +488,26 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				NOT = {
-					has_technology = tech_ring_world
-				}
-			}
-			give_technology = {
-				tech = tech_ring_world
-				message = no
-			}
-		}
 		from = {
 			solar_system = {
+				every_system_planet = {
+					limit = {
+						NOT = {
+							is_same_value = prev.star
+						}
+					}
+					remove_planet = yes
+				}
 				spawn_megastructure = {
 					type = "ring_world_2_intermediate"
-					planet = prev.star
+					planet = star
 					owner = prevprev
+				}
+				every_system_megastructure = {
+					limit = {
+						is_megastructure_type = ring_world_2
+					}
+					upgrade_megastructure_to = ring_world_3_intermediate
 				}
 			}
 		}

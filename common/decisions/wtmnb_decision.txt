@@ -284,44 +284,6 @@ decision_wtmnb_11th_shield_off = {
 	}
 }
 
-decision_wtmnb_ring_city = {
-	enactment_time = 1
-	icon = wtmnb_4th_key
-	resources = {
-		category = decisions
-		cost = {
-			alloys = 8000
-			energy = 8000
-		}
-	}
-	potential = {
-		is_star = no
-		is_ringworld = yes
-		solar_system = {
-			any_ship_in_system = {
-				has_component = WTMNB_4TH_KEY
-				has_component = WTMNB_9TH_KEY
-			}
-		}
-		NOT = {
-			has_deposit = deposit_wtmnb_city
-		}
-	}
-	effect = {
-		if = {
-			limit = {
-				NOT = {
-					has_deposit = deposit_wtmnb_city
-				}
-			}
-			add_deposit = deposit_wtmnb_city
-		}
-	}
-	ai_weight = {
-		weight = 5000
-	}
-}
-
 decision_wtmnb_city = {
 	enactment_time = 1
 	icon = wtmnb_4th_key
@@ -334,7 +296,6 @@ decision_wtmnb_city = {
 	}
 	potential = {
 		is_star = no
-		is_ringworld = no
 		solar_system = {
 			any_ship_in_system = {
 				has_component = WTMNB_4TH_KEY
@@ -342,12 +303,28 @@ decision_wtmnb_city = {
 			}
 		}
 		NOT = {
-			is_planet_class = pc_wtmnb_city
+			has_deposit = deposit_wtmnb_city
 		}
 	}
 	effect = {
-		change_pc = pc_wtmnb_city
-		reroll_deposits = yes
+		if = {
+			limit = { 
+				# 不是：
+				NOR = {
+					# 居住站
+					is_planet_class = pc_habitat
+					# 环
+					change_pc = pc_ringworld_tech_damaged
+					change_pc = pc_ringworld_seam_damaged
+					change_pc = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_seam
+					is_ringworld = yes
+				}
+			}
+			change_pc = pc_wtmnb_city
+			reroll_deposits = yes
+		}
 		if = {
 			limit = {
 				NOT = {
