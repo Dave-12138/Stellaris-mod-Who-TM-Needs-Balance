@@ -10,12 +10,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_hive_empire = yes
 			}
-			OR = {
-				has_designation = col_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-				has_designation = col_ecu_research
-			}
+			is_col_research = yes
 		}
 		job_brain_drone_per_pop = 1
 	}
@@ -26,12 +21,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_machine_empire = yes
 			}
-			OR = {
-				has_designation = col_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-				has_designation = col_ecu_research
-			}
+			is_col_research = yes
 		}
 		job_calculator_per_pop = 1
 	}
@@ -44,12 +34,7 @@ deposit_wtmnb_city = {
 				# 排除多彩
 				is_dc_mod_empire = no
 			}
-			OR = {
-				has_designation = col_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-				has_designation = col_ecu_research
-			}
+			is_col_research = yes
 		}
 		job_researcher_per_pop = 1
 	}
@@ -62,12 +47,7 @@ deposit_wtmnb_city = {
 				is_dc_lust_empire = yes
 				has_tentacle = no
 			}
-			OR = {
-				has_designation = col_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-				has_designation = col_ecu_research
-			}
+			is_col_research = yes
 		}
 		job_lovejuice_researcher_per_pop = 1
 	}
@@ -79,12 +59,7 @@ deposit_wtmnb_city = {
 				is_dc_lust_empire = yes
 				has_tentacle = yes
 			}
-			OR = {
-				has_designation = col_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-				has_designation = col_ecu_research
-			}
+			is_col_research = yes
 		}
 		job_tentacle_researcher_per_pop = 1
 	}
@@ -95,12 +70,7 @@ deposit_wtmnb_city = {
 				is_regular_empire = yes
 				is_dc_pure_empire = yes
 			}
-			OR = {
-				has_designation = col_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-				has_designation = col_ecu_research
-			}
+			is_col_research = yes
 		}
 		job_holylight_researcher_per_pop = 1
 	}
@@ -114,14 +84,7 @@ deposit_wtmnb_city = {
 				is_hive_empire = yes
 				is_catalytic_empire = no
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_alloy_drone_per_pop = 1
 	}
@@ -133,14 +96,7 @@ deposit_wtmnb_city = {
 				is_machine_empire = yes
 				is_catalytic_empire = no
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_fabricator_per_pop = 1
 	}
@@ -152,14 +108,7 @@ deposit_wtmnb_city = {
 				is_regular_empire = yes
 				is_catalytic_empire = yes
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_catalytic_technician_per_pop = 1
 	}
@@ -171,14 +120,7 @@ deposit_wtmnb_city = {
 				is_gestalt = yes
 				is_catalytic_empire = yes
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_catalytic_drone_per_pop = 1
 	}
@@ -192,14 +134,7 @@ deposit_wtmnb_city = {
 				# 排除多彩
 				is_dc_mod_empire = no
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_foundry_per_pop = 1
 	}
@@ -212,15 +147,7 @@ deposit_wtmnb_city = {
 				is_dc_lust_empire = yes
 				has_tentacle = no
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_lust_metallurgy
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_love_juice_foundry_per_pop = 1
 	}
@@ -232,15 +159,7 @@ deposit_wtmnb_city = {
 				is_dc_lust_empire = yes
 				has_tentacle = yes
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_lust_metallurgy
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_tentacle_armor_foundry_per_pop = 1
 	}
@@ -251,14 +170,7 @@ deposit_wtmnb_city = {
 				is_regular_empire = yes
 				is_dc_pure_empire = yes
 			}
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_ring_foundry
-				has_designation = col_ecu_foundry
-				has_designation = col_habitat_foundry
-				has_designation = col_mac_foundry
-				has_designation = col_hiv_foundry
-			}
+			is_col_foundry = yes
 		}
 		job_holylight_foundry_per_pop = 1
 	}
@@ -271,10 +183,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = no
 			}
-			OR = {
-				has_designation = col_refinery
-				has_designation = col_ring_refinery
-			}
+			is_col_refinery = yes
 		}
 		modifier = {
 			job_gas_refiner_per_pop = 0.3
@@ -289,10 +198,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_designation = col_refinery
-				has_designation = col_ring_refinery
-			}
+			is_col_refinery = yes
 		}
 		modifier = {
 			job_gas_refiner_drone_per_pop = 0.3
@@ -300,18 +206,33 @@ deposit_wtmnb_city = {
 			job_translucer_drone_per_pop = 0.3
 		}
 	}
-	######### 行政 #########
+	######### 官僚（凝聚力） #########
 	# 普通帝国
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				is_spiritualist = no
 			}
-			has_designation = col_bureau
+			is_col_bureau = yes
 		}
 		modifier = {
 			job_bureaucrat_per_pop = 1
+		}
+	}
+	# 神棍
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_spiritualist = yes
+			}
+			is_col_bureau = yes
+		}
+		modifier = {
+			job_priest_per_pop = 1
 		}
 	}
 	# 蜂群
@@ -321,10 +242,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_hive_empire = yes
 			}
-			OR = {
-				has_designation = col_bureau_hive
-				has_designation = col_hive
-			}
+			is_col_bureau = yes
 		}
 		job_synapse_drone_per_pop = 1
 	}
@@ -335,10 +253,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_machine_empire = yes
 			}
-			OR = {
-				has_designation = col_nexus
-				has_designation = col_bureau_machine
-			}
+			is_col_bureau = yes
 		}
 		job_coordinator_per_pop = 1
 	}
@@ -351,13 +266,7 @@ deposit_wtmnb_city = {
 				is_gestalt = no
 				is_crafter_empire = no
 			}
-			OR = {
-				has_designation = col_factory
-				has_designation = col_mac_factory
-				has_designation = col_ecu_factory
-				has_designation = col_habitat_factory
-				has_designation = col_ring_factory
-			}
+			is_col_factory = yes
 		}
 		modifier = {
 			job_artisan_per_pop = 1
@@ -371,13 +280,7 @@ deposit_wtmnb_city = {
 				is_gestalt = no
 				is_crafter_empire = yes
 			}
-			OR = {
-				has_designation = col_factory
-				has_designation = col_mac_factory
-				has_designation = col_ecu_factory
-				has_designation = col_habitat_factory
-				has_designation = col_ring_factory
-			}
+			is_col_factory = yes
 		}
 		modifier = {
 			job_artificer_per_pop = 1
@@ -390,13 +293,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_designation = col_factory
-				has_designation = col_mac_factory
-				has_designation = col_ecu_factory
-				has_designation = col_habitat_factory
-				has_designation = col_ring_factory
-			}
+			is_col_factory = yes
 		}
 		modifier = {
 			job_artisan_drone_per_pop = 1
@@ -415,11 +312,7 @@ deposit_wtmnb_city = {
 					has_technology = tech_AL_LilyManagement
 				}
 			}
-			OR = {
-				has_designation = col_fortress
-				has_designation = col_habitat_fortress
-				has_designation = col_ring_fortress
-			}
+			is_col_fortress = yes
 		}
 		modifier = {
 			job_soldier_per_pop = 1
@@ -433,11 +326,7 @@ deposit_wtmnb_city = {
 				is_gestalt = no
 				has_technology = tech_AL_LilyManagement
 			}
-			OR = {
-				has_designation = col_fortress
-				has_designation = col_habitat_fortress
-				has_designation = col_ring_fortress
-			}
+			is_col_fortress = yes
 		}
 		modifier = {
 			job_AL_soldier_per_pop = 1
@@ -450,11 +339,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_designation = col_fortress
-				has_designation = col_habitat_fortress
-				has_designation = col_ring_fortress
-			}
+			is_col_fortress = yes
 		}
 		modifier = {
 			job_warrior_drone_per_pop = 1
@@ -491,11 +376,7 @@ deposit_wtmnb_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			OR = {
-				has_designation = azur_city1
-				has_designation = azur_cityG
-				has_designation = azur_cityS
-			}
+			is_col_azur_city = yes
 		}
 		modifier = {
 			job_ai_azur_assistant_per_pop = 1
@@ -509,7 +390,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = no
 			}
-			has_designation = col_prostitution
+			is_col_lust = yes
 		}
 		modifier = {
 			job_ai_sex_master_per_pop = 1
@@ -523,7 +404,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			has_designation = col_prostitution
+			is_col_lust = yes
 		}
 		modifier = {
 			job_ai_sex_master_drone_per_pop = 1
@@ -537,7 +418,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = no
 			}
-			has_designation = col_faith
+			is_col_pure = yes
 		}
 		modifier = {
 			job_ai_sage_master_per_pop = 1
@@ -549,7 +430,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			has_designation = col_faith
+			is_col_pure = yes
 		}
 		modifier = {
 			job_ai_sex_sage_drone_per_pop = 1
@@ -563,12 +444,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_designation = col_generator
-				has_designation = col_habitat_energy
-				has_designation = col_ring_generator
-				has_designation = col_ring_trade
-			}
+			is_col_generator = yes
 		}
 		modifier = {
 			job_technician_drone_per_pop = 1
@@ -582,12 +458,7 @@ deposit_wtmnb_city = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
-			OR = {
-				has_designation = col_generator
-				has_designation = col_habitat_energy
-				has_designation = col_ring_generator
-				has_designation = col_ring_trade
-			}
+			is_col_generator = yes
 		}
 		modifier = {
 			job_technician_per_pop = 1
@@ -600,12 +471,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_fallen_empire_spiritualist = yes
 			}
-			OR = {
-				has_designation = col_generator
-				has_designation = col_habitat_energy
-				has_designation = col_ring_generator
-				has_designation = col_ring_trade
-			}
+			is_col_generator = yes
 		}
 		modifier = {
 			job_fe_acolyte_generator_per_pop = 1
@@ -619,10 +485,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_designation = col_farming
-				has_designation = col_ring_farming
-			}
+			is_col_farming = yes
 		}
 		modifier = {
 			job_agri_drone_per_pop = 1
@@ -636,10 +499,7 @@ deposit_wtmnb_city = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
-			OR = {
-				has_designation = col_farming
-				has_designation = col_ring_farming
-			}
+			is_col_farming = yes
 		}
 		modifier = {
 			job_farmer_per_pop = 1
@@ -652,10 +512,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_fallen_empire_spiritualist = yes
 			}
-			OR = {
-				has_designation = col_farming
-				has_designation = col_ring_farming
-			}
+			is_col_farming = yes
 		}
 		modifier = {
 			job_fe_acolyte_farm_per_pop = 1
@@ -665,7 +522,7 @@ deposit_wtmnb_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			has_designation = col_wg_pantsu
+			is_col_wg_pantsu = yes
 		}
 		modifier = {
 			job_wsg_shop_pantsu_collector_per_pop = 1
@@ -675,7 +532,7 @@ deposit_wtmnb_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			has_designation = col_wg_neo_alpha
+			is_col_wg_neo_alpha = yes
 		}
 		modifier = {
 			job_wsg_neo_producer_per_pop = 0.5
@@ -687,10 +544,10 @@ deposit_wtmnb_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			has_designation = col_sh_srse
 			owner = {
 				has_authority = auth_warshipgirls
 			}
+			is_col_sh_srse = yes
 		}
 		modifier = {
 			job_wsg_job_wsg_senergy_per_pop = 1
@@ -700,10 +557,10 @@ deposit_wtmnb_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			has_designation = col_sh_srse
 			owner = {
 				has_authority = auth_shenhai
 			}
+			is_col_sh_srse = yes
 		}
 		modifier = {
 			job_wsg_job_sh_senergy_per_pop = 1
@@ -717,10 +574,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_designation = col_habitat_mining
-				has_designation = col_mining
-			}
+			is_col_mining = yes
 		}
 		modifier = {
 			job_mining_drone_per_pop = 1
@@ -734,10 +588,7 @@ deposit_wtmnb_city = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
-			OR = {
-				has_designation = col_habitat_mining
-				has_designation = col_mining
-			}
+			is_col_mining = yes
 		}
 		modifier = {
 			job_miner_per_pop = 1
@@ -750,10 +601,7 @@ deposit_wtmnb_city = {
 			owner = {
 				is_fallen_empire_spiritualist = yes
 			}
-			OR = {
-				has_designation = col_habitat_mining
-				has_designation = col_mining
-			}
+			is_col_mining = yes
 		}
 		modifier = {
 			job_fe_acolyte_mine_per_pop = 1
@@ -832,5 +680,6 @@ deposit_wtmnb_4th_key_expand = {
 	}
 	planet_modifier = {
 		planet_max_districts_add = 10
+		planet_max_buildings_add = 5
 	}
 }
