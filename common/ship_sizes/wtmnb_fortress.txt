@@ -1,12 +1,13 @@
 wtmnb_fortress = {
+	is_space_object = yes
 	max_speed = 30
-	acceleration = 0.5
+	acceleration = 0.2
 	rotation_speed = 0.1
-	collision_radius = 7
+	collision_radius = 32
 	graphical_culture = yes
 	max_hitpoints = 2000000
-	entity = "star_eater_ship_entity"
-	formation_priority = @juggernaut_formation_priority
+	entity = "star_eater_entity"
+	formation_priority = 4
 	modifier = {
 		ship_shield_add = 1000000
 		ship_armor_add = 1000000
@@ -37,34 +38,22 @@ wtmnb_fortress = {
 			locator = "part1"
 		}
 	}
+	potential_country = {
+		has_country_flag = wtmnb_order
+	}
 	potential_construction = {
-		exists = owner
-		owner = {
-			has_country_flag = wtmnb_order
-			NOT = {
-				any_owned_ship = {
-					is_ship_size = wtmnb_fortress
-				}
-			}
-		}
 		OR = {
 			is_scope_type = starbase
 			is_scope_type = megastructure
 		}
 	}
 	possible_construction = {
-		AND = {
-			exists = owner
-			owner = {
-				has_country_flag = wtmnb_order
-			}
-			OR = {
-				is_scope_type = starbase
-				is_scope_type = megastructure
-			}
+		OR = {
+			is_scope_type = starbase
+			is_scope_type = megastructure
 		}
 	}
-	num_target_locators = 40
+	num_target_locators = 0
 	can_have_federation_design = no
 	enable_default_design = no	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes
@@ -96,7 +85,6 @@ wtmnb_fortress = {
 		ship_starting_experience_add = 1000
 	}
 	combat_disengage_chance = 1
-	
 	takes_name_from_ship_design = yes
 	uses_name_prefix = no
 	ai_ship_data = {

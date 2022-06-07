@@ -1,0 +1,101 @@
+
+ship_section_template = {
+	key = "WTMNB_FORT_CORE2"
+	ship_size = wtmnb_fortress
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "starbase_citadel_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_weight = {
+		weight = 100
+	}
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "wtmnb_titanic_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "wtmnb_titanic_turret"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "wtmnb_titanic_turret"
+		locatorname = "medium_gun_07"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "medium_gun_05"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "medium_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		template = "extra_large_turret"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_08"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_09"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_010"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_011"
+	}
+	component_slot = {
+		name = "PD_05"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_012"
+	}
+	component_slot = {
+		name = "PD_06"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_013"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "strike_craft_locator_03"
+	}
+
+	large_utility_slots = 0
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 150
+		}
+	}
+}
