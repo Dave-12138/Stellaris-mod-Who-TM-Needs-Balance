@@ -15,8 +15,6 @@ tech_wtmnb_fortress = {
 		factor = 0
 	}
 	potential = {
-		OR = {
-			is_ai = no
-		}
+		has_country_flag = wtmnb_order
 	}
 }

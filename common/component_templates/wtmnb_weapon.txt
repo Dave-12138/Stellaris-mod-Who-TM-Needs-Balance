@@ -23,7 +23,7 @@ weapon_component_template = {
 	armor_damage = 100
 	hull_damage = 10.25
 	tracking = 1
-	power = -250
+	power = -420
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
@@ -43,6 +43,61 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
+			alloys = @titanic_t6_cost
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+weapon_component_template = {
+	key = "WTMNB_WEAPON_X"
+	size = extra_large
+	type = instant
+	icon = "GFX_ship_part_wtmnb_weapon"
+	icon_frame = 1
+	use_ship_kill_target = no
+	damage = {
+		min = 20000
+		max = 20000
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 1
+	range = 1000
+	accuracy = 1
+	shield_penetration = 1
+	armor_penetration = 1
+	shield_damage = 100
+	armor_damage = 100
+	hull_damage = 10.25
+	tracking = 1
+	power = -260
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "WTMNB_WEAPON"
+	projectile_gfx = "tachyon_lance"
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		weapon_role_anti_shield
+		weapon_role_artillery
+		weapon_role_anti_hull
+		weapon_type_energy
+	}
+	resources = {
+		category = ship_components
+		cost = {
 			alloys = @xl_t6_cost
 		}
 		upkeep = {
@@ -52,6 +107,31 @@ weapon_component_template = {
 	}
 	ai_weight = {
 		weight = 100
+	}
+}
+
+weapon_component_template = {
+	key = "WTMNB_WEAPON_W"
+	size = planet_killer
+	type = planet_killer
+	static_rotation = yes
+	use_ship_kill_target = no
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	power = -8000
+	total_fire_time = 1
+	accuracy = 1
+	range = 0
+	icon = GFX_ship_part_wtmnb_weapon
+	icon_frame = 1
+	component_set = WTMNB_WEAPON
+	planet_destruction_gfx = "neutron_planet_gfx"
+	size_restriction = {
+		wtmnb_fortress
+	}
+	ai_weight = {
+		weight = 101
 	}
 }
 
@@ -105,85 +185,5 @@ weapon_component_template = {
 	}
 	ai_weight = {
 		weight = 100
-	}
-}
-
-weapon_component_template = {
-	key = "WTMNB_WEAPON_X"
-	size = extra_large
-	type = instant
-	icon = "GFX_ship_part_wtmnb_weapon"
-	icon_frame = 1
-	use_ship_kill_target = no
-	damage = {
-		min = 20000
-		max = 20000
-	}
-	windup = {
-		min = 0
-		max = 0
-	}
-	total_fire_time = 1
-	range = 1000
-	accuracy = 1
-	shield_penetration = 1
-	armor_penetration = 1
-	shield_damage = 100
-	armor_damage = 100
-	hull_damage = 10.25
-	tracking = 1
-	power = -25
-	prerequisites = {
-		"tech_wtmnb_fortress"
-	}
-	component_set = "WTMNB_WEAPON"
-	projectile_gfx = "tachyon_lance"
-	tags = {
-		weapon_type_energy
-	}
-	ai_tags = {
-		weapon_role_anti_armor
-		weapon_role_anti_shield
-		weapon_role_artillery
-		weapon_role_anti_hull
-		weapon_type_energy
-	}
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @xl_t6_cost
-		}
-		upkeep = {
-			energy = @xl_t6_upkeep_energy
-			alloys = @xl_t6_upkeep_alloys
-		}
-	}
-	ai_weight = {
-		weight = 100
-	}
-}
-
-weapon_component_template = {
-	key = "WTMNB_WEAPON_W"
-	size = planet_killer
-	type = planet_killer
-	static_rotation = yes
-	use_ship_kill_target = no
-	prerequisites = {
-		"tech_wtmnb_fortress"
-	}
-	power = -8000
-	total_fire_time = 1
-	accuracy = 1
-	range = 0
-	icon = GFX_ship_part_wtmnb_weapon
-	icon_frame = 1
-	component_set = WTMNB_WEAPON
-	planet_destruction_gfx = "neutron_planet_gfx"
-	size_restriction = {
-		wtmnb_fortress
-	}
-	ai_weight = {
-		weight = 101
 	}
 }

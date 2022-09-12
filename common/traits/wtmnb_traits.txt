@@ -86,7 +86,6 @@ leader_trait_wtmnb_stigmata_ruler = {
 		shipclass_mining_station_build_speed_mult = 1000
 		shipclass_research_station_build_speed_mult = 1000
 		megastructure_build_speed_mult = 5000
-		country_government_civic_points_add = 10
 		# 弹弓
 		catapult_range_mult = 10
 		catapult_spread_mult = 3

@@ -1,43 +1,47 @@
-
-
-wtmnb_cannon = {
+wtmnb_boomer = {
 	max_speed = @speed_slow
 	acceleration = 0.2
 	rotation_speed = 0.15
 	collision_radius = @titan_collision_radius
-	max_hitpoints = 100000
-	entity = "titan_bow_entity"
-	size_multiplier = 4
-	fleet_slot_size = 4
+	max_hitpoints = 500
+	entity = "colonizer_entity"
+	size_multiplier = 1
+	fleet_slot_size = 1
 	combat_size_multiplier = 8
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	potential_construction = {
 		exists = owner
 		owner = {
 			has_country_flag = wtmnb_order
 		}
 		has_starbase_size = wtmnb_fortress
-		
+	}
+	ship_modifier = {
+		ship_evasion_mult = -10
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_military_station
+	icon = ship_size_military_32
 	base_buildtime = 1080
-
-	components_add_to_cost = no
-
+	auto_upgrade = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
+	combat_disengage_chance = -2
 	is_designable = yes
-	prerequisites = { "tech_wtmnb_fortress" }
-	class = shipclass_military
+	components_add_to_cost = no
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	class = shipclass_military_special
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	default_behavior = carrier
 	resources = {
 		category = ships
 		cost = {
@@ -47,5 +51,4 @@ wtmnb_cannon = {
 			energy = 8
 		}
 	}
-
 }

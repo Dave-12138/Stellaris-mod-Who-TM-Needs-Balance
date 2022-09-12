@@ -4,13 +4,19 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_5"
 	icon_frame = 1
-	power = 500
-
-	prerequisites = { "tech_wtmnb_fortress" }
+	power = 2000
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
 	component_set = "power_core"
-	size_restriction = { wtmnb_science wtmnb_cannon }
-
+	size_restriction = {
+		wtmnb_science
+		wtmnb_cannon
+		wtmnb_boomer
+		wtmnb_fortress
+	}
 }
+
 # 普普通通 flt
 utility_component_template = {
 	key = "WTMNB_JUMP_DRIVE"
@@ -49,6 +55,56 @@ utility_component_template = {
 	}
 	component_set = "ftl_components"
 }
+
+# 作战电脑
+utility_component_template = {
+	key = "COMBAT_COMPUTER_WTMNB_BOOMER"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+	}
+	ship_behavior = "colossus"
+	class_restriction = {
+		shipclass_military_special
+	}
+	size_restriction = {
+		wtmnb_boomer
+	}
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_WTMNB_CANNON"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = 10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+	}
+	ship_behavior = platform
+	size_restriction = {
+		wtmnb_cannon
+		wtmnb_fortress
+	}
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = 0
+	}
+}
+
 # 阿拉哈托
 utility_component_template = {
 	key = "SHIP_THRUSTER_WTMNB"
@@ -59,7 +115,7 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 12
+			alloys = 80
 			sr_dark_matter = 1
 		}
 	}
@@ -139,6 +195,7 @@ utility_component_template = {
 		weight = 100
 	}
 }
+
 # 一键 虚空万藏
 utility_component_template = {
 	key = "WTMNB_1ST_KEY"
@@ -160,13 +217,14 @@ utility_component_template = {
 		weight = 100
 	}
 }
+
 # 二键 千界一乘 ftl
 utility_component_template = {
 	key = "WTMNB_2ND_KEY"
 	size = small
 	icon = "GFX_ship_part_wtmnb_2nd_key"
 	icon_frame = 1
-	power = 0
+	power = 5000
 	ftl = yes
 	jumpdrive = yes
 	ship_modifier = {
@@ -185,7 +243,9 @@ utility_component_template = {
 	ai_weight = {
 		weight = 50
 	}
-	size_restriction = { wtmnb_fortress }
+	size_restriction = {
+		wtmnb_fortress
+	}
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
@@ -213,6 +273,7 @@ utility_component_template = {
 		weight = 100
 	}
 }
+
 # 五键 万物休眠
 utility_component_template = {
 	key = "WTMNB_5TH_KEY"
@@ -263,6 +324,7 @@ utility_component_template = {
 		weight = 100
 	}
 }
+
 # 六键 黑渊白花
 utility_component_template = {
 	key = "WTMNB_6TH_KEY"
@@ -308,6 +370,7 @@ utility_component_template = {
 		weight = 100
 	}
 }
+
 # 七键 天火圣裁
 utility_component_template = {
 	key = "WTMNB_7TH_KEY"
@@ -332,6 +395,7 @@ utility_component_template = {
 		weight = 100
 	}
 }
+
 # 八键 羽渡尘
 utility_component_template = {
 	key = "WTMNB_8TH_KEY"
@@ -353,7 +417,6 @@ utility_component_template = {
 		weight = 100
 	}
 }
-
 
 # 九键 伊甸之星
 utility_component_template = {
@@ -385,7 +448,6 @@ utility_component_template = {
 			priority = 20
 		}
 		modifier = {
-
 			ship_evasion_add = 1000
 			ship_evasion_mult = 1000
 			ship_speed_mult = 100000
@@ -411,6 +473,7 @@ utility_component_template = {
 		weight = 100
 	}
 }
+
 # 11键 犹大
 utility_component_template = {
 	key = "WTMNB_11TH_KEY"
@@ -444,7 +507,6 @@ utility_component_template = {
 			ship_fire_rate_mult = -2000
 			ship_armor_penetration_mult = -5
 			ship_shield_penetration_mult = -5
-			
 		}
 		damage_per_day = {
 			shield_damage = 100000

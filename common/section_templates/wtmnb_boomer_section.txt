@@ -1,0 +1,15 @@
+
+ship_section_template = {
+	key = "WTMNB_BOOMER_SECTION"
+	ship_size = wtmnb_boomer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "colony_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_wtmnb_fortress }
+
+	
+	aux_utility_slots = 1
+
+}

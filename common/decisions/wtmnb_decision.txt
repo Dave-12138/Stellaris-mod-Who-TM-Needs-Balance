@@ -308,7 +308,7 @@ decision_wtmnb_city = {
 	}
 	effect = {
 		if = {
-			limit = { 
+			limit = {
 				# 不是：
 				NOR = {
 					# 居住站
@@ -360,7 +360,7 @@ decision_wtmnb_planet_extend = {
 	}
 	allow = {
 		custom_tooltip = {
-			fail_text = terraform_needs_4th_key_and_eden_star
+			fail_text = terraform_needs_4th_key
 			solar_system = {
 				any_ship_in_system = {
 					has_component = WTMNB_4TH_KEY
@@ -383,6 +383,48 @@ decision_wtmnb_planet_extend = {
 		else = {
 			add_deposit = deposit_wtmnb_4th_key_expand
 		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_wtmnb_more_civic_point = {
+	enactment_time = 1
+	icon = decision_politics
+	owned_planets_only = yes
+	
+	resources = {
+		category = decisions
+		cost = {
+			unity = 100
+		}
+	}
+	potential = {
+		is_capital = yes
+		OR = {
+			solar_system = {
+				exists = owner
+				owner = {
+					has_country_flag = wtmnb_order
+				}
+			}
+			any_fleet_in_orbit = {
+				any_owned_ship = {
+					has_component = WTMNB_8TH_KEY
+				}
+			}
+		}
+	}
+	allow = {
+		solar_system = {
+			any_ship_in_system = {
+				has_component = WTMNB_8TH_KEY
+			}
+		}
+	}
+	effect = {
+		add_deposit = deposit_wtmnb_city_civic_point
 	}
 	ai_weight = {
 		weight = 0

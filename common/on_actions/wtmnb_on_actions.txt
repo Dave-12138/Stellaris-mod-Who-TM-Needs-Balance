@@ -27,3 +27,10 @@ on_leader_spawned = {
 		wtmnb.6
 	}
 }
+
+# 崩坏裂变弹
+on_ship_destroyed_victim = {
+	events = {
+		wtmnb.2000
+	}
+}

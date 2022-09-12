@@ -9,6 +9,10 @@ wtmnb_edict = {
 		}
 	}
 	effect = {
+		hidden_effect = {
+			set_global_flag = wtmnb_edict_checked
+			set_country_flag = wtmnb_order
+		}
 		give_technology = {
 			tech = tech_wtmnb_fortress
 			message = no
@@ -19,10 +23,6 @@ wtmnb_edict = {
 		}
 		add_resource = {
 			alloys = 10000
-		}
-		hidden_effect = {
-			set_global_flag = wtmnb_edict_checked
-			set_country_flag = wtmnb_order
 		}
 	}
 	potential = {
@@ -85,7 +85,7 @@ wtmnb_edict_3 = {
 		is_ai = no
 	}
 }
-
+# 对被巨构影响好感国家的好感修正
 wtmnb_edict_5 = {
 	icon = GFX_nullobject
 	length = -1
@@ -99,6 +99,14 @@ wtmnb_edict_5 = {
 	}
 	potential = {
 		is_ai = no
+		any_playable_country = {
+			NOT = {
+				is_same_empire = root
+			}
+			any_owned_megastructure = {
+				is_megastructure_type = wtmnb_love_mark
+			}
+		}
 	}
 	allow = {
 		is_ai = no

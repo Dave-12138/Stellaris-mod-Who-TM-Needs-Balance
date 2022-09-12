@@ -42,6 +42,9 @@ district_meeting_room = {
 		AND = {
 			exists = owner
 			OR = {
+				# 首都
+				is_capital = yes
+				is_col_capital = yes
 				# 普通
 				has_designation = col_bureau
 				has_designation = col_habitat_bureau

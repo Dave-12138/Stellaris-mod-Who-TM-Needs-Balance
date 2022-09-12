@@ -26,6 +26,12 @@
  WTMNB_CANNON_CORE:0 "$wtmnb_cannon$"
  SHIP_GRAPHICS_WTMNB_CANNON_DESC:0 "高机动化浮游炮，瞬息三千六百炮，是居家旅行杀人越货必备法宝"
 
+ wtmnb_boomer:0 "崩坏裂变弹"
+ wtmnb_boomer_plural:0 "崩坏裂变弹"
+ WTMNB_BOOMER_SECTION:0 "崩坏裂变弹"
+ SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "被击毁时清空星系中舰船"
+
+
  WTMNB_SCIENCE_REACTOR:0 "虚拟反应堆"
  WTMNB_SCIENCE_REACTOR_DESC:0 "我们做了一个反应堆，但没完全做"
 
@@ -70,6 +76,9 @@
 
  WTMNB_GRAND_KEY:0 "神之键"
  WTMNB_GRAND_KEY_DESC:0 "引导使用虚数权能的工具"
+
+ COMBAT_COMPUTER_WTMNB_BOOMER:0 "神风作战电脑"
+ COMBAT_COMPUTER_WTMNB_CANNON:0 "长距炮击作战电脑"
 #################
  trait_wtmnb_stigmata:0 "圣痕"
  trait_wtmnb_stigmata_desc:0 "这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_stigmata$。"
@@ -123,6 +132,12 @@
  target_must_exist:0 "必须在目标境内，即必须存在恒星基地或殖民地"
  portal_in_neighbor:0 "$TRIGGER_FAIL$毗邻的星系存在$wtmnb_portal$，若在此建立$wtmnb_portal$会导致无事发生"
 ##################
+#            _ _      _   
+#    ___  __| (_) ___| |_ 
+#   / _ \/ _` | |/ __| __|
+#  |  __/ (_| | | (__| |_ 
+#   \___|\__,_|_|\___|\__|
+                        
  edict_wtmnb_edict:0 "死海文书"
  edict_wtmnb_edict_desc:0 "部分科技解锁"
  edict_wtmnb_edict_2:0 "绯红之王"
@@ -169,6 +184,8 @@
 
  deposit_wtmnb_4th_key_expand:0 "第四神之键"
  deposit_wtmnb_4th_key_expand_desc:0 "额外开拓的可利用地区"
+ deposit_wtmnb_city_civic_point:0 "额外国民理念点数"
+ deposit_wtmnb_city_civic_point_desc:0 "如果可用点数太多，就把这个挖掉吧"
 
 
 #       _ _     _        _      _       
@@ -215,6 +232,15 @@
 
  wtmnb.5.name:0 "超空间航路已建立"
  wtmnb.5.desc:0 "[from.GetName]到[wtmnb_portal_start.GetName]的超空间航路已经建立"
+
+ wtmnb.2001.name:0 "崩坏裂变弹已引爆"
+ wtmnb.2001.desc:0 "崩坏裂变弹在[wtmnb_boomed_system.GetName]引爆，我们仍可以控制这些崩坏能来更好地达到战术目标"
+ wtmnb.2001.a:0 "任由其爆炸"
+ wtmnb.2001.a.tip:0 "这会摧毁星系内几乎所有舰队，包括我们的"
+ wtmnb.2001.b:0 "太虚剑神"
+ wtmnb.2001.b.tip:0 "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
+ wtmnb.2001.z:0 "遏制爆炸"
+ 
 
 
  wtmnb_colossus.1001.name:0 "月光王座"
@@ -334,7 +360,7 @@
  terraform_needs_4th_key:0 "需要§B$WTMNB_4TH_KEY$§!"
  terraform_needs_4th_key_and_eden_star:0 "需要§B$WTMNB_4TH_KEY$§!和§B$WTMNB_9TH_KEY$§!"
  add_20_pop:0 "增加20个£pops£人口，物种随机"
- REMOVE_PLANET_EFFECT:0 "§Y[This.GetName]§!蒸发"
+#  REMOVE_PLANET_EFFECT:0 "§Y[This.GetName]§!蒸发"
  can_molt_planet:0 "可以在行星决策中选择将行星焚毁"
  ringworld_will_be_not_colonizable:0 "居住区被击毁"
 ####################
@@ -345,7 +371,7 @@
  decision_wtmnb_molten:0 "熔毁"
  decision_wtmnb_molten_desc:0 "使用第七律者权柄对星球表面清洗，除了可能蒸发一部分地质结构外，还通常会导致星球不再宜居"
  decision_wtmnb_planet_extend:0 "可用区划拓展"
- decision_wtmnb_planet_extend_desc:0 "增加30最大区划数"
+ decision_wtmnb_planet_extend_desc:0 "增加最大区划数\n+30,+10,+10,+10……"
  decision_wtmnb_city:0 "$pc_wtmnb_city$计划"
  decision_wtmnb_city_desc:0 "将这里智能化改造"
  decision_wtmnb_break_border:0 "开放边境"
@@ -354,6 +380,8 @@
  decision_wtmnb_11th_shield_desc:0 "在重力井外展开神恩结界，从而阻止跃迁引擎正确定位本星系"
  decision_wtmnb_11th_shield_off:0 "解除$aura_judah$"
  decision_wtmnb_11th_shield_off_desc:0 "解除神恩结界，让除我们之外的文明可以使用跃迁引擎折跃进入本星系"
+ decision_wtmnb_more_civic_point:0 "额外国民理念点数"
+ decision_wtmnb_more_civic_point_desc:0 "可微调数量的额外国民理念点数，点多了可以地块清理挖掉\n总算不用忍受左上角总挂个警报，国民理念已经选的UI装不下的情况了"
 ##################
  
  pc_wtmnb_city:0 "虚渺之城"
@@ -378,7 +406,7 @@
  job_ai_wtmnb_master_plural:0 "$job_ai_wtmnb_master$"
  job_ai_wtmnb_master_desc:0 "每天的工作是看着屏幕发呆"
  mod_job_ai_wtmnb_master_add:0 "$job_ai_wtmnb_master$岗位"
- mod_job_ai_wtmnb_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master$岗位$"
+ mod_job_ai_wtmnb_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master$岗位"
  mod_job_ai_wtmnb_master_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_wtmnb_master_add£"
  job_ai_wtmnb_master_drone:0 "设备维护子个体"
  job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master_drone$"

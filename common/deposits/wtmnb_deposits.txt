@@ -670,6 +670,33 @@ deposit_wtmnb_city_rubbish = {
 	time = 30
 }
 
+deposit_wtmnb_city_civic_point = {
+	is_for_colonizable = yes
+	icon = d_former_relic_world
+	category = deposit_cat_blockers
+	potential = {
+		always = no
+		has_deposit = deposit_wtmnb_city
+	}
+	drop_weight = {
+		weight = 0
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1
+		}
+	}
+	can_be_cleared = {
+		always = yes
+	}
+
+	country_modifier = {
+		country_government_civic_points_add = 1
+	}
+	time = 360
+}
+
 deposit_wtmnb_4th_key_expand = {
 	is_for_colonizable = yes
 	icon = d_4th_planet_expand
