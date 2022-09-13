@@ -350,6 +350,7 @@ country_event = {
 	}
 }
 
+# 引爆选项
 country_event = {
 	id = wtmnb.2001
 	is_triggered_only = yes
@@ -401,7 +402,7 @@ country_event = {
 				every_owned_fleet = {
 					wtmnb_safe_destroy_fleet = yes
 				}
-				fire_on_action={
+				fire_on_action = {
 					on_action = on_country_destroyed
 					scopes = {
 						from = event_target:wtmnb_owner
@@ -421,5 +422,40 @@ country_event = {
 	}
 	option = {
 		name = wtmnb.2001.z
+	}
+}
+
+# 手动引爆
+country_event = {
+	id = wtmnb.2002
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			any_owned_ship = {
+				is_ship_size = wtmnb_boomer
+			}
+		}
+	}
+	immediate = {
+		random_country = {
+			limit = {
+				has_country_flag = wtmnb_order
+			}
+			save_event_target_as = wtmnb_owner
+		}
+		from = {
+			random_owned_ship = {
+				save_event_target_as = wtmnb_boomed_boomer
+			}
+			solar_system = {
+				save_event_target_as = wtmnb_boomed_system
+			}
+		}
+		event_target:wtmnb_owner = {
+			country_event = {
+				id = wtmnb.2001
+			}
+		}
 	}
 }

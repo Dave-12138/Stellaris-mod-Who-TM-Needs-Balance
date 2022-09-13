@@ -1,0 +1,90 @@
+special_project = {
+	key = "WTMNB_REMOVE_MEGASTRUCTURE"
+	event_chain = "wtmnb_remove_megastructure_chain"
+	days_to_research = 20
+	picture = GFX_evt_alien_nature
+	event_scope = ship_event
+	timelimit = 60
+	location = yes
+	on_success = {
+		from = {
+			# megastructure(location)
+			if = {
+				limit = {
+					OR = {
+						is_megastructure_type = dyson_sphere_0
+						is_megastructure_type = dyson_sphere_1
+						is_megastructure_type = dyson_sphere_2
+						is_megastructure_type = dyson_sphere_3
+						is_megastructure_type = dyson_sphere_4
+						is_megastructure_type = dyson_sphere_5
+					}
+				}
+				if = {
+					limit = {
+						exists = owner
+					}
+					owner = {
+						remove_country_flag = built_dyson_sphere
+					}
+				}
+				else = {
+					prev.owner = {
+						remove_country_flag = built_dyson_sphere
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_megastructure_type = wtmnb_dyson
+				}
+				if = {
+					limit = {
+						exists = owner
+					}
+					owner = {
+						remove_country_flag = wtmnb_dyson_built
+					}
+				}
+				else = {
+					prev.owner = {
+						remove_country_flag = wtmnb_dyson_built
+					}
+				}
+			}
+			remove_megastructure = this
+		}
+		fromfrom = {
+			# country
+			change_variable = {
+				which = wtmnb_rmmega_chain_count
+				value = -1
+			}
+			
+			if = {
+				limit = {
+					check_variable = {
+						which = wtmnb_rmmega_chain_count
+						value < 1
+					}
+				}
+				end_event_chain = wtmnb_remove_megastructure_chain
+			}
+		}
+	}
+	on_fail = {
+		change_variable = {
+			which = wtmnb_rmmega_chain_count
+			value = -1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = wtmnb_rmmega_chain_count
+					value < 1
+				}
+			}
+			end_event_chain = wtmnb_remove_megastructure_chain
+		}
+	}
+}

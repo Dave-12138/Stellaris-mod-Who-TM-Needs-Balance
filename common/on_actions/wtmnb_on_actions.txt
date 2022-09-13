@@ -28,9 +28,18 @@ on_leader_spawned = {
 	}
 }
 
-# 崩坏裂变弹
+
 on_ship_destroyed_victim = {
 	events = {
+		# 崩坏裂变弹
 		wtmnb.2000
+	}
+}
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+		# 崩坏裂变弹 手动引爆
+		wtmnb.2002
 	}
 }

@@ -85,6 +85,71 @@ wtmnb_edict_3 = {
 		is_ai = no
 	}
 }
+
+# 拆巨构
+wtmnb_edict_4 = {
+	icon = GFX_nullobject
+	length = 1
+	resources = {
+		category = edicts
+		upkeep = {
+			energy = 1
+		}
+	}
+	effect = {
+		hidden_effect = {
+			# end_event_chain = wtmnb_remove_megastructure_chain
+			set_variable = {
+				which = wtmnb_rmmega_chain_count
+				value = 0
+			}
+		}
+		begin_event_chain = {
+			event_chain = wtmnb_remove_megastructure_chain
+		}
+		every_owned_ship = {
+			limit = {
+				is_ship_class = shipclass_constructor
+			}
+			solar_system = {
+				every_system_megastructure = {
+					enable_special_project = {
+						name = WTMNB_REMOVE_MEGASTRUCTURE
+						location = this
+						owner = root
+					}
+					hidden_effect = {
+						root = {
+							change_variable = {
+								which = wtmnb_rmmega_chain_count
+								value = 1
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = wtmnb_rmmega_chain_count
+					value < 1
+				}
+			}
+			end_event_chain = wtmnb_remove_megastructure_chain
+		}
+	}
+	potential = {
+		is_ai = no
+	}
+	allow = {
+		is_ai = no
+		NOT = {
+			has_event_chain = wtmnb_remove_megastructure_chain
+		}
+	}
+}
+
 # 对被巨构影响好感国家的好感修正
 wtmnb_edict_5 = {
 	icon = GFX_nullobject
@@ -99,13 +164,8 @@ wtmnb_edict_5 = {
 	}
 	potential = {
 		is_ai = no
-		any_playable_country = {
-			NOT = {
-				is_same_empire = root
-			}
-			any_owned_megastructure = {
-				is_megastructure_type = wtmnb_love_mark
-			}
+		any_megastructure = {
+			is_megastructure_type = wtmnb_love_mark
 		}
 	}
 	allow = {
@@ -113,6 +173,7 @@ wtmnb_edict_5 = {
 	}
 }
 
+# 自动探索 自动科研
 wtmnb_edict_6 = {
 	icon = GFX_nullobject
 	length = -1
@@ -148,6 +209,7 @@ wtmnb_edict_6 = {
 	}
 }
 
+# 第一次接触
 wtmnb_edict_7 = {
 	icon = GFX_nullobject
 	length = -1
@@ -164,7 +226,6 @@ wtmnb_edict_7 = {
 					is_same_empire = root
 					# is_country_type = global_event
 				}
-
 			}
 			root = {
 				establish_communications = prev

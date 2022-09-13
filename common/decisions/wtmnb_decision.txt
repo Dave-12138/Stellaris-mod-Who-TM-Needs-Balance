@@ -192,6 +192,7 @@ decision_wtmnb_break_border = {
 					set_closed_borders = {
 						who = from
 						status = no
+						forced = 36000
 					}
 				}
 			}

@@ -168,6 +168,7 @@ country_event = {
 			set_closed_borders = {
 				who = event_target:wtmnb_target.owner
 				status = yes
+				forced = 36000
 			}
 		}
 	}
@@ -182,6 +183,7 @@ country_event = {
 			set_closed_borders = {
 				who = event_target:wtmnb_target.owner
 				status = no
+				forced = 36000
 			}
 		}
 	}
