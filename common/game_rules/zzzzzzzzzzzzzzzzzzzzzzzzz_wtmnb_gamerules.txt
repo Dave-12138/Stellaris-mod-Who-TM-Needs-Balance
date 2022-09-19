@@ -1,5 +1,5 @@
 # 为了兼容性，直接抄的小伞
-###_[跃迁限制]	FW/AAR	/古代帝国/wsg/阿夸/SOFE/Giga/Ehof/seooc/多彩/TAC/莉莉	####################################
+###_[星系跃迁限制]	FW/AAR	/古代帝国/wsg/阿夸/SOFE/Giga/Ehof/seooc/多彩/TAC/莉莉	####################################
 # Root = country attempting to target system for movement
 # This = system being targeted
 can_enter_system_by_jump = {
@@ -10,12 +10,14 @@ can_enter_system_by_jump = {
 			###_绝对通行	FW
 			root = {
 				OR = {
-					has_country_flag = z_fw_r_celestial_orrey_activited					# 璀璨星图
-					has_country_flag = z_fw_r_cheat_quantum_beacon_activited					# 永恒星炬
+					has_country_flag = FW_flg_cntr_CHT_orrery_ON					# 璀璨星图
+					has_country_flag = FW_flg_cntr_CHT_beacon_ON					# 永恒星炬
 				}
 			}
 			###_特殊通行	AAR/TAC
 			root = {
+				#	|禁止条件|
+				#	|通行可用|
 				OR = {
 					# AAR
 					has_country_flag = AAR_flg_cntr_JUMP_webway_TGT					# 网道行者
@@ -48,21 +50,25 @@ can_enter_system_by_jump = {
 					# vanilla
 					has_star_flag = lcluster
 					# wsg
-					has_star_flag = wg_sealed_system
-					has_star_flag = wg_psionic_systems
+					AND = {
+						has_global_flag = has_wsg_mod						# 舰r激活
+						OR = {
+							has_star_flag = wg_sealed_system
+							has_star_flag = wg_psionic_systems
+							AND = {
+								exists = space_owner
+								space_owner = {
+									is_country_type = monolith_crisis_country
+								}
+							}
+						}
+					}
 					# 古代帝国
 					has_star_flag = ag_no_jump_in_system
 					# 阿夸
 					has_star_flag = kuat_initial_system
-					has_star_flag = Kuat_system
-					has_star_flag = Kuat_system_1
-					has_star_flag = Kuat_system_2
-					has_star_flag = Kuat_system_3
-					has_star_flag = Kuat_system_int
-					has_star_flag = Kuat_system_int_1
-					has_star_flag = Kuat_system_int_2
-					has_star_flag = Kuat_system_int_3
-					has_star_flag = Kuat_system_int_4
+					has_star_flag = Kuat_empire_system
+					has_star_flag = ag_kae_e_area_system
 					AND = {
 						has_global_flag = starkillerbase_not_passed
 						has_star_flag = starkiller_system
@@ -102,17 +108,15 @@ can_enter_system_by_jump = {
 					#	has_star_flag = AI_system2
 					#	has_star_flag = AI_system3
 					#	has_star_flag = AI_system4
-					this = {
-						OR = {
-							has_megastructure = AIgate_opened
-							has_megastructure = AIgate_opened_02
-						}
-					}
+					#	this = {
+					#		OR = {
+					#			has_megastructure = AIgate_opened
+					#			has_megastructure = AIgate_opened_02
+					#		}
+					#	}
 					# 莉莉
 					has_star_flag = al_huge_home_bed
-				}
-				# 神恩结界
-				NOR = {
+					# 犹大的誓约
 					any_ship_in_system = {
 						is_ship_size = wtmnb_fortress
 					}
