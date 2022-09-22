@@ -32,6 +32,8 @@ trait_wtmnb_stigmata = {
 		TOUHOUGIRLS
 		UNITED_FLEET
 		LILY
+		Schale
+		NYTO
 		OTHER
 	}
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
@@ -208,6 +210,7 @@ leader_trait_wtmnb_stigmata_scientist = {
 }
 
 # envoy
+# 外交大使根本不会有特质啊（恼）
 leader_trait_wtmnb_stigmata_envoy = {
 	cost = 0
 	initial = no

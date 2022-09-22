@@ -14,7 +14,12 @@ tech_wtmnb_fortress = {
 	ai_weight = {
 		factor = 0
 	}
+	feature_flags = {
+		build_terraform_station
+	}
 	potential = {
 		has_country_flag = wtmnb_order
 	}
+	is_reverse_engineerable = no
+	ai_update_type = all
 }

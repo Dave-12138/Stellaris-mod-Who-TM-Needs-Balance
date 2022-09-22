@@ -1,7 +1,6 @@
 wtmnb_doom = {
 	trigger = {
 		owner = {
-			has_technology = tech_wtmnb_fortress
 			has_country_flag = wtmnb_order
 		}
 	}
@@ -25,7 +24,6 @@ wtmnb_doom = {
 wtmnb_invasion = {
 	trigger = {
 		owner = {
-			has_technology = tech_wtmnb_fortress
 			has_country_flag = wtmnb_order
 		}
 	}

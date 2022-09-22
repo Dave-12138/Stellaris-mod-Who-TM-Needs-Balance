@@ -17,10 +17,6 @@ wtmnb_edict = {
 			tech = tech_wtmnb_fortress
 			message = no
 		}
-		give_technology = {
-			tech = tech_terrestrial_sculpting
-			message = no
-		}
 		add_resource = {
 			alloys = 10000
 		}

@@ -30,7 +30,6 @@ wtmnb_fortress = {
 			alloys = @titan_upkeep_alloys
 		}
 	}
-	
 	components_add_to_cost = no
 	combat_size_multiplier = 32
 	size_multiplier = 32
@@ -90,8 +89,5 @@ wtmnb_fortress = {
 	combat_disengage_chance = 1
 	takes_name_from_ship_design = yes
 	uses_name_prefix = no
-	ai_ship_data = {
-		min = 1
-		max = 1
-	}
+	
 }

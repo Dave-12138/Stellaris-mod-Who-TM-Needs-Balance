@@ -25,7 +25,6 @@ wtmnb_dyson = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
 		has_country_flag = wtmnb_order
 	}
 	possible = {
@@ -129,7 +128,6 @@ wtmnb_love_mark = {
 		}
 	}
 	potential = {
-		has_technology = tech_wtmnb_fortress
 		has_country_flag = wtmnb_order
 	}
 	possible = {

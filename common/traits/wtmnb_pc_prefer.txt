@@ -1,9 +1,6 @@
 trait_pc_wtmnb_city_preference = {
 	randomized = no
 	sorting_priority = 30
-	opposites = {
-		"trait_repugnant"
-	}
 	leader_age_max = 15
 	leader_age_min = 10
 	ideal_planet_class = pc_wtmnb_city
@@ -26,6 +23,8 @@ trait_pc_wtmnb_city_preference = {
 		TOUHOUGIRLS
 		UNITED_FLEET
 		LILY
+		Schale
+		NYTO
 		OTHER
 	}
 	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"
@@ -36,7 +35,7 @@ trait_pc_wtmnb_city_preference = {
 	triggered_pop_modifier = {
 		potential = {
 			exists = planet
-			planet={
+			planet = {
 				is_planet_class = pc_wtmnb_city
 			}
 		}

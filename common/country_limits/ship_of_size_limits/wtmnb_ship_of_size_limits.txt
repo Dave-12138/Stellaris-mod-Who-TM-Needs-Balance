@@ -6,6 +6,6 @@ wtmnb_fortress_ships_limit = {
 	max = 32
 	show = {
 		is_scope_valid = yes
-		has_technology = tech_wtmnb_fortress
+		has_country_flag = wtmnb_order
 	}
 }

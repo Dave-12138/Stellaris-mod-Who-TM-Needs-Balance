@@ -315,9 +315,9 @@ decision_wtmnb_city = {
 					# 居住站
 					is_planet_class = pc_habitat
 					# 环
-					change_pc = pc_ringworld_tech_damaged
-					change_pc = pc_ringworld_seam_damaged
-					change_pc = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_ringworld_habitable_damaged
 					is_planet_class = pc_ringworld_tech
 					is_planet_class = pc_ringworld_seam
 					is_ringworld = yes
