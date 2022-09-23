@@ -81,7 +81,7 @@
  COMBAT_COMPUTER_WTMNB_CANNON:0 "长距炮击作战电脑"
 #################
  trait_wtmnb_stigmata:0 "圣痕"
- trait_wtmnb_stigmata_desc:0 "这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_stigmata$。"
+ trait_wtmnb_stigmata_desc:0 "§L这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_stigmata$。§!"
 
  leader_trait_wtmnb_stigmata:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_stigmata$。"

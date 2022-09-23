@@ -19,6 +19,7 @@ wtmnb_edict = {
 		}
 		add_resource = {
 			alloys = 10000
+			energy = 8000
 		}
 	}
 	potential = {

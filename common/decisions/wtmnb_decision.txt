@@ -92,6 +92,7 @@ decision_wtmnb_molten = {
 				}
 			}
 			remove_planet = yes
+			
 		}
 		else_if = {
 			limit = {
