@@ -362,6 +362,15 @@
  WTMNB_REMOVE_MEGASTRUCTURE_DESC:0 "在§B[This.System.GetName]§!星系拆除§B[This.GetName]§!"
 
 
+ wtmnb_open_fire_chain_title:0 "月光王座·超距射击"
+ wtmnb_open_fire_chain_desc:0 "我们将通过这个事件链完成一次本该通过月光王座巨像完成的工作\n无法触及关闭边境的星系，但本项目启动时强制解除所有对我们的边境封锁360天"
+ WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§!星系选择"
+ WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "决定我们的靶子在§B[This.System.GetName]§!星系"
+ WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§B[This.GetName]§!星体选择"
+ WTMNB_OPEN_FIRE_PLANET_SELECT_DESC:0 "我们将对§B[This.GetName]§!使用月光王座"
+ WTMNB_OPEN_FIRE_CANCEL:0 "取消"
+ WTMNB_OPEN_FIRE_CANCEL_DESC:0 "计划有变，我们打算取消这次发射"
+
 #   _            _     
 #  | |_ ___  ___| |__  
 #  | __/ _ \/ __| '_ \ 
@@ -384,8 +393,16 @@
  can_molt_planet:0 "可以在行星决策中选择将行星焚毁"
  ringworld_will_be_not_colonizable:0 "居住区被击毁"
 ####################
+#       _           _     _             
+#    __| | ___  ___(_)___(_) ___  _ __  
+#   / _` |/ _ \/ __| / __| |/ _ \| '_ \ 
+#  | (_| |  __/ (__| \__ \ | (_) | | | |
+#   \__,_|\___|\___|_|___/_|\___/|_| |_|
+                                      
  decision_wtmnb_create_pop:0 "单元复制协议"
  decision_wtmnb_create_pop_desc:0 "简单的复制粘贴——但实现这一结果的过程本身很有趣——我是说，高效。"
+ decision_wtmnb_open_fire:0 "月光王座·超距射击"
+ decision_wtmnb_open_fire_desc:0 "我们不用每次到目的地去，对着目标星球、使用月光王座，我们可以用几个步骤实现一次超距射击"
  decision_wtmnb_reroll:0 "地质改造"
  decision_wtmnb_reroll_desc:0 "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
  decision_wtmnb_molten:0 "熔毁"

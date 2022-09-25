@@ -1,6 +1,6 @@
 decision_wtmnb_create_pop = {
 	owned_planets_only = yes
-	icon = wtmnb_welt3
+	icon = wtmnb_6th_key
 	resources = {
 		category = decisions
 		cost = {
@@ -42,6 +42,65 @@ decision_wtmnb_create_pop = {
 				}
 			}
 		}
+	}
+}
+
+# 月光王座 超距射击
+decision_wtmnb_open_fire = {
+	owned_planets_only = yes
+	icon = wtmnb_welt3
+	resources = {
+		category = decisions
+		cost = {
+			energy = 100
+		}
+	}
+	potential = {
+		is_capital = yes
+		solar_system = {
+			any_ship_in_system = {
+				has_component = WTMNB_WEAPON_W
+				has_component = WTMNB_2ND_KEY
+			}
+		}
+	}
+	allow = {
+		from = {
+			NOT = {
+				has_event_chain = wtmnb_open_fire_chain
+			}
+		}
+	}
+	effect = {
+		owner = {
+			begin_event_chain = {
+				event_chain = wtmnb_open_fire_chain
+			}
+		}
+		enable_special_project = {
+			name = WTMNB_OPEN_FIRE_CANCEL
+			owner = this.owner
+		}
+		every_system = {
+			enable_special_project = {
+				name = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+				location = star
+				owner = root.owner
+			}
+		}
+		every_country = {
+			limit = {
+				has_closed_borders = root.owner
+			}
+			set_closed_borders = {
+				who = root.owner
+				status = no
+				forced = 360
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -92,7 +151,6 @@ decision_wtmnb_molten = {
 				}
 			}
 			remove_planet = yes
-			
 		}
 		else_if = {
 			limit = {
@@ -395,7 +453,6 @@ decision_wtmnb_more_civic_point = {
 	enactment_time = 1
 	icon = decision_politics
 	owned_planets_only = yes
-	
 	resources = {
 		category = decisions
 		cost = {

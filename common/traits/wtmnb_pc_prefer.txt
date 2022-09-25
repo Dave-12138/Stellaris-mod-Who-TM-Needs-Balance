@@ -1,5 +1,5 @@
 trait_pc_wtmnb_city_preference = {
-	randomized = no
+	# randomized = no
 	sorting_priority = 30
 	leader_age_max = 15
 	leader_age_min = 10
@@ -30,16 +30,19 @@ trait_pc_wtmnb_city_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"
 	modifier = {
 		pc_wtmnb_city_habitability = 3
-		pop_housing_usage_mult = -10
 	}
 	triggered_pop_modifier = {
 		potential = {
 			exists = planet
 			planet = {
-				is_planet_class = pc_wtmnb_city
+				has_deposit = deposit_wtmnb_city
 			}
 		}
 		planet_pops_upkeep_mult = -150
 		pop_happiness = 100
+	}
+	
+	ai_weight = {
+		weight = 0
 	}
 }

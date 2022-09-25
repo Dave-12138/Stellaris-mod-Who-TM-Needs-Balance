@@ -9,8 +9,6 @@ on_bi_yearly_pulse_country = {
 	events = {
 		#联邦锁团结
 		wtmnb.2
-		#锁年龄
-		wtmnb.7
 	}
 }
 

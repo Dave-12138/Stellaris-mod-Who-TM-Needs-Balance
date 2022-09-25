@@ -61,7 +61,7 @@
  wtmnb_dc.1011.desc:0 "$wtmnb_dc.1000.desc$\n等到群众被疏散，现场只剩下了失去意识的§H[dc_r_ruler.GetName]§!"
  wtmnb_dc.1011.a:0 "贴~ "
 
- wtmnb_dc.1020.name:0 " $wtmnb_dc.1000.name$ "
+ wtmnb_dc.1020.name:0 " [wtmnb_target.Owner.GetRulerTitle]被当众侵犯 "
  wtmnb_dc.1020.desc.1:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人清醒后不愿提及此事"
  wtmnb_dc.1020.desc.2:0 "$wtmnb_dc.1000.desc$至于失去意识，清醒后似乎仍沉浸在余韵中"
  wtmnb_dc.1020.desc.3:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人目前情绪稳定"

@@ -182,102 +182,7 @@ country_event = {
 	}
 	immediate = {
 		from = {
-			add_ruler_trait = leader_trait_wtmnb_stigmata_ruler
-			if = {
-				limit = {
-					leader_class = scientist
-				}
-				add_trait = leader_trait_wtmnb_stigmata_scientist
-			}
-			if = {
-				limit = {
-					leader_class = admiral
-				}
-				add_trait = leader_trait_wtmnb_stigmata_admiral
-			}
-			if = {
-				limit = {
-					leader_class = general
-				}
-				add_trait = leader_trait_wtmnb_stigmata_general
-			}
-			if = {
-				limit = {
-					leader_class = governor
-				}
-				add_trait = leader_trait_wtmnb_stigmata_governor
-			}
-			if = {
-				limit = {
-					leader_class = envoy
-				}
-				add_trait = leader_trait_wtmnb_stigmata_envoy
-			}
-		}
-	}
-}
-
-#永远长不大，好耶
-country_event = {
-	id = wtmnb.7
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		any_owned_leader = {
-			leader_age >= 15
-			OR = {
-				has_trait = leader_trait_wtmnb_stigmata_admiral
-				has_trait = leader_trait_wtmnb_stigmata_envoy
-				has_trait = leader_trait_wtmnb_stigmata_general
-				has_trait = leader_trait_wtmnb_stigmata_governor
-				has_trait = leader_trait_wtmnb_stigmata_scientist
-				has_ruler_trait = leader_trait_wtmnb_stigmata_ruler
-			}
-		}
-	}
-	immediate = {
-		every_owned_leader = {
-			limit = {
-				OR = {
-					has_trait = leader_trait_wtmnb_stigmata_admiral
-					has_trait = leader_trait_wtmnb_stigmata_envoy
-					has_trait = leader_trait_wtmnb_stigmata_general
-					has_trait = leader_trait_wtmnb_stigmata_governor
-					has_trait = leader_trait_wtmnb_stigmata_scientist
-					has_ruler_trait = leader_trait_wtmnb_stigmata_ruler
-				}
-			}
-			set_age = 12
-		}
-		every_pool_leader = {
-			limit = {
-				OR = {
-					has_trait = leader_trait_wtmnb_stigmata_admiral
-					has_trait = leader_trait_wtmnb_stigmata_envoy
-					has_trait = leader_trait_wtmnb_stigmata_general
-					has_trait = leader_trait_wtmnb_stigmata_governor
-					has_trait = leader_trait_wtmnb_stigmata_scientist
-					has_ruler_trait = leader_trait_wtmnb_stigmata_ruler
-				}
-			}
-			set_age = 12
-		}
-	}
-}
-
-# 好感
-country_event = {
-	id = wtmnb.8
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		every_country = {
-			root = {
-				remove_opinion_modifier = {
-					who = prev
-					modifier = opinion_wtmnb_1
-				}
-			}
+			add_leader_trait_wtmnb_stigmata = yes
 		}
 	}
 }
@@ -291,14 +196,9 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		OR = {
-			has_orbital_bombardment_stance = wtmnb_invasion
-			has_orbital_bombardment_stance = wtmnb_invasion
-		}
+		has_orbital_bombardment_stance = wtmnb_invasion
 		FROM = {
-			OR = {
-				has_technology = tech_wtmnb_fortress
-			}
+			has_country_flag = wtmnb_order
 		}
 	}
 	immediate = {

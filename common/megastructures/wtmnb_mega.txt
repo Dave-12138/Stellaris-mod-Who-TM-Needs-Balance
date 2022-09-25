@@ -12,7 +12,6 @@ wtmnb_dyson = {
 		country_resource_max_add = 3000000
 		country_admin_cap_add = 100
 	}
-	
 	resources = {
 		category = megastructures
 		cost = {
@@ -185,7 +184,6 @@ wtmnb_love_mark = {
 	}
 }
 
-
 wtmnb_foundry = {
 	entity = "matter_decompressor_stage_3_entity"
 	construction_entity = "matter_decompressor_stage_3_construction_entity"
@@ -293,7 +291,7 @@ wtmnb_portal = {
 			has_ascension_perk = ap_galactic_wonders_utopia
 			has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
 		}
-		has_technology = tech_wtmnb_fortress
+		has_country_flag = wtmnb_order
 	}
 	possible = {
 		custom_tooltip = {
@@ -353,4 +351,3 @@ wtmnb_portal = {
 		}
 	}
 }
-

@@ -1,4 +1,5 @@
 # 为了兼容性，直接抄的小伞
+
 ###_[星系跃迁限制]	FW/AAR	/古代帝国/wsg/阿夸/SOFE/Giga/Ehof/seooc/多彩/TAC/莉莉	####################################
 # Root = country attempting to target system for movement
 # This = system being targeted
@@ -10,8 +11,8 @@ can_enter_system_by_jump = {
 			###_绝对通行	FW
 			root = {
 				OR = {
-					has_country_flag = FW_flg_cntr_CHT_orrery_ON					# 璀璨星图
-					has_country_flag = FW_flg_cntr_CHT_beacon_ON					# 永恒星炬
+					has_country_flag = FW_flg_cntr_CHT_orrery_ON			# 璀璨星图
+					has_country_flag = FW_flg_cntr_CHT_beacon_ON			# 永恒星炬
 				}
 			}
 			###_特殊通行	AAR/TAC
@@ -20,46 +21,40 @@ can_enter_system_by_jump = {
 				#	|通行可用|
 				OR = {
 					# AAR
-					has_country_flag = AAR_flg_cntr_JUMP_webway_TGT					# 网道行者
+					has_country_flag = AAR_flg_cntr_JUMP_webway_TGT			# 网道行者
 					# TAC
 					has_country_flag = TAC_traveler
-					# 犹大
-					any_owned_ship = {
-						is_ship_size = wtmnb_fortress
-						has_component = WTMNB_11TH_KEY
-					}
 				}
 			}
+			###_我tm直接无视条件 wtmnb
+			root = {
+				has_country_flag = wtmnb_order
+			}
+			
 			###_基础条件
 			AND = {
 				##_Sealed system
 				OR = {
 					# vanilla
-					NOT = {
-						has_star_flag = sealed_system
-					}
+					NOT = { has_star_flag = sealed_system }
 					AND = {
-						root = {
-							has_country_flag = entered_sealed_system
-						}
+						root = { has_country_flag = entered_sealed_system }
 						has_star_flag = sealed_system
 					}
 				}
+
 				##_特殊禁入星系		+wsg/古代帝国/阿夸/SOFE/Giga/Ehof/seooc/多彩/TAC/莉莉
 				NOR = {
 					# vanilla
 					has_star_flag = lcluster
+
 					# wsg
-					AND = {
-						has_global_flag = has_wsg_mod						# 舰r激活
+					AND = { has_global_flag = has_wsg_mod	# 舰r激活
 						OR = {
 							has_star_flag = wg_sealed_system
 							has_star_flag = wg_psionic_systems
-							AND = {
-								exists = space_owner
-								space_owner = {
-									is_country_type = monolith_crisis_country
-								}
+							AND = { exists = space_owner
+								space_owner = { is_country_type = monolith_crisis_country }
 							}
 						}
 					}
@@ -71,7 +66,7 @@ can_enter_system_by_jump = {
 					has_star_flag = ag_kae_e_area_system
 					AND = {
 						has_global_flag = starkillerbase_not_passed
-						has_star_flag = starkiller_system
+						has_star_flag = starkiller_system	
 					}
 					# SOFE
 					has_star_flag = outercluster
@@ -86,7 +81,7 @@ can_enter_system_by_jump = {
 					has_star_flag = nep_Krahen_cluster
 					has_star_flag = nep_Scrus_cluster
 					AND = {
-						has_global_flag = nep_not_pass_Aemethms
+						has_global_flag = nep_not_pass_Aemethms 
 						OR = {
 							has_star_flag = nep_dragon_system
 							has_star_flag = nep_heptagram_cluster
@@ -98,25 +93,23 @@ can_enter_system_by_jump = {
 						has_global_flag = love_between_us
 						OR = {
 							has_star_flag = ten_crisis_system
-							any_neighbor_system = {
-								has_star_flag = ten_crisis_system
-							}
+							any_neighbor_system = { has_star_flag = ten_crisis_system }
 						}
 					}
 					# TAC
-					#	has_star_flag = AI_system1
-					#	has_star_flag = AI_system2
-					#	has_star_flag = AI_system3
-					#	has_star_flag = AI_system4
-					#	this = {
-					#		OR = {
-					#			has_megastructure = AIgate_opened
-					#			has_megastructure = AIgate_opened_02
-					#		}
-					#	}
+				#	has_star_flag = AI_system1
+				#	has_star_flag = AI_system2
+				#	has_star_flag = AI_system3
+				#	has_star_flag = AI_system4
+				#	this = {
+				#		OR = {
+				#			has_megastructure = AIgate_opened
+				#			has_megastructure = AIgate_opened_02
+				#		}
+				#	}
 					# 莉莉
 					has_star_flag = al_huge_home_bed
-					# 犹大的誓约
+					# wtmnb
 					any_ship_in_system = {
 						is_ship_size = wtmnb_fortress
 					}

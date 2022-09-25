@@ -62,31 +62,7 @@ country_event = {
 								gender = indeterminable
 							}
 						}
-						add_ruler_trait = leader_trait_wtmnb_stigmata_ruler
-						if = {
-							limit = {
-								leader_class = scientist
-							}
-							add_trait = leader_trait_wtmnb_stigmata_scientist
-						}
-						if = {
-							limit = {
-								leader_class = admiral
-							}
-							add_trait = leader_trait_wtmnb_stigmata_admiral
-						}
-						if = {
-							limit = {
-								leader_class = general
-							}
-							add_trait = leader_trait_wtmnb_stigmata_general
-						}
-						if = {
-							limit = {
-								leader_class = governor
-							}
-							add_trait = leader_trait_wtmnb_stigmata_governor
-						}
+						add_leader_trait_wtmnb_stigmata = yes
 						#change_species = event_target:new_wtm_species
 					}
 					every_pool_leader = {
@@ -96,41 +72,17 @@ country_event = {
 								gender = indeterminable
 							}
 						}
-						add_ruler_trait = leader_trait_wtmnb_stigmata_ruler
-						if = {
-							limit = {
-								leader_class = scientist
-							}
-							add_trait = leader_trait_wtmnb_stigmata_scientist
-						}
-						if = {
-							limit = {
-								leader_class = admiral
-							}
-							add_trait = leader_trait_wtmnb_stigmata_admiral
-						}
-						if = {
-							limit = {
-								leader_class = general
-							}
-							add_trait = leader_trait_wtmnb_stigmata_general
-						}
-						if = {
-							limit = {
-								leader_class = governor
-							}
-							add_trait = leader_trait_wtmnb_stigmata_governor
-						}
+						add_leader_trait_wtmnb_stigmata = yes
 					}
-					every_envoy = {
-						limit = {
-							OR = {
-								gender = female
-								gender = indeterminable
-							}
-						}
-						add_trait = leader_trait_wtmnb_stigmata_envoy
-					}
+					# every_envoy = {
+					# 	limit = {
+					# 		OR = {
+					# 			gender = female
+					# 			gender = indeterminable
+					# 		}
+					# 	}
+					# 	add_trait = leader_trait_wtmnb_stigmata_envoy
+					# }
 				}
 			}
 		}
@@ -275,53 +227,14 @@ country_event = {
 			}
 		}
 		name = wtmnb_colossus.1001.i
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = cracked_first_star
-				}
-			}
-			set_country_flag = cracked_first_star
-		}
-		# 评价
-		every_playable_country = {
-			limit = {
-				has_communications = ROOT
-				NOT = {
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = opinion_destroying_systems
+		hidden_effect = {
+			from = {
+				fire_on_action = {
+					on_action = on_destroy_planet_with_PLANET_KILLER_STAR_CRACKER
+					scopes = {
+						from = event_target:wtmnb_planet_killer_ship
 					}
 				}
-			}
-			add_opinion_modifier = {
-				who = ROOT
-				modifier = opinion_destroying_systems
-			}
-		}
-		from.solar_system = {
-			if = {
-				limit = {
-					NOT = {
-						# 存在正在爆破恒星以外的恒星
-						any_system_planet = {
-							is_star = yes
-							NOT = {
-								is_same_value = event_target:wtmnb_target
-							}
-						}
-					}
-				}
-				# 不存在就打个单身标记
-				set_star_flag = single_blackhole
-			}
-			# boom
-			eden_star_zeroth = yes
-		}
-		from = {
-			add_deposit = d_wtmnb_star_ruin
-			create_mining_station = {
-				owner = root
 			}
 		}
 	}
