@@ -12,9 +12,7 @@ has_tentacle = {
 }
 
 is_dc_pure_empire = {
-	OR = {
-		has_country_flag = asceticism_flag
-	}
+	has_country_flag = asceticism_flag
 }
 
 is_dc_mod_empire = {

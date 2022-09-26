@@ -9,14 +9,13 @@ decision_wtmnb_dc_create_pop = {
 		}
 	}
 	potential = {
-		is_planet_class = pc_wtmnb_city
-		owner = {
-			is_dc_lust_empire = yes
-		}
+		has_deposit = deposit_wtmnb_city
 		any_owned_pop = {
-			NOR = {
-				is_species_class = MACHINE
-				is_species_class = ROBOT
+			OR = {
+				has_trait = trait_DC_ethic_carnalism
+				has_trait = trait_DC_ethic_asceticism
+				has_trait = trait_DC_ethic_parasite_mind
+				has_trait = trait_DC_ethic_lust_skynet
 			}
 		}
 	}
@@ -25,9 +24,11 @@ decision_wtmnb_dc_create_pop = {
 		hidden_effect = {
 			random_owned_pop = {
 				limit = {
-					NOR = {
-						is_species_class = MACHINE
-						is_species_class = ROBOT
+					OR = {
+						has_trait = trait_DC_ethic_carnalism
+						has_trait = trait_DC_ethic_asceticism
+						has_trait = trait_DC_ethic_parasite_mind
+						has_trait = trait_DC_ethic_lust_skynet
 					}
 				}
 				species = {
@@ -46,7 +47,7 @@ decision_wtmnb_dc_create_pop = {
 		weight = 5000
 		modifier = {
 			factor = 0
-			num_pops > 100
+			num_pops > 30
 		}
 	}
 }

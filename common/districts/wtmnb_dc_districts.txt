@@ -36,10 +36,5 @@ district_seedbed = {
 		planet_max_buildings_add = 2
 		planet_jobs_produces_mult = 12
 	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-		}
-		text = job_ai_sex_master_effect_desc
-	}
+	
 }

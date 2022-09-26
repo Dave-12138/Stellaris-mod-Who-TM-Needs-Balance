@@ -372,70 +372,7 @@ deposit_wtmnb_city = {
 			job_ai_wtmnb_master_drone_per_pop = 1
 		}
 	}
-	######### azur闲置 #########
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			is_col_azur_city = yes
-		}
-		modifier = {
-			job_ai_azur_assistant_per_pop = 1
-		}
-	}
-	######### 多彩欲都 #########
-	# 普通帝国
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-			is_col_lust = yes
-		}
-		modifier = {
-			job_ai_sex_master_per_pop = 1
-			custom_tooltip = "job_ai_sex_master_effect_desc"
-		}
-	}
-	# 格式塔
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-			is_col_lust = yes
-		}
-		modifier = {
-			job_ai_sex_master_drone_per_pop = 1
-			custom_tooltip = "job_ai_sex_master_drone_effect_desc"
-		}
-	}
-	######### 多彩信仰 #########
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-			is_col_pure = yes
-		}
-		modifier = {
-			job_ai_sage_master_per_pop = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-			is_col_pure = yes
-		}
-		modifier = {
-			job_ai_sex_sage_drone_per_pop = 1
-		}
-	}
+	
 	######### 发电 #########
 	# 格式塔
 	triggered_planet_modifier = {

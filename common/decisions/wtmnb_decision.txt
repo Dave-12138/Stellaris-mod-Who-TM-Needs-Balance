@@ -95,7 +95,7 @@ decision_wtmnb_open_fire = {
 			set_closed_borders = {
 				who = root.owner
 				status = no
-				forced = 360
+				forced = 1
 			}
 		}
 	}
@@ -251,7 +251,7 @@ decision_wtmnb_break_border = {
 					set_closed_borders = {
 						who = from
 						status = no
-						forced = 36000
+						forced = 100
 					}
 				}
 			}

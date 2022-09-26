@@ -1,35 +1,36 @@
-
-
 wtmnb_cannon = {
 	max_speed = @speed_slow
 	acceleration = 0.2
 	rotation_speed = 0.15
-	collision_radius = @titan_collision_radius
+	collision_radius = 18	# 防碰撞范围
 	max_hitpoints = 100000
 	entity = "titan_bow_entity"
 	size_multiplier = 4
 	fleet_slot_size = 4
 	combat_size_multiplier = 8
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	potential_construction = {
 		exists = owner
 		owner = {
 			has_country_flag = wtmnb_order
 		}
 		has_starbase_size = wtmnb_fortress
-		
 	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_military_station
 	base_buildtime = 1080
-
 	components_add_to_cost = no
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	is_designable = yes
-	prerequisites = { "tech_wtmnb_fortress" }
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -47,5 +48,4 @@ wtmnb_cannon = {
 			energy = 8
 		}
 	}
-
 }

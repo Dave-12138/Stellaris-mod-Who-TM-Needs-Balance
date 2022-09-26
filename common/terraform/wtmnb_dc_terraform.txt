@@ -1,4 +1,3 @@
-
 terraform_link = {
 	from = pc_wtmnb_city
 	to = pc_prostitution_city
@@ -23,7 +22,7 @@ terraform_link = {
 	}
 	potential = {
 		OR = {
-			has_technology = tech_wtmnb_fortress
+			has_country_flag = wtmnb_order
 			from = {
 				any_fleet_in_orbit = {
 					any_owned_ship = {

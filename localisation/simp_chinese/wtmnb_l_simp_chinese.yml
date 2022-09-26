@@ -23,7 +23,8 @@
 
  wtmnb_cannon:0 "浮游炮"
  wtmnb_cannon_plural:0 "浮游炮"
- WTMNB_CANNON_CORE:0 "$wtmnb_cannon$"
+ WTMNB_CANNON_CORE:0 "$wtmnb_cannon$(泰坦舰艏)"
+ WTMNB_CANNON_CANNON:0 "$wtmnb_cannon$(离子加农炮模型)"
  SHIP_GRAPHICS_WTMNB_CANNON_DESC:0 "高机动化浮游炮，瞬息三千六百炮，是居家旅行杀人越货必备法宝"
 
  wtmnb_boomer:0 "崩坏裂变弹"
@@ -321,8 +322,8 @@
  wtmnb_species.1.name:0 "物种列表"
  wtmnb_species.1.desc:0 "将目标星球所有物种改造为："
  wtmnb_species.1.0:0 "取消"
- wtmnb_species.1.a:0 "$Warship_Girls$"
- wtmnb_species.1.b:0 "$ShenHai$"
+#  wtmnb_species.1.a:0 "$Warship_Girls$"
+#  wtmnb_species.1.b:0 "$ShenHai$"
 #中间三个多彩，下面从f开始
  wtmnb_species.1.f:0 "$Azur_Lane_k$" #暂未使用
 

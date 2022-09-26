@@ -1,34 +1,7 @@
 ﻿l_simp_chinese:
 #多彩单列一个文件
 # 救命我文案写得跟小儿麻痹一样
- job_ai_sex_master:0 "性欲处理终端"
- job_ai_sex_master_plural:0 "$job_ai_sex_master$"
- job_ai_sex_master_desc:0 "只要将身心交给这奇妙的流水线，随着一次又一次高潮到昏迷再被内射的涨感撑醒，资源就会自己变多的神奇职业。\n§S享受这一刻欢愉，不再有过去与未来。§!"
- job_ai_sex_master_effect_desc:0 "存在£pop£人口从事$job_ai_sex_master$职业时，AI产出£love_juice£$love_juice$、£excellent_slave£$excellent_slave$、£sr_beauty£$sr_beauty$"
- mod_job_ai_sex_master_add:0 "$job_ai_sex_master$岗位"
- mod_job_ai_wtmnb_cleck_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_sex_master_add£"
- mod_job_ai_wtmnb_cleck_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_sex_master$岗位"
-#
- job_ai_sex_master_drone:0 "$job_ai_sex_master$"
- job_ai_sex_master_drone_plural:0 "$job_ai_sex_master$"
- job_ai_sex_master_drone_desc:0 "$job_ai_sex_master_desc$"
- job_ai_sex_master_drone_effect_desc:0 "$job_ai_sex_master_effect_desc$"
- mod_job_ai_sex_master_drone_add:0 "$job_ai_sex_master$岗位"
- mod_job_ai_sex_master_drone_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_sex_master_add£"
- mod_job_ai_sex_master_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_sex_master$岗位"
-
- job_ai_sage_master:0 "朝圣者"
- job_ai_sage_master_plural:0 "$job_ai_sage_master$"
- job_ai_sage_master_desc:0 "§L§!"
- mod_job_ai_sage_master_add:0 "$job_ai_sage_master$岗位"
- mod_job_ai_sage_master_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_sage_master_add£"
- mod_job_ai_sage_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_sage_master$岗位"
- job_ai_sage_master_drone:0 "$job_ai_sage_master$"
- job_ai_sage_master_drone_plural:0 "$job_ai_sage_master$"
- job_ai_sage_master_drone_desc:0 "$job_ai_sage_master_desc$"
- mod_job_ai_sage_master_drone_add:0 "$job_ai_sage_master$岗位"
- mod_job_ai_sage_master_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_sage_master_add£"
- mod_job_ai_sage_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_sage_master$岗位"
+\\
 ###########
 
 ##################
@@ -73,14 +46,14 @@
  wtmnb_dc.1020.f:0 "你他妈竟敢动我老婆？？"
 #################
  #魅魔 圣女 魔物娘
- wtmnb_species.1.c:0 "$Magical_Bitch$" 
- wtmnb_species.1.d:0 "$Magical_Girl$"
- wtmnb_species.1.e:0 "$MWN$"
+#  wtmnb_species.1.c:0 "$Magical_Bitch$" 
+#  wtmnb_species.1.d:0 "$Magical_Girl$"
+#  wtmnb_species.1.e:0 "$MWN$"
 ##########
  opinion_wtmnb_dc_r:0 "性侵"
  
 ##########
- leader_trait_ruler_wtmnb_dc_r_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r$§!特质"
- leader_trait_ruler_wtmnb_dc_r2_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r2$§!特质"
- leader_trait_ruler_wtmnb_dc_r3_added:0 "§H[This.GetName]§!获得§!$leader_trait_ruler_wtmnb_dc_r3$§!特质"
+ leader_trait_ruler_wtmnb_dc_r_added:0 "§H[This.GetName]§!获得$leader_trait_ruler_wtmnb_dc_r|Y$特质"
+ leader_trait_ruler_wtmnb_dc_r2_added:0 "§H[This.GetName]§!获得$leader_trait_ruler_wtmnb_dc_r2|Y$特质"
+ leader_trait_ruler_wtmnb_dc_r3_added:0 "§H[This.GetName]§!获得$leader_trait_ruler_wtmnb_dc_r3|Y$特质"
 #########

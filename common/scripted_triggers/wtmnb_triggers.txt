@@ -15,10 +15,10 @@ is_planet_specialized = {
 		# 首都
 		is_col_capital = yes
 		# 碧蓝
-		is_col_azur_city = yes
+		# is_col_azur_city = yes
 		# 多彩
-		is_col_lust = yes
-		is_col_pure = yes
+		# is_col_lust = yes
+		# is_col_pure = yes
 		# 发电
 		is_col_generator = yes
 		# 农业
