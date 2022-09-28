@@ -1,7 +1,0 @@
-﻿l_simp_chinese:
- job_ai_azur_assistant:0 "港区工程助理"
- job_ai_azur_assistant_plural:0 "$job_ai_azur_assistant$"
- job_ai_azur_assistant_desc:0 "$job_ai_azur_assistant$的工作非常重要，她们肩负着每天和同事喝茶、聊天、品尝甜点的重要责任。"
- mod_job_ai_azur_assistant_add:0 "$job_ai_azur_assistant$岗位"
- mod_job_ai_wtmnb_cleck_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_ai_azur_assistant_add£"
- mod_job_ai_wtmnb_cleck_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_azur_assistant$岗位"

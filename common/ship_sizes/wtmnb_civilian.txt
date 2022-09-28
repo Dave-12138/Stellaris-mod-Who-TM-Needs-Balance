@@ -1,41 +1,45 @@
-
-
 wtmnb_science = {
 	max_speed = @speed_very_fast
 	acceleration = 0.3
 	rotation_speed = 0.2
 	max_hitpoints = @science_hp
-	entity = "corvette_M1S1_entity"
+	entity = "science_ship_entity"
 	modifier = {
 		ship_evasion_add = @science_evasion
 	}
 	ship_modifier = {
 		ship_sensor_range_add = 10
 		ship_hyperlane_range_add = 20
+		weapon_type_strike_craft_weapon_damage_mult = 50
+		weapon_type_strike_craft_weapon_fire_rate_mult = 5
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	potential_construction = {
 		exists = owner
 		owner = {
 			has_country_flag = wtmnb_order
 		}
 		has_starbase_size = wtmnb_fortress
-		
 	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_science
 	base_buildtime = @science_build_time
-
-	combat_disengage_chance = 2.0
-
+	combat_disengage_chance = 2
+	use_shipnames_from = science
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	is_designable = yes
 	components_add_to_cost = no
-	prerequisites = { "tech_wtmnb_fortress" }
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
 	is_civilian = yes
 	class = shipclass_science_ship
 	construction_type = starbase_shipyard
@@ -43,7 +47,7 @@ wtmnb_science = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
-
+	required_component_set = "ship_aura_components"
 	resources = {
 		category = ships
 		cost = {
@@ -54,6 +58,4 @@ wtmnb_science = {
 			alloys = @science_upkeep_alloys
 		}
 	}
-
-
 }

@@ -6,6 +6,10 @@
  wtmnb_fortress_plural:0 "$wtmnb_fortress$"
  aura_unbreakable_shield_wide:0 "AT力场"
  SHIP_UNBREAKABLE_SHARE:0 "Anti力场"
+ SCIENCE_SHIELD_AURA:0 "逆熵护盾"
+ aura_science_shield:0 "其时已至，虚空深渊之下"
+ aura_science_hostile:0 "人间法宝吞噬天上暴君之日"
+
  WTMNB_WEAPON:0 "§M月光王座§!"
  WTMNB_WEAPON_T:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_P:0 "$WTMNB_WEAPON$"
@@ -369,7 +373,7 @@
  WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "决定我们的靶子在§B[This.System.GetName]§!星系"
  WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§B[This.GetName]§!星体选择"
  WTMNB_OPEN_FIRE_PLANET_SELECT_DESC:0 "我们将对§B[This.GetName]§!使用月光王座"
- WTMNB_OPEN_FIRE_CANCEL:0 "取消"
+ WTMNB_OPEN_FIRE_CANCEL:0 "取消发射"
  WTMNB_OPEN_FIRE_CANCEL_DESC:0 "计划有变，我们打算取消这次发射"
 
 #   _            _     

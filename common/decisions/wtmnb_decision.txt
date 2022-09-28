@@ -81,16 +81,21 @@ decision_wtmnb_open_fire = {
 			name = WTMNB_OPEN_FIRE_CANCEL
 			owner = this.owner
 		}
-		every_system = {
-			enable_special_project = {
-				name = WTMNB_OPEN_FIRE_SYSTEM_SELECT
-				location = star
-				owner = root.owner
+		hidden_effect = {
+			every_system = {
+				enable_special_project = {
+					name = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+					location = star
+					owner = root.owner
+				}
 			}
 		}
 		every_country = {
 			limit = {
 				has_closed_borders = root.owner
+				count_system_within_border = {
+					count > 0
+				}
 			}
 			set_closed_borders = {
 				who = root.owner

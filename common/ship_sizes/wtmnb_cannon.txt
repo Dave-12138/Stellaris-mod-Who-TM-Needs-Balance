@@ -28,6 +28,7 @@ wtmnb_cannon = {
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	is_designable = yes
+	use_shipnames_from = battleship
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}

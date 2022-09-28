@@ -41,7 +41,7 @@ ai_wtmnb_master = {
 		}
 		
 		produces = {
-			influence = 0.4
+			influence = 0.1
 			energy = 20
 		}
 	}
@@ -67,7 +67,7 @@ ai_wtmnb_master_drone = {
 		}
 		produces = {
 			
-			influence = 0.4
+			influence = 0.1
 			energy = 20
 
 		}

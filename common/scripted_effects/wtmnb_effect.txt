@@ -53,7 +53,7 @@ wtmnb_safe_destroy_fleet = {
 			}
 		}
 	}
-	destroy_fleet = this
+	destroy_and_spawn_debris_for = root
 }
 
 # 添加本mod领袖特质
@@ -78,4 +78,3 @@ add_leader_trait_wtmnb_stigmata = {
 		# }
 	}
 }
-

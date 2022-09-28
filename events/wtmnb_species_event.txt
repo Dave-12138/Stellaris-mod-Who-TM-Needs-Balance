@@ -41,62 +41,62 @@ country_event = {
 	# 	}
 	# }
 	# 多彩
-	option = {
-		name = wtmnb_species.1.c
-		trigger = {
-			any_country = {
-				OR = {
-					has_country_flag = carnalism_flag
-					has_country_flag = asceticism_flag
-					has_country_flag = parasite_mind_flag
-					has_country_flag = lust_skynet_flag
-				}
-			}
-		}
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species_to_Magical_Bitch = yes
-			}
-		}
-	}
-	# 多彩
-	option = {
-		name = wtmnb_species.1.d
-		trigger = {
-			any_country = {
-				OR = {
-					has_country_flag = carnalism_flag
-					has_country_flag = asceticism_flag
-					has_country_flag = parasite_mind_flag
-					has_country_flag = lust_skynet_flag
-				}
-			}
-		}
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species_to_Magical_Girl = yes
-			}
-		}
-	}
-	# 多彩
-	option = {
-		name = wtmnb_species.1.e
-		trigger = {
-			any_country = {
-				OR = {
-					has_country_flag = carnalism_flag
-					has_country_flag = asceticism_flag
-					has_country_flag = parasite_mind_flag
-					has_country_flag = lust_skynet_flag
-				}
-			}
-		}
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species_to_mwn = yes
-			}
-		}
-	}
+	# option = {
+	# 	name = wtmnb_species.1.c
+	# 	trigger = {
+	# 		any_country = {
+	# 			OR = {
+	# 				has_country_flag = carnalism_flag
+	# 				has_country_flag = asceticism_flag
+	# 				has_country_flag = parasite_mind_flag
+	# 				has_country_flag = lust_skynet_flag
+	# 			}
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		event_target:wtmnb_target = {
+	# 			wtmnb_planet_species_to_Magical_Bitch = yes
+	# 		}
+	# 	}
+	# }
+	# # 多彩
+	# option = {
+	# 	name = wtmnb_species.1.d
+	# 	trigger = {
+	# 		any_country = {
+	# 			OR = {
+	# 				has_country_flag = carnalism_flag
+	# 				has_country_flag = asceticism_flag
+	# 				has_country_flag = parasite_mind_flag
+	# 				has_country_flag = lust_skynet_flag
+	# 			}
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		event_target:wtmnb_target = {
+	# 			wtmnb_planet_species_to_Magical_Girl = yes
+	# 		}
+	# 	}
+	# }
+	# # 多彩
+	# option = {
+	# 	name = wtmnb_species.1.e
+	# 	trigger = {
+	# 		any_country = {
+	# 			OR = {
+	# 				has_country_flag = carnalism_flag
+	# 				has_country_flag = asceticism_flag
+	# 				has_country_flag = parasite_mind_flag
+	# 				has_country_flag = lust_skynet_flag
+	# 			}
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		event_target:wtmnb_target = {
+	# 			wtmnb_planet_species_to_mwn = yes
+	# 		}
+	# 	}
+	# }
 	# 舰B
 	# option = {
 	# 	name = wtmnb_species.1.f
