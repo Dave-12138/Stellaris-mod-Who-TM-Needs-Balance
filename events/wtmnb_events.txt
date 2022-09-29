@@ -302,13 +302,6 @@ country_event = {
 				every_owned_fleet = {
 					wtmnb_safe_destroy_fleet = yes
 				}
-				fire_on_action = {
-					on_action = on_country_destroyed
-					scopes = {
-						from = event_target:wtmnb_owner
-					}
-				}
-				destroy_country = yes
 				# 清除殖民地
 				every_owned_planet = {
 					every_owned_pop = {
@@ -316,6 +309,13 @@ country_event = {
 					}
 					remove_all_buildings = yes
 					destroy_colony = yes
+				}
+				destroy_country = yes
+				fire_on_action = {
+					on_action = on_country_destroyed
+					scopes = {
+						from = event_target:wtmnb_owner
+					}
 				}
 			}
 		}

@@ -12,6 +12,8 @@ wtmnb_science = {
 		ship_hyperlane_range_add = 20
 		weapon_type_strike_craft_weapon_damage_mult = 50
 		weapon_type_strike_craft_weapon_fire_rate_mult = 5
+		ship_armor_penetration_mult = 5
+		ship_shield_penetration_mult = 5
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
