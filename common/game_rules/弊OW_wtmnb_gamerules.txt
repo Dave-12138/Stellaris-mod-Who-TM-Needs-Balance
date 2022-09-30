@@ -110,12 +110,7 @@ can_enter_system_by_jump = {
 					# 莉莉
 					has_star_flag = al_huge_home_bed
 					# wtmnb
-					any_ship_in_system = {
-						is_ship_size = wtmnb_fortress
-					}
-					any_system_planet = {
-						has_modifier = wtmnb_star_11th_modifier
-					}
+					has_star_flag = wtmnb_star_11th
 				}
 			}
 		}

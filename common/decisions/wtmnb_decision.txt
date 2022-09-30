@@ -286,9 +286,7 @@ decision_wtmnb_11th_shield = {
 				has_component = WTMNB_9TH_KEY
 			}
 			NOT = {
-				any_system_planet = {
-					has_modifier = wtmnb_star_11th_modifier
-				}
+				has_star_flag = wtmnb_star_11th
 			}
 		}
 	}
@@ -302,6 +300,20 @@ decision_wtmnb_11th_shield = {
 					modifier = wtmnb_star_11th_modifier
 					days = -1
 				}
+			}
+			hidden_effect = {
+				every_system_planet = {
+					limit = {
+						NOT = {
+							is_same_value = prev.system_star
+						}
+					}
+					add_modifier = {
+						modifier = wtmnb_star_11th_modifier
+						days = -1
+					}
+				}
+				set_star_flag = wtmnb_star_11th
 			}
 		}
 	}
@@ -327,9 +339,7 @@ decision_wtmnb_11th_shield_off = {
 				has_component = WTMNB_11TH_KEY
 				has_component = WTMNB_9TH_KEY
 			}
-			any_system_planet = {
-				has_modifier = wtmnb_star_11th_modifier
-			}
+			has_star_flag = wtmnb_star_11th
 		}
 	}
 	allow = {
@@ -341,6 +351,7 @@ decision_wtmnb_11th_shield_off = {
 				remove_modifier = wtmnb_star_11th_modifier
 			}
 			hidden_effect = {
+				remove_star_flag = wtmnb_star_11th
 				every_system_planet = {
 					remove_modifier = wtmnb_star_11th_modifier
 				}
