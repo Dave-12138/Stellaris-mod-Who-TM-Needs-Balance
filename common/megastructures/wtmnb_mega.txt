@@ -215,6 +215,9 @@ wtmnb_foundry = {
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
+	potential = {
+		has_country_flag = wtmnb_order
+	}
 	possible = {
 		exists = starbase
 		custom_tooltip = {
