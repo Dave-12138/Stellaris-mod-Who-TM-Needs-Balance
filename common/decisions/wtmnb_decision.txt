@@ -109,6 +109,7 @@ decision_wtmnb_open_fire = {
 	}
 }
 
+# 重新分配地块
 decision_wtmnb_reroll = {
 	enactment_time = 0
 	icon = wtmnb_4th_key
@@ -136,6 +137,7 @@ decision_wtmnb_reroll = {
 	}
 }
 
+# 破坏殖民地
 decision_wtmnb_molten = {
 	enactment_time = 1
 	icon = wtmnb_destructor
@@ -500,6 +502,59 @@ decision_wtmnb_more_civic_point = {
 	}
 	effect = {
 		add_deposit = deposit_wtmnb_city_civic_point
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_wtmnb_build_ship = {
+	enactment_time = 1
+	icon = decision_colony_settlement
+	owned_planets_only = yes
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 100
+		}
+	}
+	potential = {
+		exists = orbital_defence
+		orbital_defence.starbase = {
+			is_orbital_ring = yes
+		}
+	}
+	allow = {
+		solar_system = {
+			any_ship_in_system = {
+				is_ship_size = wtmnb_fortress
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = decision_wtmnb_build_ship_effect
+		hidden_effect = {
+			create_fleet = {
+				settings = {
+					can_upgrade = no
+					spawn_debris = no
+					uses_naval_capacity = no
+				}
+				effect = {
+					set_owner = from
+					while = {
+						count = 100
+						create_ship = {
+							design = "NAME_wtmnb_cannon"
+						}
+					}
+					set_location = root.orbital_defence
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 150
+				}
+			}
+		}
 	}
 	ai_weight = {
 		weight = 0

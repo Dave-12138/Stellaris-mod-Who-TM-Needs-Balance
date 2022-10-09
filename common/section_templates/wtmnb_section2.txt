@@ -98,4 +98,7 @@ ship_section_template = {
 			alloys = 150
 		}
 	}
+	ai_weight = {
+		base = 50
+	}
 }

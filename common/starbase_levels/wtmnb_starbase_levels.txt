@@ -1,7 +1,7 @@
 starbase_level_wtmnb_fortress = {
 	ship_size = wtmnb_fortress
 	potential_home_base = yes
-	level_weight = 6
+	level_weight = 5
 	show_in_outliner = yes
-	display_map_icon = yes
+	collects_trade = no
 }

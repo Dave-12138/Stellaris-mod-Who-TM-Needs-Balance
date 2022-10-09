@@ -1,0 +1,157 @@
+# 一键生成月光王座
+ship_design = {
+	name = "DESIGN_wtmnb_fortress"
+	ship_size = wtmnb_fortress
+	section = {
+		template = WTMNB_FORT_CORE
+		slot = core
+		component = {
+			slot = "PLANET_KILLER_GUN_01"
+			template = "WTMNB_WEAPON_W"
+		}
+		component = {
+			slot = "TITANIC_01"
+			template = "WTMNB_WEAPON_T"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "WTMNB_WEAPON_T"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "WTMNB_WEAPON_T"
+		}
+		component = {
+			slot = "EXTRA_LARGE_GUN_01"
+			template = "WTMNB_WEAPON_X"
+		}
+		component = {
+			slot = "EXTRA_LARGE_GUN_02"
+			template = "WTMNB_WEAPON_X"
+		}
+		component = {
+			slot = "EXTRA_LARGE_GUN_03"
+			template = "WTMNB_WEAPON_X"
+		}
+		component = {
+			slot = "PD_01"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_02"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_03"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_04"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_05"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_06"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+	}
+	required_component = "WTMNB_1ST_KEY"
+	required_component = "WTMNB_2ND_KEY"
+	required_component = "WTMNB_4TH_KEY"
+	required_component = "WTMNB_5TH_KEY"
+	required_component = "WTMNB_6TH_KEY"
+	required_component = "WTMNB_7TH_KEY"
+	required_component = "WTMNB_8TH_KEY"
+	required_component = "WTMNB_9TH_KEY"
+	required_component = "WTMNB_11TH_KEY"
+	required_component = "COMBAT_COMPUTER_WTMNB_CANNON"
+	
+}
+
+# 失落帝国没觉醒不能造浮游炮
+ship_design = {
+	name = "NAME_wtmnb_cannon"
+	ship_size = wtmnb_cannon
+	section = {
+		template = "WTMNB_CANNON_CANNON"
+		slot = mid
+		
+		component = {
+			slot = "TITANIC_GUN_01"
+			template = "WTMNB_WEAPON_T"
+		}
+		component = {
+			slot = "EXTRA_LARGE_GUN_01"
+			template = "WTMNB_WEAPON_X"
+		}
+		component = {
+			slot = "PD_01"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_02"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_03"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_04"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_05"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "PD_06"
+			template = "WTMNB_WEAPON_P"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+	}
+	required_component = "WTMNB_SCIENCE_REACTOR"
+	required_component = "WTMNB_JUMP_DRIVE"
+	required_component = "SHIP_THRUSTER_WTMNB"
+	required_component = "SENSOR_4"
+	required_component = "COMBAT_COMPUTER_WTMNB_CANNON"
+	
+}

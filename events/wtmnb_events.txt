@@ -74,6 +74,7 @@ country_event = {
 	id = wtmnb.2
 	is_triggered_only = yes
 	trigger = {
+		exists = federation
 		federation = {
 			OR = {
 				federation_cohesion < 80

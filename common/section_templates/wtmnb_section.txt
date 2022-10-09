@@ -1,4 +1,3 @@
-
 ship_section_template = {
 	key = "WTMNB_FORT_CORE"
 	ship_size = wtmnb_fortress
@@ -89,7 +88,6 @@ ship_section_template = {
 		template = "large_strike_craft"
 		locatorname = "root"
 	}
-
 	large_utility_slots = 0
 	aux_utility_slots = 3
 	resources = {
@@ -97,5 +95,8 @@ ship_section_template = {
 		cost = {
 			alloys = 150
 		}
+	}
+	ai_weight = {
+		base = 100
 	}
 }

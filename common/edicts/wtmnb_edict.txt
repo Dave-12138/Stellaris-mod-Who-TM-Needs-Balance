@@ -23,10 +23,7 @@ wtmnb_edict = {
 		}
 	}
 	potential = {
-		NOR = {
-			any_ship = {
-				is_ship_size = wtmnb_fortress
-			}
+		NOT = {
 			has_global_flag = wtmnb_edict_checked
 		}
 	}
@@ -170,8 +167,6 @@ wtmnb_edict_5 = {
 	}
 }
 
-
-
 # 第一次接触
 wtmnb_edict_7 = {
 	icon = GFX_diplomacy_opinion
@@ -195,10 +190,62 @@ wtmnb_edict_7 = {
 		}
 	}
 	potential = {
+		is_ai = no
 		any_playable_country = {
 			NOR = {
 				has_communications = root
 				is_same_value = root
+			}
+		}
+	}
+	allow = {
+		is_ai = no
+	}
+}
+
+# 生成王座
+wtmnb_edict_create_ship = {
+	icon = GFX_ship_counter_32
+	length = -1
+	resources = {
+		category = edicts
+		upkeep = {
+			alloys = 1
+		}
+	}
+	effect = {
+		# create_ship_design = {
+		# 	design = "DESIGN_wtmnb_fortress"
+		# }
+		# add_ship_design = last_created_design
+		capital_scope = {
+			create_fleet = {
+				settings = {
+					can_upgrade = no
+					spawn_debris = no
+					can_change_composition = no
+					uses_naval_capacity = no
+				}
+				effect = {
+					set_owner = root
+					create_ship = {
+						name = wtmnb_fortress
+						design = "DESIGN_wtmnb_fortress"
+						upgradable = no
+					}
+					set_location = prev
+					set_fleet_stance = passive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 350
+				}
+			}
+		}
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+		NOT = {
+			any_owned_ship = {
+				is_ship_size = wtmnb_fortress
 			}
 		}
 		is_ai = no

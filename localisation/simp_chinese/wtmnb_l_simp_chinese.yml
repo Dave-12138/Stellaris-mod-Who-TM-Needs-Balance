@@ -165,6 +165,9 @@
  edict_wtmnb_edict_7:0 "我不想点第一次接触了"
  edict_wtmnb_edict_7_desc:0 "点第一次接触累死了，我现在就要建立所有通讯！\n§L(包括虚境，但不包括采矿团之类)§!"
 
+ edict_wtmnb_edict_create_ship:0 "生成$wtmnb_fortress$"
+ edict_wtmnb_edict_create_ship_desc:0 "立即在首都生成$wtmnb_fortress$"
+
 #                       _ _  __ _           
 #   _ __ ___   ___   __| (_)/ _(_) ___ _ __ 
 #  | '_ ` _ \ / _ \ / _` | | |_| |/ _ \ '__|
@@ -406,7 +409,7 @@
                                       
  decision_wtmnb_create_pop:0 "单元复制协议"
  decision_wtmnb_create_pop_desc:0 "简单的复制粘贴——但实现这一结果的过程本身很有趣——我是说，高效。"
- decision_wtmnb_open_fire:0 "月光王座·超距射击"
+ decision_wtmnb_open_fire:0 "$wtmnb_fortress|B$·超距射击"
  decision_wtmnb_open_fire_desc:0 "我们不用每次到目的地去，对着目标星球、使用月光王座，我们可以用几个步骤实现一次超距射击"
  decision_wtmnb_reroll:0 "地质改造"
  decision_wtmnb_reroll_desc:0 "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
@@ -424,6 +427,9 @@
  decision_wtmnb_11th_shield_off_desc:0 "解除神恩结界，让除我们之外的文明可以使用跃迁引擎折跃进入本星系"
  decision_wtmnb_more_civic_point:0 "额外国民理念点数"
  decision_wtmnb_more_civic_point_desc:0 "可微调数量的额外国民理念点数，点多了可以地块清理挖掉\n总算不用忍受左上角总挂个警报，国民理念已经选的UI装不下的情况了"
+ decision_wtmnb_build_ship:0 "$wtmnb_fortress|B$地面生产线"
+ decision_wtmnb_build_ship_effect:0 "制造一支优势火力舰队"
+ decision_wtmnb_build_ship_desc:0 "没时间解释了，快上船"
 ##################
  
  pc_wtmnb_city:0 "虚渺之城"
@@ -480,3 +486,9 @@
 
  col_ring_refinery:0 "精炼型环形世界"
  col_ring_refinery_desc:1 "此环世界区段的地表已经布满了由管道、炼油厂、酿造厂所组成的广袤的工业网络。所以尽量不要深呼吸。"
+
+
+
+# ship design
+ DESIGN_wtmnb_fortress:0 "$wtmnb_fortress$"
+ NAME_wtmnb_cannon:0 "$wtmnb_cannon$"

@@ -192,7 +192,7 @@ country_event = {
 		hidden_effect = {
 			event_target:wtmnb_target = {
 				wtmnb_planet_species = {
-					SPECIES = "FUM"
+					SPECIES = "FUN"
 				}
 			}
 		}

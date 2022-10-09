@@ -164,3 +164,16 @@ is_col_mining = {
 		has_designation = col_mining
 	}
 }
+
+#########################################
+is_wtmnb_fallen_empire = {
+	has_country_flag = wtmnb_order
+	OR = {
+		is_country_type = fallen_empire
+		is_country_type = awakened_fallen_empire
+	}
+}
+
+is_wtmnb_empire = {
+	has_country_flag = wtmnb_order
+}
