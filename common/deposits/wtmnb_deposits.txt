@@ -613,7 +613,6 @@ deposit_wtmnb_city_civic_point = {
 	category = deposit_cat_blockers
 	potential = {
 		always = no
-		has_deposit = deposit_wtmnb_city
 	}
 	drop_weight = {
 		weight = 0

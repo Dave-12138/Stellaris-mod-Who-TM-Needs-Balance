@@ -56,22 +56,22 @@ country_event = {
 					change_species = event_target:new_wtm_species
 					set_built_species = event_target:new_wtm_species
 					every_owned_leader = {
-						limit = {
-							OR = {
-								gender = female
-								gender = indeterminable
-							}
-						}
+						# limit = {
+						# 	OR = {
+						# 		gender = female
+						# 		gender = indeterminable
+						# 	}
+						# }
 						add_leader_trait_wtmnb_stigmata = yes
 						#change_species = event_target:new_wtm_species
 					}
 					every_pool_leader = {
-						limit = {
-							OR = {
-								gender = female
-								gender = indeterminable
-							}
-						}
+						# limit = {
+						# 	OR = {
+						# 		gender = female
+						# 		gender = indeterminable
+						# 	}
+						# }
 						add_leader_trait_wtmnb_stigmata = yes
 					}
 					# every_envoy = {

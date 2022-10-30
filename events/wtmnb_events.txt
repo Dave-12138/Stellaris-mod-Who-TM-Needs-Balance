@@ -175,10 +175,10 @@ country_event = {
 			species = {
 				has_trait = trait_wtmnb_stigmata
 			}
-			OR = {
-				gender = female
-				gender = indeterminable
-			}
+			# OR = {
+			# 	gender = female
+			# 	gender = indeterminable
+			# }
 		}
 	}
 	immediate = {
