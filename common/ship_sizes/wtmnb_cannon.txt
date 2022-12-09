@@ -4,7 +4,7 @@ wtmnb_cannon = {
 	rotation_speed = 0.15
 	collision_radius = 18	# 防碰撞范围
 	max_hitpoints = 100000
-	# entity = "titan_bow_entity"
+	entity = "ion_cannon_entity"
 	size_multiplier = 4
 	fleet_slot_size = 4
 	combat_size_multiplier = 8
@@ -20,7 +20,8 @@ wtmnb_cannon = {
 		}
 		has_starbase_size = wtmnb_fortress
 	}
-	ship_modifier = {
+	modifier = {
+		ship_piracy_suppression_add = 300
 		ship_shield_hardening_add = 1
 		ship_armor_hardening_add = 1
 	}

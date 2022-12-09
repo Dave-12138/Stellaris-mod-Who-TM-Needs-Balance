@@ -88,5 +88,4 @@ wtmnb_fortress = {
 	combat_disengage_chance = 1
 	takes_name_from_ship_design = yes
 	uses_name_prefix = no
-	
 }

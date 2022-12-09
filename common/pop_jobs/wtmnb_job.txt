@@ -46,7 +46,7 @@ ai_wtmnb_master = {
 		}
 	}
 	country_modifier = {
-		planet_jobs_produces_mult = 10
+		planet_jobs_produces_mult = 100
 	}
 }
 
@@ -74,6 +74,6 @@ ai_wtmnb_master_drone = {
 		
 	}
 	country_modifier = {
-		planet_jobs_produces_mult = 10
+		planet_jobs_produces_mult = 100
 	}
 }
