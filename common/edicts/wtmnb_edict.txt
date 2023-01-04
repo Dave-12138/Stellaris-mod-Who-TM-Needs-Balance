@@ -49,7 +49,7 @@ wtmnb_edict_2 = {
 		set_government_cooldown = no
 	}
 	potential = {
-		is_ai = no
+		has_country_flag = wtmnb_order
 	}
 	allow = {
 		is_ai = no
@@ -73,7 +73,7 @@ wtmnb_edict_3 = {
 		country_trust_cap_add = 50000
 	}
 	potential = {
-		is_ai = no
+		has_country_flag = wtmnb_order
 	}
 	allow = {
 		is_ai = no
@@ -134,7 +134,7 @@ wtmnb_edict_4 = {
 		}
 	}
 	potential = {
-		is_ai = no
+		has_country_flag = wtmnb_order
 	}
 	allow = {
 		is_ai = no
@@ -157,7 +157,7 @@ wtmnb_edict_5 = {
 	modifier = {
 	}
 	potential = {
-		is_ai = no
+		has_country_flag = wtmnb_order
 		any_megastructure = {
 			is_megastructure_type = wtmnb_love_mark
 		}
@@ -190,7 +190,8 @@ wtmnb_edict_7 = {
 		}
 	}
 	potential = {
-		is_ai = no
+		
+		has_country_flag = wtmnb_order
 		any_playable_country = {
 			NOR = {
 				has_communications = root

@@ -238,6 +238,7 @@ utility_component_template = {
 			ship_accuracy_mult = -20
 			ship_armor_penetration_mult = -5
 			ship_shield_penetration_mult = -5
+			ship_hull_damage_mult = -10
 		}
 		graphics = {
 			area_effect = {
