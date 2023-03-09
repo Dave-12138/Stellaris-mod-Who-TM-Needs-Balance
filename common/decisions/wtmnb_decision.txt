@@ -507,7 +507,7 @@ decision_wtmnb_more_civic_point = {
 		weight = 0
 	}
 }
-
+# 造船
 decision_wtmnb_build_ship = {
 	enactment_time = 1
 	icon = decision_colony_settlement

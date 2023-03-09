@@ -20,9 +20,10 @@ wtmnb_cannon = {
 		}
 		has_starbase_size = wtmnb_fortress
 	}
-	modifier = {
+	ship_modifier = {
 		ship_piracy_suppression_add = 300
 		ship_shield_hardening_add = 1
+		ship_accuracy_add = 9999
 		ship_armor_hardening_add = 1
 	}
 	num_target_locators = 0

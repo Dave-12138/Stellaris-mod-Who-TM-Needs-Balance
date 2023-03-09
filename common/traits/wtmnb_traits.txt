@@ -176,7 +176,8 @@ leader_trait_wtmnb_stigmata_admiral = {
 		admiral
 	}
 	modifier = {
-		ship_weapon_range_mult = 1
+		# 溢出了啦，都怪你
+		# ship_weapon_range_mult = 1
 		ship_engagement_range_mult = 1
 		ships_upkeep_mult = -2
 	}

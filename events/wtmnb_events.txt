@@ -360,3 +360,25 @@ country_event = {
 		}
 	}
 }
+
+#跃迁失踪
+ship_event = {
+	id = wtmnb.3000
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		solar_system = {
+			has_star_flag = wtmnb_star_11th
+		}
+		owner = {
+			NOT = {
+				has_country_flag = wtmnb_order
+			}
+		}
+	}
+	immediate = {
+		root.fleet = {
+			set_mia = yes
+		}
+	}
+}

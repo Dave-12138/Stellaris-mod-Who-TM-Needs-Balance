@@ -14,6 +14,7 @@ wtmnb_science = {
 		weapon_type_strike_craft_weapon_fire_rate_mult = 5
 		ship_armor_penetration_mult = 5
 		ship_shield_penetration_mult = 5
+		ship_accuracy_add = 9999
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1

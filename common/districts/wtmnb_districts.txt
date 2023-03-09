@@ -19,13 +19,15 @@ district_matrix_office = {
 			energy = 2
 		}
 		produces = {
-			unity = 100
+			influence = 0.5
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 30
 		planet_max_buildings_add = 2
 		planet_jobs_produces_mult = 10
+		# 没效果
+		# country_resource_max_add = 10000
 	}
 }
 

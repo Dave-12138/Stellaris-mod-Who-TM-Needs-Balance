@@ -40,13 +40,10 @@ ai_wtmnb_master = {
 			energy = 1
 		}
 		
-		produces = {
-			influence = 0.1
-			energy = 20
-		}
 	}
 	country_modifier = {
 		planet_jobs_produces_mult = 100
+		country_produces_mult = 10
 	}
 }
 
@@ -65,15 +62,10 @@ ai_wtmnb_master_drone = {
 		upkeep = {
 			energy = 1
 		}
-		produces = {
-			
-			influence = 0.1
-			energy = 20
-
-		}
 		
 	}
 	country_modifier = {
 		planet_jobs_produces_mult = 100
+		country_produces_mult = 10
 	}
 }

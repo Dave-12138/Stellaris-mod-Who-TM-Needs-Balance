@@ -26,18 +26,32 @@ on_leader_spawned = {
 	}
 }
 
-
 on_ship_destroyed_victim = {
 	events = {
 		# 崩坏裂变弹
 		wtmnb.2000
 	}
 }
+
 # This = owner of fleet
 # From = disbanded fleet
 on_fleet_disbanded = {
 	events = {
 		# 崩坏裂变弹 手动引爆
 		wtmnb.2002
+	}
+}
+
+on_ship_quantum_catapult = {
+	events = {
+		# 弹射进神恩结界
+		wtmnb.3000
+	}
+}
+
+on_jump_drive = {
+	events = {
+		# 跃迁进神恩结界
+		wtmnb.3000
 	}
 }

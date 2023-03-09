@@ -94,7 +94,7 @@ utility_component_template = {
 			alloys = 10
 		}
 	}
-	ship_behavior = platform
+	ship_behavior = artillery
 	size_restriction = {
 		wtmnb_cannon
 		wtmnb_fortress
