@@ -1,8 +1,8 @@
-version="2.40"
+version="2.41"
 tags={
 	"Cheat"
 }
 picture="thumbnail.png"
 name="Who Tm Needs Balance?"
-supported_version="3.6.*"
+supported_version="3.7.*"
 remote_file_id="2463706913"

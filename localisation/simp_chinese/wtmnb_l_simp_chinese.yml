@@ -11,11 +11,15 @@
  aura_science_hostile:0 "人间法宝吞噬天上暴君之日"
 
  WTMNB_WEAPON:0 "§M月光王座§!"
+ WTMNB_WEAPON_K:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_T:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_P:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_M:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_X:0 "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_XXL:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_DESC:0 "严格来说，“$WTMNB_WEAPON$”不能算一种兵器：它只是一种能量转换装置而已。用可控的方式，把崩坏能转化成普通能量。\n人类在前文明末期曾经掌握了这项技术，但当时的事态发展没有给他们留下足够的时间。\n假如在那个时间点，他们能将人类原有的工业规模再维持十年左右，那么量产的“月光王座”就足以吸纳星球规模的溢出崩坏能。"
+ WTMNB_WEAPON_K_DESC:0 "$WTMNB_WEAPON_DESC$"
+ WTMNB_WEAPON_XXL_DESC:0 "$WTMNB_WEAPON_DESC$"
  SHIP_GRAPHICS_WTMNB_FORTRESS_DESC:0 "$WTMNB_WEAPON_DESC$"
  
  wtmnb_science:0 "拟态科研船"
@@ -209,13 +213,17 @@
                                       
 
 
- district_meeting_room:0 "战略忽悠会议室"
- district_meeting_room_desc:0 "帝国规模？什么帝国？什么规模？我们可是发展中国家，你可不要乱讲"
- district_meeting_room_plural:0 "$district_meeting_room$"
+ district_wtmnb_meeting_room:0 "战略忽悠会议室"
+ district_wtmnb_meeting_room_desc:0 "帝国规模？什么帝国？什么规模？我们可是发展中国家，你可不要乱讲"
+ district_wtmnb_meeting_room_plural:0 "$district_wtmnb_meeting_room$"
 
- district_matrix_office:0 "泛用型多功能办公室"
- district_matrix_office_desc:0 "成熟的工作都懂得自己完成自己，所以名义上的办公室无论从设计还是使用都是作为配备娱乐设备的住宅。"
- district_matrix_office_plural:0 "$district_matrix_office$"
+ district_wtmnb_matrix_office:0 "泛用型多功能办公室"
+ district_wtmnb_matrix_office_desc:0 "成熟的工作都懂得自己完成自己，所以名义上的办公室无论从设计还是使用都是作为配备娱乐设备的住宅。"
+ district_wtmnb_matrix_office_plural:0 "$district_wtmnb_matrix_office$"
+
+#  district_wtmnb_little_safe:0 "小金库"
+#  district_wtmnb_little_safe_desc:0 ""
+#  district_wtmnb_little_safe_plural:0 "$district_wtmnb_little_safe$"
 
 #   _                     _                   _                      _       
 #  | |__   ___  _ __ ___ | |__   __ _ _ __ __| |_ __ ___   ___ _ __ | |_ ___ 

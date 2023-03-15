@@ -23,6 +23,10 @@ wtmnb_boomer = {
 	ship_modifier = {
 		ship_evasion_mult = -10
 	}
+	modifier = {
+		
+		ship_cloaking_strength_add = 10
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_military_32

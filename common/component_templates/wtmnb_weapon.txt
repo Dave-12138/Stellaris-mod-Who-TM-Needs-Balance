@@ -27,7 +27,7 @@ weapon_component_template = {
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
-	component_set = "WTMNB_WEAPON"
+	component_set = "WTMNB_WEAPON_XXL"
 	projectile_gfx = "wtmnb_lance"
 	tags = {
 		weapon_type_energy
@@ -125,7 +125,7 @@ weapon_component_template = {
 	range = 0
 	icon = GFX_ship_part_wtmnb_weapon
 	icon_frame = 1
-	component_set = WTMNB_WEAPON
+	component_set = WTMNB_WEAPON_W
 	planet_destruction_gfx = "neutron_planet_gfx"
 	size_restriction = {
 		wtmnb_fortress

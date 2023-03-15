@@ -290,6 +290,10 @@ utility_component_template = {
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
+	ship_modifier = {
+		ship_cloaking_detection_add = 10
+		ship_cloaking_strength_add = 10
+	}
 	component_set = "WTMNB_GRAND_KEY"
 	resources = {
 		category = ship_components
@@ -592,6 +596,7 @@ utility_component_template = {
 			ship_fire_rate_mult = -2000
 			ship_armor_penetration_mult = -5
 			ship_shield_penetration_mult = -5
+			ship_cloaking_strength_add = -10
 		}
 		damage_per_day = {
 			shield_damage = 100000

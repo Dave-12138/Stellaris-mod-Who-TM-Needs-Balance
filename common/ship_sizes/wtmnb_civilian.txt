@@ -15,6 +15,10 @@ wtmnb_science = {
 		ship_armor_penetration_mult = 5
 		ship_shield_penetration_mult = 5
 		ship_accuracy_add = 9999
+		ship_cloaking_detection_add = 10
+	}
+	modifier = {
+		ship_cloaking_strength_add = 10
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1

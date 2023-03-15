@@ -3,6 +3,17 @@ component_set = {
 	icon = "GFX_ship_part_wtmnb_weapon"
 	icon_frame = 1
 }
+component_set = {
+	key = "WTMNB_WEAPON_K"
+	icon = "GFX_ship_part_wtmnb_weapon"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "WTMNB_WEAPON_XXL"
+	icon = "GFX_ship_part_wtmnb_weapon"
+	icon_frame = 1
+}
 
 component_set = {
 	key = "WTMNB_GRAND_KEY"

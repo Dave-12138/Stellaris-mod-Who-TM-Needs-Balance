@@ -2,7 +2,6 @@ d_wtmnb_star_ruin = {
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
-			energy = 1000
 			sr_dark_matter = 100
 			sr_living_metal = 100
 			sr_zro = 100

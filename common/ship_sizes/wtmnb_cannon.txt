@@ -26,6 +26,9 @@ wtmnb_cannon = {
 		ship_accuracy_add = 9999
 		ship_armor_hardening_add = 1
 	}
+	modifier = {
+		ship_cloaking_strength_add = 10
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_military_station

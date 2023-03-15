@@ -164,20 +164,8 @@ terraform_link = {
 	}
 	effect = {
 		FROM = {
-			if = {
-				limit = {
-					OR = {
-						has_district = district_matrix_office
-						has_district = district_meeting_room
-						has_district = district_seedbed
-					}
-				}
 				reroll_deposits = yes
-				add_deposit = deposit_wtmnb_city
-			}
-			else = {
-				reroll_deposits = yes
-			}
+			
 		}
 	}
 	potential = {
