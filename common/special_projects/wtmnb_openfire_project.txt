@@ -1,3 +1,4 @@
+# 选星系
 special_project = {
 	key = "WTMNB_OPEN_FIRE_SYSTEM_SELECT"
 	event_scope = ship_event
@@ -20,7 +21,7 @@ special_project = {
 		}
 	}
 }
-
+# 选星球
 special_project = {
 	key = "WTMNB_OPEN_FIRE_PLANET_SELECT"
 	event_scope = ship_event
@@ -50,7 +51,7 @@ special_project = {
 		}
 	}
 }
-
+# 取消
 special_project = {
 	key = "WTMNB_OPEN_FIRE_CANCEL"
 	event_scope = ship_event

@@ -18,10 +18,10 @@
  decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位预先女体化改造的居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
 ########
 
- district_seedbed:0 "触手苗床"
- district_seedbed_desc:0 "§L曾经，有学者想探究这些从机械化星球上长出来的触手到底那些部分是有机的，那些部分是无机的，故而踏入此地。\n再后来有人见到她的时候，她已经是一座只会娇喘的活雕像了。§!"
- district_seedbed_plural:0 "$district_seedbed$"
- district_seedbed_effect:0 ""
+ district_wtmnb_seedbed:0 "触手苗床"
+ district_wtmnb_seedbed_desc:0 "§L曾经，有学者想探究这些从机械化星球上长出来的触手到底那些部分是有机的，那些部分是无机的，故而踏入此地。\n再后来有人见到她的时候，她已经是一座只会娇喘的活雕像了。§!"
+ district_wtmnb_seedbed_plural:0 "$district_wtmnb_seedbed$"
+ district_wtmnb_seedbed_effect:0 ""
 #######
  wtmnb_diplomacy.1.dc_r:0 "雷♂普§H[wtmnb_target.Owner.GetRulerName]§!"
 

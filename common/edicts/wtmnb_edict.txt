@@ -106,18 +106,25 @@ wtmnb_edict_4 = {
 				is_ship_class = shipclass_constructor
 			}
 			solar_system = {
-				every_system_megastructure = {
-					enable_special_project = {
-						name = WTMNB_REMOVE_MEGASTRUCTURE
-						location = this
-						owner = root
-					}
-					hidden_effect = {
-						root = {
-							change_variable = {
-								which = wtmnb_rmmega_chain_count
-								value = 1
-							}
+				set_star_flag = wtmnb_rmmega_system
+			}
+		}
+		every_system = {
+			limit = {
+				has_star_flag = wtmnb_rmmega_system
+			}
+			remove_star_flag = wtmnb_rmmega_system
+			every_system_megastructure = {
+				enable_special_project = {
+					name = WTMNB_REMOVE_MEGASTRUCTURE
+					location = this
+					owner = root
+				}
+				hidden_effect = {
+					root = {
+						change_variable = {
+							which = wtmnb_rmmega_chain_count
+							value = 1
 						}
 					}
 				}
@@ -190,7 +197,6 @@ wtmnb_edict_7 = {
 		}
 	}
 	potential = {
-		
 		has_country_flag = wtmnb_order
 		any_playable_country = {
 			NOR = {

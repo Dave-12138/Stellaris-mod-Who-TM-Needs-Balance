@@ -53,36 +53,15 @@ country_event = {
 							set_species_homeworld = event_target:wtmnb_target
 						}
 					}
-					change_species = event_target:new_wtm_species
-					set_built_species = event_target:new_wtm_species
+					# change_species = event_target:new_wtm_species
+					# set_built_species = event_target:new_wtm_species
 					every_owned_leader = {
-						# limit = {
-						# 	OR = {
-						# 		gender = female
-						# 		gender = indeterminable
-						# 	}
-						# }
 						add_leader_trait_wtmnb_stigmata = yes
 						#change_species = event_target:new_wtm_species
 					}
 					every_pool_leader = {
-						# limit = {
-						# 	OR = {
-						# 		gender = female
-						# 		gender = indeterminable
-						# 	}
-						# }
 						add_leader_trait_wtmnb_stigmata = yes
 					}
-					# every_envoy = {
-					# 	limit = {
-					# 		OR = {
-					# 			gender = female
-					# 			gender = indeterminable
-					# 		}
-					# 	}
-					# 	add_trait = leader_trait_wtmnb_stigmata_envoy
-					# }
 				}
 			}
 		}
@@ -188,6 +167,47 @@ country_event = {
 			}
 		}
 	}
+	#安乐天使-所有星体
+	option = {
+		name = wtmnb_colossus.1001.g
+		trigger = {
+			from = {
+				is_star = yes
+				solar_system = {
+					any_system_planet = {
+						is_star = no
+						NOR = {
+							is_planet_class = pc_shielded
+							is_planet_class = pc_ringworld_shielded
+							is_planet_class = pc_habitat_shielded
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			from.solar_system = {
+				every_system_planet = {
+					limit = {
+						is_star = no
+						NOR = {
+							is_planet_class = pc_shielded
+							is_planet_class = pc_ringworld_shielded
+							is_planet_class = pc_habitat_shielded
+						}
+					}
+					fire_on_action = {
+						on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
+						scopes = {
+							from = event_target:wtmnb_planet_killer_ship
+						}
+					}
+				}
+			}
+			from = {
+			}
+		}
+	}
 	#碎星
 	option = {
 		trigger = {
@@ -213,6 +233,7 @@ country_event = {
 	}
 	#黑洞
 	option = {
+		name = wtmnb_colossus.1001.i
 		trigger = {
 			from = {
 				is_star = yes
@@ -226,7 +247,6 @@ country_event = {
 				}
 			}
 		}
-		name = wtmnb_colossus.1001.i
 		hidden_effect = {
 			from = {
 				fire_on_action = {

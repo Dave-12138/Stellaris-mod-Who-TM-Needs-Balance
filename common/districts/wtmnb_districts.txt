@@ -1,5 +1,6 @@
 district_wtmnb_matrix_office = {
 	base_buildtime = 4
+	expansion_planner = yes
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		has_deposit = deposit_wtmnb_city
@@ -9,7 +10,6 @@ district_wtmnb_matrix_office = {
 	}
 	allow = {
 	}
-	conversion_ratio = 0.5
 	resources = {
 		category = planet_districts
 		cost = {
@@ -30,57 +30,7 @@ district_wtmnb_matrix_office = {
 		# country_resource_max_add = 10000
 	}
 }
-# district_wtmnb_little_safe = {
-# 	base_buildtime = 4
-# 	is_capped_by_modifier = no
-# 	show_on_uncolonized = {
-# 		has_deposit = deposit_wtmnb_city
-# 	}
-# 	potential = {
-# 		has_deposit = deposit_wtmnb_city
-# 	}
-# 	conversion_ratio = 0.5
-# 	resources = {
-# 		category = planet_districts
-# 		cost = {
-# 			alloy = 10
-# 		}
-# 		upkeep = {
-# 			energy = 2
-# 		}
-		
-# 		produces = {
-# 			sr_dark_matter = 100
-# 			sr_living_metal = 100
-# 			sr_zro = 100
-# 			nanites = 100
-# 			minor_artifacts = 100
-# 			# 多彩
-# 			sr_ten = 100
-# 			love_juice = 100
-# 			excellent_slave = 100
-# 			living_tentacles = 100
-# 			sr_christian = 100
-# 			holylight_crystal = 100
-# 			sr_beauty = 100
-# 			# 舰R
-# 			sr_se = 100
-# 			sr_alpha = 100
-# 			sr_neo = 100
-# 			sr_pantsu = 100
-# 			# 更卡巨构
-# 			sr_solar_energy = 100
-# 			# 舰B
-# 			mind_club = 100
-# 			azur_shippartbox = 100
-# 			azur_red_diamond = 100
-# 			# 好像是东方
-# 			sr_fuka = 100
-# 			# 应该是游戏人生
-# 			sr_jingling = 100
-# 		}
-# 	}
-# }
+
 
 district_wtmnb_meeting_room = {
 	base_buildtime = 4

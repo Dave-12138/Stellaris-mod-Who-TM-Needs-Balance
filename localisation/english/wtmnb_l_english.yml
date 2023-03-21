@@ -140,9 +140,14 @@
  district_wtmnb_meeting_room:0 "Strategic Fooling Room"
  district_wtmnb_meeting_room_desc:0 "Empire size? What empire? What size? We are just a developing country"
  district_wtmnb_meeting_room_plural:0 "$district_wtmnb_meeting_room$s"
+
  district_wtmnb_matrix_office:0 "Database"
  district_wtmnb_matrix_office_desc:0 "Databases are used for SAVING pop.\n§L-Hey, did you see that guy who went into I/O?§!"
  district_wtmnb_matrix_office_plural:0 "$district_wtmnb_matrix_office$s"
+
+ district_wtmnb_little_safe:0 "Little Safe"
+ district_wtmnb_little_safe_desc:0 "Surprise"
+ district_wtmnb_little_safe_plural:0 "$district_wtmnb_little_safe$s"
 
 ##################
  bombardment_wtmnb_doom:0 "Purification"

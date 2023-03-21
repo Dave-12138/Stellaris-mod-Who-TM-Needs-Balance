@@ -2,6 +2,9 @@ deposit_wtmnb_city = {
 	is_for_colonizable = yes
 	icon = d_station_reactor
 	category = deposit_cat_rare
+	planet_modifier = {
+		district_wtmnb_little_safe_max = 1
+	}
 	########## 科研 ##########
 	# 蜂巢
 	triggered_planet_modifier = {
@@ -372,7 +375,6 @@ deposit_wtmnb_city = {
 			job_ai_wtmnb_master_drone_per_pop = 1
 		}
 	}
-	
 	######### 发电 #########
 	# 格式塔
 	triggered_planet_modifier = {
@@ -626,7 +628,6 @@ deposit_wtmnb_city_civic_point = {
 	can_be_cleared = {
 		always = yes
 	}
-
 	country_modifier = {
 		country_government_civic_points_add = 1
 	}

@@ -1,0 +1,62 @@
+
+district_wtmnb_little_safe = {
+	base_buildtime = 4
+	is_capped_by_modifier = yes
+	show_on_uncolonized = {
+		has_deposit = deposit_wtmnb_city
+	}
+	potential = {
+		has_deposit = deposit_wtmnb_city
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			alloy = 10
+		}
+		upkeep = {
+			energy = 2
+		}
+		produces = {
+			sr_dark_matter = 10
+			sr_living_metal = 100
+			sr_zro = 100
+			nanites = 100
+			minor_artifacts = 100
+			# 多彩
+			love_juice = 100
+			holylight_crystal = 100
+			excellent_slave = 100
+			sr_christian = 100
+			sr_beauty = 100
+			living_tentacles = 100
+			obscene_separation = 100
+			lust_data = 100
+			lust_princess = 100
+			lust_metal = 100
+			# sr_ten = 100
+			# 舰R
+			sr_se = 100
+			sr_alpha = 100
+			sr_neo = 100
+			sr_pantsu = 100
+			# 更卡巨构
+			sr_solar_energy = 100
+			# 舰B
+			mind_club = 100
+			azur_shippartbox = 100
+			azur_red_diamond = 100
+			# 好像是东方
+			sr_fuka = 100
+			sr_lingli = 100
+			# 应该是游戏人生
+			sr_jingling = 100
+			# 莉莉
+			AL_magi_crystal = 100
+			AL_magi_crystal_core = 100
+			AL_magi_alloy = 100
+			AL_faith_num = 100
+			AL_arsenal_shop_coin = 100
+			AL_lily_diary = 100
+		}
+	}
+}

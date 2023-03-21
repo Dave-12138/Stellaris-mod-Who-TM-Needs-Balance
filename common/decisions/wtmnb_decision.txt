@@ -507,6 +507,7 @@ decision_wtmnb_more_civic_point = {
 		weight = 0
 	}
 }
+
 # 造船
 decision_wtmnb_build_ship = {
 	enactment_time = 1
@@ -519,9 +520,16 @@ decision_wtmnb_build_ship = {
 		}
 	}
 	potential = {
-		exists = orbital_defence
-		orbital_defence.starbase = {
-			is_orbital_ring = yes
+		OR = {
+			AND = {
+				exists = orbital_defence
+				orbital_defence.starbase = {
+					is_orbital_ring = yes
+				}
+			}
+			AND = {
+				has_building = building_planetary_shield_generator
+			}
 		}
 	}
 	allow = {
@@ -535,6 +543,7 @@ decision_wtmnb_build_ship = {
 		custom_tooltip = decision_wtmnb_build_ship_effect
 		hidden_effect = {
 			create_fleet = {
+				name = RANDOM
 				settings = {
 					can_upgrade = no
 					spawn_debris = no
@@ -548,10 +557,73 @@ decision_wtmnb_build_ship = {
 							design = "NAME_wtmnb_cannon"
 						}
 					}
-					set_location = root.orbital_defence
-					set_fleet_stance = aggressive
-					set_aggro_range_measure_from = self
-					set_aggro_range = 150
+					create_ship = {
+						random_existing_design = titan
+					}
+					set_location = root
+					# set_fleet_stance = aggressive
+					# set_aggro_range_measure_from = self
+					# set_aggro_range = 150
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 造巨像
+decision_wtmnb_build_colossus = {
+	enactment_time = 1
+	icon = decision_colony_settlement
+	owned_planets_only = yes
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 100
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				exists = orbital_defence
+				orbital_defence.starbase = {
+					is_orbital_ring = yes
+				}
+			}
+			AND = {
+				has_building = building_planetary_shield_generator
+			}
+		}
+	}
+	allow = {
+		solar_system = {
+			any_ship_in_system = {
+				is_ship_size = wtmnb_fortress
+			}
+		}
+		from = {
+			has_existing_ship_design = colossus
+		}
+	}
+	effect = {
+		custom_tooltip = decision_wtmnb_build_colossus_effect
+		hidden_effect = {
+			create_fleet = {
+				settings = {
+					can_upgrade = no
+					spawn_debris = no
+					uses_naval_capacity = no
+				}
+				effect = {
+					set_owner = from
+					create_ship = {
+						random_existing_design = colossus
+						prefix = yes
+						name = RANDOM
+					}
+					set_location = root
 				}
 			}
 		}

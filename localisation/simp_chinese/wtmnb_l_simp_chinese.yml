@@ -221,9 +221,9 @@
  district_wtmnb_matrix_office_desc:0 "成熟的工作都懂得自己完成自己，所以名义上的办公室无论从设计还是使用都是作为配备娱乐设备的住宅。"
  district_wtmnb_matrix_office_plural:0 "$district_wtmnb_matrix_office$"
 
-#  district_wtmnb_little_safe:0 "小金库"
-#  district_wtmnb_little_safe_desc:0 ""
-#  district_wtmnb_little_safe_plural:0 "$district_wtmnb_little_safe$"
+ district_wtmnb_little_safe:0 "小金库"
+ district_wtmnb_little_safe_desc:0 "不努力经营的话只能回家继承家产了。"
+ district_wtmnb_little_safe_plural:0 "$district_wtmnb_little_safe$"
 
 #   _                     _                   _                      _       
 #  | |__   ___  _ __ ___ | |__   __ _ _ __ __| |_ __ ___   ___ _ __ | |_ ___ 
@@ -423,21 +423,31 @@
  decision_wtmnb_reroll_desc:0 "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
  decision_wtmnb_molten:0 "熔毁"
  decision_wtmnb_molten_desc:0 "使用第七律者权柄对星球表面清洗，除了可能蒸发一部分地质结构外，还通常会导致星球不再宜居"
+
  decision_wtmnb_planet_extend:0 "可用区划拓展"
  decision_wtmnb_planet_extend_desc:0 "增加最大区划数\n+30,+10,+10,+10……"
+
  decision_wtmnb_city:0 "$pc_wtmnb_city$计划"
  decision_wtmnb_city_desc:0 "将这里智能化改造"
+
  decision_wtmnb_break_border:0 "开放边境"
  decision_wtmnb_break_border_desc:0 "让邻国边境对我们开放，但他们可能很快又关闭边境"
+
  decision_wtmnb_11th_shield:0 "$aura_judah$"
  decision_wtmnb_11th_shield_desc:0 "在重力井外展开神恩结界，从而阻止跃迁引擎正确定位本星系"
  decision_wtmnb_11th_shield_off:0 "解除$aura_judah$"
  decision_wtmnb_11th_shield_off_desc:0 "解除神恩结界，让除我们之外的文明可以使用跃迁引擎折跃进入本星系"
+
  decision_wtmnb_more_civic_point:0 "额外国民理念点数"
  decision_wtmnb_more_civic_point_desc:0 "可微调数量的额外国民理念点数，点多了可以地块清理挖掉\n总算不用忍受左上角总挂个警报，国民理念已经选的UI装不下的情况了"
+
  decision_wtmnb_build_ship:0 "§B$wtmnb_fortress$§!地面生产线"
  decision_wtmnb_build_ship_effect:0 "制造一支优势火力舰队"
  decision_wtmnb_build_ship_desc:0 "没时间解释了，快上船"
+
+ decision_wtmnb_build_colossus:0 "§B$wtmnb_fortress$§!地面$colossus$生产线"
+ decision_wtmnb_build_colossus_effect:0 "建造巨像，使用你的舰船设计器"
+ decision_wtmnb_build_colossus_desc:0 "就用这个轰掉异种的头吧"
 ##################
  
  pc_wtmnb_city:0 "虚渺之城"

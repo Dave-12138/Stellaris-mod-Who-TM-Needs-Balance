@@ -1,4 +1,4 @@
-district_seedbed = {
+district_wtmnb_seedbed = {
 	
 	base_buildtime = 4
 	is_capped_by_modifier = no
