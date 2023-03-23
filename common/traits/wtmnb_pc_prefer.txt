@@ -16,7 +16,6 @@ trait_pc_wtmnb_city_preference = {
 		Lust_Girl
 		INNOCENTSHOJO
 		TENTACLE
-		LOVEMACHINE
 		WARSHIPGIRL
 		SHENHAI
 		TOUHOUGIRLS

@@ -55,6 +55,44 @@ utility_component_template = {
 	}
 	component_set = "ftl_components"
 }
+# 只有跃迁引擎
+utility_component_template = {
+	key = "WTMNB_JUMP_ONLY_DRIVE"
+	size = small
+	icon = "GFX_ship_part_wtmnb_jump"
+	icon_frame = 1
+	power = 0
+	ftl = no
+	jumpdrive = yes
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = 10
+		ship_jumpdrive_cooldown_mult = -100
+		# ship_windup_mult = -100
+		# ship_winddown_mult = -100
+		ship_emergency_ftl_mult = -1
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 70
+		}
+	}
+	ai_weight = {
+		weight = 40
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+	}
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "ftl_components"
+}
 
 # 作战电脑
 utility_component_template = {
@@ -70,9 +108,6 @@ utility_component_template = {
 		}
 	}
 	ship_behavior = "colossus"
-	class_restriction = {
-		shipclass_military_special
-	}
 	size_restriction = {
 		wtmnb_boomer
 	}

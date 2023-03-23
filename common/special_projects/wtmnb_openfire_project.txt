@@ -1,10 +1,10 @@
 # 选星系
 special_project = {
 	key = "WTMNB_OPEN_FIRE_SYSTEM_SELECT"
-	event_scope = ship_event
+	event_scope = planet_event
 	event_chain = "wtmnb_open_fire_chain"
-	days_to_research = 1
-	on_success = {
+	days_to_research = 0
+	on_start = {
 		from.solar_system = {
 			every_system_planet = {
 				enable_special_project = {
@@ -20,14 +20,18 @@ special_project = {
 			}
 		}
 	}
+	on_success = {
+		
+	}
 }
+
 # 选星球
 special_project = {
 	key = "WTMNB_OPEN_FIRE_PLANET_SELECT"
-	event_scope = ship_event
+	event_scope = planet_event
 	event_chain = "wtmnb_open_fire_chain"
 	days_to_research = 1
-	on_success = {
+	on_start = {
 		fromfrom = {
 			random_owned_ship = {
 				limit = {
@@ -50,7 +54,11 @@ special_project = {
 			end_event_chain = wtmnb_open_fire_chain
 		}
 	}
+	on_success = {
+		
+	}
 }
+
 # 取消
 special_project = {
 	key = "WTMNB_OPEN_FIRE_CANCEL"

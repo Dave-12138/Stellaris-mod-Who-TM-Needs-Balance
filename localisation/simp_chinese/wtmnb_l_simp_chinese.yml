@@ -46,6 +46,8 @@
 
  WTMNB_JUMP_DRIVE:0 "崩坏能跃迁引擎"
  WTMNB_JUMP_DRIVE_DESC:0 "我们解析并复现了部分第二律者权能"
+ WTMNB_JUMP_ONLY_DRIVE:0 "无FTL跃迁引擎"
+ WTMNB_JUMP_ONLY_DRIVE_DESC:0 "删去了超空间航道航行组件，看起来更酷了"
  WTMNB_FORT_CORE:0 "月光王座"
  WTMNB_FORT_CORE2:0 "月光王座(擎天堡模型)"
  swtmnb:0 "$wtmnb_fortress$"
@@ -260,6 +262,8 @@
  wtmnb.2001.a.tip:0 "这会摧毁星系内几乎所有舰队，包括我们的"
  wtmnb.2001.b:0 "太虚剑神"
  wtmnb.2001.b.tip:0 "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
+ wtmnb.2001.c:0 "$wtmnb_open_fire_chain_title$"
+ wtmnb.2001.c.tip:0 "以崩坏裂变弹作为一次性信标，向当前星系中星体发起一次超光速炮击"
  wtmnb.2001.z:0 "遏制爆炸"
  
 

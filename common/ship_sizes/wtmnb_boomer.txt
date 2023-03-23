@@ -24,7 +24,6 @@ wtmnb_boomer = {
 		ship_evasion_mult = -10
 	}
 	modifier = {
-		
 		ship_cloaking_strength_add = 10
 	}
 	num_target_locators = 0

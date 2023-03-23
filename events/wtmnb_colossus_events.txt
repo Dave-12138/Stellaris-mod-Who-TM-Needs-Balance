@@ -147,11 +147,19 @@ country_event = {
 	option = {
 		trigger = {
 			from = {
-				is_star = no
 				NOR = {
+					is_star = yes
+					# 有罩子
 					is_planet_class = pc_shielded
 					is_planet_class = pc_ringworld_shielded
 					is_planet_class = pc_habitat_shielded
+					# 会扭成一团的环
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_tech
+					# 会扭成一团的环II
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_ringworld_tech_damaged
 				}
 			}
 		}
@@ -175,11 +183,19 @@ country_event = {
 				is_star = yes
 				solar_system = {
 					any_system_planet = {
-						is_star = no
 						NOR = {
+							is_star = yes
+							# 有罩子
 							is_planet_class = pc_shielded
 							is_planet_class = pc_ringworld_shielded
 							is_planet_class = pc_habitat_shielded
+							# 会扭成一团的环
+							is_planet_class = pc_ringworld_seam
+							is_planet_class = pc_ringworld_tech
+							# 会扭成一团的环II
+							is_planet_class = pc_ringworld_habitable_damaged
+							is_planet_class = pc_ringworld_seam_damaged
+							is_planet_class = pc_ringworld_tech_damaged
 						}
 					}
 				}
@@ -189,11 +205,19 @@ country_event = {
 			from.solar_system = {
 				every_system_planet = {
 					limit = {
-						is_star = no
 						NOR = {
+							is_star = yes
+							# 有罩子
 							is_planet_class = pc_shielded
 							is_planet_class = pc_ringworld_shielded
 							is_planet_class = pc_habitat_shielded
+							# 会扭成一团的环
+							is_planet_class = pc_ringworld_seam
+							is_planet_class = pc_ringworld_tech
+							# 会扭成一团的环II
+							is_planet_class = pc_ringworld_habitable_damaged
+							is_planet_class = pc_ringworld_seam_damaged
+							is_planet_class = pc_ringworld_tech_damaged
 						}
 					}
 					fire_on_action = {
@@ -204,18 +228,22 @@ country_event = {
 					}
 				}
 			}
-			from = {
-			}
 		}
 	}
 	#碎星
 	option = {
 		trigger = {
 			from = {
-				is_star = no
 				NOR = {
+					is_star = yes
+					# 有罩子,碎星会有外观bug
+					is_planet_class = pc_shielded
+					is_planet_class = pc_ringworld_shielded
+					is_planet_class = pc_habitat_shielded
+					# 已经碎了
 					is_planet_class = pc_broken
 					is_planet_class = pc_shattered
+					# is_planet_class = pc_ringworld_habitable_damaged
 				}
 			}
 		}
@@ -226,6 +254,59 @@ country_event = {
 					on_action = on_destroy_planet_with_PLANET_KILLER_CRACKER
 					scopes = {
 						from = event_target:wtmnb_planet_killer_ship
+					}
+				}
+			}
+		}
+	}
+	#碎星-所有行星
+	option = {
+		name = wtmnb_colossus.1001.h
+		trigger = {
+			from = {
+				is_star = yes
+				solar_system = {
+					any_system_planet = {
+						NOR = {
+							is_star = yes
+							# 有罩子,碎星会有外观bug
+							is_planet_class = pc_shielded
+							is_planet_class = pc_ringworld_shielded
+							is_planet_class = pc_habitat_shielded
+							# 已经碎了
+							is_planet_class = pc_shattered
+							is_planet_class = pc_shattered_2
+							# is_planet_class = pc_ringworld_habitable_damaged
+							# is_planet_class = pc_ringworld_seam_damaged
+							# is_planet_class = pc_ringworld_tech_damaged
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			from.solar_system = {
+				every_system_planet = {
+					limit = {
+						NOR = {
+							is_star = yes
+							# 有罩子,碎星会有外观bug
+							is_planet_class = pc_shielded
+							is_planet_class = pc_ringworld_shielded
+							is_planet_class = pc_habitat_shielded
+							# 已经碎了
+							is_planet_class = pc_shattered
+							is_planet_class = pc_shattered_2
+							# is_planet_class = pc_ringworld_habitable_damaged
+							# is_planet_class = pc_ringworld_seam_damaged
+							# is_planet_class = pc_ringworld_tech_damaged
+						}
+					}
+					fire_on_action = {
+						on_action = on_destroy_planet_with_PLANET_KILLER_CRACKER
+						scopes = {
+							from = event_target:wtmnb_planet_killer_ship
+						}
 					}
 				}
 			}

@@ -321,6 +321,36 @@ country_event = {
 			}
 		}
 	}
+	# 触发超距射击
+	option = {
+		name = wtmnb.2001.c
+		custom_tooltip = wtmnb.2001.c.tip
+		hidden_effect = {
+			begin_event_chain = {
+				event_chain = wtmnb_open_fire_chain
+			}
+			capital_scope = {
+				enable_special_project = {
+					name = WTMNB_OPEN_FIRE_CANCEL
+					owner = root
+				}
+			}
+			event_target:wtmnb_boomed_system = {
+				every_system_planet = {
+					enable_special_project = {
+						name = WTMNB_OPEN_FIRE_PLANET_SELECT
+						location = this
+						owner = root
+					}
+				}
+				root = {
+					abort_special_project = {
+						type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+					}
+				}
+			}
+		}
+	}
 	option = {
 		name = wtmnb.2001.z
 	}

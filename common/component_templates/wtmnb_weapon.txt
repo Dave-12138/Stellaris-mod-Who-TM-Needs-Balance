@@ -125,7 +125,7 @@ weapon_component_template = {
 	range = 0
 	icon = GFX_ship_part_wtmnb_weapon
 	icon_frame = 1
-	component_set = WTMNB_WEAPON_W
+	component_set = WTMNB_WEAPON_K
 	planet_destruction_gfx = "neutron_planet_gfx"
 	size_restriction = {
 		wtmnb_fortress
