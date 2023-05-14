@@ -1,6 +1,6 @@
 on_planet_bombarded = {
 	events = {
-		wtmnb.0
+		wtmnb.1010
 		wtmnb.1000
 	}
 }

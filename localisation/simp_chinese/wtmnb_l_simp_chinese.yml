@@ -98,22 +98,34 @@
  leader_trait_wtmnb_stigmata_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_stigmata$。"
 
  leader_trait_wtmnb_stigmata_scientist:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_scientist_councilor:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_scientist_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+ leader_trait_wtmnb_stigmata_scientist_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
 
  leader_trait_wtmnb_stigmata_envoy:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_envoy_councilor:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_envoy_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+ leader_trait_wtmnb_stigmata_envoy_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
 
  leader_trait_wtmnb_stigmata_admiral:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_admiral_councilor:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_admiral_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+ leader_trait_wtmnb_stigmata_admiral_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
 
  leader_trait_wtmnb_stigmata_governor:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_governor_councilor:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_governor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+ leader_trait_wtmnb_stigmata_governor_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
 
  leader_trait_wtmnb_stigmata_general:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_general_councilor:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_general_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+ leader_trait_wtmnb_stigmata_general_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
 
  leader_trait_wtmnb_stigmata_ruler:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata_ruler_councilor:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_ruler_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
+ leader_trait_wtmnb_stigmata_ruler_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
 
  trait_pc_wtmnb_city_preference:0 "$pc_wtmnb_city$偏好"
  trait_pc_wtmnb_city_preference_desc:0 "$trait_pc_arctic_preference_desc$"
@@ -150,7 +162,10 @@
 #   \___|\__,_|_|\___|\__|
                         
  edict_wtmnb_edict:0 "死海文书"
- edict_wtmnb_edict_desc:0 "部分科技解锁"
+ edict_wtmnb_edict_desc:0 "启用【我特么直接作弊】"
+
+ edict_wtmnb_edict_tech:0 "虚数内能导论"
+ edict_wtmnb_edict_tech_desc:0 "科技解锁"
 
  edict_wtmnb_edict_2:0 "绯红之王"
  edict_wtmnb_edict_2_desc:0 "跳过等待政府改革cd的时间\n§L重置政府改革(调整国民理念、政体)CD§!"

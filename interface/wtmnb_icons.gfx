@@ -59,6 +59,11 @@ spriteTypes = {
 		name = "GFX_ship_part_wtmnb_4th_key"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_4th_key.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_leader_subclass_wtmnb_stigmata"
+		texturefile = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	}
 	spriteType = {
 		name = "GFX_fleet_order_button_ground_support_wtmnb_doom"
 		texturefile = "gfx/interface/fleet_view/wtmnb_bombardment_stances.dds"

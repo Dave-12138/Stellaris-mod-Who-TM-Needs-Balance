@@ -1,58 +1,4 @@
 namespace = wtmnb
-# 轨道轰炸
-planet_event = {
-	id = wtmnb.0
-	pre_triggers = {
-		has_owner = yes
-	}
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		OR = {
-			has_orbital_bombardment_stance = wtmnb_doom
-			has_orbital_bombardment_stance = wtmnb_doom
-		}
-		FROM = {
-			OR = {
-				has_technology = tech_wtmnb_fortress
-			}
-		}
-		NOT = {
-			is_planet_class = pc_ai
-		}
-	}
-	immediate = {
-		owner = {
-			save_event_target_as = doomed_planet_owner
-		}
-		#remove_all_buildings = yes
-		random_owned_pop = {
-			kill_pop = yes
-		}
-		every_planet_army = {
-			remove_army = yes
-		}
-		if = {
-			limit = {
-				is_colony = no
-			}
-			event_target:doomed_planet_owner = {
-				add_static_war_exhaustion = {
-					attacker = from
-					location = root
-					value_for_planet_destruction = 1
-				}
-				#country_event = { id = wtmnb.1 } 
-			}
-			from = {
-				country_event = {
-					id = wtmnb.1
-				}
-			}
-		}
-		remove_modifier = "dangerous_wildlife"
-	}
-}
 
 # 轨道轰炸 提示（轰炸方）
 country_event = {
@@ -220,6 +166,55 @@ planet_event = {
 	}
 }
 
+# 轨道轰炸
+planet_event = {
+	id = wtmnb.1010
+	pre_triggers = {
+		has_owner = yes
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = wtmnb_doom
+		FROM = {
+			has_country_flag = wtmnb_order
+		}
+		NOT = {
+			is_planet_class = pc_ai
+		}
+	}
+	immediate = {
+		owner = {
+			save_event_target_as = doomed_planet_owner
+		}
+		#remove_all_buildings = yes
+		random_owned_pop = {
+			kill_pop = yes
+		}
+		every_planet_army = {
+			remove_army = yes
+		}
+		if = {
+			limit = {
+				is_colony = no
+			}
+			event_target:doomed_planet_owner = {
+				add_static_war_exhaustion = {
+					attacker = from
+					location = root
+					value_for_planet_destruction = 1
+				}
+				#country_event = { id = wtmnb.1 } 
+			}
+			from = {
+				country_event = {
+					id = wtmnb.1
+				}
+			}
+		}
+		remove_modifier = "dangerous_wildlife"
+	}
+}
 # 崩坏裂变弹
 country_event = {
 	id = wtmnb.2000

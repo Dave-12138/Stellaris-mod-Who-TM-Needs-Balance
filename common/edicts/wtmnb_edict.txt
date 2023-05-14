@@ -13,6 +13,30 @@ wtmnb_edict = {
 			set_global_flag = wtmnb_edict_checked
 			set_country_flag = wtmnb_order
 		}
+	}
+	potential = {
+		NOT = {
+			has_global_flag = wtmnb_edict_checked
+		}
+	}
+	allow = {
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+wtmnb_edict_tech = {
+	length = 1
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		upkeep = {
+			energy = 1
+		}
+	}
+	effect = {
 		give_technology = {
 			tech = tech_wtmnb_fortress
 			message = no
@@ -23,8 +47,9 @@ wtmnb_edict = {
 		}
 	}
 	potential = {
+		has_country_flag = wtmnb_order
 		NOT = {
-			has_global_flag = wtmnb_edict_checked
+			has_technology = tech_wtmnb_fortress
 		}
 	}
 	allow = {
@@ -58,7 +83,7 @@ wtmnb_edict_2 = {
 		weight = 0
 	}
 }
-
+# 信任增长
 wtmnb_edict_3 = {
 	icon = GFX_mod_mod_country_trust_growth
 	length = -1

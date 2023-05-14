@@ -60,22 +60,19 @@ trait_wtmnb_stigmata = {
 # ruler
 leader_trait_wtmnb_stigmata_ruler = {
 	cost = 0
-	initial = no
-	randomized = no
-	modification = no
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
-	leader_trait = {
-		ruler
-	}
-	leader_class = {
-		ruler
-	}
+	randomized = no	
+	councilor_trait = yes
+	initial = no
+	leader_class = { scientist governor admiral general }
 	modifier = {
 		spy_network_daily_value_mult = 100
 		intel_decryption_add = 2000
 		intel_encryption_add = 2000
 		spy_network_levels_add = 200
+		espionage_operation_speed_mult = 100
+		army_experience_gain_mult = 100
 		first_contact_clues_add = 200
 		first_contact_speed_mult = 100
 		add_base_country_intel = 100
@@ -96,6 +93,8 @@ leader_trait_wtmnb_stigmata_ruler = {
 		quantum_catapult_megastructure_bypass_windup_mult = -1
 		country_mia_time_mult = -1
 		##############
+		all_technology_research_speed = 10
+		##############
 		ship_engagement_range_mult = 0.5
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
@@ -106,67 +105,100 @@ leader_trait_wtmnb_stigmata_general = {
 	cost = 0
 	initial = no
 	randomized = no
-	modification = no
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
-	leader_trait = {
-		general
-	}
+	
 	leader_class = {
 		general
 	}
+	self_modifier = {
+		planet_combat_width_add = 5
+	}
 	modifier = {
 		army_damage_mult = 100
+	}
+	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
+}
+leader_trait_wtmnb_stigmata_general_councilor = {
+	subclass_trait = yes
+	councilor_trait = yes
+	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = invader
+		COUNCIL = yes
+	}
+	leader_class = { general }
+	modifier = {
+		spy_network_daily_value_mult = 100
+		intel_decryption_add = 2000
+		intel_encryption_add = 2000
+		spy_network_levels_add = 200
+		espionage_operation_speed_mult = 100
 		army_experience_gain_mult = 100
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
-
 # governor 总督
 leader_trait_wtmnb_stigmata_governor = {
 	cost = 0
 	initial = no
 	randomized = no
-	modification = no
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
-	leader_trait = {
-		governor
-	}
 	leader_class = {
 		governor
 	}
-	modifier = {
+	system_modifier={
 		pop_demotion_time_mult = -1
 		###################
 		planet_buildings_cost_mult = -1
 		planet_districts_cost_mult = -1
 		planet_building_build_speed_mult = 100
 		planet_jobs_food_produces_mult = 0.5
-		deposit_blockers_cost_mult = -1
 		planet_clear_blocker_time_mult = -1
 		planet_clear_blocker_speed_mult = 1000
-		planet_decision_enact_speed_mult = 10000
 		planet_stability_add = 100
 		planet_crime_add = -150
 		planet_army_build_speed_mult = 50
-		planet_colony_development_speed_mult = 100
 		planet_jobs_upkeep_mult = -2
 		planet_structures_upkeep_mult = -2
 		##############
-		terraform_speed_mult = 250
-		megastructure_build_speed_mult = 5000
 		starbase_upgrade_time_mult = -1
 	}
-	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
-
+leader_trait_wtmnb_stigmata_governor_councilor = {
+	subclass_trait = yes
+	councilor_trait = yes
+	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = economist
+		COUNCIL = yes
+	}
+	leader_class = { governor }
+	modifier = {
+		first_contact_clues_add = 200
+		first_contact_speed_mult = 100
+		add_base_country_intel = 100
+		###################
+		deposit_blockers_cost_mult = -1
+		planet_decision_enact_speed_mult = 10000
+		planet_colony_development_speed_mult = 100
+		##############
+		terraform_speed_mult = 250
+		shipsize_starbase_outpost_build_speed_mult = 500
+		shipclass_military_special_build_speed_mult = 1000
+		shipclass_mining_station_build_speed_mult = 1000
+		shipclass_research_station_build_speed_mult = 1000
+		megastructure_build_speed_mult = 5000
+	}
+}
 # admiral 海军
 leader_trait_wtmnb_stigmata_admiral = {
 	cost = 0
 	initial = no
 	randomized = no
-	modification = no
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
 	leader_trait = {
@@ -178,41 +210,68 @@ leader_trait_wtmnb_stigmata_admiral = {
 	modifier = {
 		# 溢出了啦，都怪你
 		# ship_weapon_range_mult = 1
-		ship_engagement_range_mult = 1
 		ships_upkeep_mult = -2
+		ship_engagement_range_mult = 0.1
+		fleet_mia_time_mult = -1
+		ship_experience_gain_mult = 10
 	}
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
-
+leader_trait_wtmnb_stigmata_admiral_councilor = {
+	subclass_trait = yes
+	councilor_trait = yes
+	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = tactician
+		COUNCIL = yes
+	}
+	leader_class = {  admiral  }
+	modifier = {
+		ship_starting_experience_add = 1000
+		# 弹弓
+		catapult_range_mult = 10
+		catapult_spread_mult = 3
+		quantum_catapult_megastructure_bypass_windup_mult = -1
+		country_mia_time_mult = -1
+	}
+	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
+}
 # 科学家
 leader_trait_wtmnb_stigmata_scientist = {
 	cost = 0
 	initial = no
 	randomized = no
-	modification = no
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
-	leader_trait = {
-		scientist
-	}
 	leader_class = {
 		scientist
 	}
-	ai_categories = {
-		survey
-		physics
-		society
-		engineering
-	}
 	modifier = {
-		all_technology_research_speed = 10
 		science_ship_survey_speed = 10
 		ship_archaeological_site_clues_add = 15
 		ship_archaeological_site_excavation_speed_mult = 10000
 		ship_anomaly_research_speed_mult = 50
 	}
 }
-
+leader_trait_wtmnb_stigmata_scientist_councilor = {
+	
+	subclass_trait = yes
+	councilor_trait = yes
+	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = explorer
+		COUNCIL = yes
+	}
+	leader_class = { scientist  }
+	modifier = {
+		country_mia_time_mult = -1
+		##############
+		all_technology_research_speed = 10
+	}
+	# subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
+}
 # envoy
 # 外交大使根本不会有特质啊（恼）
 leader_trait_wtmnb_stigmata_envoy = {
@@ -222,9 +281,6 @@ leader_trait_wtmnb_stigmata_envoy = {
 	modification = no
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
-	leader_trait = {
-		envoy
-	}
 	leader_class = {
 		envoy
 	}

@@ -58,20 +58,45 @@ wtmnb_safe_destroy_fleet = {
 
 # 添加本mod领袖特质
 add_leader_trait_wtmnb_stigmata = {
-	add_ruler_trait = leader_trait_wtmnb_stigmata_ruler
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		add_trait_no_notify = leader_trait_wtmnb_stigmata_ruler
+	}
+	else = {
+		switch = {
+			trigger = leader_class
+			scientist = {
+				add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist_councilor
+			}
+			admiral = {
+				add_trait_no_notify = leader_trait_wtmnb_stigmata_admiral_councilor
+			}
+			general = {
+				add_trait_no_notify = leader_trait_wtmnb_stigmata_general_councilor
+			}
+			governor = {
+				add_trait_no_notify = leader_trait_wtmnb_stigmata_governor_councilor
+			}
+		}
+	}
 	switch = {
 		trigger = leader_class
 		scientist = {
-			add_trait = leader_trait_wtmnb_stigmata_scientist
+			add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist
 		}
 		admiral = {
-			add_trait = leader_trait_wtmnb_stigmata_admiral
+			add_trait_no_notify = leader_trait_wtmnb_stigmata_admiral
 		}
 		general = {
-			add_trait = leader_trait_wtmnb_stigmata_general
+			add_trait_no_notify = leader_trait_wtmnb_stigmata_general
 		}
 		governor = {
-			add_trait = leader_trait_wtmnb_stigmata_governor
+			add_trait_no_notify = leader_trait_wtmnb_stigmata_governor
 		}
 		# envoy = {
 		# 	add_trait = leader_trait_wtmnb_stigmata_envoy
