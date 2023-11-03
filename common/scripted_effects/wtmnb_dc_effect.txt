@@ -1,19 +1,19 @@
 show_dc_r_desc = {
 	if = {
 		limit = {
-			has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+			has_trait = leader_trait_ruler_wtmnb_dc_r
 		}
 		custom_tooltip = leader_trait_ruler_wtmnb_dc_r_added
 	}
 	else_if = {
 		limit = {
-			has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+			has_trait = leader_trait_ruler_wtmnb_dc_r2
 		}
 		custom_tooltip = leader_trait_ruler_wtmnb_dc_r2_added
 	}
 	if = {
 		limit = {
-			has_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+			has_trait = leader_trait_ruler_wtmnb_dc_r3
 		}
 		custom_tooltip = leader_trait_ruler_wtmnb_dc_r3_added
 	}

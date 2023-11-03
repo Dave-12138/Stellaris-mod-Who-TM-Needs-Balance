@@ -44,14 +44,18 @@ country_event = {
 			from = {
 				owner = {
 					modify_species = {
-						species = owner_species
+						species = this
 						add_trait = trait_wtmnb_stigmata
-						add_traits_at_start_of_list = yes
+						# add_traits_at_start_of_list = yes
 						change_scoped_species = yes
 						effect = {
-							save_event_target_as = new_wtm_species
 							set_species_homeworld = event_target:wtmnb_target
+							save_event_target_as = new_wtm_species
 						}
+					}
+					change_dominant_species = {
+						species = event_target:new_wtm_species
+						change_all = yes
 					}
 					# change_species = event_target:new_wtm_species
 					# set_built_species = event_target:new_wtm_species

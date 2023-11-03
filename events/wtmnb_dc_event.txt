@@ -26,7 +26,7 @@ country_event = {
 							factor = 0
 							gender = male
 						}
-						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+						add_trait = leader_trait_ruler_wtmnb_dc_r3
 						prev = {
 							country_event = {
 								id = wtmnb_dc.1100
@@ -51,11 +51,11 @@ country_event = {
 								species = {
 									is_has_lust_trait = yes
 								}
-								has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
-								has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+								has_trait = leader_trait_ruler_wtmnb_dc_r
+								has_trait = leader_trait_ruler_wtmnb_dc_r2
 							}
 						}
-						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+						add_trait = leader_trait_ruler_wtmnb_dc_r
 					}
 					50 = {
 						modifier = {
@@ -70,8 +70,8 @@ country_event = {
 								has_trait = trait_DC_ethic_asceticism
 							}
 						}
-						remove_ruler_trait = leader_trait_ruler_wtmnb_dc_r
-						add_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+						remove_trait = leader_trait_ruler_wtmnb_dc_r
+						add_trait = leader_trait_ruler_wtmnb_dc_r2
 					}
 					50 = {
 					}
@@ -166,7 +166,7 @@ country_event = {
 		text = wtmnb_dc.1020.desc.1
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				has_trait = leader_trait_ruler_wtmnb_dc_r
 			}
 		}
 	}
@@ -174,7 +174,7 @@ country_event = {
 		text = wtmnb_dc.1020.desc.2
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+				has_trait = leader_trait_ruler_wtmnb_dc_r2
 			}
 		}
 	}
@@ -183,8 +183,8 @@ country_event = {
 		trigger = {
 			event_target:dc_r_ruler = {
 				NOR = {
-					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
-					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+					has_trait = leader_trait_ruler_wtmnb_dc_r2
+					has_trait = leader_trait_ruler_wtmnb_dc_r
 				}
 			}
 		}
@@ -195,7 +195,7 @@ country_event = {
 		trigger = {
 			event_target:dc_r_ruler = {
 				NOT = {
-					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+					has_trait = leader_trait_ruler_wtmnb_dc_r2
 				}
 			}
 		}
@@ -243,7 +243,7 @@ country_event = {
 		name = wtmnb_dc.1020.d
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+				has_trait = leader_trait_ruler_wtmnb_dc_r2
 			}
 		}
 		event_target:dc_r_ruler = {
@@ -257,7 +257,7 @@ country_event = {
 				has_trait = trait_DC_ethic_carnalism
 			}
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				has_trait = leader_trait_ruler_wtmnb_dc_r
 			}
 		}
 		event_target:dc_r_ruler = {
@@ -289,7 +289,7 @@ country_event = {
 		text = wtmnb_dc.1020.desc.1
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				has_trait = leader_trait_ruler_wtmnb_dc_r
 			}
 		}
 	}
@@ -297,7 +297,7 @@ country_event = {
 		text = wtmnb_dc.1020.desc.2
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+				has_trait = leader_trait_ruler_wtmnb_dc_r2
 			}
 		}
 	}
@@ -306,8 +306,8 @@ country_event = {
 		trigger = {
 			event_target:dc_r_ruler = {
 				NOR = {
-					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
-					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+					has_trait = leader_trait_ruler_wtmnb_dc_r2
+					has_trait = leader_trait_ruler_wtmnb_dc_r
 				}
 			}
 		}
@@ -318,7 +318,7 @@ country_event = {
 		trigger = {
 			event_target:dc_r_ruler = {
 				NOT = {
-					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+					has_trait = leader_trait_ruler_wtmnb_dc_r2
 				}
 			}
 		}
@@ -351,7 +351,7 @@ country_event = {
 				has_trait = trait_DC_ethic_carnalism
 			}
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+				has_trait = leader_trait_ruler_wtmnb_dc_r2
 			}
 		}
 		event_target:dc_r_ruler = {
@@ -366,7 +366,7 @@ country_event = {
 		name = wtmnb_dc.1020.d
 		trigger = {
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+				has_trait = leader_trait_ruler_wtmnb_dc_r2
 			}
 		}
 		event_target:dc_r_ruler = {
@@ -380,7 +380,7 @@ country_event = {
 				has_trait = trait_DC_ethic_carnalism
 			}
 			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r
+				has_trait = leader_trait_ruler_wtmnb_dc_r
 			}
 		}
 		event_target:dc_r_ruler = {
@@ -411,11 +411,11 @@ country_event = {
 				exists = ruler
 				ruler = {
 					is_same_value = event_target:dc_r_ruler
-					has_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+					has_trait = leader_trait_ruler_wtmnb_dc_r3
 				}
 			}
 			ruler = {
-				remove_ruler_trait = leader_trait_ruler_wtmnb_dc_r3
+				remove_trait = leader_trait_ruler_wtmnb_dc_r3
 			}
 			create_half_species = {
 				species_one = ruler.species

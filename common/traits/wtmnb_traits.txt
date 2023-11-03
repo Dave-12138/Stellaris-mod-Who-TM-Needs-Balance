@@ -120,6 +120,8 @@ leader_trait_wtmnb_stigmata_general = {
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
 leader_trait_wtmnb_stigmata_general_councilor = {
+	initial = no
+	randomized = no
 	subclass_trait = yes
 	councilor_trait = yes
 	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
@@ -168,6 +170,8 @@ leader_trait_wtmnb_stigmata_governor = {
 	}
 }
 leader_trait_wtmnb_stigmata_governor_councilor = {
+	initial = no
+	randomized = no
 	subclass_trait = yes
 	councilor_trait = yes
 	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
@@ -218,6 +222,8 @@ leader_trait_wtmnb_stigmata_admiral = {
 	#custom_tooltip = leader_trait_wtmnb_stigmata_modifier
 }
 leader_trait_wtmnb_stigmata_admiral_councilor = {
+	initial = no
+	randomized = no
 	subclass_trait = yes
 	councilor_trait = yes
 	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
@@ -255,7 +261,8 @@ leader_trait_wtmnb_stigmata_scientist = {
 	}
 }
 leader_trait_wtmnb_stigmata_scientist_councilor = {
-	
+	initial = no
+	randomized = no
 	subclass_trait = yes
 	councilor_trait = yes
 	subclass_background_icon = "GFX_leader_subclass_wtmnb_stigmata"
