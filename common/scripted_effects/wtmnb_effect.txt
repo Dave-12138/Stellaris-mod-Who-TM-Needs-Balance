@@ -65,7 +65,12 @@ add_leader_trait_wtmnb_stigmata = {
 				is_gestalt = yes
 			}
 		}
-		add_trait_no_notify = leader_trait_wtmnb_stigmata_ruler
+		if = {
+			limit = {
+				is_ruler = yes
+			}
+			add_trait_no_notify = leader_trait_wtmnb_stigmata_ruler
+		}
 	}
 	else = {
 		switch = {
@@ -73,14 +78,11 @@ add_leader_trait_wtmnb_stigmata = {
 			scientist = {
 				add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist_councilor
 			}
-			admiral = {
-				add_trait_no_notify = leader_trait_wtmnb_stigmata_admiral_councilor
+			official = {
+				add_trait_no_notify = leader_trait_wtmnb_stigmata_official_councilor
 			}
-			general = {
-				add_trait_no_notify = leader_trait_wtmnb_stigmata_general_councilor
-			}
-			governor = {
-				add_trait_no_notify = leader_trait_wtmnb_stigmata_governor_councilor
+			commander = {
+				add_trait_no_notify = leader_trait_wtmnb_stigmata_commander_councilor
 			}
 		}
 	}
@@ -89,14 +91,11 @@ add_leader_trait_wtmnb_stigmata = {
 		scientist = {
 			add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist
 		}
-		admiral = {
-			add_trait_no_notify = leader_trait_wtmnb_stigmata_admiral
+		commander = {
+			add_trait_no_notify = leader_trait_wtmnb_stigmata_commander
 		}
-		general = {
-			add_trait_no_notify = leader_trait_wtmnb_stigmata_general
-		}
-		governor = {
-			add_trait_no_notify = leader_trait_wtmnb_stigmata_governor
+		official = {
+			add_trait_no_notify = leader_trait_wtmnb_stigmata_official
 		}
 		# envoy = {
 		# 	add_trait = leader_trait_wtmnb_stigmata_envoy

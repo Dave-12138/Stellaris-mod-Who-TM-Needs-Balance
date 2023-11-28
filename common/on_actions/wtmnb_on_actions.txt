@@ -26,6 +26,13 @@ on_leader_spawned = {
 	}
 }
 
+on_ruler_created={
+	events = {
+		# 统治者
+		wtmnb.6
+	}
+}
+
 on_ship_destroyed_victim = {
 	events = {
 		# 崩坏裂变弹

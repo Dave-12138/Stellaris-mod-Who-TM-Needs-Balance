@@ -1,5 +1,4 @@
 namespace = wtmnb
-
 # 轨道轰炸 提示（轰炸方）
 country_event = {
 	id = wtmnb.1
@@ -117,14 +116,8 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		from = {
-			species = {
-				has_trait = trait_wtmnb_stigmata
-			}
-			# OR = {
-			# 	gender = female
-			# 	gender = indeterminable
-			# }
+		species = {
+			has_trait = trait_wtmnb_stigmata
 		}
 	}
 	immediate = {
@@ -215,6 +208,7 @@ planet_event = {
 		remove_modifier = "dangerous_wildlife"
 	}
 }
+
 # 崩坏裂变弹
 country_event = {
 	id = wtmnb.2000

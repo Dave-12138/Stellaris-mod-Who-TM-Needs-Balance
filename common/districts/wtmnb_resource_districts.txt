@@ -22,6 +22,7 @@ district_wtmnb_little_safe = {
 			sr_zro = 100
 			nanites = 100
 			minor_artifacts = 100
+			astral_threads = 100
 			# 多彩
 			love_juice = 100
 			holylight_crystal = 100
