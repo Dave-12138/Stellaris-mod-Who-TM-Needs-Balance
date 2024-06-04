@@ -6,9 +6,7 @@ leader_trait_ruler_wtmnb_dc_r = {
 		country_admin_cap_mult = -0.3
 		planet_jobs_produces_mult = -0.1
 	}
-	leader_trait = {
-		scientist governor admiral general
-	}
+	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
 	modification = no
@@ -24,9 +22,7 @@ leader_trait_ruler_wtmnb_dc_r2 = {
 	self_modifier = {
 		leaders_upkeep_mult = -1
 	}
-	leader_trait = {
-		scientist governor admiral general
-	}
+	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
 	modification = no
@@ -40,9 +36,7 @@ leader_trait_ruler_wtmnb_dc_r3 = {
 	self_modifier = {
 		leaders_upkeep_mult = 1
 	}
-	leader_trait = {
-		scientist governor admiral general
-	}
+	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
 	modification = no

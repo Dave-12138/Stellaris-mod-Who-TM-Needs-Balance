@@ -58,47 +58,48 @@ wtmnb_safe_destroy_fleet = {
 
 # 添加本mod领袖特质
 add_leader_trait_wtmnb_stigmata = {
-	if = {
-		limit = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		if = {
-			limit = {
-				is_ruler = yes
-			}
-			add_trait_no_notify = leader_trait_wtmnb_stigmata_ruler
-		}
-	}
-	else = {
-		switch = {
-			trigger = leader_class
-			scientist = {
-				add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist_councilor
-			}
-			official = {
-				add_trait_no_notify = leader_trait_wtmnb_stigmata_official_councilor
-			}
-			commander = {
-				add_trait_no_notify = leader_trait_wtmnb_stigmata_commander_councilor
-			}
-		}
-	}
-	switch = {
-		trigger = leader_class
-		scientist = {
-			add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist
-		}
-		commander = {
-			add_trait_no_notify = leader_trait_wtmnb_stigmata_commander
-		}
-		official = {
-			add_trait_no_notify = leader_trait_wtmnb_stigmata_official
-		}
-		# envoy = {
-		# 	add_trait = leader_trait_wtmnb_stigmata_envoy
-		# }
-	}
+	add_trait_no_notify = leader_trait_wtmnb_stigmata
+	# if = {
+	# 	limit = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_gestalt = yes
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			is_ruler = yes
+	# 		}
+	# 		add_trait_no_notify = leader_trait_wtmnb_stigmata_ruler
+	# 	}
+	# }
+	# else = {
+	# 	switch = {
+	# 		trigger = leader_class
+	# 		scientist = {
+	# 			add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist_councilor
+	# 		}
+	# 		official = {
+	# 			add_trait_no_notify = leader_trait_wtmnb_stigmata_official_councilor
+	# 		}
+	# 		commander = {
+	# 			add_trait_no_notify = leader_trait_wtmnb_stigmata_commander_councilor
+	# 		}
+	# 	}
+	# }
+	# switch = {
+	# 	trigger = leader_class
+	# 	scientist = {
+	# 		add_trait_no_notify = leader_trait_wtmnb_stigmata_scientist
+	# 	}
+	# 	commander = {
+	# 		add_trait_no_notify = leader_trait_wtmnb_stigmata_commander
+	# 	}
+	# 	official = {
+	# 		add_trait_no_notify = leader_trait_wtmnb_stigmata_official
+	# 	}
+	# 	# envoy = {
+	# 	# 	add_trait = leader_trait_wtmnb_stigmata_envoy
+	# 	# }
+	# }
 }

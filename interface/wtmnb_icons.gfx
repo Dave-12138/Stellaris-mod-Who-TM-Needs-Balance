@@ -61,8 +61,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_leader_subclass_wtmnb_stigmata"
-		texturefile = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+		name = "GFX_leader_trait_wtmnb_stigmata"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/wtmnb_stigmata.dds"
 	}
 	spriteType = {
 		name = "GFX_fleet_order_button_ground_support_wtmnb_doom"

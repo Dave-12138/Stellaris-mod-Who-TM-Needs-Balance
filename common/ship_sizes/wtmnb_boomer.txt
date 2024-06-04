@@ -36,9 +36,9 @@ wtmnb_boomer = {
 	combat_disengage_chance = -2
 	is_designable = yes
 	components_add_to_cost = no
-	prerequisites = {
-		"tech_wtmnb_fortress"
-	}
+	# prerequisites = {
+	# 	"tech_wtmnb_fortress"
+	# }
 	class = shipclass_military_special
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"

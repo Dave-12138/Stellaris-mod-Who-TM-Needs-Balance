@@ -3,64 +3,7 @@ country_event = {
 	id = wtmnb_diplomacy.1
 	is_triggered_only = yes
 	title = wtmnb_diplomacy.1.name
-	desc = {
-		trigger = {
-			event_target:wtmnb_target.owner = {
-				is_friendly_to = root
-				is_gestalt = yes
-			}
-		}
-		text = wtmnb_diplomacy.1.friendly.desc
-	}
-	desc = {
-		trigger = {
-			event_target:wtmnb_target.owner = {
-				is_friendly_to = root
-				is_gestalt = no
-			}
-		}
-		text = wtmnb_diplomacy.1.friendly_gestalt.desc
-	}
-	desc = {
-		trigger = {
-			event_target:wtmnb_target.owner = {
-				is_loyal_to = root
-			}
-		}
-		text = wtmnb_diplomacy.1.loyal.desc
-	}
-	desc = {
-		trigger = {
-			event_target:wtmnb_target.owner = {
-				is_disloyal_to = root
-			}
-		}
-		text = wtmnb_diplomacy.1.disloyal.desc
-	}
-	desc = {
-		trigger = {
-			event_target:wtmnb_target.owner = {
-				is_unfriendly_to = root
-			}
-		}
-		text = wtmnb_diplomacy.1.insult.desc
-	}
-	desc = {
-		trigger = {
-			event_target:wtmnb_target.owner = {
-				is_neutral_to = root
-			}
-		}
-		text = wtmnb_diplomacy.1.neutral.desc
-	}
-	desc = {
-		trigger = {
-			event_target:wtmnb_target.owner = {
-				is_fallen_machine_empire = yes
-			}
-		}
-		text = wtmnb_diplomacy.1.machine_dad.desc
-	}
+	desc = wtmnb_diplomacy.1.desc
 	diplomatic = yes
 	#图
 	picture_event_data = {
@@ -113,7 +56,7 @@ country_event = {
 			}
 		}
 	}
-	#宣战
+	#宣战 附庸
 	option = {
 		name = wtmnb_diplomacy.1.c
 		custom_tooltip = wtmnb_diplomacy.1.c.desc

@@ -186,14 +186,8 @@
  wtmnb_colossus.1001.x:0 "Ring World"
  wtmnb_colossus.1001.x.desc:0 "we dont need those planet any more"
 #########
- wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
- wtmnb_diplomacy.1.friendly.desc:0 "Is there anything we can do for you, our friend?"
- wtmnb_diplomacy.1.friendly_gestalt.desc:0 "Is there anything I can do for you?"
- wtmnb_diplomacy.1.machine_dad.desc:0 "Accepting Special signal...§GSUCCESS§!\n channel build...§GSUCCESS§!\n §H[Root.GetSpeciesName]§!§Y[Root.GetRulerName]§! §GIdentifying SUCCESS§!\n calling diplomatic function.....§RTime out§!"
- wtmnb_diplomacy.1.loyal.desc:0 "My honor belongs to you, [Root.GetRulerName]"
- wtmnb_diplomacy.1.disloyal.desc:0 "[Root.GetSpeciesNameInsult], You bastards are gonna regret this."
- wtmnb_diplomacy.1.insult.desc:0 "oh? [Root.GetSpeciesName]? I thought I was looking at Tiyanki's poop."
- wtmnb_diplomacy.1.neutral.desc:0 "Countinue."
+ wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"s
+ wtmnb_diplomacy.1.desc:0 "Countinue."
  wtmnb_diplomacy.1.a:0 "Forget it"
  wtmnb_diplomacy.1.b:0 "Murder [wtmnb_target.Owner.GetRulerTitle] §H[wtmnb_target.Owner.GetRulerName]§!"
  wtmnb_diplomacy.1.b.desc:0 "§H[wtmnb_target.Owner.GetRulerName]§! dead\n[wtmnb_target.Owner.GetName] is humiliated"

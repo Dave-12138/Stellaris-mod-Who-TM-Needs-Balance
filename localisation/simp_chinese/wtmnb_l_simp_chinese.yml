@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
  sm_wtmnb_super_trade_hub:0 "无人机超级贸易网络"
  sm_wtmnb_super_trade_hub_desc:0 "高效的军制式超光速无人机能将小半个银河系划入星区收集范围"
-#################
+ #################
  wtmnb_fortress:0 "月光王座"
  wtmnb_fortress_plural:0 "$wtmnb_fortress$"
  aura_unbreakable_shield_wide:0 "AT力场"
@@ -91,6 +91,11 @@
  COMBAT_COMPUTER_WTMNB_BOOMER:0 "自爆卡车作战电脑"
  COMBAT_COMPUTER_WTMNB_CANNON:0 "长距炮击作战电脑"
 #################
+#   _             _ _   
+#  | |_ _ __ __ _(_) |_ 
+#  | __| '__/ _` | | __|
+#  | |_| | | (_| | | |_ 
+#   \__|_|  \__,_|_|\__|
  trait_wtmnb_stigmata:0 "圣痕"
  trait_wtmnb_stigmata_desc:0 "§L这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_stigmata$。§!"
 
@@ -138,6 +143,12 @@
  FLEETORDER_DESTROY_PLANET_WITH_WTMNB_WEAPON_W:0 "正在准备对$PLANET|Y$使用$WTMNB_WEAPON_W|M$"
  MESSAGE_DESC_FOR_WTMNB_WEAPON_W:0 "虚数内能充盈"
 ################################
+#   _ __ ___   ___  __ _  __ _ 
+#  | '_ ` _ \ / _ \/ _` |/ _` |
+#  | | | | | |  __/ (_| | (_| |
+#  |_| |_| |_|\___|\__, |\__,_|
+#                  |___/       
+#
  wtmnb_dyson:0 "以太锚点"
  wtmnb_dyson_DESC:0 "(图文无关)“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
  wtmnb_dyson_MEGASTRUCTURE_DETAILS:0 "“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
@@ -160,7 +171,6 @@
 #   / _ \/ _` | |/ __| __|
 #  |  __/ (_| | | (__| |_ 
 #   \___|\__,_|_|\___|\__|
-                        
  edict_wtmnb_edict:0 "死海文书"
  edict_wtmnb_edict_desc:0 "启用【我特么直接作弊】"
 
@@ -194,23 +204,18 @@
 #  | '_ ` _ \ / _ \ / _` | | |_| |/ _ \ '__|
 #  | | | | | | (_) | (_| | |  _| |  __/ |   
 #  |_| |_| |_|\___/ \__,_|_|_| |_|\___|_|   
-                                          
  wtmnb_planet_ex:0 "第四神之键"
  wtmnb_planet_ex_desc:0 "别问原理，别问"
 
  wtmnb_star_11th_modifier:0 "$aura_judah$"
  wtmnb_star_11th_modifier_desc:0 "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
  avoid_enter_by_jump:0 "阻止其他国家通过跃迁引擎进入本星系"
-
-
-
 #       _                      _ _       
 #    __| | ___ _ __   ___  ___(_) |_ ___ 
 #   / _` |/ _ \ '_ \ / _ \/ __| | __/ __|
 #  | (_| |  __/ |_) | (_) \__ \ | |_\__ \
 #   \__,_|\___| .__/ \___/|___/_|\__|___/
 #             |_|                        
-
  deposit_wtmnb_city:0 "$pc_wtmnb_city$"
  deposit_wtmnb_city_desc:0 "机械智能化辅助系统占据了一片大多数人不会注意到的地方"
  deposit_wtmnb_city_rubbish:0 "边角余料"
@@ -227,9 +232,6 @@
 #   / _` | / __| __| '__| |/ __| __/ __|
 #  | (_| | \__ \ |_| |  | | (__| |_\__ \
 #   \__,_|_|___/\__|_|  |_|\___|\__|___/
-                                      
-
-
  district_wtmnb_meeting_room:0 "战略忽悠会议室"
  district_wtmnb_meeting_room_desc:0 "帝国规模？什么帝国？什么规模？我们可是发展中国家，你可不要乱讲"
  district_wtmnb_meeting_room_plural:0 "$district_wtmnb_meeting_room$"
@@ -255,18 +257,18 @@
  bombardment_wtmnb_invasion:0 "轨道协助登陆作战"
  bombardment_wtmnb_invasion_name:0 "$bombardment_wtmnb_invasion$"
  bombardment_wtmnb_invasion_desc:0 "命令一批船舱里的维护机器人作为陆军部队登陆\n-对§Y军团§!造成§R难以估计的§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§G不值一提§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-我们立即占领这颗星球"
-#                        _       
-#    _____   _____ _ __ | |_ ___ 
-#   / _ \ \ / / _ \ '_ \| __/ __|
-#  |  __/\ V /  __/ | | | |_\__ \
-#   \___| \_/ \___|_| |_|\__|___/
-                               
+#                        _       #
+#    _____   _____ _ __ | |_ ___ #
+#   / _ \ \ / / _ \ '_ \| __/ __|#
+#  |  __/\ V /  __/ | | | |_\__ \#
+#   \___| \_/ \___|_| |_|\__|___/#
+#                               #
  wtmnb.1.name:0 "§H[From.GetName]§!已成无人之境"
  wtmnb.1.desc:0 "§H[From.GetName]§!上能称之为人口的东西都被我们的舰队干掉了！"
  wtmnb.1.a:0 "§H[From.GetName]§!无人生还"
  wtmnb.3.title:0 "让我们看看$lgate$后面有什么"
  unremarkable:0 "此事平淡无奇"
- wtmnb.3.c:0 "z?你把$graygoo.500.title$给我交了"
+ wtmnb.3.c:0 "z?你把$NAME_Gray$给我交了"
 
  wtmnb.5.name:0 "超空间航路已建立"
  wtmnb.5.desc:0 "[from.GetName]到[wtmnb_portal_start.GetName]的超空间航路已经建立"
@@ -298,21 +300,17 @@
  wtmnb_colossus.1001.h:0 "$PLANET_KILLER_CRACKER$"
  wtmnb_colossus.1001.i:0 "$WTMNB_9TH_KEY$"
  wtmnb_colossus.1001.j:0 "$PLANET_KILLER_DELUGE$"
+ wtmnb_colossus.1001.k:0 "$DIMENSIONAL_LOCK$"
+ lock_all_bypass_in_system:0 "锁定恒星系内所有$LGATE_GALACTIC$(不包含$NAME_Final_Egress$)、$NATURAL_WORMHOLE_GALACTIC$、$SHROUD_TUNNEL_GALACTIC$(不包含$gov_shroudwalker_enclave$)"
  wtmnb_colossus.1001.u:0 "外交频道"
  wtmnb_colossus.1001.v:0 "占领"
  wtmnb_colossus.1001.w:0 "创造生态环境"
  wtmnb_colossus.1001.w.desc:0 "既然拥有轻易撼动星辰、逆转生死的力量，在几个小时内依靠“贴膜”技术将一块虚空中的大石头变成生机盎然的星球也并非不可能"
  wtmnb_colossus.1001.x:0 "建造环世界"
  wtmnb_colossus.1001.x.desc:0 "我们不需要什么行星了\n\n-小心，别对自己唯一的殖民地所在星系用，否则。。。"
-#########
+######### 外交
  wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
- wtmnb_diplomacy.1.friendly.desc:0 "有什么事吗，我们的朋友？"
- wtmnb_diplomacy.1.friendly_gestalt.desc:0 "让我们确立一个可以共同实现的目标。"
- wtmnb_diplomacy.1.machine_dad.desc:0 "§G成功§!接收特殊通讯信号，通讯已建立，确认来源为§H[Root.GetSpeciesName]§!领导人§Y[Root.GetRulerName]§!。正在轮询外交问候子处理器..."
- wtmnb_diplomacy.1.loyal.desc:0 "欢迎您，伟大的[Root.GetRulerName]，有什么我们能为您效劳的吗？"
- wtmnb_diplomacy.1.disloyal.desc:0 "[Root.GetSpeciesNameInsult]，你们这群杂碎一定会后悔的。"
- wtmnb_diplomacy.1.insult.desc:0 "哦？原来是[Root.GetSpeciesName]吗？真是不好意思，你们和缇扬奇的粪便太相像了。"
- wtmnb_diplomacy.1.neutral.desc:0 "继续，我在听。"
+ wtmnb_diplomacy.1.desc:0 "§BDave_12138§!:我也想把这些选项放外交/谍报里，可惜堕落帝国没有谍报系统。"
  wtmnb_diplomacy.1.a:0 "没事了，我改变主意了。"
  wtmnb_diplomacy.1.b:0 "刺杀[wtmnb_target.Owner.GetRulerTitle]§H[wtmnb_target.Owner.GetRulerName]§!"
  wtmnb_diplomacy.1.b.desc:0 "§H[wtmnb_target.Owner.GetRulerName]§!死亡\n[wtmnb_target.Owner.GetName]被羞辱"
@@ -383,13 +381,12 @@
  wtmnb_species.100.b:0 "$trait_machine_unit$"
  wtmnb_species.100.c:0 "$trait_mechanical$"
 
-#                       _       _                   _           _   
-#   ___ _ __   ___  ___(_) __ _| |  _ __  _ __ ___ (_) ___  ___| |_ 
-#  / __| '_ \ / _ \/ __| |/ _` | | | '_ \| '__/ _ \| |/ _ \/ __| __|
-#  \__ \ |_) |  __/ (__| | (_| | | | |_) | | | (_) | |  __/ (__| |_ 
-#  |___/ .__/ \___|\___|_|\__,_|_| | .__/|_|  \___// |\___|\___|\__|
-#      |_|                         |_|           |__/               
-
+#   ___ _ __   ___  ___(_) __ _| |  _ __  _ __ ___ (_) ___  ___| |_ #
+#  / __| '_ \ / _ \/ __| |/ _` | | | '_ \| '__/ _ \| |/ _ \/ __| __|#
+#  \__ \ |_) |  __/ (__| | (_| | | | |_) | | | (_) | |  __/ (__| |_ #
+#  |___/ .__/ \___|\___|_|\__,_|_| | .__/|_|  \___// |\___|\___|\__|#
+#      |_|                         |_|           |__/               #
+##
  wtmnb_remove_megastructure_chain_title:0 "拆除巨构"
  wtmnb_remove_megastructure_chain_desc:0 "巨构暴力破拆\n我们的工程船所在的星系内，所有巨构都可以拆，包括别人家的\n建好的环世界不算巨构，不能拆"
 
@@ -467,6 +464,9 @@
  decision_wtmnb_build_colossus:0 "§B$wtmnb_fortress$§!地面$colossus$生产线"
  decision_wtmnb_build_colossus_effect:0 "建造巨像，使用你的舰船设计器"
  decision_wtmnb_build_colossus_desc:0 "就用这个轰掉异种的头吧"
+
+ decision_wtmnb_relic_cooldown:0 "重置遗物CD"
+ decision_wtmnb_relic_cooldown_desc:0 "我去，传说中的祭礼枪"
 ##################
  
  pc_wtmnb_city:0 "虚渺之城"

@@ -3,6 +3,12 @@ ai_wtmnb_cleck = {
 	building_icon = building_capital
 	icon = clerk
 	category = worker
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
 	weight = {
 		weight = 10
 	}
@@ -16,6 +22,12 @@ ai_wtmnb_drone = {
 	building_icon = building_capital
 	icon = clerk
 	category = simple_drone
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
 	weight = {
 		weight = 10
 	}
@@ -29,6 +41,12 @@ ai_wtmnb_master = {
 	building_icon = building_capital
 	category = specialist
 	icon = clerk
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
 	weight = {
 		weight = 10
 	}
@@ -52,6 +70,12 @@ ai_wtmnb_master_drone = {
 	building_icon = building_capital
 	category = complex_drone
 	icon = clerk
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
 	weight = {
 		weight = 10
 	}

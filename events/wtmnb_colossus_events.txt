@@ -378,6 +378,72 @@ country_event = {
 			}
 		}
 	}
+	#锁门
+	option = {
+		name = wtmnb_colossus.1001.k
+		trigger = {
+			event_target:wtmnb_target.solar_system = {
+				any_bypass = {
+					OR = {
+						# 锁不了普通星门，总之锁不了
+						# is_bypass_type = gateway
+						# 虫洞
+						is_bypass_type = wormhole
+						# 终端出口锁不上
+						AND = {
+							is_bypass_type = lgate
+							solar_system = {
+								NOT = {
+									has_star_flag = lcluster
+								}
+							}
+						}
+						# 虚境行者家里的也锁不上
+						AND = {
+							is_bypass_type = shroud_tunnel
+							solar_system = {
+								NOT = {
+									has_star_flag = shroud_tunnel_nexus
+								}
+							}
+						}
+					}
+					has_lock = false
+					solar_system = {
+						is_same_value = event_target:wtmnb_target.solar_system
+					}
+				}
+			}
+			event_target:wtmnb_planet_killer_ship = {
+				any_owned_ship = {
+					has_component = WTMNB_11TH_KEY
+				}
+			}
+		}
+		custom_tooltip = "lock_all_bypass_in_system"
+		hidden_effect = {
+			event_target:wtmnb_target.solar_system = {
+				every_bypass = {
+					limit = {
+						OR = {
+							# is_bypass_type = gateway
+							is_bypass_type = wormhole
+							is_bypass_type = lgate
+							is_bypass_type = shroud_tunnel
+						}
+						has_lock = false
+						solar_system = {
+							is_same_value = event_target:wtmnb_target.solar_system
+						}
+					}
+					lock_bypass = {
+						country = root
+						duration = 3600
+					}
+				}
+			}
+		}
+	}
 	#外交窗口
 	option = {
 		name = wtmnb_colossus.1001.u

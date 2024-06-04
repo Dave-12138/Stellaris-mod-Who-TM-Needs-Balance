@@ -77,11 +77,11 @@ decision_wtmnb_open_fire = {
 				event_chain = wtmnb_open_fire_chain
 			}
 		}
-		enable_special_project = {
-			name = WTMNB_OPEN_FIRE_CANCEL
-			owner = this.owner
-		}
 		hidden_effect = {
+			enable_special_project = {
+				name = WTMNB_OPEN_FIRE_CANCEL
+				owner = this.owner
+			}
 			every_system = {
 				enable_special_project = {
 					name = WTMNB_OPEN_FIRE_SYSTEM_SELECT
@@ -90,19 +90,20 @@ decision_wtmnb_open_fire = {
 				}
 			}
 		}
-		every_country = {
-			limit = {
-				has_closed_borders = root.owner
-				count_system_within_border = {
-					count > 0
-				}
-			}
-			set_closed_borders = {
-				who = root.owner
-				status = no
-				forced = 1
-			}
-		}
+		# 用 event_scope = ship_event 再把location放在星球上就不需要开边境了
+		# every_country = {
+		# 	limit = {
+		# 		has_closed_borders = root.owner
+		# 		count_system_within_border = {
+		# 			count > 0
+		# 		}
+		# 	}
+		# 	set_closed_borders = {
+		# 		who = root.owner
+		# 		status = no
+		# 		forced = 1
+		# 	}
+		# }
 	}
 	ai_weight = {
 		weight = 0
@@ -626,6 +627,42 @@ decision_wtmnb_build_colossus = {
 					set_location = root
 				}
 			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 重置遗物CD
+decision_wtmnb_relic_cooldown = {
+	owned_planets_only = yes
+	icon = decision_arcology_project_relic
+	resources = {
+		category = decisions
+		cost = {
+			energy = 100
+		}
+	}
+	potential = {
+		is_capital = yes
+		solar_system = {
+			any_ship_in_system = {
+				has_component = WTMNB_WEAPON_W
+				has_component = WTMNB_5TH_KEY
+			}
+		}
+	}
+	allow = {
+		from = {
+			OR = {
+				has_modifier = relic_activation_cooldown
+			}
+		}
+	}
+	effect = {
+		from = {
+			remove_modifier = relic_activation_cooldown
 		}
 	}
 	ai_weight = {
