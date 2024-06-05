@@ -103,3 +103,33 @@ add_leader_trait_wtmnb_stigmata = {
 	# 	# }
 	# }
 }
+
+wtmnb_remove_hyperlane = {
+	every_neighbor_system = {
+		remove_hyperlane = {
+			from = THIS
+			to = prev
+		}
+	}
+}
+
+wtmnb_lock_bypass = {
+	every_bypass = {
+		limit = {
+			OR = {
+				is_bypass_type = gateway
+				is_bypass_type = wormhole
+				is_bypass_type = lgate
+				is_bypass_type = shroud_tunnel
+			}
+			has_lock = false
+			solar_system = {
+				is_same_value = prevprev
+			}
+		}
+		lock_bypass = {
+			country = root
+			duration = $TIME$
+		}
+	}
+}

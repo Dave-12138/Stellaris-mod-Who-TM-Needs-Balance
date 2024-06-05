@@ -281,6 +281,8 @@
  wtmnb.2001.b.tip:0 "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
  wtmnb.2001.c:0 "$wtmnb_open_fire_chain_title$"
  wtmnb.2001.c.tip:0 "以崩坏裂变弹作为一次性信标，向当前星系中星体发起一次超光速炮击"
+ wtmnb.2001.d:0 "特质修补"
+ wtmnb.2001.d.tip:0 "有些mod可能导致领袖圣痕特质丢失，可以用这个选项补上。\n也能修复格式塔内阁节点的肖像。"
  wtmnb.2001.z:0 "遏制爆炸"
  
 
@@ -302,6 +304,9 @@
  wtmnb_colossus.1001.j:0 "$PLANET_KILLER_DELUGE$"
  wtmnb_colossus.1001.k:0 "$DIMENSIONAL_LOCK$"
  lock_all_bypass_in_system:0 "锁定恒星系内所有$LGATE_GALACTIC$(不包含$NAME_Final_Egress$)、$NATURAL_WORMHOLE_GALACTIC$、$SHROUD_TUNNEL_GALACTIC$(不包含$gov_shroudwalker_enclave$)"
+ wtmnb_colossus.1001.l:0 "切断$concept_hyperlane$"
+ wtmnb_colossus.1001.m:0 "虚数放逐"
+ wtmnb_colossus.1001.m.tip:0 "将整个[wtmnb_target.Owner.GetName]关押在其母星系[wtmnb_target.System.GetName]\n§L摧毁除[wtmnb_target.System.GetName]星系以外的所有殖民地与恒星基地，并删除[wtmnb_target.System.GetName]星系的$concept_hyperlane$§!"
  wtmnb_colossus.1001.u:0 "外交频道"
  wtmnb_colossus.1001.v:0 "占领"
  wtmnb_colossus.1001.w:0 "创造生态环境"

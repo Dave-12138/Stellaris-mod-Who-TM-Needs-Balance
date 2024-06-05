@@ -25,9 +25,13 @@ wtmnb_cannon = {
 		ship_shield_hardening_add = 1
 		ship_accuracy_add = 9999
 		ship_armor_hardening_add = 1
+		ship_orbital_bombardment_army_damage_mult = 10
+		ship_orbital_bombardment_mult = 10
 	}
 	modifier = {
 		ship_cloaking_strength_add = 10
+		ship_orbital_bombardment_army_damage_mult = 10
+		ship_orbital_bombardment_mult = 10
 	}
 	num_target_locators = 0
 	is_space_station = no

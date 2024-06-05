@@ -423,23 +423,95 @@ country_event = {
 		custom_tooltip = "lock_all_bypass_in_system"
 		hidden_effect = {
 			event_target:wtmnb_target.solar_system = {
-				every_bypass = {
-					limit = {
-						OR = {
-							# is_bypass_type = gateway
-							is_bypass_type = wormhole
-							is_bypass_type = lgate
-							is_bypass_type = shroud_tunnel
-						}
-						has_lock = false
+				wtmnb_lock_bypass = {
+					TIME = 3600
+				}
+			}
+		}
+	}
+	# 航道破坏
+	option = {
+		name = wtmnb_colossus.1001.l
+		trigger = {
+			from = {
+				is_star = yes
+				solar_system = {
+					any_neighbor_system = {
+						has_hyperlane_to = prev
+					}
+				}
+			}
+		}
+		from.solar_system = {
+			wtmnb_remove_hyperlane = yes
+		}
+	}
+	option = {
+		name = wtmnb_colossus.1001.m
+		trigger = {
+			from = {
+				OR = {
+					is_capital = yes
+					AND = {
 						solar_system = {
-							is_same_value = event_target:wtmnb_target.solar_system
+							is_capital_system = yes
 						}
+						is_star = yes
 					}
-					lock_bypass = {
-						country = root
-						duration = 3600
+				}
+			}
+		}
+		custom_tooltip = wtmnb_colossus.1001.m.tip
+		hidden_effect = {
+			from.solar_system = {
+				owner = {
+					# 摧毁不在母星系的殖民地
+					every_owned_planet = {
+						limit = {
+							solar_system = {
+								NOT = {
+									is_same_value = prevprevprev
+								}
+							}
+							OR = {
+								has_colony_progress > 0
+								is_colony = yes
+							}
+						}
+						every_owned_pop = {
+							kill_pop = yes
+						}
+						destroy_colony = yes
 					}
+					# 恒星基地
+					every_owned_starbase = {
+						limit = {
+							solar_system = {
+								NOT = {
+									is_same_value = prevprevprev
+								}
+							}
+						}
+						destroy_fleet = fleet
+					}
+					# 舰队遣返
+					every_owned_fleet = {
+						limit = {
+							solar_system = {
+								NOT = {
+									is_same_value = prevprevprev
+								}
+							}
+							can_go_mia = yes
+						}
+						set_mia = mia_return_home
+					}
+				}
+				# 封锁航道
+				is_capital_system = yes
+				# 加锁
+				wtmnb_lock_bypass = {
+					TIME = -1
 				}
 			}
 		}

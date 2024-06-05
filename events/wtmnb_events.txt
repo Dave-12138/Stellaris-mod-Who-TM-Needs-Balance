@@ -341,6 +341,48 @@ country_event = {
 		}
 	}
 	option = {
+		name = wtmnb.2001.d
+		trigger = {
+			any_playable_country = {
+				any_owned_leader = {
+					NOT = {
+						has_trait = leader_trait_wtmnb_stigmata
+					}
+					species = {
+						has_trait = trait_wtmnb_stigmata
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				num_owned_leaders > 1
+			}
+			every_owned_leader = {
+				limit = {
+					NOT = {
+						has_trait = leader_trait_wtmnb_stigmata
+					}
+					species = {
+						has_trait = trait_wtmnb_stigmata
+					}
+				}
+				add_leader_trait_wtmnb_stigmata = yes
+			}
+			if = {
+				limit = {
+					is_gestalt = yes
+				}
+				every_owned_leader = {
+					limit = {
+						is_councilor = yes
+					}
+					set_gestalt_node_portrait_effect = yes
+				}
+			}
+		}
+	}
+	option = {
 		name = wtmnb.2001.z
 	}
 }

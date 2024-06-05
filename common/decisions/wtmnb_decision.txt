@@ -403,6 +403,10 @@ decision_wtmnb_city = {
 			}
 			change_pc = pc_wtmnb_city
 			reroll_deposits = yes
+			while = {
+				count = 5
+				add_district = district_wtmnb_matrix_office
+			}
 		}
 		if = {
 			limit = {

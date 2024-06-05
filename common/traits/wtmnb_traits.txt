@@ -123,6 +123,11 @@ leader_trait_wtmnb_stigmata={
 		potential = {
 			is_ruler = no
 			leader_class = official
+			from = {
+				NOT = {
+					is_scope_type = planet
+				}
+			}
 		}
 		pop_demotion_time_mult = -1
 		###################
@@ -144,6 +149,9 @@ leader_trait_wtmnb_stigmata={
 		potential = {
 			is_ruler = no
 			leader_class = official
+			from = {
+				is_scope_type = planet
+			}
 		}
 		pop_demotion_time_mult = -1
 		###################
@@ -185,6 +193,7 @@ leader_trait_wtmnb_stigmata={
 		spy_network_daily_value_mult = 100
 		intel_decryption_add = 2000
 		intel_encryption_add = 2000
+		intel_gain_speed = 100
 		spy_network_levels_add = 200
 		espionage_operation_speed_mult = 100
 	}
@@ -243,6 +252,9 @@ leader_trait_wtmnb_stigmata={
 		}
 		all_technology_research_speed = 10
 		fleet_mia_time_mult = -1
+		intel_decryption_add = 2000
+		intel_encryption_add = 2000
+		intel_gain_speed = 100
 	}
 	leader_class = { commander scientist official }
 	initial = no
