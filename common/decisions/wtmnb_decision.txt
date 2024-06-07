@@ -401,12 +401,12 @@ decision_wtmnb_city = {
 					is_ringworld = yes
 				}
 			}
-			change_pc = pc_wtmnb_city
-			reroll_deposits = yes
 			while = {
 				count = 5
 				add_district = district_wtmnb_matrix_office
 			}
+			change_pc = pc_wtmnb_city
+			reroll_deposits = yes
 		}
 		if = {
 			limit = {

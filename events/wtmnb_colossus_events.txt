@@ -508,7 +508,7 @@ country_event = {
 					}
 				}
 				# 封锁航道
-				is_capital_system = yes
+				wtmnb_remove_hyperlane = yes
 				# 加锁
 				wtmnb_lock_bypass = {
 					TIME = -1
