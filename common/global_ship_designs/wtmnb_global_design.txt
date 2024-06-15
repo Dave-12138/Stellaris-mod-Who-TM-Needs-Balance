@@ -72,6 +72,7 @@ ship_design = {
 	}
 	required_component = "WTMNB_1ST_KEY"
 	required_component = "WTMNB_2ND_KEY"
+	required_component = "WTMNB_3RD_KEY"
 	required_component = "WTMNB_4TH_KEY"
 	required_component = "WTMNB_5TH_KEY"
 	required_component = "WTMNB_6TH_KEY"

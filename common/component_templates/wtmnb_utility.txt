@@ -274,6 +274,7 @@ utility_component_template = {
 			ship_armor_penetration_mult = -5
 			ship_shield_penetration_mult = -5
 			ship_hull_damage_mult = -10
+			ship_weapon_damage = -5
 		}
 		graphics = {
 			area_effect = {
@@ -375,6 +376,27 @@ utility_component_template = {
 	component_set = "WTMNB_GRAND_KEY"
 }
 
+# 三键 涤罪七雷
+utility_component_template = {
+	key = "WTMNB_3RD_KEY"
+	size = aux
+	icon = GFX_ship_part_wtmnb_3rd_key
+	icon_frame = 1
+	power = 5000
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "WTMNB_GRAND_KEY"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 64
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
 # 四键 不知道叫啥
 utility_component_template = {
 	key = "WTMNB_4TH_KEY"

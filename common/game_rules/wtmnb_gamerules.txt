@@ -5,7 +5,7 @@
 # This = system being targeted
 can_enter_system_by_jump = {
 	custom_tooltip = {
-		success_text = "debug: can jump"
+		# success_text = "debug: can jump"
 		fail_text = cannot_jump_to_system
 		OR = {
 			###_绝对通行	FW
@@ -96,17 +96,6 @@ can_enter_system_by_jump = {
 							any_neighbor_system = { has_star_flag = ten_crisis_system }
 						}
 					}
-					# TAC
-				#	has_star_flag = AI_system1
-				#	has_star_flag = AI_system2
-				#	has_star_flag = AI_system3
-				#	has_star_flag = AI_system4
-				#	this = {
-				#		OR = {
-				#			has_megastructure = AIgate_opened
-				#			has_megastructure = AIgate_opened_02
-				#		}
-				#	}
 					# 莉莉
 					has_star_flag = al_huge_home_bed
 					# wtmnb

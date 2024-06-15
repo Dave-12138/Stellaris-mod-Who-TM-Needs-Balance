@@ -56,6 +56,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_destructor.dds"
 	}
 	spriteType = {
+		name = "GFX_ship_part_wtmnb_3rd_key"
+		texturefile = "gfx/interface/icons/ship_parts/wtmnb_3rd_key.dds"
+	}
+	spriteType = {
 		name = "GFX_ship_part_wtmnb_4th_key"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_4th_key.dds"
 	}
