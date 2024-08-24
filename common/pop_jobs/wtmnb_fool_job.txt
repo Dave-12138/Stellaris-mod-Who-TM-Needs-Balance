@@ -6,6 +6,12 @@ wtmnb_fooyouist = {
 	weight = {
 		weight = 30
 	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
 	possible = {
 		always = yes
 	}
@@ -27,6 +33,12 @@ wtmnb_fooyouist_drone = {
 	category = complex_drone
 	weight = {
 		weight = 1600
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
 	}
 	possible = {
 		always = yes
