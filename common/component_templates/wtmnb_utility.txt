@@ -16,6 +16,18 @@ utility_component_template = {
 		wtmnb_fortress
 	}
 }
+# 无烟煤引擎
+utility_component_template = {
+	key = "WTMNB_SCIENCE_REACTOR_POOL"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = 160
+	component_set = "power_core"
+	size_restriction = {
+		wtmnb_boomer
+	}
+}
 
 # 普普通通 flt
 utility_component_template = {
@@ -140,6 +152,32 @@ utility_component_template = {
 	}
 }
 
+# 蒸汽推进器
+utility_component_template = {
+	key = "WTMNB_THRUSTER_POOL"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 6
+		}
+	}
+
+	modifier = {
+	}
+
+	prerequisites = { "tech_thrusters_1" }
+	component_set = "thruster_components"
+	ai_weight = {
+		weight = 40
+	}
+	size_restriction = {
+		wtmnb_boomer
+	}
+}
 # 阿拉哈托
 utility_component_template = {
 	key = "SHIP_THRUSTER_WTMNB"
