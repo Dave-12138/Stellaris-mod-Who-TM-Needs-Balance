@@ -1,445 +1,446 @@
 namespace = wtmnb
 # 轨道轰炸 提示（轰炸方）
 country_event = {
-	id = wtmnb.1
-	title = wtmnb.1.name
-	#picture = GFX_evt_wsg_bombardment
-	desc = wtmnb.1.desc
-	show_sound = event_super_explosion
-	location = from
-	is_triggered_only = yes
-	option = {
-		name = EXCELLENT
-		custom_tooltip = wtmnb.1.a
-	}
+    id = wtmnb.1
+    title = wtmnb.1.name
+    #picture = GFX_evt_wsg_bombardment
+    desc = wtmnb.1.desc
+    show_sound = event_super_explosion
+    location = from
+    is_triggered_only = yes
+    option = {
+        name = EXCELLENT
+        custom_tooltip = wtmnb.1.a
+    }
 }
 
 # 维持联邦
 country_event = {
-	id = wtmnb.2
-	is_triggered_only = yes
-	trigger = {
-		exists = federation
-		federation = {
-			OR = {
-				federation_cohesion < 80
-				federation_level < 5
-			}
-		}
-		any_owned_megastructure = {
-			is_megastructure_type = wtmnb_love_mark
-		}
-	}
-	hide_window = yes
-	immediate = {
-		federation = {
-			add_cohesion = 200
-			add_federation_experience = 66666
-		}
-	}
+    id = wtmnb.2
+    is_triggered_only = yes
+    trigger = {
+        exists = federation
+        federation = {
+            OR = {
+                federation_cohesion < 80
+                federation_level < 5
+            }
+        }
+        any_owned_megastructure = {
+            is_megastructure_type = wtmnb_love_mark
+        }
+    }
+    hide_window = yes
+    immediate = {
+        federation = {
+            add_cohesion = 200
+            add_federation_experience = 66666
+        }
+    }
 }
 
 # l星门
 country_event = {
-	is_triggered_only = yes
-	id = wtmnb.3
-	title = wtmnb.3.title
-	desc = {
-		text = graygoo.10.name
-		trigger = {
-			has_global_flag = gray_goo_crisis_set
-		}
-	}
-	desc = {
-		text = graygoo.120_title
-		trigger = {
-			has_global_flag = gray_goo_empire_set
-		}
-	}
-	desc = {
-		text = nanite_space_dragon_baby
-		trigger = {
-			has_global_flag = dragon_season
-		}
-	}
-	desc = {
-		text = graygoo.500.title
-		trigger = {
-			NOR = {
-				has_global_flag = gray_goo_crisis_set
-				has_global_flag = gray_goo_empire_set
-				has_global_flag = dragon_season
-			}
-		}
-	}
-	option = {
-		name = unremarkable
-	}
-	option = {
-		name = federations2.61.A.neutral
-	}
-	option = {
-		name = wtmnb.3.c
-		trigger = {
-			OR = {
-				has_global_flag = gray_goo_crisis_set
-				has_global_flag = gray_goo_empire_set
-				has_global_flag = dragon_season
-			}
-			NOT = {
-				exists = event_target:gray_owner
-			}
-		}
-		country_event = {
-			id = graygoo.401
-		}
-	}
+    is_triggered_only = yes
+    id = wtmnb.3
+    title = wtmnb.3.title
+    desc = {
+        text = graygoo.10.name
+        trigger = {
+            has_global_flag = gray_goo_crisis_set
+        }
+    }
+    desc = {
+        text = graygoo.120_title
+        trigger = {
+            has_global_flag = gray_goo_empire_set
+        }
+    }
+    desc = {
+        text = nanite_space_dragon_baby
+        trigger = {
+            has_global_flag = dragon_season
+        }
+    }
+    desc = {
+        text = graygoo.500.title
+        trigger = {
+            NOR = {
+                has_global_flag = gray_goo_crisis_set
+                has_global_flag = gray_goo_empire_set
+                has_global_flag = dragon_season
+            }
+        }
+    }
+    option = {
+        name = unremarkable
+    }
+    option = {
+        name = federations2.61.A.neutral
+    }
+    option = {
+        name = wtmnb.3.c
+        trigger = {
+            OR = {
+                has_global_flag = gray_goo_crisis_set
+                has_global_flag = gray_goo_empire_set
+                has_global_flag = dragon_season
+            }
+            NOT = {
+                exists = event_target:gray_owner
+            }
+        }
+        country_event = {
+            id = graygoo.401
+        }
+    }
 }
 
 # 超空间通道
 country_event = {
-	id = wtmnb.5
-	is_triggered_only = yes
-	title = wtmnb.5.name
-	desc = wtmnb.5.desc
-	option = {
-		name = federations2.61.A.neutral
-		hidden_effect = {
-			clear_global_event_target = wtmnb_portal_start
-		}
-	}
+    id = wtmnb.5
+    is_triggered_only = yes
+    title = wtmnb.5.name
+    desc = wtmnb.5.desc
+    option = {
+        name = federations2.61.A.neutral
+        hidden_effect = {
+            clear_global_event_target = wtmnb_portal_start
+        }
+    }
 }
 
 #新领袖
 country_event = {
-	id = wtmnb.6
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		species = {
-			has_trait = trait_wtmnb_stigmata
-		}
-	}
-	immediate = {
-		from = {
-			add_leader_trait_wtmnb_stigmata = yes
-		}
-	}
+    id = wtmnb.6
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+        species = {
+            has_trait = trait_wtmnb_stigmata
+        }
+    }
+    immediate = {
+        from = {
+            add_leader_trait_wtmnb_stigmata = yes
+        }
+    }
 }
 
 # 轨道轰炸-陆军
 planet_event = {
-	id = wtmnb.1000
-	pre_triggers = {
-		has_owner = yes
-	}
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_orbital_bombardment_stance = wtmnb_invasion
-		FROM = {
-			has_country_flag = wtmnb_order
-		}
-	}
-	immediate = {
-		owner = {
-			save_event_target_as = doomed_planet_owner
-		}
-		every_planet_army = {
-			limit = {
-				is_owned_by = prev.owner
-			}
-			remove_army = yes
-		}
-		create_army = {
-			owner = from
-			species = from
-			type = "robotic_army"
-		}
-	}
+    id = wtmnb.1000
+    pre_triggers = {
+        has_owner = yes
+    }
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        has_orbital_bombardment_stance = wtmnb_invasion
+        FROM = {
+            has_country_flag = wtmnb_order
+        }
+    }
+    immediate = {
+        owner = {
+            save_event_target_as = doomed_planet_owner
+        }
+        every_planet_army = {
+            limit = {
+                is_owned_by = prev.owner
+            }
+            remove_army = yes
+        }
+        create_army = {
+            owner = from
+            species = from
+            type = "robotic_army"
+        }
+    }
 }
 
 # 轨道轰炸
 planet_event = {
-	id = wtmnb.1010
-	pre_triggers = {
-		has_owner = yes
-	}
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_orbital_bombardment_stance = wtmnb_doom
-		FROM = {
-			has_country_flag = wtmnb_order
-		}
-		NOT = {
-			is_planet_class = pc_ai
-		}
-	}
-	immediate = {
-		owner = {
-			save_event_target_as = doomed_planet_owner
-		}
-		#remove_all_buildings = yes
-		random_owned_pop = {
-			kill_pop = yes
-		}
-		every_planet_army = {
-			remove_army = yes
-		}
-		if = {
-			limit = {
-				is_colony = no
-			}
-			event_target:doomed_planet_owner = {
-				add_static_war_exhaustion = {
-					attacker = from
-					location = root
-					value_for_planet_destruction = 1
-				}
-				#country_event = { id = wtmnb.1 } 
-			}
-			from = {
-				country_event = {
-					id = wtmnb.1
-				}
-			}
-		}
-		remove_modifier = "dangerous_wildlife"
-	}
+    id = wtmnb.1010
+    pre_triggers = {
+        has_owner = yes
+    }
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        has_orbital_bombardment_stance = wtmnb_doom
+        FROM = {
+            has_country_flag = wtmnb_order
+        }
+        NOT = {
+            is_planet_class = pc_ai
+        }
+    }
+    immediate = {
+        owner = {
+            save_event_target_as = doomed_planet_owner
+        }
+        #remove_all_buildings = yes
+        random_owned_pop = {
+            kill_pop = yes
+        }
+        every_planet_army = {
+            remove_army = yes
+        }
+        if = {
+            limit = {
+                is_colony = no
+            }
+            event_target:doomed_planet_owner = {
+                add_static_war_exhaustion = {
+                    attacker = from
+                    location = root
+                    value_for_planet_destruction = 1
+                }
+                #country_event = { id = wtmnb.1 }
+            }
+            from = {
+                country_event = {
+                    id = wtmnb.1
+                }
+            }
+        }
+        remove_modifier = "dangerous_wildlife"
+    }
 }
 
 # 崩坏裂变弹
 country_event = {
-	id = wtmnb.2000
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		fromfrom = {
-			is_ship_size = wtmnb_boomer
-		}
-	}
-	immediate = {
-		random_country = {
-			limit = {
-				has_country_flag = wtmnb_order
-			}
-			save_event_target_as = wtmnb_owner
-		}
-		fromfrom = {
-			save_event_target_as = wtmnb_boomed_boomer
-			solar_system = {
-				save_event_target_as = wtmnb_boomed_system
-			}
-		}
-		event_target:wtmnb_owner = {
-			country_event = {
-				id = wtmnb.2001
-			}
-		}
-	}
+    id = wtmnb.2000
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        fromfrom = {
+            is_ship_size = wtmnb_boomer
+        }
+    }
+    immediate = {
+        random_country = {
+            limit = {
+                has_country_flag = wtmnb_order
+            }
+            save_event_target_as = wtmnb_owner
+        }
+        fromfrom = {
+            save_event_target_as = wtmnb_boomed_boomer
+            solar_system = {
+                save_event_target_as = wtmnb_boomed_system
+            }
+        }
+        event_target:wtmnb_owner = {
+            country_event = {
+                id = wtmnb.2001
+            }
+        }
+    }
 }
 
 # 引爆选项
 country_event = {
-	id = wtmnb.2001
-	is_triggered_only = yes
-	title = wtmnb.2001.name
-	#picture = GFX_evt_wsg_bombardment
-	desc = wtmnb.2001.desc
-	option = {
-		# 摧毁星系内所有船
-		name = wtmnb.2001.a
-		custom_tooltip = wtmnb.2001.a.tip
-		hidden_effect = {
-			event_target:wtmnb_boomed_system = {
-				every_fleet_in_system = {
-					limit = {
-						NOT = {
-							any_owned_ship = {
-								is_ship_size = wtmnb_fortress
-							}
-						}
-					}
-					wtmnb_safe_destroy_fleet = yes
-				}
-			}
-		}
-	}
-	# 星系内所有船的所有者暴毙
-	option = {
-		name = wtmnb.2001.b
-		custom_tooltip = wtmnb.2001.b.tip
-		hidden_effect = {
-			event_target:wtmnb_boomed_system = {
-				every_fleet_in_system = {
-					owner = {
-						if = {
-							limit = {
-								NOT = {
-									is_same_empire = event_target:wtmnb_owner
-								}
-							}
-							set_country_flag = wtmnb_dying_country
-						}
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_country_flag = wtmnb_dying_country
-				}
-				every_owned_fleet = {
-					wtmnb_safe_destroy_fleet = yes
-				}
-				# 清除殖民地
-				every_owned_planet = {
-					every_owned_pop = {
-						kill_pop = yes
-					}
-					remove_all_buildings = yes
-					destroy_colony = yes
-				}
-				destroy_country = yes
-				fire_on_action = {
-					on_action = on_country_destroyed
-					scopes = {
-						from = event_target:wtmnb_owner
-					}
-				}
-			}
-		}
-	}
-	# 触发超距射击
-	option = {
-		name = wtmnb.2001.c
-		custom_tooltip = wtmnb.2001.c.tip
-		hidden_effect = {
-			begin_event_chain = {
-				event_chain = wtmnb_open_fire_chain
-			}
-			capital_scope = {
-				enable_special_project = {
-					name = WTMNB_OPEN_FIRE_CANCEL
-					owner = root
-				}
-			}
-			event_target:wtmnb_boomed_system = {
-				every_system_planet = {
-					enable_special_project = {
-						name = WTMNB_OPEN_FIRE_PLANET_SELECT
-						location = this
-						owner = root
-					}
-				}
-				root = {
-					abort_special_project = {
-						type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = wtmnb.2001.d
-		trigger = {
-			any_playable_country = {
-				any_owned_leader = {
-					NOT = {
-						has_trait = leader_trait_wtmnb_stigmata
-					}
-					species = {
-						has_trait = trait_wtmnb_stigmata
-					}
-				}
-			}
-		}
-		every_country = {
-			limit = {
-				num_owned_leaders > 1
-			}
-			every_owned_leader = {
-				limit = {
-					NOT = {
-						has_trait = leader_trait_wtmnb_stigmata
-					}
-					species = {
-						has_trait = trait_wtmnb_stigmata
-					}
-				}
-				add_leader_trait_wtmnb_stigmata = yes
-			}
-			if = {
-				limit = {
-					is_gestalt = yes
-				}
-				every_owned_leader = {
-					limit = {
-						is_councilor = yes
-					}
-					set_gestalt_node_portrait_effect = yes
-				}
-			}
-		}
-	}
-	option = {
-		name = wtmnb.2001.z
-	}
+    id = wtmnb.2001
+    is_triggered_only = yes
+    title = wtmnb.2001.name
+    #picture = GFX_evt_wsg_bombardment
+    desc = wtmnb.2001.desc
+    option = {
+        # 摧毁星系内所有船
+        name = wtmnb.2001.a
+        custom_tooltip = wtmnb.2001.a.tip
+        hidden_effect = {
+            event_target:wtmnb_boomed_system = {
+                every_fleet_in_system = {
+                    limit = {
+                        NOT = {
+                            any_owned_ship = {
+                                is_ship_size = wtmnb_fortress
+                            }
+                        }
+                    }
+                    wtmnb_safe_destroy_fleet = yes
+                }
+            }
+        }
+    }
+    # 星系内所有船的所有者暴毙
+    option = {
+        name = wtmnb.2001.b
+        custom_tooltip = wtmnb.2001.b.tip
+        hidden_effect = {
+            event_target:wtmnb_boomed_system = {
+                every_fleet_in_system = {
+                    owner = {
+                        if = {
+                            limit = {
+                                NOT = {
+                                    is_same_empire = event_target:wtmnb_owner
+                                }
+                            }
+                            set_country_flag = wtmnb_dying_country
+                        }
+                    }
+                }
+            }
+            every_country = {
+                limit = {
+                    has_country_flag = wtmnb_dying_country
+                }
+                every_owned_fleet = {
+                    wtmnb_safe_destroy_fleet = yes
+                }
+                # 清除殖民地
+                every_owned_planet = {
+                    every_owned_pop = {
+                        kill_pop = yes
+                    }
+                    remove_all_buildings = yes
+                    destroy_colony = yes
+                }
+                destroy_country = yes
+                fire_on_action = {
+                    on_action = on_country_destroyed
+                    scopes = {
+                        from = event_target:wtmnb_owner
+                    }
+                }
+            }
+        }
+    }
+    # 触发超距射击
+    option = {
+        name = wtmnb.2001.c
+        custom_tooltip = wtmnb.2001.c.tip
+        hidden_effect = {
+            begin_event_chain = {
+                event_chain = wtmnb_open_fire_chain
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = WTMNB_OPEN_FIRE_CANCEL
+                    owner = root
+                }
+            }
+            event_target:wtmnb_boomed_system = {
+                every_system_planet = {
+                    enable_special_project = {
+                        name = WTMNB_OPEN_FIRE_PLANET_SELECT
+                        location = this
+                        owner = root
+                    }
+                }
+                root = {
+                    abort_special_project = {
+                        type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+                    }
+                }
+            }
+        }
+    }
+    option = {
+        name = wtmnb.2001.d
+        trigger = {
+            any_playable_country = {
+                any_owned_leader = {
+                    NOT = {
+                        has_trait = leader_trait_wtmnb_stigmata
+                    }
+                    species = {
+                        has_trait = trait_wtmnb_stigmata
+                    }
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                num_owned_leaders > 1
+            }
+            every_owned_leader = {
+                limit = {
+                    NOT = {
+                        has_trait = leader_trait_wtmnb_stigmata
+                    }
+                    species = {
+                        has_trait = trait_wtmnb_stigmata
+                    }
+                }
+                add_leader_trait_wtmnb_stigmata = yes
+            }
+            if = {
+                limit = {
+                    is_gestalt = yes
+                }
+                every_owned_leader = {
+                    limit = {
+                        is_councilor = yes
+                    }
+                    set_gestalt_node_portrait_effect = yes
+                }
+            }
+        }
+    }
+    option = {
+        name = wtmnb.2001.z
+    }
 }
 
 # 手动引爆
 country_event = {
-	id = wtmnb.2002
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		from = {
-			any_owned_ship = {
-				is_ship_size = wtmnb_boomer
-			}
-		}
-	}
-	immediate = {
-		random_country = {
-			limit = {
-				has_country_flag = wtmnb_order
-			}
-			save_event_target_as = wtmnb_owner
-		}
-		from = {
-			random_owned_ship = {
-				save_event_target_as = wtmnb_boomed_boomer
-			}
-			solar_system = {
-				save_event_target_as = wtmnb_boomed_system
-			}
-		}
-		event_target:wtmnb_owner = {
-			country_event = {
-				id = wtmnb.2001
-			}
-		}
-	}
+    id = wtmnb.2002
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        from = {
+            any_owned_ship = {
+                is_ship_size = wtmnb_boomer
+            }
+        }
+    }
+    immediate = {
+        random_country = {
+            limit = {
+                has_country_flag = wtmnb_order
+            }
+            save_event_target_as = wtmnb_owner
+        }
+        from = {
+            random_owned_ship = {
+                save_event_target_as = wtmnb_boomed_boomer
+            }
+            solar_system = {
+                save_event_target_as = wtmnb_boomed_system
+            }
+        }
+        event_target:wtmnb_owner = {
+            country_event = {
+                id = wtmnb.2001
+            }
+        }
+    }
 }
 
 #跃迁失踪
 ship_event = {
-	id = wtmnb.3000
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		solar_system = {
-			has_star_flag = wtmnb_star_11th
-		}
-		owner = {
-			NOT = {
-				has_country_flag = wtmnb_order
-			}
-		}
-	}
-	immediate = {
-		root.fleet = {
-			set_mia = yes
-		}
-	}
+    id = wtmnb.3000
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+        solar_system = {
+            has_star_flag = wtmnb_star_11th
+        }
+        owner = {
+            NOT = {
+                has_country_flag = wtmnb_order
+            }
+        }
+    }
+    immediate = {
+        root.fleet = {
+            set_mia = mia_return_home
+            # set_mia_return_delay = 30
+        }
+    }
 }

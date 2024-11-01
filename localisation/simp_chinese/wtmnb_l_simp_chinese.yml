@@ -251,6 +251,7 @@
  district_wtmnb_little_safe:0 "小金库"
  district_wtmnb_little_safe_desc:0 "不努力经营的话只能回家继承家产了。"
  district_wtmnb_little_safe_plural:0 "$district_wtmnb_little_safe$"
+ mod_district_wtmnb_little_safe_max: "$district_wtmnb_little_safe$建造上限"
 
 #   _                     _                   _                      _       
 #  | |__   ___  _ __ ___ | |__   __ _ _ __ __| |_ __ ___   ___ _ __ | |_ ___ 

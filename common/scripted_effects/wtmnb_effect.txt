@@ -122,7 +122,7 @@ wtmnb_lock_bypass = {
 				is_bypass_type = lgate
 				is_bypass_type = shroud_tunnel
 			}
-			has_lock = false
+			has_lock = no
 			solar_system = {
 				is_same_value = prevprev
 			}

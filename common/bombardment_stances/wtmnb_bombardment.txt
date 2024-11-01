@@ -4,7 +4,6 @@ wtmnb_doom = {
 			has_country_flag = wtmnb_order
 		}
 	}
-	icon_frame = 3
 	default = no
 	stop_when_armies_dead = no
 	abduct_pops = no
@@ -27,7 +26,6 @@ wtmnb_invasion = {
 			has_country_flag = wtmnb_order
 		}
 	}
-	icon_frame = 3
 	default = no
 	stop_when_armies_dead = no
 	abduct_pops = no

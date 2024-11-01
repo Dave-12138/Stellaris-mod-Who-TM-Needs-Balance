@@ -11,7 +11,7 @@ district_wtmnb_little_safe = {
 	resources = {
 		category = planet_districts
 		cost = {
-			alloy = 10
+			alloys = 10
 		}
 		upkeep = {
 			energy = 2

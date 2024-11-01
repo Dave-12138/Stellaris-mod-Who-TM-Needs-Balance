@@ -9,7 +9,7 @@ leader_trait_ruler_wtmnb_dc_r = {
 	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
-	modification = no
+	
 }
 
 leader_trait_ruler_wtmnb_dc_r2 = {
@@ -25,7 +25,7 @@ leader_trait_ruler_wtmnb_dc_r2 = {
 	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
-	modification = no
+	
 }
 
 leader_trait_ruler_wtmnb_dc_r3 = {
@@ -39,5 +39,5 @@ leader_trait_ruler_wtmnb_dc_r3 = {
 	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
-	modification = no
+	
 }

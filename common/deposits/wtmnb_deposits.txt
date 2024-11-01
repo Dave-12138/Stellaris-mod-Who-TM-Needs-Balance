@@ -594,7 +594,7 @@ deposit_wtmnb_city_rubbish = {
 		has_deposit = deposit_wtmnb_city
 	}
 	drop_weight = {
-		weight = 500
+		weight = 100
 	}
 	resources = {
 		category = deposit_blockers

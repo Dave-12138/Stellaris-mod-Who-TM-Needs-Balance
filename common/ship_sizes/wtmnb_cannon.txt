@@ -13,11 +13,11 @@ wtmnb_cannon = {
 			locator = "part1"
 		}
 	}
+	potential_country = {
+		has_country_flag = wtmnb_order
+	}
 	potential_construction = {
-		exists = owner
-		owner = {
-			has_country_flag = wtmnb_order
-		}
+		is_scope_type = starbase
 		has_starbase_size = wtmnb_fortress
 	}
 	ship_modifier = {

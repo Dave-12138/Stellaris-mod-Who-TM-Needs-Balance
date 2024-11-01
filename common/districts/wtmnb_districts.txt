@@ -13,7 +13,7 @@ district_wtmnb_matrix_office = {
 	resources = {
 		category = planet_districts
 		cost = {
-			alloy = 10
+			alloys = 10
 		}
 		upkeep = {
 			energy = 2
@@ -69,7 +69,7 @@ district_wtmnb_meeting_room = {
 	resources = {
 		category = planet_districts
 		cost = {
-			alloy = 10
+			alloys = 10
 		}
 		upkeep = {
 			energy = 2

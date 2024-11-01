@@ -22,7 +22,7 @@ district_wtmnb_seedbed = {
 	resources = {
 		category = planet_districts
 		cost = {
-			alloy = 10
+			alloys = 10
 		}
 		upkeep = {
 			energy = 2

@@ -3,433 +3,433 @@ namespace = wtmnb_dc
 
 ###########
 country_event = {
-	id = wtmnb_dc.1000
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		event_target:wtmnb_target.owner = {
-			ruler = {
-				set_leader_flag = wtmnb_dc_r
-				save_event_target_as = dc_r_ruler
-				random_list = {
-					50 = {
-						modifier = {
-							factor = 0
-							species = {
-								OR = {
-									is_ugly_pop = yes
-									is_inorganic_species = yes
-								}
-							}
-						}
-						modifier = {
-							factor = 0
-							gender = male
-						}
-						add_trait = leader_trait_ruler_wtmnb_dc_r3
-						prev = {
-							country_event = {
-								id = wtmnb_dc.1100
-								days = 270
-							}
-						}
-					}
-					50 = {
-					}
-				}
-				random_list = {
-					50 = {
-						modifier = {
-							factor = 4
-							species = {
-								has_trait = trait_DC_ethic_asceticism
-							}
-						}
-						modifier = {
-							factor = 0
-							OR = {
-								species = {
-									is_has_lust_trait = yes
-								}
-								has_trait = leader_trait_ruler_wtmnb_dc_r
-								has_trait = leader_trait_ruler_wtmnb_dc_r2
-							}
-						}
-						add_trait = leader_trait_ruler_wtmnb_dc_r
-					}
-					50 = {
-						modifier = {
-							factor = 8
-							root.owner_species = {
-								has_trait = trait_lust_missionary
-							}
-						}
-						modifier = {
-							factor = 0.5
-							species = {
-								has_trait = trait_DC_ethic_asceticism
-							}
-						}
-						remove_trait = leader_trait_ruler_wtmnb_dc_r
-						add_trait = leader_trait_ruler_wtmnb_dc_r2
-					}
-					50 = {
-					}
-				}
-			}
-			add_opinion_modifier = {
-				who = root
-				modifier = opinion_wtmnb_dc_r
-			}
-		}
-		random_list = {
-			30 = {
-				country_event = {
-					id = wtmnb_dc.1011
-				}
-				event_target:wtmnb_target = {
-					owner = {
-						country_event = {
-							id = wtmnb_dc.1021
-						}
-					}
-				}
-			}
-			0 = {
-				modifier = {
-					add = 50
-					any_owned_leader = {
-						gender = male
-					}
-				}
-				country_event = {
-					id = wtmnb_dc.1010
-				}
-				event_target:wtmnb_target = {
-					owner = {
-						country_event = {
-							id = wtmnb_dc.1020
-						}
-					}
-				}
-			}
-		}
-	}
+    id = wtmnb_dc.1000
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        event_target:wtmnb_target.owner = {
+            ruler = {
+                set_leader_flag = wtmnb_dc_r
+                save_event_target_as = dc_r_ruler
+                random_list = {
+                    50 = {
+                        modifier = {
+                            factor = 0
+                            species = {
+                                OR = {
+                                    is_ugly_pop = yes
+                                    is_inorganic_species = yes
+                                }
+                            }
+                        }
+                        modifier = {
+                            factor = 0
+                            gender = male
+                        }
+                        add_trait = leader_trait_ruler_wtmnb_dc_r3
+                        prev = {
+                            country_event = {
+                                id = wtmnb_dc.1100
+                                days = 270
+                            }
+                        }
+                    }
+                    50 = {
+                    }
+                }
+                random_list = {
+                    50 = {
+                        modifier = {
+                            factor = 4
+                            species = {
+                                has_trait = trait_DC_ethic_asceticism
+                            }
+                        }
+                        modifier = {
+                            factor = 0
+                            OR = {
+                                species = {
+                                    is_has_lust_trait = yes
+                                }
+                                has_trait = leader_trait_ruler_wtmnb_dc_r
+                                has_trait = leader_trait_ruler_wtmnb_dc_r2
+                            }
+                        }
+                        add_trait = leader_trait_ruler_wtmnb_dc_r
+                    }
+                    50 = {
+                        modifier = {
+                            factor = 8
+                            root.owner_species = {
+                                has_trait = trait_lust_missionary
+                            }
+                        }
+                        modifier = {
+                            factor = 0.5
+                            species = {
+                                has_trait = trait_DC_ethic_asceticism
+                            }
+                        }
+                        remove_trait = leader_trait_ruler_wtmnb_dc_r
+                        add_trait = leader_trait_ruler_wtmnb_dc_r2
+                    }
+                    50 = {
+                    }
+                }
+            }
+            add_opinion_modifier = {
+                who = root
+                modifier = opinion_wtmnb_dc_r
+            }
+        }
+        random_list = {
+            30 = {
+                country_event = {
+                    id = wtmnb_dc.1011
+                }
+                event_target:wtmnb_target = {
+                    owner = {
+                        country_event = {
+                            id = wtmnb_dc.1021
+                        }
+                    }
+                }
+            }
+            0 = {
+                modifier = {
+                    add = 50
+                    any_owned_leader = {
+                        gender = male
+                    }
+                }
+                country_event = {
+                    id = wtmnb_dc.1010
+                }
+                event_target:wtmnb_target = {
+                    owner = {
+                        country_event = {
+                            id = wtmnb_dc.1020
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 #dc_r owner方提醒
 country_event = {
-	id = wtmnb_dc.1010
-	is_triggered_only = yes
-	picture = GFX_evt_CM_daily11
-	show_sound = event_CM_excited02
-	title = wtmnb_dc.1000.name
-	desc = wtmnb_dc.1010.desc
-	option = {
-		name = wtmnb_dc.1010.a
-		add_resource = {
-			influence = 1000
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
+    id = wtmnb_dc.1010
+    is_triggered_only = yes
+    picture = GFX_evt_CM_daily11
+    show_sound = event_CM_excited02
+    title = wtmnb_dc.1000.name
+    desc = wtmnb_dc.1010.desc
+    option = {
+        name = wtmnb_dc.1010.a
+        add_resource = {
+            influence = 1000
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
 }
 
 country_event = {
-	id = wtmnb_dc.1011
-	is_triggered_only = yes
-	picture = GFX_evt_CM_chain21
-	show_sound = event_CM_excited02
-	title = wtmnb_dc.1000.name
-	desc = wtmnb_dc.1011.desc
-	option = {
-		name = wtmnb_dc.1011.a
-		add_resource = {
-			influence = 1000
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
+    id = wtmnb_dc.1011
+    is_triggered_only = yes
+    picture = GFX_evt_CM_chain21
+    show_sound = event_CM_excited02
+    title = wtmnb_dc.1000.name
+    desc = wtmnb_dc.1011.desc
+    option = {
+        name = wtmnb_dc.1011.a
+        add_resource = {
+            influence = 1000
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
 }
 
 #target方提醒
 country_event = {
-	id = wtmnb_dc.1020
-	is_triggered_only = yes
-	picture = GFX_evt_CM_daily11
-	show_sound = event_CM_excited02
-	title = wtmnb_dc.1020.name
-	#描述
-	desc = {
-		text = wtmnb_dc.1020.desc.1
-		trigger = {
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r
-			}
-		}
-	}
-	desc = {
-		text = wtmnb_dc.1020.desc.2
-		trigger = {
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r2
-			}
-		}
-	}
-	desc = {
-		text = wtmnb_dc.1020.desc.3
-		trigger = {
-			event_target:dc_r_ruler = {
-				NOR = {
-					has_trait = leader_trait_ruler_wtmnb_dc_r2
-					has_trait = leader_trait_ruler_wtmnb_dc_r
-				}
-			}
-		}
-	}
-	#选项
-	option = {
-		name = wtmnb_dc.1020.a
-		trigger = {
-			event_target:dc_r_ruler = {
-				NOT = {
-					has_trait = leader_trait_ruler_wtmnb_dc_r2
-				}
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.b
-		trigger = {
-			owner_species = {
-				has_trait = trait_DC_ethic_asceticism
-			}
-			is_gestalt = no
-		}
-		event_target:dc_r_ruler = {
-			kill_leader = {
-				type = ruler
-				show_notification = no
-			}
-		}
-		ai_chance = {
-			factor = 0.1
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.c
-		trigger = {
-			owner_species = {
-				has_trait = trait_DC_ethic_carnalism
-			}
-			event_target:dc_r_ruler = {
-				has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-			add_skill = 1000
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.d
-		trigger = {
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r2
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.e
-		trigger = {
-			owner_species = {
-				has_trait = trait_DC_ethic_carnalism
-			}
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.f
-		trigger = {
-			has_civic = civic_Hport
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
+    id = wtmnb_dc.1020
+    is_triggered_only = yes
+    picture = GFX_evt_CM_daily11
+    show_sound = event_CM_excited02
+    title = wtmnb_dc.1020.name
+    #描述
+    desc = {
+        text = wtmnb_dc.1020.desc.1
+        trigger = {
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r
+            }
+        }
+    }
+    desc = {
+        text = wtmnb_dc.1020.desc.2
+        trigger = {
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r2
+            }
+        }
+    }
+    desc = {
+        text = wtmnb_dc.1020.desc.3
+        trigger = {
+            event_target:dc_r_ruler = {
+                NOR = {
+                    has_trait = leader_trait_ruler_wtmnb_dc_r2
+                    has_trait = leader_trait_ruler_wtmnb_dc_r
+                }
+            }
+        }
+    }
+    #选项
+    option = {
+        name = wtmnb_dc.1020.a
+        trigger = {
+            event_target:dc_r_ruler = {
+                NOT = {
+                    has_trait = leader_trait_ruler_wtmnb_dc_r2
+                }
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.b
+        trigger = {
+            owner_species = {
+                has_trait = trait_DC_ethic_asceticism
+            }
+            is_gestalt = no
+        }
+        event_target:dc_r_ruler = {
+            kill_leader = {
+                ruler = yes
+                show_notification = no
+            }
+        }
+        ai_chance = {
+            factor = 0.1
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.c
+        trigger = {
+            owner_species = {
+                has_trait = trait_DC_ethic_carnalism
+            }
+            event_target:dc_r_ruler = {
+                has_ruler_trait = leader_trait_ruler_wtmnb_dc_r2
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+            add_skill = 1000
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.d
+        trigger = {
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r2
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.e
+        trigger = {
+            owner_species = {
+                has_trait = trait_DC_ethic_carnalism
+            }
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.f
+        trigger = {
+            has_civic = civic_Hport
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
 }
 
 country_event = {
-	id = wtmnb_dc.1021
-	is_triggered_only = yes
-	picture = GFX_evt_CM_chain21
-	show_sound = event_CM_excited02
-	title = wtmnb_dc.1020.name
-	#描述
-	desc = {
-		text = wtmnb_dc.1020.desc.1
-		trigger = {
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r
-			}
-		}
-	}
-	desc = {
-		text = wtmnb_dc.1020.desc.2
-		trigger = {
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r2
-			}
-		}
-	}
-	desc = {
-		text = wtmnb_dc.1020.desc.3
-		trigger = {
-			event_target:dc_r_ruler = {
-				NOR = {
-					has_trait = leader_trait_ruler_wtmnb_dc_r2
-					has_trait = leader_trait_ruler_wtmnb_dc_r
-				}
-			}
-		}
-	}
-	#选项
-	option = {
-		name = wtmnb_dc.1020.a
-		trigger = {
-			event_target:dc_r_ruler = {
-				NOT = {
-					has_trait = leader_trait_ruler_wtmnb_dc_r2
-				}
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.b
-		trigger = {
-			owner_species = {
-				has_trait = trait_DC_ethic_asceticism
-			}
-			is_gestalt = no
-		}
-		event_target:dc_r_ruler = {
-			kill_leader = {
-				type = ruler
-				show_notification = no
-			}
-		}
-		ai_chance = {
-			factor = 0.1
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.c
-		trigger = {
-			owner_species = {
-				has_trait = trait_DC_ethic_carnalism
-			}
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r2
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-			add_skill = 1000
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.d
-		trigger = {
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r2
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.e
-		trigger = {
-			owner_species = {
-				has_trait = trait_DC_ethic_carnalism
-			}
-			event_target:dc_r_ruler = {
-				has_trait = leader_trait_ruler_wtmnb_dc_r
-			}
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-	}
-	option = {
-		name = wtmnb_dc.1020.f
-		trigger = {
-			has_civic = civic_Hport
-		}
-		event_target:dc_r_ruler = {
-			show_dc_r_desc = yes
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
+    id = wtmnb_dc.1021
+    is_triggered_only = yes
+    picture = GFX_evt_CM_chain21
+    show_sound = event_CM_excited02
+    title = wtmnb_dc.1020.name
+    #描述
+    desc = {
+        text = wtmnb_dc.1020.desc.1
+        trigger = {
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r
+            }
+        }
+    }
+    desc = {
+        text = wtmnb_dc.1020.desc.2
+        trigger = {
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r2
+            }
+        }
+    }
+    desc = {
+        text = wtmnb_dc.1020.desc.3
+        trigger = {
+            event_target:dc_r_ruler = {
+                NOR = {
+                    has_trait = leader_trait_ruler_wtmnb_dc_r2
+                    has_trait = leader_trait_ruler_wtmnb_dc_r
+                }
+            }
+        }
+    }
+    #选项
+    option = {
+        name = wtmnb_dc.1020.a
+        trigger = {
+            event_target:dc_r_ruler = {
+                NOT = {
+                    has_trait = leader_trait_ruler_wtmnb_dc_r2
+                }
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.b
+        trigger = {
+            owner_species = {
+                has_trait = trait_DC_ethic_asceticism
+            }
+            is_gestalt = no
+        }
+        event_target:dc_r_ruler = {
+            kill_leader = {
+                ruler = yes
+                show_notification = no
+            }
+        }
+        ai_chance = {
+            factor = 0.1
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.c
+        trigger = {
+            owner_species = {
+                has_trait = trait_DC_ethic_carnalism
+            }
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r2
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+            add_skill = 1000
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.d
+        trigger = {
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r2
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.e
+        trigger = {
+            owner_species = {
+                has_trait = trait_DC_ethic_carnalism
+            }
+            event_target:dc_r_ruler = {
+                has_trait = leader_trait_ruler_wtmnb_dc_r
+            }
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+    }
+    option = {
+        name = wtmnb_dc.1020.f
+        trigger = {
+            has_civic = civic_Hport
+        }
+        event_target:dc_r_ruler = {
+            show_dc_r_desc = yes
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
 }
 
 country_event = {
-	id = wtmnb_dc.1100
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		if = {
-			limit = {
-				exists = ruler
-				ruler = {
-					is_same_value = event_target:dc_r_ruler
-					has_trait = leader_trait_ruler_wtmnb_dc_r3
-				}
-			}
-			ruler = {
-				remove_trait = leader_trait_ruler_wtmnb_dc_r3
-			}
-			create_half_species = {
-				species_one = ruler.species
-				species_two = event_target:wtmnb_planet_killer_ship.owner.owner_species
-			}
-			create_leader = {
-				class = random
-				species = last_created_species
-				set_age = 0
-				traits = {
-					trait = leader_trait_wtmnb_stigmata
-				}
-				skill = 10
-			}
-		}
-	}
+    id = wtmnb_dc.1100
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        if = {
+            limit = {
+                exists = ruler
+                ruler = {
+                    is_same_value = event_target:dc_r_ruler
+                    has_trait = leader_trait_ruler_wtmnb_dc_r3
+                }
+            }
+            ruler = {
+                remove_trait = leader_trait_ruler_wtmnb_dc_r3
+            }
+            create_half_species = {
+                species_one = ruler.species
+                species_two = event_target:wtmnb_planet_killer_ship.owner.owner_species
+            }
+            create_leader = {
+                class = random
+                species = last_created_species
+                set_age = 0
+                traits = {
+                    trait = leader_trait_wtmnb_stigmata
+                }
+                skill = 10
+            }
+        }
+    }
 }
