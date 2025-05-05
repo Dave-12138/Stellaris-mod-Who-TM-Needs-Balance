@@ -6,6 +6,8 @@ wtmnb_science = {
     entity = "science_ship_entity"
     modifier = {
         ship_evasion_add = @science_evasion
+        ship_cloaking_detection_add = 10
+        ship_cloaking_strength_add = 10
     }
     ship_modifier = {
         ship_sensor_range_add = 10
@@ -15,9 +17,6 @@ wtmnb_science = {
         ship_armor_penetration_mult = 5
         ship_shield_penetration_mult = 5
         ship_accuracy_add = 9999
-        ship_cloaking_detection_add = 10
-
-        ship_cloaking_strength_add = 10
     }
     size_multiplier = 1
     fleet_slot_size = 1

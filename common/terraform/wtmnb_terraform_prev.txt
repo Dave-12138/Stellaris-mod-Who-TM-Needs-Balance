@@ -36,15 +36,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -90,15 +83,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 }
@@ -141,15 +127,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 }
@@ -192,15 +171,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -246,15 +218,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -300,15 +265,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -354,15 +312,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -408,15 +359,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -462,15 +406,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -516,15 +453,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -570,15 +500,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -624,15 +547,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 		}
 	}
 	ai_weight = {
@@ -691,15 +607,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 			remove_modifier = terraforming_candidate
 		}
 	}
@@ -746,15 +655,8 @@ terraform_link = {
 	}
 	effect = {
 		from = {
-			reroll_deposits = yes
-			if = {
-				limit = {
-					NOT = {
-						has_deposit = deposit_wtmnb_city
-					}
-				}
-				add_deposit = deposit_wtmnb_city
-			}
+			clear_deposits = yes
+			add_deposit = deposit_wtmnb_city
 			remove_modifier = terraforming_candidate
 		}
 	}
