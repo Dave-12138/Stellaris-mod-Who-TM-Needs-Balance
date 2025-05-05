@@ -17,31 +17,18 @@ decision_wtmnb_create_pop = {
     effect = {
         custom_tooltip = "add_20_pop"
         hidden_effect = {
-            random_owned_pop = {
-                species = {
-                    save_event_target_as = rand_sp
-                }
-            }
-            while = {
-                count = 20
-                create_pop = {
-                    species = event_target:rand_sp
+            random_owned_pop_group = {
+                root = {
+                    create_pop_group = {
+                        size = 2000
+                        species = prev
+                    }
                 }
             }
         }
     }
     ai_weight = {
-        weight = 5000
-        modifier = {
-            factor = 0
-            any_owned_pop = {
-                OR = {
-                    is_unemployed = yes
-                    has_job = nojob_sexslave
-                    has_job = nojob_sexslave2
-                }
-            }
-        }
+        weight = 0
     }
 }
 
@@ -167,8 +154,8 @@ decision_wtmnb_molten = {
             limit = {
                 is_colonizable = no
             }
-            every_owned_pop = {
-                kill_pop = yes
+            every_owned_pop_group = {
+                kill_all_pop = yes
             }
         }
         random_list = {
@@ -373,6 +360,24 @@ decision_wtmnb_city = {
         }
     }
     effect = {
+
+        add_deposit = deposit_wtmnb_city
+        swap_districts_effect = {
+            DISTRICT1 = district_city
+            DISTRICT2 = district_wtmnb_matrix_office
+        }
+        swap_districts_effect = {
+            DISTRICT1 = district_hive
+            DISTRICT2 = district_wtmnb_matrix_office
+        }
+        swap_districts_effect = {
+            DISTRICT1 = district_nexus
+            DISTRICT2 = district_wtmnb_matrix_office
+        }
+        swap_districts_effect = {
+            DISTRICT1 = district_craglands
+            DISTRICT2 = district_wtmnb_matrix_office
+        }
         if = {
             limit = {
                 # 不是：
@@ -388,19 +393,25 @@ decision_wtmnb_city = {
                     is_ringworld = yes
                 }
             }
-            while = {
-                count = 5
-                add_district = district_wtmnb_matrix_office
+
+            export_trigger_value_to_variable = {
+                trigger = num_districts
+                parameters = {
+                    type = any
+                }
+                variable = swap_districts_variable
             }
-            change_pc = pc_wtmnb_city
-            reroll_deposits = yes
-        }
-        if = {
-            limit = {
-                NOT = {
-                    has_deposit = deposit_wtmnb_city
+            remove_all_districts = yes
+            while = {
+                count = swap_districts_variable
+                add_district_if_possible_effect = {
+                    district = district_wtmnb_matrix_office
                 }
             }
+            clear_variable = swap_districts_variable
+
+            change_pc = pc_wtmnb_city
+            clear_deposits = yes
             add_deposit = deposit_wtmnb_city
         }
     }

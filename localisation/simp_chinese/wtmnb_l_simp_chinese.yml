@@ -3,6 +3,7 @@
  sm_wtmnb_super_trade_hub_desc:0 "高效的军制式超光速无人机能将小半个银河系划入星区收集范围"
  #################
  wtmnb_fortress:0 "月光王座"
+ wtmnb_fortress_cap:0 "月光王座"
  wtmnb_fortress_plural:0 "$wtmnb_fortress$"
  aura_unbreakable_shield_wide:0 "AT力场"
  SHIP_UNBREAKABLE_SHARE:0 "Anti力场"
@@ -23,6 +24,7 @@
  SHIP_GRAPHICS_WTMNB_FORTRESS_DESC:0 "$WTMNB_WEAPON_DESC$"
  
  wtmnb_science:0 "拟态科研船"
+ wtmnb_science_cap:0 "拟态科研船"
  wtmnb_science_plural:0 "$wtmnb_science$"
  SHIP_GRAPHICS_WTMNB_SCIENCE_DESC:0 "利用虚数内能负熵效应凭空创造出来的船只，在作为工程船使用的同时允许搭载强大的主炮。"
 
@@ -30,12 +32,14 @@
 
 
  wtmnb_cannon:0 "浮游炮"
+ wtmnb_cannon_cap: "浮游炮"
  wtmnb_cannon_plural:0 "浮游炮"
  WTMNB_CANNON_CORE:0 "$wtmnb_cannon$(泰坦舰艏)"
  WTMNB_CANNON_CANNON:0 "$wtmnb_cannon$(离子加农炮模型)"
  SHIP_GRAPHICS_WTMNB_CANNON_DESC:0 "高机动化浮游炮，瞬息三千六百炮，是居家旅行杀人越货必备法宝"
 
  wtmnb_boomer:0 "崩坏裂变弹"
+ wtmnb_boomer_cap:0 "崩坏裂变弹"
  wtmnb_boomer_plural:0 "崩坏裂变弹"
  WTMNB_BOOMER_SECTION:0 "解散舰队时、被击毁时引爆"
  SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "如果数值不够魔怔，可以考虑事件杀"
@@ -97,7 +101,7 @@
  WTMNB_GRAND_KEY_DESC:0 "引导使用虚数权能的工具"
 
  COMBAT_COMPUTER_WTMNB_BOOMER:0 "自爆卡车作战电脑"
- COMBAT_COMPUTER_WTMNB_CANNON:0 "长距炮击作战电脑"
+ COMBAT_COMPUTER_WTMNB_CANNON:0 "长距炮击作战电脑（平台）"
 #################
 #   _             _ _   
 #  | |_ _ __ __ _(_) |_ 

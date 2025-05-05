@@ -2,6 +2,7 @@
 district_wtmnb_little_safe = {
 	base_buildtime = 4
 	is_capped_by_modifier = yes
+	zone_slots = { slot_city_wtmnb }
 	show_on_uncolonized = {
 		has_deposit = deposit_wtmnb_city
 	}

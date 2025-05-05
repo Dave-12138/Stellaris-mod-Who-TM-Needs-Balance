@@ -1,8 +1,12 @@
 ai_wtmnb_cleck = {
 	is_capped_by_modifier = yes
-	building_icon = building_capital
-	icon = clerk
 	category = worker
+	swappable_data={
+		default={
+			icon = clerk
+			building_icon = building_capital
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -19,9 +23,13 @@ ai_wtmnb_cleck = {
 
 ai_wtmnb_drone = {
 	is_capped_by_modifier = yes
-	building_icon = building_capital
-	icon = clerk
 	category = simple_drone
+	swappable_data={
+		default={
+			icon = clerk
+			building_icon = building_capital
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -37,10 +45,15 @@ ai_wtmnb_drone = {
 }
 
 ai_wtmnb_master = {
+	tags = { unity }
 	is_capped_by_modifier = yes
-	building_icon = building_capital
 	category = specialist
-	icon = clerk
+	swappable_data={
+		default={
+			icon = clerk
+			building_icon = building_capital
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -60,16 +73,21 @@ ai_wtmnb_master = {
 		
 	}
 	country_modifier = {
-		planet_jobs_produces_mult = 100
-		country_produces_mult = 10
+		planet_jobs_produces_mult = 10
+		country_produces_mult = 1
 	}
 }
 
 ai_wtmnb_master_drone = {
+	tags = { unity }
 	is_capped_by_modifier = yes
-	building_icon = building_capital
 	category = complex_drone
-	icon = clerk
+	swappable_data={
+		default={
+			icon = clerk
+			building_icon = building_capital
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -89,7 +107,7 @@ ai_wtmnb_master_drone = {
 		
 	}
 	country_modifier = {
-		planet_jobs_produces_mult = 100
-		country_produces_mult = 10
+		planet_jobs_produces_mult = 10
+		country_produces_mult = 1
 	}
 }

@@ -1,7 +1,8 @@
 district_wtmnb_seedbed = {
-	
+
 	base_buildtime = 4
 	is_capped_by_modifier = no
+	zone_slots = { slot_city_wtmnb }
 	show_on_uncolonized = {
 		exists = owner
 		owner = {
@@ -32,7 +33,7 @@ district_wtmnb_seedbed = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 20
+		planet_housing_add = 2000
 		planet_max_buildings_add = 2
 		planet_jobs_produces_mult = 12
 	}

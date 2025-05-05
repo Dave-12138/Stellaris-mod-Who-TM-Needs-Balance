@@ -31,7 +31,7 @@ terraform_link = {
 				}
 			}
 		}
-		any_owned_pop = {
+		any_owned_pop_group = {
 			OR = {
 				has_trait = trait_DC_ethic_carnalism
 				has_trait = trait_DC_ethic_asceticism

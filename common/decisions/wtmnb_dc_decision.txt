@@ -10,7 +10,7 @@ decision_wtmnb_dc_create_pop = {
 	}
 	potential = {
 		has_deposit = deposit_wtmnb_city
-		any_owned_pop = {
+		any_owned_pop_group = {
 			OR = {
 				has_trait = trait_DC_ethic_carnalism
 				has_trait = trait_DC_ethic_asceticism
@@ -22,7 +22,7 @@ decision_wtmnb_dc_create_pop = {
 	effect = {
 		custom_tooltip = "add_20_pop"
 		hidden_effect = {
-			random_owned_pop = {
+            random_owned_pop_group = {
 				limit = {
 					OR = {
 						has_trait = trait_DC_ethic_carnalism
@@ -31,15 +31,12 @@ decision_wtmnb_dc_create_pop = {
 						has_trait = trait_DC_ethic_lust_skynet
 					}
 				}
-				species = {
-					save_event_target_as = rand_sp
-				}
-			}
-			while = {
-				count = 20
-				create_pop = {
-					species = event_target:rand_sp
-				}
+                root = {
+                    create_pop_group = {
+                        species = prev
+                        size = 2000
+                    }
+                }
 			}
 		}
 	}

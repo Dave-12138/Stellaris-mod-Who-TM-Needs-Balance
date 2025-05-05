@@ -61,11 +61,11 @@ wtmnb_fortress = {
     icon_frame = 7
     icon = ship_size_military_64
     ship_class_icon_frame = 26    #35
-    default_behavior = carrier
-    ship_roles = { carrier artillery }
+    default_behavior = platform
+    # ship_roles = { carrier artillery }
     prerequisites = { "tech_wtmnb_fortress" }
     class = shipclass_starbase
-    construction_type = starbase_shipyard
+    construction_type = { starbase_shipyard starbase_beastport }
     required_component_set = "WTMNB_GRAND_KEY"    #1 虚空万藏
     required_component_set = "WTMNB_GRAND_KEY"    #2 千界一乘
     required_component_set = "WTMNB_GRAND_KEY"    #3 涤罪七雷
@@ -86,4 +86,6 @@ wtmnb_fortress = {
     takes_name_from_ship_design = yes
     uses_name_prefix = no
     never_lost = yes
+
+    # is_hero_ship = yes
 }

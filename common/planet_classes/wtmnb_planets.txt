@@ -1,10 +1,11 @@
 pc_wtmnb_city = {
     entity = "wtmnb_city_planet"
     icon = GFX_planet_type_city
+
     entity_scale = @planet_standard_scale
     modifier = {
         #planet_max_districts_add = -300
-        planet_housing_add = 2
+        planet_housing_add = 200
         planet_jobs_produces_mult = 1
         pop_environment_tolerance = 0.75
 

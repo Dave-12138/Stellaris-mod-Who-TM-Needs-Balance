@@ -15,7 +15,9 @@ deposit_wtmnb_city = {
 			}
 			is_col_research = yes
 		}
-		job_brain_drone_per_pop = 1
+		job_brain_drone_physicist_per_pop = 0.3
+		job_brain_drone_biologist_per_pop = 0.3
+		job_brain_drone_engineer_per_pop = 0.3
 	}
 	# 机械
 	triggered_planet_modifier = {
@@ -26,7 +28,9 @@ deposit_wtmnb_city = {
 			}
 			is_col_research = yes
 		}
-		job_calculator_per_pop = 1
+		job_calculator_physicist_per_pop = 0.3
+		job_calculator_biologist_per_pop = 0.3
+		job_calculator_engineer_per_pop = 0.3
 	}
 	# 普通
 	triggered_planet_modifier = {
@@ -216,26 +220,11 @@ deposit_wtmnb_city = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
-				is_spiritualist = no
 			}
 			is_col_bureau = yes
 		}
 		modifier = {
 			job_bureaucrat_per_pop = 1
-		}
-	}
-	# 神棍
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				is_spiritualist = yes
-			}
-			is_col_bureau = yes
-		}
-		modifier = {
-			job_priest_per_pop = 1
 		}
 	}
 	# 蜂群
@@ -575,39 +564,10 @@ deposit_wtmnb_city = {
 	}
 	################
 	potential = {
-		is_planet_class = pc_wtmnb_city
-		NOT = {
-			has_deposit = deposit_wtmnb_city
-		}
-	}
-	drop_weight = {
-		weight = 1000
+		always = no
 	}
 }
 
-deposit_wtmnb_city_rubbish = {
-	is_for_colonizable = yes
-	icon = d_station_reactor
-	category = deposit_cat_blockers
-	potential = {
-		is_planet_class = pc_wtmnb_city
-		has_deposit = deposit_wtmnb_city
-	}
-	drop_weight = {
-		weight = 100
-	}
-	resources = {
-		category = deposit_blockers
-		cost = {
-			energy = 500
-			alloys = -100
-		}
-	}
-	can_be_cleared = {
-		always = yes
-	}
-	time = 30
-}
 
 deposit_wtmnb_city_civic_point = {
 	is_for_colonizable = yes

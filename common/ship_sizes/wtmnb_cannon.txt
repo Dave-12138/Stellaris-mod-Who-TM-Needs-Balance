@@ -47,7 +47,7 @@ wtmnb_cannon = {
 		"tech_wtmnb_fortress"
 	}
 	class = shipclass_military
-	construction_type = starbase_shipyard
+	construction_type = { starbase_shipyard starbase_beastport }
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"

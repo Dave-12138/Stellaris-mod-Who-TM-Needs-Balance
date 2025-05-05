@@ -1,8 +1,12 @@
 wtmnb_fooyouist = {
 	is_capped_by_modifier = yes
-	building_icon = building_capital
-	icon = bureaucrat
 	category = specialist
+	swappable_data={
+		default={
+			icon = bureaucrat
+			building_icon = building_embassy
+		}
+	}
 	weight = {
 		weight = 30
 	}
@@ -28,9 +32,13 @@ wtmnb_fooyouist = {
 
 wtmnb_fooyouist_drone = {
 	is_capped_by_modifier = yes
-	building_icon = building_capital
-	icon = synapse_drone
 	category = complex_drone
+	swappable_data={
+		default={
+			icon = synapse_drone
+			building_icon = building_embassy
+		}
+	}
 	weight = {
 		weight = 1600
 	}
