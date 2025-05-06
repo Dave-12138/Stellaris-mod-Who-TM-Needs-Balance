@@ -1,0 +1,75 @@
+########## 科研 ##########
+# 蜂巢
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_hive_empire = yes
+        }
+        is_col_research = yes
+    }
+    job_brain_drone_physicist_per_pop = @job_per_pop_d3
+    job_brain_drone_biologist_per_pop = @job_per_pop_d3
+    job_brain_drone_engineer_per_pop = @job_per_pop_d3
+}
+# 机械
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_machine_empire = yes
+        }
+        is_col_research = yes
+    }
+    job_calculator_physicist_per_pop = @job_per_pop_d3
+    job_calculator_biologist_per_pop = @job_per_pop_d3
+    job_calculator_engineer_per_pop = @job_per_pop_d3
+}
+# 普通
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            # 排除多彩
+            is_cg_empire = no
+        }
+        is_col_research = yes
+    }
+    job_researcher_per_pop = @job_per_pop
+}
+# 多彩研究部分
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_lust_empire = yes
+        }
+        is_col_research = yes
+    }
+    job_lovejuice_researcher_per_pop = @job_per_pop
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_sos_empire = yes
+        }
+        is_col_research = yes
+    }
+    job_tentacle_researcher_per_pop = @job_per_pop
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_pure_empire = yes
+        }
+        is_col_research = yes
+    }
+    job_holylight_researcher_per_pop = @job_per_pop
+}
+# 多彩研究结束

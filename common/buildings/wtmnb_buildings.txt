@@ -1,0 +1,72 @@
+building_wtmnb_meeting_room = {
+    base_buildtime = @b2_time
+    icon = building_ancient_palace
+
+    category = government
+
+    building_sets = {
+        government
+        urban
+    }
+
+    base_cap_amount = 3
+
+    potential = {
+        exists = owner
+
+        exists = planet
+        planet = { has_deposit = deposit_wtmnb_city }
+    }
+
+
+    allow = {
+    }
+    inline_script = buildings/wtmnb_meeting_room_job
+
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+        upkeep = {
+            energy = @b2_upkeep
+        }
+    }
+}
+building_wtmnb_little_safe = {
+    base_buildtime = @b2_time
+    icon = building_foundry_2
+    category = manufacturing
+
+    building_sets = {
+        generator
+        mining
+        farming
+        urban
+    }
+
+    base_cap_amount = 2
+
+    potential = {
+        exists = owner
+
+        exists = planet
+        planet = { has_deposit = deposit_wtmnb_city }
+    }
+
+
+    allow = {
+    }
+    inline_script = buildings/wtmnb_little_safe
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+}

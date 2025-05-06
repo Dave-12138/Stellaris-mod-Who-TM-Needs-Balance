@@ -1,0 +1,98 @@
+######## 合金 #########
+# 普通蜂群
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_hive_empire = yes
+            is_catalytic_empire = no
+        }
+        is_col_foundry = yes
+    }
+    job_alloy_drone_per_pop = @job_per_pop
+}
+# 普通机械
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_machine_empire = yes
+            is_catalytic_empire = no
+        }
+        is_col_foundry = yes
+    }
+    job_fabricator_per_pop = @job_per_pop
+}
+# 催化加工
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_catalytic_empire = yes
+        }
+        is_col_foundry = yes
+    }
+    job_catalytic_technician_per_pop = @job_per_pop
+}
+# 格式塔催化加工
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = yes
+            is_catalytic_empire = yes
+        }
+        is_col_foundry = yes
+    }
+    job_catalytic_drone_per_pop = @job_per_pop
+}
+# 普通帝国
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_catalytic_empire = no
+            # 排除多彩
+            is_cg_empire = no
+        }
+        is_col_foundry = yes
+    }
+    job_foundry_per_pop = @job_per_pop
+}
+# 多彩合金部分
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_lust_empire = yes
+        }
+        is_col_foundry = yes
+    }
+    job_love_juice_foundry_per_pop = @job_per_pop
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_sos_empire = yes
+        }
+        is_col_foundry = yes
+    }
+    job_tentacle_armor_foundry_per_pop = @job_per_pop
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_pure_empire = yes
+        }
+        is_col_foundry = yes
+    }
+    job_holylight_foundry_per_pop = @job_per_pop
+}
+# 多彩合金部分结束

@@ -1,0 +1,41 @@
+######### 矿 #########
+# 格式塔
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = yes
+        }
+        is_col_mining = yes
+    }
+    modifier = {
+        job_mining_drone_per_pop = @job_per_pop
+    }
+}
+# 普通帝国
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = no
+            is_fallen_empire_spiritualist = no
+        }
+        is_col_mining = yes
+    }
+    modifier = {
+        job_miner_per_pop = @job_per_pop
+    }
+}
+# 神棍
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_fallen_empire_spiritualist = yes
+        }
+        is_col_mining = yes
+    }
+    modifier = {
+        job_fe_acolyte_mine_per_pop = @job_per_pop
+    }
+}

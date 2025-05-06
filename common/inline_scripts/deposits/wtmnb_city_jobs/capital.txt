@@ -1,0 +1,27 @@
+######### 首都 #########
+# 普通帝国
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = no
+        }
+        is_capital = yes
+    }
+    modifier = {
+        job_ai_wtmnb_master_per_pop = @job_per_pop
+    }
+}
+# 格式塔
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = yes
+        }
+        is_capital = yes
+    }
+    modifier = {
+        job_ai_wtmnb_master_drone_per_pop = @job_per_pop
+    }
+}

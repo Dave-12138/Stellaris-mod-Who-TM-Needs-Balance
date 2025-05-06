@@ -493,6 +493,17 @@
  mod_pc_wtmnb_city_habitability:0 "$pc_wtmnb_city$星球宜居性"
 ###############
 
+ building_wtmnb_meeting_room: "战略忽悠会议室"
+ building_wtmnb_meeting_room_desc: "帝国规模？什么帝国？什么规模？我们可是发展中国家，你可不要乱讲"
+ mod_planet_building_wtmnb_meeting_room_build_speed_mult: "$building_wtmnb_meeting_room$建造速度"
+ mod_building_wtmnb_meeting_room_max: "$building_wtmnb_meeting_room$最大建造数量"
+
+ building_wtmnb_little_safe: "小金库"
+ building_wtmnb_little_safe_desc: "不努力经营的话只能回家继承家产了"
+ mod_planet_building_wtmnb_little_safe_build_speed_mult: "$building_wtmnb_little_safe$建造速度"
+ mod_building_wtmnb_little_safe_max: "$building_wtmnb_little_safe$最大建造数量"
+ ###############
+
  job_ai_wtmnb_cleck:0 "自由职业者"
  job_ai_wtmnb_cleck_plural:0 "$job_ai_wtmnb_cleck$"
  job_ai_wtmnb_cleck_desc:0 "虽然在这颗星球上闲着才是常态，但这种连象征性的工作也没有的情况或许是孤例。"

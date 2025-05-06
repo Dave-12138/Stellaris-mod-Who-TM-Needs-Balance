@@ -1,0 +1,4 @@
+
+inline_script = trait/wtmnb_stigmata/official
+inline_script = trait/wtmnb_stigmata/commander
+inline_script = trait/wtmnb_stigmata/scientist

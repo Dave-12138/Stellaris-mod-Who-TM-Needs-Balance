@@ -18,12 +18,7 @@ decision_wtmnb_create_pop = {
         custom_tooltip = "add_20_pop"
         hidden_effect = {
             random_owned_pop_group = {
-                root = {
-                    create_pop_group = {
-                        size = 2000
-                        species = prev
-                    }
-                }
+                add_pop_amount = 2000
             }
         }
     }
@@ -361,23 +356,6 @@ decision_wtmnb_city = {
     }
     effect = {
 
-        add_deposit = deposit_wtmnb_city
-        swap_districts_effect = {
-            DISTRICT1 = district_city
-            DISTRICT2 = district_wtmnb_matrix_office
-        }
-        swap_districts_effect = {
-            DISTRICT1 = district_hive
-            DISTRICT2 = district_wtmnb_matrix_office
-        }
-        swap_districts_effect = {
-            DISTRICT1 = district_nexus
-            DISTRICT2 = district_wtmnb_matrix_office
-        }
-        swap_districts_effect = {
-            DISTRICT1 = district_craglands
-            DISTRICT2 = district_wtmnb_matrix_office
-        }
         if = {
             limit = {
                 # 不是：
@@ -394,26 +372,12 @@ decision_wtmnb_city = {
                 }
             }
 
-            export_trigger_value_to_variable = {
-                trigger = num_districts
-                parameters = {
-                    type = any
-                }
-                variable = swap_districts_variable
-            }
-            remove_all_districts = yes
-            while = {
-                count = swap_districts_variable
-                add_district_if_possible_effect = {
-                    district = district_wtmnb_matrix_office
-                }
-            }
-            clear_variable = swap_districts_variable
-
             change_pc = pc_wtmnb_city
-            clear_deposits = yes
-            add_deposit = deposit_wtmnb_city
+            hidden_effect = {
+                clear_deposits = yes
+            }
         }
+        add_deposit = deposit_wtmnb_city
     }
     ai_weight = {
         weight = 5000

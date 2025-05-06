@@ -1,0 +1,9 @@
+triggered_country_modifier = {
+    potential = {
+        always = no
+    }
+    # 舰B
+    country_base_mind_club_produces_add = @little_safe_prod
+    country_base_azur_shippartbox_produces_add = @little_safe_prod
+    country_base_azur_red_diamond_produces_add = @little_safe_prod
+}

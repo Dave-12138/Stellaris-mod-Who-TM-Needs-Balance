@@ -34,5 +34,5 @@ pc_wtmnb_city = {
     colonizable = yes
     starting_planet = no
     show_city = no
-    district_set = wtmnb_city_world
+    district_set = city_world
 }

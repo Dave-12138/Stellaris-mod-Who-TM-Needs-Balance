@@ -182,7 +182,7 @@ planet_event = {
         }
         #remove_all_buildings = yes
         random_owned_pop_group = {
-            kill_all_pop = yes
+            kill_single_pop = yes
         }
         every_planet_army = {
             remove_army = yes

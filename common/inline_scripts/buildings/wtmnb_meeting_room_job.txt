@@ -1,0 +1,22 @@
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = no
+        }
+    }
+    modifier = {
+        job_wtmnb_fooyouist_add = 3.2
+    }
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = yes
+        }
+    }
+    modifier = {
+        job_wtmnb_fooyouist_drone_add = 3.2
+    }
+}

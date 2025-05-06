@@ -1,0 +1,26 @@
+triggered_country_modifier = {
+
+    potential = {
+        exists = owner
+        owner = {
+            OR = {
+                has_authority = auth_shenhai
+                has_authority = auth_warshipgirls
+            }
+        }
+    }
+    country_base_sr_se_produces_add = @little_safe_prod
+
+}
+triggered_country_modifier = {
+
+    potential = {
+        exists = owner
+        owner = {
+            has_authority = auth_shenhai
+        }
+    }
+    country_base_sr_alpha_produces_add = @little_safe_prod
+    country_base_sr_neo_produces_add = @little_safe_prod
+    country_base_sr_pantsu_produces_add = @little_safe_prod
+}

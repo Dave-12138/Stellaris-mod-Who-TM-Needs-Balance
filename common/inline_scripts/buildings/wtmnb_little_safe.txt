@@ -1,0 +1,9 @@
+inline_script = buildings/wtmnb_little_safe/vanilla
+
+inline_script = buildings/wtmnb_little_safe/AL
+inline_script = buildings/wtmnb_little_safe/azur
+inline_script = buildings/wtmnb_little_safe/cg
+inline_script = buildings/wtmnb_little_safe/giga
+inline_script = buildings/wtmnb_little_safe/ngnl
+inline_script = buildings/wtmnb_little_safe/touhou
+inline_script = buildings/wtmnb_little_safe/wsg
