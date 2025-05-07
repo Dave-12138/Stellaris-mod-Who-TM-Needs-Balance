@@ -1,0 +1,17 @@
+# 航道破坏
+option = {
+    name = wtmnb_colossus.1001.l
+    trigger = {
+        from = {
+            is_star = yes
+            solar_system = {
+                any_neighbor_system = {
+                    has_hyperlane_to = prev
+                }
+            }
+        }
+    }
+    from.solar_system = {
+        wtmnb_remove_hyperlane = yes
+    }
+}

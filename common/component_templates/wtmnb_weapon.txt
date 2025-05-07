@@ -5,7 +5,7 @@ weapon_component_template = {
 	icon = "GFX_ship_part_wtmnb_weapon"
 	icon_frame = 1
 	min_range = 10
-	use_ship_kill_target = no
+
 	damage = {
 		min = 50000
 		max = 50000
@@ -61,7 +61,7 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_wtmnb_weapon"
 	icon_frame = 1
-	use_ship_kill_target = no
+
 	damage = {
 		min = 20000
 		max = 20000
@@ -114,8 +114,7 @@ weapon_component_template = {
 	key = "WTMNB_WEAPON_W"
 	size = planet_killer
 	type = planet_killer
-	static_rotation = yes
-	use_ship_kill_target = no
+
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}

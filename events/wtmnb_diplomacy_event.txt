@@ -25,6 +25,7 @@ country_event = {
 				is_gestalt = no
 			}
 		}
+		is_dialog_only = yes
 		custom_tooltip = wtmnb_diplomacy.1.b.desc
 		hidden_effect = {
 			country_event = {
@@ -42,7 +43,7 @@ country_event = {
 				owner.ruler = {
 					species = {
 						is_ugly_pop = no
-						is_inorganic_species = no
+						is_robotic = no
 					}
 					NOT = {
 						gender = male
@@ -50,6 +51,7 @@ country_event = {
 				}
 			}
 		}
+		is_dialog_only = yes
 		hidden_effect = {
 			country_event = {
 				id = wtmnb_dc.1000
@@ -107,6 +109,7 @@ country_event = {
 				has_closed_borders = event_target:wtmnb_target.owner
 			}
 		}
+		is_dialog_only = yes
 		hidden_effect = {
 			set_closed_borders = {
 				who = event_target:wtmnb_target.owner
@@ -122,6 +125,7 @@ country_event = {
 		trigger = {
 			has_closed_borders = event_target:wtmnb_target.owner
 		}
+		is_dialog_only = yes
 		hidden_effect = {
 			set_closed_borders = {
 				who = event_target:wtmnb_target.owner
@@ -164,7 +168,7 @@ country_event = {
 			ruler = {
 				save_event_target_as = deadruler
 				kill_leader = {
-					type = ruler
+					ruler = yes
 					show_notification = no
 				}
 			}
@@ -195,11 +199,12 @@ country_event = {
 		name = wtmnb_diplomacy.1000.c
 		trigger = {
 			opinion = {
-				who = event_target:wtmnb_target
+				who = event_target:wtmnb_target.owner
 				value < -30
 			}
 		}
 		custom_tooltip = wtmnb_diplomacy.1000.tip
+		custom_tooltip = wtmnb_diplomacy.1000.tip2
 	}
 	option = {
 		name = wtmnb_diplomacy.1000.d

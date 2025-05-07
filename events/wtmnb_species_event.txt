@@ -1,364 +1,122 @@
 namespace = wtmnb_species
 country_event = {
-	id = wtmnb_species.1
-	is_triggered_only = yes
-	title = wtmnb_species.1.name
-	desc = wtmnb_species.1.desc
-	diplomatic = yes
-	picture_event_data = {
-		portrait = event_target:wtmnb_target.owner.leader
-		planet_background = event_target:wtmnb_target.owner
-		graphical_culture = event_target:wtmnb_target.owner
-		city_level = event_target:wtmnb_target.owner
-		room = event_target:wtmnb_target.owner
-	}
-	# 取消
-	option = {
-		name = wtmnb_species.1.0
-	}
-	# 舰R
-	# option = {
-	# 	name = wtmnb_species.1.a
-	# 	trigger = {
-	# 		has_global_flag = has_wsg_mod
-	# 	}
-	# 	hidden_effect = {
-	# 		event_target:wtmnb_target = {
-	# 			wtmnb_planet_species_to_wsg = yes
-	# 		}
-	# 	}
-	# }
-	# 舰R
-	# option = {
-	# 	name = wtmnb_species.1.b
-	# 	trigger = {
-	# 		has_global_flag = has_wsg_mod
-	# 	}
-	# 	hidden_effect = {
-	# 		event_target:wtmnb_target = {
-	# 			wtmnb_planet_species_to_sh = yes
-	# 		}
-	# 	}
-	# }
-	# 多彩
-	# option = {
-	# 	name = wtmnb_species.1.c
-	# 	trigger = {
-	# 		any_country = {
-	# 			OR = {
-	# 				has_country_flag = carnalism_flag
-	# 				has_country_flag = asceticism_flag
-	# 				has_country_flag = parasite_mind_flag
-	# 				has_country_flag = lust_skynet_flag
-	# 			}
-	# 		}
-	# 	}
-	# 	hidden_effect = {
-	# 		event_target:wtmnb_target = {
-	# 			wtmnb_planet_species_to_Magical_Bitch = yes
-	# 		}
-	# 	}
-	# }
-	# # 多彩
-	# option = {
-	# 	name = wtmnb_species.1.d
-	# 	trigger = {
-	# 		any_country = {
-	# 			OR = {
-	# 				has_country_flag = carnalism_flag
-	# 				has_country_flag = asceticism_flag
-	# 				has_country_flag = parasite_mind_flag
-	# 				has_country_flag = lust_skynet_flag
-	# 			}
-	# 		}
-	# 	}
-	# 	hidden_effect = {
-	# 		event_target:wtmnb_target = {
-	# 			wtmnb_planet_species_to_Magical_Girl = yes
-	# 		}
-	# 	}
-	# }
-	# # 多彩
-	# option = {
-	# 	name = wtmnb_species.1.e
-	# 	trigger = {
-	# 		any_country = {
-	# 			OR = {
-	# 				has_country_flag = carnalism_flag
-	# 				has_country_flag = asceticism_flag
-	# 				has_country_flag = parasite_mind_flag
-	# 				has_country_flag = lust_skynet_flag
-	# 			}
-	# 		}
-	# 	}
-	# 	hidden_effect = {
-	# 		event_target:wtmnb_target = {
-	# 			wtmnb_planet_species_to_mwn = yes
-	# 		}
-	# 	}
-	# }
-	# 舰B
-	# option = {
-	# 	name = wtmnb_species.1.f
-	# 	trigger = {
-	# 		has_global_flag = azurlane_KuRUMiiii
-	# 	}
-	# 	hidden_effect = {
-	# 		event_target:wtmnb_target = {
-	# 			wtmnb_planet_species_to_Azur_Lane_k = yes
-	# 		}
-	# 	}
-	# }
-	# 植物
-	option = {
-		name = wtmnb_species.1.o
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "PLANT"
-				}
-			}
-		}
-	}
-	# 人形
-	option = {
-		name = wtmnb_species.1.p
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "HUM"
-				}
-			}
-		}
-	}
-	# 哺乳类
-	option = {
-		name = wtmnb_species.1.q
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "MAM"
-				}
-			}
-		}
-	}
-	# 爬行类
-	option = {
-		name = wtmnb_species.1.r
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "REP"
-				}
-			}
-		}
-	}
-	# 鸟类
-	option = {
-		name = wtmnb_species.1.s
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "AVI"
-				}
-			}
-		}
-	}
-	# 节肢类
-	option = {
-		name = wtmnb_species.1.t
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "ART"
-				}
-			}
-		}
-	}
-	# 软体类
-	option = {
-		name = wtmnb_species.1.u
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "MOL"
-				}
-			}
-		}
-	}
-	# 真菌类
-	option = {
-		name = wtmnb_species.1.v
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "FUN"
-				}
-			}
-		}
-	}
-	# 机器人
-	option = {
-		name = wtmnb_species.1.w
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "ROBOT"
-				}
-			}
-		}
-	}
-	# 机械
-	option = {
-		name = wtmnb_species.1.x
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "MACHINE"
-				}
-			}
-		}
-	}
-	# 石头
-	option = {
-		name = wtmnb_species.1.y
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "LITHOID"
-				}
-			}
-		}
-	}
-	# 死灵
-	option = {
-		name = wtmnb_species.1.z
-		hidden_effect = {
-			event_target:wtmnb_target = {
-				wtmnb_planet_species = {
-					SPECIES = "NECROID"
-				}
-			}
-		}
-	}
+    id = wtmnb_species.1
+    is_triggered_only = yes
+    title = wtmnb_species.1.name
+    desc = wtmnb_species.1.desc
+    diplomatic = yes
+    picture_event_data = {
+        portrait = event_target:wtmnb_target.owner.leader
+        planet_background = event_target:wtmnb_target.owner
+        graphical_culture = event_target:wtmnb_target.owner
+        city_level = event_target:wtmnb_target.owner
+        room = event_target:wtmnb_target.owner
+    }
+    # 取消
+    option = {
+        name = wtmnb_species.1.0
+    }
+    # 植物
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = PLANT
+        PLANET = event_target:wtmnb_target
+    }
+    # 人形
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = HUM
+        PLANET = event_target:wtmnb_target
+    }
+    # 哺乳类
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = MAM
+        PLANET = event_target:wtmnb_target
+    }
+    # 爬行类
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = REP
+        PLANET = event_target:wtmnb_target
+    }
+    # 鸟类
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = AVI
+        PLANET = event_target:wtmnb_target
+    }
+    # 节肢类
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = ART
+        PLANET = event_target:wtmnb_target
+    }
+    # 软体类
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = MOL
+        PLANET = event_target:wtmnb_target
+    }
+    # 真菌类
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = FUN
+        PLANET = event_target:wtmnb_target
+    }
+    # 机器人
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = ROBOT
+        PLANET = event_target:wtmnb_target
+    }
+    # 机械
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = MACHINE
+        PLANET = event_target:wtmnb_target
+    }
+    # 石头
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = LITHOID
+        PLANET = event_target:wtmnb_target
+    }
+    # 死灵
+    inline_script = {
+        script = events/wtmnb_species_class_option
+        CLASS = NECROID
+        PLANET = event_target:wtmnb_target
+    }
 }
 
 country_event = {
-	id = wtmnb_species.100
-	is_triggered_only = yes
-	diplomatic = yes
-	title = wtmnb_species.100.name
-	desc = wtmnb_species.100.desc
-	picture_event_data = {
-		portrait = event_target:wtmnb_target.owner.leader
-		planet_background = event_target:wtmnb_target.owner
-		graphical_culture = event_target:wtmnb_target.owner
-		city_level = event_target:wtmnb_target.owner
-		room = event_target:wtmnb_target.owner
-	}
-	option = {
-		name = wtmnb_species.100.0
-	}
-	option = {
-		name = wtmnb_species.100.a
-		is_dialog_only = yes
-		response_text = wtmnb_species.100.a
-		event_target:wtmnb_target = {
-			if = {
-				limit = {
-					any_owned_species = {
-						has_trait = trait_hive_mind
-					}
-				}
-				every_owned_species = {
-					prev = {
-						modify_species = {
-							species = prev
-							remove_trait = trait_hive_mind
-							change_scoped_species = yes
-						}
-					}
-				}
-			}
-			else = {
-				every_owned_species = {
-					prev = {
-						modify_species = {
-							species = prev
-							add_trait = trait_hive_mind
-							change_scoped_species = yes
-						}
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = wtmnb_species.100.b
-		is_dialog_only = yes
-		response_text = wtmnb_species.100.b
-		event_target:wtmnb_target = {
-			if = {
-				limit = {
-					any_owned_species = {
-						has_trait = trait_machine_unit
-					}
-				}
-				every_owned_species = {
-					prev = {
-						modify_species = {
-							species = prev
-							remove_trait = trait_machine_unit
-							change_scoped_species = yes
-						}
-					}
-				}
-			}
-			else = {
-				every_owned_species = {
-					prev = {
-						modify_species = {
-							species = prev
-							add_trait = trait_machine_unit
-							change_scoped_species = yes
-						}
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = wtmnb_species.100.c
-		is_dialog_only = yes
-		response_text = wtmnb_species.100.c
-		event_target:wtmnb_target = {
-			if = {
-				limit = {
-					any_owned_species = {
-						has_trait = trait_mechanical
-					}
-				}
-				every_owned_species = {
-					prev = {
-						modify_species = {
-							species = prev
-							remove_trait = trait_mechanical
-							change_scoped_species = yes
-						}
-					}
-				}
-			}
-			else = {
-				every_owned_species = {
-					prev = {
-						modify_species = {
-							species = prev
-							add_trait = trait_mechanical
-							change_scoped_species = yes
-						}
-					}
-				}
-			}
-		}
-	}
+    id = wtmnb_species.100
+    is_triggered_only = yes
+    diplomatic = yes
+    title = wtmnb_species.100.name
+    desc = wtmnb_species.100.desc
+    picture_event_data = {
+        portrait = event_target:wtmnb_target.owner.leader
+        planet_background = event_target:wtmnb_target.owner
+        graphical_culture = event_target:wtmnb_target.owner
+        city_level = event_target:wtmnb_target.owner
+        room = event_target:wtmnb_target.owner
+    }
+    option = {
+        name = wtmnb_species.100.0
+    }
+    inline_script = {
+        script = events/wtmnb_species_trait_option
+        TRAIT = trait_hive_mind
+    }
+    inline_script = {
+        script = events/wtmnb_species_trait_option
+        TRAIT = trait_machine_unit
+    }
+    inline_script = {
+        script = events/wtmnb_species_trait_option
+        TRAIT = trait_mechanical
+    }
+
 }

@@ -1,77 +1,68 @@
-
 #原版种族
 wtmnb_planet_species = {
-	every_owned_species = {
-		limit = {
-			NOT = {
-				is_species_class = $SPECIES$
-			}
-		}
-		create_species = {
-			class = $SPECIES$
-			is_mod = yes
-			name = this
-			plural = this
-			traits = this
-			homeworld = prev
-		}
-		wtmnb_normal_species_fix = yes
-		prev = {
-			every_owned_pop_group = {
-				limit = {
-					is_same_species = prevprev
-				}
-				change_species = last_created_species
-			}
-		}
-	}
+    save_event_target_as = wtmnb_modifying_planet
+    every_owned_species = {
+        limit = {
+            NOT = {
+                is_species_class = $SPECIES$
+            }
+        }
+        create_species = {
+            class = $SPECIES$
+            is_mod = yes
+            name = this
+            plural = this
+            traits = this
+            homeworld = prev
+        }
+        wtmnb_normal_species_fix = {
+            PLANET = event_target:wtmnb_modifying_planet
+        }
+        prev = {
+            every_owned_pop_group = {
+                limit = {
+                    is_same_species = prevprev
+                }
+                change_species = last_created_species
+            }
+        }
+    }
 }
 
 
 #常规 特质 fix(置于尾修饰后
 wtmnb_normal_species_fix = {
-	if = {
-		limit = {
-			event_target:wtmnb_target = {
-				owner = {
-					is_machine_empire = yes
-				}
-			}
-		}
-		modify_species = {
-			species = last_created_species
-			change_scoped_species = yes
-			add_trait = trait_machine_unit
-			remove_trait = trait_mechanical
-		}
-	}
-	else = {
-		modify_species = {
-			species = last_created_species
-			change_scoped_species = yes
-			remove_trait = trait_machine_unit
-		}
-	}
-	if = {
-		limit = {
-			event_target:wtmnb_target = {
-				owner = {
-					is_hive_empire = yes
-				}
-			}
-		}
-		modify_species = {
-			species = last_created_species
-			change_scoped_species = yes
-			add_trait = trait_hive_mind
-			remove_trait = trait_mechanical
-		}
-	}
-	else = {
-		modify_species = {
-			species = last_created_species
-			change_scoped_species = yes
-			remove_trait = trait_hive_mind
-		}
-	}
+    [[PLANET]
+        wtmnb_species_fix_part={
+            TRAIT = trait_machine_unit
+            COUNTRY = $PLANET$.owner
+            COUNTRY_TYPE = machine
+        }
+        wtmnb_species_fix_part={
+            TRAIT = trait_hive_mind
+            COUNTRY = $PLANET$.owner
+            COUNTRY_TYPE = hive
+        }
+    ]
+}
+
+wtmnb_species_fix_part = {
+    if = {
+        limit = {
+            $COUNTRY$ = {
+                is_$COUNTRY_TYPE$_empire = yes
+            }
+        }
+        modify_species = {
+            species = last_created_species
+            add_trait = $TRAIT$
+            remove_trait = trait_mechanical
+        }
+    }
+    else = {
+        modify_species = {
+            species = last_created_species
+            remove_trait = $TRAIT$
+        }
+    }
 }

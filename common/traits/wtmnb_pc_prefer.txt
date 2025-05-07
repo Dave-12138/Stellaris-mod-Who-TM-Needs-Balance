@@ -1,46 +1,45 @@
 trait_pc_wtmnb_city_preference = {
-	# randomized = no
-	sorting_priority = 30
-	leader_age_max = 15
-	leader_age_min = 10
-	ideal_planet_class = pc_wtmnb_city
-	allowed_archetypes = {
-		BIOLOGICAL
-		LITHOID
-		NECROID
-		MONSTER
-		PARASITE
-		WHORE
-		Magical_Bitch
-		Magical_Girl
-		Lust_Girl
-		INNOCENTSHOJO
-		TENTACLE
-		WARSHIPGIRL
-		SHENHAI
-		TOUHOUGIRLS
-		UNITED_FLEET
-		LILY
-		Schale
-		NYTO
-		OTHER
-	}
-	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"
-	modifier = {
-		pc_wtmnb_city_habitability = 3
-	}
-	triggered_pop_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				has_deposit = deposit_wtmnb_city
-			}
-		}
-		planet_pops_upkeep_mult = -150
-		pop_happiness = 100
-	}
-	
-	ai_weight = {
-		weight = 0
-	}
+    # randomized = no
+    sorting_priority = 30
+    leader_age_max = 15
+    leader_age_min = 10
+    ideal_planet_class = pc_wtmnb_city
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+        MONSTER
+        PARASITE
+        WHORE
+        Magical_Bitch
+        Magical_Girl
+        Lust_Girl
+        INNOCENTSHOJO
+        TENTACLE
+        WARSHIPGIRL
+        SHENHAI
+        TOUHOUGIRLS
+        UNITED_FLEET
+        LILY
+        Schale
+        NYTO
+        OTHER
+    }
+    icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"
+    modifier = {
+        pc_wtmnb_city_habitability = 3
+    }
+    triggered_planet_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                has_deposit = deposit_wtmnb_city
+            }
+        }
+        planet_pops_upkeep_mult = -150
+        pop_happiness = 100
+    }
+
+    ai_weight = {
+        weight = 0
+    }
 }

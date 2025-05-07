@@ -1,0 +1,21 @@
+#弱智光线
+option = {
+    name = PLANET_KILLER_DEVOLUTION
+    trigger = {
+        from = {
+            NOR = {
+                is_colony = no
+            }
+        }
+    }
+    hidden_effect = {
+        from = {
+            fire_on_action = {
+                on_action = on_destroy_planet_with_PLANET_KILLER_DEVOLUTION
+                scopes = {
+                    from = event_target:wtmnb_planet_killer_ship
+                }
+            }
+        }
+    }
+}

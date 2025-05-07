@@ -1,93 +1,113 @@
 # scope:fleet
 wtmnb_safe_destroy_fleet = {
-	save_event_target_as = wtmnb_booming_fleet
-	every_owned_ship = {
-		limit = {
-			NOT = {
-				is_ship_size = wtmnb_boomer
-			}
-		}
-		save_event_target_as = wtmnb_booming_ship
-		owner = {
-			# 摧毁舰船事件1
-			fire_on_action = {
-				on_action = on_ship_destroyed_victim
-				scopes = {
-					from = event_target:wtmnb_owner
-					fromfrom = event_target:wtmnb_booming_ship
-					fromfromfrom = event_target:wtmnb_boomed_boomer
-				}
-			}
-		}
-		event_target:wtmnb_owner = {
-			# 摧毁舰船事件2
-			fire_on_action = {
-				on_action = on_ship_destroyed_perp
-				scopes = {
-					from = event_target:wtmnb_booming_fleet.owner
-					fromfrom = event_target:wtmnb_boomed_boomer
-					fromfromfrom = event_target:wtmnb_booming_ship
-				}
-			}
-		}
-	}
-	owner = {
-		# 摧毁舰队事件1
-		fire_on_action = {
-			on_action = on_fleet_destroyed_victim
-			scopes = {
-				from = event_target:wtmnb_owner
-				fromfrom = event_target:wtmnb_booming_fleet
-				fromfromfrom = event_target:wtmnb_boomed_boomer.fleet
-			}
-		}
-	}
-	event_target:wtmnb_owner = {
-		# 摧毁舰队事件2
-		fire_on_action = {
-			on_action = on_fleet_destroyed_perp
-			scopes = {
-				from = event_target:wtmnb_booming_fleet.owner
-				fromfrom = event_target:wtmnb_boomed_boomer.fleet
-				fromfromfrom = event_target:wtmnb_booming_fleet
-			}
-		}
-	}
-	destroy_and_spawn_debris_for = root
+    save_event_target_as = wtmnb_loser_fleet
+    [[BY]
+        $BY$ = {
+            save_event_target_as = wtmnb_winner_fleet
+            random_owned_ship = {
+                save_event_target_as = wtmnb_winner_ship
+            }
+        }
+    ]
+    [[!BY]
+        random_playable_country = {
+            limit = { is_wtmnb_empire = yes }
+            random_owned_ship = {
+                limit = { is_ship_size = wtmnb_fortress }
+                save_event_target_as = wtmnb_winner_ship
+                fleet = {
+                    save_event_target_as = wtmnb_winner_fleet
+                }
+            }
+        }
+    ]
+    every_owned_ship = {
+        limit = {
+            NOT = {
+                is_ship_size = wtmnb_boomer
+            }
+        }
+        save_event_target_as = wtmnb_loser_ship
+        owner = {
+            # 摧毁船事件1
+            fire_on_action = {
+                on_action = on_ship_destroyed_victim
+                scopes = {
+                    from = event_target:wtmnb_winner_fleet.owner
+                    fromfrom = event_target:wtmnb_loser_ship
+                    fromfromfrom = event_target:wtmnb_winner_ship
+                }
+            }
+        }
+        event_target:wtmnb_winner_fleet.owner = {
+            # 摧毁船事件2
+            fire_on_action = {
+                on_action = on_ship_destroyed_perp
+                scopes = {
+                    from = event_target:wtmnb_loser_fleet.owner
+                    fromfrom = event_target:wtmnb_winner_ship
+                    fromfromfrom = event_target:wtmnb_loser_ship
+                }
+            }
+        }
+    }
+    owner = {
+        # 摧毁舰队事件1
+        fire_on_action = {
+            on_action = on_fleet_destroyed_victim
+            scopes = {
+                from = event_target:wtmnb_winner_fleet.owner
+                fromfrom = event_target:wtmnb_loser_fleet
+                fromfromfrom = event_target:wtmnb_winner_fleet
+            }
+        }
+    }
+    event_target:wtmnb_winner_fleet.owner = {
+        # 摧毁舰队事件2
+        fire_on_action = {
+            on_action = on_fleet_destroyed_perp
+            scopes = {
+                from = event_target:wtmnb_loser_fleet.owner
+                fromfrom = event_target:wtmnb_winner_fleet
+                fromfromfrom = event_target:wtmnb_loser_fleet
+            }
+        }
+    }
+    destroy_and_spawn_debris_for = root
 }
 
 # 添加本mod领袖特质
 add_leader_trait_wtmnb_stigmata = {
-	add_trait_no_notify = leader_trait_wtmnb_stigmata
+    add_trait_no_notify = leader_trait_wtmnb_stigmata
 
 }
 
 wtmnb_remove_hyperlane = {
-	every_neighbor_system = {
-		remove_hyperlane = {
-			from = THIS
-			to = prev
-		}
-	}
+    every_neighbor_system = {
+        remove_hyperlane = {
+            from = THIS
+            to = prev
+        }
+    }
 }
 
 wtmnb_lock_bypass = {
-	every_bypass = {
-		limit = {
-			OR = {
-				is_bypass_type = gateway
-				is_bypass_type = wormhole
-				is_bypass_type = lgate
-				is_bypass_type = shroud_tunnel
-			}
-			has_lock = no
-			solar_system = {
-				is_same_value = prevprev
-			}
-		}
-		lock_bypass = {
-			country = root
-			duration = $TIME$
-		}
-	}
+    every_bypass = {
+        limit = {
+            OR = {
+                is_bypass_type = starlit_wormhole
+                is_bypass_type = wormhole
+                is_bypass_type = lgate
+                is_bypass_type = shroud_tunnel
+            }
+            has_lock = no
+            solar_system = {
+                is_same_value = prevprev
+            }
+        }
+        lock_bypass = {
+            country = root
+            duration = $TIME|360$
+        }
+    }
 }

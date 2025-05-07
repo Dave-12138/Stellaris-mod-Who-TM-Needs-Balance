@@ -46,7 +46,11 @@ can_enter_system_by_jump = {
 				##_特殊禁入星系		+wsg/古代帝国/阿夸/SOFE/Giga/Ehof/seooc/多彩/TAC/莉莉
 				NOR = {
 					# vanilla
+					# L-Cluster
 					has_star_flag = lcluster
+
+					# Formless system
+					has_star_flag = formless_system
 
 					# wsg
 					AND = { has_global_flag = has_wsg_mod	# 舰r激活

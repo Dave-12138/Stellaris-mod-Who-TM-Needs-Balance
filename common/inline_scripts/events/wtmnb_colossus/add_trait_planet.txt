@@ -1,0 +1,32 @@
+#特质
+option = {
+    trigger = {
+        from = {
+            is_colony = yes
+        }
+    }
+    name = wtmnb_colossus.1001.c
+    custom_tooltip = wtmnb_colossus.1001.c.tip
+    hidden_effect = {
+        from = {
+            every_owned_species = {
+                limit = {
+                    NAND = {
+                        has_trait = trait_wtmnb_stigmata
+                        ideal_planet_class = event_target:wtmnb_target
+                    }
+                }
+                prev = {
+                    modify_species = {
+                        species = prev
+                        add_trait = trait_wtmnb_stigmata
+                        add_traits_at_start_of_list = yes
+                        change_scoped_species = yes
+                        ideal_planet_class = event_target:wtmnb_target
+                        # set_species_homeworld = event_target:wtmnb_target
+                    }
+                }
+            }
+        }
+    }
+}

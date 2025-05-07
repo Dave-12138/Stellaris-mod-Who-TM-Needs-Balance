@@ -1,0 +1,52 @@
+# 星系内所有船的所有者暴毙
+option = {
+    trigger = {
+        from = {
+            is_star = yes
+            solar_system = {
+                any_fleet_in_system = { owner = { NOT = { is_same_empire = root } } }
+            }
+        }
+    }
+    name = wtmnb.2001.b
+    custom_tooltip = wtmnb.2001.b.tip
+    hidden_effect = {
+        from.solar_system = {
+            every_fleet_in_system = {
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                is_same_empire = root
+                            }
+                        }
+                        set_country_flag = wtmnb_dying_country
+                    }
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                has_country_flag = wtmnb_dying_country
+            }
+            every_owned_fleet = {
+                wtmnb_safe_destroy_fleet = { BY = fromfrom }
+            }
+            # 清除殖民地
+            every_owned_planet = {
+                every_owned_pop_group = {
+                    kill_all_pop = yes
+                }
+                remove_all_buildings = yes
+                destroy_colony = yes
+            }
+            destroy_country = yes
+            fire_on_action = {
+                on_action = on_country_destroyed
+                scopes = {
+                    from = event_target:wtmnb_owner
+                }
+            }
+        }
+    }
+}

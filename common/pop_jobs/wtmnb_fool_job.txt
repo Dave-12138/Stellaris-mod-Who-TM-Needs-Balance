@@ -8,7 +8,7 @@ wtmnb_fooyouist = {
 		}
 	}
 	weight = {
-		weight = 30
+		weight = @specialist_job_weight
 	}
 	possible_pre_triggers = {
 		has_owner = yes
@@ -40,7 +40,7 @@ wtmnb_fooyouist_drone = {
 		}
 	}
 	weight = {
-		weight = 1600
+		weight = @complex_drone_job_weight
 	}
 	possible_pre_triggers = {
 		has_owner = yes
@@ -51,7 +51,6 @@ wtmnb_fooyouist_drone = {
 	possible = {
 		always = yes
 	}
-	
 	country_modifier = {
 		empire_size_branch_office_mult = -0.1
 		empire_size_districts_mult = -0.1

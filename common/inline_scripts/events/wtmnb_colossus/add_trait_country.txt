@@ -1,0 +1,39 @@
+#特质
+option = {
+    trigger = {
+        from = {
+            is_capital = yes
+        }
+    }
+    name = wtmnb_colossus.1001.b
+    custom_tooltip = wtmnb_colossus.1001.b.tip
+    hidden_effect = {
+        from = {
+            owner = {
+                modify_species = {
+                    species = this
+                    add_trait = trait_wtmnb_stigmata
+                    # add_traits_at_start_of_list = yes
+                    change_scoped_species = yes
+                    effect = {
+                        set_species_homeworld = event_target:wtmnb_target
+                        save_event_target_as = new_wtm_species
+                    }
+                }
+                change_dominant_species = {
+                    species = event_target:new_wtm_species
+                    change_all = yes
+                }
+                # change_species = event_target:new_wtm_species
+                # set_built_species = event_target:new_wtm_species
+                every_owned_leader = {
+                    add_leader_trait_wtmnb_stigmata = yes
+                    #change_species = event_target:new_wtm_species
+                }
+                every_pool_leader = {
+                    add_leader_trait_wtmnb_stigmata = yes
+                }
+            }
+        }
+    }
+}

@@ -31,12 +31,7 @@ decision_wtmnb_dc_create_pop = {
 						has_trait = trait_DC_ethic_lust_skynet
 					}
 				}
-                root = {
-                    create_pop_group = {
-                        species = prev
-                        size = 2000
-                    }
-                }
+                add_pop_amount = 2000
 			}
 		}
 	}
@@ -44,7 +39,7 @@ decision_wtmnb_dc_create_pop = {
 		weight = 5000
 		modifier = {
 			factor = 0
-			num_pops > 30
+			pop_amount > 30
 		}
 	}
 }

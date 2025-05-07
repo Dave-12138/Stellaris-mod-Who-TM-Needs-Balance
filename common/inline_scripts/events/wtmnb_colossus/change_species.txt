@@ -1,0 +1,14 @@
+# 物种
+option = {
+    trigger = {
+        from = {
+            is_colony = yes
+        }
+    }
+    name = wtmnb_colossus.1001.d
+    hidden_effect = {
+        country_event = {
+            id = wtmnb_species.1
+        }
+    }
+}

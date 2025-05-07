@@ -103,7 +103,7 @@ country_event = {
     title = wtmnb.5.name
     desc = wtmnb.5.desc
     option = {
-        name = federations2.61.A.neutral
+        name = MISSION_SUCCESS
         hidden_effect = {
             clear_global_event_target = wtmnb_portal_start
         }
@@ -154,7 +154,7 @@ planet_event = {
         create_army = {
             owner = from
             species = from
-            type = "robotic_army"
+            type = "assault_army"
         }
     }
 }
@@ -224,19 +224,14 @@ country_event = {
             limit = {
                 has_country_flag = wtmnb_order
             }
-            save_event_target_as = wtmnb_owner
-        }
-        fromfrom = {
-            save_event_target_as = wtmnb_boomed_boomer
-            solar_system = {
-                save_event_target_as = wtmnb_boomed_system
-            }
-        }
-        event_target:wtmnb_owner = {
             country_event = {
                 id = wtmnb.2001
+                scopes = {
+                    from = fromfrom.solar_system
+                }
             }
         }
+
     }
 }
 
@@ -244,147 +239,47 @@ country_event = {
 country_event = {
     id = wtmnb.2001
     is_triggered_only = yes
-    title = wtmnb.2001.name
-    #picture = GFX_evt_wsg_bombardment
-    desc = wtmnb.2001.desc
-    option = {
-        # 摧毁星系内所有船
-        name = wtmnb.2001.a
-        custom_tooltip = wtmnb.2001.a.tip
-        hidden_effect = {
-            event_target:wtmnb_boomed_system = {
-                every_fleet_in_system = {
-                    limit = {
-                        NOT = {
-                            any_owned_ship = {
-                                is_ship_size = wtmnb_fortress
-                            }
-                        }
-                    }
-                    wtmnb_safe_destroy_fleet = yes
-                }
-            }
-        }
-    }
-    # 星系内所有船的所有者暴毙
-    option = {
-        name = wtmnb.2001.b
-        custom_tooltip = wtmnb.2001.b.tip
-        hidden_effect = {
-            event_target:wtmnb_boomed_system = {
-                every_fleet_in_system = {
-                    owner = {
-                        if = {
-                            limit = {
-                                NOT = {
-                                    is_same_empire = event_target:wtmnb_owner
-                                }
-                            }
-                            set_country_flag = wtmnb_dying_country
-                        }
-                    }
-                }
-            }
-            every_country = {
-                limit = {
-                    has_country_flag = wtmnb_dying_country
-                }
-                every_owned_fleet = {
-                    wtmnb_safe_destroy_fleet = yes
-                }
-                # 清除殖民地
-                every_owned_planet = {
-                    every_owned_pop_group = {
-                        kill_all_pop = yes
-                    }
-                    remove_all_buildings = yes
-                    destroy_colony = yes
-                }
-                destroy_country = yes
-                fire_on_action = {
-                    on_action = on_country_destroyed
-                    scopes = {
-                        from = event_target:wtmnb_owner
-                    }
-                }
-            }
-        }
-    }
+    # title = wtmnb.2001.name
+    # desc = wtmnb.2001.desc
+    hide_window = yes
     # 触发超距射击
-    option = {
-        name = wtmnb.2001.c
-        custom_tooltip = wtmnb.2001.c.tip
-        hidden_effect = {
-            begin_event_chain = {
-                event_chain = wtmnb_open_fire_chain
+    immediate = {
+        begin_event_chain = {
+            event_chain = wtmnb_open_fire_chain
+        }
+        capital_scope = {
+            enable_special_project = {
+                name = WTMNB_OPEN_FIRE_CANCEL
+                owner = root
             }
-            capital_scope = {
+        }
+        from = {
+            if = {
+                # 万一星系里因为奇奇怪怪的 bug 没恒星
+                limit = { NOT = { exists = star } }
+                spawn_planet = {
+                    class = pc_black_hole
+                    size = 1
+                    orbit_angle = 0
+                    orbit_distance = 0
+                    init_effect = {
+                        set_name = "\\[This.System.GetName]...?"
+                    }
+                }
+            }
+            every_system_planet = {
                 enable_special_project = {
-                    name = WTMNB_OPEN_FIRE_CANCEL
+                    name = WTMNB_OPEN_FIRE_PLANET_SELECT
+                    location = this
                     owner = root
                 }
             }
-            event_target:wtmnb_boomed_system = {
-                every_system_planet = {
-                    enable_special_project = {
-                        name = WTMNB_OPEN_FIRE_PLANET_SELECT
-                        location = this
-                        owner = root
-                    }
-                }
-                root = {
-                    abort_special_project = {
-                        type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
-                    }
-                }
-            }
+        }
+        abort_special_project = {
+            type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
         }
     }
-    option = {
-        name = wtmnb.2001.d
-        trigger = {
-            any_playable_country = {
-                any_owned_leader = {
-                    NOT = {
-                        has_trait = leader_trait_wtmnb_stigmata
-                    }
-                    species = {
-                        has_trait = trait_wtmnb_stigmata
-                    }
-                }
-            }
-        }
-        every_country = {
-            limit = {
-                num_owned_leaders > 1
-            }
-            every_owned_leader = {
-                limit = {
-                    NOT = {
-                        has_trait = leader_trait_wtmnb_stigmata
-                    }
-                    species = {
-                        has_trait = trait_wtmnb_stigmata
-                    }
-                }
-                add_leader_trait_wtmnb_stigmata = yes
-            }
-            if = {
-                limit = {
-                    is_gestalt = yes
-                }
-                every_owned_leader = {
-                    limit = {
-                        is_councilor = yes
-                    }
-                    set_gestalt_node_portrait_effect = yes
-                }
-            }
-        }
-    }
-    option = {
-        name = wtmnb.2001.z
-    }
+
 }
 
 # 手动引爆
@@ -400,23 +295,10 @@ country_event = {
         }
     }
     immediate = {
-        random_country = {
-            limit = {
-                has_country_flag = wtmnb_order
-            }
-            save_event_target_as = wtmnb_owner
-        }
-        from = {
-            random_owned_ship = {
-                save_event_target_as = wtmnb_boomed_boomer
-            }
-            solar_system = {
-                save_event_target_as = wtmnb_boomed_system
-            }
-        }
-        event_target:wtmnb_owner = {
-            country_event = {
-                id = wtmnb.2001
+        country_event = {
+            id = wtmnb.2001
+            scopes = {
+                from = from.solar_system
             }
         }
     }

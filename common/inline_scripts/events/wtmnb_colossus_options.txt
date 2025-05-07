@@ -1,0 +1,23 @@
+inline_script = events/wtmnb_colossus/add_trait_country
+inline_script = events/wtmnb_colossus/add_trait_planet
+inline_script = events/wtmnb_colossus/change_species
+inline_script = events/wtmnb_colossus/modify_species
+
+inline_script = events/wtmnb_colossus/pk_cracker
+inline_script = events/wtmnb_colossus/pk_deluge
+inline_script = events/wtmnb_colossus/pk_devolution
+inline_script = events/wtmnb_colossus/pk_shielder
+inline_script = events/wtmnb_colossus/pk_star_eater
+
+inline_script = events/wtmnb_colossus/kill_ships
+inline_script = events/wtmnb_colossus/kill_countries
+
+inline_script = events/wtmnb_colossus/create_colony
+inline_script = events/wtmnb_colossus/to_giga
+inline_script = events/wtmnb_colossus/ring
+
+inline_script = events/wtmnb_colossus/lgate
+inline_script = events/wtmnb_colossus/lock
+inline_script = events/wtmnb_colossus/rm_hyperlane
+inline_script = events/wtmnb_colossus/cage
+

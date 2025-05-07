@@ -286,17 +286,17 @@
  wtmnb.5.name:0 "超空间航路已建立"
  wtmnb.5.desc:0 "[from.GetName]到[wtmnb_portal_start.GetName]的超空间航路已经建立"
 
- wtmnb.2001.name:0 "崩坏裂变弹已引爆"
- wtmnb.2001.desc:0 "崩坏裂变弹在[wtmnb_boomed_system.GetName]引爆，我们仍可以控制这些崩坏能来更好地达到战术目标"
- wtmnb.2001.a:0 "任由其爆炸"
+ # wtmnb.2001.name:0 "崩坏裂变弹已引爆"
+ # wtmnb.2001.desc:0 "崩坏裂变弹在[wtmnb_boomed_system.GetName]引爆，我们仍可以控制这些崩坏能来更好地达到战术目标"
+ wtmnb.2001.a:0 "扫射星系"
  wtmnb.2001.a.tip:0 "这会摧毁星系内几乎所有舰队，包括我们的"
  wtmnb.2001.b:0 "太虚剑神"
  wtmnb.2001.b.tip:0 "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
- wtmnb.2001.c:0 "$wtmnb_open_fire_chain_title$"
- wtmnb.2001.c.tip:0 "以崩坏裂变弹作为一次性信标，向当前星系中星体发起一次超光速炮击"
- wtmnb.2001.d:0 "特质修补"
- wtmnb.2001.d.tip:0 "有些mod可能导致领袖圣痕特质丢失，可以用这个选项补上。\n也能修复格式塔内阁节点的肖像。"
- wtmnb.2001.z:0 "遏制爆炸"
+ # wtmnb.2001.c:0 "$wtmnb_open_fire_chain_title$"
+ # wtmnb.2001.c.tip:0 "以崩坏裂变弹作为一次性信标，向当前星系中星体发起一次超光速炮击"
+ # wtmnb.2001.d:0 "特质修补"
+ # wtmnb.2001.d.tip:0 "有些mod可能导致领袖圣痕特质丢失，可以用这个选项补上。\n也能修复格式塔内阁节点的肖像。"
+ # wtmnb.2001.z:0 "遏制爆炸"
  
 
 
@@ -329,7 +329,7 @@
 ######### 外交
  wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
  wtmnb_diplomacy.1.desc:0 "§BDave_12138§!:我也想把这些选项放外交/谍报里，可惜堕落帝国没有谍报系统。"
- wtmnb_diplomacy.1.a:0 "没事了，我改变主意了。"
+ wtmnb_diplomacy.1.a:0 "没事了。"
  wtmnb_diplomacy.1.b:0 "刺杀[wtmnb_target.Owner.GetRulerTitle]§H[wtmnb_target.Owner.GetRulerName]§!"
  wtmnb_diplomacy.1.b.desc:0 "§H[wtmnb_target.Owner.GetRulerName]§!死亡\n[wtmnb_target.Owner.GetName]被羞辱"
  wtmnb_diplomacy.1.c:0 "宣战(附庸)"
@@ -348,7 +348,8 @@
  wtmnb_diplomacy.1000.desc:0 "在我们将虚数内能定向引导后的短短几分钟后，[wtmnb_target.Owner.GetName]宣布[deadruler.GetName]死于未知现象，手法不明但有充分证据证明是[Root.GetName]所为。"
  wtmnb_diplomacy.1000.a:0 "了解。"
  wtmnb_diplomacy.1000.tip:0 "§H[wtmnb_target.Owner.GetRulerTitle][deadruler.GetName]§!去世\n[wtmnb_target.Owner.GetName]受辱"
- wtmnb_diplomacy.1000.b:0 "对不起。。。"
+ wtmnb_diplomacy.1000.tip2:0 "§g急也没用，再等等吧§!"
+ wtmnb_diplomacy.1000.b:0 "卧槽我点错了"
  wtmnb_diplomacy.1000.c:0 "赶紧选个新的出来，我还要再宰一次"
  wtmnb_diplomacy.1000.d:0 "外星杂碎-1"
  
@@ -372,32 +373,11 @@
  wtmnb_species.1.name:0 "物种列表"
  wtmnb_species.1.desc:0 "将目标星球所有物种改造为："
  wtmnb_species.1.0:0 "取消"
-#  wtmnb_species.1.a:0 "$Warship_Girls$"
-#  wtmnb_species.1.b:0 "$ShenHai$"
-#中间三个多彩，下面从f开始
- wtmnb_species.1.f:0 "$Azur_Lane_k$" #暂未使用
-
-#空着一段，把原版放最后
- wtmnb_species.1.o:0 "$PLANT$"
- wtmnb_species.1.p:0 "$HUM$"
- wtmnb_species.1.q:0 "$MAM$"
- wtmnb_species.1.r:0 "$REP$"
- wtmnb_species.1.s:0 "$AVI$"
- wtmnb_species.1.t:0 "$ART$"
- wtmnb_species.1.u:0 "$MOL$"
- wtmnb_species.1.v:0 "$FUN$"
- wtmnb_species.1.w:0 "$ROBOT$"
- wtmnb_species.1.x:0 "$MACHINE$"
- wtmnb_species.1.y:0 "$LITHOID$"
- wtmnb_species.1.z:0 "$NECROID$"
 
 
  wtmnb_species.100.name:0 "物种特殊特质微调"
  wtmnb_species.100.desc:0 "物种特殊特质微调"
  wtmnb_species.100.0:0 "退出"
- wtmnb_species.100.a:0 "$trait_hive_mind$"
- wtmnb_species.100.b:0 "$trait_machine_unit$"
- wtmnb_species.100.c:0 "$trait_mechanical$"
 
 #   ___ _ __   ___  ___(_) __ _| |  _ __  _ __ ___ (_) ___  ___| |_ #
 #  / __| '_ \ / _ \/ __| |/ _` | | | '_ \| '__/ _ \| |/ _ \/ __| __|#

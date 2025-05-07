@@ -1,0 +1,32 @@
+option = {
+    name = $TRAIT$
+    is_dialog_only = yes
+    response_text = $TRAIT$
+    event_target:wtmnb_target = {
+        if = {
+            limit = {
+                any_owned_species = {
+                    has_trait = $TRAIT$
+                }
+            }
+            every_owned_species = {
+                prev = {
+                    modify_species = {
+                        species = prev
+                        remove_trait = $TRAIT$
+                    }
+                }
+            }
+        }
+        else = {
+            every_owned_species = {
+                prev = {
+                    modify_species = {
+                        species = prev
+                        add_trait = $TRAIT$
+                    }
+                }
+            }
+        }
+    }
+}

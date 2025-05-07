@@ -1,113 +1,113 @@
 ai_wtmnb_cleck = {
-	is_capped_by_modifier = yes
-	category = worker
-	swappable_data={
-		default={
-			icon = clerk
-			building_icon = building_capital
-		}
-	}
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-	weight = {
-		weight = 10
-	}
-	possible = {
-		always = yes
-	}
+    is_capped_by_modifier = yes
+    category = worker
+    swappable_data = {
+        default = {
+            icon = clerk
+            building_icon = building_capital
+        }
+    }
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    weight = {
+        weight = 10
+    }
+    possible = {
+        always = yes
+    }
 }
 
 ai_wtmnb_drone = {
-	is_capped_by_modifier = yes
-	category = simple_drone
-	swappable_data={
-		default={
-			icon = clerk
-			building_icon = building_capital
-		}
-	}
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-	weight = {
-		weight = 10
-	}
-	possible = {
-		always = yes
-	}
+    is_capped_by_modifier = yes
+    category = simple_drone
+    swappable_data = {
+        default = {
+            icon = clerk
+            building_icon = building_capital
+        }
+    }
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    weight = {
+        weight = 10
+    }
+    possible = {
+        always = yes
+    }
 }
 
 ai_wtmnb_master = {
-	tags = { unity }
-	is_capped_by_modifier = yes
-	category = specialist
-	swappable_data={
-		default={
-			icon = clerk
-			building_icon = building_capital
-		}
-	}
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-	weight = {
-		weight = 10
-	}
-	possible = {
-	}
-	resources = {
-		category = planet_jobs
-		upkeep = {
-			energy = 1
-		}
-		
-	}
-	country_modifier = {
-		planet_jobs_produces_mult = 10
-		country_produces_mult = 1
-	}
+    tags = { unity }
+    is_capped_by_modifier = yes
+    category = specialist
+    swappable_data = {
+        default = {
+            icon = clerk
+            building_icon = building_capital
+        }
+    }
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    weight = {
+        weight = 10
+    }
+    possible = {
+    }
+    resources = {
+        category = planet_jobs
+        upkeep = {
+            energy = 1
+        }
+
+    }
+    country_modifier = {
+        planet_jobs_produces_mult = 10
+        country_produces_mult = 1
+    }
 }
 
 ai_wtmnb_master_drone = {
-	tags = { unity }
-	is_capped_by_modifier = yes
-	category = complex_drone
-	swappable_data={
-		default={
-			icon = clerk
-			building_icon = building_capital
-		}
-	}
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-	weight = {
-		weight = 10
-	}
-	possible = {
-	}
-	resources = {
-		category = planet_jobs
-		upkeep = {
-			energy = 1
-		}
-		
-	}
-	country_modifier = {
-		planet_jobs_produces_mult = 10
-		country_produces_mult = 1
-	}
+    tags = { unity }
+    is_capped_by_modifier = yes
+    category = complex_drone
+    swappable_data = {
+        default = {
+            icon = clerk
+            building_icon = building_capital
+        }
+    }
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    weight = {
+        weight = 10
+    }
+    possible = {
+    }
+    resources = {
+        category = planet_jobs
+        upkeep = {
+            energy = 1
+        }
+
+    }
+    country_modifier = {
+        planet_jobs_produces_mult = 10
+        country_produces_mult = 1
+    }
 }

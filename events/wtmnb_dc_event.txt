@@ -82,35 +82,13 @@ country_event = {
                 modifier = opinion_wtmnb_dc_r
             }
         }
-        random_list = {
-            30 = {
+        country_event = {
+            id = wtmnb_dc.1010
+        }
+        event_target:wtmnb_target = {
+            owner = {
                 country_event = {
-                    id = wtmnb_dc.1011
-                }
-                event_target:wtmnb_target = {
-                    owner = {
-                        country_event = {
-                            id = wtmnb_dc.1021
-                        }
-                    }
-                }
-            }
-            0 = {
-                modifier = {
-                    add = 50
-                    any_owned_leader = {
-                        gender = male
-                    }
-                }
-                country_event = {
-                    id = wtmnb_dc.1010
-                }
-                event_target:wtmnb_target = {
-                    owner = {
-                        country_event = {
-                            id = wtmnb_dc.1020
-                        }
-                    }
+                    id = wtmnb_dc.1020
                 }
             }
         }
@@ -136,23 +114,6 @@ country_event = {
     }
 }
 
-country_event = {
-    id = wtmnb_dc.1011
-    is_triggered_only = yes
-    picture = GFX_evt_CM_chain21
-    show_sound = event_CM_excited02
-    title = wtmnb_dc.1000.name
-    desc = wtmnb_dc.1011.desc
-    option = {
-        name = wtmnb_dc.1011.a
-        add_resource = {
-            influence = 1000
-        }
-        event_target:dc_r_ruler = {
-            show_dc_r_desc = yes
-        }
-    }
-}
 
 #target方提醒
 country_event = {
@@ -417,13 +378,9 @@ country_event = {
             ruler = {
                 remove_trait = leader_trait_ruler_wtmnb_dc_r3
             }
-            create_half_species = {
-                species_one = ruler.species
-                species_two = event_target:wtmnb_planet_killer_ship.owner.owner_species
-            }
             create_leader = {
-                class = random
-                species = last_created_species
+                class = random_ruler
+                species = root
                 set_age = 0
                 traits = {
                     trait = leader_trait_wtmnb_stigmata

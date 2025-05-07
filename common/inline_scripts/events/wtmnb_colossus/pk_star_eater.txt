@@ -1,0 +1,27 @@
+#黑洞
+option = {
+    name = wtmnb_colossus.1001.i
+    trigger = {
+        from = {
+            is_star = yes
+            NOT = {
+                is_planet_class = pc_black_hole
+            }
+        }
+        fromfrom = {
+            any_owned_ship = {
+                has_component = WTMNB_9TH_KEY
+            }
+        }
+    }
+    hidden_effect = {
+        from = {
+            fire_on_action = {
+                on_action = on_destroy_planet_with_PLANET_KILLER_STAR_CRACKER
+                scopes = {
+                    from = event_target:wtmnb_planet_killer_ship
+                }
+            }
+        }
+    }
+}

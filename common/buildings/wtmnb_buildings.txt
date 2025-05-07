@@ -1,6 +1,6 @@
 building_wtmnb_meeting_room = {
     base_buildtime = @b2_time
-    icon = building_ancient_palace
+    icon = building_embassy
 
     category = government
 
@@ -9,8 +9,9 @@ building_wtmnb_meeting_room = {
         urban
     }
 
-    base_cap_amount = 3
+    # base_cap_amount = 3
 
+    empire_limit = 1
     potential = {
         exists = owner
 
@@ -36,7 +37,7 @@ building_wtmnb_meeting_room = {
 }
 building_wtmnb_little_safe = {
     base_buildtime = @b2_time
-    icon = building_foundry_2
+    icon = building_production_center
     category = manufacturing
 
     building_sets = {
@@ -44,6 +45,9 @@ building_wtmnb_little_safe = {
         mining
         farming
         urban
+        industrial
+        foundry
+        factory
     }
 
     base_cap_amount = 2

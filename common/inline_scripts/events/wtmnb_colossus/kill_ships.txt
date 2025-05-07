@@ -1,0 +1,27 @@
+option = {
+    trigger = {
+        from = {
+            is_star = yes
+            solar_system = {
+                any_fleet_in_system = { owner = { NOT = { is_same_empire = root } } }
+            }
+        }
+    }
+    # 摧毁星系内所有船
+    name = wtmnb.2001.a
+    custom_tooltip = wtmnb.2001.a.tip
+    hidden_effect = {
+        from.solar_system = {
+            every_fleet_in_system = {
+                limit = {
+                    NOT = {
+                        any_owned_ship = {
+                            is_ship_size = wtmnb_fortress
+                        }
+                    }
+                }
+                wtmnb_safe_destroy_fleet = { BY = fromfrom }
+            }
+        }
+    }
+}

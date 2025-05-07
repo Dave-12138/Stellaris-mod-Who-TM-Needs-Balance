@@ -3,5 +3,4 @@ starbase_level_wtmnb_fortress = {
 	potential_home_base = yes
 	level_weight = 5
 	show_in_outliner = yes
-	collects_trade = no
 }
