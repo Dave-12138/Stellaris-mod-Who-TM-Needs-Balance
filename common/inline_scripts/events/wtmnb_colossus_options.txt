@@ -12,7 +12,7 @@ inline_script = events/wtmnb_colossus/pk_star_eater
 inline_script = events/wtmnb_colossus/kill_ships
 inline_script = events/wtmnb_colossus/kill_countries
 
-inline_script = events/wtmnb_colossus/create_colony
+# inline_script = events/wtmnb_colossus/create_colony
 inline_script = events/wtmnb_colossus/to_giga
 inline_script = events/wtmnb_colossus/ring
 

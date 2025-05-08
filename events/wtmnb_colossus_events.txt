@@ -25,6 +25,7 @@ country_event = {
     is_triggered_only = yes
     title = wtmnb_colossus.1001.name
     desc = wtmnb_colossus.1001.desc
+    picture = GFX_evt_rift_sphere
     location = from
     #取消
     option = {

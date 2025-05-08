@@ -36,6 +36,7 @@ ai_wtmnb_drone = {
         is_being_assimilated = no
         is_sapient = yes
     }
+    possible_precalc = can_fill_drone_job
     weight = {
         weight = 10
     }
@@ -94,6 +95,7 @@ ai_wtmnb_master_drone = {
         is_being_assimilated = no
         is_sapient = yes
     }
+    possible_precalc = can_fill_drone_job
     weight = {
         weight = 10
     }

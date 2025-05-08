@@ -48,9 +48,7 @@ wtmnb_fooyouist_drone = {
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-	possible = {
-		always = yes
-	}
+	possible_precalc = can_fill_drone_job
 	country_modifier = {
 		empire_size_branch_office_mult = -0.1
 		empire_size_districts_mult = -0.1

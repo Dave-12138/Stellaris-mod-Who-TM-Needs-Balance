@@ -316,7 +316,7 @@
  wtmnb_colossus.1001.i:0 "$WTMNB_9TH_KEY$"
  wtmnb_colossus.1001.j:0 "$PLANET_KILLER_DELUGE$"
  wtmnb_colossus.1001.k:0 "$DIMENSIONAL_LOCK$"
- lock_all_bypass_in_system:0 "锁定恒星系内所有$LGATE_GALACTIC$(不包含$NAME_Final_Egress$)、$NATURAL_WORMHOLE_GALACTIC$、$SHROUD_TUNNEL_GALACTIC$(不包含$gov_shroudwalker_enclave$)"
+ lock_all_bypass_in_system:0 "锁定恒星系内所有$LGATE_GALACTIC$(不包含$NAME_Final_Egress$)、$NATURAL_WORMHOLE_GALACTIC$、$SHROUD_TUNNEL_GALACTIC$(不包含$gov_shroudwalker_enclave$)\n§B$GATEWAY$§g不能锁，反正代码里是这么写的§!"
  wtmnb_colossus.1001.l:0 "切断$concept_hyperlane$"
  wtmnb_colossus.1001.m:0 "虚数放逐"
  wtmnb_colossus.1001.m.tip:0 "将整个[wtmnb_target.Owner.GetName]关押在其母星系[wtmnb_target.System.GetName]\n§L摧毁除[wtmnb_target.System.GetName]星系以外的所有殖民地与恒星基地，并删除[wtmnb_target.System.GetName]星系的$concept_hyperlane$§!"
