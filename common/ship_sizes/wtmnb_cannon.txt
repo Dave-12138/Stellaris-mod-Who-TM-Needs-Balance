@@ -33,7 +33,7 @@ wtmnb_cannon = {
 		ship_orbital_bombardment_army_damage_mult = 10
 		ship_orbital_bombardment_mult = 10
 	}
-	num_target_locators = 0
+	num_target_locators = 4
 	is_space_station = no
 	icon = ship_size_military_station
 	base_buildtime = 1080
@@ -63,4 +63,5 @@ wtmnb_cannon = {
 			energy = 8
 		}
 	}
+	available_to_everyone = yes
 }

@@ -53,4 +53,5 @@ wtmnb_boomer = {
         }
     }
     never_lost = yes
+    available_to_everyone = yes
 }

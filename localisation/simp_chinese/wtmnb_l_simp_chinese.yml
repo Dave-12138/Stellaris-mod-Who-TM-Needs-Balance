@@ -24,11 +24,18 @@
  SHIP_GRAPHICS_WTMNB_FORTRESS_DESC:0 "$WTMNB_WEAPON_DESC$"
  
  wtmnb_science:0 "拟态科研船"
- wtmnb_science_cap:0 "拟态科研船"
+ wtmnb_science_cap:0 "$wtmnb_science$"
  wtmnb_science_plural:0 "$wtmnb_science$"
- SHIP_GRAPHICS_WTMNB_SCIENCE_DESC:0 "利用虚数内能负熵效应凭空创造出来的船只，在作为工程船使用的同时允许搭载强大的主炮。"
+ # SHIP_GRAPHICS_WTMNB_SCIENCE_DESC:0 "利用虚数内能负熵效应凭空创造出来的船只，在作为工程船使用的同时允许搭载强大的主炮。"
 
  WTMNB_SCIENCE_SECTION:0 "$wtmnb_science$"
+
+
+ wtmnb_constructor:0 "拟态工程船"
+ wtmnb_constructor_cap:0 "$wtmnb_constructor$"
+ wtmnb_constructor_plural:0 "$wtmnb_science$"
+
+ WTMNB_CONSTRUCTION_SECTION: "$wtmnb_constructor$"
 
 
  wtmnb_cannon:0 "浮游炮"

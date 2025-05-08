@@ -88,4 +88,5 @@ wtmnb_fortress = {
     never_lost = yes
 
     # is_hero_ship = yes
+    available_to_everyone = yes
 }
