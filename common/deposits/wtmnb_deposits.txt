@@ -1,6 +1,6 @@
 deposit_wtmnb_city = {
     is_for_colonizable = yes
-    icon = d_station_reactor
+    icon = d_glitchy_matrix
     category = deposit_cat_rare
     planet_modifier = {
         # district_wtmnb_little_safe_max = 1
@@ -15,7 +15,7 @@ deposit_wtmnb_city = {
 
 deposit_wtmnb_city_civic_point = {
     is_for_colonizable = yes
-    icon = d_former_relic_world
+    icon = d_engineering_research
     category = deposit_cat_blockers
     potential = {
         always = no

@@ -73,3 +73,51 @@ building_wtmnb_little_safe = {
         }
     }
 }
+building_wtmnb_produces_multer = {
+    base_buildtime = @b2_time
+    icon = building_mei_1
+    category = manufacturing
+
+    building_sets = {
+        government
+        generator
+        mining
+        farming
+        urban
+        industrial
+        foundry
+        factory
+    }
+
+    base_cap_amount = 1
+
+    potential = {
+        exists = owner
+        exists = planet
+        planet = { has_deposit = deposit_wtmnb_city }
+    }
+
+
+    allow = {
+    }
+    triggered_planet_modifier = {
+        potential = { exists = owner }
+        planet_jobs_produces_mult = 10
+        mult = value:count_any_districts
+    }
+
+    triggered_country_modifier = {
+        potential = { exists = owner }
+        country_resource_max_add = 10000
+        mult = value:count_any_districts
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+}
