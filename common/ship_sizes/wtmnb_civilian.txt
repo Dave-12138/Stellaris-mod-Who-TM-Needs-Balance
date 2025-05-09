@@ -61,6 +61,7 @@ wtmnb_science = {
     }
     available_to_everyone = yes
 }
+
 wtmnb_constructor = {
     max_speed = @speed_very_fast
     acceleration = 0.3

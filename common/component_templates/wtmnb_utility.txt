@@ -11,6 +11,7 @@ utility_component_template = {
     component_set = "power_core"
     size_restriction = {
         wtmnb_science
+        wtmnb_constructor
         wtmnb_cannon
         wtmnb_boomer
         wtmnb_fortress
