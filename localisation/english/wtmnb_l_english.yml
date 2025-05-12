@@ -1,24 +1,65 @@
 ﻿l_english:
- sm_wtmnb_super_trade_hub:0 "Drone Trade Network"
- sm_wtmnb_super_trade_hub_desc:0 "These awesome FTL drones could collect $TRADE_VALUE$ from almost half galaxy."
-#################
+
+  #################
  wtmnb_fortress:0 "Moonlight Throne"
  wtmnb_fortress_plural:0 "$wtmnb_fortress$"
  aura_unbreakable_shield_wide:0 "Anti-Field"
  SHIP_UNBREAKABLE_SHARE:0 "Anti-Field"
  WTMNB_WEAPON:0 "§MMoonlight Throne§!"
+ WTMNB_WEAPON_K:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_T:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_P:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_M:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_X:0 "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_XXL:0 "$WTMNB_WEAPON$"
  WTMNB_WEAPON_DESC:0 "In fact, $WTMNB_WEAPON$ in not a kind of weapon： but a kind of convertor. It converts §Mimaginary number internal energy§! into normal energy。\nPeople from prehistoric civilisation had master this tech in the end —— but is's too late. \nIf only they could maintain production line for more ten years, they could use mass-produced $WTMNB_WEAPON$ to assimilate all §Mimaginary number internal energy§! on planet."
-
+ WTMNB_WEAPON_K_DESC:0 "$WTMNB_WEAPON_DESC$"
+ WTMNB_WEAPON_XXL_DESC:0 "$WTMNB_WEAPON_DESC$"
  SHIP_GRAPHICS_WTMNB_FORTRESS_DESC:0 "$WTMNB_WEAPON_DESC$"
- WTMNB_JUMP_DRIVE:0 "Honkai Jump Engine"
- 
- SHIP_THRUSTER_WTMNB:0 "Alajato"
- SHIP_THRUSTER_WTMNB_DESC:0 "Fly me 2 the moon!"
+ wtmnb_science:0 "Mimic Science Ship"
+ wtmnb_science_cap:0 "$wtmnb_science$"
+ wtmnb_science_plural:0 "$wtmnb_science$"
 
+ WTMNB_SCIENCE_SECTION:0 "$wtmnb_science$"
+
+ wtmnb_constructor:0 "Mimic Constructor"
+ wtmnb_constructor_cap:0 "$wtmnb_constructor$"
+ wtmnb_constructor_plural:0 "$wtmnb_constructor$"
+
+ WTMNB_CONSTRUCTION_SECTION: "$wtmnb_constructor$"
+
+ wtmnb_cannon:0 "Floating Cannon"
+ wtmnb_cannon_cap: "Floating Cannon"
+ wtmnb_cannon_plural:0 "Floating Cannons"
+ WTMNB_CANNON_CORE:0 "$wtmnb_cannon$($TITAN_BOW$)"
+ WTMNB_CANNON_CANNON:0 "$wtmnb_cannon$($PERDITION_BEAM_ION$ Model)"
+ SHIP_GRAPHICS_WTMNB_CANNON_DESC:0 "Highly mobile floating cannons, firing three thousand six hundred shots in an instant, an essential tool for home travel and... less savory activities"
+
+ wtmnb_boomer:0 "Honkai Fission Missile"
+ wtmnb_boomer_cap:0 "Honkai Fission Missile"
+ wtmnb_boomer_plural:0 "Honkai Fission Missiles"
+ WTMNB_BOOMER_SECTION:0 "Detonates when fleet is disbanded or destroyed"
+ SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "If the numbers aren't insane enough, consider an event-triggered destruction"
+
+ WTMNB_SCIENCE_REACTOR_POOL: "Anthracite Boiler"
+
+ WTMNB_SCIENCE_REACTOR:0 "Virtual Reactor"
+ WTMNB_SCIENCE_REACTOR_DESC:0 "We built a reactor, but not entirely"
+
+ WTMNB_JUMP_DRIVE:0 "Honkai Jump Drive"
+ WTMNB_JUMP_DRIVE_DESC:0 "We analyzed and partially replicated the authority of the 2nd Herrscher"
+
+ WTMNB_JUMP_ONLY_DRIVE:0 "FTL-less Jump Drive"
+ WTMNB_JUMP_ONLY_DRIVE_DESC:0 "Removed hyperlane navigation components. Looks cooler this way"
+
+ WTMNB_THRUSTER_POOL: "Steam Thruster"
+
+ WTMNB_FORT_CORE:0 "Moonlight Throne"
+ WTMNB_FORT_CORE2:0 "Moonlight Throne (Citadel-shape)"
+ swtmnb:0 "$wtmnb_fortress$"
+ SHIP_THRUSTER_WTMNB:0 "Alahato"
+ SHIP_THRUSTER_WTMNB_DESC:0 "Fly me 2 the moon!"
+ # grand key
  WTMNB_1ST_KEY:0 "Void Archives"
  WTMNB_1ST_KEY_DESC:0 "Grand Key 1st"
 
@@ -33,10 +74,6 @@
  WTMNB_5TH_KEY_DESC:0 "Grand Key 5th"
  aura_stagnate:0 "Stagnate"
 
- WTMNB_FORT_CORE:0 "$wtmnb_fortress$"
- aura_eden_star:0 "Anisotropic Relativistic Effect"
- swtmnb:0 "$wtmnb_fortress$"
-
  WTMNB_6TH_KEY:0 "Black Abyss White Flower"
  WTMNB_6TH_KEY_DESC:0 "Grand Key 6th:Key of Saving"
 
@@ -48,6 +85,7 @@
 
  WTMNB_9TH_KEY:0 "Eden Star"
  WTMNB_9TH_KEY_DESC:0 "Grand Key 9th:Key of Devoured"
+ aura_eden_star:0 "Anisotropic Relativistic Effect"
 
  WTMNB_11TH_KEY:0 "Oath of Judah"
  WTMNB_11TH_KEY_DESC:0 "Grand Key 11th:Key of Restraint"
@@ -55,40 +93,24 @@
 
  WTMNB_GRAND_KEY:0 "Grand Key"
  WTMNB_GRAND_KEY_DESC:0 "Machines that guide and control those Power."
-#################
+ #################
  trait_wtmnb_stigmata:0 "Stigmata"
  trait_wtmnb_stigmata_desc:0 "§LThis species has $trait_wtmnb_stigmata$ on their body, which seem to be in strange shape and position.§!"
 
  leader_trait_wtmnb_stigmata:0 "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_desc:0 "This leader holds $leader_trait_wtmnb_stigmata$ on her body."
 
- leader_trait_wtmnb_stigmata_scientist:0 "$trait_wtmnb_stigmata$"
- leader_trait_wtmnb_stigmata_scientist_councilor:0 "$trait_wtmnb_stigmata$"
- leader_trait_wtmnb_stigmata_scientist_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
- leader_trait_wtmnb_stigmata_scientist_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
-
- leader_trait_wtmnb_stigmata_official:0 "$trait_wtmnb_stigmata$"
- leader_trait_wtmnb_stigmata_official_councilor:0 "$trait_wtmnb_stigmata$"
- leader_trait_wtmnb_stigmata_official_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
- leader_trait_wtmnb_stigmata_official_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
-
- leader_trait_wtmnb_stigmata_commander:0 "$trait_wtmnb_stigmata$"
- leader_trait_wtmnb_stigmata_commander_councilor:0 "$trait_wtmnb_stigmata$"
- leader_trait_wtmnb_stigmata_commander_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
- leader_trait_wtmnb_stigmata_commander_councilor_desc:0 "$leader_trait_wtmnb_stigmata_desc$。"
-
 
  trait_pc_wtmnb_city_preference:0 "$pc_wtmnb_city$ Preference"
  trait_pc_wtmnb_city_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 
-#####################
-
- WTMNB_WEAPON_W:0 "$WTMNB_WEAPON$"
- WTMNB_WEAPON_W_DESC:0 "\"Enough\" §Mimaginary number internal energy§! will be deployed in planet, for another complex operation."
- WTMNB_WEAPON_W_ACTION:0 "Intervene"
- FLEETORDER_DESTROY_PLANET_WITH_WTMNB_WEAPON_W:0 "Preparing to rebuild $PLANET|Y$"
+ #####################
+ WTMNB_WEAPON_W:0 "§M$wtmnb_fortress$§!"
+ WTMNB_WEAPON_W_DESC:0 "Now, I bestow upon you the right to gaze upon the sun"
+ WTMNB_WEAPON_W_ACTION:0 "Imaginary Invasion"
+ FLEETORDER_DESTROY_PLANET_WITH_WTMNB_WEAPON_W:0 "Preparing to deploy §M$WTMNB_WEAPON_W$§! on $PLANET|Y$"
  MESSAGE_DESC_FOR_WTMNB_WEAPON_W:0 "is full of §Mimaginary number internal energy§!"
-################################
+ ################################
  wtmnb_dyson:0 "Ether Anchor"
  wtmnb_dyson_DESC:0 "(picture is not for this megastructure)After forming a stable manifold around the etheric anchor point, the membrane is further grown by the thermal radiation of the star, which is very efficient because some people hit the cheat button."
  wtmnb_dyson_MEGASTRUCTURE_DETAILS:0 "After forming a stable manifold around the etheric anchor point, the membrane is further grown by the thermal radiation of the star, which is very efficient because some people hit the cheat button."
@@ -103,10 +125,10 @@
  wtmnb_foundry_MEGASTRUCTURE_DETAILS:0 ""
 
  not_for_yourself:0 "We can't do this to ourselves"
- target_must_exist:0 "Have to do this in some empire, inside border."
+ target_must_exist:0 "Having to do this in some empire, inside border."
  portal_in_neighbor:0 "$TRIGGER_FAIL$there's a $wtmnb_portal$ in neighbor solar system."
 
-##################
+ ##################
  edict_wtmnb_edict:0 "Dead Sea Scrolls"
  edict_wtmnb_edict_desc:0 "Enable 【Who TM Needs Balance】"
  edict_wtmnb_edict_tech:0 "Enable WTMNB shipsize and components"
@@ -115,51 +137,47 @@
  edict_wtmnb_edict_2_desc:0 "no wait, just skip\n§LReset CD of editing Civics and Gov type.§!"
  edict_wtmnb_edict_3:0 "信じてるぜ?"
  edict_wtmnb_edict_3_desc:0 "信じてるよ!"
+ edict_wtmnb_edict_4:0 "Dismantle Megastructure"
+ edict_wtmnb_edict_4_desc:0 "Requires a Constructor within the system"
  edict_wtmnb_edict_5:0 "Resonate with $wtmnb_love_mark$"
  edict_wtmnb_edict_5_desc:0 "Significantly increased our rating of empires with emotional matrices within their borders"
  reset_gov_cooldown:0 "Cool government reform immediately"
 
  edict_wtmnb_edict_7:0 "I dont want \"first contact\" any more"
  edict_wtmnb_edict_7_desc:0 "Im gonna establish all communications now"
-#######################
+
+ edict_wtmnb_edict_create_ship:0 "Spawn $wtmnb_fortress$"
+ edict_wtmnb_edict_create_ship_desc:0 "Immediately spawns a $wtmnb_fortress$ in the capital"
+
+ #######################
  wtmnb_planet_ex:0 "$WTMNB_4TH_KEY$"
  wtmnb_planet_ex_desc:0 "How could it works?"
  wtmnb_star_11th_modifier:0 "$aura_judah$"
  wtmnb_star_11th_modifier_desc:0 ""
  avoid_enter_by_jump:0 "Avoid others enter this system by jump driver"
-###################
+ ###################
  deposit_wtmnb_city:0 "$pc_wtmnb_city$"
  deposit_wtmnb_city_desc:0 "$pc_wtmnb_city_desc_normal$"
- deposit_wtmnb_city_rubbish:0 "Leftover bits of material"
- deposit_wtmnb_city_rubbish_desc:0 "It seems to be like the scraps of planet building that should be able to recycle by throwing into the forge."
-##################
+ deposit_wtmnb_4th_key_expand:0 "$WTMNB_4TH_KEY$"
+ deposit_wtmnb_4th_key_expand_desc:0 "Expanded exploitable areas"
+ deposit_wtmnb_city_civic_point:0 "Additional Civic Points"
+ deposit_wtmnb_city_civic_point_desc:0 "Remove this blocker if you have too much Civic Points"
 
- district_wtmnb_meeting_room:0 "Strategic Fooling Room"
- district_wtmnb_meeting_room_desc:0 "Empire size? What empire? What size? We are just a developing country"
- district_wtmnb_meeting_room_plural:0 "$district_wtmnb_meeting_room$s"
 
- district_wtmnb_matrix_office:0 "Database"
- district_wtmnb_matrix_office_desc:0 "Databases are used for SAVING pop.\n§L-Hey, did you see that guy who went into I/O?§!"
- district_wtmnb_matrix_office_plural:0 "$district_wtmnb_matrix_office$s"
-
- district_wtmnb_little_safe:0 "Little Safe"
- district_wtmnb_little_safe_desc:0 "Surprise"
- district_wtmnb_little_safe_plural:0 "$district_wtmnb_little_safe$s"
-
-##################
+ ##################
  bombardment_wtmnb_doom:0 "Purification"
  bombardment_wtmnb_doom_name:0 "$bombardment_wtmnb_doom$"
  bombardment_wtmnb_doom_desc:0 "$bombardment_wtmnb_doom$ wont damage buildings, in theory\n- §RFrightening§! damage to §YArmies§!\n- §GNo§! damage to §YPlanet§!\n- §RFrightening§! damage to §YPops§!\n- Will bombard undefended planets\n-Army will be destroy immediately\n- Do nothing to $pc_ai$"
  bombardment_wtmnb_invasion:0 "Invasion"
  bombardment_wtmnb_invasion_name:0 "$bombardment_wtmnb_doom$"
  bombardment_wtmnb_invasion_desc:0 "Our army will Invase the planet immediately \n- §RFrightening§! damage to §YArmies§!\n- §GNo§! damage to §YPlanet§!\n- §GNo§! damage to §YPops§!\n- Will bombard undefended planets\n-Army will be destroy immediately\n- We will controll the planet in one day"
-###################
+ ###################
  wtmnb.1.name:0 "Nobody on §H[From.GetName]§! now"
  wtmnb.1.desc:0 "Every \"living\" thing is removed §H[From.GetName]§!"
  wtmnb.1.a:0 "§H[From.GetName]§! purified"
  wtmnb.3.title:0 "Let's talk about entity behind $lgate$"
  unremarkable:0 "Unremarkable"
- wtmnb.3.c:0 "Wait a minute? Where's my $graygoo.500.title$?"
+ wtmnb.3.c:0 "Wait a minute? Where's my §I$NAME_Gray$§!?"
 
  wtmnb.5.name:0 "The Hyperlane has been established"
  wtmnb.5.desc:0 "Hyperlane has been established from [from.GetName] to [wtmnb_portal_start.GetName]"
@@ -175,19 +193,17 @@
  wtmnb_colossus.1001.c.tip:0 "Every pop on [From.GetName]:\ngain the §H$trait_wtmnb_stigmata$§! trait\n[wtmnb_target.GetClassName] Preference"
  wtmnb_colossus.1001.d:0 "Convert species on planet"
  wtmnb_colossus.1001.e:0 "Modify species on planet"
- wtmnb_colossus.1001.f:0 "Survey $lgate$"
- wtmnb_colossus.1001.g:0 "$PLANET_KILLER_SHIELDER$"
- wtmnb_colossus.1001.h:0 "$PLANET_KILLER_CRACKER$"
- wtmnb_colossus.1001.i:0 "$WTMNB_9TH_KEY$"
+ wtmnb_colossus.1001.f:0 "Peek $lgate$"
+
  wtmnb_colossus.1001.u:0 "Diplomaticy"
  wtmnb_colossus.1001.v:0 "Occupation"
  wtmnb_colossus.1001.w:0 "Create ecology"
  wtmnb_colossus.1001.w.desc:0 "Since we have the power to easily shake the stars and reverse life and death, it is not impossible to rely on "filming" technology to turn a huge rock into a pretty colonizable planet within a few hours. "
  wtmnb_colossus.1001.x:0 "Ring World"
- wtmnb_colossus.1001.x.desc:0 "we dont need those planet any more"
-#########
- wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"s
- wtmnb_diplomacy.1.desc:0 "Countinue."
+ wtmnb_colossus.1001.x.desc:0 "We dont need those planet any more\n-§RJust DO NOT use it on your only colony§!"
+ #########
+ wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
+ wtmnb_diplomacy.1.desc:0 "§BDave_12138§!:I'd route these options through Diplomatic/Espionage channels too, but no Espionage could be used on fallen empires."
  wtmnb_diplomacy.1.a:0 "Forget it"
  wtmnb_diplomacy.1.b:0 "Murder [wtmnb_target.Owner.GetRulerTitle] §H[wtmnb_target.Owner.GetRulerName]§!"
  wtmnb_diplomacy.1.b.desc:0 "§H[wtmnb_target.Owner.GetRulerName]§! dead\n[wtmnb_target.Owner.GetName] is humiliated"
@@ -204,13 +220,13 @@
 
  wtmnb_diplomacy.1000.name:0 "[deadruler.GetName] dead from honkai"
  wtmnb_diplomacy.1000.friendly.desc:0 "As those purple crack pattern spreading on [deadruler.GetName]'s body, the euphoria ended abruptly. \nIt was only a few minutes before [deadruler.GetName] was confirmed dead."
- wtmnb_diplomacy.1000.desc:0 "在我们将虚数内能定向引导后的短短几分钟后，[wtmnb_target.Owner.GetName]宣布[deadruler.GetName]死于未知现象，手法不明但有充分证据证明是[Root.GetName]所为。"
- wtmnb_diplomacy.1000.a:0 "了解。"
+ wtmnb_diplomacy.1000.desc:0 "[deadruler.GetName] is dead, suddenly."
+ wtmnb_diplomacy.1000.a:0 "We knew."
  wtmnb_diplomacy.1000.tip:0 "§H[wtmnb_target.Owner.GetRulerTitle][deadruler.GetName]§! past away\n[wtmnb_target.Owner.GetName] is humiliated"
- wtmnb_diplomacy.1000.b:0 "Sorry"
+ wtmnb_diplomacy.1000.b:0 "Crap, misclick!"
  wtmnb_diplomacy.1000.c:0 "Guess what? I'm gonna to do it again"
  wtmnb_diplomacy.1000.d:0 "Alien Garbage -1"
- 
+
  wtmnb_diplomacy.1001.name:0 "[Root.GetRulerTitle] was murdered"
  wtmnb_diplomacy.1001.desc:0 "§H[deadruler.GetName]§! died in communication with §H[From.GetName]§![From.GetRulerTitle]§H[From.GetRulerName]§!. All the signs indicate that it's what [From.GetName] did."
  wtmnb_diplomacy.1001.a:0 "Why? What did we do?"
@@ -222,60 +238,57 @@
  wtmnb_diplomacy.1100.desc2:0 "We are going to declare war to §H[wtmnb_target.Owner.GetName]§!, for subjecting"
  wtmnb_diplomacy.1100.a:0 "Surrender, or perish"
  wtmnb_diplomacy.1100.c:0 "Cancel, I have other plans"
- 
- 
+
+
  wtmnb_diplomacy.1101.desc:0 "We are going to convert war goal to §H[wtmnb_target.Owner.GetName]§! into cleansing"
  wtmnb_diplomacy.1101.desc2:0 "We are going to declare war to §H[wtmnb_target.Owner.GetName]§!, for removing them from galaxy"
  wtmnb_diplomacy.1101.a:0 "Here we go."
-####################
+ ####################
  wtmnb_species.1.name:0 "Species"
  wtmnb_species.1.desc:0 "Transform all species of the target planet into:"
  wtmnb_species.1.0:0 "Cancel"
- wtmnb_species.1.a:0 "$Warship_Girls$"
- wtmnb_species.1.b:0 "$ShenHai$"
-#中间三个多彩，下面从f开始
- wtmnb_species.1.f:0 "$REPLACE_ME$" #暂未使用
-
-#空着一段，把原版放最后
- wtmnb_species.1.o:0 "$PLANT$"
- wtmnb_species.1.p:0 "$HUM$"
- wtmnb_species.1.q:0 "$MAM$"
- wtmnb_species.1.r:0 "$REP$"
- wtmnb_species.1.s:0 "$AVI$"
- wtmnb_species.1.t:0 "$ART$"
- wtmnb_species.1.u:0 "$MOL$"
- wtmnb_species.1.v:0 "$FUN$"
- wtmnb_species.1.w:0 "$ROBOT$"
- wtmnb_species.1.x:0 "$MACHINE$"
- wtmnb_species.1.y:0 "$LITHOID$"
- wtmnb_species.1.z:0 "$NECROID$"
 
 
  wtmnb_species.100.name:0 "Specific Species Modify"
  wtmnb_species.100.desc:0 "$wtmnb_species.100.name$"
  wtmnb_species.100.0:0 "Cancel"
- wtmnb_species.100.a:0 "$trait_hive_mind$"
- wtmnb_species.100.b:0 "$trait_machine_unit$"
- wtmnb_species.100.c:0 "$trait_mechanical$"
-########
+ ############
+ wtmnb_remove_megastructure_chain_title:0 "Dismantle Megastructure"
+ wtmnb_remove_megastructure_chain_desc:0 "Violent demolition of megastructures\nAll megastructures in the current system of our Construction Ship can be dismantled, including those belonging to others\nCompleted $ringworld_lowercase$ and $habitat_lowercase$ are not considered megastructures and cannot be dismantled"
+
+ WTMNB_REMOVE_MEGASTRUCTURE:0 "Dismantle §B[This.GetName]§!"
+ WTMNB_REMOVE_MEGASTRUCTURE_DESC:0 "Dismantling §B[This.GetName]§! in §B[This.System.GetName]§! system"
+
+ wtmnb_open_fire_chain_title:0 "$wtmnb_fortress$ · Ultra-Range Fire"
+ wtmnb_open_fire_chain_desc:0 "We will complete a task through this event chain that should have been accomplished using the $WTMNB_WEAPON$ Colossus weapon"
+ WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§! System Selection"
+ WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "Determining our target in §B[This.System.GetName]§! system"
+ WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§B[This.GetName]§! Celestial Body Selection"
+ WTMNB_OPEN_FIRE_PLANET_SELECT_DESC:0 "We will deploy the $wtmnb_fortress$ against §B[This.GetName]§!"
+ WTMNB_OPEN_FIRE_CANCEL:0 "Cancel Launch"
+ WTMNB_OPEN_FIRE_CANCEL_DESC:0 "Plans have changed, we intend to abort this launch"
+
+ ########
  tech_wtmnb_fortress:0 "Introduction to the internal energy of imaginary numbers"
  tech_wtmnb_fortress_desc:0 "(machine translation)The second law of thermodynamics states that a decrease in the entropy of one system will inevitably cause a greater increase in the entropy of the other system.From the information point of view, this is equivalent to a huge information asymmetry between the normal environment in which information is highly chaotic and the negative entropy environment in which information is highly orderly.Historical studies show that the collapse energy is strongly associated with the information asymmetry.In mathematics, the imaginary number internal energy belonging to the collapse dimension and the real number internal energy as the thermal representation of the divergent dimension -- that is, the four-dimensional space-time that we can normally perceive -- can be expressed uniformly by the high-dimensional complex functions, and the results can predict the collapse fluctuations on the microscopic scale.Therefore, current researchers generally conjecture that this "imaginary internal energy" is the collapse energy, or at least an important part of the collapse energy."
-###############
+ ###############
  opinion_wtmnb_1:0 "Emotional matrix"
- opinion_wtmnb_2:0 "$opinion_wtmnb_1$"
- opinion_wtmnb_3:0 "$opinion_wtmnb_1$"
-###############
+ opinion_wtmnb_2:0 "$opinion_wtmnb_1$ -edict"
+ opinion_wtmnb_3:0 "$opinion_wtmnb_2$"
+ ###############
 
-####################
+ ####################
  terraform_needs_4th_key:0 "§B$WTMNB_4TH_KEY$§! needed"
  terraform_needs_4th_key_and_eden_star:0 "§B$WTMNB_4TH_KEY$§! and §B$WTMNB_9TH_KEY$§! should be in orbit."
  add_20_pop:0 "Add 20 £pops£$pop$ (random species)"
  REMOVE_PLANET_EFFECT:0 "§Y[This.GetName]§! is burn down"
- can_molt_planet:0 "We can burn down planet into $pc_molten$ in planet decisions."
  ringworld_will_be_not_colonizable:0 "Colonizable part destroyed"
-####################
+ ####################
  decision_wtmnb_create_pop:0 "Cell replication protocol"
  decision_wtmnb_create_pop_desc:0 "Simple copy-and-paste -- but the process of getting there is interesting in itself -- I mean, efficient."
+ decision_wtmnb_open_fire:0 "§B$wtmnb_fortress$§!·Ultra-Range Fire"
+ decision_wtmnb_open_fire_desc:0 "We don't need to travel to the destination every time to use the §B$wtmnb_fortress$§! on target planets. We can achieve an ultra-range fire through several special projects."
+
  decision_wtmnb_reroll:0 "Geological transformation"
  decision_wtmnb_reroll_desc:0 "We don't yet know what the consequences will be, but it's clear that the planet class won't change"
  decision_wtmnb_molten:0 "Meltdown"
@@ -284,42 +297,48 @@
  decision_wtmnb_planet_extend_desc:0 "max district count  + 30 "
  decision_wtmnb_city:0 "Plan.$pc_wtmnb_city$"
  decision_wtmnb_city_desc:0 "Change planet class into §Y$pc_wtmnb_city$§!"
- decision_wtmnb_ring_city:0 "$decision_wtmnb_city$"
- decision_wtmnb_ring_city_desc:0 ""
  decision_wtmnb_break_border:0 "Break the closing borders"
  decision_wtmnb_break_border_desc:0 "Trick them by using eden star."
  decision_wtmnb_11th_shield:0 "Elpsion Pedion"
  decision_wtmnb_11th_shield_desc:0 "Avoid others enter this system by jump driver"
  decision_wtmnb_11th_shield_off:0 "Cancel Elpsion Pedion"
  decision_wtmnb_11th_shield_off_desc:0 "Allow others to enter this system by jump driver"
-##################
- 
+ ##################
+
  pc_wtmnb_city:0 "Prometheus"
  pc_wtmnb_city_adj:0 "$pc_wtmnb_city$"
  pc_wtmnb_city_desc:0 "Brilliant artificial intelligence surfaces an entire planet as a terminal that can change the Designation of a planet in just a few days\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
  mod_pc_wtmnb_city_habitability:0 "$pc_wtmnb_city$ World Habitability"
-##
+ #########
+ building_wtmnb_meeting_room: "Strategic Misinformation Chamber"
+ building_wtmnb_meeting_room_desc: "Empire scale? What empire? What scale? We're still a developing civilization, mind your accusations"
+ mod_planet_building_wtmnb_meeting_room_build_speed_mult: "$building_wtmnb_meeting_room$ Build Speed"
+ mod_building_wtmnb_meeting_room_max: "$building_wtmnb_meeting_room$ Planet Limit"
 
- job_ai_wtmnb_cleck:0 "Unworker"
- job_ai_wtmnb_cleck_plural:0 "$job_ai_wtmnb_cleck$"
- job_ai_wtmnb_cleck_desc:0 "Just...nothing to do."
- mod_job_ai_wtmnb_cleck_add:0 "$job_ai_wtmnb_cleck$"
- mod_job_ai_wtmnb_cleck_per_pop:0 "add $job_ai_wtmnb_cleck$"
- job_ai_wtmnb_drone:0 "Unworker"
- job_ai_wtmnb_drone_plural:0 "$job_ai_wtmnb_drone$"
- job_ai_wtmnb_drone_desc:0 "$job_ai_wtmnb_cleck_desc$"
- mod_job_ai_wtmnb_drone_add:0 "$job_ai_wtmnb_drone$"
- mod_job_ai_wtmnb_drone_per_pop:0 "add $job_ai_wtmnb_drone$"
+ building_wtmnb_little_safe: "Covert Reserve Vault"
+ building_wtmnb_little_safe_desc: "If we fail in our endeavors, we'll have no choice but to return and inherit the family assets"
+ mod_planet_building_wtmnb_little_safe_build_speed_mult: "$building_wtmnb_little_safe$ Build Speed"
+ mod_building_wtmnb_little_safe_max: "$building_wtmnb_little_safe$ Planet Limit"
+
+ building_wtmnb_produces_multer: "Mei 1 Cache"
+ building_wtmnb_produces_multer_desc: "With 10 operational districts, it's equivalent to harnessing the productivity of 100 workers (?)"
+ mod_planet_building_wtmnb_produces_multer_build_speed_mult: "$building_wtmnb_produces_multer$ Build Speed"
+ mod_building_wtmnb_produces_multer_max: "$building_wtmnb_produces_multer$ Planet Limit"
+
+ ##
+
  job_ai_wtmnb_master:0 "Device Keeper"
  job_ai_wtmnb_master_plural:0 "$job_ai_wtmnb_master$s"
  job_ai_wtmnb_master_desc:0 "Look at the monitor and do nothing."
- mod_job_ai_wtmnb_master_add:0 "$job_ai_wtmnb_master$"
- mod_job_ai_wtmnb_master_per_pop:0 "add $job_ai_wtmnb_master$"
+ mod_job_ai_wtmnb_master_add:0 "$job_ai_wtmnb_master$ Jobs"
+ mod_job_ai_wtmnb_master_per_pop:0 "§G+1§! $job_ai_wtmnb_master$ Job per $VALUE$ Pops"
+ mod_job_ai_wtmnb_master_per_pop_short:0 "\n§G+1§! £job_ai_wtmnb_master£ per $VALUE$ £pop£"
  job_ai_wtmnb_master_drone:0 "Device Keeper"
- job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master$s"
+ job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master_drone$s"
  job_ai_wtmnb_master_drone_desc:0 "Look at the monitor and do nothing."
- mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master$"
- mod_job_ai_wtmnb_master_drone_per_pop:0 "add $job_ai_wtmnb_master$ "
+ mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master_drone$ Jobs"
+ mod_job_ai_wtmnb_master_drone_per_pop:0 "§G+1§! $job_ai_wtmnb_master_drone$ Job per $VALUE$ Pops"
+ mod_job_ai_wtmnb_master_drone_per_pop_short:0 "\n§G+1§! £job_ai_wtmnb_master_drone£ per $VALUE$ £pop£"
 
  job_wtmnb_fooyouist:0 "Strategic Fool Propagandist"
  job_wtmnb_fooyouist_plural:0 "$job_wtmnb_fooyouist$s"
@@ -331,7 +350,7 @@
  job_wtmnb_fooyouist_drone_desc:0 "$job_wtmnb_fooyouist_desc$"
  mod_job_wtmnb_fooyouist_drone_add:0 "$job_wtmnb_fooyouist_drone$"
 
-# 
+ #
  col_ring_foundry:0 "$col_foundry$"
  col_ring_foundry_desc:1 "$col_foundry_desc$"
 
@@ -344,3 +363,7 @@
 
  col_ring_refinery:0 "$col_refinery$"
  col_ring_refinery_desc:1 "$col_refinery_desc$"
+
+ # ship design
+ DESIGN_wtmnb_fortress:0 "$wtmnb_fortress$"
+ NAME_wtmnb_cannon:0 "$wtmnb_cannon$"

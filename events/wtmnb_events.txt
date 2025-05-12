@@ -3,7 +3,7 @@ namespace = wtmnb
 country_event = {
     id = wtmnb.1
     title = wtmnb.1.name
-    #picture = GFX_evt_wsg_bombardment
+    picture = GFX_evt_nuclear_explosion
     desc = wtmnb.1.desc
     show_sound = event_super_explosion
     location = from
@@ -44,6 +44,7 @@ country_event = {
     is_triggered_only = yes
     id = wtmnb.3
     title = wtmnb.3.title
+    picture = GFX_evt_l-gateway
     desc = {
         text = graygoo.10.name
         trigger = {
@@ -99,13 +100,14 @@ country_event = {
 # 超空间通道
 country_event = {
     id = wtmnb.5
+    picture = GFX_evt_hyper_relay
     is_triggered_only = yes
     title = wtmnb.5.name
     desc = wtmnb.5.desc
     option = {
         name = MISSION_SUCCESS
         hidden_effect = {
-            clear_global_event_target = wtmnb_portal_start
+            clear_global_event_target = wtmnb_portal_start@root
         }
     }
 }
@@ -151,10 +153,13 @@ planet_event = {
             }
             remove_army = yes
         }
-        create_army = {
-            owner = from
-            species = from
-            type = "assault_army"
+        if = {
+            limit = { pop_amount > 0 }
+            create_army = {
+                owner = from
+                # species = from
+                type = "sentinel_army"
+            }
         }
     }
 }
@@ -235,7 +240,7 @@ country_event = {
     }
 }
 
-# 引爆选项
+# 引爆
 country_event = {
     id = wtmnb.2001
     is_triggered_only = yes
@@ -263,7 +268,7 @@ country_event = {
                     orbit_angle = 0
                     orbit_distance = 0
                     init_effect = {
-                        set_name = "\\[This.System.GetName]...?"
+                        set_name = "[This.System.GetName]"
                     }
                 }
             }
@@ -324,5 +329,46 @@ ship_event = {
             set_mia = mia_return_home
             # set_mia_return_delay = 30
         }
+    }
+}
+
+#风暴
+country_event = {
+    id = wtmnb.4000
+    is_triggered_only = yes
+    title = space_storm
+    picture = GFX_celestial_storm
+    option = { name = CANCEL }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = electric_storm
+    }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = particle_storm
+    }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = gravity_storm
+    }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = magnetic_storm
+    }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = solar_storm
+    }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = celestial_storm
+    }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = shroud_storm
+    }
+    inline_script = {
+        script = events/wtmnb_storm_option
+        TYPE = nexus_storm
     }
 }

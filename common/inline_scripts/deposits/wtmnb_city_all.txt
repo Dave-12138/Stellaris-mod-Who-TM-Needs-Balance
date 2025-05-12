@@ -1,7 +1,7 @@
 inline_script=deposits/wtmnb_city_jobs/army
 inline_script=deposits/wtmnb_city_jobs/alloy
 inline_script=deposits/wtmnb_city_jobs/capital
-inline_script=deposits/wtmnb_city_jobs/empty
+# inline_script=deposits/wtmnb_city_jobs/empty
 inline_script=deposits/wtmnb_city_jobs/energy
 inline_script=deposits/wtmnb_city_jobs/food
 inline_script=deposits/wtmnb_city_jobs/goods

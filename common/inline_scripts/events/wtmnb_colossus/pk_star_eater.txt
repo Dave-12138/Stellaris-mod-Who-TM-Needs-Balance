@@ -1,6 +1,6 @@
 #黑洞
 option = {
-    name = wtmnb_colossus.1001.i
+    name = WTMNB_9TH_KEY
     trigger = {
         from = {
             is_star = yes

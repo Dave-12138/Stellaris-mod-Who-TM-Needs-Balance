@@ -7,7 +7,7 @@ trait_wtmnb_stigmata = {
     # 是否可以添加或删除
     # modification = yes
     # 提示该特质有领袖buff，无效果
-    immortal_leaders = yes
+    # immortal_leaders = yes
     # 领袖年龄
     # leader_age_max = 15
     # leader_age_min = 10

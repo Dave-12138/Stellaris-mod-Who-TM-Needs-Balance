@@ -1,19 +1,19 @@
-slot_city_wtmnb = {
-    start = zone_default
-
-    include = {
-        all
-    }
-
-    exclude = {
-        zone_default
-    }
-
-    potential = { # planet scope
-        always = yes
-    }
-
-    unlock = { # planet scope
-        always = yes
-    }
-}
+# slot_city_wtmnb = {
+#     start = zone_default
+#
+#     include = {
+#         all
+#     }
+#
+#     exclude = {
+#         zone_default
+#     }
+#
+#     potential = { # planet scope
+#         always = yes
+#     }
+#
+#     unlock = { # planet scope
+#         always = yes
+#     }
+# }

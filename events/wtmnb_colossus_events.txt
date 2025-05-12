@@ -35,6 +35,8 @@ country_event = {
     inline_script = events/wtmnb_colossus_options
 
 
+
+
     #外交窗口
     option = {
         name = wtmnb_colossus.1001.u
@@ -53,6 +55,4 @@ country_event = {
         }
 
     }
-
-
 }

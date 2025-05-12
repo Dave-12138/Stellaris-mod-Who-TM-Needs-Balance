@@ -1,14 +1,11 @@
-[[CLASS]
-    option = {
-        name = $CLASS$
-        hidden_effect = {
-            [[PLANET]
-                $PLANET$ = {
-                    wtmnb_planet_species = {
-                        SPECIES = "$CLASS$"
-                    }
-                }
-            ]
+option = {
+    name = $CLASS$
+    hidden_effect = {
+        $PLANET$ = {
+            wtmnb_planet_species = {
+                SPECIES = "$CLASS$"
+            }
         }
+
     }
-]
+}

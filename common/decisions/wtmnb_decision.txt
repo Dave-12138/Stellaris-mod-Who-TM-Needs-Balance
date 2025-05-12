@@ -372,7 +372,7 @@ decision_wtmnb_city = {
                 }
             }
 
-            change_pc = pc_wtmnb_city
+            # change_pc = pc_wtmnb_city
             hidden_effect = {
                 clear_deposits = yes
             }
@@ -494,8 +494,9 @@ decision_wtmnb_build_ship = {
                     is_orbital_ring = yes
                 }
             }
-            AND = {
+            OR = {
                 has_building = building_planetary_shield_generator
+                has_building = building_ozone_thickener
             }
         }
     }
@@ -510,7 +511,7 @@ decision_wtmnb_build_ship = {
         custom_tooltip = decision_wtmnb_build_ship_effect
         hidden_effect = {
             create_fleet = {
-                name = RANDOM
+                # name = RANDOM
                 settings = {
                     spawn_debris = no
                     uses_naval_capacity = no

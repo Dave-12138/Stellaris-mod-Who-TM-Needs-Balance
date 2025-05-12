@@ -1,6 +1,6 @@
 #锁门
 option = {
-    name = wtmnb_colossus.1001.k
+    name = DIMENSIONAL_LOCK
     trigger = {
         event_target:wtmnb_target.solar_system = {
             any_bypass = {

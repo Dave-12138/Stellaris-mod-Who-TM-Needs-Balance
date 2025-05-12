@@ -265,7 +265,7 @@ wtmnb_edict_create_ship = {
                         design = "DESIGN_wtmnb_fortress"
                         upgradable = no
                         effect = {
-                            starbase={
+                            starbase = {
                                 if = {
                                     limit = {
                                         root = { is_beastmasters_empire = yes }

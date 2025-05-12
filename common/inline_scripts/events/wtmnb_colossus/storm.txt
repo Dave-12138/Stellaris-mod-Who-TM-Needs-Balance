@@ -1,0 +1,12 @@
+option = {
+    name = r_the_tempest_invocator
+    trigger = {
+        from = {
+            is_star = yes
+        }
+    }
+    country_event = {
+        id = wtmnb.4000
+        scopes = { from = from.solar_system }
+    }
+}

@@ -586,7 +586,7 @@ utility_component_template = {
         }
     }
     modifier = {
-        custom_tooltip = "can_molt_planet"
+        # custom_tooltip = "can_molt_planet"
     }
     ai_weight = {
         weight = 100
