@@ -1,0 +1,111 @@
+namespace = wtmnb
+# 星系 选择
+country_event = {
+    id = wtmnb.6000
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = { is_wtmnb_empire = yes }
+    immediate = {
+        begin_event_chain = {
+            event_chain = wtmnb_open_fire_chain
+        }
+        random_owned_ship = {
+            limit = { is_ship_size = wtmnb_fortress }
+            enable_special_project = {
+                name = WTMNB_OPEN_FIRE_CANCEL
+                owner = root
+                location = this
+            }
+        }
+        every_system = {
+            # 万一星系里因为奇奇怪怪的 bug 没恒星
+            if = {
+                limit = { exists = star }
+                star = {
+                    save_event_target_as = wtmnb_pretarget_star
+                }
+            } else = {
+                random_system_planet = {
+                    save_event_target_as = wtmnb_pretarget_star
+                }
+            }
+            enable_special_project = {
+                name = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+                location = event_target:wtmnb_pretarget_star
+                owner = root
+            }
+        }
+    }
+}
+#星体 选择
+# 手动设置from为country
+system_event = {
+    id = wtmnb.6010
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        exists = from
+        from = {
+            is_scope_type = country
+            is_wtmnb_empire = yes
+        }
+    }
+    immediate = {
+        from = {
+            # 补事件链
+            if = {
+                limit = { NOT = { has_event_chain = wtmnb_open_fire_chain } }
+                begin_event_chain = { event_chain = wtmnb_open_fire_chain }
+            }
+            abort_special_project = {
+                type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+            }
+            # 补取消事件
+            if = {
+                limit = { NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL } }
+                random_owned_ship = {
+                    limit = { is_ship_size = wtmnb_fortress }
+                    enable_special_project = {
+                        name = WTMNB_OPEN_FIRE_CANCEL
+                        owner = root
+                        location = this
+                    }
+                }
+            }
+        }
+
+        if = {
+            # 万一星系里因为奇奇怪怪的 bug 没恒星
+            limit = { NOT = { exists = star } }
+            spawn_planet = {
+                class = pc_black_hole
+                size = 1
+                orbit_angle = 0
+                orbit_distance = 0
+                init_effect = {
+                    set_name = "[This.System.GetName](debug)"
+                    set_planet_flag = wtmnb_temp_fake_star
+                    planet_event = { id = wtmnb.6011 days = 10 }
+                }
+            }
+        }
+        every_system_planet = {
+            enable_special_project = {
+                name = WTMNB_OPEN_FIRE_PLANET_SELECT
+                location = this
+                owner = from
+            }
+        }
+    }
+}
+planet_event = {
+    id = wtmnb.6011
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        has_planet_flag = wtmnb_temp_fake_star
+    }
+    immediate = {
+        remove_planet = yes
+    }
+}

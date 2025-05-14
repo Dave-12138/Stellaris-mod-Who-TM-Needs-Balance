@@ -39,7 +39,7 @@
  wtmnb_boomer_cap:0 "Honkai Fission Missile"
  wtmnb_boomer_plural:0 "Honkai Fission Missiles"
  WTMNB_BOOMER_SECTION:0 "Detonates when fleet is disbanded or destroyed"
- SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "If the numbers aren't insane enough, consider an event-triggered destruction"
+ SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "【Ultra-Range Fire】If the numbers aren't insane enough, consider an event-triggered destruction"
 
  WTMNB_SCIENCE_REACTOR_POOL: "Anthracite Boiler"
 

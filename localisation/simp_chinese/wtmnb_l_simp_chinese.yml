@@ -46,7 +46,7 @@
  wtmnb_boomer_cap:0 "崩坏裂变弹"
  wtmnb_boomer_plural:0 "崩坏裂变弹"
  WTMNB_BOOMER_SECTION:0 "解散舰队时、被击毁时引爆"
- SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "如果数值不够魔怔，可以考虑事件杀"
+ SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "【超距射击靶船】如果数值不够魔怔，可以考虑事件杀"
 
 
  WTMNB_SCIENCE_REACTOR_POOL: "无烟煤锅炉"

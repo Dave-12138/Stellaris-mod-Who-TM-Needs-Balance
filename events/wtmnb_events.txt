@@ -249,39 +249,12 @@ country_event = {
     hide_window = yes
     # 触发超距射击
     immediate = {
-        begin_event_chain = {
-            event_chain = wtmnb_open_fire_chain
-        }
-        capital_scope = {
-            enable_special_project = {
-                name = WTMNB_OPEN_FIRE_CANCEL
-                owner = root
-            }
-        }
         from = {
-            if = {
-                # 万一星系里因为奇奇怪怪的 bug 没恒星
-                limit = { NOT = { exists = star } }
-                spawn_planet = {
-                    class = pc_black_hole
-                    size = 1
-                    orbit_angle = 0
-                    orbit_distance = 0
-                    init_effect = {
-                        set_name = "[This.System.GetName]"
-                    }
-                }
+            system_event = {
+                id = wtmnb.6010
+                days = 0
+                scopes = { from = root }
             }
-            every_system_planet = {
-                enable_special_project = {
-                    name = WTMNB_OPEN_FIRE_PLANET_SELECT
-                    location = this
-                    owner = root
-                }
-            }
-        }
-        abort_special_project = {
-            type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
         }
     }
 

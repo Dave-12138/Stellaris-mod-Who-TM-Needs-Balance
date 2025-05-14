@@ -1,77 +1,73 @@
 # 选星系
 special_project = {
-	key = "WTMNB_OPEN_FIRE_SYSTEM_SELECT"
-	event_scope = ship_event
-	event_chain = "wtmnb_open_fire_chain"
-	days_to_research = 0
-	# from = planet (star)
-	# prev = country
-	on_start = {
-		from.solar_system = {
-			every_system_planet = {
-				enable_special_project = {
-					name = WTMNB_OPEN_FIRE_PLANET_SELECT
-					location = this
-					owner = fromfrom
-				}
-			}
-		}
-		prev = {
-			abort_special_project = {
-				type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
-			}
-		}
-	}
-	on_success = {
-		
-	}
+    key = "WTMNB_OPEN_FIRE_SYSTEM_SELECT"
+    event_scope = ship_event
+    event_chain = "wtmnb_open_fire_chain"
+    days_to_research = 0
+    # from = planet (star)
+    # prev = country
+    on_start = {
+        prev = {
+            save_event_target_as = owner_country
+        }
+        from.solar_system = {
+            system_event = {
+                id = wtmnb.6010
+                days = 0
+                scopes = { from = event_target:owner_country }
+            }
+        }
+    }
+    on_success = {
+
+    }
 }
 
 # 选星球
 special_project = {
-	key = "WTMNB_OPEN_FIRE_PLANET_SELECT"
-	event_scope = ship_event
-	event_chain = "wtmnb_open_fire_chain"
-	days_to_research = 1
-	# from = planet
-	# prev = country
-	on_start = {
-		prev = {
-			random_owned_ship = {
-				limit = {
-					is_ship_size = wtmnb_fortress
-				}
-				fleet = {
-					save_event_target_as = wtmnb_planet_killer_ship
-				}
-			}
-		}
-		from = {
-			fire_on_action = {
-				on_action = on_destroy_planet_with_WTMNB_WEAPON_W
-				scopes = {
-					from = event_target:wtmnb_planet_killer_ship
-				}
-			}
-		}
-		prev = {
-			end_event_chain = wtmnb_open_fire_chain
-		}
-	}
-	on_success = {
-		
-	}
+    key = "WTMNB_OPEN_FIRE_PLANET_SELECT"
+    event_scope = ship_event
+    event_chain = "wtmnb_open_fire_chain"
+    days_to_research = 1
+    # from = planet
+    # prev = country
+    on_start = {
+        prev = {
+            random_owned_ship = {
+                limit = {
+                    is_ship_size = wtmnb_fortress
+                }
+                fleet = {
+                    save_event_target_as = wtmnb_planet_killer_ship
+                }
+            }
+        }
+        from = {
+            fire_on_action = {
+                on_action = on_destroy_planet_with_WTMNB_WEAPON_W
+                scopes = {
+                    from = event_target:wtmnb_planet_killer_ship
+                }
+            }
+        }
+        prev = {
+            end_event_chain = wtmnb_open_fire_chain
+        }
+    }
+    on_success = {
+
+    }
 }
 
 # 取消
 special_project = {
-	key = "WTMNB_OPEN_FIRE_CANCEL"
-	event_scope = ship_event
-	event_chain = "wtmnb_open_fire_chain"
-	days_to_research = 1
-	on_success = {
-		fromfrom = {
-			end_event_chain = wtmnb_open_fire_chain
-		}
-	}
+    key = "WTMNB_OPEN_FIRE_CANCEL"
+    event_scope = ship_event
+    event_chain = "wtmnb_open_fire_chain"
+    days_to_research = 1
+    on_success = {
+        prev = {
+            end_event_chain = wtmnb_open_fire_chain
+        }
+    }
 }
