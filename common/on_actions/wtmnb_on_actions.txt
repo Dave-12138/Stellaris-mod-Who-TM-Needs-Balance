@@ -62,3 +62,7 @@ on_jump_drive = {
 		wtmnb.3000
 	}
 }
+
+on_ship_built = {
+	wtmnb.5000
+}

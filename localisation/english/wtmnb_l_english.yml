@@ -155,6 +155,9 @@
  wtmnb_star_11th_modifier:0 "$aura_judah$"
  wtmnb_star_11th_modifier_desc:0 ""
  avoid_enter_by_jump:0 "Avoid others enter this system by jump driver"
+
+ wtmnb_country_produces_mult: "§M$wtmnb_fortress$§!"
+ wtmnb_country_produces_mult_desc: "Counting on constructors in orbit of §M$wtmnb_fortress$§!"
  ###################
  deposit_wtmnb_city:0 "$pc_wtmnb_city$"
  deposit_wtmnb_city_desc:0 "$pc_wtmnb_city_desc_normal$"

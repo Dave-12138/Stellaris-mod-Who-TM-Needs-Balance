@@ -1,0 +1,3 @@
+wtmnb_country_produces_mult = {
+    country_produces_mult = 10
+}

@@ -1,13 +1,11 @@
 wtmnb_planet_ex = {
-	planet_max_districts_add = 30
-	# planet_max_buildings_add = 15
-	icon = "gfx/interface/icons/planet_modifiers/planet_4th_modifier.dds"
-	icon_frame = 1
+    planet_max_districts_add = 30
+    # planet_max_buildings_add = 15
+    icon = "gfx/interface/icons/planet_modifiers/planet_4th_modifier.dds"
+    icon_frame = 1
 }
-wtmnb_star_11th_modifier={
-	
-	icon = "gfx/interface/icons/planet_modifiers/star_11th_modifier.dds"
-	icon_frame = 1
-	custom_tooltip = "avoid_enter_by_jump"
-
+wtmnb_star_11th_modifier = {
+    icon = "gfx/interface/icons/planet_modifiers/star_11th_modifier.dds"
+    icon_frame = 1
+    custom_tooltip = "avoid_enter_by_jump"
 }

@@ -1,0 +1,8 @@
+
+
+default = {
+	ship_of_size_limits = {
+		# wtmnb
+		wtmnb_fortress_ships_limit
+	}
+}

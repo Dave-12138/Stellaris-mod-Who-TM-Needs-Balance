@@ -200,6 +200,10 @@
  wtmnb_star_11th_modifier:0 "$aura_judah$"
  wtmnb_star_11th_modifier_desc:0 "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
  avoid_enter_by_jump:0 "阻止其他国家通过跃迁引擎进入本星系"
+
+
+ wtmnb_country_produces_mult: "§M$wtmnb_fortress$§!"
+ wtmnb_country_produces_mult_desc: "§M$wtmnb_fortress$§!提供的帝国全产加成\n轨道内工程船越多，加成越高"
  #       _                      _ _
  #    __| | ___ _ __   ___  ___(_) |_ ___
  #   / _` |/ _ \ '_ \ / _ \/ __| | __/ __|
@@ -493,3 +497,8 @@
  # ship design
  DESIGN_wtmnb_fortress:0 "$wtmnb_fortress$"
  NAME_wtmnb_cannon:0 "$wtmnb_cannon$"
+
+
+ sm_wtmnb_starbase_building: "§M$wtmnb_fortress$§!"
+ sm_wtmnb_starbase_building_desc: "用于让§M$wtmnb_fortress$§!提供驻港效果\n§L想写全国效果的，结果不生效，只能用事件代替§!\n§B你不该在游戏内看见这几行字§!"
+#

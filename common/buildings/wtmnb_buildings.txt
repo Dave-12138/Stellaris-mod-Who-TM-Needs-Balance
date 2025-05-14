@@ -100,12 +100,12 @@ building_wtmnb_produces_multer = {
 
     allow = {
     }
+    # 给半小时后的自己：这俩作用域不一样，傻逼
     triggered_planet_modifier = {
         potential = { exists = owner }
         planet_jobs_produces_mult = 10
         mult = value:count_any_districts
     }
-
     triggered_country_modifier = {
         potential = { exists = owner }
         country_resource_max_add = 10000
