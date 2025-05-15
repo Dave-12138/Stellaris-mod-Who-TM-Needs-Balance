@@ -53,10 +53,8 @@ system_event = {
     immediate = {
         from = {
             # 补事件链
-            if = {
-                limit = { NOT = { has_event_chain = wtmnb_open_fire_chain } }
-                begin_event_chain = { event_chain = wtmnb_open_fire_chain }
-            }
+            # 不能if limit has_event_chain
+            begin_event_chain = { event_chain = wtmnb_open_fire_chain }
             abort_special_project = {
                 type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
             }

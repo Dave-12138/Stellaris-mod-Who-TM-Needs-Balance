@@ -20,6 +20,7 @@ wtmnb_cannon = {
 		is_scope_type = starbase
 		has_starbase_size = wtmnb_fortress
 	}
+	ship_roles = { platform }
 	ship_modifier = {
 		# ship_piracy_suppression_add = 300
 		ship_shield_hardening_add = 1
