@@ -1,7 +1,11 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_ship_part_shield_aura"
+		name = "GFX_ship_part_wtmnb_shield_aura"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_shield_aura.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_wtmnb_scienceship_aura"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_wtmnb_scienceship_aura.dds"
 	}
 	spriteType = {
 		name = "GFX_ship_part_wtmnb_weapon"
@@ -90,6 +94,44 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_fleet_order_button_ground_support_wtmnb_invasion"
 		texturefile = "gfx/interface/fleet_view/wtmnb_bombardment_stances_invasion.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_fleet_task_wtmnb_fortress_super_fire_action"
+		texturefile = "gfx/interface/fleet_view/fleet_task_wtmnb_super_fire_action.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_order_button_wtmnb_swtich_shipyard"
+		texturefile = "gfx/interface/fleet_view/fleet_order_button_wtmnb_swtich_shipyard.dds"
 		effectFile = "gfx/FX/buttonstate.shader"
 		noOfFrames = 3
 		animation = {

@@ -7,12 +7,12 @@ ship_event = {
     trigger = { is_ship_size = wtmnb_fortress }
     immediate = {
         starbase = {
-            if = {
-                limit = {
-                    owner = { is_beastmasters_empire = yes }
-                }
-                set_ship_construction_type = starbase_beastport
-            }
+            # if = {
+            #     limit = {
+            #         owner = { is_beastmasters_empire = yes }
+            #     }
+            #     set_ship_construction_type = starbase_beastport
+            # }
             set_starbase_building = { slot = 1 building = wtmnb_starbase_building }
         }
         ship_event = {

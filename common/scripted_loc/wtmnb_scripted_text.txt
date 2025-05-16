@@ -1,0 +1,11 @@
+define_text = {
+    name = GetConstructionType
+    text = {
+        trigger = { starbase = { NOT = { has_starbase_flag = use_beastport } } }
+        localization_key = concept_shipyard
+    }
+    text = {
+        trigger = { starbase = { has_starbase_flag = use_beastport } }
+        localization_key = concept_beastport
+    }
+}

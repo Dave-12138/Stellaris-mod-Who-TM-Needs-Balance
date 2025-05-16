@@ -1,0 +1,421 @@
+# 一键 虚空万藏
+utility_component_template = {
+    key = "WTMNB_1ST_KEY"
+    size = small
+    icon = "GFX_ship_part_wtmnb_1st_key"
+    icon_frame = 1
+    power = 5000
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    ship_modifier = {
+        ship_cloaking_detection_add = 10
+        ship_cloaking_strength_add = 10
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 64
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+
+# 二键 千界一乘 ftl
+utility_component_template = {
+    key = "WTMNB_2ND_KEY"
+    size = small
+    icon = "GFX_ship_part_wtmnb_2nd_key"
+    icon_frame = 1
+    power = 5000
+    ftl = yes
+    jumpdrive = yes
+    ship_modifier = {
+        ship_ftl_jumpdrive_range_mult = 10
+        ship_jumpdrive_cooldown_mult = -100
+        ship_windup_mult = -100
+        ship_winddown_mult = -100
+        ship_emergency_ftl_mult = -1
+    }
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 70
+        }
+    }
+    ai_weight = {
+        weight = 50
+    }
+    size_restriction = {
+        wtmnb_fortress
+    }
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    show_tech_unlock_if = { always = no }
+}
+
+# 三键 涤罪七雷
+utility_component_template = {
+    key = "WTMNB_3RD_KEY"
+    size = aux
+    icon = GFX_ship_part_wtmnb_3rd_key
+    icon_frame = 1
+    power = 5000
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 64
+        }
+    }
+
+    scripted_action = {
+        scope = self
+        name = on_wtmnb_fortress_super_fire
+        tooltip = wtmnb_fortress_super_fire_button
+        icon = GFX_fleet_task_wtmnb_fortress_super_fire_action
+        activity_key = wtmnb_fortress_super_fire_activity_key
+        progress_activity_key = wtmnb_fortress_super_fire_progress_activity_key
+        context_menu_name = wtmnb_fortress_super_fire_menu_title
+
+        button_clickable = {
+            is_ship_size = wtmnb_fortress
+            owner = {
+                NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
+            }
+        }
+        button_visible = { is_ship_size = wtmnb_fortress }
+        shortcut = "SHIFT+C"
+
+        possible = {
+            owner = {
+                NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
+            }
+        }
+        finished = {
+            owner = {
+                NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
+            }
+        }
+
+        # slot = 1
+        wait = no
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+# 四键 不知道叫啥
+utility_component_template = {
+    key = "WTMNB_4TH_KEY"
+    size = aux
+    icon = GFX_ship_part_wtmnb_4th_key
+    icon_frame = 1
+    power = 5000
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 64
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+
+# 五键 万物休眠
+utility_component_template = {
+    key = "WTMNB_5TH_KEY"
+    size = medium
+    icon = "GFX_ship_part_wtmnb_5th_key"
+    icon_frame = 1
+    power = 5000
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 5
+        }
+    }
+    size_restriction = {
+        wtmnb_fortress
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    hostile_aura = {
+        name = "aura_stagnate"
+        radius = 20000
+        apply_on = ships
+        stack_info = {
+            id = "aura_stagnate"
+            priority = 1
+        }
+        modifier = {
+            ship_disengage_chance_reduction = 0.2
+            ship_evasion_add = -200000
+            ship_speed_reduction = 9
+            ship_windup_mult = 200
+            ship_accuracy_mult = -20
+        }
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            ship_effect = {
+                entity = "ship_aura_negative_entity"
+                dynamic_scale = no
+            }
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+
+# 六键 黑渊白花
+utility_component_template = {
+    key = "WTMNB_6TH_KEY"
+    size = aux
+    icon = GFX_ship_part_wtmnb_6th_key
+    icon_frame = 1
+    power = 5000
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 64
+        }
+    }
+    friendly_aura = {
+        name = "aura_white_flower"
+        radius = 20000
+        apply_on = ships
+        system_wide = yes
+        stack_info = {
+            id = aura_white_flower
+            priority = 20
+        }
+        modifier = {
+            ship_hull_regen_add_static = 2000
+            ship_armor_regen_add_static = 2000
+            ship_shield_regen_add_static = 2000
+        }
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            ship_effect = {
+                entity = "ship_aura_positive_entity"
+                dynamic_scale = no
+            }
+        }
+    }
+    scripted_action = {
+        scope = self
+        name = on_wtmnb_fortress_switch_shipyard
+        tooltip = wtmnb_fortress_switch_shipyard_button
+        icon = GFX_order_button_wtmnb_swtich_shipyard
+        activity_key = wtmnb_fortress_switch_shipyard_activity_key
+        context_menu_name = wtmnb_fortress_switch_shipyard_menu_title
+
+        button_clickable = { is_ship_size = wtmnb_fortress }
+        button_visible = { is_ship_size = wtmnb_fortress }
+        shortcut = "SHIFT+B"
+
+        # slot = 1
+        wait = no
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+
+# 七键 天火圣裁
+utility_component_template = {
+    key = "WTMNB_7TH_KEY"
+    size = aux
+    icon = GFX_ship_part_wtmnb_destructor
+    icon_frame = 1
+    power = 5000
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 64
+        }
+    }
+    modifier = {
+        # custom_tooltip = "can_molt_planet"
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+
+# 八键 羽渡尘
+utility_component_template = {
+    key = "WTMNB_8TH_KEY"
+    size = aux
+    icon = GFX_ship_part_wtmnb_8th_key
+    icon_frame = 1
+    power = 5000
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 64
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+
+# 九键 伊甸之星
+utility_component_template = {
+    key = "WTMNB_9TH_KEY"
+    size = medium
+    icon = "GFX_ship_part_eden_star"
+    icon_frame = 1
+    power = 5000
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 5
+        }
+    }
+    size_restriction = {
+        wtmnb_fortress
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    friendly_aura = {
+        name = "aura_eden_star"
+        radius = 20000
+        apply_on = ships
+        system_wide = yes
+        stack_info = {
+            id = eden_star
+            priority = 20
+        }
+        modifier = {
+            ship_evasion_add = 1000
+            ship_evasion_mult = 1000
+            ship_speed_mult = 100000
+            ship_orbital_bombardment_mult = 10000
+            ship_windup_mult = -2
+            ship_ftl_jumpdrive_range_mult = 7.5
+            ship_jumpdrive_cooldown_mult = -2
+            ship_armor_penetration_mult = 5
+            ship_shield_penetration_mult = 5
+        }
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            ship_effect = {
+                entity = "ship_aura_positive_entity"
+                dynamic_scale = no
+            }
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}
+
+# 11键 犹大
+utility_component_template = {
+    key = "WTMNB_11TH_KEY"
+    size = medium
+    icon = "GFX_ship_part_Oath_of_Judah"
+    icon_frame = 1
+    power = 5000
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 5
+        }
+    }
+    size_restriction = {
+        wtmnb_fortress
+    }
+    component_set = "WTMNB_GRAND_KEY"
+    prerequisites = {
+        "tech_wtmnb_fortress"
+    }
+    hostile_aura = {
+        name = "aura_judah"
+        radius = 20000
+        apply_on = ships
+        stack_info = {
+            id = "aura_judah"
+            priority = 1
+        }
+        modifier = {
+            ship_hull_damage_mult = -200
+            ship_fire_rate_mult = -2000
+            ship_armor_penetration_mult = -5
+            ship_shield_penetration_mult = -5
+            ship_cloaking_strength_add = -10
+        }
+        damage_per_day = {
+            shield_damage = 100000
+            damage = {
+                min = 100000
+                max = 200000
+            }
+            armor_penetration = 1
+            accuracy = 1
+        }
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            ship_effect = {
+                entity = "ship_aura_negative_entity"
+                dynamic_scale = no
+            }
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    show_tech_unlock_if = { always = no }
+}

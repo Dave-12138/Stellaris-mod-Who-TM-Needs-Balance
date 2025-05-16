@@ -1,68 +1,79 @@
 on_planet_bombarded = {
-	events = {
-		wtmnb.1010
-		wtmnb.1000
-	}
+    events = {
+        wtmnb.1010
+        wtmnb.1000
+    }
 }
 
 on_bi_yearly_pulse_country = {
-	events = {
-		#联邦锁团结
-		wtmnb.2
-	}
+    events = {
+        #联邦锁团结
+        wtmnb.2
+    }
 }
 
 #巨像
 on_destroy_planet_with_WTMNB_WEAPON_W = {
-	events = {
-		wtmnb_colossus.1000
-	}
+    events = {
+        wtmnb_colossus.1000
+    }
 }
 
 on_leader_spawned = {
-	events = {
-		#新生成的领袖加特质
-		wtmnb.6
-	}
+    events = {
+        #新生成的领袖加特质
+        wtmnb.6
+    }
 }
 
 on_ruler_created = {
-	events = {
-		# 统治者
-		wtmnb.6
-	}
+    events = {
+        # 统治者
+        wtmnb.6
+    }
 }
 
 on_ship_destroyed_victim = {
-	events = {
-		# 崩坏裂变弹
-		wtmnb.2000
-	}
+    events = {
+        # 崩坏裂变弹
+        wtmnb.2000
+    }
 }
 
 # This = owner of fleet
 # From = disbanded fleet
 on_fleet_disbanded = {
-	events = {
-		# 崩坏裂变弹 手动引爆
-		wtmnb.2002
-	}
+    events = {
+        # 崩坏裂变弹 手动引爆
+        wtmnb.2002
+    }
 }
 
 on_ship_quantum_catapult = {
-	events = {
-		# 弹射进神恩结界
-		wtmnb.3000
-	}
+    events = {
+        # 弹射进神恩结界
+        wtmnb.3000
+    }
 }
 
 on_jump_drive = {
-	events = {
-		# 跃迁进神恩结界
-		wtmnb.3000
-	}
+    events = {
+        # 跃迁进神恩结界
+        wtmnb.3000
+    }
 }
 
 on_ship_built = {
-	wtmnb.5000
+    events = { wtmnb.5000 }
+}
+on_wtmnb_fortress_switch_shipyard = {
+    events = {
+        wtmnb_colossus.2000
+    }
+}
+
+on_wtmnb_fortress_super_fire = {
+    events = {
+        wtmnb_colossus.3000
+    }
 }

@@ -1,0 +1,34 @@
+namespace = wtmnb_colossus
+# 切换船坞
+fleet_event = {
+    id = wtmnb_colossus.2000
+    trigger = { from = { is_ship_size = wtmnb_fortress } }
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        from.starbase = {
+            if = {
+                limit = { has_starbase_flag = use_beastport }
+                remove_starbase_flag = use_beastport
+                set_ship_construction_type = starbase_shipyard
+            } else = {
+                set_starbase_flag = use_beastport
+                set_ship_construction_type = starbase_beastport
+            }
+        }
+    }
+}
+fleet_event = {
+    id = wtmnb_colossus.3000
+    trigger = { from = { is_ship_size = wtmnb_fortress } }
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        from.owner = {
+            country_event = {
+                id = wtmnb.6000
+                days = 0
+            }
+        }
+    }
+}

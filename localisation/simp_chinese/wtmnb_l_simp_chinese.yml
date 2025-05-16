@@ -501,4 +501,17 @@
 
  sm_wtmnb_starbase_building: "§M$wtmnb_fortress$§!"
  sm_wtmnb_starbase_building_desc: "用于让§M$wtmnb_fortress$§!提供驻港效果\n§L想写全国效果的，结果不生效，只能用事件代替§!\n§B你不该在游戏内看见这几行字§!"
+ ##########
+ # 舰船技能
+ wtmnb_fortress_switch_shipyard_menu_title: "切换船坞"
+ wtmnb_fortress_switch_shipyard_button: "§H$wtmnb_fortress_switch_shipyard_menu_title$类型§!\n当前为§Y[This.GetConstructionType]§!"
+ wtmnb_fortress_switch_shipyard_activity_key: "切换船坞类型"
+
+ wtmnb_fortress_super_fire_menu_title: "超距射击"
+ wtmnb_fortress_super_fire_activity_key: "聚集虚数内能"
+ wtmnb_fortress_super_fire_progress_activity_key: "进行高维瞄准"
+ wtmnb_fortress_super_fire_button: "§H$wtmnb_fortress_super_fire_menu_title$§!\n现在，我赐予各位直视太阳的权力"
+ wtmnb_fortress_super_fire_button_desc: "现在，我赐予各位直视太阳的权力"
+ wtmnb_fortress_super_fire_button_cancel_desc: "现在，我赐予各位直视太阳的权力"
+
 #
