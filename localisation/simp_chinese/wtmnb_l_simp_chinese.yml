@@ -508,10 +508,10 @@
  wtmnb_fortress_switch_shipyard_activity_key: "切换船坞类型"
 
  wtmnb_fortress_super_fire_menu_title: "超距射击"
- wtmnb_fortress_super_fire_activity_key: "聚集虚数内能"
- wtmnb_fortress_super_fire_progress_activity_key: "进行高维瞄准"
- wtmnb_fortress_super_fire_button: "§H$wtmnb_fortress_super_fire_menu_title$§!\n现在，我赐予各位直视太阳的权力"
- wtmnb_fortress_super_fire_button_desc: "现在，我赐予各位直视太阳的权力"
- wtmnb_fortress_super_fire_button_cancel_desc: "现在，我赐予各位直视太阳的权力"
+ wtmnb_fortress_super_fire_activity_key: "进行高维瞄准"
+ wtmnb_fortress_super_fire_progress_activity_key: "聚集虚数内能"
+ wtmnb_fortress_super_fire_button: "§H$wtmnb_fortress_super_fire_menu_title$§!\n[This.GetSuperFireDesc]"
+ wtmnb_fortress_super_fire_button_desc: "§Y现在，我赐予各位直视太阳的权力§!"
+ wtmnb_fortress_super_fire_button_cancel_desc: "再次点击可以§B$WTMNB_OPEN_FIRE_CANCEL$§!"
 
 #

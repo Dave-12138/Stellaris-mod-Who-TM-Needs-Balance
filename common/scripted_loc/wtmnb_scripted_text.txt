@@ -9,3 +9,16 @@ define_text = {
         localization_key = concept_beastport
     }
 }
+
+define_text = {
+    name = GetSuperFireDesc
+    text = {
+        trigger = { owner = { has_special_project = WTMNB_OPEN_FIRE_CANCEL } }
+        localization_key = wtmnb_fortress_super_fire_button_cancel_desc
+    }
+    text = {
+        trigger = { owner = { NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL } } }
+        localization_key = wtmnb_fortress_super_fire_button_desc
+    }
+}
+
