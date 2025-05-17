@@ -34,15 +34,26 @@ trait_wtmnb_stigmata = {
 }
 
 leader_trait_wtmnb_stigmata = {
-    leader_trait_type = veteran
-    inline_script = {
-        script = trait/icon
-        CLASS = leader
-        ICON = "GFX_leader_trait_wtmnb_stigmata"
-        RARITY = paragon
-        COUNCIL = triggered
-        TIER = none
+    leader_trait_type = basic
+    icon = {
+        layer = {
+            icon = "GFX_trait_bg"
+            color = "trait_bg_default"
+        }
+        inline_script = trait/icon_element/rarity_paragon
+        layer = {
+            icon = GFX_leader_trait_wtmnb_stigmata
+            color = "trait_icon_default"
+        }
+        layer = {
+            icon = "GFX_trait_councilor"
+            visible = {
+                is_councilor = yes
+            }
+        }
     }
+    custom_subtitle = leader_trait_wtmnb_stigmata_tip
+    sorting_priority = 230
 
     inline_script = trait/wtmnb_stigmata
 
