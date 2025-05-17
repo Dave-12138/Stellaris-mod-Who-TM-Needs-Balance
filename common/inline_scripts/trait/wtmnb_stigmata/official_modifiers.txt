@@ -1,5 +1,5 @@
 
-pop_demotion_time_mult = -1
+pop_demotion_time_mult = -0.85
 #####
 planet_buildings_cost_mult = -1
 planet_districts_cost_mult = -1

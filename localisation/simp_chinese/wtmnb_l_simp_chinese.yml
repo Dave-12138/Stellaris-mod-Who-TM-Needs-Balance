@@ -346,7 +346,7 @@
 
 
  wtmnb_open_fire_chain_title:0 "$wtmnb_fortress$·超距射击"
- wtmnb_open_fire_chain_desc:0 "我们将通过这个事件链完成一次本该通过$WTMNB_WEAPON$巨像武器完成的工作"
+ wtmnb_open_fire_chain_desc:0 "我们将通过这个事件链，对银河任意一个角落使用$WTMNB_WEAPON$"
  WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§!星系选择"
  WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "决定我们的靶子在§B[This.System.GetName]§!星系"
  WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§B[This.GetName]§!星体选择"
