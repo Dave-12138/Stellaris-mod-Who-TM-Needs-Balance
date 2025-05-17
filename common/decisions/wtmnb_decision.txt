@@ -368,9 +368,9 @@ decision_wtmnb_city = {
             }
 
             # change_pc = pc_wtmnb_city
-            hidden_effect = {
-                clear_deposits = yes
-            }
+            # hidden_effect = {
+            #     clear_deposits = yes
+            # }
         }
         add_deposit = deposit_wtmnb_city
     }

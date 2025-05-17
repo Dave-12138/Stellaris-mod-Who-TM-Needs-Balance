@@ -21,8 +21,10 @@ triggered_planet_modifier = {
             is_scope_type = planet
         }
     }
-    inline_script = trait/wtmnb_stigmata/official_modifiers
+    pop_demotion_time_mult = -0.85
+    planet_crime_mult = -1
 
+    inline_script = trait/wtmnb_stigmata/official_modifiers
 }
 triggered_councilor_modifier = {
     potential = {
