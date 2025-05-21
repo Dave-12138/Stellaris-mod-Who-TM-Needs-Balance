@@ -50,6 +50,7 @@ building_wtmnb_little_safe = {
     }
 
     base_cap_amount = 2
+    planet_limit = 2
 
     potential = {
         exists = owner
@@ -90,6 +91,7 @@ building_wtmnb_produces_multer = {
     }
 
     base_cap_amount = 1
+    planet_limit = 1
 
     potential = {
         exists = owner
@@ -111,6 +113,7 @@ building_wtmnb_produces_multer = {
         country_resource_max_add = 10000
         mult = value:count_any_districts
     }
+
     resources = {
         category = planet_buildings
         cost = {

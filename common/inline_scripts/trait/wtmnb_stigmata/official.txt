@@ -11,6 +11,8 @@ triggered_sector_modifier = {
     inline_script = trait/wtmnb_stigmata/official_modifiers
     ##############
     starbase_upgrade_time_mult = -1
+    starbase_building_build_time_mult = -1
+    starbase_module_build_time_mult = -1
 }
 triggered_planet_modifier = {
     potential = {
@@ -21,7 +23,7 @@ triggered_planet_modifier = {
             is_scope_type = planet
         }
     }
-    pop_demotion_time_mult = -0.85
+    pop_demotion_time_mult = -0.8
     planet_crime_mult = -1
 
     inline_script = trait/wtmnb_stigmata/official_modifiers

@@ -12,7 +12,7 @@
  leader_trait_ruler_wtmnb_dc_r2_desc:0 "这种随和，特别是对性行为的来者不拒，究竟是特殊的变故所致，还是她本性如此呢？"
 
  leader_trait_ruler_wtmnb_dc_r3:0 "妊娠"
- leader_trait_ruler_wtmnb_dc_r3_desc:0 "这位统治者处于显而易见的妊娠状态"
+ leader_trait_ruler_wtmnb_dc_r3_desc:0 "这位统治者处于显而易见的妊娠状态\n预产期[Leader.wtmnb_dc_r3_flag]"
 #########
  decision_wtmnb_dc_create_pop:0 "人工授精"
  decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位预先女体化改造的居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
@@ -31,19 +31,7 @@
  wtmnb_dc.1010.desc:0 "$wtmnb_dc.1000.desc$\n等到群众被疏散，现场只剩下了倒在味道浓厚的混合液体中的§H[dc_r_ruler.GetName]§!"
  wtmnb_dc.1010.a:0 "中出"
 
- wtmnb_dc.1011.desc:0 "$wtmnb_dc.1000.desc$\n等到群众被疏散，现场只剩下了失去意识的§H[dc_r_ruler.GetName]§!"
- wtmnb_dc.1011.a:0 "贴~ "
 
- wtmnb_dc.1020.name:0 " [wtmnb_target.Owner.GetRulerTitle]被当众侵犯 "
- wtmnb_dc.1020.desc.1:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人清醒后不愿提及此事"
- wtmnb_dc.1020.desc.2:0 "$wtmnb_dc.1000.desc$至于失去意识，清醒后似乎仍沉浸在余韵中"
- wtmnb_dc.1020.desc.3:0 "$wtmnb_dc.1000.desc$至于失去意识，当事人目前情绪稳定"
- wtmnb_dc.1020.a:0 "照顾当事人情绪，他人不得再提起——最后我们需要拟定复仇计划"
- wtmnb_dc.1020.b:0 "帮她体面，然后，准备回击"
- wtmnb_dc.1020.c:0 "还有这等好事？"
- wtmnb_dc.1020.d:0 "你等会，你再说一遍当事人什么反应？"
- wtmnb_dc.1020.e:0 "你这魅魔当的实在不合格"
- wtmnb_dc.1020.f:0 "你他妈竟敢动我老婆？？"
 #################
  #魅魔 圣女 魔物娘
 #  wtmnb_species.1.c:0 "$Magical_Bitch$" 
@@ -53,7 +41,5 @@
  opinion_wtmnb_dc_r:0 "性侵"
  
 ##########
- leader_trait_ruler_wtmnb_dc_r_added:0 "§H[This.GetName]§!获得$leader_trait_ruler_wtmnb_dc_r|Y$特质"
- leader_trait_ruler_wtmnb_dc_r2_added:0 "§H[This.GetName]§!获得$leader_trait_ruler_wtmnb_dc_r2|Y$特质"
- leader_trait_ruler_wtmnb_dc_r3_added:0 "§H[This.GetName]§!获得$leader_trait_ruler_wtmnb_dc_r3|Y$特质"
+ wtmnb_dc_r3_leader_desc: "这位领袖是另一位领袖被姦淫而生下的孩子"
 #########

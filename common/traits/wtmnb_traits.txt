@@ -22,7 +22,6 @@ trait_wtmnb_stigmata = {
     modifier = {
         pop_happiness = 1
         planet_jobs_produces_mult = 1.5
-        # pop_demotion_time_mult = -1
         pop_amenities_usage_mult = -1.5
         planet_amenities_add = 1
         army_damage_mult = 1000
@@ -56,7 +55,6 @@ leader_trait_wtmnb_stigmata = {
     sorting_priority = 230
 
     inline_script = trait/wtmnb_stigmata
-
     leader_class = { commander scientist official }
     initial = no
     immortal_leaders = yes

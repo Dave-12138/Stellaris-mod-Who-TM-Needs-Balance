@@ -3,6 +3,5 @@
 
 @little_safe_prod = 100
 
-@trait_sorting_priority_paragon_triggered_none = 230
 
 #

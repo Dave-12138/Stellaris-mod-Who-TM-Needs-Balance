@@ -258,7 +258,7 @@
  wtmnb.2001.b:0 "太虚剑神"
  wtmnb.2001.b.tip:0 "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
 
-
+ wtmnb.4000.desc: "将在[From.GetName]召唤风暴："
 
  wtmnb_colossus.1001.name:0 "月光王座"
  wtmnb_colossus.1001.desc:0 "我们打算在§H[From.GetName]§!进行："
@@ -350,9 +350,9 @@
 
  wtmnb_open_fire_chain_title:0 "$wtmnb_fortress$·超距射击"
  wtmnb_open_fire_chain_desc:0 "我们将通过这个事件链，对银河任意一个角落使用$WTMNB_WEAPON$"
- WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§!星系选择"
- WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "决定我们的靶子在§B[This.System.GetName]§!星系"
- WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§B[This.GetName]§!星体选择"
+ WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§!星§Y系§!选择"
+ WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "确定目标位于§B[This.System.GetName]§!星系"
+ WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§M[This.GetName]§!星§Y体§!选择"
  WTMNB_OPEN_FIRE_PLANET_SELECT_DESC:0 "我们将对§B[This.GetName]§!使用$wtmnb_fortress$"
  WTMNB_OPEN_FIRE_CANCEL:0 "取消发射"
  WTMNB_OPEN_FIRE_CANCEL_DESC:0 "计划有变，我们打算取消这次发射"
@@ -443,6 +443,7 @@
  building_wtmnb_produces_multer_desc: "有10个区划在的话，就相当于有100个人的力量了（？）"
  mod_planet_building_wtmnb_produces_multer_build_speed_mult: "$building_wtmnb_produces_multer$建造速度"
  mod_building_wtmnb_produces_multer_max: "$building_wtmnb_produces_multer$最大建造数量"
+ # wtmnb_fill_workforce_tip: "为行星人口提供§G$@wtmnb_fill_workforce_to_target$/当前人口数-1§!的$MOD_POP_BONUS_WORKFORCE_MULT$"
  ###############
 
  job_ai_wtmnb_master:0 "设备维护工"
