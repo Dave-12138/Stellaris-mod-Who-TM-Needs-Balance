@@ -5,6 +5,10 @@ define_text = {
         trigger = { starbase = { has_starbase_flag = use_beastport } }
         localization_key = concept_beastport
     }
+    text = {
+        trigger = { starbase = { has_starbase_flag = no_shipyard } }
+        localization_key = OFF
+    }
     default = concept_shipyard
 }
 

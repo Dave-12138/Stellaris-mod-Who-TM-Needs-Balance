@@ -16,5 +16,11 @@ wtmnb_starbase_building = {
         ship_orbit_upkeep_mult = -1
 
     }
+    triggered_station_modifier = {
+        potential = {
+            has_starbase_flag = no_shipyard
+        }
+        starbase_shipyard_capacity_add = -1024
+    }
 
 }

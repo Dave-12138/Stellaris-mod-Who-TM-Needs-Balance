@@ -22,13 +22,13 @@ wtmnb_fortress = {
     entity = "star_eater_entity"
 
     base_buildtime = @juggernaut_build_time
-    resources = {
-        category = ships
-        upkeep = {
-            energy = @titan_upkeep_energy
-            alloys = @titan_upkeep_alloys
-        }
-    }
+    # resources = {
+    #     category = ships
+    #     upkeep = {
+    #         energy = @titan_upkeep_energy
+    #         alloys = @titan_upkeep_alloys
+    #     }
+    # }
     components_add_to_cost = no
     combat_size_multiplier = 5
     size_multiplier = 32

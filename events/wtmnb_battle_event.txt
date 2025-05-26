@@ -1,0 +1,40 @@
+namespace = wtmnb
+country_event = {
+    id = wtmnb.8000
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+        is_wtmnb_empire = yes
+        fromfrom = {
+            is_ship_size = wtmnb_fortress
+        }
+    }
+    # This = owner of fleet 1
+    # From = owner of fleet 2
+    # FromFrom = fleet 1
+    # FromFromFrom = fleet 2
+    immediate = {
+        fromfromfrom = {
+            random_owned_ship = { set_timed_ship_flag = { flag = should_survive days = 5 } }
+            every_owned_ship = {
+                limit = { not = { has_ship_flag = should_survive } }
+                destroy_and_spawn_debris_for = root
+            }
+            fleet_event = {
+                id = wtmnb.8001
+                days = 2
+            }
+        }
+    }
+}
+fleet_event = {
+    id = wtmnb.8001
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = { exists = this }
+    immediate = {
+        wtmnb_safe_destroy_fleet = {
+            BY = fromfromfrom
+        }
+    }
+}

@@ -345,33 +345,13 @@ decision_wtmnb_city = {
                 has_component = WTMNB_9TH_KEY
             }
         }
+        is_colonizable = yes
         NOT = {
             has_deposit = deposit_wtmnb_city
         }
     }
     effect = {
 
-        if = {
-            limit = {
-                # 不是：
-                NOR = {
-                    # 居住站
-                    is_planet_class = pc_habitat
-                    # 环
-                    is_planet_class = pc_ringworld_tech_damaged
-                    is_planet_class = pc_ringworld_seam_damaged
-                    is_planet_class = pc_ringworld_habitable_damaged
-                    is_planet_class = pc_ringworld_tech
-                    is_planet_class = pc_ringworld_seam
-                    is_ringworld = yes
-                }
-            }
-
-            # change_pc = pc_wtmnb_city
-            # hidden_effect = {
-            #     clear_deposits = yes
-            # }
-        }
         add_deposit = deposit_wtmnb_city
     }
     ai_weight = {

@@ -59,15 +59,15 @@ ship_design = {
 		}
 		component = {
 			slot = "STRIKE_CRAFT_01"
-			template = "STRIKE_CRAFT_HANGAR_3"
+			template = "AI_STRIKE_CRAFT"
 		}
 		component = {
 			slot = "STRIKE_CRAFT_02"
-			template = "STRIKE_CRAFT_HANGAR_3"
+			template = "AI_STRIKE_CRAFT"
 		}
 		component = {
 			slot = "STRIKE_CRAFT_03"
-			template = "STRIKE_CRAFT_HANGAR_3"
+			template = "AI_STRIKE_CRAFT"
 		}
 	}
 	required_component = "WTMNB_1ST_KEY"

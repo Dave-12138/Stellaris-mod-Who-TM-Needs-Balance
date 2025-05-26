@@ -10,6 +10,11 @@ fleet_event = {
             if = {
                 limit = { has_starbase_flag = use_beastport }
                 remove_starbase_flag = use_beastport
+                set_starbase_flag = no_shipyard
+                set_ship_construction_type = none
+            } else_if = {
+                limit = { has_starbase_flag = no_shipyard }
+                remove_starbase_flag = no_shipyard
                 set_ship_construction_type = starbase_shipyard
             } else = {
                 set_starbase_flag = use_beastport
