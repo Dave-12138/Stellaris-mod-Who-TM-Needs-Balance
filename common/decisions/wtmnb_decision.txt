@@ -18,7 +18,27 @@ decision_wtmnb_create_pop = {
         custom_tooltip = "add_20_pop"
         hidden_effect = {
             random_owned_pop_group = {
-                add_pop_amount = 2000
+                planet = {
+                    if = {
+                        limit = { owner = { is_gestalt = yes } }
+                        create_pop_group = {
+                            pop_group = prev
+                            size = 2000
+                            category = simple_drone
+                        }
+                    } else = {
+                        create_pop_group = {
+                            pop_group = prev
+                            size = 1000
+                            category = specialist
+                        }
+                        create_pop_group = {
+                            pop_group = prev
+                            size = 1000
+                            category = worker
+                        }
+                    }
+                }
             }
         }
     }
@@ -128,7 +148,7 @@ decision_wtmnb_molten = {
             limit = {
                 is_ringworld = yes
             }
-            change_pc = pc_ringworld_tech_damaged
+            change_pc = pc_shattered_ring_habitable
         }
         else = {
             random_list = {
@@ -183,53 +203,6 @@ decision_wtmnb_molten = {
     }
 }
 
-decision_wtmnb_break_border = {
-    enactment_time = 1
-    icon = Eden_wtmnb
-    resources = {
-        category = decisions
-        cost = {
-            energy = 8000
-        }
-    }
-    potential = {
-        is_star = yes
-        solar_system = {
-            any_ship_in_system = {
-                has_component = WTMNB_9TH_KEY
-            }
-        }
-    }
-    allow = {
-        solar_system = {
-            any_neighbor_system = {
-                exists = owner
-                owner = {
-                    has_closed_borders = from
-                }
-            }
-        }
-    }
-    effect = {
-        solar_system = {
-            every_neighbor_system = {
-                limit = {
-                    exists = owner
-                    owner = {
-                        has_closed_borders = from
-                    }
-                }
-                owner = {
-                    set_closed_borders = {
-                        who = from
-                        status = no
-                        forced = 100
-                    }
-                }
-            }
-        }
-    }
-}
 
 decision_wtmnb_11th_shield = {
     enactment_time = 1
@@ -337,6 +310,7 @@ decision_wtmnb_city = {
             energy = 8000
         }
     }
+    owned_planets_only = yes
     potential = {
         is_star = no
         solar_system = {
@@ -345,7 +319,6 @@ decision_wtmnb_city = {
                 has_component = WTMNB_9TH_KEY
             }
         }
-        is_colonizable = yes
         NOT = {
             has_deposit = deposit_wtmnb_city
         }

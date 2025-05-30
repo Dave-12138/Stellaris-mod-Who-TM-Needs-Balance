@@ -5,6 +5,7 @@ country_event = {
 	title = wtmnb_diplomacy.1.name
 	desc = wtmnb_diplomacy.1.desc
 	diplomatic = yes
+	location = event_target:wtmnb_target
 	#图
 	picture_event_data = {
 		portrait = event_target:wtmnb_target.owner.ruler
@@ -26,6 +27,7 @@ country_event = {
 			}
 		}
 		is_dialog_only = yes
+		response_text = wtmnb_diplomacy.1.b
 		custom_tooltip = wtmnb_diplomacy.1.b.desc
 		hidden_effect = {
 			country_event = {
@@ -52,6 +54,7 @@ country_event = {
 			}
 		}
 		is_dialog_only = yes
+		response_text = EMPTY_STRING
 		hidden_effect = {
 			country_event = {
 				id = wtmnb_dc.1000
@@ -110,6 +113,7 @@ country_event = {
 			}
 		}
 		is_dialog_only = yes
+		response_text = wtmnb_diplomacy.1.f
 		hidden_effect = {
 			set_closed_borders = {
 				who = event_target:wtmnb_target.owner
@@ -126,6 +130,7 @@ country_event = {
 			has_closed_borders = event_target:wtmnb_target.owner
 		}
 		is_dialog_only = yes
+		response_text = wtmnb_diplomacy.1.g
 		hidden_effect = {
 			set_closed_borders = {
 				who = event_target:wtmnb_target.owner
@@ -143,12 +148,7 @@ country_event = {
 	title = wtmnb_diplomacy.1000.name
 	desc = {
 		trigger = {
-			event_target:wtmnb_target.owner = {
-				opinion = {
-					who = root
-					value >= 20
-				}
-			}
+			always = no
 		}
 		text = wtmnb_diplomacy.1000.friendly.desc
 	}
@@ -181,9 +181,11 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		custom_tooltip = wtmnb_diplomacy.1000.tip
+	}
 	option = {
 		name = wtmnb_diplomacy.1000.a
-		custom_tooltip = wtmnb_diplomacy.1000.tip
 	}
 	option = {
 		name = wtmnb_diplomacy.1000.b
@@ -193,7 +195,6 @@ country_event = {
 				value > 40
 			}
 		}
-		custom_tooltip = wtmnb_diplomacy.1000.tip
 	}
 	option = {
 		name = wtmnb_diplomacy.1000.c
@@ -203,7 +204,6 @@ country_event = {
 				value < -30
 			}
 		}
-		custom_tooltip = wtmnb_diplomacy.1000.tip
 		custom_tooltip = wtmnb_diplomacy.1000.tip2
 	}
 	option = {
@@ -214,7 +214,6 @@ country_event = {
 				has_ethic = ethic_xenophobe
 			}
 		}
-		custom_tooltip = wtmnb_diplomacy.1000.tip
 	}
 }
 

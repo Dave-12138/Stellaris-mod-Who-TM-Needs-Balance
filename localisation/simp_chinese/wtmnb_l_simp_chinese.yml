@@ -481,20 +481,11 @@
  # mod_job_wtmnb_fooyouist_drone_per_crime: "REPLACE_ME"
  # mod_job_wtmnb_fooyouist_drone_per_crime_desc: "REPLACE_ME"
  ##
- # 原版少了环世界冶金规划？
+ # 原版没有堡垒环
  not_vanilla: "(并非原版)"
- col_ring_foundry:0 "铸造型$col_ring_mix$"
- col_ring_foundry_desc:1 "此环世界区段的每一个角落，都能感受到无数合金铸造厂所散发出的炽热。$not_vanilla$"
-
  col_ring_fortress:0 "驻军型$col_ring_mix$"
- col_ring_fortress_desc:1 "该环世界区段到处充斥着轨道大炮、碉堡、要塞等等防御工事，要想入侵此环世界区段或者发动起义是非常困难的。$not_vanilla$"
-
- col_ring_factory:1 "工业型$col_ring_mix$"
- col_ring_factory_desc:1 "此环世界区段充斥着制造厂、作坊、民用工厂。$not_vanilla$"
-
-
- col_ring_refinery:0 "精炼型$col_ring_mix$"
- col_ring_refinery_desc:1 "此环世界区段的地表已经布满了由管道、炼油厂、酿造厂所组成的广袤的工业网络。所以尽量不要深呼吸。$not_vanilla$"
+ col_ring_fortress_tt:1 "该环世界区段到处充斥着轨道大炮、碉堡、要塞等等防御工事，要想入侵此环世界区段或者发动起义是非常困难的。\n§g$not_vanilla$§!"
+ col_ring_fortress_desc:1 "$col_fortress_desc$"
 
 
 

@@ -334,6 +334,7 @@ utility_component_template = {
             ship_jumpdrive_cooldown_mult = -2
             ship_armor_penetration_mult = 5
             ship_shield_penetration_mult = 5
+            ship_damage_reduction_mult = 2
         }
         graphics = {
             area_effect = {
@@ -391,6 +392,8 @@ utility_component_template = {
             ship_armor_reduction = 10
             ship_hull_mult = -2
             ship_armor_hardening_add = -10
+            ship_damage_reduction_mult=-2
+            ship_damage_reduction_add = -32767
         }
         damage_per_day = {
             shield_damage = 100000

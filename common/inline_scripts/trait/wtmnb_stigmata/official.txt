@@ -4,9 +4,6 @@ triggered_sector_modifier = {
         is_ruler = no
         # leader_class = official
         exists = from
-        from = {
-            is_scope_type = sector
-        }
     }
     inline_script = trait/wtmnb_stigmata/official_modifiers
     ##############
@@ -18,14 +15,11 @@ triggered_planet_modifier = {
     potential = {
         is_ruler = no
         # leader_class = official
-        exists = from
-        from = {
-            is_scope_type = planet
-        }
+        exists = planet
     }
-    pop_demotion_time_mult = -0.8
     planet_crime_mult = -1
-
+    pop_unemployment_demotion_time_mult = -0.5
+    pop_promotion_time_mult = -0.8
     inline_script = trait/wtmnb_stigmata/official_modifiers
 }
 triggered_councilor_modifier = {

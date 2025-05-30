@@ -1,0 +1,7 @@
+wtmnb_civi = {
+    uses_name_list = no
+}
+
+wtmnb_battle = {
+    uses_name_list = no
+}

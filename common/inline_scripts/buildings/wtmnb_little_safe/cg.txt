@@ -7,6 +7,7 @@ triggered_country_modifier = {
     country_base_love_juice_produces_add = @little_safe_prod
     country_base_excellent_slave_produces_add = @little_safe_prod
     country_base_sr_beauty_produces_add = @little_safe_prod
+    mult = $MULT$
 }
 triggered_country_modifier = {
     potential = {
@@ -15,6 +16,7 @@ triggered_country_modifier = {
     }
     country_base_living_tentacles_produces_add = @little_safe_prod
     country_base_obscene_separation_produces_add = @little_safe_prod
+    mult = $MULT$
     # country_base_sr_ten_produces_add = @little_safe_prod
 }
 triggered_country_modifier = {
@@ -25,6 +27,7 @@ triggered_country_modifier = {
     country_base_holylight_crystal_produces_add = @little_safe_prod
     country_base_sr_christian_produces_add = @little_safe_prod
     country_base_sr_beauty_produces_add = @little_safe_prod
+    mult = $MULT$
 }
 
 triggered_country_modifier = {
@@ -37,4 +40,5 @@ triggered_country_modifier = {
     country_base_lust_data_produces_add = @little_safe_prod
     country_base_lust_princess_produces_add = @little_safe_prod
     country_base_lust_metal_produces_add = @little_safe_prod
+    mult = $MULT$
 }

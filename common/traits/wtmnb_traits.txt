@@ -18,11 +18,12 @@ trait_wtmnb_stigmata = {
     prerequisites = {
         "tech_wtmnb_fortress"
     }
+    species_potential_add = { from = { is_wtmnb_empire = yes } }
     # 修正
     modifier = {
         pop_happiness = 1
         planet_jobs_produces_mult = 1.5
-        pop_amenities_usage_mult = -1.5
+        pop_amenities_usage_add = -1.5
         planet_amenities_add = 1
         army_damage_mult = 1000
         army_collateral_damage_mult = 100

@@ -41,12 +41,12 @@ option = {
                 destroy_colony = yes
             }
             destroy_country = yes
-            fire_on_action = {
-                on_action = on_country_destroyed
-                scopes = {
-                    from = event_target:wtmnb_owner
-                }
-            }
+            # fire_on_action = {
+            #     on_action = on_country_destroyed
+            #     scopes = {
+            #         from = root
+            #     }
+            # }
         }
     }
 }

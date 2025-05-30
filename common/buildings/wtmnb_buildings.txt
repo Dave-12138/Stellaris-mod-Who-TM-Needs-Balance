@@ -40,17 +40,19 @@ building_wtmnb_little_safe = {
     category = manufacturing
 
     building_sets = {
+        urban
         generator
         mining
         farming
-        urban
         industrial
         foundry
         factory
     }
 
     base_cap_amount = 2
-    planet_limit = 2
+    planet_limit = {
+        base = 2
+    }
 
     potential = {
         exists = owner
@@ -62,7 +64,12 @@ building_wtmnb_little_safe = {
 
     allow = {
     }
-    inline_script = buildings/wtmnb_little_safe
+    inline_script = {
+        script = buildings/wtmnb_little_safe
+        MULT = value:add_planet_ascension_tier
+    }
+
+
 
     resources = {
         category = planet_buildings
@@ -91,7 +98,9 @@ building_wtmnb_produces_multer = {
     }
 
     base_cap_amount = 1
-    planet_limit = 1
+    planet_limit = {
+        base = 1
+    }
 
     potential = {
         exists = owner

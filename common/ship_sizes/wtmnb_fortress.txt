@@ -1,4 +1,5 @@
 wtmnb_fortress = {
+    ship_category = wtmnb_battle
     is_space_object = yes
     graphical_culture = yes
     formation_priority = @juggernaut_formation_priority
@@ -22,13 +23,6 @@ wtmnb_fortress = {
     entity = "star_eater_entity"
 
     base_buildtime = @juggernaut_build_time
-    # resources = {
-    #     category = ships
-    #     upkeep = {
-    #         energy = @titan_upkeep_energy
-    #         alloys = @titan_upkeep_alloys
-    #     }
-    # }
     components_add_to_cost = no
     combat_size_multiplier = 5
     size_multiplier = 32
@@ -44,14 +38,11 @@ wtmnb_fortress = {
             is_scope_type = starbase
             is_scope_type = megastructure
         }
-        NOT = {
+        NOR = {
             has_starbase_size = wtmnb_fortress
-        }
-    }
-    possible_construction = {
-        OR = {
-            is_scope_type = starbase
-            is_scope_type = megastructure
+            any_owned_starbase = {
+                has_starbase_size = wtmnb_fortress
+            }
         }
     }
     num_target_locators = 0
@@ -59,9 +50,9 @@ wtmnb_fortress = {
     enable_default_design = no
     enable_3dview_in_ship_browser = no
     can_disable = no
-    icon_frame = 7
+    icon_frame = 9
     icon = ship_size_military_64
-    ship_class_icon_frame = 26    #35
+    ship_class_icon_frame = 57
     default_behavior = platform
     # ship_roles = { carrier artillery }
     prerequisites = { "tech_wtmnb_fortress" }

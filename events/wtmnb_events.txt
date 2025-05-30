@@ -311,6 +311,7 @@ country_event = {
     is_triggered_only = yes
     title = space_storm
     desc = wtmnb.4000.desc
+    location = from
     picture = GFX_celestial_storm
     option = { name = CANCEL }
     inline_script = {

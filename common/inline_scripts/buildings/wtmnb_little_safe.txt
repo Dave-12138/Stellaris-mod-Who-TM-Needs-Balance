@@ -1,9 +1,8 @@
-inline_script = buildings/wtmnb_little_safe/vanilla
-
-inline_script = buildings/wtmnb_little_safe/AL
-inline_script = buildings/wtmnb_little_safe/azur
-inline_script = buildings/wtmnb_little_safe/cg
-inline_script = buildings/wtmnb_little_safe/giga
-inline_script = buildings/wtmnb_little_safe/ngnl
-inline_script = buildings/wtmnb_little_safe/touhou
-inline_script = buildings/wtmnb_little_safe/wsg
+inline_script = { script = buildings/wtmnb_little_safe/vanilla MULT = $MULT$ }
+inline_script = { script = buildings/wtmnb_little_safe/AL MULT = $MULT$ }
+inline_script = { script = buildings/wtmnb_little_safe/azur MULT = $MULT$ }
+inline_script = { script = buildings/wtmnb_little_safe/cg MULT = $MULT$ }
+inline_script = { script = buildings/wtmnb_little_safe/giga MULT = $MULT$ }
+inline_script = { script = buildings/wtmnb_little_safe/ngnl MULT = $MULT$ }
+inline_script = { script = buildings/wtmnb_little_safe/touhou MULT = $MULT$ }
+inline_script = { script = buildings/wtmnb_little_safe/wsg MULT = $MULT$ }

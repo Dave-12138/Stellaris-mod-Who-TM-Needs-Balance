@@ -1,6 +1,6 @@
 starbase_level_wtmnb_fortress = {
 	ship_size = wtmnb_fortress
 	potential_home_base = yes
-	level_weight = 5
+	level_weight = 0
 	show_in_outliner = yes
 }

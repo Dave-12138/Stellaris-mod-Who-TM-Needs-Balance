@@ -354,18 +354,10 @@
  mod_job_wtmnb_fooyouist_drone_add:0 "$job_wtmnb_fooyouist_drone$"
 
  #
- col_ring_foundry:0 "$col_foundry$"
- col_ring_foundry_desc:1 "$col_foundry_desc$"
 
  col_ring_fortress:0 "$col_fortress$"
- col_ring_fortress_desc:1 "$col_fortress_desc$"
-
- col_ring_factory:1 "$col_factory$"
- col_ring_factory_desc:1 "$col_factory_desc$"
-
-
- col_ring_refinery:0 "$col_refinery$"
- col_ring_refinery_desc:1 "$col_refinery_desc$"
+ col_ring_fortress_tt:1 "$col_fortress_tt$"
+ col_ring_fortress_desc:1 "$col_fortress_desc$\n §gNot Vanilla§!"
 
  # ship design
  DESIGN_wtmnb_fortress:0 "$wtmnb_fortress$"

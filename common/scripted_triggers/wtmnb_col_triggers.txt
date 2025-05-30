@@ -32,6 +32,32 @@ is_planet_specialized = {
 	}
 }
 
+# 发电
+is_col_generator = {
+	OR = {
+		has_designation = col_generator
+		has_designation = col_habitat_energy
+		has_designation = col_habitat_trade
+		has_designation = col_ring_generator
+		has_designation = col_ring_trade
+	}
+}
+
+# 农
+is_col_farming = {
+	OR = {
+		has_designation = col_farming
+		has_designation = col_ring_farming
+	}
+}
+
+# 矿
+is_col_mining = {
+	OR = {
+		has_designation = col_habitat_mining
+		has_designation = col_mining
+	}
+}
 # 研究
 is_col_research = {
 	OR = {
@@ -45,9 +71,7 @@ is_col_research = {
 # 三产
 is_col_refinery = {
 	OR = {
-		has_designation = col_refinery
-		has_designation = col_habitat_refinery
-		has_designation = col_ring_refinery		#本mod
+		has_designation = col_wilderness_refinery
 	}
 }
 
@@ -55,8 +79,6 @@ is_col_refinery = {
 is_col_foundry = {
 	OR = {
 		has_designation = col_foundry
-		has_designation = col_ring_foundry		# 本mod
-		has_designation = col_lust_metallurgy
 		has_designation = col_ecu_foundry
 		has_designation = col_habitat_foundry
 		has_designation = col_mac_foundry
@@ -85,7 +107,6 @@ is_col_factory = {
 		has_designation = col_mac_factory
 		has_designation = col_ecu_factory
 		has_designation = col_habitat_factory
-		has_designation = col_ring_factory		# 本mod
 	}
 }
 
@@ -126,25 +147,6 @@ is_col_pure = {
 	has_designation = col_faith
 }
 
-# 发电
-is_col_generator = {
-	OR = {
-		has_designation = col_generator
-		has_designation = col_habitat_energy
-		has_designation = col_habitat_trade		# 普通帝国商业代替发电
-		has_designation = col_ring_generator
-		has_designation = col_ring_trade		# 普通帝国商业代替发电
-	}
-}
-
-# 农
-is_col_farming = {
-	OR = {
-		has_designation = col_farming
-		has_designation = col_ring_farming
-	}
-}
-
 # 舰R
 is_col_sh_srse = {
 	has_designation = col_sh_srse
@@ -158,10 +160,3 @@ is_col_wg_pantsu = {
 	has_designation = col_wg_pantsu
 }
 
-# 矿
-is_col_mining = {
-	OR = {
-		has_designation = col_habitat_mining
-		has_designation = col_mining
-	}
-}
