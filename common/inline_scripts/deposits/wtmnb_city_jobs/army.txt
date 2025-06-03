@@ -5,30 +5,11 @@ triggered_planet_modifier = {
         exists = owner
         owner = {
             is_gestalt = no
-            # 排除
-            NOT = {
-                # 突击莉莉
-                has_technology = tech_AL_LilyManagement
-            }
         }
         is_col_fortress = yes
     }
     modifier = {
         job_soldier_per_pop = @job_per_pop
-    }
-}
-# 突击莉莉
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_gestalt = no
-            has_technology = tech_AL_LilyManagement
-        }
-        is_col_fortress = yes
-    }
-    modifier = {
-        job_AL_soldier_per_pop = @job_per_pop
     }
 }
 # 格式塔

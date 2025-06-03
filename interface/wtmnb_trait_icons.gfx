@@ -1,0 +1,8 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_leader_trait_wtmnb_stigmata"
+        texturefile = "gfx/interface/icons/traits/leader_trait_icons/wtmnb_stigmata.dds"
+    }
+
+}

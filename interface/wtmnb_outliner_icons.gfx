@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_wtmnb_dyson_outliner_icon
+        textureFile = "gfx/interface/icons/megastructures/dyson_swarm_2.dds"
+    }
+    spriteType = {
+        name = GFX_wtmnb_love_mark_outliner_icon
+        textureFile = "gfx/interface/icons/megastructures/interstellar_assembly.dds"
+    }
+    spriteType = {
+        name = GFX_wtmnb_foundry_outliner_icon
+        textureFile = "gfx/interface/icons/megastructures/matter_decompressor.dds"
+    }
+    spriteType = {
+        name = GFX_wtmnb_portal_outliner_icon
+        textureFile = "gfx/interface/icons/megastructures/gateway.dds"
+    }
+}

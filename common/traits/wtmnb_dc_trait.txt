@@ -1,36 +1,9 @@
 
-#negative colorful galaxy ruler trait
-leader_trait_ruler_wtmnb_dc_r = {
-	icon = "gfx/interface/icons/traits/trait_blood_superiority.dds"
-	modifier = {
-		country_admin_cap_mult = -0.3
-		planet_jobs_produces_mult = -0.1
-	}
-	leader_class = { commander scientist official }
-	initial = no
-	randomized = no
-	
-}
-
-leader_trait_ruler_wtmnb_dc_r2 = {
-	icon = "gfx/interface/icons/traits/trait_like_being_raised.dds"
-	modifier = {
-		country_admin_cap_mult = 0.3
-		planet_jobs_produces_mult = 0.2
-		planet_crime_add = 15
-	}
-	self_modifier = {
-		leaders_upkeep_mult = -1
-	}
-	leader_class = { commander scientist official }
-	initial = no
-	randomized = no
-	
-}
+#negative(?) colorful galaxy ruler trait
 
 leader_trait_ruler_wtmnb_dc_r3 = {
 	icon = "gfx/interface/icons/traits/trait_body_by_juice.dds"
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.1
 	}
 	self_modifier = {
@@ -39,5 +12,4 @@ leader_trait_ruler_wtmnb_dc_r3 = {
 	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
-	
 }

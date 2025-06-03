@@ -33,11 +33,6 @@ country_event = {
                     50 = {
                     }
                 }
-
-            }
-            add_opinion_modifier = {
-                who = root
-                modifier = opinion_wtmnb_dc_r
             }
         }
         country_event = {
@@ -64,18 +59,6 @@ country_event = {
     after = {
         tooltip = {
             event_target:dc_r_ruler = {
-                if = {
-                    limit = {
-                        has_trait = leader_trait_ruler_wtmnb_dc_r
-                    }
-                    add_trait = leader_trait_ruler_wtmnb_dc_r
-                }
-                else_if = {
-                    limit = {
-                        has_trait = leader_trait_ruler_wtmnb_dc_r2
-                    }
-                    add_trait = leader_trait_ruler_wtmnb_dc_r2
-                }
                 if = {
                     limit = {
                         has_trait = leader_trait_ruler_wtmnb_dc_r3

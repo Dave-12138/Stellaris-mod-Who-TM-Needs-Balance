@@ -24,6 +24,6 @@ is_sos_empire = {
 is_has_lust_trait = {
     always = no
 }
-is_ugly_pop={
+is_ugly_pop = {
     always = yes
 }

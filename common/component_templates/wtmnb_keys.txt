@@ -166,6 +166,7 @@ utility_component_template = {
             ship_speed_reduction = 9
             ship_windup_mult = 200
             ship_accuracy_mult = -20
+            ship_tracking_mult = -20
         }
         graphics = {
             area_effect = {

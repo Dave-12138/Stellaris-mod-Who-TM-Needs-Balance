@@ -24,7 +24,6 @@ trait_pc_wtmnb_city_preference = {
         NYTO
         OTHER
     }
-    sorting_priority = 30
     species_potential_add = {
         can_change_habitability_preference = yes
     }

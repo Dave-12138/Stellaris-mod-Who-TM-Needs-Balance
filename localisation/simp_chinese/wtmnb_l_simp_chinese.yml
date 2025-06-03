@@ -21,6 +21,8 @@
  WTMNB_WEAPON_XXL_DESC:0 "$WTMNB_WEAPON_DESC$"
  SHIP_GRAPHICS_WTMNB_FORTRESS_DESC:0 "$WTMNB_WEAPON_DESC$"
 
+ wtmnb_civi:0 "拟态船"
+ wtmnb_battle:0 "虚数造物"
  wtmnb_science:0 "拟态科研船"
  wtmnb_science_cap:0 "$wtmnb_science$"
  wtmnb_science_plural:0 "$wtmnb_science$"

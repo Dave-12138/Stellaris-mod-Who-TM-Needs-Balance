@@ -129,14 +129,6 @@ is_col_capital = {
 	}
 }
 
-# 舰B
-is_col_azur_city = {
-	OR = {
-		has_designation = azur_city1
-		has_designation = azur_cityG
-		has_designation = azur_cityS
-	}
-}
 
 # 多彩
 is_col_lust = {

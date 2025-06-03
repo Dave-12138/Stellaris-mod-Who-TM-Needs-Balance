@@ -149,6 +149,7 @@ wtmnb_love_mark = {
         planet_possible = {
             custom_tooltip = {
                 fail_text = "not_for_yourself"
+                exists = owner
                 NOT = {
                     owner = {
                         is_same_empire = from

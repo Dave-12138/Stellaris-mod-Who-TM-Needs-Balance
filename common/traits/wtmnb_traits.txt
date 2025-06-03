@@ -31,6 +31,7 @@ trait_wtmnb_stigmata = {
         species_empire_size_mult = 1
         planet_crime_add = -1
     }
+    tags = { leader special }
 }
 
 leader_trait_wtmnb_stigmata = {

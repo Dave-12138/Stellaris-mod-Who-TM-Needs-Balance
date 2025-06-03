@@ -1,0 +1,5 @@
+inline_script = {
+    script = wtmnb/parts/l_$sw$
+    KEY = "$KEY$"
+    PARAM = "$PARAM$"
+}

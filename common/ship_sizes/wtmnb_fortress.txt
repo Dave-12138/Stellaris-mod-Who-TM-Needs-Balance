@@ -40,8 +40,10 @@ wtmnb_fortress = {
         }
         NOR = {
             has_starbase_size = wtmnb_fortress
-            any_owned_starbase = {
-                has_starbase_size = wtmnb_fortress
+            owner = {
+                any_owned_starbase = {
+                    has_starbase_size = wtmnb_fortress
+                }
             }
         }
     }

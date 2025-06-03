@@ -38,38 +38,3 @@ triggered_planet_modifier = {
     }
     job_researcher_per_pop = @job_per_pop
 }
-# 多彩研究部分
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_lust_empire = yes
-        }
-        is_col_research = yes
-    }
-    job_lovejuice_researcher_per_pop = @job_per_pop
-}
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_sos_empire = yes
-        }
-        is_col_research = yes
-    }
-    job_tentacle_researcher_per_pop = @job_per_pop
-}
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_pure_empire = yes
-        }
-        is_col_research = yes
-    }
-    job_holylight_researcher_per_pop = @job_per_pop
-}
-# 多彩研究结束

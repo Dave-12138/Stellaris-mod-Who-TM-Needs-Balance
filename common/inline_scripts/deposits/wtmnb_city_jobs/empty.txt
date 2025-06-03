@@ -1,29 +1,29 @@
 
 ######### 空 #########
 # 普通帝国
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_gestalt = no
-        }
-        is_planet_specialized = no
-    }
-    modifier = {
-        job_ai_wtmnb_cleck_per_pop = @job_per_pop
-    }
-}
+# triggered_planet_modifier = {
+#     potential = {
+#         exists = owner
+#         owner = {
+#             is_gestalt = no
+#         }
+#         is_planet_specialized = no
+#     }
+#     modifier = {
+#         job_ai_wtmnb_cleck_per_pop = @job_per_pop
+#     }
+# }
 # 格式塔
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_gestalt = yes
-        }
-        is_planet_specialized = no
-    }
-    modifier = {
-        job_ai_wtmnb_drone_per_pop = @job_per_pop
-    }
-}
+# triggered_planet_modifier = {
+#     potential = {
+#         exists = owner
+#         owner = {
+#             is_gestalt = yes
+#         }
+#         is_planet_specialized = no
+#     }
+#     modifier = {
+#         job_ai_wtmnb_drone_per_pop = @job_per_pop
+#     }
+# }
 ################

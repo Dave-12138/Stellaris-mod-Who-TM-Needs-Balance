@@ -1,8 +1,8 @@
 inline_script = { script = buildings/wtmnb_little_safe/vanilla MULT = $MULT$ }
-inline_script = { script = buildings/wtmnb_little_safe/AL MULT = $MULT$ }
-inline_script = { script = buildings/wtmnb_little_safe/azur MULT = $MULT$ }
-inline_script = { script = buildings/wtmnb_little_safe/cg MULT = $MULT$ }
-inline_script = { script = buildings/wtmnb_little_safe/giga MULT = $MULT$ }
-inline_script = { script = buildings/wtmnb_little_safe/ngnl MULT = $MULT$ }
-inline_script = { script = buildings/wtmnb_little_safe/touhou MULT = $MULT$ }
-inline_script = { script = buildings/wtmnb_little_safe/wsg MULT = $MULT$ }
+# inline_script = { script = buildings/wtmnb_little_safe/ngnl MULT = $MULT$ }
+inline_script = { script = wtmnb/load_if IF = @spth_card_max_leader KEY = buildings/wtmnb_little_safe/touhou PARAM = "MULT = $MULT$" }
+inline_script = { script = wtmnb/load_if IF = @wsg_mod KEY = buildings/wtmnb_little_safe/wsg PARAM = "MULT = $MULT$" }
+inline_script = { script = wtmnb/load_if IF = @suc_sex_points_to_lv3 KEY = buildings/wtmnb_little_safe/cg PARAM = "MULT = $MULT$" }
+inline_script = { script = wtmnb/load_if IF = @assaultlily_mod KEY = buildings/wtmnb_little_safe/AL PARAM = "MULT = $MULT$" }
+inline_script = { script = wtmnb/load_if IF = @azl_mod KEY = buildings/wtmnb_little_safe/azur PARAM = "MULT = $MULT$" }
+inline_script = { script = wtmnb/load_if IF = @has_gigastructures KEY = buildings/wtmnb_little_safe/giga PARAM = "MULT = $MULT$" }

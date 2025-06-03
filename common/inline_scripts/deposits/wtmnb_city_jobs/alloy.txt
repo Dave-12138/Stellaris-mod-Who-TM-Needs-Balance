@@ -54,45 +54,8 @@ triggered_planet_modifier = {
         owner = {
             is_regular_empire = yes
             is_catalytic_empire = no
-            # 排除多彩
-            is_cg_empire = no
         }
         is_col_foundry = yes
     }
     job_foundry_per_pop = @job_per_pop
 }
-# 多彩合金部分
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_lust_empire = yes
-        }
-        is_col_foundry = yes
-    }
-    job_love_juice_foundry_per_pop = @job_per_pop
-}
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_sos_empire = yes
-        }
-        is_col_foundry = yes
-    }
-    job_tentacle_armor_foundry_per_pop = @job_per_pop
-}
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_pure_empire = yes
-        }
-        is_col_foundry = yes
-    }
-    job_holylight_foundry_per_pop = @job_per_pop
-}
-# 多彩合金部分结束
