@@ -224,9 +224,9 @@ wtmnb_foundry = {
         has_country_flag = wtmnb_order
     }
     possible = {
-        exists = starbase
         custom_tooltip = {
             fail_text = "requires_inside_border"
+            exists = starbase
             is_inside_border = from
         }
         custom_tooltip = {

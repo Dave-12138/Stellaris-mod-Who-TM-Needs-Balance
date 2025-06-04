@@ -31,10 +31,10 @@ triggered_planet_modifier = {
         exists = owner
         owner = {
             is_regular_empire = yes
-            # 排除多彩
-            is_cg_empire = no
         }
         is_col_research = yes
     }
-    job_researcher_per_pop = @job_per_pop
+    job_researcher_physicist_per_pop = @job_per_pop_d3
+    job_researcher_biologist_per_pop = @job_per_pop_d3
+    job_researcher_engineer_per_pop = @job_per_pop_d3
 }
