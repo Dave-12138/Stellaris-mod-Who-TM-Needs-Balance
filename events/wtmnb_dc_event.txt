@@ -23,7 +23,7 @@ country_event = {
                             key = wtmnb_dc_r3_flag
                             days_from_present = 270
                         }
-                        add_trait = leader_trait_ruler_wtmnb_dc_r3
+                        add_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 }
                         leader_event = {
                             id = wtmnb_dc.1100
                             days = 270
@@ -63,7 +63,7 @@ country_event = {
                     limit = {
                         has_trait = leader_trait_ruler_wtmnb_dc_r3
                     }
-                    add_trait = leader_trait_ruler_wtmnb_dc_r3
+                    add_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 }
                 }
             }
         }

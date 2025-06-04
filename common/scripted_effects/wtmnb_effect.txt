@@ -81,7 +81,7 @@ add_leader_trait_wtmnb_stigmata = {
     if = {
         # 特使派去联邦的功能被放到行政官上了，为什么不直接全放给行政官，直接把特使删了呢
         limit = { NOT =  { leader_class = envoy } }
-        add_trait_no_notify = leader_trait_wtmnb_stigmata
+        add_trait = { trait = leader_trait_wtmnb_stigmata show_message = no }
     }
 }
 
