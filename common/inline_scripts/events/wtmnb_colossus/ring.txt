@@ -75,6 +75,26 @@ option = {
                 }
                 upgrade_megastructure_to = ring_world_3_intermediate
             }
+            spawn_megastructure = {
+                type = "dyson_swarm_3"
+                planet = star
+                owner = prevprev
+            }
+            star = {
+                if = {
+                    limit = {
+                        has_deposit_for = shipclass_mining_station
+                    }
+                    create_mining_station = {
+                        owner = root
+                    }
+                }
+                else = {
+                    create_research_station = {
+                        owner = root
+                    }
+                }
+            }
         }
     }
     custom_tooltip = "wtmnb_colossus.1001.x.desc"

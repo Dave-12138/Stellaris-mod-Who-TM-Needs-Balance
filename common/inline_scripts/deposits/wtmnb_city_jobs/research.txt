@@ -34,7 +34,7 @@ triggered_planet_modifier = {
         }
         is_col_research = yes
     }
-    job_researcher_physicist_per_pop = @job_per_pop_d3
-    job_researcher_biologist_per_pop = @job_per_pop_d3
-    job_researcher_engineer_per_pop = @job_per_pop_d3
+    job_physicist_per_pop = @job_per_pop_d3
+    job_biologist_per_pop = @job_per_pop_d3
+    job_engineer_per_pop = @job_per_pop_d3
 }
