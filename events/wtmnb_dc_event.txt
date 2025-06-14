@@ -23,7 +23,7 @@ country_event = {
                             key = wtmnb_dc_r3_flag
                             days_from_present = 270
                         }
-                        add_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 }
+                        add_timed_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 days = 270 }
                         leader_event = {
                             id = wtmnb_dc.1100
                             days = 270
@@ -84,7 +84,7 @@ leader_event = {
                 target = root
                 event_leader = yes
                 set_age = 0
-                skill = 10
+                skill = 8
                 name = random
                 skip_background_generation = yes
                 custom_description = wtmnb_dc_r3_leader_desc
