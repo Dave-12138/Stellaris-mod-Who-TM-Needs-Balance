@@ -77,6 +77,11 @@ on_wtmnb_fortress_super_fire = {
 		wtmnb_colossus.3000
 	}
 }
+on_wtmnb_fortress_super_fire_cancel = {
+	events = {
+		wtmnb_colossus.3001
+	}
+}
 on_ship_order = {
 	events = {
 		wtmnb.7000

@@ -3,93 +3,93 @@ namespace = wtmnb_dc
 
 ###########
 country_event = {
-    id = wtmnb_dc.1000
-    is_triggered_only = yes
-    hide_window = yes
-    immediate = {
-        event_target:wtmnb_target.owner = {
-            ruler = {
-                set_leader_flag = wtmnb_dc_r
-                save_event_target_as = dc_r_ruler
-                random_list = {
-                    50 = {
-                        modifier = {
-                            factor = 0
-                            species = {
-                                is_robotic = yes
-                            }
-                        }
-                        set_saved_date = {
-                            key = wtmnb_dc_r3_flag
-                            days_from_present = 270
-                        }
-                        add_timed_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 days = 270 }
-                        leader_event = {
-                            id = wtmnb_dc.1100
-                            days = 270
-                        }
+	id = wtmnb_dc.1000
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		event_target:wtmnb_target.owner = {
+			ruler = {
+				set_leader_flag = wtmnb_dc_r
+				save_event_target_as = dc_r_ruler
+				random_list = {
+					50 = {
+						modifier = {
+							factor = 0
+							species = {
+								is_robotic = yes
+							}
+						}
+						set_saved_date = {
+							key = wtmnb_dc_r3_flag
+							days_from_present = 270
+						}
+						add_timed_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 days = 270 }
+						leader_event = {
+							id = wtmnb_dc.1100
+							days = 270
+						}
 
-                    }
-                    50 = {
-                    }
-                }
-            }
-        }
-        country_event = {
-            id = wtmnb_dc.1010
-        }
+					}
+					50 = {
+					}
+				}
+			}
+		}
+		country_event = {
+			id = wtmnb_dc.1010
+		}
 
-    }
+	}
 }
 
 #dc_r owner方提醒
 country_event = {
-    id = wtmnb_dc.1010
-    is_triggered_only = yes
-    picture = GFX_evt_CM_daily11
-    show_sound = event_CM_excited02
-    title = wtmnb_dc.1000.name
-    desc = wtmnb_dc.1010.desc
-    option = {
-        name = wtmnb_dc.1010.a
-        add_resource = {
-            influence = 1000
-        }
-    }
-    after = {
-        tooltip = {
-            event_target:dc_r_ruler = {
-                if = {
-                    limit = {
-                        has_trait = leader_trait_ruler_wtmnb_dc_r3
-                    }
-                    add_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 }
-                }
-            }
-        }
-    }
+	id = wtmnb_dc.1010
+	is_triggered_only = yes
+	picture = GFX_evt_CM_daily11
+	show_sound = event_CM_excited02
+	title = wtmnb_dc.1000.name
+	desc = wtmnb_dc.1010.desc
+	option = {
+		name = wtmnb_dc.1010.a
+		add_resource = {
+			influence = 1000
+		}
+	}
+	after = {
+		tooltip = {
+			event_target:dc_r_ruler = {
+				if = {
+					limit = {
+						has_trait = leader_trait_ruler_wtmnb_dc_r3
+					}
+					add_trait = { trait = leader_trait_ruler_wtmnb_dc_r3 }
+				}
+			}
+		}
+	}
 }
 
 
 leader_event = {
-    id = wtmnb_dc.1100
-    is_triggered_only = yes
-    hide_window = yes
-    trigger = {
-        has_trait = leader_trait_ruler_wtmnb_dc_r3
-    }
-    immediate = {
-        owner = {
-            clone_leader = {
-                target = root
-                event_leader = yes
-                set_age = 0
-                skill = 8
-                name = random
-                skip_background_generation = yes
-                custom_description = wtmnb_dc_r3_leader_desc
+	id = wtmnb_dc.1100
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_trait = leader_trait_ruler_wtmnb_dc_r3
+	}
+	immediate = {
+		owner = {
+			clone_leader = {
+				target = root
+				event_leader = yes
+				set_age = 0
+				skill = 8
+				name = random
+				skip_background_generation = yes
+				custom_description = wtmnb_dc_r3_leader_desc
 
-            }
-        }
-    }
+			}
+		}
+	}
 }

@@ -81,17 +81,20 @@ utility_component_template = {
 	scripted_action = {
 		scope = self
 		name = on_wtmnb_fortress_super_fire
+		on_cancel = on_wtmnb_fortress_super_fire_cancel
 		tooltip = wtmnb_fortress_super_fire_button
 		icon = GFX_fleet_task_wtmnb_fortress_super_fire_action
 		activity_key = wtmnb_fortress_super_fire_activity_key
 		progress_activity_key = wtmnb_fortress_super_fire_progress_activity_key
 		context_menu_name = wtmnb_fortress_super_fire_menu_title
 
-		# button_clickable = {
-		#     hidden_trigger = {
-		#         is_ship_size = wtmnb_fortress
-		#     }
-		# }
+		button_clickable = {
+			hidden_trigger = {
+				owner = {
+					NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
+				}
+			}
+		}
 		button_visible = { is_ship_size = wtmnb_fortress }
 		shortcut = "SHIFT+C"
 

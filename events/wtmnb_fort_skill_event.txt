@@ -1,44 +1,56 @@
 namespace = wtmnb_colossus
 # 切换船坞
 fleet_event = {
-    id = wtmnb_colossus.2000
-    trigger = { from = { is_ship_size = wtmnb_fortress } }
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        from.starbase = {
-            if = {
-                limit = { has_starbase_flag = use_beastport }
-                remove_starbase_flag = use_beastport
-                set_starbase_flag = no_shipyard
-                set_ship_construction_type = none
-            } else_if = {
-                limit = { has_starbase_flag = no_shipyard }
-                remove_starbase_flag = no_shipyard
-                set_ship_construction_type = starbase_shipyard
-            } else = {
-                set_starbase_flag = use_beastport
-                set_ship_construction_type = starbase_beastport
-            }
-        }
-    }
+	id = wtmnb_colossus.2000
+	trigger = { from = { is_ship_size = wtmnb_fortress } }
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from.starbase = {
+			if = {
+				limit = { has_starbase_flag = use_beastport }
+				remove_starbase_flag = use_beastport
+				set_starbase_flag = no_shipyard
+				set_ship_construction_type = none
+			} else_if = {
+				limit = { has_starbase_flag = no_shipyard }
+				remove_starbase_flag = no_shipyard
+				set_ship_construction_type = starbase_shipyard
+			} else = {
+				set_starbase_flag = use_beastport
+				set_ship_construction_type = starbase_beastport
+			}
+		}
+	}
 }
 fleet_event = {
-    id = wtmnb_colossus.3000
-    trigger = { from = { is_ship_size = wtmnb_fortress } }
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        from.owner = {
-            if = {
-                limit = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
-                end_event_chain = wtmnb_open_fire_chain
-            } else = {
-                country_event = {
-                    id = wtmnb.6000
-                    days = 0
-                }
-            }
-        }
-    }
+	id = wtmnb_colossus.3000
+	trigger = { from = { is_ship_size = wtmnb_fortress } }
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from.owner = {
+			if = {
+				limit = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
+				# end_event_chain = wtmnb_open_fire_chain
+			} else = {
+				country_event = {
+					id = wtmnb.6000
+					days = 0
+				}
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = wtmnb_colossus.3001
+	trigger = { from = { is_ship_size = wtmnb_fortress } }
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from.owner = {
+			end_event_chain = wtmnb_open_fire_chain
+		}
+	}
 }
