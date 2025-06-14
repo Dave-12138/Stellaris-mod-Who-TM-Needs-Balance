@@ -1,40 +1,40 @@
 ########## 科研 ##########
 # 蜂巢
 triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_hive_empire = yes
-        }
-        is_col_research = yes
-    }
-    job_brain_drone_physicist_per_pop = @job_per_pop_d3
-    job_brain_drone_biologist_per_pop = @job_per_pop_d3
-    job_brain_drone_engineer_per_pop = @job_per_pop_d3
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+		is_col_research = yes
+	}
+	job_brain_drone_physicist_per_pop = @job_per_pop_d3
+	job_brain_drone_biologist_per_pop = @job_per_pop_d3
+	job_brain_drone_engineer_per_pop = @job_per_pop_d3
 }
 # 机械
 triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_machine_empire = yes
-        }
-        is_col_research = yes
-    }
-    job_calculator_physicist_per_pop = @job_per_pop_d3
-    job_calculator_biologist_per_pop = @job_per_pop_d3
-    job_calculator_engineer_per_pop = @job_per_pop_d3
+	potential = {
+		exists = owner
+		owner = {
+			is_machine_empire = yes
+		}
+		is_col_research = yes
+	}
+	job_calculator_physicist_per_pop = @job_per_pop_d3
+	job_calculator_biologist_per_pop = @job_per_pop_d3
+	job_calculator_engineer_per_pop = @job_per_pop_d3
 }
 # 普通
 triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_regular_empire = yes
-        }
-        is_col_research = yes
-    }
-    job_physicist_per_pop = @job_per_pop_d3
-    job_biologist_per_pop = @job_per_pop_d3
-    job_engineer_per_pop = @job_per_pop_d3
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+		}
+		is_col_research = yes
+	}
+	job_physicist_per_pop = @job_per_pop_d3
+	job_biologist_per_pop = @job_per_pop_d3
+	job_engineer_per_pop = @job_per_pop_d3
 }

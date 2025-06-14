@@ -115,7 +115,7 @@ is_col_fortress = {
 	OR = {
 		has_designation = col_fortress
 		has_designation = col_habitat_fortress
-		has_designation = col_ring_fortress		#本mod
+		has_designation = col_ring_fortress        #本mod
 	}
 }
 

@@ -1,13 +1,13 @@
 triggered_country_modifier = {
-    potential = {
-        always = no
-    }
-    # 莉莉
-    country_base_AL_magi_crystal_produces_add = @little_safe_prod
-    country_base_AL_magi_crystal_core_produces_add = @little_safe_prod
-    country_base_AL_magi_alloy_produces_add = @little_safe_prod
-    country_base_AL_faith_num_produces_add = @little_safe_prod
-    country_base_AL_arsenal_shop_coin_produces_add = @little_safe_prod
-    country_base_AL_lily_diary_produces_add = @little_safe_prod
-    mult = $MULT$
+	potential = {
+		always = no
+	}
+	# 莉莉
+	country_base_AL_magi_crystal_produces_add = @little_safe_prod
+	country_base_AL_magi_crystal_core_produces_add = @little_safe_prod
+	country_base_AL_magi_alloy_produces_add = @little_safe_prod
+	country_base_AL_faith_num_produces_add = @little_safe_prod
+	country_base_AL_arsenal_shop_coin_produces_add = @little_safe_prod
+	country_base_AL_lily_diary_produces_add = @little_safe_prod
+	mult = $MULT$
 }

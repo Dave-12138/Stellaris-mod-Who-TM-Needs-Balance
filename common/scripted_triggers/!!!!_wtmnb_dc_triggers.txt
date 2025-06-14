@@ -1,29 +1,29 @@
 is_cg_empire = {
-    always = no
+	always = no
 }
 
 is_lust_empire = {
-    always = no
+	always = no
 }
 
 is_pure_empire = {
-    always = no
+	always = no
 }
 
 is_lbm_empire = {
-    always = no
+	always = no
 }
 
 is_ten_empire = {
-    always = no
+	always = no
 }
 
 is_sos_empire = {
-    always = no
+	always = no
 }
 is_has_lust_trait = {
-    always = no
+	always = no
 }
 is_ugly_pop = {
-    always = yes
+	always = yes
 }

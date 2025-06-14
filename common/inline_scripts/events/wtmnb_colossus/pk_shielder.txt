@@ -1,48 +1,48 @@
 #安乐天使
 option = {
-    name = PLANET_KILLER_SHIELDER
-    trigger = {
-        from = {
-            is_planet_can_shield = yes
-        }
-    }
-    hidden_effect = {
-        from = {
-            fire_on_action = {
-                on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
-                scopes = {
-                    from = event_target:wtmnb_planet_killer_ship
-                }
-            }
-        }
-    }
+	name = PLANET_KILLER_SHIELDER
+	trigger = {
+		from = {
+			is_planet_can_shield = yes
+		}
+	}
+	hidden_effect = {
+		from = {
+			fire_on_action = {
+				on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
+				scopes = {
+					from = event_target:wtmnb_planet_killer_ship
+				}
+			}
+		}
+	}
 }
 #安乐天使-所有星体
 option = {
-    name = PLANET_KILLER_SHIELDER
-    trigger = {
-        from = {
-            is_star = yes
-            solar_system = {
-                any_system_planet = {
-                    is_planet_can_shield = yes
-                }
-            }
-        }
-    }
-    hidden_effect = {
-        from.solar_system = {
-            every_system_planet = {
-                limit = {
-                    is_planet_can_shield = yes
-                }
-                fire_on_action = {
-                    on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
-                    scopes = {
-                        from = event_target:wtmnb_planet_killer_ship
-                    }
-                }
-            }
-        }
-    }
+	name = PLANET_KILLER_SHIELDER
+	trigger = {
+		from = {
+			is_star = yes
+			solar_system = {
+				any_system_planet = {
+					is_planet_can_shield = yes
+				}
+			}
+		}
+	}
+	hidden_effect = {
+		from.solar_system = {
+			every_system_planet = {
+				limit = {
+					is_planet_can_shield = yes
+				}
+				fire_on_action = {
+					on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
+					scopes = {
+						from = event_target:wtmnb_planet_killer_ship
+					}
+				}
+			}
+		}
+	}
 }

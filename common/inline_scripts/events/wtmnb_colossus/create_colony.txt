@@ -1,18 +1,18 @@
 #殖民
 option = {
-    name = wtmnb_colossus.1001.v
-    trigger = {
-        from = {
-            NOT = {
-                exists = owner
-            }
-            is_colonizable = yes
-        }
-    }
-    from = {
-        create_colony = {
-            owner = prev
-            species = prev
-        }
-    }
+	name = wtmnb_colossus.1001.v
+	trigger = {
+		from = {
+			NOT = {
+				exists = owner
+			}
+			is_colonizable = yes
+		}
+	}
+	from = {
+		create_colony = {
+			owner = prev
+			species = prev
+		}
+	}
 }

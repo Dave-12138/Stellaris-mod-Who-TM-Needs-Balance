@@ -1,4 +1,4 @@
 inline_script = {
-    script = $KEY$
-    $PARAM$
+	script = $KEY$
+	$PARAM$
 }

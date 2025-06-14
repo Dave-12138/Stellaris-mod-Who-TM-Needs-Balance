@@ -1,4 +1,3 @@
-
 #negative(?) colorful galaxy ruler trait
 
 leader_trait_ruler_wtmnb_dc_r3 = {

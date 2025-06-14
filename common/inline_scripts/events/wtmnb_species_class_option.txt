@@ -1,11 +1,11 @@
 option = {
-    name = $CLASS$
-    hidden_effect = {
-        $PLANET$ = {
-            wtmnb_planet_species = {
-                SPECIES = "$CLASS$"
-            }
-        }
+	name = $CLASS$
+	hidden_effect = {
+		$PLANET$ = {
+			wtmnb_planet_species = {
+				SPECIES = "$CLASS$"
+			}
+		}
 
-    }
+	}
 }

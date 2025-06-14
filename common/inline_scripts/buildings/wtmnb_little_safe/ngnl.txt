@@ -1,8 +1,8 @@
 triggered_country_modifier = {
-    potential = {
-        always = no
-    }
-    # 应该是游戏人生
-    country_base_sr_jingling_produces_add = @little_safe_prod
-    mult = $MULT$
+	potential = {
+		always = no
+	}
+	# 应该是游戏人生
+	country_base_sr_jingling_produces_add = @little_safe_prod
+	mult = $MULT$
 }

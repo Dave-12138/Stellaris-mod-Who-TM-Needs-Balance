@@ -1,4 +1,3 @@
-
 ship_section_template = {
 	key = "WTMNB_FORT_CORE2"
 	ship_size = wtmnb_fortress

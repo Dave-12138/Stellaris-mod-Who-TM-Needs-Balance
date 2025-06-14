@@ -81,7 +81,7 @@ ship_design = {
 	required_component = "WTMNB_9TH_KEY"
 	required_component = "WTMNB_11TH_KEY"
 	required_component = "COMBAT_COMPUTER_WTMNB_CANNON"
-	
+
 }
 
 # 失落帝国没觉醒不能造浮游炮
@@ -91,7 +91,7 @@ ship_design = {
 	section = {
 		template = "WTMNB_CANNON_CANNON"
 		slot = mid
-		
+
 		component = {
 			slot = "TITANIC_GUN_01"
 			template = "WTMNB_WEAPON_T"
@@ -154,5 +154,5 @@ ship_design = {
 	required_component = "SHIP_THRUSTER_WTMNB"
 	required_component = "SENSOR_4"
 	required_component = "COMBAT_COMPUTER_WTMNB_CANNON"
-	
+
 }

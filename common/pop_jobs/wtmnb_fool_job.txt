@@ -1,8 +1,8 @@
 wtmnb_fooyouist = {
 	is_capped_by_modifier = yes
 	category = specialist
-	swappable_data={
-		default={
+	swappable_data = {
+		default = {
 			icon = bureaucrat
 			building_icon = building_embassy
 		}
@@ -19,7 +19,7 @@ wtmnb_fooyouist = {
 	possible = {
 		always = yes
 	}
-	
+
 	country_modifier = {
 		empire_size_branch_office_mult = -0.1
 		empire_size_districts_mult = -0.1
@@ -33,8 +33,8 @@ wtmnb_fooyouist = {
 wtmnb_fooyouist_drone = {
 	is_capped_by_modifier = yes
 	category = complex_drone
-	swappable_data={
-		default={
+	swappable_data = {
+		default = {
 			icon = synapse_drone
 			building_icon = building_embassy
 		}

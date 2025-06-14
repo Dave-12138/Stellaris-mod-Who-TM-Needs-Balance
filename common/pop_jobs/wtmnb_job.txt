@@ -1,69 +1,68 @@
-
 ai_wtmnb_master = {
-    tags = { unity }
-    is_capped_by_modifier = yes
-    category = specialist
-    swappable_data = {
-        default = {
-            icon = ai_wtmnb_master
-            building_icon = building_capital
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-        is_being_purged = no
-        is_being_assimilated = no
-        is_sapient = yes
-    }
-    weight = {
-        weight = @specialist_job_weight
-    }
-    possible = {
-    }
-    resources = {
-        category = planet_jobs
-        upkeep = {
-            energy = 1
-        }
+	tags = { unity }
+	is_capped_by_modifier = yes
+	category = specialist
+	swappable_data = {
+		default = {
+			icon = ai_wtmnb_master
+			building_icon = building_capital
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+	possible = {
+	}
+	resources = {
+		category = planet_jobs
+		upkeep = {
+			energy = 1
+		}
 
-    }
-    country_modifier = {
-        planet_jobs_produces_mult = 10
-        country_produces_mult = 1
-    }
+	}
+	country_modifier = {
+		planet_jobs_produces_mult = 10
+		country_produces_mult = 1
+	}
 }
 
 ai_wtmnb_master_drone = {
-    tags = { unity }
-    is_capped_by_modifier = yes
-    category = complex_drone
-    swappable_data = {
-        default = {
-            icon = ai_wtmnb_master
-            building_icon = building_capital
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-        is_being_purged = no
-        is_being_assimilated = no
-        is_sapient = yes
-    }
-    possible_precalc = can_fill_drone_job
-    weight = {
-        weight = @complex_drone_job_weight
-    }
-    possible = {
-    }
-    resources = {
-        category = planet_jobs
-        upkeep = {
-            energy = 1
-        }
+	tags = { unity }
+	is_capped_by_modifier = yes
+	category = complex_drone
+	swappable_data = {
+		default = {
+			icon = ai_wtmnb_master
+			building_icon = building_capital
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_drone_job
+	weight = {
+		weight = @complex_drone_job_weight
+	}
+	possible = {
+	}
+	resources = {
+		category = planet_jobs
+		upkeep = {
+			energy = 1
+		}
 
-    }
-    country_modifier = {
-        planet_jobs_produces_mult = 10
-        country_produces_mult = 1
-    }
+	}
+	country_modifier = {
+		planet_jobs_produces_mult = 10
+		country_produces_mult = 1
+	}
 }

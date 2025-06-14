@@ -1,39 +1,39 @@
 trait_pc_wtmnb_city_preference = {
-    # randomized = no
-    sorting_priority = 30
-    leader_age_max = 15
-    leader_age_min = 10
-    ideal_planet_class = pc_wtmnb_city
-    allowed_archetypes = {
-        BIOLOGICAL
-        LITHOID
-        MONSTER
-        PARASITE
-        WHORE
-        Magical_Bitch
-        Magical_Girl
-        Lust_Girl
-        INNOCENTSHOJO
-        TENTACLE
-        WARSHIPGIRL
-        SHENHAI
-        TOUHOUGIRLS
-        UNITED_FLEET
-        LILY
-        Schale
-        NYTO
-        OTHER
-    }
-    species_potential_add = {
-        can_change_habitability_preference = yes
-    }
-    icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"
-    modifier = {
-        pc_wtmnb_city_habitability = 1
+	# randomized = no
+	sorting_priority = 30
+	leader_age_max = 15
+	leader_age_min = 10
+	ideal_planet_class = pc_wtmnb_city
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+		MONSTER
+		PARASITE
+		WHORE
+		Magical_Bitch
+		Magical_Girl
+		Lust_Girl
+		INNOCENTSHOJO
+		TENTACLE
+		WARSHIPGIRL
+		SHENHAI
+		TOUHOUGIRLS
+		UNITED_FLEET
+		LILY
+		Schale
+		NYTO
+		OTHER
+	}
+	species_potential_add = {
+		can_change_habitability_preference = yes
+	}
+	icon = "gfx/interface/icons/traits/trait_pc_wtmnb_city_preference.dds"
+	modifier = {
+		pc_wtmnb_city_habitability = 1
 
-    }
+	}
 
-    ai_weight = {
-        weight = 0
-    }
+	ai_weight = {
+		weight = 0
+	}
 }

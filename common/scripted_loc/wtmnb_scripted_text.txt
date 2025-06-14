@@ -1,33 +1,33 @@
 define_text = {
-    name = GetConstructionType
-    random = no
-    text = {
-        trigger = { starbase = { has_starbase_flag = use_beastport } }
-        localization_key = "['concept_beastport']"
-    }
-    text = {
-        trigger = { starbase = { has_starbase_flag = no_shipyard } }
-        localization_key = OFF
-    }
-    default = "['concept_shipyard']"
+	name = GetConstructionType
+	random = no
+	text = {
+		trigger = { starbase = { has_starbase_flag = use_beastport } }
+		localization_key = "['concept_beastport']"
+	}
+	text = {
+		trigger = { starbase = { has_starbase_flag = no_shipyard } }
+		localization_key = OFF
+	}
+	default = "['concept_shipyard']"
 }
 
 define_text = {
-    name = GetSuperFireDesc
-    random = no
-    text = {
-        trigger = { owner = { has_special_project = WTMNB_OPEN_FIRE_CANCEL } }
-        localization_key = wtmnb_fortress_super_fire_button_cancel_desc
-    }
-    default = wtmnb_fortress_super_fire_button_desc
+	name = GetSuperFireDesc
+	random = no
+	text = {
+		trigger = { owner = { has_special_project = WTMNB_OPEN_FIRE_CANCEL } }
+		localization_key = wtmnb_fortress_super_fire_button_cancel_desc
+	}
+	default = wtmnb_fortress_super_fire_button_desc
 }
 
 define_text = {
-    name = GetIconIfCouncil
-    random = no
-    text = {
-        trigger = { is_councilor = yes }
-        localization_key = council_icon_with_bracket
-    }
-    default = EMPTY_STRING
+	name = GetIconIfCouncil
+	random = no
+	text = {
+		trigger = { is_councilor = yes }
+		localization_key = council_icon_with_bracket
+	}
+	default = EMPTY_STRING
 }

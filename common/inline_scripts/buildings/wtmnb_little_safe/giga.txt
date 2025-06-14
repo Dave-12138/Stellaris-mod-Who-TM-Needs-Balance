@@ -1,8 +1,8 @@
 triggered_country_modifier = {
-    potential = {
-        always = yes
-    }
-    # 更卡巨构
-    country_base_sr_solar_energy_produces_add = @little_safe_prod
-    mult = $MULT$
+	potential = {
+		always = yes
+	}
+	# 更卡巨构
+	country_base_sr_solar_energy_produces_add = @little_safe_prod
+	mult = $MULT$
 }

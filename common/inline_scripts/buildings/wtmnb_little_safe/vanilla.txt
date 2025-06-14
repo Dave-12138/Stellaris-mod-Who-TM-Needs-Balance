@@ -1,9 +1,9 @@
 triggered_country_modifier = {
-    country_base_sr_dark_matter_produces_add = @little_safe_prod
-    country_base_sr_living_metal_produces_add = @little_safe_prod
-    country_base_sr_zro_produces_add = @little_safe_prod
-    country_base_nanites_produces_add = @little_safe_prod
-    country_base_minor_artifacts_produces_add = @little_safe_prod
-    country_base_astral_threads_produces_add = @little_safe_prod
-    mult = $MULT$
+	country_base_sr_dark_matter_produces_add = @little_safe_prod
+	country_base_sr_living_metal_produces_add = @little_safe_prod
+	country_base_sr_zro_produces_add = @little_safe_prod
+	country_base_nanites_produces_add = @little_safe_prod
+	country_base_minor_artifacts_produces_add = @little_safe_prod
+	country_base_astral_threads_produces_add = @little_safe_prod
+	mult = $MULT$
 }

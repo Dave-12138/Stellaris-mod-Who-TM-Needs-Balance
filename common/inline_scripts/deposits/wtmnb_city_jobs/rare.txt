@@ -1,31 +1,31 @@
 ######### 天然气/水晶/易爆微粒 #########
 # 非格式塔
 triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_gestalt = no
-        }
-        is_col_refinery = yes
-    }
-    modifier = {
-        job_gas_refiner_per_pop = @job_per_pop_d3
-        job_chemist_per_pop = @job_per_pop_d3
-        job_translucer_per_pop = @job_per_pop_d3
-    }
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+		is_col_refinery = yes
+	}
+	modifier = {
+		job_gas_refiner_per_pop = @job_per_pop_d3
+		job_chemist_per_pop = @job_per_pop_d3
+		job_translucer_per_pop = @job_per_pop_d3
+	}
 }
 # 格式塔
 triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_gestalt = yes
-        }
-        is_col_refinery = yes
-    }
-    modifier = {
-        job_gas_refiner_drone_per_pop = @job_per_pop_d3
-        job_chemist_drone_per_pop = @job_per_pop_d3
-        job_translucer_drone_per_pop = @job_per_pop_d3
-    }
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		is_col_refinery = yes
+	}
+	modifier = {
+		job_gas_refiner_drone_per_pop = @job_per_pop_d3
+		job_chemist_drone_per_pop = @job_per_pop_d3
+		job_translucer_drone_per_pop = @job_per_pop_d3
+	}
 }

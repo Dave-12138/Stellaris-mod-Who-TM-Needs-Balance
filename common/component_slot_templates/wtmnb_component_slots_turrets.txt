@@ -1,4 +1,3 @@
-
 wtmnb_titanic_turret = {
 	size = titanic
 	component = weapon

@@ -1,17 +1,17 @@
 #l星门
 option = {
-    trigger = {
-        from.solar_system = {
-            any_system_megastructure = {
-                is_megastructure_type = lgate_base
-            }
-        }
-    }
-    name = wtmnb_colossus.1001.f
-    custom_tooltip = wtmnb.3.title
-    hidden_effect = {
-        country_event = {
-            id = wtmnb.3
-        }
-    }
+	trigger = {
+		from.solar_system = {
+			any_system_megastructure = {
+				is_megastructure_type = lgate_base
+			}
+		}
+	}
+	name = wtmnb_colossus.1001.f
+	custom_tooltip = wtmnb.3.title
+	hidden_effect = {
+		country_event = {
+			id = wtmnb.3
+		}
+	}
 }

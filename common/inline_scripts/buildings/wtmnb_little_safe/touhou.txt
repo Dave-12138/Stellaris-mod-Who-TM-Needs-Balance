@@ -1,9 +1,9 @@
 triggered_country_modifier = {
-    potential = {
-        always = no
-    }
-    # 好像是东方
-    country_base_sr_fuka_produces_add = @little_safe_prod
-    country_base_sr_lingli_produces_add = @little_safe_prod
-    mult = $MULT$
+	potential = {
+		always = no
+	}
+	# 好像是东方
+	country_base_sr_fuka_produces_add = @little_safe_prod
+	country_base_sr_lingli_produces_add = @little_safe_prod
+	mult = $MULT$
 }

@@ -1,65 +1,65 @@
 trait_wtmnb_stigmata = {
-    cost = 0
-    # 是否可以物种修饰或捏国家时添加
-    initial = yes
-    # 是否可以被电脑国家随机出来
-    randomized = no
-    # 是否可以添加或删除
-    # modification = yes
-    # 提示该特质有领袖buff，无效果
-    # immortal_leaders = yes
-    # 领袖年龄
-    # leader_age_max = 15
-    # leader_age_min = 10
-    # 物种大类，代表可用于的物种
-    allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT MONSTER PARASITE WHORE TENTACLE Magical_Bitch Magical_Girl Lust_Girl INNOCENTSHOJO TENTACLE LOVEMACHINE WARSHIPGIRL SHENHAI TOUHOUGIRLS UNITED_FLEET LILY Schale NYTO OTHER }
-    icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
-    # 物种修饰时的前置科技
-    prerequisites = {
-        "tech_wtmnb_fortress"
-    }
-    species_potential_add = { from = { is_wtmnb_empire = yes } }
-    # 修正
-    modifier = {
-        pop_happiness = 1
-        planet_jobs_produces_mult = 1.5
-        pop_amenities_usage_add = -1.5
-        planet_amenities_add = 1
-        army_damage_mult = 1000
-        army_collateral_damage_mult = 100
-        army_starting_experience_add = 1000
-        species_empire_size_mult = 1
-        planet_crime_add = -1
-    }
-    tags = { leader special }
+	cost = 0
+	# 是否可以物种修饰或捏国家时添加
+	initial = yes
+	# 是否可以被电脑国家随机出来
+	randomized = no
+	# 是否可以添加或删除
+	# modification = yes
+	# 提示该特质有领袖buff，无效果
+	# immortal_leaders = yes
+	# 领袖年龄
+	# leader_age_max = 15
+	# leader_age_min = 10
+	# 物种大类，代表可用于的物种
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT MONSTER PARASITE WHORE TENTACLE Magical_Bitch Magical_Girl Lust_Girl INNOCENTSHOJO TENTACLE LOVEMACHINE WARSHIPGIRL SHENHAI TOUHOUGIRLS UNITED_FLEET LILY Schale NYTO OTHER }
+	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
+	# 物种修饰时的前置科技
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	species_potential_add = { from = { is_wtmnb_empire = yes } }
+	# 修正
+	modifier = {
+		pop_happiness = 1
+		planet_jobs_produces_mult = 1.5
+		pop_amenities_usage_add = -1
+		planet_amenities_add = 1
+		army_damage_mult = 1000
+		army_collateral_damage_mult = 100
+		army_starting_experience_add = 1000
+		species_empire_size_mult = 1
+		planet_crime_add = -1
+	}
+	tags = { leader special }
 }
 
 leader_trait_wtmnb_stigmata = {
-    leader_trait_type = basic
-    icon = {
-        layer = {
-            icon = "GFX_trait_bg"
-            color = "trait_bg_default"
-        }
-        inline_script = trait/icon_element/rarity_paragon
-        layer = {
-            icon = GFX_leader_trait_wtmnb_stigmata
-            color = "trait_icon_default"
-        }
-        layer = {
-            icon = "GFX_trait_councilor"
-            visible = {
-                is_councilor = yes
-            }
-        }
-    }
-    custom_subtitle = leader_trait_wtmnb_stigmata_tip
-    sorting_priority = 230
+	leader_trait_type = basic
+	icon = {
+		layer = {
+			icon = "GFX_trait_bg"
+			color = "trait_bg_default"
+		}
+		inline_script = trait/icon_element/rarity_paragon
+		layer = {
+			icon = GFX_leader_trait_wtmnb_stigmata
+			color = "trait_icon_default"
+		}
+		layer = {
+			icon = "GFX_trait_councilor"
+			visible = {
+				is_councilor = yes
+			}
+		}
+	}
+	custom_subtitle = leader_trait_wtmnb_stigmata_tip
+	sorting_priority = 230
 
-    inline_script = trait/wtmnb_stigmata
-    leader_class = { commander scientist official }
-    initial = no
-    immortal_leaders = yes
-    randomized = no
-    notify_on_gained = no
+	inline_script = trait/wtmnb_stigmata
+	leader_class = { commander scientist official }
+	initial = no
+	immortal_leaders = yes
+	randomized = no
+	notify_on_gained = no
 }

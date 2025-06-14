@@ -1,44 +1,44 @@
 is_wtmnb_fallen_empire = {
-    has_country_flag = wtmnb_order
-    OR = {
-        is_country_type = fallen_empire
-        is_country_type = awakened_fallen_empire
-    }
+	has_country_flag = wtmnb_order
+	OR = {
+		is_country_type = fallen_empire
+		is_country_type = awakened_fallen_empire
+	}
 }
 # this: country
 is_wtmnb_empire = {
-    has_country_flag = wtmnb_order
+	has_country_flag = wtmnb_order
 }
 
-is_planet_can_crack={
-    NOR = {
-        is_star = yes
-        # 有罩子,碎星会有外观bug
-        is_planet_class = pc_shielded
-        is_planet_class = pc_ringworld_shielded
-        is_planet_class = pc_habitat_shielded
-        # 已经碎了
-        is_planet_class = pc_shattered
-        is_planet_class = pc_shattered_2
-        # is_planet_class = pc_ringworld_habitable_damaged
-        # is_planet_class = pc_ringworld_seam_damaged
-        # is_planet_class = pc_ringworld_tech_damaged
-    }
+is_planet_can_crack = {
+	NOR = {
+		is_star = yes
+		# 有罩子,碎星会有外观bug
+		is_planet_class = pc_shielded
+		is_planet_class = pc_ringworld_shielded
+		is_planet_class = pc_habitat_shielded
+		# 已经碎了
+		is_planet_class = pc_shattered
+		is_planet_class = pc_shattered_2
+		# is_planet_class = pc_ringworld_habitable_damaged
+		# is_planet_class = pc_ringworld_seam_damaged
+		# is_planet_class = pc_ringworld_tech_damaged
+	}
 }
 # scope: planet
-is_planet_can_shield={
-    NOR = {
-        is_star = yes
-        # 有罩子
-        is_planet_class = pc_shielded
-        is_planet_class = pc_ringworld_shielded
-        is_planet_class = pc_habitat_shielded
-        # 会扭成一团的环
-        is_planet_class = pc_ringworld_seam
-        is_planet_class = pc_ringworld_tech
-        # 会扭成一团的环II
-        is_planet_class = pc_ringworld_habitable_damaged
-        is_planet_class = pc_ringworld_seam_damaged
-        is_planet_class = pc_ringworld_tech_damaged
-    }
+is_planet_can_shield = {
+	NOR = {
+		is_star = yes
+		# 有罩子
+		is_planet_class = pc_shielded
+		is_planet_class = pc_ringworld_shielded
+		is_planet_class = pc_habitat_shielded
+		# 会扭成一团的环
+		is_planet_class = pc_ringworld_seam
+		is_planet_class = pc_ringworld_tech
+		# 会扭成一团的环II
+		is_planet_class = pc_ringworld_habitable_damaged
+		is_planet_class = pc_ringworld_seam_damaged
+		is_planet_class = pc_ringworld_tech_damaged
+	}
 }

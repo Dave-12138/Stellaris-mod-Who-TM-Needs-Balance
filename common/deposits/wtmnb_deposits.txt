@@ -1,53 +1,53 @@
 deposit_wtmnb_city = {
-    is_for_colonizable = yes
-    icon = d_glitchy_matrix
-    category = deposit_cat_rare
-    planet_modifier = {
-        # district_wtmnb_little_safe_max = 1
-    }
-    inline_script = deposits/wtmnb_city_all
+	is_for_colonizable = yes
+	icon = d_glitchy_matrix
+	category = deposit_cat_rare
+	planet_modifier = {
+		# district_wtmnb_little_safe_max = 1
+	}
+	inline_script = deposits/wtmnb_city_all
 
-    potential = {
-        always = no
-    }
+	potential = {
+		always = no
+	}
 }
 
 
 deposit_wtmnb_city_civic_point = {
-    is_for_colonizable = yes
-    icon = d_engineering_research
-    category = deposit_cat_blockers
-    potential = {
-        always = no
-    }
-    drop_weight = {
-        weight = 0
-    }
-    resources = {
-        category = deposit_blockers
-        cost = {
-            energy = 1
-        }
-    }
-    can_be_cleared = {
-        always = yes
-    }
-    country_modifier = {
-        country_government_civic_points_add = 1
-    }
-    time = 360
+	is_for_colonizable = yes
+	icon = d_engineering_research
+	category = deposit_cat_blockers
+	potential = {
+		always = no
+	}
+	drop_weight = {
+		weight = 0
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1
+		}
+	}
+	can_be_cleared = {
+		always = yes
+	}
+	country_modifier = {
+		country_government_civic_points_add = 1
+	}
+	time = 360
 }
 
 deposit_wtmnb_4th_key_expand = {
-    is_for_colonizable = yes
-    icon = d_4th_planet_expand
-    category = deposit_cat_rare
-    ################
-    potential = {
-        always = no
-    }
-    planet_modifier = {
-        planet_max_districts_add = 10
-        # planet_max_buildings_add = 5
-    }
+	is_for_colonizable = yes
+	icon = d_4th_planet_expand
+	category = deposit_cat_rare
+	################
+	potential = {
+		always = no
+	}
+	planet_modifier = {
+		planet_max_districts_add = 10
+		# planet_max_buildings_add = 5
+	}
 }

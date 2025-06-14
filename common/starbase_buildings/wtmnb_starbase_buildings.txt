@@ -1,21 +1,21 @@
 wtmnb_starbase_building = {
-    icon = GFX_offspring_aura_sb
-    potential = {
-        has_starbase_size = wtmnb_fortress
-    }
-    # triggered_country_modifier = {
-    #     potential = { any_fleet_in_orbit = { is_ship_class = shipclass_constructor } }
-    #     country_produces_mult = 10
-    #     mult = value:count_orbit_shipclass_constructor
-    # }
-    # triggered_country_modifier = {
-    #     potential = { owner = { has_civic = civic_empty_vagrant } }
-    #     starbase_upgrade_time_mult = -0.99
-    # }
-    orbit_modifier = {
-        ship_orbit_upkeep_mult = -1
+	icon = GFX_offspring_aura_sb
+	potential = {
+		has_starbase_size = wtmnb_fortress
+	}
+	# triggered_country_modifier = {
+	#     potential = { any_fleet_in_orbit = { is_ship_class = shipclass_constructor } }
+	#     country_produces_mult = 10
+	#     mult = value:count_orbit_shipclass_constructor
+	# }
+	# triggered_country_modifier = {
+	#     potential = { owner = { has_civic = civic_empty_vagrant } }
+	#     starbase_upgrade_time_mult = -0.99
+	# }
+	orbit_modifier = {
+		ship_orbit_upkeep_mult = -1
 
-    }
+	}
 
 
 }

@@ -1,48 +1,48 @@
 #碎星
 option = {
-    name = PLANET_KILLER_CRACKER
-    trigger = {
-        from = {
-            is_planet_can_crack = yes
-        }
-    }
-    hidden_effect = {
-        from = {
-            fire_on_action = {
-                on_action = on_destroy_planet_with_PLANET_KILLER_CRACKER
-                scopes = {
-                    from = event_target:wtmnb_planet_killer_ship
-                }
-            }
-        }
-    }
+	name = PLANET_KILLER_CRACKER
+	trigger = {
+		from = {
+			is_planet_can_crack = yes
+		}
+	}
+	hidden_effect = {
+		from = {
+			fire_on_action = {
+				on_action = on_destroy_planet_with_PLANET_KILLER_CRACKER
+				scopes = {
+					from = event_target:wtmnb_planet_killer_ship
+				}
+			}
+		}
+	}
 }
 #碎星-所有行星
 option = {
-    name = PLANET_KILLER_CRACKER
-    trigger = {
-        from = {
-            is_star = yes
-            solar_system = {
-                any_system_planet = {
-                    is_planet_can_crack = yes
-                }
-            }
-        }
-    }
-    hidden_effect = {
-        from.solar_system = {
-            every_system_planet = {
-                limit = {
-                    is_planet_can_crack = yes
-                }
-                fire_on_action = {
-                    on_action = on_destroy_planet_with_PLANET_KILLER_CRACKER
-                    scopes = {
-                        from = event_target:wtmnb_planet_killer_ship
-                    }
-                }
-            }
-        }
-    }
+	name = PLANET_KILLER_CRACKER
+	trigger = {
+		from = {
+			is_star = yes
+			solar_system = {
+				any_system_planet = {
+					is_planet_can_crack = yes
+				}
+			}
+		}
+	}
+	hidden_effect = {
+		from.solar_system = {
+			every_system_planet = {
+				limit = {
+					is_planet_can_crack = yes
+				}
+				fire_on_action = {
+					on_action = on_destroy_planet_with_PLANET_KILLER_CRACKER
+					scopes = {
+						from = event_target:wtmnb_planet_killer_ship
+					}
+				}
+			}
+		}
+	}
 }

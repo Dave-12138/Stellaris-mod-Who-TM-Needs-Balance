@@ -1,135 +1,134 @@
 building_wtmnb_meeting_room = {
-    base_buildtime = @b2_time
-    icon = building_embassy
+	base_buildtime = @b2_time
+	icon = building_embassy
 
-    category = government
+	category = government
 
-    building_sets = {
-        government
-        urban
-    }
+	building_sets = {
+		government
+		urban
+	}
 
-    # base_cap_amount = 3
+	# base_cap_amount = 3
 
-    empire_limit = 1
-    potential = {
-        exists = owner
+	empire_limit = 1
+	potential = {
+		exists = owner
 
-        exists = planet
-        planet = { has_deposit = deposit_wtmnb_city }
-    }
-
-
-    allow = {}
-    inline_script = buildings/wtmnb_meeting_room_job
+		exists = planet
+		planet = { has_deposit = deposit_wtmnb_city }
+	}
 
 
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = @b2_minerals
-        }
-        upkeep = {
-            energy = @b2_upkeep
-        }
-    }
+	allow = {}
+	inline_script = buildings/wtmnb_meeting_room_job
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
 }
 building_wtmnb_little_safe = {
-    base_buildtime = @b2_time
-    icon = building_production_center
-    category = manufacturing
+	base_buildtime = @b2_time
+	icon = building_production_center
+	category = manufacturing
 
-    building_sets = {
-        urban
-        generator
-        mining
-        farming
-        industrial
-        foundry
-        factory
-    }
+	building_sets = {
+		urban
+		generator
+		mining
+		farming
+		industrial
+		foundry
+		factory
+	}
 
-    base_cap_amount = 2
-    planet_limit = {
-        base = 2
-    }
+	base_cap_amount = 2
+	planet_limit = {
+		base = 2
+	}
 
-    potential = {
-        exists = owner
+	potential = {
+		exists = owner
 
-        exists = planet
-        planet = { has_deposit = deposit_wtmnb_city }
-    }
-
-
-    allow = {
-    }
-    inline_script = {
-        script = buildings/wtmnb_little_safe
-        MULT = value:add_planet_ascension_tier
-    }
+		exists = planet
+		planet = { has_deposit = deposit_wtmnb_city }
+	}
 
 
+	allow = {
+	}
+	inline_script = {
+		script = buildings/wtmnb_little_safe
+		MULT = value:add_planet_ascension_tier
+	}
 
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = @b2_minerals
-        }
-        upkeep = {
-            energy = @b1_upkeep
-        }
-    }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
 }
 building_wtmnb_produces_multer = {
-    base_buildtime = @b2_time
-    icon = building_mei_1
-    category = manufacturing
+	base_buildtime = @b2_time
+	icon = building_mei_1
+	category = manufacturing
 
-    building_sets = {
-        government
-        generator
-        mining
-        farming
-        urban
-        industrial
-        foundry
-        factory
-    }
+	building_sets = {
+		government
+		generator
+		mining
+		farming
+		urban
+		industrial
+		foundry
+		factory
+	}
 
-    base_cap_amount = 1
-    planet_limit = {
-        base = 1
-    }
+	base_cap_amount = 1
+	planet_limit = {
+		base = 1
+	}
 
-    potential = {
-        exists = owner
-        exists = planet
-        planet = { has_deposit = deposit_wtmnb_city }
-    }
+	potential = {
+		exists = owner
+		exists = planet
+		planet = { has_deposit = deposit_wtmnb_city }
+	}
 
 
-    allow = {
-    }
-    # 给半小时后的自己：这俩作用域不一样，傻逼
-    triggered_planet_modifier = {
-        potential = { exists = owner }
-        planet_jobs_produces_mult = 10
-        mult = value:count_any_districts
-    }
-    triggered_country_modifier = {
-        potential = { exists = owner }
-        country_resource_max_add = 10000
-        mult = value:count_any_districts
-    }
+	allow = {
+	}
+	# 给半小时后的自己：这俩作用域不一样，傻逼
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		planet_jobs_produces_mult = 10
+		mult = value:count_any_districts
+	}
+	triggered_country_modifier = {
+		potential = { exists = owner }
+		country_resource_max_add = 10000
+		mult = value:count_any_districts
+	}
 
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = @b2_minerals
-        }
-        upkeep = {
-            energy = @b1_upkeep
-        }
-    }
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
 }

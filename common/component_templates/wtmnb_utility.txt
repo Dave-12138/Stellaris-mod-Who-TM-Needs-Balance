@@ -1,363 +1,363 @@
 # 反应堆
 utility_component_template = {
-    key = "WTMNB_SCIENCE_REACTOR"
-    size = small
-    icon = "GFX_ship_part_reactor_5"
-    icon_frame = 1
-    power = 2000
-    prerequisites = {
-        "tech_wtmnb_fortress"
-    }
-    component_set = "power_core"
-    size_restriction = {
-        wtmnb_science
-        wtmnb_constructor
-        wtmnb_cannon
-        wtmnb_boomer
-        wtmnb_fortress
-    }
-    potential = { from = { is_wtmnb_empire = yes } }
+	key = "WTMNB_SCIENCE_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = 2000
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		wtmnb_science
+		wtmnb_constructor
+		wtmnb_cannon
+		wtmnb_boomer
+		wtmnb_fortress
+	}
+	potential = { from = { is_wtmnb_empire = yes } }
 }
 # 无烟煤引擎
 utility_component_template = {
-    key = "WTMNB_SCIENCE_REACTOR_POOL"
-    size = small
-    icon = "GFX_ship_part_reactor_1"
-    icon_frame = 1
-    power = 160
-    component_set = "power_core"
-    size_restriction = {
-        wtmnb_boomer
-    }
+	key = "WTMNB_SCIENCE_REACTOR_POOL"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = 160
+	component_set = "power_core"
+	size_restriction = {
+		wtmnb_boomer
+	}
 }
 
 # 普普通通 flt
 utility_component_template = {
-    key = "WTMNB_JUMP_DRIVE"
-    size = small
-    icon = "GFX_ship_part_wtmnb_flt"
-    icon_frame = 1
-    power = 0
-    ftl = yes
-    jumpdrive = yes
-    ship_modifier = {
-        ship_ftl_jumpdrive_range_mult = 10
-        ship_jumpdrive_cooldown_mult = -100
-        ship_windup_mult = -100
-        ship_winddown_mult = -100
-        ship_emergency_ftl_mult = -1
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 70
-        }
-    }
-    ai_weight = {
-        weight = 50
-    }
-    class_restriction = {
-        shipclass_military
-        shipclass_constructor
-        shipclass_colonizer
-        shipclass_science_ship
-        shipclass_transport
-        shipclass_military_special
-    }
-    prerequisites = {
-        "tech_wtmnb_fortress"
-    }
-    potential = { from = { is_wtmnb_empire = yes } }
-    component_set = "ftl_components"
-    show_tech_unlock_if = { always = no }
+	key = "WTMNB_JUMP_DRIVE"
+	size = small
+	icon = "GFX_ship_part_wtmnb_flt"
+	icon_frame = 1
+	power = 0
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = 10
+		ship_jumpdrive_cooldown_mult = -100
+		ship_windup_mult = -100
+		ship_winddown_mult = -100
+		ship_emergency_ftl_mult = -1
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 70
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+	}
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	potential = { from = { is_wtmnb_empire = yes } }
+	component_set = "ftl_components"
+	show_tech_unlock_if = { always = no }
 }
 # 只有跃迁引擎
 utility_component_template = {
-    key = "WTMNB_JUMP_ONLY_DRIVE"
-    size = small
-    icon = "GFX_ship_part_wtmnb_jump"
-    icon_frame = 1
-    power = 0
-    ftl = no
-    jumpdrive = yes
-    ship_modifier = {
-        ship_ftl_jumpdrive_range_mult = 10
-        ship_jumpdrive_cooldown_mult = -100
-        # ship_windup_mult = -100
-        # ship_winddown_mult = -100
-        ship_emergency_ftl_mult = -1
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 70
-        }
-    }
-    ai_weight = {
-        weight = 40
-    }
-    class_restriction = {
-        shipclass_military
-        shipclass_constructor
-        shipclass_colonizer
-        shipclass_science_ship
-        shipclass_transport
-        shipclass_military_special
-    }
-    prerequisites = {
-        "tech_wtmnb_fortress"
-    }
-    component_set = "ftl_components"
-    show_tech_unlock_if = { always = no }
-    potential = { from = { is_wtmnb_empire = yes } }
+	key = "WTMNB_JUMP_ONLY_DRIVE"
+	size = small
+	icon = "GFX_ship_part_wtmnb_jump"
+	icon_frame = 1
+	power = 0
+	ftl = no
+	jumpdrive = yes
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = 10
+		ship_jumpdrive_cooldown_mult = -100
+		# ship_windup_mult = -100
+		# ship_winddown_mult = -100
+		ship_emergency_ftl_mult = -1
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 70
+		}
+	}
+	ai_weight = {
+		weight = 40
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+	}
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "ftl_components"
+	show_tech_unlock_if = { always = no }
+	potential = { from = { is_wtmnb_empire = yes } }
 }
 
 # 作战电脑
 utility_component_template = {
-    key = "COMBAT_COMPUTER_WTMNB_BOOMER"
-    size = small
-    icon = "GFX_ship_part_computer_default"
-    icon_frame = 1
-    power = 0
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 10
-        }
-    }
-    ship_behavior = "colossus"
-    size_restriction = {
-        wtmnb_boomer
-    }
-    component_set = "combat_computers"
-    ai_weight = {
-        weight = 0
-    }
+	key = "COMBAT_COMPUTER_WTMNB_BOOMER"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+	}
+	ship_behavior = "colossus"
+	size_restriction = {
+		wtmnb_boomer
+	}
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = 0
+	}
 }
 
 utility_component_template = {
-    key = "COMBAT_COMPUTER_WTMNB_CANNON"
-    size = small
-    icon = "GFX_ship_part_computer_default"
-    icon_frame = 1
-    power = 10
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 10
-        }
-    }
-    ship_behavior = platform
-    size_restriction = {
-        wtmnb_cannon
-        wtmnb_fortress
-    }
-    component_set = "combat_computers"
-    ai_weight = {
-        weight = 0
-    }
+	key = "COMBAT_COMPUTER_WTMNB_CANNON"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = 10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+	}
+	ship_behavior = platform
+	size_restriction = {
+		wtmnb_cannon
+		wtmnb_fortress
+	}
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = 0
+	}
 }
 
 # 蒸汽推进器
 utility_component_template = {
-    key = "WTMNB_THRUSTER_POOL"
-    size = small
-    icon = "GFX_ship_part_thruster_1"
-    icon_frame = 1
-    power = -20
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 6
-        }
-    }
+	key = "WTMNB_THRUSTER_POOL"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 6
+		}
+	}
 
-    modifier = {
-    }
+	modifier = {
+	}
 
-    prerequisites = { "tech_thrusters_1" }
-    component_set = "thruster_components"
-    ai_weight = {
-        weight = 40
-    }
-    size_restriction = {
-        wtmnb_boomer
-    }
+	prerequisites = { "tech_thrusters_1" }
+	component_set = "thruster_components"
+	ai_weight = {
+		weight = 40
+	}
+	size_restriction = {
+		wtmnb_boomer
+	}
 }
 # 阿拉哈托
 utility_component_template = {
-    key = "SHIP_THRUSTER_WTMNB"
-    size = small
-    icon = "GFX_ship_part_thruster_wtmnb"
-    icon_frame = 1
-    power = 30
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 80
-            sr_dark_matter = 1
-        }
-    }
-    modifier = {
-        ship_base_speed_mult = 125
-        ship_speed_mult = 125
-        ship_evasion_add = 2000
-    }
-    prerequisites = {
-        "tech_wtmnb_fortress"
-    }
-    component_set = "thruster_components"
-    class_restriction = {
-        shipclass_military
-        shipclass_constructor
-        shipclass_colonizer
-        shipclass_science_ship
-        shipclass_transport
-        shipclass_military_special
-        shipclass_starbase
-    }
-    ai_weight = {
-        weight = 60
-    }
-    potential = { from = { is_wtmnb_empire = yes } }
+	key = "SHIP_THRUSTER_WTMNB"
+	size = small
+	icon = "GFX_ship_part_thruster_wtmnb"
+	icon_frame = 1
+	power = 30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			sr_dark_matter = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 125
+		ship_speed_mult = 125
+		ship_evasion_add = 2000
+	}
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "thruster_components"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+	}
+	ai_weight = {
+		weight = 60
+	}
+	potential = { from = { is_wtmnb_empire = yes } }
 }
 
 #光环列表
 # AT力场
 utility_component_template = {
-    key = "SHIP_UNBREAKABLE_SHARE"
-    size = medium
-    icon = "GFX_ship_part_wtmnb_shield_aura"
-    icon_frame = 1
-    power = 20000
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 5
-        }
-    }
-    component_set = "ship_aura_components"
-    prerequisites = {
-        "tech_wtmnb_fortress"
-    }
-    class_restriction = {
-        shipclass_military
-        shipclass_starbase
-        shipclass_military_special
-        shipclass_military_station
-    }
-    friendly_aura = {
-        name = "aura_unbreakable_shield_wide"
-        radius = 20000
-        apply_on = ships
-        system_wide = yes
-        stack_info = {
-            id = unbreakable_shield_wide
-            priority = 20
-        }
-        modifier = {
-            ship_hull_regen_add_perc = 1
-            ship_armor_regen_add_perc = 1
-            ship_evasion_add = 1000
-            ship_evasion_mult = 1000
-            ship_speed_mult = 100000
-            ship_orbital_bombardment_mult = 10000
-            ship_windup_mult = -2
-            ship_ftl_jumpdrive_range_mult = 7.5
-            ship_jumpdrive_cooldown_mult = -2
-        }
-        graphics = {
-            area_effect = {
-                entity = "circle_area_entity"
-                dynamic_scale = yes
-            }
-            ship_effect = {
-                entity = "ship_aura_positive_entity"
-                dynamic_scale = no
-            }
-        }
-    }
-    ai_weight = {
-        weight = 100
-    }
-    potential = { from = { is_wtmnb_empire = yes } }
+	key = "SHIP_UNBREAKABLE_SHARE"
+	size = medium
+	icon = "GFX_ship_part_wtmnb_shield_aura"
+	icon_frame = 1
+	power = 20000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+		}
+	}
+	component_set = "ship_aura_components"
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_starbase
+		shipclass_military_special
+		shipclass_military_station
+	}
+	friendly_aura = {
+		name = "aura_unbreakable_shield_wide"
+		radius = 20000
+		apply_on = ships
+		system_wide = yes
+		stack_info = {
+			id = unbreakable_shield_wide
+			priority = 20
+		}
+		modifier = {
+			ship_hull_regen_add_perc = 1
+			ship_armor_regen_add_perc = 1
+			ship_evasion_add = 1000
+			ship_evasion_mult = 1000
+			ship_speed_mult = 100000
+			ship_orbital_bombardment_mult = 10000
+			ship_windup_mult = -2
+			ship_ftl_jumpdrive_range_mult = 7.5
+			ship_jumpdrive_cooldown_mult = -2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+	potential = { from = { is_wtmnb_empire = yes } }
 }
 
 # 科研船
 utility_component_template = {
-    key = "SCIENCE_SHIELD_AURA"
-    size = medium
-    icon = "GFX_ship_part_wtmnb_scienceship_aura"
-    icon_frame = 1
-    power = 0
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 5
-        }
-    }
-    component_set = "ship_aura_components"
-    prerequisites = {
-        "tech_wtmnb_fortress"
-    }
-    size_restriction = { wtmnb_science wtmnb_constructor }
-    hostile_aura = {
-        name = "aura_science_hostile"
-        system_wide = yes
-        apply_on = ships
-        stack_info = {
-            id = "aura_science_hostile"
-            priority = 1
-        }
-        modifier = {
-            ship_disengage_chance_reduction = 0.2
-            ship_evasion_add = -200000
-            ship_speed_reduction = 9
-            ship_windup_mult = 200
-            ship_accuracy_mult = -20
-            ship_armor_penetration_mult = -5
-            ship_shield_penetration_mult = -5
-            ship_hull_damage_mult = -10
-            ship_weapon_damage = -5
-        }
-        graphics = {
-            area_effect = {
-                entity = "circle_area_entity"
-                dynamic_scale = yes
-            }
-            ship_effect = {
-                entity = "ship_aura_negative_entity"
-                dynamic_scale = no
-            }
-        }
-    }
-    friendly_aura = {
-        name = "aura_science_shield"
-        radius = 20000
-        apply_on = ships
-        system_wide = yes
-        stack_info = {
-            id = aura_science_shield
-            priority = 20
-        }
-        modifier = {
-            ship_evasion_add = 1000
-            ship_evasion_mult = 1000
-        }
-        graphics = {
-            area_effect = {
-                entity = "circle_area_entity"
-                dynamic_scale = yes
-            }
-            ship_effect = {
-                entity = "ship_aura_positive_entity"
-                dynamic_scale = no
-            }
-        }
-    }
-    ai_weight = {
-        weight = 100
-    }
-    show_tech_unlock_if = { always = no }
+	key = "SCIENCE_SHIELD_AURA"
+	size = medium
+	icon = "GFX_ship_part_wtmnb_scienceship_aura"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+		}
+	}
+	component_set = "ship_aura_components"
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	size_restriction = { wtmnb_science wtmnb_constructor }
+	hostile_aura = {
+		name = "aura_science_hostile"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = "aura_science_hostile"
+			priority = 1
+		}
+		modifier = {
+			ship_disengage_chance_reduction = 0.2
+			ship_evasion_add = -200000
+			ship_speed_reduction = 9
+			ship_windup_mult = 200
+			ship_accuracy_mult = -20
+			ship_armor_penetration_mult = -5
+			ship_shield_penetration_mult = -5
+			ship_hull_damage_mult = -10
+			ship_weapon_damage = -5
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	friendly_aura = {
+		name = "aura_science_shield"
+		radius = 20000
+		apply_on = ships
+		system_wide = yes
+		stack_info = {
+			id = aura_science_shield
+			priority = 20
+		}
+		modifier = {
+			ship_evasion_add = 1000
+			ship_evasion_mult = 1000
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+	show_tech_unlock_if = { always = no }
 }
 

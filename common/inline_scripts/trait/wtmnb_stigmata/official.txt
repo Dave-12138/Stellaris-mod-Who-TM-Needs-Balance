@@ -1,57 +1,57 @@
 # official
 triggered_sector_modifier = {
-    potential = {
-        is_ruler = no
-        # leader_class = official
-        exists = from
-        from = {
-            is_scope_type = sector
-        }
-    }
-    inline_script = trait/wtmnb_stigmata/official_modifiers
-    ##############
-    starbase_upgrade_time_mult = -1
-    starbase_building_build_time_mult = -1
-    starbase_module_build_time_mult = -1
+	potential = {
+		is_ruler = no
+		# leader_class = official
+		exists = from
+		from = {
+			is_scope_type = sector
+		}
+	}
+	inline_script = trait/wtmnb_stigmata/official_modifiers
+	##############
+	starbase_upgrade_time_mult = -1
+	starbase_building_build_time_mult = -1
+	starbase_module_build_time_mult = -1
 }
 triggered_planet_modifier = {
-    potential = {
-        is_ruler = no
-        # leader_class = official
-        exists = planet
-    }
-    planet_crime_mult = -1
-    pop_unemployment_demotion_time_mult = -0.5
-    pop_promotion_time_mult = -0.8
-    inline_script = trait/wtmnb_stigmata/official_modifiers
+	potential = {
+		is_ruler = no
+		# leader_class = official
+		exists = planet
+	}
+	planet_crime_mult = -1
+	pop_unemployment_demotion_time_mult = -0.5
+	pop_promotion_time_mult = -0.8
+	inline_script = trait/wtmnb_stigmata/official_modifiers
 }
 triggered_councilor_modifier = {
-    potential = {
-        is_councilor = yes
-        OR = {
-            is_ruler = yes
-            leader_class = official
-        }
-    }
-    first_contact_clues_add = 200
-    first_contact_speed_mult = 100
-    add_base_country_intel = 100
-    ###################
-    deposit_blockers_cost_mult = -1
-    planet_decision_enact_speed_mult = 10000
-    planet_colony_development_speed_mult = 100
-    ##############
-    terraform_speed_mult = 250
-    shipsize_starbase_outpost_build_speed_mult = 500
-    shipclass_military_special_build_speed_mult = 1000
-    shipclass_mining_station_build_speed_mult = 1000
-    shipclass_research_station_build_speed_mult = 1000
-    megastructure_build_speed_mult = 5000
-    ##########
-    spy_network_daily_value_mult = 100
-    intel_decryption_add = 2000
-    intel_encryption_add = 2000
-    intel_gain_speed = 100
-    spy_network_levels_add = 200
-    espionage_operation_speed_mult = 100
+	potential = {
+		is_councilor = yes
+		OR = {
+			is_ruler = yes
+			leader_class = official
+		}
+	}
+	first_contact_clues_add = 200
+	first_contact_speed_mult = 100
+	add_base_country_intel = 100
+	###################
+	deposit_blockers_cost_mult = -1
+	planet_decision_enact_speed_mult = 10000
+	planet_colony_development_speed_mult = 100
+	##############
+	terraform_speed_mult = 250
+	shipsize_starbase_outpost_build_speed_mult = 500
+	shipclass_military_special_build_speed_mult = 1000
+	shipclass_mining_station_build_speed_mult = 1000
+	shipclass_research_station_build_speed_mult = 1000
+	megastructure_build_speed_mult = 5000
+	##########
+	spy_network_daily_value_mult = 100
+	intel_decryption_add = 2000
+	intel_encryption_add = 2000
+	intel_gain_speed = 100
+	spy_network_levels_add = 200
+	espionage_operation_speed_mult = 100
 }

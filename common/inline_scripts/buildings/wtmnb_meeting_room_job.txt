@@ -1,23 +1,23 @@
 @job_fooyouist_count = 1000
 triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_gestalt = no
-        }
-    }
-    modifier = {
-        job_wtmnb_fooyouist_add = @job_fooyouist_count
-    }
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	modifier = {
+		job_wtmnb_fooyouist_add = @job_fooyouist_count
+	}
 }
 triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = {
-            is_gestalt = yes
-        }
-    }
-    modifier = {
-        job_wtmnb_fooyouist_drone_add = @job_fooyouist_count
-    }
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	modifier = {
+		job_wtmnb_fooyouist_drone_add = @job_fooyouist_count
+	}
 }
