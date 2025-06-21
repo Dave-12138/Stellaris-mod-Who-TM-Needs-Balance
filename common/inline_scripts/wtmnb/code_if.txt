@@ -1,0 +1,5 @@
+inline_script = {
+	script = wtmnb/parts/switch
+	EF = "CODE = \"$CODE$\""
+	SW = @[ |$IF$| + 1 - | (|$IF$|) - 1 |]
+}

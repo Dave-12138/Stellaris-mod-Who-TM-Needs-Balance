@@ -1,6 +1,5 @@
 inline_script = {
-	script = wtmnb/parts/switch
-	KEY = $KEY$
-	PARAM = "$PARAM$"
-	sw = @[ ( - 1 * ( ( - 1 * ( ( $IF$ * $IF$ ) / ( ( $IF$ * $IF$ ) + 1 ) ) ) - ( ( ( ( - 1 * ( ( $IF$ * $IF$ ) / ( ( $IF$ * $IF$ ) + 1 ) ) ) % 1 ) + 1 ) % 1 ) ) ) ]
+	script = wtmnb/code_if
+	CODE = "inline_script = { script = $KEY$ $PARAM$ }"
+	IF = $IF$
 }

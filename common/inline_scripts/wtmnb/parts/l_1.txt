@@ -1,4 +1,0 @@
-inline_script = {
-	script = $KEY$
-	$PARAM$
-}
