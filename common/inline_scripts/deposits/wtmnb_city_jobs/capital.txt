@@ -9,7 +9,7 @@ triggered_planet_modifier = {
 		is_capital = yes
 	}
 	modifier = {
-		job_ai_wtmnb_master_per_pop = @job_per_pop
+		job_ai_wtmnb_master_add = 100
 	}
 }
 # 格式塔
@@ -22,6 +22,6 @@ triggered_planet_modifier = {
 		is_capital = yes
 	}
 	modifier = {
-		job_ai_wtmnb_master_drone_per_pop = @job_per_pop
+		job_ai_wtmnb_master_drone_add = 100
 	}
 }

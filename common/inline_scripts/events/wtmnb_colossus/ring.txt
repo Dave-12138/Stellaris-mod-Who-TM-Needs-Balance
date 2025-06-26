@@ -18,14 +18,7 @@ option = {
 						}
 					}
 					any_system_planet = {
-						OR = {
-							is_planet_class = pc_ringworld_tech
-							is_planet_class = pc_ringworld_tech_damaged
-							is_planet_class = pc_ringworld_seam
-							is_planet_class = pc_ringworld_seam_damaged
-							is_planet_class = pc_ringworld_habitable
-							is_planet_class = pc_ringworld_habitable_damaged
-						}
+						is_ringworld = yes
 					}
 				}
 				OR = {
@@ -54,7 +47,9 @@ option = {
 	}
 	from = {
 		solar_system = {
+
 			hidden_effect = {
+
 				every_system_planet = {
 					limit = {
 						NOT = {
@@ -63,35 +58,35 @@ option = {
 					}
 					remove_planet = yes
 				}
-			}
-			spawn_megastructure = {
-				type = "ring_world_2_intermediate"
-				planet = star
-				owner = prevprev
-			}
-			every_system_megastructure = {
-				limit = {
-					is_megastructure_type = ring_world_2
+				spawn_megastructure = {
+					type = "ring_world_2_intermediate"
+					planet = star
+					owner = prevprev
 				}
-				upgrade_megastructure_to = ring_world_3_intermediate
-			}
-			spawn_megastructure = {
-				type = "dyson_swarm_3"
-				planet = star
-				owner = prevprev
-			}
-			star = {
-				if = {
+				every_system_megastructure = {
 					limit = {
-						has_deposit_for = shipclass_mining_station
+						is_megastructure_type = ring_world_2
 					}
-					create_mining_station = {
-						owner = root
-					}
+					upgrade_megastructure_to = ring_world_3_intermediate
 				}
-				else = {
-					create_research_station = {
-						owner = root
+				spawn_megastructure = {
+					type = "dyson_swarm_3"
+					planet = star
+					owner = prevprev
+				}
+				star = {
+					if = {
+						limit = {
+							has_deposit_for = shipclass_mining_station
+						}
+						create_mining_station = {
+							owner = root
+						}
+					}
+					else = {
+						create_research_station = {
+							owner = root
+						}
 					}
 				}
 			}

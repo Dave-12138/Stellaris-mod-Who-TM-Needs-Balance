@@ -217,6 +217,7 @@
  #             |_|
  deposit_wtmnb_city:0 "$pc_wtmnb_city$"
  deposit_wtmnb_city_desc:0 "机械智能化辅助系统占据了一片大多数人不会注意到的地方"
+ d_wtmnb_city_capital_tooltip:0 "基于§Y£job_civilian£$job_civilian_plural$§!或§Y£job_maintenance_drone£$job_maintenance_drone$§!的数量提供产出加成，最多计算400"
 
  deposit_wtmnb_4th_key_expand:0 "第四神之键"
  deposit_wtmnb_4th_key_expand_desc:0 "额外开拓的可利用地区"
@@ -450,7 +451,7 @@
 
  job_ai_wtmnb_master:0 "设备维护工"
  job_ai_wtmnb_master_plural:0 "$job_ai_wtmnb_master$"
- job_ai_wtmnb_master_desc:0 "每天的工作是看着屏幕发呆"
+ job_ai_wtmnb_master_desc:0 "$d_wtmnb_city_capital_tooltip$\n每天的工作是看着屏幕发呆"
  mod_job_ai_wtmnb_master_add:0 "$job_ai_wtmnb_master$岗位"
  mod_job_ai_wtmnb_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master$岗位"
  mod_job_ai_wtmnb_master_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_ai_wtmnb_master£"
