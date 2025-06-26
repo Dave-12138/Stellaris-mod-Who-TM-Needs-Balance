@@ -1,0 +1,27 @@
+
+# 普通帝国
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+		$TRIGGER$ = yes
+	}
+	modifier = {
+		planet_civilians_$RESOURCE$_produces_add = $AMOUNT$
+	}
+}
+# 格式塔
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		$TRIGGER$ = yes
+	}
+	modifier = {
+		planet_maintenance_drones_$RESOURCE$_produces_add = $AMOUNT$
+	}
+}

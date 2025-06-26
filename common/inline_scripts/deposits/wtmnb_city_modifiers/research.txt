@@ -1,0 +1,20 @@
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_research
+	RESOURCE = physics_research
+	AMOUNT = @[wtmnb_city_civilian_product/3]
+}
+
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_research
+	RESOURCE = society_research
+	AMOUNT = @[wtmnb_city_civilian_product/3]
+}
+
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_research
+	RESOURCE = engineering_research
+	AMOUNT = @[wtmnb_city_civilian_product/3]
+}

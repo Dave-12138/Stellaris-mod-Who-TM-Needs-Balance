@@ -1,0 +1,6 @@
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_factory
+	RESOURCE = consumer_goods
+	AMOUNT = @wtmnb_city_civilian_product
+}

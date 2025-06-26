@@ -1,0 +1,24 @@
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_wg_pantsu
+	RESOURCE = sr_pantsu
+	AMOUNT = @wtmnb_city_civilian_product
+}
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_wg_neo_alpha
+	RESOURCE = sr_neo
+	AMOUNT = @[wtmnb_city_civilian_product/2]
+}
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_wg_neo_alpha
+	RESOURCE = sr_alpha
+	AMOUNT = @[wtmnb_city_civilian_product/2]
+}
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_sh_srse
+	RESOURCE = sr_se
+	AMOUNT = @wtmnb_city_civilian_product
+}

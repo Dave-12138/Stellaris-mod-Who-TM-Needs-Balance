@@ -3,5 +3,6 @@
 
 @little_safe_prod = 100
 
+@wtmnb_city_civilian_product = 5
 
 #

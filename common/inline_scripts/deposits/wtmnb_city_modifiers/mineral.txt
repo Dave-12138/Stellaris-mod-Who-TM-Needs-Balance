@@ -1,0 +1,6 @@
+inline_script = {
+	script = deposits/wtmnb_city_modifiers/base
+	TRIGGER = is_col_mining
+	RESOURCE = minerals
+	AMOUNT = @wtmnb_city_civilian_product
+}
