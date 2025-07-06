@@ -56,6 +56,7 @@
 
  WTMNB_FORT_CORE:0 "Moonlight Throne"
  WTMNB_FORT_CORE2:0 "Moonlight Throne (Citadel-shape)"
+ WTMNB_FORT_CORE3:0 "Moonlight Throne (Cetana Titan-shape)"
  swtmnb:0 "$wtmnb_fortress$"
  SHIP_THRUSTER_WTMNB:0 "Alahato"
  SHIP_THRUSTER_WTMNB_DESC:0 "Fly me 2 the moon!"
@@ -362,3 +363,17 @@
  # ship design
  DESIGN_wtmnb_fortress:0 "$wtmnb_fortress$"
  NAME_wtmnb_cannon:0 "$wtmnb_cannon$"
+# skills
+
+ wtmnb_fortress_switch_shipyard_menu_title: "Switch Shipyard"
+ wtmnb_fortress_switch_shipyard_button: "§H$wtmnb_fortress_switch_shipyard_menu_title$ Type§!\nCurrent: §Y[This.GetConstructionType]§!"
+ wtmnb_fortress_switch_shipyard_activity_key: "$wtmnb_fortress_switch_shipyard_menu_title$"
+
+ wtmnb_fortress_super_fire_menu_title: "Ultra-Range Fire"
+ wtmnb_fortress_super_fire_activity_key: "Gather Imaginary Internal Energy"
+ wtmnb_fortress_super_fire_progress_activity_key: "Perform High-Dimensional Aiming"
+ wtmnb_fortress_super_fire_button: "§H$wtmnb_fortress_super_fire_menu_title$§!\n[This.GetSuperFireDesc]"
+ wtmnb_fortress_super_fire_button_desc: "§YNow, I grant you the right to gaze upon the sun!§!"
+ wtmnb_fortress_super_fire_button_cancel_desc: "Click Cancel (Shortcut H) to §B$WTMNB_OPEN_FIRE_CANCEL$§!"
+
+

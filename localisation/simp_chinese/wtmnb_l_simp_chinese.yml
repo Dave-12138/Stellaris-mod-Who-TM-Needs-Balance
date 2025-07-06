@@ -66,6 +66,7 @@
 
  WTMNB_FORT_CORE:0 "月光王座"
  WTMNB_FORT_CORE2:0 "月光王座(擎天堡模型)"
+ WTMNB_FORT_CORE3:0 "月光王座(女王泰坦模型)"
  swtmnb:0 "$wtmnb_fortress$"
  SHIP_THRUSTER_WTMNB:0 "阿拉哈托"
  SHIP_THRUSTER_WTMNB_DESC:0 "Fly me 2 the moon!"
