@@ -339,6 +339,7 @@ utility_component_template = {
 			ship_armor_penetration_mult = 5
 			ship_shield_penetration_mult = 5
 			ship_damage_reduction_mult = 2
+            psionic_aura_resistance_mult = 13
 		}
 		graphics = {
 			area_effect = {
@@ -377,6 +378,9 @@ utility_component_template = {
 	prerequisites = {
 		"tech_wtmnb_fortress"
 	}
+    modifier = {
+        ship_damage_reduction_mult = 200
+    }
 	hostile_aura = {
 		name = "aura_judah"
 		radius = 20000

@@ -14,27 +14,68 @@ country_event = {
     # FromFrom = fleet 1
     # FromFromFrom = fleet 2
     immediate = {
-        fromfromfrom = {
-            random_owned_ship = { set_timed_ship_flag = { flag = should_survive days = 5 } }
-            every_owned_ship = {
-                limit = { not = { has_ship_flag = should_survive } }
-                destroy_and_spawn_debris_for = root
+        fromfrom = {
+            set_disable_at_health = 0.5
+        }
+        solar_system = {
+            every_fleet_in_system = {
+                limit = {
+                    owner = {
+                        is_hostile_to = root
+                    }
+                }
+                random_owned_ship = { set_timed_ship_flag = { flag = should_survive days = 5 } }
+                every_owned_ship = {
+                    limit = { not = { has_ship_flag = should_survive } }
+                    destroy_and_spawn_debris_for = root
+                }
             }
-            fleet_event = {
+            system_event = {
                 id = wtmnb.8001
                 days = 2
+            }
+            set_timed_star_flag = { flag = wtmnb_killing_aura days = 5 }
+        }
+    }
+}
+
+system_event = {
+    id = wtmnb.8001
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+        has_star_flag = wtmnb_killing_aura
+        any_fleet_in_system = { owner = { is_hostile_to = from } }
+    }
+    immediate = {
+        every_fleet_in_system = {
+            limit = {
+                owner = { is_hostile_to = from }
+            }
+            wtmnb_safe_destroy_fleet = {
+                BY = fromfromfrom
+            }
+        }
+        system_event = {
+            id = wtmnb.8001
+            days = 1
+            scopes = {
+                from = from
+                fromfromfrom = fromfromfrom
             }
         }
     }
 }
-fleet_event = {
-    id = wtmnb.8001
+
+ship_event = {
+    id = wtmnb.8010
     is_triggered_only = yes
     hide_window = yes
-    trigger = { exists = this }
+    trigger = {
+        is_ship_size = wtmnb_fortress
+    }
     immediate = {
-        wtmnb_safe_destroy_fleet = {
-            BY = fromfromfrom
-        }
+        repair_ship = yes
+        set_disabled = no
     }
 }

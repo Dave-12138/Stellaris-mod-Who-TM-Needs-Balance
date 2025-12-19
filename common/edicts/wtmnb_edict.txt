@@ -293,7 +293,6 @@ wtmnb_edict_create_ship = {
 					set_fleet_stance = passive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 350
-
 				}
 			}
 		}

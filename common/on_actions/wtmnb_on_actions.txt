@@ -93,3 +93,8 @@ on_entering_battle = {
 		wtmnb.8000
 	}
 }
+on_ship_disabled = {
+    events = {
+        wtmnb.8010
+    }
+}
