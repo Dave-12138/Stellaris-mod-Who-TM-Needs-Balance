@@ -108,6 +108,21 @@ wtmnb_constructor = {
 	is_civilian = yes
 	class = shipclass_constructor
 	construction_type = { starbase_shipyard starbase_beastport }
+
+	scripted_action = {
+		logistic_harvest_resources
+		collect_waystation_stockpile
+		logistic_drop_off_stockpile
+	}
+	construction_capabilities = {
+		starbase
+		mining_station
+		research_station
+		observation_station
+		automated_construction
+		megastructure
+		automated_collection
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
