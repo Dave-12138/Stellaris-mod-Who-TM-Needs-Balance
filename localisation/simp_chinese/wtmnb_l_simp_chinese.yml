@@ -354,9 +354,9 @@
 
  wtmnb_open_fire_chain_title:0 "$wtmnb_fortress$·超距射击"
  wtmnb_open_fire_chain_desc:0 "我们将通过这个事件链，对银河任意一个角落使用$WTMNB_WEAPON$"
- WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§!星§Y系§!选择"
- WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "确定目标位于§B[This.System.GetName]§!星系"
- WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§M[This.GetName]§!星§Y体§!选择"
+ # WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§!星§Y系§!选择"
+ # WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "确定目标位于§B[This.System.GetName]§!星系"
+ WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§M[This.GetName]§!星体选择"
  WTMNB_OPEN_FIRE_PLANET_SELECT_DESC:0 "我们将对§B[This.GetName]§!使用$wtmnb_fortress$"
  WTMNB_OPEN_FIRE_CANCEL:0 "取消发射"
  WTMNB_OPEN_FIRE_CANCEL_DESC:0 "计划有变，我们打算取消这次发射"
@@ -512,5 +512,10 @@
  wtmnb_fortress_super_fire_button: "§H$wtmnb_fortress_super_fire_menu_title$§!\n[This.GetSuperFireDesc]"
  wtmnb_fortress_super_fire_button_desc: "§Y现在，我赐予各位直视太阳的权力§!"
  wtmnb_fortress_super_fire_button_cancel_desc: "点击取消(快捷键H)可以§B$WTMNB_OPEN_FIRE_CANCEL$§!"
+
+
+ wtmnb_fortress_upgrading_mode_menu_title: "改装模式"
+ wtmnb_fortress_upgrading_mode_activity_key: "改装"
+ wtmnb_fortress_upgrading_mode_button: "进入改装模式以更新武器，改装模式下无法移动\n§g设计舰船>点击改装模式>点击空白地图以取消选中>选中$wtmnb_fortress$>点击改装§!"
 
 #

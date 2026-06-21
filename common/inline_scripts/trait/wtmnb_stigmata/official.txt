@@ -21,8 +21,8 @@ triggered_planet_modifier = {
 		exists = planet
 	}
 	planet_crime_mult = -1
-	pop_unemployment_demotion_time_mult = -0.5
-	pop_promotion_time_mult = -0.8
+	# pop_unemployment_demotion_time_mult = -0.5
+	# pop_promotion_time_mult = -0.8
 	inline_script = trait/wtmnb_stigmata/official_modifiers
 }
 triggered_councilor_modifier = {

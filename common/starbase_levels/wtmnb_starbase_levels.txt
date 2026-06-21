@@ -3,4 +3,10 @@ starbase_level_wtmnb_fortress = {
 	potential_home_base = yes
 	level_weight = 0
 	show_in_outliner = yes
+	display_shipyard_button = no
+	module_slots = {
+		1 2 3 4 5 6		# Regular slots
+		spinal_mount_1	# Special slot
+	}
+	building_slots = { 1 2 3 4 5 6 7 8 lower_1 lower_2 lower_3 lower_4 }
 }

@@ -1,42 +1,14 @@
 namespace = wtmnb
 # 星系 选择
-country_event = {
-    id = wtmnb.6000
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = { is_wtmnb_empire = yes }
-    immediate = {
-        begin_event_chain = {
-            event_chain = wtmnb_open_fire_chain
-        }
-        random_owned_ship = {
-            limit = { is_ship_size = wtmnb_fortress }
-            enable_special_project = {
-                name = WTMNB_OPEN_FIRE_CANCEL
-                owner = root
-                location = this
-            }
-        }
-        every_system = {
-            # 万一星系里因为奇奇怪怪的 bug 没恒星
-            if = {
-                limit = { exists = star }
-                star = {
-                    save_event_target_as = wtmnb_pretarget_star
-                }
-            } else = {
-                random_system_planet = {
-                    save_event_target_as = wtmnb_pretarget_star
-                }
-            }
-            enable_special_project = {
-                name = WTMNB_OPEN_FIRE_SYSTEM_SELECT
-                location = event_target:wtmnb_pretarget_star
-                owner = root
-            }
-        }
-    }
-}
+# country_event = {
+#     id = wtmnb.6000
+#     hide_window = yes
+#     is_triggered_only = yes
+#     trigger = { is_wtmnb_empire = yes }
+#     immediate = {
+#
+#     }
+# }
 #星体 选择
 # 手动设置from为country
 system_event = {
@@ -54,10 +26,13 @@ system_event = {
         from = {
             # 补事件链
             # 不能if limit has_event_chain
-            begin_event_chain = { event_chain = wtmnb_open_fire_chain }
-            abort_special_project = {
-                type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+            begin_event_chain = {
+                event_chain = wtmnb_open_fire_chain
+                target = from
             }
+            # abort_special_project = {
+            #     type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+            # }
             # 补取消事件
             if = {
                 limit = { NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL } }
@@ -65,7 +40,7 @@ system_event = {
                     limit = { is_ship_size = wtmnb_fortress }
                     enable_special_project = {
                         name = WTMNB_OPEN_FIRE_CANCEL
-                        owner = root
+                        owner = from
                         location = this
                     }
                 }

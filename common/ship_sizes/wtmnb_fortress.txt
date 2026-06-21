@@ -18,7 +18,9 @@ wtmnb_fortress = {
 		starbase_upgrade_speed_mult = 10000
 		ship_tracking_add = 200
 		ship_evasion_add = 1000
-		starbase_building_capacity_add = 1
+		starbase_building_capacity_add = 8
+		starbase_module_capacity_add = 8
+		planet_max_districts_add = 32
 	}
 	entity = "star_eater_entity"
 
@@ -34,18 +36,19 @@ wtmnb_fortress = {
 		has_country_flag = wtmnb_order
 	}
 	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			is_scope_type = megastructure
-		}
-		NOR = {
-			has_starbase_size = wtmnb_fortress
-			owner = {
-				any_owned_starbase = {
-					has_starbase_size = wtmnb_fortress
-				}
-			}
-		}
+		always = no
+		# OR = {
+		# 	is_scope_type = starbase
+		# 	is_scope_type = megastructure
+		# }
+		# NOR = {
+		# 	has_starbase_size = wtmnb_fortress
+		# 	owner = {
+		# 		any_owned_starbase = {
+		# 			has_starbase_size = wtmnb_fortress
+		# 		}
+		# 	}
+		# }
 	}
 	num_target_locators = 0
 	can_have_federation_design = no
@@ -53,12 +56,28 @@ wtmnb_fortress = {
 	enable_3dview_in_ship_browser = no
 	# can_disable = no
 	icon_frame = 9
-	icon = ship_size_military_64
-	ship_class_icon_frame = 57
+	icon = ship_size_science_arkship_tier_3
+	ship_class_icon_frame = 64
 	default_behavior = platform
 	# ship_roles = { carrier artillery }
 	prerequisites = { "tech_wtmnb_fortress" }
 	class = shipclass_starbase
+	# 方舟
+	hero_ship = {						# Use the Hero Ship UI, not the Juggernaut's.
+		hero_ship_fleet_background = "GFX_arkship_fleetview_science"
+		custom_class_text_color = B
+	}
+	display_attack_neutral_fleet_button = no
+	automation_icon = GFX_fleet_order_auto_explore_arkship
+	arkship_picture = "arkship_science"
+	collects_stockpile_from = {			# Arkships can collect resources from Waystations or Logistic Ships.
+		shipclass_starbase
+		shipclass_constructor
+	}
+	collects_stockpile_to_country = yes
+	accepts_all_modifiers = yes
+	carries_colony = pc_ark				# Enables Arkship custom UI.
+	# 方舟end
 	construction_type = { starbase_shipyard starbase_beastport }
 	required_component_set = "WTMNB_GRAND_KEY"    #1 虚空万藏
 	required_component_set = "WTMNB_GRAND_KEY"    #2 千界一乘
@@ -80,7 +99,7 @@ wtmnb_fortress = {
 	takes_name_from_ship_design = yes
 	uses_name_prefix = no
 	never_lost = yes
-
+	use_shipnames_from = juggernaut
 	# is_hero_ship = yes
 	available_to_everyone = yes
 }

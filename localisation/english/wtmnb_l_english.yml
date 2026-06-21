@@ -376,4 +376,7 @@
  wtmnb_fortress_super_fire_button_desc: "§YNow, I grant you the right to gaze upon the sun!§!"
  wtmnb_fortress_super_fire_button_cancel_desc: "Click Cancel (Shortcut H) to §B$WTMNB_OPEN_FIRE_CANCEL$§!"
 
+ wtmnb_fortress_upgrading_mode_menu_title: "Upgrade Mode"
+ wtmnb_fortress_upgrading_mode_activity_key: "Upgrade"
+ wtmnb_fortress_upgrading_mode_button: "Enter Upgrade Mode to update weapons. Cannot move in Upgrade Mode\n§gDesign Ships > Click Upgrade Mode > Click blank map to deselect > Select $wtmnb_fortress$ > Click Upgrade§!"
 

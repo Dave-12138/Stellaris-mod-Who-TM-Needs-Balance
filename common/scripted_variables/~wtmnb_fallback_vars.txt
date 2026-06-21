@@ -1,3 +1,8 @@
+@spth_card_max_leader = 0
 @suc_sex_points_to_lv3 = 0
 @wsg_mod = 0
-# 
+@assaultlily_mod = 0
+@azl_mod = 0
+@has_gigastructures = 0
+@no_wtmnb_stigmata_init = 0
+#

@@ -1,27 +1,27 @@
 # 选星系
-special_project = {
-	key = "WTMNB_OPEN_FIRE_SYSTEM_SELECT"
-	event_scope = ship_event
-	event_chain = "wtmnb_open_fire_chain"
-	days_to_research = 1
-	# from = planet (star)
-	# prev = country
-	on_start = {
-		prev = {
-			save_event_target_as = owner_country
-		}
-		from.solar_system = {
-			system_event = {
-				id = wtmnb.6010
-				days = 0
-				scopes = { from = event_target:owner_country }
-			}
-		}
-	}
-	on_success = {
-
-	}
-}
+# special_project = {
+# 	key = "WTMNB_OPEN_FIRE_SYSTEM_SELECT"
+# 	event_scope = ship_event
+# 	event_chain = "wtmnb_open_fire_chain"
+# 	days_to_research = 1
+# 	# from = planet (star)
+# 	# prev = country
+# 	on_start = {
+# 		prev = {
+# 			save_event_target_as = owner_country
+# 		}
+# 		from.solar_system = {
+# 			system_event = {
+# 				id = wtmnb.6010
+# 				days = 0
+# 				scopes = { from = event_target:owner_country }
+# 			}
+# 		}
+# 	}
+# 	on_success = {
+#
+# 	}
+# }
 
 # 选星球
 special_project = {
