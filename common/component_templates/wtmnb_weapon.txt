@@ -23,6 +23,8 @@ weapon_component_template = {
 	armor_damage = 100
 	hull_damage = 10.25
 	tracking = 1
+	collateral_damage = 50000
+	collateral_range = 500
 	power = -420
 	prerequisites = {
 		"tech_wtmnb_fortress"

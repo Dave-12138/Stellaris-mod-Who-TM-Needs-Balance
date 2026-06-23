@@ -499,7 +499,8 @@
 
 
  sm_wtmnb_starbase_building: "§M$wtmnb_fortress$§!"
- sm_wtmnb_starbase_building_desc: "用于让§M$wtmnb_fortress$§!提供驻港效果\n§L想写全国效果的，结果不生效，只能用事件代替§!\n§B你不该在游戏内看见这几行字§!"
+ sm_wtmnb_starbase_building_desc: ""
+ sm_wtmnb_starbase_building_tt1: "根据轨道中工程船的数量提高全国全产"
  ##########
  # 舰船技能
  wtmnb_fortress_switch_shipyard_menu_title: "切换船坞"

@@ -363,7 +363,11 @@
  # ship design
  DESIGN_wtmnb_fortress:0 "$wtmnb_fortress$"
  NAME_wtmnb_cannon:0 "$wtmnb_cannon$"
-# skills
+# sm
+ sm_wtmnb_starbase_building: "Mass Replicator"
+ sm_wtmnb_starbase_building_tt1: "Increases national all produces based on the number of docked construction ships"
+
+ # skills
 
  wtmnb_fortress_switch_shipyard_menu_title: "Switch Shipyard"
  wtmnb_fortress_switch_shipyard_button: "§H$wtmnb_fortress_switch_shipyard_menu_title$ Type§!\nCurrent: §Y[This.GetConstructionType]§!"

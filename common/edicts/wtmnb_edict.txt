@@ -286,7 +286,6 @@ wtmnb_edict_create_ship = {
                         }
                         create_ship = {
                             random_existing_design = wtmnb_fortress
-                            upgradable = yes
 
                             name = wtmnb_fortress
                             effect = {
@@ -302,7 +301,6 @@ wtmnb_edict_create_ship = {
                         create_ship = {
                             name = wtmnb_fortress
                             design = "DESIGN_wtmnb_fortress"
-                            upgradable = yes
                             effect = {
                                 ship_event = {
                                     id = wtmnb.5000

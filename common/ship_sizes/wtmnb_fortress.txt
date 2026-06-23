@@ -19,7 +19,7 @@ wtmnb_fortress = {
 		ship_tracking_add = 200
 		ship_evasion_add = 1000
 		starbase_building_capacity_add = 8
-		starbase_module_capacity_add = 8
+		starbase_module_capacity_add = 6
 		planet_max_districts_add = 32
 	}
 	entity = "star_eater_entity"
@@ -31,6 +31,7 @@ wtmnb_fortress = {
 	fleet_slot_size = 32
 	section_slots = {
 		"core" = { locator = "part1" }
+		# "spinal_mount_1"	=	{ locator = "spinal_mount" }
 	}
 	potential_country = {
 		has_country_flag = wtmnb_order
@@ -58,6 +59,12 @@ wtmnb_fortress = {
 	icon_frame = 9
 	icon = ship_size_science_arkship_tier_3
 	ship_class_icon_frame = 64
+	map_icon_override = {
+		normal = GFX_ship_icons_type_arkship
+		mixed = GFX_ship_icons_type_arkship_mixed
+		cloaked = GFX_ship_icons_type_arkship_cloaked
+		encamped = GFX_ship_icons_type_arkship_encamped
+	}
 	default_behavior = platform
 	# ship_roles = { carrier artillery }
 	prerequisites = { "tech_wtmnb_fortress" }
@@ -77,6 +84,7 @@ wtmnb_fortress = {
 	collects_stockpile_to_country = yes
 	accepts_all_modifiers = yes
 	carries_colony = pc_ark				# Enables Arkship custom UI.
+	on_click_sound = "arkship_science_selection"
 	# 方舟end
 	construction_type = { starbase_shipyard starbase_beastport }
 	required_component_set = "WTMNB_GRAND_KEY"    #1 虚空万藏
@@ -93,7 +101,7 @@ wtmnb_fortress = {
 	required_component_set = "combat_computers" # 作战电脑
 
 	ship_modifier = {
-		ship_starting_experience_add = 1000
+		ship_starbase_stockpile_collection_rate_add = 1000
 	}
 	combat_disengage_chance = 1
 	takes_name_from_ship_design = yes

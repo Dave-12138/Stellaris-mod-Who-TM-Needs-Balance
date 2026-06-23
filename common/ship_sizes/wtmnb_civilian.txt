@@ -110,7 +110,7 @@ wtmnb_constructor = {
 	construction_type = { starbase_shipyard starbase_beastport }
 
 	scripted_action = {
-		logistic_harvest_resources
+		wtmnb_harvest_resources_constructor
 		collect_waystation_stockpile
 		logistic_drop_off_stockpile
 	}
@@ -123,6 +123,8 @@ wtmnb_constructor = {
 		megastructure
 		automated_collection
 	}
+	collects_stockpile_from = { shipclass_starbase }
+	ship_stockpile_capacity = 2500.0
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"

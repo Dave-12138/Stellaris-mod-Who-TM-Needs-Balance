@@ -23,7 +23,11 @@ utility_component_template = {
         weight = 100
     }
     show_tech_unlock_if = { always = no }
-    scripted_action = { wtmnb_fortress_upgrading_mode }
+    scripted_action = {
+        wtmnb_fortress_upgrading_mode
+        wtmnb_harvest_resources
+        collect_waystation_stockpile
+    }
 }
 
 # 二键 千界一乘 ftl
@@ -59,6 +63,10 @@ utility_component_template = {
     }
     component_set = "WTMNB_GRAND_KEY"
     show_tech_unlock_if = { always = no }
+    scripted_action = {
+        arkship_survey
+        wtmnb_deep_scan
+    }
 }
 
 # 三键 涤罪七雷

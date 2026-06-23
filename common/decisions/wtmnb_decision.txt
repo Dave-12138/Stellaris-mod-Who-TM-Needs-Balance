@@ -8,7 +8,7 @@ decision_wtmnb_create_pop = {
         }
     }
     potential = {
-        solar_system = {
+        solar_system? = {
             any_ship_in_system = {
                 has_component = WTMNB_6TH_KEY
             }
