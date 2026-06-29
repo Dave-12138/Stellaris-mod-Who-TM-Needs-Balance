@@ -16,17 +16,6 @@ wtmnb_deep_scan = {
         }
 
         has_anomaly = no
-        if = {
-            limit = {
-                habitable_planet = yes
-            }
-            custom_tooltip = {
-                fail_text = arkship_target_habitable_world_fail_tt
-                from.leader? = {
-                has_leader_flag = nomadic_naturalist
-                }
-            }
-        }
         custom_tooltip = {
             fail_text = arkship_target_artificial_world_fail_tt
             is_artificial = no
@@ -68,6 +57,8 @@ wtmnb_deep_scan = {
     }
     slot = 2
     wait = no
+    shortcut = "SHIFT+X"
+
 }
 
 wtmnb_harvest_resources = {
@@ -82,6 +73,7 @@ wtmnb_harvest_resources = {
     icon_selected = GFX_fleet_action_button_arkship_harvest_resources
 
     possible = {
+
         NOT = {
             has_modifier = "harvested_resources_mining"
         }
@@ -120,7 +112,7 @@ wtmnb_harvest_resources = {
     uses_vfx_type = harvest_effect
 
     cost = {
-        energy = @harvest_resources_cost
+        energy = 1
     }
     slot = 3
     overrides_gained_resources = yes
@@ -130,6 +122,63 @@ wtmnb_harvest_resources = {
     wait = no
 }
 
+
+
+
+wtmnb_subspace_image = {
+    user_scope = fleet
+    scope = galactic_object
+
+    on_started = on_arkship_subspace_image
+    tooltip = arkship_subspace_image_ship_button
+    icon = GFX_fleet_action_button_arkship_subspace_image
+    icon_selected = GFX_fleet_action_button_arkship_subspace_image
+
+    possible = {
+        custom_tooltip = {
+            fail_text = arkship_has_leader_tt_fail
+            success_text = arkship_has_leader_tt_success
+
+            exists = from.leader
+        }
+    }
+
+    button_visible = {
+        always = yes
+    }
+
+    button_clickable = {
+        custom_tooltip = {
+            fail_text = arkship_has_leader_tt_fail
+            success_text = arkship_has_leader_tt_success
+            exists = leader
+        }
+
+    }
+
+    activity_key = arkship_subspace_image_activity_key
+    context_menu_name = arkship_subspace_image
+    progress_activity_key = arkship_subspace_image_progress_activity_key
+    required_progress_key = arkship_subspace_image_required_progress_key
+    cooldown = 0
+    category = subspace_image
+    category_limit = 1
+    # 插件报错暂时禁用
+    # category_limit_fail_text = arkship_subspace_image_in_progress_tt
+
+    uses_vfx_type = survey_effect
+
+    cost = {
+        energy = 1
+    }
+
+    shortcut = "SHIFT+Z"
+    slot = 5
+    wait = no
+}
+
+
+
 wtmnb_harvest_resources_constructor = {
     user_scope = fleet
     scope = planet
@@ -137,7 +186,7 @@ wtmnb_harvest_resources_constructor = {
     automation_priority = 2
     automation_default_on = no
     also_automate = { logistic_drop_off_stockpile }
-    on_started = on_harvest_resources					# This shares the on_action with the arkship version
+    on_started = on_harvest_resources                    # This shares the on_action with the arkship version
     tooltip = logistic_harvest_resources_ship_button
     icon = GFX_fleet_action_button_logistic_harvest_resources
     icon_selected = GFX_fleet_action_button_logistic_harvest_resources
@@ -178,12 +227,7 @@ wtmnb_harvest_resources_constructor = {
         custom_tooltip = {
             text = logistic_ship_stockpile_requirements_tt
         }
-        custom_tooltip = {
-            fail_text = logistic_ship_stockpile_fail_tt
-            any_owned_ship = {
-                used_stockpile_capacity_percentage < 0.9
-            }
-        }
+
     }
 
     activity_key = logistic_harvest_resources_activity_key
@@ -197,7 +241,7 @@ wtmnb_harvest_resources_constructor = {
     uses_vfx_type = harvest_effect
 
     cost = {
-        energy = @harvest_resources_cost
+        energy = 1
     }
     slot = 3
     overrides_gained_resources = yes

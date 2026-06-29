@@ -78,4 +78,3 @@ wtmnb_fortress_upgrading_mode = {
     # slot = 1
     wait = no
 }
-

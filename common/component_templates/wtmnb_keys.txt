@@ -27,6 +27,7 @@ utility_component_template = {
         wtmnb_fortress_upgrading_mode
         wtmnb_harvest_resources
         collect_waystation_stockpile
+        arkship_build_megastructure
     }
 }
 
@@ -66,6 +67,7 @@ utility_component_template = {
     scripted_action = {
         arkship_survey
         wtmnb_deep_scan
+        wtmnb_subspace_image
     }
 }
 
@@ -287,6 +289,7 @@ utility_component_template = {
     prerequisites = {
         "tech_wtmnb_fortress"
     }
+
     friendly_aura = {
         name = "aura_eden_star"
         radius = 20000
@@ -307,7 +310,6 @@ utility_component_template = {
             ship_armor_penetration_mult = 5
             ship_shield_penetration_mult = 5
             ship_damage_reduction_mult = 10
-            psionic_aura_resistance_mult = 13
         }
 
         graphics = {

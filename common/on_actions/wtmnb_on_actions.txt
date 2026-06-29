@@ -87,6 +87,7 @@ on_wtmnb_fortress_upgrading_mode = {
         wtmnb_colossus.4000
     }
 }
+
 on_ship_order = {
     events = {
         wtmnb.7000

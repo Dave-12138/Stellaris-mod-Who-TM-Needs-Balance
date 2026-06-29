@@ -1,9 +1,11 @@
 wtmnb_remove_megastructure_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_surreal_visions
+	situation_log_category = urgent_matters
 }
 
 wtmnb_open_fire_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_alert.dds"
 	picture = GFX_evt_planet_beam
+	situation_log_category = urgent_matters
 }
