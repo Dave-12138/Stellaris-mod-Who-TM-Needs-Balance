@@ -57,6 +57,7 @@
  WTMNB_FORT_CORE: "Moonlight Throne"
  WTMNB_FORT_CORE2: "Moonlight Throne (Citadel-shape)"
  WTMNB_FORT_CORE3: "Moonlight Throne (Cetana Titan-shape)"
+ WTMNB_FORT_CORE4: "Moonlight Throne (Civil Arkship-shape)"
  swtmnb: "$wtmnb_fortress$"
  SHIP_THRUSTER_WTMNB: "Alahato"
  SHIP_THRUSTER_WTMNB_DESC: "Fly me 2 the moon!"

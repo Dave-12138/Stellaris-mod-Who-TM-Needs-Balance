@@ -67,6 +67,7 @@
  WTMNB_FORT_CORE: "月光王座"
  WTMNB_FORT_CORE2: "月光王座(擎天堡模型)"
  WTMNB_FORT_CORE3: "月光王座(女王泰坦模型)"
+ WTMNB_FORT_CORE4: "月光王座(民用方舟模型)"
  swtmnb: "$wtmnb_fortress$"
  SHIP_THRUSTER_WTMNB: "阿拉哈托"
  SHIP_THRUSTER_WTMNB_DESC: "Fly me 2 the moon!"
@@ -499,7 +500,7 @@
 
 
  sm_wtmnb_starbase_building: "§M$wtmnb_fortress$§!"
- sm_wtmnb_starbase_building_desc: ""
+ sm_wtmnb_starbase_building_desc: "在你看来, 鸟为什么会飞?"
  sm_wtmnb_starbase_building_tt1: "根据轨道中工程船的数量提高全国全产"
  ##########
  # 舰船技能
