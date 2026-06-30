@@ -1,142 +1,142 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  #################
- wtmnb_fortress:0 "月光王座"
- wtmnb_fortress_cap:0 "$wtmnb_fortress$"
- wtmnb_fortress_plural:0 "$wtmnb_fortress$"
- aura_unbreakable_shield_wide:0 "AT力场"
- SHIP_UNBREAKABLE_SHARE:0 "Anti力场"
- SCIENCE_SHIELD_AURA:0 "逆熵护盾"
- aura_science_shield:0 "其时已至，虚空深渊之下"
- aura_science_hostile:0 "人间法宝吞噬天上暴君之日"
+ wtmnb_fortress: "月光王座"
+ wtmnb_fortress_cap: "$wtmnb_fortress$"
+ wtmnb_fortress_plural: "$wtmnb_fortress$"
+ aura_unbreakable_shield_wide: "AT力场"
+ SHIP_UNBREAKABLE_SHARE: "Anti力场"
+ SCIENCE_SHIELD_AURA: "逆熵护盾"
+ aura_science_shield: "其时已至，虚空深渊之下"
+ aura_science_hostile: "人间法宝吞噬天上暴君之日"
 
- WTMNB_WEAPON:0 "§M$wtmnb_fortress$§!"
- WTMNB_WEAPON_K:0 "$WTMNB_WEAPON$"
- WTMNB_WEAPON_T:0 "$WTMNB_WEAPON$"
- WTMNB_WEAPON_P:0 "$WTMNB_WEAPON$"
- WTMNB_WEAPON_M:0 "$WTMNB_WEAPON$"
- WTMNB_WEAPON_X:0 "$WTMNB_WEAPON$"
- WTMNB_WEAPON_XXL:0 "$WTMNB_WEAPON$"
- WTMNB_WEAPON_DESC:0 "严格来说，“$WTMNB_WEAPON$”不能算一种兵器：它只是一种能量转换装置而已。用可控的方式，把崩坏能转化成普通能量。\n人类在前文明末期曾经掌握了这项技术，但当时的事态发展没有给他们留下足够的时间。\n假如在那个时间点，他们能将人类原有的工业规模再维持十年左右，那么量产的“月光王座”就足以吸纳星球规模的溢出崩坏能。"
- WTMNB_WEAPON_K_DESC:0 "$WTMNB_WEAPON_DESC$"
- WTMNB_WEAPON_XXL_DESC:0 "$WTMNB_WEAPON_DESC$"
- SHIP_GRAPHICS_WTMNB_FORTRESS_DESC:0 "$WTMNB_WEAPON_DESC$"
+ WTMNB_WEAPON: "§M$wtmnb_fortress$§!"
+ WTMNB_WEAPON_K: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_T: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_P: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_M: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_X: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_XXL: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_DESC: "严格来说，“$WTMNB_WEAPON$”不能算一种兵器：它只是一种能量转换装置而已。用可控的方式，把崩坏能转化成普通能量。\n人类在前文明末期曾经掌握了这项技术，但当时的事态发展没有给他们留下足够的时间。\n假如在那个时间点，他们能将人类原有的工业规模再维持十年左右，那么量产的“月光王座”就足以吸纳星球规模的溢出崩坏能。"
+ WTMNB_WEAPON_K_DESC: "$WTMNB_WEAPON_DESC$"
+ WTMNB_WEAPON_XXL_DESC: "$WTMNB_WEAPON_DESC$"
+ SHIP_GRAPHICS_WTMNB_FORTRESS_DESC: "$WTMNB_WEAPON_DESC$"
 
- wtmnb_civi:0 "拟态船"
- wtmnb_battle:0 "虚数造物"
- wtmnb_science:0 "拟态科研船"
- wtmnb_science_cap:0 "$wtmnb_science$"
- wtmnb_science_plural:0 "$wtmnb_science$"
+ wtmnb_civi: "拟态船"
+ wtmnb_battle: "虚数造物"
+ wtmnb_science: "拟态科研船"
+ wtmnb_science_cap: "$wtmnb_science$"
+ wtmnb_science_plural: "$wtmnb_science$"
 
- WTMNB_SCIENCE_SECTION:0 "$wtmnb_science$"
+ WTMNB_SCIENCE_SECTION: "$wtmnb_science$"
 
 
- wtmnb_constructor:0 "拟态工程船"
- wtmnb_constructor_cap:0 "$wtmnb_constructor$"
- wtmnb_constructor_plural:0 "$wtmnb_constructor$"
+ wtmnb_constructor: "拟态工程船"
+ wtmnb_constructor_cap: "$wtmnb_constructor$"
+ wtmnb_constructor_plural: "$wtmnb_constructor$"
 
  WTMNB_CONSTRUCTION_SECTION: "$wtmnb_constructor$"
 
 
- wtmnb_cannon:0 "浮游炮"
+ wtmnb_cannon: "浮游炮"
  wtmnb_cannon_cap: "浮游炮"
- wtmnb_cannon_plural:0 "浮游炮"
- WTMNB_CANNON_CORE:0 "$wtmnb_cannon$($TITAN_BOW$)"
- WTMNB_CANNON_CANNON:0 "$wtmnb_cannon$($PERDITION_BEAM_ION$模型)"
- SHIP_GRAPHICS_WTMNB_CANNON_DESC:0 "高机动化浮游炮，瞬息三千六百炮，是居家旅行杀人越货必备法宝"
+ wtmnb_cannon_plural: "浮游炮"
+ WTMNB_CANNON_CORE: "$wtmnb_cannon$($TITAN_BOW$)"
+ WTMNB_CANNON_CANNON: "$wtmnb_cannon$($PERDITION_BEAM_ION$模型)"
+ SHIP_GRAPHICS_WTMNB_CANNON_DESC: "高机动化浮游炮，瞬息三千六百炮，是居家旅行杀人越货必备法宝"
 
- wtmnb_boomer:0 "崩坏裂变弹"
- wtmnb_boomer_cap:0 "崩坏裂变弹"
- wtmnb_boomer_plural:0 "崩坏裂变弹"
- WTMNB_BOOMER_SECTION:0 "解散舰队时、被击毁时引爆"
- SHIP_GRAPHICS_WTMNB_BOOMER_DESC:0 "【超距射击靶船】如果数值不够魔怔，可以考虑事件杀"
+ wtmnb_boomer: "崩坏裂变弹"
+ wtmnb_boomer_cap: "崩坏裂变弹"
+ wtmnb_boomer_plural: "崩坏裂变弹"
+ WTMNB_BOOMER_SECTION: "解散舰队时、被击毁时引爆"
+ SHIP_GRAPHICS_WTMNB_BOOMER_DESC: "【超距射击靶船】如果数值不够魔怔，可以考虑事件杀"
 
 
  WTMNB_SCIENCE_REACTOR_POOL: "无烟煤锅炉"
 
- WTMNB_SCIENCE_REACTOR:0 "虚拟反应堆"
- WTMNB_SCIENCE_REACTOR_DESC:0 "我们做了一个反应堆，但没完全做"
+ WTMNB_SCIENCE_REACTOR: "虚拟反应堆"
+ WTMNB_SCIENCE_REACTOR_DESC: "我们做了一个反应堆，但没完全做"
 
- WTMNB_JUMP_DRIVE:0 "崩坏能跃迁引擎"
- WTMNB_JUMP_DRIVE_DESC:0 "我们解析并复现了部分第二律者权能"
+ WTMNB_JUMP_DRIVE: "崩坏能跃迁引擎"
+ WTMNB_JUMP_DRIVE_DESC: "我们解析并复现了部分第二律者权能"
 
- WTMNB_JUMP_ONLY_DRIVE:0 "无FTL跃迁引擎"
- WTMNB_JUMP_ONLY_DRIVE_DESC:0 "删去了超空间航道航行组件，看起来更酷了"
+ WTMNB_JUMP_ONLY_DRIVE: "无FTL跃迁引擎"
+ WTMNB_JUMP_ONLY_DRIVE_DESC: "删去了超空间航道航行组件，看起来更酷了"
 
  WTMNB_THRUSTER_POOL: "蒸汽推进器"
 
- WTMNB_FORT_CORE:0 "月光王座"
- WTMNB_FORT_CORE2:0 "月光王座(擎天堡模型)"
- WTMNB_FORT_CORE3:0 "月光王座(女王泰坦模型)"
- swtmnb:0 "$wtmnb_fortress$"
- SHIP_THRUSTER_WTMNB:0 "阿拉哈托"
- SHIP_THRUSTER_WTMNB_DESC:0 "Fly me 2 the moon!"
+ WTMNB_FORT_CORE: "月光王座"
+ WTMNB_FORT_CORE2: "月光王座(擎天堡模型)"
+ WTMNB_FORT_CORE3: "月光王座(女王泰坦模型)"
+ swtmnb: "$wtmnb_fortress$"
+ SHIP_THRUSTER_WTMNB: "阿拉哈托"
+ SHIP_THRUSTER_WTMNB_DESC: "Fly me 2 the moon!"
 
- WTMNB_1ST_KEY:0 "虚空万藏"
- WTMNB_1ST_KEY_DESC:0 "第一神之键·启示之键"
+ WTMNB_1ST_KEY: "虚空万藏"
+ WTMNB_1ST_KEY_DESC: "第一神之键·启示之键"
 
- WTMNB_2ND_KEY:0 "千界一乘"
- WTMNB_2ND_KEY_DESC:0 "第二神之键·永劫之键"
- WTMNB_2ND_KEY_SIGNAL:0 "千界一乘：信标"
+ WTMNB_2ND_KEY: "千界一乘"
+ WTMNB_2ND_KEY_DESC: "第二神之键·永劫之键"
+ WTMNB_2ND_KEY_SIGNAL: "千界一乘：信标"
 
- WTMNB_3RD_KEY:0 "涤罪七雷"
- WTMNB_3RD_KEY_DESC:0 "第三神之键·裁决之键"
+ WTMNB_3RD_KEY: "涤罪七雷"
+ WTMNB_3RD_KEY_DESC: "第三神之键·裁决之键"
 
- WTMNB_4TH_KEY:0 "第四神之键"
- WTMNB_4TH_KEY_DESC:0 "操控气候"
+ WTMNB_4TH_KEY: "第四神之键"
+ WTMNB_4TH_KEY_DESC: "操控气候"
 
- WTMNB_5TH_KEY:0 "万物休眠"
- WTMNB_5TH_KEY_DESC:0 "第五神之键·停滞之键"
- aura_stagnate:0 "万物休眠"
+ WTMNB_5TH_KEY: "万物休眠"
+ WTMNB_5TH_KEY_DESC: "第五神之键·停滞之键"
+ aura_stagnate: "万物休眠"
 
- WTMNB_6TH_KEY:0 "黑渊百花"
- WTMNB_6TH_KEY_DESC:0 "第六神之键·创生之键"
- aura_white_flower:0 "白花"
+ WTMNB_6TH_KEY: "黑渊百花"
+ WTMNB_6TH_KEY_DESC: "第六神之键·创生之键"
+ aura_white_flower: "白花"
 
- WTMNB_7TH_KEY:0 "天火圣裁"
- WTMNB_7TH_KEY_DESC:0 "第七神之键·§R破坏之键§!"
+ WTMNB_7TH_KEY: "天火圣裁"
+ WTMNB_7TH_KEY_DESC: "第七神之键·§R破坏之键§!"
 
- WTMNB_8TH_KEY:0 "羽渡尘"
- WTMNB_8TH_KEY_DESC:0 "第八神之键·意识之键"
+ WTMNB_8TH_KEY: "羽渡尘"
+ WTMNB_8TH_KEY_DESC: "第八神之键·意识之键"
 
- WTMNB_9TH_KEY:0 "伊甸之星"
- WTMNB_9TH_KEY_DESC:0 "第九神之键·吞噬之键"
- aura_eden_star:0 "各向异性相对论效应"
+ WTMNB_9TH_KEY: "伊甸之星"
+ WTMNB_9TH_KEY_DESC: "第九神之键·吞噬之键"
+ aura_eden_star: "各向异性相对论效应"
 
- WTMNB_11TH_KEY:0 "犹大的誓约"
- WTMNB_11TH_KEY_DESC:0 "第十一神之键·约束之键"
- aura_judah:0 "神恩结界"
+ WTMNB_11TH_KEY: "犹大的誓约"
+ WTMNB_11TH_KEY_DESC: "第十一神之键·约束之键"
+ aura_judah: "神恩结界"
 
- WTMNB_GRAND_KEY:0 "神之键"
- WTMNB_GRAND_KEY_DESC:0 "引导使用虚数权能的工具"
+ WTMNB_GRAND_KEY: "神之键"
+ WTMNB_GRAND_KEY_DESC: "引导使用虚数权能的工具"
 
- COMBAT_COMPUTER_WTMNB_BOOMER:0 "自爆卡车作战电脑"
- COMBAT_COMPUTER_WTMNB_CANNON:0 "长距炮击作战电脑（平台）"
+ COMBAT_COMPUTER_WTMNB_BOOMER: "自爆卡车作战电脑"
+ COMBAT_COMPUTER_WTMNB_CANNON: "长距炮击作战电脑（平台）"
  #################
  #   _             _ _
  #  | |_ _ __ __ _(_) |_
  #  | __| '__/ _` | | __|
  #  | |_| | | (_| | | |_
  #   \__|_|  \__,_|_|\__|
- trait_wtmnb_stigmata:0 "圣痕"
- trait_wtmnb_stigmata_desc:0 "§L这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_stigmata$。§!"
+ trait_wtmnb_stigmata: "圣痕"
+ trait_wtmnb_stigmata_desc: "§L这个物种在奇怪的部位有形状奇怪的$trait_wtmnb_stigmata$。§!"
 
- leader_trait_wtmnb_stigmata:0 "$trait_wtmnb_stigmata$"
+ leader_trait_wtmnb_stigmata: "$trait_wtmnb_stigmata$"
  council_icon_with_bracket: "（£council£）"
- leader_trait_wtmnb_stigmata_tip:0 "§M$trait_wtmnb_stigmata$§![Root.GetIconIfCouncil]\n[Root.GetClassTexticon][Root.GetClass]类别"
- leader_trait_wtmnb_stigmata_desc:0 "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_stigmata$。"
+ leader_trait_wtmnb_stigmata_tip: "§M$trait_wtmnb_stigmata$§![Root.GetIconIfCouncil]\n[Root.GetClassTexticon][Root.GetClass]类别"
+ leader_trait_wtmnb_stigmata_desc: "这位领袖在某个特殊部位有个形状奇怪的$leader_trait_wtmnb_stigmata$。"
 
 
 
- trait_pc_wtmnb_city_preference:0 "$pc_wtmnb_city$偏好"
- trait_pc_wtmnb_city_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+ trait_pc_wtmnb_city_preference: "$pc_wtmnb_city$偏好"
+ trait_pc_wtmnb_city_preference_desc: "$trait_pc_arctic_preference_desc$"
 
  #####################
 
- WTMNB_WEAPON_W:0 "§M$wtmnb_fortress$§!"
- WTMNB_WEAPON_W_DESC:0 "现在，我赐予各位直视太阳的权力"
- WTMNB_WEAPON_W_ACTION:0 "虚数入侵"
- FLEETORDER_DESTROY_PLANET_WITH_WTMNB_WEAPON_W:0 "正在准备对$PLANET|Y$使用§M$WTMNB_WEAPON_W$§!"
- MESSAGE_DESC_FOR_WTMNB_WEAPON_W:0 "虚数内能充盈"
+ WTMNB_WEAPON_W: "§M$wtmnb_fortress$§!"
+ WTMNB_WEAPON_W_DESC: "现在，我赐予各位直视太阳的权力"
+ WTMNB_WEAPON_W_ACTION: "虚数入侵"
+ FLEETORDER_DESTROY_PLANET_WITH_WTMNB_WEAPON_W: "正在准备对$PLANET|Y$使用§M$WTMNB_WEAPON_W$§!"
+ MESSAGE_DESC_FOR_WTMNB_WEAPON_W: "虚数内能充盈"
  ################################
  #   _ __ ___   ___  __ _  __ _
  #  | '_ ` _ \ / _ \/ _` |/ _` |
@@ -144,24 +144,24 @@ l_simp_chinese:
  #  |_| |_| |_|\___|\__, |\__,_|
  #                  |___/
  #
- wtmnb_dyson:0 "以太锚点"
- wtmnb_dyson_DESC:0 "(图文无关)“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
- wtmnb_dyson_MEGASTRUCTURE_DETAILS:0 "“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
- wtmnb_love_mark:0 "不许哈气机"
- wtmnb_love_mark_DESC:0 "其实我本来想直接叫心理定规的"
- wtmnb_love_mark_MEGASTRUCTURE_DETAILS:0 "把这个放到对方国境内，对方就会对你+1500\n\n遗憾的是不开边境就用不了了"
- wtmnb_portal:0 "超空间桥梁建设机组"
- wtmnb_portal_DESC:0 "当第二个机组建设完成时，超空间航路就会生成\n警告：我也不知道同时多个帝国试图用这玩意会发生什么"
- wtmnb_portal_MEGASTRUCTURE_DETAILS:0 "将两个$wtmnb_portal$分别建设在两个星系中，可以在两个星系之间生成超空间航道"
- wtmnb_foundry:0 "分子重排机"
- wtmnb_foundry_DESC:0 "对，这就是物质解压器的模型"
- wtmnb_foundry_MEGASTRUCTURE_DETAILS:0 "对，这就是物质解压器的模型"
+ wtmnb_dyson: "以太锚点"
+ wtmnb_dyson_DESC: "(图文无关)“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
+ wtmnb_dyson_MEGASTRUCTURE_DETAILS: "“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
+ wtmnb_love_mark: "不许哈气机"
+ wtmnb_love_mark_DESC: "其实我本来想直接叫心理定规的"
+ wtmnb_love_mark_MEGASTRUCTURE_DETAILS: "把这个放到对方国境内，对方就会对你+1500\n\n遗憾的是不开边境就用不了了"
+ wtmnb_portal: "超空间桥梁建设机组"
+ wtmnb_portal_DESC: "当第二个机组建设完成时，超空间航路就会生成\n警告：我也不知道同时多个帝国试图用这玩意会发生什么"
+ wtmnb_portal_MEGASTRUCTURE_DETAILS: "将两个$wtmnb_portal$分别建设在两个星系中，可以在两个星系之间生成超空间航道"
+ wtmnb_foundry: "分子重排机"
+ wtmnb_foundry_DESC: "对，这就是物质解压器的模型"
+ wtmnb_foundry_MEGASTRUCTURE_DETAILS: "对，这就是物质解压器的模型"
 
 
 
- not_for_yourself:0 "不能对自己用——对自己+1000有什么意义吗"
- target_must_exist:0 "必须在目标境内，即必须存在恒星基地或殖民地"
- portal_in_neighbor:0 "$TRIGGER_FAIL$毗邻的星系存在$wtmnb_portal$，若在此建立$wtmnb_portal$会导致无事发生"
+ not_for_yourself: "不能对自己用——对自己+1000有什么意义吗"
+ target_must_exist: "必须在目标境内，即必须存在恒星基地或殖民地"
+ portal_in_neighbor: "$TRIGGER_FAIL$毗邻的星系存在$wtmnb_portal$，若在此建立$wtmnb_portal$会导致无事发生"
 
 
  ##################
@@ -170,42 +170,42 @@ l_simp_chinese:
  #   / _ \/ _` | |/ __| __|
  #  |  __/ (_| | | (__| |_
  #   \___|\__,_|_|\___|\__|
- edict_wtmnb_edict:0 "死海文书"
- edict_wtmnb_edict_desc:0 "启用【我特么直接作弊】"
+ edict_wtmnb_edict: "死海文书"
+ edict_wtmnb_edict_desc: "启用【我特么直接作弊】"
 
- edict_wtmnb_edict_tech:0 "虚数内能导论"
- edict_wtmnb_edict_tech_desc:0 "科技解锁"
+ edict_wtmnb_edict_tech: "虚数内能导论"
+ edict_wtmnb_edict_tech_desc: "科技解锁"
 
- edict_wtmnb_edict_2:0 "绯红之王"
- edict_wtmnb_edict_2_desc:0 "跳过等待政府改革cd的时间\n§L重置政府改革(调整国民理念、政体)CD§!"
- reset_gov_cooldown:0 "立即冷却政府改革"
+ edict_wtmnb_edict_2: "绯红之王"
+ edict_wtmnb_edict_2_desc: "跳过等待政府改革cd的时间\n§L重置政府改革(调整国民理念、政体)CD§!"
+ reset_gov_cooldown: "立即冷却政府改革"
 
- edict_wtmnb_edict_3:0 "心急带路贼？"
- edict_wtmnb_edict_3_desc:0 "心急带路呦！"
+ edict_wtmnb_edict_3: "心急带路贼？"
+ edict_wtmnb_edict_3_desc: "心急带路呦！"
 
- edict_wtmnb_edict_4:0 "拆除巨构"
- edict_wtmnb_edict_4_desc:0 "需要星系内有工程船"
+ edict_wtmnb_edict_4: "拆除巨构"
+ edict_wtmnb_edict_4_desc: "需要星系内有工程船"
 
- edict_wtmnb_edict_5:0 "我也要+1500"
- edict_wtmnb_edict_5_desc:0 "啊？\n§L对境内有$wtmnb_love_mark$巨构的国家评价大幅提升§!"
+ edict_wtmnb_edict_5: "我也要+1500"
+ edict_wtmnb_edict_5_desc: "啊？\n§L对境内有$wtmnb_love_mark$巨构的国家评价大幅提升§!"
 
- edict_wtmnb_edict_7:0 "我不想点第一次接触了"
- edict_wtmnb_edict_7_desc:0 "点第一次接触累死了，我现在就要建立所有通讯！\n§L(包括虚境，但不包括采矿团之类)§!"
+ edict_wtmnb_edict_7: "我不想点第一次接触了"
+ edict_wtmnb_edict_7_desc: "点第一次接触累死了，我现在就要建立所有通讯！\n§L(包括虚境，但不包括采矿团之类)§!"
 
- edict_wtmnb_edict_create_ship:0 "生成§M$wtmnb_fortress$§!"
- edict_wtmnb_edict_create_ship_desc:0 "立即在首都生成$wtmnb_fortress$"
+ edict_wtmnb_edict_create_ship: "生成§M$wtmnb_fortress$§!"
+ edict_wtmnb_edict_create_ship_desc: "立即在首都生成$wtmnb_fortress$"
 
  #                       _ _  __ _
  #   _ __ ___   ___   __| (_)/ _(_) ___ _ __
  #  | '_ ` _ \ / _ \ / _` | | |_| |/ _ \ '__|
  #  | | | | | | (_) | (_| | |  _| |  __/ |
  #  |_| |_| |_|\___/ \__,_|_|_| |_|\___|_|
- wtmnb_planet_ex:0 "第四神之键"
- wtmnb_planet_ex_desc:0 "别问原理，别问"
+ wtmnb_planet_ex: "第四神之键"
+ wtmnb_planet_ex_desc: "别问原理，别问"
 
- wtmnb_star_11th_modifier:0 "$aura_judah$"
- wtmnb_star_11th_modifier_desc:0 "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
- avoid_enter_by_jump:0 "阻止其他国家通过跃迁引擎进入本星系"
+ wtmnb_star_11th_modifier: "$aura_judah$"
+ wtmnb_star_11th_modifier_desc: "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
+ avoid_enter_by_jump: "阻止其他国家通过跃迁引擎进入本星系"
 
 
  wtmnb_country_produces_mult: "§M$wtmnb_fortress$§!"
@@ -216,14 +216,14 @@ l_simp_chinese:
  #  | (_| |  __/ |_) | (_) \__ \ | |_\__ \
  #   \__,_|\___| .__/ \___/|___/_|\__|___/
  #             |_|
- deposit_wtmnb_city:0 "$pc_wtmnb_city$"
- deposit_wtmnb_city_desc:0 "机械智能化辅助系统占据了一片大多数人不会注意到的地方"
- d_wtmnb_city_capital_tooltip:0 "基于§Y£job_civilian£$job_civilian_plural$§!或§Y£job_maintenance_drone£$job_maintenance_drone$§!的数量提供产出加成，最多计算400"
+ deposit_wtmnb_city: "$pc_wtmnb_city$"
+ deposit_wtmnb_city_desc: "机械智能化辅助系统占据了一片大多数人不会注意到的地方"
+ d_wtmnb_city_capital_tooltip: "基于§Y£job_civilian£$job_civilian_plural$§!或§Y£job_maintenance_drone£$job_maintenance_drone$§!的数量提供产出加成，最多计算400"
 
- deposit_wtmnb_4th_key_expand:0 "第四神之键"
- deposit_wtmnb_4th_key_expand_desc:0 "额外开拓的可利用地区"
- deposit_wtmnb_city_civic_point:0 "额外国民理念点数"
- deposit_wtmnb_city_civic_point_desc:0 "如果可用点数太多，就把这个挖掉吧"
+ deposit_wtmnb_4th_key_expand: "第四神之键"
+ deposit_wtmnb_4th_key_expand_desc: "额外开拓的可利用地区"
+ deposit_wtmnb_city_civic_point: "额外国民理念点数"
+ deposit_wtmnb_city_civic_point_desc: "如果可用点数太多，就把这个挖掉吧"
 
 
 
@@ -233,111 +233,111 @@ l_simp_chinese:
  #  | |_) | (_) | | | | | | |_) | (_| | | | (_| | | | | | |  __/ | | | |_\__ \
  #  |_.__/ \___/|_| |_| |_|_.__/ \__,_|_|  \__,_|_| |_| |_|\___|_| |_|\__|___/
 
- bombardment_wtmnb_doom:0 "中孑洪流"
- bombardment_wtmnb_doom_name:0 "中子洪流环保青春版"
- bombardment_wtmnb_doom_desc:0 "$bombardment_wtmnb_doom$不会损伤建筑，大概。\n-对§Y军团§!造成§R瞬间抹杀§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§R难以估计的§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-无差别§R屠杀§!星球上所有人口。\n-对没有人口的星球无效。"
+ bombardment_wtmnb_doom: "中孑洪流"
+ bombardment_wtmnb_doom_name: "中子洪流环保青春版"
+ bombardment_wtmnb_doom_desc: "$bombardment_wtmnb_doom$不会损伤建筑，大概。\n-对§Y军团§!造成§R瞬间抹杀§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§R难以估计的§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-无差别§R屠杀§!星球上所有人口。\n-对没有人口的星球无效。"
 
- bombardment_wtmnb_invasion:0 "轨道协助登陆作战"
- bombardment_wtmnb_invasion_name:0 "$bombardment_wtmnb_invasion$"
- bombardment_wtmnb_invasion_desc:0 "命令机械哨兵作为陆军部队登陆\n-对§Y军团§!造成§R瞬间抹杀§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§G不值一提§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-立即占领这颗星球。"
+ bombardment_wtmnb_invasion: "轨道协助登陆作战"
+ bombardment_wtmnb_invasion_name: "$bombardment_wtmnb_invasion$"
+ bombardment_wtmnb_invasion_desc: "命令机械哨兵作为陆军部队登陆\n-对§Y军团§!造成§R瞬间抹杀§!伤害\n-对§Y星球§!造成§G不值一提§!伤害\n-对§Y人口§!造成§G不值一提§!伤害\n-将会轰炸不设防的星球\n-所有驻军立刻被抹杀\n-立即占领这颗星球。"
  #                        _
  #    _____   _____ _ __ | |_ ___
  #   / _ \ \ / / _ \ '_ \| __/ __|
  #  |  __/\ V /  __/ | | | |_\__ \
  #   \___| \_/ \___|_| |_|\__|___/
  #
- wtmnb.1.name:0 "§H[From.GetName]§!已成无人之境"
- wtmnb.1.desc:0 "§H[From.GetName]§!上能称之为人口的东西都被我们的舰队干掉了！"
- wtmnb.1.a:0 "§H[From.GetName]§!无人生还"
- wtmnb.3.title:0 "让我们看看$lgate$后面有什么"
- unremarkable:0 "此事平淡无奇"
- wtmnb.3.c:0 "z?你把§I$NAME_Gray$§!给我交了"
+ wtmnb.1.name: "§H[From.GetName]§!已成无人之境"
+ wtmnb.1.desc: "§H[From.GetName]§!上能称之为人口的东西都被我们的舰队干掉了！"
+ wtmnb.1.a: "§H[From.GetName]§!无人生还"
+ wtmnb.3.title: "让我们看看$lgate$后面有什么"
+ unremarkable: "此事平淡无奇"
+ wtmnb.3.c: "z?你把§I$NAME_Gray$§!给我交了"
 
- wtmnb.5.name:0 "超空间航路已建立"
- wtmnb.5.desc:0 "[from.GetName]到[wtmnb_portal_start.GetName]的超空间航路已经建立"
+ wtmnb.5.name: "超空间航路已建立"
+ wtmnb.5.desc: "[from.GetName]到[wtmnb_portal_start.GetName]的超空间航路已经建立"
 
 
- wtmnb.2001.a:0 "扫射星系"
- wtmnb.2001.a.tip:0 "这会摧毁星系内几乎所有舰队，包括我们的"
- wtmnb.2001.b:0 "太虚剑神"
- wtmnb.2001.b.tip:0 "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
+ wtmnb.2001.a: "扫射星系"
+ wtmnb.2001.a.tip: "这会摧毁星系内几乎所有舰队，包括我们的"
+ wtmnb.2001.b: "太虚剑神"
+ wtmnb.2001.b.tip: "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
 
  wtmnb.4000.desc: "将在[From.GetName]召唤风暴："
 
- wtmnb_colossus.1001.name:0 "月光王座"
- wtmnb_colossus.1001.desc:0 "我们打算在§H[From.GetName]§!进行："
- wtmnb_colossus.1001.a:0 "算了"
- wtmnb_colossus.1001.a.tip:0 "回收部署的虚数内能"
- wtmnb_colossus.1001.b:0 "圣痕计划([From.Owner.GetName])"
- wtmnb_colossus.1001.b.tip:0 "[From.Owner.GetSpeciesName]被赋予§H$trait_wtmnb_stigmata$§!特质，包括领袖"
- wtmnb_colossus.1001.c:0 "圣痕计划([From.GetName])"
- wtmnb_colossus.1001.c.tip:0 "[From.GetName]上所有人口:\n获得§H$trait_wtmnb_stigmata$§!特质\n宜居星球被设为[wtmnb_target.GetClassName]"
- wtmnb_colossus.1001.d:0 "行星/人口物种重构"
- wtmnb_colossus.1001.e:0 "行星/人口物种修饰"
- wtmnb_colossus.1001.f:0 "$lgate$观测"
- lock_all_bypass_in_system:0 "锁定恒星系内所有$LGATE_GALACTIC$(不包含$NAME_Final_Egress$)、$NATURAL_WORMHOLE_GALACTIC$、$SHROUD_TUNNEL_GALACTIC$(不包含$gov_shroudwalker_enclave$)\n§B$GATEWAY$§!§g不能锁，反正代码里是这么写的§!"
- wtmnb_colossus.1001.l:0 "切断$concept_hyperlane$"
- wtmnb_colossus.1001.m:0 "虚数放逐"
- wtmnb_colossus.1001.m.tip:0 "将整个[wtmnb_target.Owner.GetName]关押在其母星系[wtmnb_target.System.GetName]\n§L摧毁除[wtmnb_target.System.GetName]星系以外的所有殖民地与恒星基地，并删除[wtmnb_target.System.GetName]星系的$concept_hyperlane$§!"
- wtmnb_colossus.1001.u:0 "外交频道"
- wtmnb_colossus.1001.v:0 "占领"
- wtmnb_colossus.1001.w:0 "创造生态环境"
- wtmnb_colossus.1001.w.desc:0 "既然拥有轻易撼动星辰、逆转生死的力量，在几个小时内依靠“贴膜”技术将一块虚空中的大石头变成生机盎然的星球也并非不可能"
- wtmnb_colossus.1001.x:0 "建造环世界"
- wtmnb_colossus.1001.x.desc:0 "我们不需要什么行星了\n-§R小心，别对自己唯一的殖民地所在星系用，否则。。。§!"
+ wtmnb_colossus.1001.name: "月光王座"
+ wtmnb_colossus.1001.desc: "我们打算在§H[From.GetName]§!进行："
+ wtmnb_colossus.1001.a: "算了"
+ wtmnb_colossus.1001.a.tip: "回收部署的虚数内能"
+ wtmnb_colossus.1001.b: "圣痕计划([From.Owner.GetName])"
+ wtmnb_colossus.1001.b.tip: "[From.Owner.GetSpeciesName]被赋予§H$trait_wtmnb_stigmata$§!特质，包括领袖"
+ wtmnb_colossus.1001.c: "圣痕计划([From.GetName])"
+ wtmnb_colossus.1001.c.tip: "[From.GetName]上所有人口:\n获得§H$trait_wtmnb_stigmata$§!特质\n宜居星球被设为[wtmnb_target.GetClassName]"
+ wtmnb_colossus.1001.d: "行星/人口物种重构"
+ wtmnb_colossus.1001.e: "行星/人口物种修饰"
+ wtmnb_colossus.1001.f: "$lgate$观测"
+ lock_all_bypass_in_system: "锁定恒星系内所有$LGATE_GALACTIC$(不包含$NAME_Final_Egress$)、$NATURAL_WORMHOLE_GALACTIC$、$SHROUD_TUNNEL_GALACTIC$(不包含$gov_shroudwalker_enclave$)\n§B$GATEWAY$§!§g不能锁，反正代码里是这么写的§!"
+ wtmnb_colossus.1001.l: "切断$concept_hyperlane$"
+ wtmnb_colossus.1001.m: "虚数放逐"
+ wtmnb_colossus.1001.m.tip: "将整个[wtmnb_target.Owner.GetName]关押在其母星系[wtmnb_target.System.GetName]\n§L摧毁除[wtmnb_target.System.GetName]星系以外的所有殖民地与恒星基地，并删除[wtmnb_target.System.GetName]星系的$concept_hyperlane$§!"
+ wtmnb_colossus.1001.u: "外交频道"
+ wtmnb_colossus.1001.v: "占领"
+ wtmnb_colossus.1001.w: "创造生态环境"
+ wtmnb_colossus.1001.w.desc: "既然拥有轻易撼动星辰、逆转生死的力量，在几个小时内依靠“贴膜”技术将一块虚空中的大石头变成生机盎然的星球也并非不可能"
+ wtmnb_colossus.1001.x: "建造环世界"
+ wtmnb_colossus.1001.x.desc: "我们不需要什么行星了\n-§R小心，别对自己唯一的殖民地所在星系用，否则。。。§!"
 
  ######### 外交
- wtmnb_diplomacy.1.name:0 "[wtmnb_target.Owner.GetName]"
- wtmnb_diplomacy.1.desc:0 "§BDave_12138§!:我也想把这些选项放外交/谍报里，可惜堕落帝国没有谍报系统。"
- wtmnb_diplomacy.1.a:0 "没事了。"
- wtmnb_diplomacy.1.b:0 "刺杀[wtmnb_target.Owner.GetRulerTitle]§H[wtmnb_target.Owner.GetRulerName]§!"
- wtmnb_diplomacy.1.b.desc:0 "§H[wtmnb_target.Owner.GetRulerName]§!死亡\n[wtmnb_target.Owner.GetName]被羞辱"
- wtmnb_diplomacy.1.c:0 "宣战(附庸)"
- wtmnb_diplomacy.1.c.desc:0 "达成战争目标后§H[wtmnb_target.Owner.GetName]§!成为§H[Root.GetName]§!的附庸/子公司\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
- wtmnb_diplomacy.1.d:0 "宣战(净化)"
- wtmnb_diplomacy.1.d.desc:0 "§R全面战争§!\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
- wtmnb_diplomacy.1.e:0 "宣布§H[wtmnb_target.Owner.GetName]§!独立"
- wtmnb_diplomacy.1.e.desc:0 "给予§H[wtmnb_target.Owner.GetName]§!完整主权"
- wtmnb_diplomacy.1.f:0 "关闭边境"
- wtmnb_diplomacy.1.f.desc:0 "关闭边境"
- wtmnb_diplomacy.1.g:0 "开放边境"
- wtmnb_diplomacy.1.g.desc:0 "开放边境"
+ wtmnb_diplomacy.1.name: "[wtmnb_target.Owner.GetName]"
+ wtmnb_diplomacy.1.desc: "§BDave_12138§!:我也想把这些选项放外交/谍报里，可惜堕落帝国没有谍报系统。"
+ wtmnb_diplomacy.1.a: "没事了。"
+ wtmnb_diplomacy.1.b: "刺杀[wtmnb_target.Owner.GetRulerTitle]§H[wtmnb_target.Owner.GetRulerName]§!"
+ wtmnb_diplomacy.1.b.desc: "§H[wtmnb_target.Owner.GetRulerName]§!死亡\n[wtmnb_target.Owner.GetName]被羞辱"
+ wtmnb_diplomacy.1.c: "宣战(附庸)"
+ wtmnb_diplomacy.1.c.desc: "达成战争目标后§H[wtmnb_target.Owner.GetName]§!成为§H[Root.GetName]§!的附庸/子公司\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
+ wtmnb_diplomacy.1.d: "宣战(净化)"
+ wtmnb_diplomacy.1.d.desc: "§R全面战争§!\n-战争将在30天后爆发，换句话说你有一个月的时间§H令位于[wtmnb_target.Owner.GetName]境内的己方舰队撤离§!\n-其实似乎可以在开着这个窗口的情况下把舰队撤走"
+ wtmnb_diplomacy.1.e: "宣布§H[wtmnb_target.Owner.GetName]§!独立"
+ wtmnb_diplomacy.1.e.desc: "给予§H[wtmnb_target.Owner.GetName]§!完整主权"
+ wtmnb_diplomacy.1.f: "关闭边境"
+ wtmnb_diplomacy.1.f.desc: "关闭边境"
+ wtmnb_diplomacy.1.g: "开放边境"
+ wtmnb_diplomacy.1.g.desc: "开放边境"
 
- wtmnb_diplomacy.1000.name:0 "[deadruler.GetName]死于急性崩坏能感染"
- wtmnb_diplomacy.1000.friendly.desc:0 "随着[deadruler.GetName]身上紫色裂样纹路的突然出现与迅速扩大，现场友好轻松的气氛戛然而止\n短短几分钟后[deadruler.GetName]被宣布死亡，现场的[wtmnb_target.Owner.GetSpeciesNamePlural]眼中充满了悲伤与不解。。"
- wtmnb_diplomacy.1000.desc:0 "在我们将虚数内能定向引导后的短短几分钟后，[wtmnb_target.Owner.GetName]宣布[deadruler.GetName]死于未知现象，手法不明但有充分证据证明是[Root.GetName]所为。"
- wtmnb_diplomacy.1000.a:0 "了解。"
- wtmnb_diplomacy.1000.tip:0 "§H[wtmnb_target.Owner.GetRulerTitle][deadruler.GetName]§!去世\n[wtmnb_target.Owner.GetName]受辱"
- wtmnb_diplomacy.1000.b:0 "卧槽我点错了"
- wtmnb_diplomacy.1000.c:0 "赶紧选个新的出来，我还要再宰一次"
- wtmnb_diplomacy.1000.tip2:0 "§g急也没用，再等等吧§!"
- wtmnb_diplomacy.1000.d:0 "外星杂碎-1"
+ wtmnb_diplomacy.1000.name: "[deadruler.GetName]死于急性崩坏能感染"
+ wtmnb_diplomacy.1000.friendly.desc: "随着[deadruler.GetName]身上紫色裂样纹路的突然出现与迅速扩大，现场友好轻松的气氛戛然而止\n短短几分钟后[deadruler.GetName]被宣布死亡，现场的[wtmnb_target.Owner.GetSpeciesNamePlural]眼中充满了悲伤与不解。。"
+ wtmnb_diplomacy.1000.desc: "在我们将虚数内能定向引导后的短短几分钟后，[wtmnb_target.Owner.GetName]宣布[deadruler.GetName]死于未知现象，手法不明但有充分证据证明是[Root.GetName]所为。"
+ wtmnb_diplomacy.1000.a: "了解。"
+ wtmnb_diplomacy.1000.tip: "§H[wtmnb_target.Owner.GetRulerTitle][deadruler.GetName]§!去世\n[wtmnb_target.Owner.GetName]受辱"
+ wtmnb_diplomacy.1000.b: "卧槽我点错了"
+ wtmnb_diplomacy.1000.c: "赶紧选个新的出来，我还要再宰一次"
+ wtmnb_diplomacy.1000.tip2: "§g急也没用，再等等吧§!"
+ wtmnb_diplomacy.1000.d: "外星杂碎-1"
 
- wtmnb_diplomacy.1001.name:0 "[Root.GetRulerTitle]遇害"
- wtmnb_diplomacy.1001.desc:0 "§H[deadruler.GetName]§!在与§H[From.GetName]§![From.GetRulerTitle]§H[From.GetRulerName]§!通讯中不治身亡，种种迹象表明此乃[From.GetName]所为。"
- wtmnb_diplomacy.1001.a:0 "为什么？我们做错了什么？"
- wtmnb_diplomacy.1001.b:0 "他们会为此付出代价"
- wtmnb_diplomacy.1001.c:0 "准备葬礼。"
+ wtmnb_diplomacy.1001.name: "[Root.GetRulerTitle]遇害"
+ wtmnb_diplomacy.1001.desc: "§H[deadruler.GetName]§!在与§H[From.GetName]§![From.GetRulerTitle]§H[From.GetRulerName]§!通讯中不治身亡，种种迹象表明此乃[From.GetName]所为。"
+ wtmnb_diplomacy.1001.a: "为什么？我们做错了什么？"
+ wtmnb_diplomacy.1001.b: "他们会为此付出代价"
+ wtmnb_diplomacy.1001.c: "准备葬礼。"
 
- wtmnb_diplomacy.1100.name:0 "与§H[wtmnb_target.Owner.GetName]§!的战争"
- wtmnb_diplomacy.1100.desc:0 "我们将将与§H[wtmnb_target.Owner.GetName]§!战争的目标重新设置为附庸"
- wtmnb_diplomacy.1100.desc2:0 "我们将向§H[wtmnb_target.Owner.GetName]§!宣战，目的是让对方成为我们的附庸"
- wtmnb_diplomacy.1100.a:0 "臣服，或是灭亡"
- wtmnb_diplomacy.1100.c:0 "不，我另有安排"
+ wtmnb_diplomacy.1100.name: "与§H[wtmnb_target.Owner.GetName]§!的战争"
+ wtmnb_diplomacy.1100.desc: "我们将将与§H[wtmnb_target.Owner.GetName]§!战争的目标重新设置为附庸"
+ wtmnb_diplomacy.1100.desc2: "我们将向§H[wtmnb_target.Owner.GetName]§!宣战，目的是让对方成为我们的附庸"
+ wtmnb_diplomacy.1100.a: "臣服，或是灭亡"
+ wtmnb_diplomacy.1100.c: "不，我另有安排"
 
 
- wtmnb_diplomacy.1101.desc:0 "我们将将与§H[wtmnb_target.Owner.GetName]§!战争的目标重新设置为净化"
- wtmnb_diplomacy.1101.desc2:0 "我们将向§H[wtmnb_target.Owner.GetName]§!宣战，目的是让对方从银河系消失"
- wtmnb_diplomacy.1101.a:0 "让我们开始吧"
+ wtmnb_diplomacy.1101.desc: "我们将将与§H[wtmnb_target.Owner.GetName]§!战争的目标重新设置为净化"
+ wtmnb_diplomacy.1101.desc2: "我们将向§H[wtmnb_target.Owner.GetName]§!宣战，目的是让对方从银河系消失"
+ wtmnb_diplomacy.1101.a: "让我们开始吧"
  ####################
- wtmnb_species.1.name:0 "物种列表"
- wtmnb_species.1.desc:0 "将目标星球所有物种改造为："
- wtmnb_species.1.0:0 "取消"
+ wtmnb_species.1.name: "物种列表"
+ wtmnb_species.1.desc: "将目标星球所有物种改造为："
+ wtmnb_species.1.0: "取消"
 
 
- wtmnb_species.100.name:0 "物种特殊特质微调"
- wtmnb_species.100.desc:0 "$trait_hive_mind$/$trait_machine_unit$/$trait_mechanical$"
- wtmnb_species.100.0:0 "退出"
+ wtmnb_species.100.name: "物种特殊特质微调"
+ wtmnb_species.100.desc: "$trait_hive_mind$/$trait_machine_unit$/$trait_mechanical$"
+ wtmnb_species.100.0: "退出"
 
  #   ___ _ __   ___  ___(_) __ _| |  _ __  _ __ ___ (_) ___  ___| |_ #
  #  / __| '_ \ / _ \/ __| |/ _` | | | '_ \| '__/ _ \| |/ _ \/ __| __|#
@@ -345,21 +345,21 @@ l_simp_chinese:
  #  |___/ .__/ \___|\___|_|\__,_|_| | .__/|_|  \___// |\___|\___|\__|#
  #      |_|                         |_|           |__/               #
  ##
- wtmnb_remove_megastructure_chain_title:0 "拆除巨构"
- wtmnb_remove_megastructure_chain_desc:0 "巨构暴力破拆\n我们的工程船所在的星系内，所有巨构都可以拆，包括别人家的\n建好的$ringworld_lowercase$、$habitat_lowercase$不算巨构，不能拆"
+ wtmnb_remove_megastructure_chain_title: "拆除巨构"
+ wtmnb_remove_megastructure_chain_desc: "巨构暴力破拆\n我们的工程船所在的星系内，所有巨构都可以拆，包括别人家的\n建好的$ringworld_lowercase$、$habitat_lowercase$不算巨构，不能拆"
 
- WTMNB_REMOVE_MEGASTRUCTURE:0 "拆除§B[This.GetName]§!"
- WTMNB_REMOVE_MEGASTRUCTURE_DESC:0 "在§B[This.System.GetName]§!星系拆除§B[This.GetName]§!"
+ WTMNB_REMOVE_MEGASTRUCTURE: "拆除§B[This.GetName]§!"
+ WTMNB_REMOVE_MEGASTRUCTURE_DESC: "在§B[This.System.GetName]§!星系拆除§B[This.GetName]§!"
 
 
- wtmnb_open_fire_chain_title:0 "$wtmnb_fortress$·超距射击"
- wtmnb_open_fire_chain_desc:0 "我们将通过这个事件链，对银河任意一个角落使用$WTMNB_WEAPON$"
- # WTMNB_OPEN_FIRE_SYSTEM_SELECT:0 "§B[This.System.GetName]§!星§Y系§!选择"
- # WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC:0 "确定目标位于§B[This.System.GetName]§!星系"
- WTMNB_OPEN_FIRE_PLANET_SELECT:0 "§M[This.GetName]§!星体选择"
- WTMNB_OPEN_FIRE_PLANET_SELECT_DESC:0 "我们将对§B[This.GetName]§!使用$wtmnb_fortress$"
- WTMNB_OPEN_FIRE_CANCEL:0 "取消发射"
- WTMNB_OPEN_FIRE_CANCEL_DESC:0 "计划有变，我们打算取消这次发射"
+ wtmnb_open_fire_chain_title: "$wtmnb_fortress$·超距射击"
+ wtmnb_open_fire_chain_desc: "我们将通过这个事件链，对银河任意一个角落使用$WTMNB_WEAPON$"
+ # WTMNB_OPEN_FIRE_SYSTEM_SELECT: "§B[This.System.GetName]§!星§Y系§!选择"
+ # WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC: "确定目标位于§B[This.System.GetName]§!星系"
+ WTMNB_OPEN_FIRE_PLANET_SELECT: "§M[This.GetName]§!星体选择"
+ WTMNB_OPEN_FIRE_PLANET_SELECT_DESC: "我们将对§B[This.GetName]§!使用$wtmnb_fortress$"
+ WTMNB_OPEN_FIRE_CANCEL: "取消发射"
+ WTMNB_OPEN_FIRE_CANCEL_DESC: "计划有变，我们打算取消这次发射"
 
  #   _            _
  #  | |_ ___  ___| |__
@@ -367,20 +367,20 @@ l_simp_chinese:
  #  | ||  __/ (__| | | |
  #   \__\___|\___|_| |_|
 
- tech_wtmnb_fortress:0 "虚数内能导论"
- tech_wtmnb_fortress_desc:0 "热力学第二定律有这样一个表述：一个系统的熵如果下降，就必然会引起另一个系统的熵以更大的幅度上升。从信息的角度来看，这相当于，信息高度混沌化的普通环境，与信息高度秩序化的负熵环境之间，存在巨大的信息不对称。历史研究表明，崩坏能和这种信息不对称具有强烈的伴生关系。而在数学上，属于坍缩次元的虚数内能，与作为发散次元——也就是我们平常能感知到的四维时空——的热力表征的实数内能，在数学上可以通过高维复函数进行统一的表达，其结果可以在微观尺度上预测崩坏的波动。因此，当前的研究者普遍猜想，这种“虚数内能”就是崩坏能，或者至少是崩坏能的重要组成部分。"
+ tech_wtmnb_fortress: "虚数内能导论"
+ tech_wtmnb_fortress_desc: "热力学第二定律有这样一个表述：一个系统的熵如果下降，就必然会引起另一个系统的熵以更大的幅度上升。从信息的角度来看，这相当于，信息高度混沌化的普通环境，与信息高度秩序化的负熵环境之间，存在巨大的信息不对称。历史研究表明，崩坏能和这种信息不对称具有强烈的伴生关系。而在数学上，属于坍缩次元的虚数内能，与作为发散次元——也就是我们平常能感知到的四维时空——的热力表征的实数内能，在数学上可以通过高维复函数进行统一的表达，其结果可以在微观尺度上预测崩坏的波动。因此，当前的研究者普遍猜想，这种“虚数内能”就是崩坏能，或者至少是崩坏能的重要组成部分。"
  ###############
- opinion_wtmnb_1:0 "我们喜欢你"
- opinion_wtmnb_2:0 "是了，我也爱你"
- opinion_wtmnb_3:0 "$opinion_wtmnb_2$"
+ opinion_wtmnb_1: "我们喜欢你"
+ opinion_wtmnb_2: "是了，我也爱你"
+ opinion_wtmnb_3: "$opinion_wtmnb_2$"
  ###############
 
  ####################
- terraform_needs_4th_key:0 "需要§B$WTMNB_4TH_KEY$§!"
- terraform_needs_4th_key_and_eden_star:0 "需要§B$WTMNB_4TH_KEY$§!和§B$WTMNB_9TH_KEY$§!"
- add_20_pop:0 "增加20个£pops£人口，物种随机"
- #  REMOVE_PLANET_EFFECT:0 "§Y[This.GetName]§!蒸发"
- ringworld_will_be_not_colonizable:0 "居住区被击毁"
+ terraform_needs_4th_key: "需要§B$WTMNB_4TH_KEY$§!"
+ terraform_needs_4th_key_and_eden_star: "需要§B$WTMNB_4TH_KEY$§!和§B$WTMNB_9TH_KEY$§!"
+ add_20_pop: "增加20个£pops£人口，物种随机"
+ #  REMOVE_PLANET_EFFECT: "§Y[This.GetName]§!蒸发"
+ ringworld_will_be_not_colonizable: "居住区被击毁"
  ####################
  #       _           _     _
  #    __| | ___  ___(_)___(_) ___  _ __
@@ -388,48 +388,48 @@ l_simp_chinese:
  #  | (_| |  __/ (__| \__ \ | (_) | | | |
  #   \__,_|\___|\___|_|___/_|\___/|_| |_|
 
- decision_wtmnb_create_pop:0 "单元复制协议"
- decision_wtmnb_create_pop_desc:0 "简单的复制粘贴——但实现这一结果的过程本身很有趣——我是说，高效。"
- decision_wtmnb_open_fire:0 "§B$wtmnb_fortress$§!·超距射击"
- decision_wtmnb_open_fire_desc:0 "我们不用每次到目的地去，对着目标星球、使用§B$wtmnb_fortress$§!，我们可以用几个步骤实现一次超距射击"
- decision_wtmnb_reroll:0 "地质改造"
- decision_wtmnb_reroll_desc:0 "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
- decision_wtmnb_molten:0 "熔毁"
- decision_wtmnb_molten_desc:0 "使用第七律者权柄对星球表面清洗，除了可能蒸发一部分地质结构外，还通常会导致星球不再宜居"
+ decision_wtmnb_create_pop: "单元复制协议"
+ decision_wtmnb_create_pop_desc: "简单的复制粘贴——但实现这一结果的过程本身很有趣——我是说，高效。"
+ decision_wtmnb_open_fire: "§B$wtmnb_fortress$§!·超距射击"
+ decision_wtmnb_open_fire_desc: "我们不用每次到目的地去，对着目标星球、使用§B$wtmnb_fortress$§!，我们可以用几个步骤实现一次超距射击"
+ decision_wtmnb_reroll: "地质改造"
+ decision_wtmnb_reroll_desc: "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
+ decision_wtmnb_molten: "熔毁"
+ decision_wtmnb_molten_desc: "使用第七律者权柄对星球表面清洗，除了可能蒸发一部分地质结构外，还通常会导致星球不再宜居"
 
- decision_wtmnb_planet_extend:0 "可用区划拓展"
- decision_wtmnb_planet_extend_desc:0 "增加最大区划数\n+30,+10,+10,+10……"
+ decision_wtmnb_planet_extend: "可用区划拓展"
+ decision_wtmnb_planet_extend_desc: "增加最大区划数\n+30,+10,+10,+10……"
 
- decision_wtmnb_city:0 "$pc_wtmnb_city$计划"
- decision_wtmnb_city_desc:0 "将这里智能化改造"
+ decision_wtmnb_city: "$pc_wtmnb_city$计划"
+ decision_wtmnb_city_desc: "将这里智能化改造"
 
- decision_wtmnb_break_border:0 "开放边境"
- decision_wtmnb_break_border_desc:0 "让邻国边境对我们开放，但他们可能很快又关闭边境"
+ decision_wtmnb_break_border: "开放边境"
+ decision_wtmnb_break_border_desc: "让邻国边境对我们开放，但他们可能很快又关闭边境"
 
- decision_wtmnb_11th_shield:0 "$aura_judah$"
- decision_wtmnb_11th_shield_desc:0 "在重力井外展开神恩结界，从而阻止跃迁引擎正确定位本星系"
- decision_wtmnb_11th_shield_off:0 "解除$aura_judah$"
- decision_wtmnb_11th_shield_off_desc:0 "解除神恩结界，让除我们之外的文明可以使用跃迁引擎折跃进入本星系"
+ decision_wtmnb_11th_shield: "$aura_judah$"
+ decision_wtmnb_11th_shield_desc: "在重力井外展开神恩结界，从而阻止跃迁引擎正确定位本星系"
+ decision_wtmnb_11th_shield_off: "解除$aura_judah$"
+ decision_wtmnb_11th_shield_off_desc: "解除神恩结界，让除我们之外的文明可以使用跃迁引擎折跃进入本星系"
 
- decision_wtmnb_more_civic_point:0 "额外国民理念点数"
- decision_wtmnb_more_civic_point_desc:0 "可微调数量的额外国民理念点数，点多了可以地块清理挖掉\n§L总算不用忍受左上角总挂个警报，国民理念已经选的UI装不下的情况了§!"
+ decision_wtmnb_more_civic_point: "额外国民理念点数"
+ decision_wtmnb_more_civic_point_desc: "可微调数量的额外国民理念点数，点多了可以地块清理挖掉\n§L总算不用忍受左上角总挂个警报，国民理念已经选的UI装不下的情况了§!"
 
- decision_wtmnb_build_ship:0 "§B$wtmnb_fortress$§!地面生产线"
- decision_wtmnb_build_ship_effect:0 "制造一支优势火力舰队"
- decision_wtmnb_build_ship_desc:0 "没时间解释了，快上船"
+ decision_wtmnb_build_ship: "§B$wtmnb_fortress$§!地面生产线"
+ decision_wtmnb_build_ship_effect: "制造一支优势火力舰队"
+ decision_wtmnb_build_ship_desc: "没时间解释了，快上船"
 
- decision_wtmnb_build_colossus:0 "§B$wtmnb_fortress$§!地面$colossus$生产线"
- decision_wtmnb_build_colossus_effect:0 "建造巨像，使用你的舰船设计器"
- decision_wtmnb_build_colossus_desc:0 "就用这个轰掉异种的头吧"
+ decision_wtmnb_build_colossus: "§B$wtmnb_fortress$§!地面$colossus$生产线"
+ decision_wtmnb_build_colossus_effect: "建造巨像，使用你的舰船设计器"
+ decision_wtmnb_build_colossus_desc: "就用这个轰掉异种的头吧"
 
- decision_wtmnb_relic_cooldown:0 "重置遗物CD"
- decision_wtmnb_relic_cooldown_desc:0 "我去，传说中的祭礼枪"
+ decision_wtmnb_relic_cooldown: "重置遗物CD"
+ decision_wtmnb_relic_cooldown_desc: "我去，传说中的祭礼枪"
  ##################
 
- pc_wtmnb_city:0 "超级气球"
- pc_wtmnb_city_adj:0 "$pc_wtmnb_city$"
- pc_wtmnb_city_desc:0 "蠢驴把区划与建筑耦合了，所以没有区划的本星球改名为超级气球。"
- mod_pc_wtmnb_city_habitability:0 "$pc_wtmnb_city$星球宜居性"
+ pc_wtmnb_city: "超级气球"
+ pc_wtmnb_city_adj: "$pc_wtmnb_city$"
+ pc_wtmnb_city_desc: "蠢驴把区划与建筑耦合了，所以没有区划的本星球改名为超级气球。"
+ mod_pc_wtmnb_city_habitability: "$pc_wtmnb_city$星球宜居性"
  ###############
 
  building_wtmnb_meeting_room: "战略忽悠会议室"
@@ -450,23 +450,23 @@ l_simp_chinese:
  # wtmnb_fill_workforce_tip: "为行星人口提供§G$@wtmnb_fill_workforce_to_target$/当前人口数-1§!的$MOD_POP_BONUS_WORKFORCE_MULT$"
  ###############
 
- job_ai_wtmnb_master:0 "设备维护工"
- job_ai_wtmnb_master_plural:0 "$job_ai_wtmnb_master$"
- job_ai_wtmnb_master_desc:0 "$d_wtmnb_city_capital_tooltip$\n每天的工作是看着屏幕发呆"
- mod_job_ai_wtmnb_master_add:0 "$job_ai_wtmnb_master$岗位"
- mod_job_ai_wtmnb_master_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master$岗位"
- mod_job_ai_wtmnb_master_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_ai_wtmnb_master£"
- job_ai_wtmnb_master_drone:0 "设备维护子个体"
- job_ai_wtmnb_master_drone_plural:0 "$job_ai_wtmnb_master_drone$"
- job_ai_wtmnb_master_drone_desc:0 "$job_ai_wtmnb_master_desc$"
- mod_job_ai_wtmnb_master_drone_add:0 "$job_ai_wtmnb_master$岗位"
- mod_job_ai_wtmnb_master_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master_drone$岗位"
- mod_job_ai_wtmnb_master_drone_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_ai_wtmnb_master_drone£"
+ job_ai_wtmnb_master: "设备维护工"
+ job_ai_wtmnb_master_plural: "$job_ai_wtmnb_master$"
+ job_ai_wtmnb_master_desc: "$d_wtmnb_city_capital_tooltip$\n每天的工作是看着屏幕发呆"
+ mod_job_ai_wtmnb_master_add: "$job_ai_wtmnb_master$岗位"
+ mod_job_ai_wtmnb_master_per_pop: "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master$岗位"
+ mod_job_ai_wtmnb_master_per_pop_short: "\n每$VALUE$ £pop£ §G+1§! £job_ai_wtmnb_master£"
+ job_ai_wtmnb_master_drone: "设备维护子个体"
+ job_ai_wtmnb_master_drone_plural: "$job_ai_wtmnb_master_drone$"
+ job_ai_wtmnb_master_drone_desc: "$job_ai_wtmnb_master_desc$"
+ mod_job_ai_wtmnb_master_drone_add: "$job_ai_wtmnb_master$岗位"
+ mod_job_ai_wtmnb_master_drone_per_pop: "每$VALUE$个人口提供§G+1§!个$job_ai_wtmnb_master_drone$岗位"
+ mod_job_ai_wtmnb_master_drone_per_pop_short: "\n每$VALUE$ £pop£ §G+1§! £job_ai_wtmnb_master_drone£"
 
- job_wtmnb_fooyouist:0 "战忽宣传员"
- job_wtmnb_fooyouist_plural:0 "$job_wtmnb_fooyouist$"
- job_wtmnb_fooyouist_desc:0 "我们还是土著，没上天呢，怎么可能有几十个殖民地，你不要乱讲"
- mod_job_wtmnb_fooyouist_add:0 "$job_wtmnb_fooyouist$岗位"
+ job_wtmnb_fooyouist: "战忽宣传员"
+ job_wtmnb_fooyouist_plural: "$job_wtmnb_fooyouist$"
+ job_wtmnb_fooyouist_desc: "我们还是土著，没上天呢，怎么可能有几十个殖民地，你不要乱讲"
+ mod_job_wtmnb_fooyouist_add: "$job_wtmnb_fooyouist$岗位"
  # job_wtmnb_fooyouist_effect_desc: "REPLACE_ME"
  # mod_job_wtmnb_fooyouist_add_desc: "REPLACE_ME"
  # mod_job_wtmnb_fooyouist_per_pop: "REPLACE_ME"
@@ -474,10 +474,10 @@ l_simp_chinese:
  # mod_job_wtmnb_fooyouist_per_crime: "REPLACE_ME"
  # mod_job_wtmnb_fooyouist_per_crime_desc: "REPLACE_ME"
 
- job_wtmnb_fooyouist_drone:0 "战忽宣传子个体"
- job_wtmnb_fooyouist_drone_plural:0 "$job_wtmnb_fooyouist_drone$"
- job_wtmnb_fooyouist_drone_desc:0 "$job_wtmnb_fooyouist_desc$"
- mod_job_wtmnb_fooyouist_drone_add:0 "$job_wtmnb_fooyouist_drone$岗位"
+ job_wtmnb_fooyouist_drone: "战忽宣传子个体"
+ job_wtmnb_fooyouist_drone_plural: "$job_wtmnb_fooyouist_drone$"
+ job_wtmnb_fooyouist_drone_desc: "$job_wtmnb_fooyouist_desc$"
+ mod_job_wtmnb_fooyouist_drone_add: "$job_wtmnb_fooyouist_drone$岗位"
  # job_wtmnb_fooyouist_drone_effect_desc: "REPLACE_ME"
  # mod_job_wtmnb_fooyouist_drone_add_desc: "REPLACE_ME"
  # mod_job_wtmnb_fooyouist_drone_per_pop: "REPLACE_ME"
@@ -487,15 +487,15 @@ l_simp_chinese:
  ##
  # 原版没有堡垒环
  not_vanilla: "(并非原版)"
- col_ring_fortress:0 "驻军型$col_ring_mix$"
- col_ring_fortress_tt:1 "该环世界区段到处充斥着轨道大炮、碉堡、要塞等等防御工事，要想入侵此环世界区段或者发动起义是非常困难的。\n§g$not_vanilla$§!"
- col_ring_fortress_desc:1 "$col_fortress_desc$"
+ col_ring_fortress: "驻军型$col_ring_mix$"
+ col_ring_fortress_tt: "该环世界区段到处充斥着轨道大炮、碉堡、要塞等等防御工事，要想入侵此环世界区段或者发动起义是非常困难的。\n§g$not_vanilla$§!"
+ col_ring_fortress_desc: "$col_fortress_desc$"
 
 
 
  # ship design
- DESIGN_wtmnb_fortress:0 "$wtmnb_fortress$"
- NAME_wtmnb_cannon:0 "$wtmnb_cannon$"
+ DESIGN_wtmnb_fortress: "$wtmnb_fortress$"
+ NAME_wtmnb_cannon: "$wtmnb_cannon$"
 
 
  sm_wtmnb_starbase_building: "§M$wtmnb_fortress$§!"
