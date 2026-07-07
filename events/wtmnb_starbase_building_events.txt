@@ -1,72 +1,97 @@
 namespace = wtmnb
-# 加恒星基地建筑
 ship_event = {
-    id = wtmnb.5000
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = { is_ship_size = wtmnb_fortress }
-    immediate = {
-        starbase = {
-            set_starbase_building = { slot = 1 building = wtmnb_starbase_building }
-        }
-        ship_event = {
-            id = wtmnb.5010
-            days = 1
-        }
-    }
+	id = wtmnb.5000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { is_ship_size = wtmnb_fortress }
+	immediate = {
+		# 加恒星基地建筑
+		starbase = {
+			set_starbase_building = {
+				slot = 1
+				building = wtmnb_starbase_building
+			}
+		}
+		# 群星修仙传
+		set_variable = {
+			which = sxx_ship_state
+			value = 10
+		}
+		ship_event = {
+			id = wtmnb.5010
+			days = 1
+		}
+	}
 }
+
 ship_event = {
-    id = wtmnb.5001
-    is_triggered_only = yes
-    hide_window = yes
-    trigger = { is_ship_size = wtmnb_fortress }
-    immediate = {
-        ship_event = { id = wtmnb.5000 days = 1 }
-    }
+	id = wtmnb.5001
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = { is_ship_size = wtmnb_fortress }
+	immediate = {
+		ship_event = {
+			id = wtmnb.5000
+			days = 1
+		}
+	}
 }
+
+# 加成循环检查
 ship_event = {
-    id = wtmnb.5010
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        exists = starbase
-        starbase = {
-            has_starbase_building = wtmnb_starbase_building
-        }
-    }
-    immediate = {
-        starbase = {
-            export_trigger_value_to_variable = {
-                trigger = count_fleet_in_orbit
-                parameters = { limit = { is_ship_class = shipclass_constructor } }
-                variable = count_wtmnb_orbit_constructor
-            }
-            set_variable = {
-                value = 0.1
-                which = wtmnb_produces_multiplier
-            }
-            while = {
-                count = count_wtmnb_orbit_constructor
-                multiply_variable = {
-                    which = wtmnb_produces_multiplier
-                    value = 10
-                }
-            }
-        }
-        owner = {
-            remove_modifier = wtmnb_country_produces_mult
-            if = {
-                limit = { root.starbase = { check_variable = { which = count_wtmnb_orbit_constructor value >= 1 } } }
-                add_modifier = {
-                    modifier = wtmnb_country_produces_mult
-                    mult = root.starbase.wtmnb_produces_multiplier
-                    days = -1
-                }
-            }
-        }
-        ship_event = {
-            id = wtmnb.5010
-            days = 30
-        }
-    }
+	id = wtmnb.5010
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = starbase
+		starbase = {
+			has_starbase_building = wtmnb_starbase_building
+		}
+	}
+	immediate = {
+		starbase = {
+			export_trigger_value_to_variable = {
+				trigger = count_fleet_in_orbit
+				parameters = {
+					limit = {
+						is_ship_class = shipclass_constructor
+					}
+				}
+				variable = count_wtmnb_orbit_constructor
+			}
+			set_variable = {
+				value = 0.1
+				which = wtmnb_produces_multiplier
+			}
+			while = {
+				count = count_wtmnb_orbit_constructor
+				multiply_variable = {
+					which = wtmnb_produces_multiplier
+					value = 10
+				}
+			}
+		}
+		owner = {
+			remove_modifier = wtmnb_country_produces_mult
+			if = {
+				limit = {
+					root.starbase = {
+						check_variable = {
+							which = count_wtmnb_orbit_constructor
+							value >= 1
+						}
+					}
+				}
+				add_modifier = {
+					modifier = wtmnb_country_produces_mult
+					mult = root.starbase.wtmnb_produces_multiplier
+					days = -1
+				}
+			}
+		}
+		ship_event = {
+			id = wtmnb.5010
+			days = 30
+		}
+	}
 }

@@ -1,82 +1,124 @@
 namespace = wtmnb_colossus
 # 切换船坞
 fleet_event = {
-    id = wtmnb_colossus.2000
-    trigger = { from = { is_ship_size = wtmnb_fortress } }
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        from.starbase = {
-            if = {
-                limit = { has_starbase_flag = use_beastport }
-                remove_starbase_flag = use_beastport
-                set_starbase_flag = no_shipyard
-                set_ship_construction_type = none
-            } else_if = {
-                limit = { has_starbase_flag = no_shipyard }
-                remove_starbase_flag = no_shipyard
-                set_ship_construction_type = starbase_shipyard
-            } else = {
-                set_starbase_flag = use_beastport
-                set_ship_construction_type = starbase_beastport
-            }
-        }
-    }
+	id = wtmnb_colossus.2000
+	trigger = {
+		from = {
+			is_ship_size = wtmnb_fortress
+		}
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from.starbase = {
+			if = {
+				limit = {
+					has_starbase_flag = use_beastport
+				}
+				remove_starbase_flag = use_beastport
+				set_starbase_flag = no_shipyard
+				set_ship_construction_type = none
+			}
+			else_if = {
+				limit = {
+					has_starbase_flag = no_shipyard
+				}
+				remove_starbase_flag = no_shipyard
+				set_ship_construction_type = starbase_shipyard
+			}
+			else = {
+				set_starbase_flag = use_beastport
+				set_ship_construction_type = starbase_beastport
+			}
+		}
+	}
 }
+
+# 清除动作
+event = {
+	id = wtmnb_colossus.2100
+	trigger = {
+		from = {
+			is_ship_size = wtmnb_fortress
+		}
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			clear_orders = yes
+		}
+	}
+}
+
 # 射击
 system_event = {
-    id = wtmnb_colossus.3000
-    trigger = { from = { is_ship_size = wtmnb_fortress } }
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        if = {
-            limit = {
-                from.owner = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
-            }
-            # end_event_chain = wtmnb_open_fire_chain
-        } else = {
-            from = {
-                clear_orders = yes
-            }
-            system_event = {
-                id = wtmnb.6010
-                days = 0
-                scopes = {
-                    from = from.owner
-                }
-            }
-
-        }
-
-    }
+	id = wtmnb_colossus.3000
+	trigger = {
+		from = {
+			is_ship_size = wtmnb_fortress
+		}
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				from.owner = {
+					has_special_project = WTMNB_OPEN_FIRE_CANCEL
+				}
+			}
+			# end_event_chain = wtmnb_open_fire_chain
+		}
+		else = {
+			from = {
+				clear_orders = yes
+			}
+			system_event = {
+				id = wtmnb.6010
+				days = 0
+				scopes = {
+					from = from.owner
+				}
+			}
+		}
+	}
 }
+
 # 取消射击
 fleet_event = {
-    id = wtmnb_colossus.3001
-    trigger = { from = { is_ship_size = wtmnb_fortress } }
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        from.owner = {
-            end_event_chain = wtmnb_open_fire_chain
-        }
-    }
+	id = wtmnb_colossus.3001
+	trigger = {
+		from = {
+			is_ship_size = wtmnb_fortress
+		}
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from.owner = {
+			end_event_chain = wtmnb_open_fire_chain
+		}
+	}
 }
-# 升级按钮
 
+# 升级按钮
 fleet_event = {
-    id = wtmnb_colossus.4000
-    trigger = { from = { is_ship_size = wtmnb_fortress } }
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        from = {
-            set_fleet_settings = {
-                can_upgrade = yes
-                spawn_debris = no
-                uses_naval_capacity = no
-            }
-        }
-    }
+	id = wtmnb_colossus.4000
+	trigger = {
+		from = {
+			is_ship_size = wtmnb_fortress
+		}
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_fleet_settings = {
+				can_upgrade = yes
+				spawn_debris = no
+				uses_naval_capacity = no
+			}
+		}
+	}
 }

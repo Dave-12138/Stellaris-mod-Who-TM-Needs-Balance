@@ -1,56 +1,53 @@
 namespace = wtmnb_colossus
 # 巨像事件
 planet_event = {
-    id = wtmnb_colossus.1000
-    is_triggered_only = yes
-    hide_window = yes
-    immediate = {
-        from = {
-            save_event_target_as = wtmnb_planet_killer_ship
-        }
-        save_event_target_as = wtmnb_target
-        from.owner = {
-            country_event = {
-                id = wtmnb_colossus.1001
-            }
-        }
-    }
+	id = wtmnb_colossus.1000
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		from = {
+			save_event_target_as = wtmnb_planet_killer_ship
+		}
+		save_event_target_as = wtmnb_target
+		from.owner = {
+			country_event = {
+				id = wtmnb_colossus.1001
+			}
+		}
+	}
 }
 
 #巨像事件
 # from = planet 是行星
 # fromfrom = fleet 应该是船
 country_event = {
-    id = wtmnb_colossus.1001
-    is_triggered_only = yes
-    title = wtmnb_colossus.1001.name
-    desc = wtmnb_colossus.1001.desc
-    picture = GFX_evt_rift_sphere
-    location = from
-    #取消
-    option = {
-        name = wtmnb_colossus.1001.a
-        custom_tooltip = wtmnb_colossus.1001.a.tip
-    }
-    inline_script = events/wtmnb_colossus_options
-
-
-    #外交窗口
-    option = {
-        name = wtmnb_colossus.1001.u
-        trigger = {
-            from = {
-                exists = owner
-                owner = {
-                    NOT = {
-                        is_same_empire = root
-                    }
-                }
-            }
-        }
-        country_event = {
-            id = wtmnb_diplomacy.1
-        }
-
-    }
+	id = wtmnb_colossus.1001
+	is_triggered_only = yes
+	title = wtmnb_colossus.1001.name
+	desc = wtmnb_colossus.1001.desc
+	picture = GFX_evt_rift_sphere
+	location = from
+	#取消
+	option = {
+		name = wtmnb_colossus.1001.a
+		custom_tooltip = wtmnb_colossus.1001.a.tip
+	}
+	inline_script = events/wtmnb_colossus_options
+	#外交窗口
+	option = {
+		name = wtmnb_colossus.1001.u
+		trigger = {
+			from = {
+				exists = owner
+				owner = {
+					NOT = {
+						is_same_empire = root
+					}
+				}
+			}
+		}
+		country_event = {
+			id = wtmnb_diplomacy.1
+		}
+	}
 }
