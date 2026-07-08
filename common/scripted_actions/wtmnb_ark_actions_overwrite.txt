@@ -1,8 +1,23 @@
 wtmnb_deep_scan = {
 	user_scope = fleet
 	scope = planet
-	automation_priority = 3
-	on_started = on_arkship_deep_scan
+	automation = {
+		priority	= 2
+		tooltip		= AUTOMATION_DEEP_SCAN_TT
+		options = {
+			option = {
+				automation_setting	= rescanning
+				default			= no
+				name			= AUTOMATION_OPT_RESCANNING
+				tooltip			= AUTOMATION_OPT_RESCANNING_TT
+				ai_weight = {
+					base = 1
+				}
+			}
+		}
+	}
+	on_queued = on_arkship_deep_scan
+	on_started = on_wtmnb_fortress_clean_order
 	tooltip = arkship_deep_scan_ship_button
 	icon = GFX_fleet_action_button_arkship_deep_scan
 	icon_selected = GFX_fleet_action_button_arkship_deep_scan
@@ -55,8 +70,14 @@ wtmnb_deep_scan = {
 wtmnb_harvest_resources = {
 	user_scope = fleet
 	scope = planet
-	automation_priority = 2
-	automation_default_on = yes
+	automation = {
+		priority	= 5
+		default_on	= yes
+		tooltip		= AUTOMATION_HARVEST_TT
+		options = {
+			inline_script = scripted_actions/harvest_automation_options
+		}
+	}
 	on_queued = on_harvest_resources
 	on_started = on_wtmnb_fortress_clean_order
 	tooltip = arkship_harvest_resources_ship_button
@@ -108,10 +129,14 @@ wtmnb_harvest_resources = {
 wtmnb_harvest_resources_constructor = {
 	user_scope = fleet
 	scope = planet
-	automation_priority = 2
-	automation_default_on = no
-	also_automate = {
-		logistic_drop_off_stockpile
+	automation = {
+		priority		= 2
+		default_on		= yes
+		also_automate	= { logistic_drop_off_stockpile }
+		tooltip			= AUTOMATION_HARVEST_TT
+		options = {
+			inline_script = scripted_actions/harvest_automation_options
+		}
 	}
 	on_started = on_harvest_resources    # This shares the on_action with the arkship version
 	tooltip = logistic_harvest_resources_ship_button
