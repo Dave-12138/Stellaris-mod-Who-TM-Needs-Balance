@@ -1,6 +1,6 @@
 # 航道破坏
 option = {
-	name = wtmnb_colossus.1001.l
+	name = wtmnb_colossus.1001.rm_hyperlane
 	trigger = {
 		from = {
 			is_star = yes

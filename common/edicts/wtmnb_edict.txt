@@ -1,332 +1,342 @@
 # 初始化
 wtmnb_edict = {
-    length = 1
-    icon = GFX_edict_type_policy
-    resources = {
-        category = edicts
-        upkeep = {
-            energy = 1
-        }
-    }
-    effect = {
-        hidden_effect = {
-            set_global_flag = wtmnb_edict_checked
-            set_country_flag = wtmnb_order
-        }
-    }
-    potential = {
-        NOT = {
-            has_global_flag = wtmnb_edict_checked
-        }
-    }
-    allow = {
-        is_ai = no
-    }
-    ai_weight = {
-        weight = 0
-    }
+	length = 1
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		upkeep = {
+			energy = 1
+		}
+	}
+	effect = {
+		hidden_effect = {
+			set_global_flag = wtmnb_edict_checked
+			set_country_flag = wtmnb_order
+		}
+	}
+	potential = {
+		NOT = {
+			has_global_flag = wtmnb_edict_checked
+		}
+	}
+	allow = {
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 wtmnb_edict_tech = {
-    length = 1
-    icon = GFX_edict_type_policy
-    resources = {
-        category = edicts
-        upkeep = {
-            energy = 1
-        }
-    }
-    effect = {
-        give_technology = {
-            tech = tech_wtmnb_fortress
-            message = no
-        }
-        add_resource = {
-            alloys = 10000
-            energy = 8000
-        }
-    }
-    potential = {
-        has_country_flag = wtmnb_order
-        NOT = {
-            has_technology = tech_wtmnb_fortress
-        }
-    }
-    allow = {
-        is_ai = no
-    }
-    ai_weight = {
-        weight = 0
-    }
+	length = 1
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		upkeep = {
+			energy = 1
+		}
+	}
+	effect = {
+		give_technology = {
+			tech = tech_wtmnb_fortress
+			message = no
+		}
+		add_resource = {
+			alloys = 10000
+			energy = 8000
+		}
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+		NOT = {
+			has_technology = tech_wtmnb_fortress
+		}
+	}
+	allow = {
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 wtmnb_edict_2 = {
-    #绯红之王
-    icon = GFX_edict_type_time
-    length = 1
-    resources = {
-        category = edicts
-        cost = {
-            unity = 1
-        }
-    }
-    effect = {
-        set_government_cooldown = no
-    }
-    potential = {
-        has_country_flag = wtmnb_order
-    }
-    allow = {
-        is_ai = no
-    }
-    ai_weight = {
-        weight = 0
-    }
+	#绯红之王
+	icon = GFX_edict_type_time
+	length = 1
+	resources = {
+		category = edicts
+		cost = {
+			unity = 1
+		}
+	}
+	effect = {
+		set_government_cooldown = no
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+	}
+	allow = {
+		is_ai = no
+	}
+	ai_weight = {
+		weight = 0
+	}
 }
+
 # 信任增长
 wtmnb_edict_3 = {
-    icon = GFX_mod_mod_country_trust_growth
-    length = -1
-    resources = {
-        category = edicts
-        upkeep = {
-            energy = 1
-        }
-    }
-    modifier = {
-        country_trust_growth = 500
-        country_trust_cap_add = 50000
-    }
-    potential = {
-        has_country_flag = wtmnb_order
-    }
-    allow = {
-        is_ai = no
-    }
+	icon = GFX_mod_mod_country_trust_growth
+	length = -1
+	resources = {
+		category = edicts
+		upkeep = {
+			energy = 1
+		}
+	}
+	modifier = {
+		country_trust_growth = 500
+		country_trust_cap_add = 50000
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+	}
+	allow = {
+		is_ai = no
+	}
 }
 
 # 拆巨构
 wtmnb_edict_4 = {
-    icon = GFX_resource_engineering
-    length = 1
-    resources = {
-        category = edicts
-        upkeep = {
-            energy = 1
-        }
-    }
-    effect = {
-        hidden_effect = {
-            # end_event_chain = wtmnb_remove_megastructure_chain
-            set_variable = {
-                which = wtmnb_rmmega_chain_count
-                value = 0
-            }
-        }
-        begin_event_chain = {
-            event_chain = wtmnb_remove_megastructure_chain
-        }
-        every_owned_ship = {
-            limit = {
-                is_ship_class = shipclass_constructor
-            }
-            solar_system = {
-                set_star_flag = wtmnb_rmmega_system
-            }
-        }
-        every_system = {
-            limit = {
-                has_star_flag = wtmnb_rmmega_system
-            }
-            remove_star_flag = wtmnb_rmmega_system
-            every_system_megastructure = {
-                enable_special_project = {
-                    name = WTMNB_REMOVE_MEGASTRUCTURE
-                    location = this
-                    owner = root
-                }
-                hidden_effect = {
-                    root = {
-                        change_variable = {
-                            which = wtmnb_rmmega_chain_count
-                            value = 1
-                        }
-                    }
-                }
-            }
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = wtmnb_rmmega_chain_count
-                    value < 1
-                }
-            }
-            end_event_chain = wtmnb_remove_megastructure_chain
-        }
-    }
-    potential = {
-        has_country_flag = wtmnb_order
-    }
-    allow = {
-        is_ai = no
-        NOT = {
-            has_event_chain = wtmnb_remove_megastructure_chain
-        }
-    }
+	icon = GFX_resource_engineering
+	length = 1
+	resources = {
+		category = edicts
+		upkeep = {
+			energy = 1
+		}
+	}
+	effect = {
+		hidden_effect = {
+			# end_event_chain = wtmnb_remove_megastructure_chain
+			set_variable = {
+				which = wtmnb_rmmega_chain_count
+				value = 0
+			}
+		}
+		begin_event_chain = {
+			event_chain = wtmnb_remove_megastructure_chain
+			target = root
+		}
+		every_owned_ship = {
+			limit = {
+				is_ship_class = shipclass_constructor
+			}
+			solar_system = {
+				set_star_flag = wtmnb_rmmega_system
+			}
+		}
+		every_system = {
+			limit = {
+				has_star_flag = wtmnb_rmmega_system
+			}
+			remove_star_flag = wtmnb_rmmega_system
+			every_system_megastructure = {
+				enable_special_project = {
+					name = WTMNB_REMOVE_MEGASTRUCTURE
+					location = this
+					owner = root
+				}
+				hidden_effect = {
+					root = {
+						change_variable = {
+							which = wtmnb_rmmega_chain_count
+							value = 1
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = wtmnb_rmmega_chain_count
+					value < 1
+				}
+			}
+			end_event_chain = wtmnb_remove_megastructure_chain
+		}
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+	}
+	allow = {
+		is_ai = no
+		NOT = {
+			has_event_chain = wtmnb_remove_megastructure_chain
+		}
+	}
 }
 
 # 对被巨构影响好感国家的好感修正
 wtmnb_edict_5 = {
-    icon = GFX_diplomacy_opinion
-    length = -1
-    resources = {
-        category = edicts
-        upkeep = {
-            energy = 1
-        }
-    }
-    modifier = {
-    }
-    potential = {
-        has_country_flag = wtmnb_order
-        any_megastructure = {
-            is_megastructure_type = wtmnb_love_mark
-        }
-    }
-    allow = {
-        is_ai = no
-    }
+	icon = GFX_diplomacy_opinion
+	length = -1
+	resources = {
+		category = edicts
+		upkeep = {
+			energy = 1
+		}
+	}
+	modifier = {
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+		any_megastructure = {
+			is_megastructure_type = wtmnb_love_mark
+		}
+	}
+	allow = {
+		is_ai = no
+	}
 }
 
 # 第一次接触
 wtmnb_edict_7 = {
-    icon = GFX_diplomacy_opinion
-    length = -1
-    resources = {
-        category = edicts
-        upkeep = {
-            unity = 1
-        }
-    }
-    effect = {
-        every_country = {
-            limit = {
-                NOR = {
-                    is_same_empire = root
-                }
-            }
-            root = {
-                establish_communications = prev
-            }
-        }
-    }
-    potential = {
-        has_country_flag = wtmnb_order
-        any_playable_country = {
-            NOR = {
-                has_communications = root
-                is_same_value = root
-            }
-        }
-    }
-    allow = {
-        is_ai = no
-    }
+	icon = GFX_diplomacy_opinion
+	length = -1
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = 1
+		}
+	}
+	effect = {
+		every_country = {
+			limit = {
+				NOR = {
+					is_same_empire = root
+				}
+			}
+			root = {
+				establish_communications = prev
+			}
+		}
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+		any_playable_country = {
+			NOR = {
+				has_communications = root
+				is_same_value = root
+			}
+		}
+	}
+	allow = {
+		is_ai = no
+	}
 }
 
 # 生成王座
 wtmnb_edict_create_ship = {
-    icon = GFX_ship_counter_32
-    length = -1
-    resources = {
-        category = edicts
-        upkeep = {
-            alloys = 1
-        }
-    }
-    effect = {
-        # create_ship_design = {
-        # 	design = "DESIGN_wtmnb_fortress"
-        # }
-        # add_ship_design = last_created_design
-        if = {
-            limit = { exists = capital_scope }
-            capital_scope = {
-                save_event_target_as = wtmnb_create_pos
-            }
-        } else_if = {
-            limit = { count_system_within_border = { count > 0 } }
-            random_planet_within_border = {
-                limit = { is_star = yes }
-                save_event_target_as = wtmnb_create_pos
-            }
-        } else = {
-            random_owned_fleet = {
-                solar_system.star = {
-                    save_event_target_as = wtmnb_create_pos
-                }
-            }
-        }
-        event_target:wtmnb_create_pos = {
-            create_fleet = {
-                settings = {
-                    # can_upgrade = no
-                    spawn_debris = no
-                    # can_change_composition = no
-                    uses_naval_capacity = no
-                }
-                effect = {
-                    set_owner = root
-                    if = {
-                        limit = {
-                            root = {
-                                has_existing_ship_design = wtmnb_fortress
-                            }
-                        }
-                        create_ship = {
-                            random_existing_design = wtmnb_fortress
-
-                            name = wtmnb_fortress
-                            effect = {
-                                ship_event = {
-                                    id = wtmnb.5000
-                                    days = 1
-                                }
-                            }
-                        }
-                    }
-                    else = {
-
-                        create_ship = {
-                            name = wtmnb_fortress
-                            design = "DESIGN_wtmnb_fortress"
-                            effect = {
-                                ship_event = {
-                                    id = wtmnb.5000
-                                    days = 1
-                                }
-                            }
-                        }
-                    }
-                    set_location = prev
-                    set_fleet_stance = passive
-                    set_aggro_range_measure_from = self
-                    set_aggro_range = 350
-                }
-            }
-        }
-    }
-    potential = {
-        has_country_flag = wtmnb_order
-        NOT = {
-            any_owned_ship = {
-                is_ship_size = wtmnb_fortress
-            }
-        }
-        is_ai = no
-    }
-    allow = {
-        is_ai = no
-    }
+	icon = GFX_ship_counter_32
+	length = -1
+	resources = {
+		category = edicts
+		upkeep = {
+			alloys = 1
+		}
+	}
+	effect = {
+		# create_ship_design = {
+		# 	design = "DESIGN_wtmnb_fortress"
+		# }
+		# add_ship_design = last_created_design
+		if = {
+			limit = {
+				exists = capital_scope
+			}
+			capital_scope = {
+				save_event_target_as = wtmnb_create_pos
+			}
+		}
+		else_if = {
+			limit = {
+				count_system_within_border = {
+					count > 0
+				}
+			}
+			random_planet_within_border = {
+				limit = {
+					is_star = yes
+				}
+				save_event_target_as = wtmnb_create_pos
+			}
+		}
+		else = {
+			random_owned_fleet = {
+				solar_system.star = {
+					save_event_target_as = wtmnb_create_pos
+				}
+			}
+		}
+		event_target:wtmnb_create_pos = {
+			create_fleet = {
+				settings = {
+					# can_upgrade = no
+					spawn_debris = no
+					# can_change_composition = no
+					uses_naval_capacity = no
+				}
+				effect = {
+					set_owner = root
+					if = {
+						limit = {
+							root = {
+								has_existing_ship_design = wtmnb_fortress
+							}
+						}
+						create_ship = {
+							random_existing_design = wtmnb_fortress
+							name = wtmnb_fortress
+							effect = {
+								ship_event = {
+									id = wtmnb_starbase.1000
+									days = 1
+								}
+							}
+						}
+					}
+					else = {
+						create_ship = {
+							name = wtmnb_fortress
+							design = "DESIGN_wtmnb_fortress"
+							effect = {
+								ship_event = {
+									id = wtmnb_starbase.1000
+									days = 1
+								}
+							}
+						}
+					}
+					set_location = prev
+					set_fleet_stance = passive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 350
+				}
+			}
+		}
+	}
+	potential = {
+		has_country_flag = wtmnb_order
+		NOT = {
+			any_owned_ship = {
+				is_ship_size = wtmnb_fortress
+			}
+		}
+		is_ai = no
+	}
+	allow = {
+		is_ai = no
+	}
 }

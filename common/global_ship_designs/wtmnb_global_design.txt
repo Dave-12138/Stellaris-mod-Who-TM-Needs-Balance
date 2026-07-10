@@ -153,6 +153,7 @@ ship_design = {
 	required_component = "WTMNB_JUMP_DRIVE"
 	required_component = "SHIP_THRUSTER_WTMNB"
 	required_component = "SENSOR_4"
+	required_component = "WTMNB_CLOAK_10"
 	required_component = "COMBAT_COMPUTER_WTMNB_CANNON"
 
 }

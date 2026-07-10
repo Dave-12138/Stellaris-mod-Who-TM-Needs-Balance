@@ -1,349 +1,262 @@
 namespace = wtmnb
 # 轨道轰炸 提示（轰炸方）
 country_event = {
-    id = wtmnb.1
-    title = wtmnb.1.name
-    picture = GFX_evt_nuclear_explosion
-    desc = wtmnb.1.desc
-    show_sound = event_super_explosion
-    location = from
-    is_triggered_only = yes
-    option = {
-        name = EXCELLENT
-        custom_tooltip = wtmnb.1.a
-    }
+	id = wtmnb.1
+	title = wtmnb.1.name
+	picture = GFX_evt_nuclear_explosion
+	desc = wtmnb.1.desc
+	show_sound = event_super_explosion
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		custom_tooltip = wtmnb.1.a
+	}
 }
 
 # 维持联邦
 country_event = {
-    id = wtmnb.2
-    is_triggered_only = yes
-    trigger = {
-        exists = federation
-        federation = {
-            OR = {
-                federation_cohesion < 80
-                federation_level < 5
-            }
-        }
-        any_owned_megastructure = {
-            is_megastructure_type = wtmnb_love_mark
-        }
-    }
-    hide_window = yes
-    immediate = {
-        federation = {
-            add_cohesion = 200
-            add_federation_experience = 66666
-        }
-    }
+	id = wtmnb.2
+	is_triggered_only = yes
+	trigger = {
+		exists = federation
+		federation = {
+			OR = {
+				federation_cohesion < 80
+				federation_level < 5
+			}
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = wtmnb_love_mark
+		}
+	}
+	hide_window = yes
+	immediate = {
+		federation = {
+			add_cohesion = 200
+			add_federation_experience = 66666
+		}
+	}
 }
 
 # l星门
 country_event = {
-    is_triggered_only = yes
-    id = wtmnb.3
-    title = wtmnb.3.title
-    picture = GFX_evt_l-gateway
-    desc = {
-        text = graygoo.10.name
-        trigger = {
-            has_global_flag = gray_goo_crisis_set
-        }
-    }
-    desc = {
-        text = graygoo.120_title
-        trigger = {
-            has_global_flag = gray_goo_empire_set
-        }
-    }
-    desc = {
-        text = nanite_space_dragon_baby
-        trigger = {
-            has_global_flag = dragon_season
-        }
-    }
-    desc = {
-        text = graygoo.500.title
-        trigger = {
-            NOR = {
-                has_global_flag = gray_goo_crisis_set
-                has_global_flag = gray_goo_empire_set
-                has_global_flag = dragon_season
-            }
-        }
-    }
-    option = {
-        name = unremarkable
-    }
-    option = {
-        name = federations2.61.A.neutral
-    }
-    option = {
-        name = wtmnb.3.c
-        trigger = {
-            OR = {
-                has_global_flag = gray_goo_crisis_set
-                has_global_flag = gray_goo_empire_set
-                has_global_flag = dragon_season
-            }
-            NOT = {
-                exists = event_target:gray_owner
-            }
-        }
-        country_event = {
-            id = graygoo.401
-        }
-    }
+	is_triggered_only = yes
+	id = wtmnb.3
+	title = wtmnb.3.title
+	picture = GFX_evt_l-gateway
+	desc = {
+		text = graygoo.10.name
+		trigger = {
+			has_global_flag = gray_goo_crisis_set
+		}
+	}
+	desc = {
+		text = graygoo.120_title
+		trigger = {
+			has_global_flag = gray_goo_empire_set
+		}
+	}
+	desc = {
+		text = nanite_space_dragon_baby
+		trigger = {
+			has_global_flag = dragon_season
+		}
+	}
+	desc = {
+		text = graygoo.500.title
+		trigger = {
+			NOR = {
+				has_global_flag = gray_goo_crisis_set
+				has_global_flag = gray_goo_empire_set
+				has_global_flag = dragon_season
+			}
+		}
+	}
+	option = {
+		name = unremarkable
+	}
+	option = {
+		name = federations2.61.A.neutral
+	}
+	option = {
+		name = wtmnb.3.c
+		trigger = {
+			OR = {
+				has_global_flag = gray_goo_crisis_set
+				has_global_flag = gray_goo_empire_set
+				has_global_flag = dragon_season
+			}
+			NOT = {
+				exists = event_target:gray_owner
+			}
+		}
+		country_event = {
+			id = graygoo.401
+		}
+	}
 }
 
 # 超空间通道
 country_event = {
-    id = wtmnb.5
-    picture = GFX_evt_hyper_relay
-    is_triggered_only = yes
-    title = wtmnb.5.name
-    desc = wtmnb.5.desc
-    option = {
-        name = MISSION_SUCCESS
-        hidden_effect = {
-            clear_global_event_target = wtmnb_portal_start@root
-        }
-    }
+	id = wtmnb.5
+	picture = GFX_evt_hyper_relay
+	is_triggered_only = yes
+	title = wtmnb.5.name
+	desc = wtmnb.5.desc
+	option = {
+		name = MISSION_SUCCESS
+		hidden_effect = {
+			clear_global_event_target = wtmnb_portal_start@root
+		}
+	}
 }
 
 #新领袖
 country_event = {
-    id = wtmnb.6
-    is_triggered_only = yes
-    hide_window = yes
-    trigger = {
-        species = {
-            has_trait = trait_wtmnb_stigmata
-        }
-    }
-    immediate = {
-        from = {
-            add_leader_trait_wtmnb_stigmata = yes
-        }
-    }
+	id = wtmnb.6
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		species = {
+			has_trait = trait_wtmnb_stigmata
+		}
+	}
+	immediate = {
+		from = {
+			add_leader_trait_wtmnb_stigmata = yes
+		}
+	}
 }
 
 # 轨道轰炸-陆军
 planet_event = {
-    id = wtmnb.1000
-    pre_triggers = {
-        has_owner = yes
-    }
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        has_orbital_bombardment_stance = wtmnb_invasion
-        FROM = {
-            has_country_flag = wtmnb_order
-        }
-    }
-    immediate = {
-        owner = {
-            save_event_target_as = doomed_planet_owner
-        }
-        every_planet_army = {
-            limit = {
-                is_owned_by = prev.owner
-            }
-            remove_army = yes
-        }
-        if = {
-            limit = { pop_amount > 0 }
-            create_army = {
-                owner = from
-                # species = from
-                type = "sentinel_army"
-            }
-        }
-    }
+	id = wtmnb.1000
+	pre_triggers = {
+		has_owner = yes
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = wtmnb_invasion
+		FROM = {
+			has_country_flag = wtmnb_order
+		}
+	}
+	immediate = {
+		owner = {
+			save_event_target_as = doomed_planet_owner
+		}
+		every_planet_army = {
+			limit = {
+				is_owned_by = prev.owner
+			}
+			remove_army = yes
+		}
+		if = {
+			limit = {
+				pop_amount > 0
+			}
+			create_army = {
+				owner = from
+				# species = from
+				type = "sentinel_army"
+			}
+		}
+	}
 }
 
 # 轨道轰炸
 planet_event = {
-    id = wtmnb.1010
-    pre_triggers = {
-        has_owner = yes
-    }
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        has_orbital_bombardment_stance = wtmnb_doom
-        FROM = {
-            has_country_flag = wtmnb_order
-        }
-        NOT = {
-            is_planet_class = pc_ai
-        }
-    }
-    immediate = {
-        owner = {
-            save_event_target_as = doomed_planet_owner
-        }
-        #remove_all_buildings = yes
-        random_owned_pop_group = {
-            kill_single_pop = yes
-        }
-        every_planet_army = {
-            remove_army = yes
-        }
-        if = {
-            limit = {
-                is_colony = no
-            }
-            event_target:doomed_planet_owner = {
-                add_static_war_exhaustion = {
-                    attacker = from
-                    location = root
-                    value_for_planet_destruction = 1
-                }
-                #country_event = { id = wtmnb.1 }
-            }
-            from = {
-                country_event = {
-                    id = wtmnb.1
-                }
-            }
-        }
-        remove_modifier = "dangerous_wildlife"
-    }
-}
-
-# 崩坏裂变弹 - 击毁
-country_event = {
-    id = wtmnb.2000
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        fromfrom = {
-            is_ship_size = wtmnb_boomer
-        }
-    }
-    immediate = {
-        random_country = {
-            limit = {
-                has_country_flag = wtmnb_order
-            }
-            country_event = {
-                id = wtmnb.2001
-                scopes = {
-                    from = fromfrom.solar_system
-                }
-            }
-        }
-
-    }
-}
-
-# 然后引爆
-country_event = {
-    id = wtmnb.2001
-    is_triggered_only = yes
-    # title = wtmnb.2001.name
-    # desc = wtmnb.2001.desc
-    hide_window = yes
-    # 触发超距射击
-    immediate = {
-        from = {
-            system_event = {
-                id = wtmnb.6010
-                days = 0
-                scopes = { from = root }
-            }
-        }
-    }
-
-}
-
-# 手动引爆
-country_event = {
-    id = wtmnb.2002
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        from = {
-            any_owned_ship = {
-                is_ship_size = wtmnb_boomer
-            }
-        }
-    }
-    immediate = {
-        country_event = {
-            id = wtmnb.2001
-            scopes = {
-                from = from.solar_system
-            }
-        }
-    }
-}
-
-#跃迁失踪
-ship_event = {
-    id = wtmnb.3000
-    is_triggered_only = yes
-    hide_window = yes
-    trigger = {
-        solar_system = {
-            has_star_flag = wtmnb_star_11th
-        }
-        owner = {
-            NOT = {
-                has_country_flag = wtmnb_order
-            }
-        }
-    }
-    immediate = {
-        root.fleet = {
-            set_mia = mia_return_home
-            # set_mia_return_delay = 30
-        }
-    }
+	id = wtmnb.1010
+	pre_triggers = {
+		has_owner = yes
+	}
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = wtmnb_doom
+		FROM = {
+			has_country_flag = wtmnb_order
+		}
+		NOT = {
+			is_planet_class = pc_ai
+		}
+	}
+	immediate = {
+		owner = {
+			save_event_target_as = doomed_planet_owner
+		}
+		#remove_all_buildings = yes
+		random_owned_pop_group = {
+			kill_single_pop = yes
+		}
+		every_planet_army = {
+			remove_army = yes
+		}
+		if = {
+			limit = {
+				is_colony = no
+			}
+			event_target:doomed_planet_owner = {
+				add_static_war_exhaustion = {
+					attacker = from
+					location = root
+					value_for_planet_destruction = 1
+				}
+				#country_event = { id = wtmnb.1 }
+			}
+			from = {
+				country_event = {
+					id = wtmnb.1
+				}
+			}
+		}
+		remove_modifier = "dangerous_wildlife"
+	}
 }
 
 #风暴
 country_event = {
-    id = wtmnb.4000
-    is_triggered_only = yes
-    title = space_storm
-    desc = wtmnb.4000.desc
-    location = from
-    picture = GFX_celestial_storm
-    option = { name = CANCEL }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = electric_storm
-    }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = particle_storm
-    }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = gravity_storm
-    }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = magnetic_storm
-    }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = solar_storm
-    }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = celestial_storm
-    }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = shroud_storm
-    }
-    inline_script = {
-        script = events/wtmnb_storm_option
-        TYPE = nexus_storm
-    }
+	id = wtmnb.4000
+	is_triggered_only = yes
+	title = space_storm
+	desc = wtmnb.4000.desc
+	location = from
+	picture = GFX_celestial_storm
+	option = {
+		name = CANCEL
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = electric_storm
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = particle_storm
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = gravity_storm
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = magnetic_storm
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = solar_storm
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = celestial_storm
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = shroud_storm
+	}
+	inline_script = {
+		script = events/wtmnb_storm_option
+		TYPE = nexus_storm
+	}
 }

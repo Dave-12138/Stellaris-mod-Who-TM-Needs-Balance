@@ -1,6 +1,6 @@
-namespace = wtmnb
+namespace = wtmnb_starbase
 ship_event = {
-	id = wtmnb.5000
+	id = wtmnb_starbase.1000
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = { is_ship_size = wtmnb_fortress }
@@ -18,28 +18,16 @@ ship_event = {
 			value = 10
 		}
 		ship_event = {
-			id = wtmnb.5010
+			id = wtmnb_starbase.2000
 			days = 1
 		}
 	}
 }
 
-ship_event = {
-	id = wtmnb.5001
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = { is_ship_size = wtmnb_fortress }
-	immediate = {
-		ship_event = {
-			id = wtmnb.5000
-			days = 1
-		}
-	}
-}
 
 # 加成循环检查
 ship_event = {
-	id = wtmnb.5010
+	id = wtmnb_starbase.2000
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -90,7 +78,7 @@ ship_event = {
 			}
 		}
 		ship_event = {
-			id = wtmnb.5010
+			id = wtmnb_starbase.2000
 			days = 30
 		}
 	}

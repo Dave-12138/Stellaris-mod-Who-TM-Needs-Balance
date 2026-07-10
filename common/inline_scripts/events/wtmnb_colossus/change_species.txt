@@ -5,7 +5,7 @@ option = {
 			is_colony = yes
 		}
 	}
-	name = wtmnb_colossus.1001.d
+	name = wtmnb_colossus.1001.specie_type
 	hidden_effect = {
 		country_event = {
 			id = wtmnb_species.1

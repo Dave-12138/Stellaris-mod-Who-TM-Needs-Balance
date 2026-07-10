@@ -11,7 +11,7 @@ option = {
 			fire_on_action = {
 				on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
 				scopes = {
-					from = event_target:wtmnb_planet_killer_ship
+					from = event_target:wtmnb_planet_killer_fleet
 				}
 			}
 		}
@@ -39,7 +39,7 @@ option = {
 				fire_on_action = {
 					on_action = on_destroy_planet_with_PLANET_KILLER_SHIELDER
 					scopes = {
-						from = event_target:wtmnb_planet_killer_ship
+						from = event_target:wtmnb_planet_killer_fleet
 					}
 				}
 			}

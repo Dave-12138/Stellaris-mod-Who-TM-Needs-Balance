@@ -12,7 +12,7 @@
 # 		}
 # 		from.solar_system = {
 # 			system_event = {
-# 				id = wtmnb.6010
+# 				id = wtmnb_boomer.4000
 # 				days = 0
 # 				scopes = { from = event_target:owner_country }
 # 			}
@@ -38,7 +38,7 @@ special_project = {
 					is_ship_size = wtmnb_fortress
 				}
 				fleet = {
-					save_event_target_as = wtmnb_planet_killer_ship
+					save_event_target_as = wtmnb_planet_killer_fleet
 				}
 			}
 		}
@@ -46,7 +46,7 @@ special_project = {
 			fire_on_action = {
 				on_action = on_destroy_planet_with_WTMNB_WEAPON_W
 				scopes = {
-					from = event_target:wtmnb_planet_killer_ship
+					from = event_target:wtmnb_planet_killer_fleet
 				}
 			}
 		}

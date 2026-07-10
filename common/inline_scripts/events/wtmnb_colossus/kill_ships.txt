@@ -8,8 +8,8 @@ option = {
 		}
 	}
 	# 摧毁星系内所有船
-	name = wtmnb.2001.a
-	custom_tooltip = wtmnb.2001.a.tip
+	name = wtmnb_colossus.1001.kill_ships
+	custom_tooltip = wtmnb_colossus.1001.kill_ships.tip
 	hidden_effect = {
 		from.solar_system = {
 			every_fleet_in_system = {

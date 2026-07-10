@@ -4,9 +4,17 @@ planet_event = {
 	id = wtmnb_colossus.1000
 	is_triggered_only = yes
 	hide_window = yes
+	trigger = {
+		from = {
+			NOT = {
+				has_fleet_flag = wtmnb_super_shooting
+			}
+		}
+	}
 	immediate = {
 		from = {
-			save_event_target_as = wtmnb_planet_killer_ship
+			save_event_target_as = wtmnb_planet_killer_fleet
+			set_fleet_flag = wtmnb_super_shooting
 		}
 		save_event_target_as = wtmnb_target
 		from.owner = {
@@ -17,25 +25,25 @@ planet_event = {
 	}
 }
 
-#巨像事件
+#巨像事件 菜单
 # from = planet 是行星
 # fromfrom = fleet 应该是船
 country_event = {
 	id = wtmnb_colossus.1001
 	is_triggered_only = yes
 	title = wtmnb_colossus.1001.name
-	desc = wtmnb_colossus.1001.desc
+	desc = wtmnb_colossus.1001.specie_typeesc
 	picture = GFX_evt_rift_sphere
 	location = from
 	#取消
 	option = {
-		name = wtmnb_colossus.1001.a
-		custom_tooltip = wtmnb_colossus.1001.a.tip
+		name = wtmnb_colossus.1001.cancel
+		custom_tooltip = wtmnb_colossus.1001.cancel.tip
 	}
 	inline_script = events/wtmnb_colossus_options
 	#外交窗口
 	option = {
-		name = wtmnb_colossus.1001.u
+		name = wtmnb_colossus.1001.diplo
 		trigger = {
 			from = {
 				exists = owner
@@ -48,6 +56,13 @@ country_event = {
 		}
 		country_event = {
 			id = wtmnb_diplomacy.1
+		}
+	}
+	after = {
+		hidden_effect = {
+			event_target:wtmnb_planet_killer_fleet = {
+				remove_fleet_flag = wtmnb_super_shooting
+			}
 		}
 	}
 }

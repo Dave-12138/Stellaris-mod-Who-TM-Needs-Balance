@@ -2,22 +2,34 @@ wtmnb_deep_scan = {
 	user_scope = fleet
 	scope = planet
 	automation = {
-		priority	= 2
-		tooltip		= AUTOMATION_DEEP_SCAN_TT
+		priority = 2
+		tooltip = AUTOMATION_DEEP_SCAN_TT
+		also_automate = {
+			wtmnb_ark_survey
+		}
 		options = {
 			option = {
-				automation_setting	= rescanning
-				default			= no
-				name			= AUTOMATION_OPT_RESCANNING
-				tooltip			= AUTOMATION_OPT_RESCANNING_TT
+				automation_setting = rescanning
+				default = no
+				name = AUTOMATION_OPT_RESCANNING
+				tooltip = AUTOMATION_OPT_RESCANNING_TT
+				ai_weight = {
+					base = 1
+				}
+			}
+			option = {
+				automation_setting = explore_prefer
+				default = yes
+				name = AUTOMATION_OPT_EXPLORE_PREFER
+				tooltip = AUTOMATION_OPT_EXPLORE_PREFER_TT
 				ai_weight = {
 					base = 1
 				}
 			}
 		}
 	}
-	on_queued = on_arkship_deep_scan
-	on_started = on_wtmnb_fortress_clean_order
+	on_started = on_arkship_deep_scan
+	# on_started = on_wtmnb_fortress_clean_order
 	tooltip = arkship_deep_scan_ship_button
 	icon = GFX_fleet_action_button_arkship_deep_scan
 	icon_selected = GFX_fleet_action_button_arkship_deep_scan
@@ -44,7 +56,10 @@ wtmnb_deep_scan = {
 		}
 	}
 	button_visible = {
-		always = yes
+		always = no
+	}
+	hide_from_context_menu = {
+		always = no
 	}
 	button_clickable = {
 		custom_tooltip = {
@@ -64,25 +79,171 @@ wtmnb_deep_scan = {
 	}
 	slot = 2
 	wait = no
-	shortcut = "SHIFT+X"
+	ai = {
+		#This - Target Planet
+		#From - Acting Fleet
+		weight = {
+			base = @ai_action_weight_15
+			modifier = {
+				factor = 0				#cannot afford
+				FROM.controller = {
+					resource_stockpile_compare = {
+						resource = energy
+						value < @arkship_deep_scan_cost
+						mult = 1.5
+					}
+				}
+			}
+			inline_script = {
+				script = scripted_actions/ai_distance_modifiers
+				LOCAL_SYSTEM_CHECK = "any_system_planet = { is_same_value = ROOT }"
+			}
+			modifier = {
+				factor = @ai_action_weight_100				#strongly prioritize planets that are targets of a deep scan contract
+				is_point_of_interest = {
+					id = deep_scan_poi@this
+					event_chain = contract_deep_scan_chain
+					owner = FROM.controller
+				}
+			}
+			modifier = {
+				factor = @ai_action_weight_factor_0_1				#reduce weight on worlds already deep scanned that are not a contract target
+				is_variable_set = times_deep_scanned
+				NOT = {
+					is_point_of_interest = {
+						id = deep_scan_poi@this
+						event_chain = contract_deep_scan_chain
+						owner = FROM.controller
+					}
+				}
+			}
+			modifier = {
+				factor = 0				#Block rescanning targets already deep scanned that are not a contract target, unless the Rescanning setting allows it
+				is_variable_set = times_deep_scanned
+				NOT = {
+					is_point_of_interest = {
+						id = deep_scan_poi@this
+						event_chain = contract_deep_scan_chain
+						owner = FROM.controller
+					}
+				}
+				FROM = {
+					NOT = {
+						has_automation_setting = rescanning
+					}
+				}
+			}
+			modifier = {
+				# 防止卡在这
+				factor = 0
+				NAND = {
+					habitable_planet = no
+					is_artificial = no
+					NOR = {
+						is_planet_class = pc_ringworld_habitable_damaged
+						is_planet_class = pc_ringworld_tech_damaged
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_seam_damaged
+						is_planet_class = pc_astral_scar
+					}
+					# check that the random list won't come up empty
+					OR = {
+						energy_candidate = yes
+						mineral_candidate = yes
+						physics_candidate = yes
+						society_candidate = yes
+						engineering_candidate = yes
+						alloy_candidate = yes
+						exotic_gas_candidate = yes
+						rare_crystal_candidate = yes
+						volatile_motes_candidate = yes
+					}
+				}
+				is_surveyed = {
+					status = yes
+					who = FROM.controller
+				}
+			}
+			modifier = {
+				factor = 0.01
+				is_surveyed = {
+					status = yes
+					who = FROM.controller
+				}
+				FROM = {
+					has_automation_setting = explore_prefer
+				}
+			}
+		}
+		# max_jumps = @ai_action_weight_5
+		good_enough_weight = @ai_action_weight_30
+		# ai_minister = none
+	}
 }
 
-wtmnb_harvest_resources = {
+
+wtmnb_ark_survey = {
 	user_scope = fleet
 	scope = planet
-	automation = {
-		priority	= 5
-		default_on	= yes
-		tooltip		= AUTOMATION_HARVEST_TT
-		options = {
-			inline_script = scripted_actions/harvest_automation_options
+
+	# This behaves as the Survey order from Science Ships
+	specific_behavior = scripted_survey_order
+
+	slot = 1
+	icon = GFX_fleet_order_button_survey_small
+	icon_selected = GFX_fleet_order_button_survey_small_selected
+
+	# 完全不显示，通过自动扫描调用
+	hide_from_context_menu = {
+		always=yes
+	}
+	button_visible = {
+		always = no
+	}
+
+	possible = {
+		exists = from.leader
+		is_surveyed = {
+			who = from.controller
+			status = no
+		}
+		NOT = {
+			is_being_surveyed = { who = from }
 		}
 	}
+
+
+	button_clickable = {
+		exists = leader
+	}
+
+	ai = {
+		#This - Target Planet
+		#From - Acting Fleet
+		weight = {
+			base = @ai_action_weight_10
+			inline_script = {
+				script = scripted_actions/ai_distance_modifiers
+				LOCAL_SYSTEM_CHECK = "any_system_planet = { is_same_value = ROOT }"
+			}
+		}
+		# No max_jumps: survey must reach the nearest unsurveyed system anywhere in the galaxy
+		good_enough_weight = @ai_action_weight_30
+		ai_minister = interior
+	}
+
+	context_menu_name = arkship_survey
+}
+
+wtmnb_strip_mine = {
+	user_scope = fleet
+	scope = planet
 	on_queued = on_harvest_resources
 	on_started = on_wtmnb_fortress_clean_order
-	tooltip = arkship_harvest_resources_ship_button
-	icon = GFX_fleet_action_button_arkship_harvest_resources
-	icon_selected = GFX_fleet_action_button_arkship_harvest_resources
+	tooltip = arkship_strip_mine_ship_button
+	icon = GFX_fleet_action_button_arkship_strip_mine
+	icon_selected = GFX_fleet_action_button_arkship_strip_mine
 	possible = {
 		NOT = {
 			has_modifier = "harvested_resources_mining"
@@ -91,16 +252,29 @@ wtmnb_harvest_resources = {
 			limit = {
 				is_surveyed = {
 					who = from
-					status = yes
+					status = no
 				}
-				has_anomaly = yes
 			}
 			custom_tooltip = {
-				fail_text = arkship_target_has_anomaly_fail_tt
+				fail_text = arkship_target_not_surveyed_fail_tt
 				always = no
 			}
 		}
-		is_valid_harvest_target = yes
+		else = {
+			NOT = {
+				has_modifier = "harvested_resources_mining"
+			}
+			if = {
+				limit = {
+					has_anomaly = yes
+				}
+				custom_tooltip = {
+					fail_text = arkship_target_has_anomaly_fail_tt
+					always = no
+				}
+			}
+			is_valid_harvest_target = yes
+		}
 	}
 	button_visible = {
 		always = yes
@@ -115,30 +289,112 @@ wtmnb_harvest_resources = {
 	cooldown = 0
 	category = harvest_resources
 	category_limit = 1
+	category_limit_fail_text = arkship_harvesting_in_progress_tt
+	context_menu_ordering = distance
 	uses_vfx_type = harvest_effect
 	cost = {
 		energy = 1
 	}
 	slot = 3
 	overrides_gained_resources = yes
-	completion_message_type = TOAST_HARVEST_RESOURCES_COMPLETE
-	completion_message_localization = TOAST_HARVEST_RESOURCES_COMPLETE_DESC
+	completion_message_type = TOAST_STRIP_MINE_COMPLETE
+	completion_message_localization = TOAST_STRIP_MINE_COMPLETE_DESC
 	wait = no
+}
+
+wtmnb_strip_mine_auto = {
+	user_scope = fleet
+	scope = planet
+	automation = {
+		priority = 6
+		tooltip = AUTOMATION_STRIP_MINE_TT
+		options = {
+			inline_script = scripted_actions/harvest_automation_options
+		}
+	}
+	on_queued = on_harvest_resources
+	tooltip = arkship_strip_mine_ship_button
+	icon = GFX_fleet_action_button_arkship_strip_mine
+	icon_selected = GFX_fleet_action_button_arkship_strip_mine
+	possible = {
+		NOT = {
+			has_modifier = "harvested_resources_mining"
+		}
+		is_surveyed = {
+			who = from
+			status = no
+		}
+		is_valid_harvest_target = yes
+	}
+	button_visible = {
+		always = no
+	}
+	button_clickable = {
+		always = yes
+	}
+	hide_from_context_menu = {
+		always = yes
+	}
+	activity_key = arkship_harvest_resources_activity_key
+	context_menu_name = arkship_harvest_resources
+	progress_activity_key = arkship_harvest_resources_progress_activity_key
+	required_progress_key = arkship_harvest_resources_required_progress_key
+	cooldown = 0
+	category = harvest_resources
+	category_limit = 1
+	category_limit_fail_text = arkship_harvesting_in_progress_tt
+	context_menu_ordering = weight
+	uses_vfx_type = harvest_effect
+	cost = {
+		energy = 1
+	}
+	overrides_gained_resources = yes
+	completion_message_type = TOAST_STRIP_MINE_COMPLETE
+	completion_message_localization = TOAST_STRIP_MINE_COMPLETE_DESC
+	wait = no
+	ai = {
+		#This - Target Planet
+		#From - Acting Fleet
+		weight = {
+			base = @ai_action_weight_20
+			modifier = {
+				factor = 0				#cannot afford
+				FROM.controller = {
+					resource_stockpile_compare = {
+						resource = energy
+						value < @arkship_strip_mine_cost
+						mult = 1.5
+					}
+				}
+			}
+			inline_script = {
+				script = scripted_actions/ai_distance_modifiers
+				LOCAL_SYSTEM_CHECK = "any_system_planet = { is_same_value = ROOT }"
+			}
+			inline_script = scripted_actions/ai_harvest_resources_modifiers
+			inline_script = scripted_actions/ai_harvest_automation_modifiers
+		}
+		max_jumps = @ai_action_weight_5
+		good_enough_weight = @ai_action_weight_30
+		ai_minister = interior
+	}
 }
 
 wtmnb_harvest_resources_constructor = {
 	user_scope = fleet
 	scope = planet
 	automation = {
-		priority		= 2
-		default_on		= yes
-		also_automate	= { logistic_drop_off_stockpile }
-		tooltip			= AUTOMATION_HARVEST_TT
+		priority = 2
+		default_on = yes
+		also_automate = {
+			logistic_drop_off_stockpile
+		}
+		tooltip = AUTOMATION_HARVEST_TT
 		options = {
 			inline_script = scripted_actions/harvest_automation_options
 		}
 	}
-	on_started = on_harvest_resources    # This shares the on_action with the arkship version
+	on_started = on_harvest_resources	# This shares the on_action with the arkship version
 	tooltip = logistic_harvest_resources_ship_button
 	icon = GFX_fleet_action_button_logistic_harvest_resources
 	icon_selected = GFX_fleet_action_button_logistic_harvest_resources
@@ -170,7 +426,9 @@ wtmnb_harvest_resources_constructor = {
 		}
 	}
 	button_visible = {
-		hidden_trigger = { always = yes }
+		hidden_trigger = {
+			always = yes
+		}
 	}
 	button_clickable = {
 		custom_tooltip = {
@@ -184,6 +442,8 @@ wtmnb_harvest_resources_constructor = {
 	cooldown = 0
 	category = harvest_resources
 	category_limit = 1
+	category_limit_fail_text = arkship_harvesting_in_progress_tt
+	context_menu_ordering = weight
 	uses_vfx_type = harvest_effect
 	cost = {
 		energy = 1
@@ -193,8 +453,61 @@ wtmnb_harvest_resources_constructor = {
 	completion_message_type = TOAST_HARVEST_RESOURCES_COMPLETE
 	completion_message_localization = TOAST_HARVEST_RESOURCES_COMPLETE_DESC
 	wait = no
+	ai = {
+		#This - Target Planet
+		#From - Acting Fleet
+		weight = {
+			base = @ai_action_weight_15
+			inline_script = {
+				script = scripted_actions/ai_distance_modifiers
+				LOCAL_SYSTEM_CHECK = "any_system_planet = { is_same_value = ROOT }"
+			}
+			# Discourage harvesting when stockpile is getting full, return threshold is 75%
+			modifier = {
+				factor = @ai_action_weight_factor_0_1				#stockpile nearly full, prefer dropping off
+				FROM = {
+					any_owned_ship = {
+						used_stockpile_capacity_percentage >= 0.75
+					}
+				}
+			}
+			# In Operational Reserves crisis (Stage 1), prioritize planets that yield energy or minerals
+			modifier = {
+				factor = @ai_low_resource_harvest_factor
+				FROM.controller = {
+					any_situation = {
+						is_situation_type = situation_nomad_economy
+						nomad_in_reserve_crisis = yes
+					}
+				}
+				OR = {
+					is_planet_class = pc_ice_asteroid					# primary energy, secondary exotic gases
+					is_planet_class = pc_asteroid					# primary minerals, secondary volatile motes
+					is_planet_class = pc_barren					# primary minerals, secondary minerals
+					is_planet_class = pc_barren_cold					# primary minerals, secondary minerals
+					is_planet_class = pc_broken					# primary minerals, secondary alloys
+					is_planet_class = pc_shattered					# primary minerals, secondary alloys
+					is_planet_class = pc_shattered_2					# primary minerals, secondary alloys
+					has_resource = {
+						# energy deposits
+						type = energy
+						amount > 0
+					}
+					has_resource = {
+						# mineral deposits
+						type = minerals
+						amount > 0
+					}
+				}
+			}
+			inline_script = scripted_actions/ai_harvest_resources_modifiers
+			inline_script = scripted_actions/ai_harvest_automation_modifiers
+		}
+		max_jumps = @ai_action_weight_10
+		good_enough_weight = @ai_action_weight_100
+		ai_minister = interior
+	}
 }
-
 
 wtmnb_subspace_image = {
 	user_scope = fleet
@@ -205,7 +518,9 @@ wtmnb_subspace_image = {
 	icon = GFX_fleet_action_button_arkship_subspace_image
 	icon_selected = GFX_fleet_action_button_arkship_subspace_image
 	possible = {
-		hidden_trigger = { always = yes }
+		hidden_trigger = {
+			always = yes
+		}
 		custom_tooltip = {
 			fail_text = arkship_has_leader_tt_fail
 			success_text = arkship_has_leader_tt_success
@@ -213,10 +528,14 @@ wtmnb_subspace_image = {
 		}
 	}
 	button_visible = {
-		hidden_trigger = { always = yes }
+		hidden_trigger = {
+			always = yes
+		}
 	}
 	button_clickable = {
-		hidden_trigger = { always = yes }
+		hidden_trigger = {
+			always = yes
+		}
 		custom_tooltip = {
 			fail_text = arkship_has_leader_tt_fail
 			success_text = arkship_has_leader_tt_success

@@ -1,6 +1,6 @@
 #殖民
 option = {
-	name = wtmnb_colossus.1001.v
+	name = wtmnb_colossus.1001.gain_planet
 	trigger = {
 		from = {
 			NOT = {

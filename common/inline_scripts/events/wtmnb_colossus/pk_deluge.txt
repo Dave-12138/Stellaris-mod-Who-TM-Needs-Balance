@@ -18,7 +18,7 @@ option = {
 				}
 			}
 		}
-		event_target:wtmnb_planet_killer_ship = {
+		event_target:wtmnb_planet_killer_fleet = {
 			any_owned_ship = {
 				has_component = WTMNB_4TH_KEY
 			}
@@ -28,7 +28,7 @@ option = {
 		fire_on_action = {
 			on_action = on_destroy_planet_with_PLANET_KILLER_DELUGE
 			scopes = {
-				from = event_target:wtmnb_planet_killer_ship
+				from = event_target:wtmnb_planet_killer_fleet
 			}
 		}
 	}

@@ -34,7 +34,7 @@ option = {
 				}
 			}
 		}
-		event_target:wtmnb_planet_killer_ship = {
+		event_target:wtmnb_planet_killer_fleet = {
 			any_owned_ship = {
 				has_component = WTMNB_11TH_KEY
 			}

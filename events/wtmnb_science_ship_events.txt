@@ -1,0 +1,67 @@
+namespace = wtmnb_scienceship
+ship_event = {
+	id = wtmnb_scienceship.1000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ship_size = wtmnb_science
+		has_fleet_order = experimental_subspace_navigation_fleet_order
+	}
+	immediate = {
+		fleet = {
+			set_mia_return_delay = 0
+		}
+	}
+}
+
+# 深度扫描-经验
+planet_event = {
+	id = wtmnb_scienceship.2000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			OR = {
+				is_ship_size = wtmnb_science
+				is_ship_size = wtmnb_fortress
+			}
+		}
+		OR = {
+			NOT = {
+				is_variable_set = times_deep_scanned
+			}
+			check_variable = {
+				which = times_deep_scanned
+				value = 1
+			}
+		}
+	}
+	immediate = {
+		from.leader = {
+			add_experience = 10
+		}
+	}
+}
+
+# 亚空间成像-经验
+system_event = {
+	id = wtmnb_scienceship.2010
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			is_ship_size = wtmnb_fortress
+		}
+	}
+	immediate = {
+		every_system_planet = {
+			limit = {
+				is_artificial = no
+				is_ringworld = no
+			}
+			from.leader = {
+				add_experience = 10
+			}
+		}
+	}
+}

@@ -10,31 +10,31 @@
 Enable after using edict Dead Sea Scrolls:
 [olist]
 [*]两种轨道轰炸：召唤陆军或类似中子灭杀
-Orbital Bombardment:summon army/ Neutron Sweeping lite ver.
+Orbital Bombardment: summon army / Neutron Sweeping lite ver.
 [*]三种行星建筑：1.提供减规模岗位 2.生产稀有资源（含部分mod资源） 3.根据区划个数增加岗位产出
 buildings: providing jobs to reduce Empire Size, producing rare resources, add resource from pop jobs by amount of districts
 [*]武器(X,T,P)，推进器、跃迁引擎、泰坦光环
 weapons(X,T,P), thruster, jump drive, aura
 [*]巨像武器：使用后触发事件，包含多种原版巨像和一些特殊功能
-colossus weapon, trigger an event to trigger some effect such as World Cracker, Global Pacifier or even just summon a space storm.
-[*]一种具有巨像+主宰的堡垒，可选焚天神兵模型或擎天堡模型，有技能按钮可以切换船坞模式和兽坞模式（动物朋友那个兽坞）
-new ship size: it's both juggernaut and colossus, which could change to shipyard mode or beastport mode with a skill button on it.
-[*][del]在首都轨道上有上述堡垒时可用的行星决议“超距射击”，不需要把堡垒拖过去使用巨像武器（基于“特殊项目”） 超距射击不止这一种触发方式[/del]（直接按舰船技能见5，特殊船“解散舰队”或被打爆见11）
-[del]with that ship within your capital, there's a decision to trigger a special project “Ultra-Range Fire” to trigger event instead of moving it to target and using colossus weapon. decision is not the only way to trigger Fire, [/del]see 5 (also a skill button) and 11 (a ship, when destroyed or dismantled).
-[*]在轨道上有上述堡垒时可用的决议 生成人口、破坏殖民地、生成本mod舰船“浮游炮”（需要有建筑“行星护盾生成器”或有星环基地）、重置遗物cd、增加可用区划、禁止跃迁、加国民理念点数、重新随机生成地块和改变星球类型(生成本mod的地块)
-decisions... Im tired to translate
+Colossus weapon that triggers an event with multiple options: vanilla colossus effects (World Cracker, Global Pacifier, etc.) and special ones like summoning a space storm.
+[*]一种具有巨像武器的方舟舰，可选焚天神兵、擎天堡、女王泰坦或民用方舟舰模型，有技能按钮可以切换船坞模式和兽坞模式（动物朋友那个兽坞）
+Arkship: a new ship size with colossus weapons. Choose between Star-Eater, Bastion, Queen Titan, or Civilian Arkship model. Skill buttons to switch shipyard mode and beastport mode.
+[*]超距射击：方舟舰技能按钮直接使用巨像武器；另有专用靶船，解散舰队或被打爆时自动触发
+Ultra-Range Fire: arkship skill button fires colossus weapon directly; a dedicated target ship triggers on disband or destruction.
+[*]在轨道上有上述方舟舰时可用的决议：生成人口、破坏殖民地、生成“浮游炮”舰船（需要行星护盾生成器建筑或星环基地）、重置遗物冷却、增加可用区划、禁止跃迁、增加国民理念、随机重排地块、改变星球类型（生成本mod的地块）
+Decisions available when arkship is in orbit: grow pop, destroy colony, spawn Floating Cannon ships (requires Planetary Shield Generator building or orbital ring), reset relic cooldown, add districts, disable FTL, add civics, randomize tiles, change planet class.
 [*]一个星球类型（可能已经删了），但4.0没了区划后和理想城没多大区别，只有附赠的地块有用了
-a planet class, I want just delete it actually (or already deleted). use decision to get it. it has a special deposit.
+A planet class (might have been removed already). Not much different from an Ecumenopolis after 4.0 removed districts, only the special deposit matters. Obtainable via decision.
 [*]那个地块，根据当前星球规划的不同让平民产出不同资源，在首都提供全帝国加成岗位，前文提到的建筑必须建在有该地块的行星上
-a deposit making your civilian produce alloys or unity or something, depends on planet designation
+A deposit that makes civilian pops produce resources (alloys, unity, etc.) based on planet designation. Provides empire-wide bonus jobs at the capital. The buildings above require this deposit.
 [*]几种法令
 several edicts
 [*]武装（3H）科研船、工程船，用于触发超距射击的另一种方式的靶船，1T1X6P槽的“浮游炮”
-ship sizes: armed science ship and construction ship(3 H slot), a ship just for trigger “Ultra-Range Fire” in another way, a shipsize with 1T1X6P slots
+Ship sizes: armed science ship and construction ship (3 H slots), a target ship that triggers “Ultra-Range Fire” when destroyed or disbanded, a ship size with 1T1X6P weapon slots
 [*]物种特质，和在使用该物种特质时会有的领袖特质
 trait, and leader trait
 [*]两个产资源巨构，一个连接超空间航道的巨构（需要星河奇迹飞升，我也不知道为什么当时这么写），一个放在别人家里会对你加好感的巨构
-4 megastructures
+4 megastructures: 2 that produce resources, 1 that connects hyperlanes (requires Galactic Wonders ascension), 1 placed in other empires' territory that improves relations
 [/olist]
 [olist]
 [*][img]https://s2.loli.net/2025/05/12/lUa3o6TGWhJXZiq.png[/img]

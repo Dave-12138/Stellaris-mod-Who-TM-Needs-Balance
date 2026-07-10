@@ -1,6 +1,6 @@
 #建造环世界
 option = {
-	name = wtmnb_colossus.1001.x
+	name = wtmnb_colossus.1001.ring
 	trigger = {
 		from = {
 			is_star = yes
@@ -36,7 +36,7 @@ option = {
 				}
 			}
 		}
-		event_target:wtmnb_planet_killer_ship = {
+		event_target:wtmnb_planet_killer_fleet = {
 			any_owned_ship = {
 				has_component = WTMNB_1ST_KEY
 				has_component = WTMNB_4TH_KEY
@@ -92,5 +92,5 @@ option = {
 			}
 		}
 	}
-	custom_tooltip = "wtmnb_colossus.1001.x.desc"
+	custom_tooltip = "wtmnb_colossus.1001.ring.desc"
 }

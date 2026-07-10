@@ -1,0 +1,49 @@
+#点星器
+option = {
+	name = arkship_stellar_ignition
+	trigger = {
+		from = {
+			OR = {
+				is_star = yes
+				is_planet_class = pc_gas_giant
+			}
+			NOT = {
+				has_modifier = stellar_ignition_mod
+			}
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = arkship_target_contract_target_fail_tt
+			OR = {
+				# Either there's no contract POI in this system...
+				NOT = {
+					solar_system = {
+						any_system_planet = {
+							is_point_of_interest = {
+								id = stellar_ignition_poi@this
+								event_chain = contract_stellar_ignition_chain
+								owner = root
+							}
+						}
+					}
+				}
+				# ... or this planet is the contract POI
+				is_point_of_interest = {
+					id = stellar_ignition_poi@this
+					event_chain = contract_stellar_ignition_chain
+					owner = root
+				}
+			}
+		}
+	}
+	custom_tooltip = arkship_stellar_ignition_ship_button
+	from = {
+		fire_on_action = {
+			on_action = on_arkship_stellar_ignition
+			scopes = {
+				from = event_target:wtmnb_planet_killer_fleet
+			}
+		}
+	}
+}

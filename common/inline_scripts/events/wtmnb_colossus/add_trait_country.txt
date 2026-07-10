@@ -5,8 +5,8 @@ option = {
 			is_capital = yes
 		}
 	}
-	name = wtmnb_colossus.1001.b
-	custom_tooltip = wtmnb_colossus.1001.b.tip
+	name = wtmnb_colossus.1001.trait_country
+	custom_tooltip = wtmnb_colossus.1001.trait_country.tip
 	hidden_effect = {
 		from = {
 			owner = {

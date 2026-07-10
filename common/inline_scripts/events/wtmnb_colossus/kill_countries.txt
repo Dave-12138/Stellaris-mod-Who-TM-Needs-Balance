@@ -8,8 +8,8 @@ option = {
 			}
 		}
 	}
-	name = wtmnb.2001.b
-	custom_tooltip = wtmnb.2001.b.tip
+	name = wtmnb_colossus.1001.kill_countries
+	custom_tooltip = wtmnb_colossus.1001.kill_countries.tip
 	hidden_effect = {
 		from.solar_system = {
 			every_fleet_in_system = {

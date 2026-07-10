@@ -1,0 +1,153 @@
+namespace = wtmnb_boomer
+# 崩坏裂变弹 - 击毁
+country_event = {
+	id = wtmnb_boomer.1000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			is_ship_size = wtmnb_boomer
+		}
+	}
+	immediate = {
+		random_country = {
+			limit = {
+				has_country_flag = wtmnb_order
+			}
+			country_event = {
+				id = wtmnb_boomer.3000
+				scopes = {
+					from = fromfrom.solar_system
+				}
+			}
+		}
+
+	}
+}
+
+# 然后引爆
+country_event = {
+	id = wtmnb_boomer.3000
+	is_triggered_only = yes
+	hide_window = yes
+	# 触发超距射击
+	immediate = {
+		from = {
+			system_event = {
+				id = wtmnb_boomer.4000
+				days = 0
+				scopes = { from = root }
+			}
+		}
+	}
+
+}
+
+# 手动引爆
+country_event = {
+	id = wtmnb_boomer.2000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			any_owned_ship = {
+				is_ship_size = wtmnb_boomer
+			}
+		}
+	}
+	immediate = {
+		country_event = {
+			id = wtmnb_boomer.3000
+			scopes = {
+				from = from.solar_system
+			}
+		}
+	}
+}
+
+#星体 选择
+# 手动设置from为country
+system_event = {
+	id = wtmnb_boomer.4000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = from
+		from = {
+			is_scope_type = country
+			is_wtmnb_empire = yes
+		}
+	}
+	immediate = {
+		from = {
+			# 补事件链
+			# 不能if limit has_event_chain
+			begin_event_chain = {
+				event_chain = wtmnb_open_fire_chain
+				target = from
+			}
+			# abort_special_project = {
+			#     type = WTMNB_OPEN_FIRE_SYSTEM_SELECT
+			# }
+			# 补取消事件
+			if = {
+				limit = {
+					NOT = {
+						has_special_project = WTMNB_OPEN_FIRE_CANCEL
+					}
+				}
+				random_owned_ship = {
+					limit = {
+						is_ship_size = wtmnb_fortress
+					}
+					enable_special_project = {
+						name = WTMNB_OPEN_FIRE_CANCEL
+						owner = from
+						location = this
+					}
+				}
+			}
+		}
+		if = {
+			# 万一星系里因为奇奇怪怪的 bug 没恒星
+			limit = {
+				NOT = {
+					exists = star
+				}
+			}
+			spawn_planet = {
+				class = pc_black_hole
+				size = 1
+				orbit_angle = 0
+				orbit_distance = 0
+				init_effect = {
+					set_name = "[This.System.GetName](debug)"
+					set_planet_flag = wtmnb_temp_fake_star
+					planet_event = {
+						id = wtmnb_boomer.4010
+						days = 10
+					}
+				}
+			}
+		}
+		every_system_planet = {
+			enable_special_project = {
+				name = WTMNB_OPEN_FIRE_PLANET_SELECT
+				location = this
+				owner = from
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = wtmnb_boomer.4010
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = wtmnb_temp_fake_star
+	}
+	immediate = {
+		remove_planet = yes
+	}
+}

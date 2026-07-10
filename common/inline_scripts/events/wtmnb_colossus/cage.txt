@@ -1,5 +1,5 @@
 option = {
-    name = wtmnb_colossus.1001.m
+    name = wtmnb_colossus.1001.cage
     trigger = {
         from = {
             OR = {
@@ -13,7 +13,7 @@ option = {
             }
         }
     }
-    custom_tooltip = wtmnb_colossus.1001.m.tip
+    custom_tooltip = wtmnb_colossus.1001.cage.tip
     hidden_effect = {
         from.solar_system = {
             every_system_planet_colony = {

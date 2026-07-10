@@ -1,78 +1,96 @@
 wtmnb_fortress_super_fire = {
-    user_scope = fleet
-    scope = galactic_object
-    on_queued = on_wtmnb_fortress_super_fire
-    tooltip = wtmnb_fortress_super_fire_button
-    icon = GFX_fleet_task_wtmnb_fortress_super_fire_action
-    icon_selected = GFX_fleet_task_wtmnb_fortress_super_fire_action
-    activity_key = wtmnb_fortress_super_fire_activity_key
-    progress_activity_key = wtmnb_fortress_super_fire_progress_activity_key
-    context_menu_name = wtmnb_fortress_super_fire_menu_title
-
-    button_visible = {
-        owner = {
-            NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
-        }
-    }
-    shortcut = "SHIFT+C"
-
-    # finished = {
-    #     from.owner = {
-    #         NOT = { has_special_project = WTMNB_OPEN_FIRE_CANCEL }
-    #     }
-    # }
-
-    slot = 1
-    wait = no
+	user_scope = fleet
+	scope = planet
+	on_queued = on_wtmnb_fortress_super_fire
+	on_started = on_wtmnb_fortress_clean_order
+	tooltip = wtmnb_fortress_super_fire_button
+	icon = GFX_fleet_task_wtmnb_fortress_super_fire_action
+	icon_selected = GFX_fleet_task_wtmnb_fortress_super_fire_action
+	activity_key = wtmnb_fortress_super_fire_activity_key
+	progress_activity_key = wtmnb_fortress_super_fire_progress_activity_key
+	context_menu_name = wtmnb_fortress_super_fire_menu_title
+	button_visible = {
+		# owner = {
+		# 	NOT = {
+		# 		has_event_chain = wtmnb_open_fire_chain
+		# 	}
+		# }
+	}
+	# possible = {
+	# 	from.owner={
+	# 		NOT = {
+	# 			has_event_chain = wtmnb_open_fire_chain
+	# 		}
+	# 	}
+	# }
+	button_clickable = {
+		custom_tooltip = {
+			fail_text="wtmnb_fortress_super_fire_button_cancel_desc"
+			NOT = {
+				has_fleet_flag = wtmnb_super_shooting
+			}
+		}
+	}
+	shortcut = "SHIFT+C"
+	finished = {
+		from = {
+			NOT = {
+				custom_tooltip = {
+					fail_text="wtmnb_fortress_super_fire_button_cancel_desc"
+					NOT = {
+						has_fleet_flag = wtmnb_super_shooting
+					}
+				}
+			}
+		}
+	}
+	slot = 1
+	wait = no
+	category = wtmnb_shoot
+	category_limit = 1
+	context_menu_ordering = weight
+	ai = {
+		weight = {
+			base = 0
+			modifier = {
+				weight = 10
+				is_primary_star = yes
+			}
+		}
+		good_enough_weight = 8
+	}
 }
 
-wtmnb_fortress_super_fire_stop = {
-    user_scope = fleet
-    scope = self
-    on_started = on_wtmnb_fortress_super_fire_cancel
-    tooltip = wtmnb_fortress_super_fire_button
-    icon = GFX_fleet_task_wtmnb_fortress_super_fire_action
-    activity_key = wtmnb_fortress_super_fire_activity_key
-    context_menu_name = wtmnb_fortress_super_fire_menu_title
 
-    button_visible = {
-        owner = {
-            has_special_project = WTMNB_OPEN_FIRE_CANCEL
-        }
-    }
-    shortcut = "H"
-
-    slot = 1
-    wait = no
-}
 wtmnb_fortress_switch_shipyard = {
-    user_scope = fleet
-    scope = self
-    on_started = on_wtmnb_fortress_switch_shipyard
-    tooltip = wtmnb_fortress_switch_shipyard_button
-    icon = GFX_order_button_wtmnb_swtich_shipyard
-    activity_key = wtmnb_fortress_switch_shipyard_activity_key
-    context_menu_name = wtmnb_fortress_switch_shipyard_menu_title
-
-    button_visible = { is_ship_size = wtmnb_fortress }
-    shortcut = "SHIFT+B"
-
-    # slot = 1
-    wait = no
+	user_scope = fleet
+	scope = self
+	on_started = on_wtmnb_fortress_switch_shipyard
+	tooltip = wtmnb_fortress_switch_shipyard_button
+	icon = GFX_order_button_wtmnb_swtich_shipyard
+	activity_key = wtmnb_fortress_switch_shipyard_activity_key
+	context_menu_name = wtmnb_fortress_switch_shipyard_menu_title
+	button_visible = {
+		is_ship_size = wtmnb_fortress
+	}
+	shortcut = "SHIFT+B"
+	# slot = 1
+	wait = no
 }
+
 wtmnb_fortress_upgrading_mode = {
-    user_scope = fleet
-    scope = self
-    on_started = on_wtmnb_fortress_upgrading_mode
-    tooltip = wtmnb_fortress_upgrading_mode_button
-    icon = GFX_fleet_order_auto_construct
-    activity_key = wtmnb_fortress_upgrading_mode_activity_key
-    context_menu_name = wtmnb_fortress_upgrading_mode_menu_title
-
-    button_visible = { is_ship_size = wtmnb_fortress }
-    # button_clickable = { from = { has_existing_ship_design = wtmnb_fortress } }
-    shortcut = "U"
-
-    # slot = 1
-    wait = no
+	user_scope = fleet
+	scope = self
+	on_started = on_wtmnb_fortress_upgrading_mode
+	tooltip = wtmnb_fortress_upgrading_mode_button
+	icon = GFX_fleet_order_auto_construct
+	activity_key = wtmnb_fortress_upgrading_mode_activity_key
+	context_menu_name = wtmnb_fortress_upgrading_mode_menu_title
+	button_visible = {
+		is_ship_size = wtmnb_fortress
+	}
+	# button_clickable = { from = { has_existing_ship_design = wtmnb_fortress } }
+	shortcut = "U"
+	# slot = 1
+	wait = no
 }

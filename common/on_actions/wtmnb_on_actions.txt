@@ -1,5 +1,6 @@
 on_planet_bombarded = {
 	events = {
+		# 两种轨道轰炸
 		wtmnb.1010
 		wtmnb.1000
 	}
@@ -36,7 +37,7 @@ on_ruler_created = {
 on_ship_destroyed_victim = {
 	events = {
 		# 崩坏裂变弹
-		wtmnb.2000
+		wtmnb_boomer.1000
 	}
 }
 
@@ -45,76 +46,88 @@ on_ship_destroyed_victim = {
 on_fleet_disbanded = {
 	events = {
 		# 崩坏裂变弹 手动引爆
-		wtmnb.2002
+		wtmnb_boomer.2000
 	}
 }
 
 on_ship_quantum_catapult = {
 	events = {
 		# 弹射进神恩结界
-		wtmnb.3000
+		wtmnb_ships.2000
 	}
 }
 
 on_jump_drive = {
 	events = {
 		# 跃迁进神恩结界
-		wtmnb.3000
+		wtmnb_ships.2000
 	}
 }
+
 # event: ship_event
 # from: starbase (the builder)
 on_ship_built = {
 	events = {
-		wtmnb.5001
-		wtmnb_ships.1000
+		wtmnb_ships.1000		# 王座造船加变量
 	}
 }
 
+# 技能
+# 切换船坞
 on_wtmnb_fortress_switch_shipyard = {
 	events = {
-		wtmnb_colossus.2000
+		wtmnb_ship_skill.1000
 	}
 }
 
+# 超距射击
 on_wtmnb_fortress_super_fire = {
 	events = {
-		wtmnb_colossus.3000
+		wtmnb_colossus.1000
 	}
 }
 
+# 阻止点技能会跑到目标处
 on_wtmnb_fortress_clean_order = {
 	events = {
-		wtmnb_colossus.2100
+		wtmnb_ship_skill.2000
 	}
 }
 
-on_wtmnb_fortress_super_fire_cancel = {
+# 原版方舟深度扫描
+on_arkship_deep_scan = {
 	events = {
-		wtmnb_colossus.3001
+		wtmnb_scienceship.2000
+	}
+}
+
+# 原版方舟亚空间成像
+on_arkship_subspace_image = {
+	events = {
+		wtmnb_scienceship.2010
 	}
 }
 
 on_wtmnb_fortress_upgrading_mode = {
 	events = {
-		wtmnb_colossus.4000
+		wtmnb_ship_skill.3000
 	}
 }
 
 on_ship_order = {
 	events = {
-		wtmnb.7000
+		wtmnb_scienceship.1000
 	}
 }
 
 on_entering_battle = {
 	events = {
-		wtmnb.8000
+		wtmnb_battle.1000
 	}
 }
 
 on_ship_disabled = {
 	events = {
-		wtmnb.8010
+		wtmnb_battle.3000
 	}
 }

@@ -1,6 +1,6 @@
 #创造植被
 option = {
-	name = wtmnb_colossus.1001.w
+	name = wtmnb_colossus.1001.giga_planet
 	trigger = {
 		from = {
 			is_star = no
@@ -14,7 +14,7 @@ option = {
 				planet_size < 6
 			}
 		}
-		event_target:wtmnb_planet_killer_ship = {
+		event_target:wtmnb_planet_killer_fleet = {
 			any_owned_ship = {
 				has_component = WTMNB_9TH_KEY
 				has_component = WTMNB_6TH_KEY
@@ -35,5 +35,5 @@ option = {
 			}
 		}
 	}
-	custom_tooltip = "wtmnb_colossus.1001.w.desc"
+	custom_tooltip = "wtmnb_colossus.1001.giga_planet.desc"
 }

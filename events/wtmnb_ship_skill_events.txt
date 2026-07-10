@@ -1,7 +1,7 @@
-namespace = wtmnb_colossus
+namespace = wtmnb_ship_skill
 # 切换船坞
 fleet_event = {
-	id = wtmnb_colossus.2000
+	id = wtmnb_ship_skill.1000
 	trigger = {
 		from = {
 			is_ship_size = wtmnb_fortress
@@ -36,7 +36,7 @@ fleet_event = {
 
 # 清除动作
 event = {
-	id = wtmnb_colossus.2100
+	id = wtmnb_ship_skill.2000
 	trigger = {
 		from = {
 			is_ship_size = wtmnb_fortress
@@ -47,64 +47,14 @@ event = {
 	immediate = {
 		from = {
 			clear_orders = yes
-		}
-	}
-}
-
-# 射击
-system_event = {
-	id = wtmnb_colossus.3000
-	trigger = {
-		from = {
-			is_ship_size = wtmnb_fortress
-		}
-	}
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		if = {
-			limit = {
-				from.owner = {
-					has_special_project = WTMNB_OPEN_FIRE_CANCEL
-				}
-			}
-			# end_event_chain = wtmnb_open_fire_chain
-		}
-		else = {
-			from = {
-				clear_orders = yes
-			}
-			system_event = {
-				id = wtmnb.6010
-				days = 0
-				scopes = {
-					from = from.owner
-				}
-			}
-		}
-	}
-}
-
-# 取消射击
-fleet_event = {
-	id = wtmnb_colossus.3001
-	trigger = {
-		from = {
-			is_ship_size = wtmnb_fortress
-		}
-	}
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		from.owner = {
-			end_event_chain = wtmnb_open_fire_chain
+			# clear_fleet_actions = this
 		}
 	}
 }
 
 # 升级按钮
 fleet_event = {
-	id = wtmnb_colossus.4000
+	id = wtmnb_ship_skill.3000
 	trigger = {
 		from = {
 			is_ship_size = wtmnb_fortress

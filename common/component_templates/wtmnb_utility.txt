@@ -361,3 +361,50 @@ utility_component_template = {
 	show_tech_unlock_if = { always = no }
 }
 
+
+
+utility_component_template = {
+	key = "WTMNB_CLOAK_10"
+	size = small
+	icon = "GFX_ship_part_cloak_dark_matter"
+	icon_frame = 1
+	power = -5
+	modifier = {
+
+		ship_cloaking_strength_add = 10
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 70
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+	size_restriction = {
+		wtmnb_cannon
+	}
+	prerequisites = {
+		"tech_wtmnb_fortress"
+	}
+	component_set = "WTMNB_CLOAK_COMP"
+	show_tech_unlock_if = {
+		always = no
+	}
+}
+
+utility_component_template = {
+	key = "WTMNB_CLOAK_NONE"
+	size = small
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	ai_weight = {
+		weight = 1
+	}
+	size_restriction = {
+		wtmnb_cannon
+	}
+	component_set = "WTMNB_CLOAK_COMP"
+}

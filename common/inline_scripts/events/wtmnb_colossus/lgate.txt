@@ -7,7 +7,7 @@ option = {
 			}
 		}
 	}
-	name = wtmnb_colossus.1001.f
+	name = wtmnb_colossus.1001.l_gate
 	custom_tooltip = wtmnb.3.title
 	hidden_effect = {
 		country_event = {

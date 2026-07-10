@@ -5,8 +5,8 @@ option = {
 			is_colony = yes
 		}
 	}
-	name = wtmnb_colossus.1001.c
-	custom_tooltip = wtmnb_colossus.1001.c.tip
+	name = wtmnb_colossus.1001.trait_planet
+	custom_tooltip = wtmnb_colossus.1001.trait_planet.tip
 	hidden_effect = {
 		from = {
 			every_owned_species = {

@@ -1,28 +1,15 @@
 ﻿l_simp_chinese:
  #################
+# 船
  wtmnb_fortress: "月光王座"
  wtmnb_fortress_cap: "$wtmnb_fortress$"
  wtmnb_fortress_plural: "$wtmnb_fortress$"
- aura_unbreakable_shield_wide: "AT力场"
- SHIP_UNBREAKABLE_SHARE: "Anti力场"
- SCIENCE_SHIELD_AURA: "逆熵护盾"
- aura_science_shield: "其时已至，虚空深渊之下"
- aura_science_hostile: "人间法宝吞噬天上暴君之日"
+ WTMNB_FORT_CORE: "月光王座"
+ WTMNB_FORT_CORE2: "月光王座(擎天堡模型)"
+ WTMNB_FORT_CORE3: "月光王座(女王泰坦模型)"
+ WTMNB_FORT_CORE4: "月光王座(民用方舟模型)"
+ swtmnb: "$wtmnb_fortress$"
 
- WTMNB_WEAPON: "§M$wtmnb_fortress$§!"
- WTMNB_WEAPON_K: "$WTMNB_WEAPON$"
- WTMNB_WEAPON_T: "$WTMNB_WEAPON$"
- WTMNB_WEAPON_P: "$WTMNB_WEAPON$"
- WTMNB_WEAPON_M: "$WTMNB_WEAPON$"
- WTMNB_WEAPON_X: "$WTMNB_WEAPON$"
- WTMNB_WEAPON_XXL: "$WTMNB_WEAPON$"
- WTMNB_WEAPON_DESC: "严格来说，“$WTMNB_WEAPON$”不能算一种兵器：它只是一种能量转换装置而已。用可控的方式，把崩坏能转化成普通能量。\n人类在前文明末期曾经掌握了这项技术，但当时的事态发展没有给他们留下足够的时间。\n假如在那个时间点，他们能将人类原有的工业规模再维持十年左右，那么量产的“月光王座”就足以吸纳星球规模的溢出崩坏能。"
- WTMNB_WEAPON_K_DESC: "$WTMNB_WEAPON_DESC$"
- WTMNB_WEAPON_XXL_DESC: "$WTMNB_WEAPON_DESC$"
- SHIP_GRAPHICS_WTMNB_FORTRESS_DESC: "$WTMNB_WEAPON_DESC$"
-
- wtmnb_civi: "拟态船"
- wtmnb_battle: "虚数造物"
  wtmnb_science: "拟态科研船"
  wtmnb_science_cap: "$wtmnb_science$"
  wtmnb_science_plural: "$wtmnb_science$"
@@ -50,6 +37,28 @@
  WTMNB_BOOMER_SECTION: "解散舰队时、被击毁时引爆"
  SHIP_GRAPHICS_WTMNB_BOOMER_DESC: "【超距射击靶船】如果数值不够魔怔，可以考虑事件杀"
 
+# 配件
+ aura_unbreakable_shield_wide: "AT力场"
+ SHIP_UNBREAKABLE_SHARE: "Anti力场"
+ SCIENCE_SHIELD_AURA: "逆熵护盾"
+ aura_science_shield: "其时已至，虚空深渊之下"
+ aura_science_hostile: "人间法宝吞噬天上暴君之日"
+
+ WTMNB_WEAPON: "§M$wtmnb_fortress$§!"
+ WTMNB_WEAPON_K: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_T: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_P: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_M: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_X: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_XXL: "$WTMNB_WEAPON$"
+ WTMNB_WEAPON_DESC: "严格来说，“$WTMNB_WEAPON$”不能算一种兵器：它只是一种能量转换装置而已。用可控的方式，把崩坏能转化成普通能量。\n人类在前文明末期曾经掌握了这项技术，但当时的事态发展没有给他们留下足够的时间。\n假如在那个时间点，他们能将人类原有的工业规模再维持十年左右，那么量产的“月光王座”就足以吸纳星球规模的溢出崩坏能。"
+ WTMNB_WEAPON_K_DESC: "$WTMNB_WEAPON_DESC$"
+ WTMNB_WEAPON_XXL_DESC: "$WTMNB_WEAPON_DESC$"
+ SHIP_GRAPHICS_WTMNB_FORTRESS_DESC: "$WTMNB_WEAPON_DESC$"
+
+ wtmnb_civi: "拟态船"
+ wtmnb_battle: "虚数造物"
+
 
  WTMNB_SCIENCE_REACTOR_POOL: "无烟煤锅炉"
 
@@ -64,11 +73,6 @@
 
  WTMNB_THRUSTER_POOL: "蒸汽推进器"
 
- WTMNB_FORT_CORE: "月光王座"
- WTMNB_FORT_CORE2: "月光王座(擎天堡模型)"
- WTMNB_FORT_CORE3: "月光王座(女王泰坦模型)"
- WTMNB_FORT_CORE4: "月光王座(民用方舟模型)"
- swtmnb: "$wtmnb_fortress$"
  SHIP_THRUSTER_WTMNB: "阿拉哈托"
  SHIP_THRUSTER_WTMNB_DESC: "Fly me 2 the moon!"
 
@@ -99,7 +103,7 @@
  WTMNB_8TH_KEY: "羽渡尘"
  WTMNB_8TH_KEY_DESC: "第八神之键·意识之键"
 
- WTMNB_9TH_KEY: "伊甸之星"
+ WTMNB_9TH_KEY: "星海谐律"
  WTMNB_9TH_KEY_DESC: "第九神之键·吞噬之键"
  aura_eden_star: "各向异性相对论效应"
 
@@ -109,6 +113,14 @@
 
  WTMNB_GRAND_KEY: "神之键"
  WTMNB_GRAND_KEY_DESC: "引导使用虚数权能的工具"
+
+ WTMNB_CLOAK_10: "隐形组件"
+ WTMNB_CLOAK_10_DESC: ""
+ WTMNB_CLOAK_NONE: "无隐形组件"
+ WTMNB_CLOAK_NONE_DESC: ""
+
+ WTMNB_CLOAK_COMP: "隐形组件"
+ WTMNB_CLOAK_COMP_DESC: ""
 
  COMBAT_COMPUTER_WTMNB_BOOMER: "自爆卡车作战电脑"
  COMBAT_COMPUTER_WTMNB_CANNON: "长距炮击作战电脑（平台）"
@@ -181,14 +193,14 @@
  edict_wtmnb_edict_2_desc: "跳过等待政府改革cd的时间\n§L重置政府改革(调整国民理念、政体)CD§!"
  reset_gov_cooldown: "立即冷却政府改革"
 
- edict_wtmnb_edict_3: "心急带路贼？"
- edict_wtmnb_edict_3_desc: "心急带路呦！"
+ edict_wtmnb_edict_3: "我是秦始皇"
+ edict_wtmnb_edict_3_desc: "我去，是聊天记录，这下不得不信了"
 
  edict_wtmnb_edict_4: "拆除巨构"
  edict_wtmnb_edict_4_desc: "需要星系内有工程船"
 
- edict_wtmnb_edict_5: "我也要+1500"
- edict_wtmnb_edict_5_desc: "啊？\n§L对境内有$wtmnb_love_mark$巨构的国家评价大幅提升§!"
+ edict_wtmnb_edict_5: "我也要+1500吗？"
+ edict_wtmnb_edict_5_desc: "§L对境内有$wtmnb_love_mark$巨构的国家评价大幅提升§!"
 
  edict_wtmnb_edict_7: "我不想点第一次接触了"
  edict_wtmnb_edict_7_desc: "点第一次接触累死了，我现在就要建立所有通讯！\n§L(包括虚境，但不包括采矿团之类)§!"
@@ -258,34 +270,34 @@
  wtmnb.5.desc: "[from.GetName]到[wtmnb_portal_start.GetName]的超空间航路已经建立"
 
 
- wtmnb.2001.a: "扫射星系"
- wtmnb.2001.a.tip: "这会摧毁星系内几乎所有舰队，包括我们的"
- wtmnb.2001.b: "太虚剑神"
- wtmnb.2001.b.tip: "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
+ wtmnb_colossus.1001.kill_ships: "扫射星系"
+ wtmnb_colossus.1001.kill_ships.tip: "这会摧毁星系内几乎所有舰队，包括我们的"
+ wtmnb_colossus.1001.kill_countries: "太虚剑神"
+ wtmnb_colossus.1001.kill_countries.tip: "除我们以外，星系内所有舰船所属国家都会消亡。\n§R可能会导致断事件bug§!\n§L神者，变化之极，妙万物而为言，不可以形诘者也。§!"
 
  wtmnb.4000.desc: "将在[From.GetName]召唤风暴："
 
  wtmnb_colossus.1001.name: "月光王座"
- wtmnb_colossus.1001.desc: "我们打算在§H[From.GetName]§!进行："
- wtmnb_colossus.1001.a: "算了"
- wtmnb_colossus.1001.a.tip: "回收部署的虚数内能"
- wtmnb_colossus.1001.b: "圣痕计划([From.Owner.GetName])"
- wtmnb_colossus.1001.b.tip: "[From.Owner.GetSpeciesName]被赋予§H$trait_wtmnb_stigmata$§!特质，包括领袖"
- wtmnb_colossus.1001.c: "圣痕计划([From.GetName])"
- wtmnb_colossus.1001.c.tip: "[From.GetName]上所有人口:\n获得§H$trait_wtmnb_stigmata$§!特质\n宜居星球被设为[wtmnb_target.GetClassName]"
- wtmnb_colossus.1001.d: "行星/人口物种重构"
- wtmnb_colossus.1001.e: "行星/人口物种修饰"
- wtmnb_colossus.1001.f: "$lgate$观测"
+ wtmnb_colossus.1001.specie_typeesc: "我们打算在§H[From.GetName]§!进行："
+ wtmnb_colossus.1001.cancel: "算了"
+ wtmnb_colossus.1001.cancel.tip: "回收部署的虚数内能"
+ wtmnb_colossus.1001.trait_country: "圣痕计划([From.Owner.GetName])"
+ wtmnb_colossus.1001.trait_country.tip: "[From.Owner.GetSpeciesName]被赋予§H$trait_wtmnb_stigmata$§!特质，包括领袖"
+ wtmnb_colossus.1001.trait_planet: "圣痕计划([From.GetName])"
+ wtmnb_colossus.1001.trait_planet.tip: "[From.GetName]上所有人口:\n获得§H$trait_wtmnb_stigmata$§!特质\n宜居星球被设为[wtmnb_target.GetClassName]"
+ wtmnb_colossus.1001.specie_type: "行星/人口物种重构"
+ wtmnb_colossus.1001.specie_basetrait: "行星/人口物种修饰"
+ wtmnb_colossus.1001.l_gate: "$lgate$观测"
  lock_all_bypass_in_system: "锁定恒星系内所有$LGATE_GALACTIC$(不包含$NAME_Final_Egress$)、$NATURAL_WORMHOLE_GALACTIC$、$SHROUD_TUNNEL_GALACTIC$(不包含$gov_shroudwalker_enclave$)\n§B$GATEWAY$§!§g不能锁，反正代码里是这么写的§!"
- wtmnb_colossus.1001.l: "切断$concept_hyperlane$"
- wtmnb_colossus.1001.m: "虚数放逐"
- wtmnb_colossus.1001.m.tip: "将整个[wtmnb_target.Owner.GetName]关押在其母星系[wtmnb_target.System.GetName]\n§L摧毁除[wtmnb_target.System.GetName]星系以外的所有殖民地与恒星基地，并删除[wtmnb_target.System.GetName]星系的$concept_hyperlane$§!"
- wtmnb_colossus.1001.u: "外交频道"
- wtmnb_colossus.1001.v: "占领"
- wtmnb_colossus.1001.w: "创造生态环境"
- wtmnb_colossus.1001.w.desc: "既然拥有轻易撼动星辰、逆转生死的力量，在几个小时内依靠“贴膜”技术将一块虚空中的大石头变成生机盎然的星球也并非不可能"
- wtmnb_colossus.1001.x: "建造环世界"
- wtmnb_colossus.1001.x.desc: "我们不需要什么行星了\n-§R小心，别对自己唯一的殖民地所在星系用，否则。。。§!"
+ wtmnb_colossus.1001.rm_hyperlane: "切断$concept_hyperlane$"
+ wtmnb_colossus.1001.cage: "虚数放逐"
+ wtmnb_colossus.1001.cage.tip: "将整个[wtmnb_target.Owner.GetName]关押在其母星系[wtmnb_target.System.GetName]\n§L摧毁除[wtmnb_target.System.GetName]星系以外的所有殖民地与恒星基地，并删除[wtmnb_target.System.GetName]星系的$concept_hyperlane$§!"
+ wtmnb_colossus.1001.diplo: "外交频道"
+ wtmnb_colossus.1001.gain_planet: "占领"
+ wtmnb_colossus.1001.giga_planet: "创造生态环境"
+ wtmnb_colossus.1001.giga_planet.desc: "既然拥有轻易撼动星辰、逆转生死的力量，在几个小时内依靠“贴膜”技术将一块虚空中的大石头变成生机盎然的星球也并非不可能"
+ wtmnb_colossus.1001.ring: "建造环世界"
+ wtmnb_colossus.1001.ring.desc: "我们不需要什么行星了\n-§R小心，别对自己唯一的殖民地所在星系用，否则。。。§!"
 
  ######### 外交
  wtmnb_diplomacy.1.name: "[wtmnb_target.Owner.GetName]"
@@ -504,20 +516,26 @@
  sm_wtmnb_starbase_building_tt1: "根据轨道中工程船的数量提高全国全产"
  ##########
  # 舰船技能
- wtmnb_fortress_switch_shipyard_menu_title: "切换船坞"
+ wtmnb_fortress_switch_shipyard: "切换船坞"
+ wtmnb_fortress_switch_shipyard_menu_title: "$wtmnb_fortress_switch_shipyard$"
  wtmnb_fortress_switch_shipyard_button: "§H$wtmnb_fortress_switch_shipyard_menu_title$类型§!\n当前为§Y[This.GetConstructionType]§!"
  wtmnb_fortress_switch_shipyard_activity_key: "切换船坞类型"
-
- wtmnb_fortress_super_fire_menu_title: "超距射击"
+ wtmnb_fortress_super_fire: "超距射击"
+ wtmnb_fortress_super_fire_menu_title: "$wtmnb_fortress_super_fire$"
  wtmnb_fortress_super_fire_activity_key: "聚集虚数内能"
  wtmnb_fortress_super_fire_progress_activity_key: "进行高维瞄准"
  wtmnb_fortress_super_fire_button: "§H$wtmnb_fortress_super_fire_menu_title$§!\n[This.GetSuperFireDesc]"
  wtmnb_fortress_super_fire_button_desc: "§Y现在，我赐予各位直视太阳的权力§!"
- wtmnb_fortress_super_fire_button_cancel_desc: "点击取消(快捷键H)可以§B$WTMNB_OPEN_FIRE_CANCEL$§!"
+ wtmnb_fortress_super_fire_button_cancel_desc: "正在抉择"
 
-
- wtmnb_fortress_upgrading_mode_menu_title: "改装模式"
+ wtmnb_fortress_upgrading_mode: "改装模式"
+ wtmnb_fortress_upgrading_mode_menu_title: "$wtmnb_fortress_upgrading_mode$"
  wtmnb_fortress_upgrading_mode_activity_key: "改装"
  wtmnb_fortress_upgrading_mode_button: "进入改装模式以更新武器，改装模式下无法移动\n§g设计舰船>点击改装模式>点击空白地图以取消选中>选中$wtmnb_fortress$>点击改装§!"
 
+
+
+ # 自动
+ AUTOMATION_OPT_EXPLORE_PREFER: "优先探索"
+ AUTOMATION_OPT_EXPLORE_PREFER_TT: "优先探索未调查星系"
 #
