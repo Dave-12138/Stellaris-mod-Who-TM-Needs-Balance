@@ -3,8 +3,12 @@
   #################
  wtmnb_fortress: "Moonlight Throne"
  wtmnb_fortress_plural: "$wtmnb_fortress$"
+ wtmnb_fortress_cap: "$wtmnb_fortress$"
  aura_unbreakable_shield_wide: "Anti-Field"
  SHIP_UNBREAKABLE_SHARE: "Anti-Field"
+ SCIENCE_SHIELD_AURA: "Anti-Entropy Shield"
+ aura_science_shield: "The time has come, beneath the abyss of the void"
+ aura_science_hostile: "The day when mortal treasures devour the heavenly tyrant"
  WTMNB_WEAPON: "§MMoonlight Throne§!"
  WTMNB_WEAPON_K: "$WTMNB_WEAPON$"
  WTMNB_WEAPON_T: "$WTMNB_WEAPON$"
@@ -41,6 +45,11 @@
  WTMNB_BOOMER_SECTION: "Detonates when fleet is disbanded or destroyed"
  SHIP_GRAPHICS_WTMNB_BOOMER_DESC: "【Ultra-Range Fire】If the numbers aren't insane enough, consider an event-triggered destruction"
 
+ wtmnb_civi: "Mimic Ship"
+ wtmnb_battle: "Imaginary Creation"
+ COMBAT_COMPUTER_WTMNB_BOOMER: "Suicide Truck Combat Computer"
+ COMBAT_COMPUTER_WTMNB_CANNON: "Long-Range Artillery Combat Computer (Platform)"
+
  WTMNB_SCIENCE_REACTOR_POOL: "Anthracite Boiler"
 
  WTMNB_SCIENCE_REACTOR: "Virtual Reactor"
@@ -65,9 +74,12 @@
  WTMNB_1ST_KEY: "Void Archives"
  WTMNB_1ST_KEY_DESC: "Grand Key 1st"
 
- WTMNB_2ND_KEY: "Cosmic Juggernaut "
- WTMNB_2ND_KEY_DESC: "Grand Key 2nd "
+ WTMNB_2ND_KEY: "Cosmic Juggernaut"
+ WTMNB_2ND_KEY_DESC: "Grand Key 2nd"
  WTMNB_2ND_KEY_SIGNAL: "Signal of Cosmic Juggernaut"
+
+ WTMNB_3RD_KEY: "Seven Thunders of Retribution"
+ WTMNB_3RD_KEY_DESC: "Grand Key 3rd:Key of Sanction"
 
  WTMNB_4TH_KEY: "4th Grand Key"
  WTMNB_4TH_KEY_DESC: "Control weather by leading monsoon."
@@ -75,6 +87,7 @@
  WTMNB_5TH_KEY: "Frozen in Peace"
  WTMNB_5TH_KEY_DESC: "Grand Key 5th"
  aura_stagnate: "Stagnate"
+ aura_white_flower: "White Flower"
 
  WTMNB_6TH_KEY: "Black Abyss White Flower"
  WTMNB_6TH_KEY_DESC: "Grand Key 6th:Key of Saving"
@@ -93,6 +106,13 @@
  WTMNB_11TH_KEY_DESC: "Grand Key 11th:Key of Restraint"
  aura_judah: "Elpsion Pedion"
 
+ WTMNB_CLOAK_10: "Cloaking Component"
+ WTMNB_CLOAK_10_DESC: ""
+ WTMNB_CLOAK_NONE: "No Cloaking Component"
+ WTMNB_CLOAK_NONE_DESC: ""
+ WTMNB_CLOAK_COMP: "Cloaking Component"
+ WTMNB_CLOAK_COMP_DESC: ""
+
  WTMNB_GRAND_KEY: "Grand Key"
  WTMNB_GRAND_KEY_DESC: "Machines that guide and control those Power."
  #################
@@ -101,7 +121,8 @@
 
  leader_trait_wtmnb_stigmata: "$trait_wtmnb_stigmata$"
  leader_trait_wtmnb_stigmata_desc: "This leader holds $leader_trait_wtmnb_stigmata$ on her body."
-
+ council_icon_with_bracket: "（£council£）"
+ leader_trait_wtmnb_stigmata_tip: "§M$trait_wtmnb_stigmata$§![Root.GetIconIfCouncil]\n[Root.GetClassTexticon][Root.GetClass] Category"
 
  trait_pc_wtmnb_city_preference: "$pc_wtmnb_city$ Preference"
  trait_pc_wtmnb_city_preference_desc: "$trait_pc_arctic_preference_desc$"
@@ -117,14 +138,14 @@
  wtmnb_dyson_DESC: "(picture is not for this megastructure)After forming a stable manifold around the etheric anchor point, the membrane is further grown by the thermal radiation of the star, which is very efficient because some people hit the cheat button."
  wtmnb_dyson_MEGASTRUCTURE_DETAILS: "After forming a stable manifold around the etheric anchor point, the membrane is further grown by the thermal radiation of the star, which is very efficient because some people hit the cheat button."
  wtmnb_love_mark: "Emotion Matrix"
- wtmnb_love_mark_DESC: "When a empire hold this megastructure in its territory, their opinion to the megastructure creater will be \"so high\", and their federation level will be locked as max"
- wtmnb_love_mark_MEGASTRUCTURE_DETAILS: "this megastruture may be unbuiltable if target country doesnt allow you to enter border"
+ wtmnb_love_mark_DESC: "O you who have reached the end, come to the paradise that embraces all! Join this grand song and feast, hear the beating of billions upon billions of hearts, and be held in their embrace."
+ wtmnb_love_mark_MEGASTRUCTURE_DETAILS: "Placing this in another empire's territory gives +1500 opinion\n\nUnfortunately, it can't be built without open borders"
  wtmnb_portal: "Hyperlane Unit"
  wtmnb_portal_DESC: "When there's 2 §B$wtmnb_portal$§! built, Hyperlane will be create between these solar system. \nwarning：I dont know what will happen when 2 empire build this in same time. Luckily, they won't, in theory."
  wtmnb_portal_MEGASTRUCTURE_DETAILS: "Build 2 $wtmnb_portal$ in diffierent solar system, which will be connect with Hyperlane immediately."
  wtmnb_foundry: "Molecular rearrangement machine"
  wtmnb_foundry_DESC: "Something looks like $matter_decompressor_4$"
- wtmnb_foundry_MEGASTRUCTURE_DETAILS: ""
+ wtmnb_foundry_MEGASTRUCTURE_DETAILS: "Does it look like the matter decompressor? You're right."
 
  not_for_yourself: "We can't do this to ourselves"
  target_must_exist: "Having to do this in some empire, inside border."
@@ -137,8 +158,8 @@
  edict_wtmnb_edict_tech_desc: "unlock tech"
  edict_wtmnb_edict_2: "King Crimson"
  edict_wtmnb_edict_2_desc: "no wait, just skip\n§LReset CD of editing Civics and Gov type.§!"
- edict_wtmnb_edict_3: "信じてるぜ?"
- edict_wtmnb_edict_3_desc: "信じてるよ!"
+ edict_wtmnb_edict_3: "Never Gonna Give You Up"
+ edict_wtmnb_edict_3_desc: "Never Gonna Let You Down"
  edict_wtmnb_edict_4: "Dismantle Megastructure"
  edict_wtmnb_edict_4_desc: "Requires a Constructor within the system"
  edict_wtmnb_edict_5: "Resonate with $wtmnb_love_mark$"
@@ -155,11 +176,12 @@
  wtmnb_planet_ex: "$WTMNB_4TH_KEY$"
  wtmnb_planet_ex_desc: "How could it works?"
  wtmnb_star_11th_modifier: "$aura_judah$"
- wtmnb_star_11th_modifier_desc: ""
+ wtmnb_star_11th_modifier_desc: "All kinetic energy, light, internal energy and imaginary number internal energy are rapidly nullified within the field; bioelectrical signals are naturally included.\nTwisting the field into a spherical shell can isolate this system from the universe."
  avoid_enter_by_jump: "Avoid others enter this system by jump driver"
 
  wtmnb_country_produces_mult: "§M$wtmnb_fortress$§!"
- wtmnb_country_produces_mult_desc: "Counting on constructors in orbit of §M$wtmnb_fortress$§!"
+ wtmnb_country_produces_mult_desc: "§M$wtmnb_fortress$§! Empire-wide production bonus\nMore constructors in orbit = higher bonus"
+ d_wtmnb_city_capital_tooltip: "Provides output bonuses based on the number of §Y£job_civilian£$job_civilian_plural$§! or §Y£job_maintenance_drone£$job_maintenance_drone$§!, up to 400"
  ###################
  deposit_wtmnb_city: "$pc_wtmnb_city$"
  deposit_wtmnb_city_desc: "$pc_wtmnb_city_desc_normal$"
@@ -174,7 +196,7 @@
  bombardment_wtmnb_doom_name: "$bombardment_wtmnb_doom$"
  bombardment_wtmnb_doom_desc: "$bombardment_wtmnb_doom$ wont damage buildings, in theory\n- §RFrightening§! damage to §YArmies§!\n- §GNo§! damage to §YPlanet§!\n- §RFrightening§! damage to §YPops§!\n- Will bombard undefended planets\n-Army will be destroy immediately\n- Do nothing to $pc_ai$"
  bombardment_wtmnb_invasion: "Invasion"
- bombardment_wtmnb_invasion_name: "$bombardment_wtmnb_doom$"
+ bombardment_wtmnb_invasion_name: "$bombardment_wtmnb_invasion$"
  bombardment_wtmnb_invasion_desc: "Our army will Invase the planet immediately \n- §RFrightening§! damage to §YArmies§!\n- §GNo§! damage to §YPlanet§!\n- §GNo§! damage to §YPops§!\n- Will bombard undefended planets\n-Army will be destroy immediately\n- We will controll the planet in one day"
  ###################
  wtmnb.1.name: "Nobody on §H[From.GetName]§! now"
@@ -187,6 +209,7 @@
  wtmnb.5.name: "The Hyperlane has been established"
  wtmnb.5.desc: "Hyperlane has been established from [from.GetName] to [wtmnb_portal_start.GetName]"
 
+ wtmnb.4000.desc: "A storm will be summoned at [From.GetName]:"
 
  wtmnb_colossus.1001.name: "$wtmnb_fortress$"
  wtmnb_colossus.1001.specie_typeesc: "\"Enough\" §Mimaginary number internal energy§! is deployed in §H[From.GetName]§!, and we..."
@@ -199,6 +222,14 @@
  wtmnb_colossus.1001.specie_type: "Convert species on planet"
  wtmnb_colossus.1001.specie_basetrait: "Modify species on planet"
  wtmnb_colossus.1001.l_gate: "Peek $lgate$"
+ lock_all_bypass_in_system: "Lock all $LGATE_GALACTIC$(excluding $NAME_Final_Egress$), $NATURAL_WORMHOLE_GALACTIC$, $SHROUD_TUNNEL_GALACTIC$(excluding $gov_shroudwalker_enclave$) in this system\n§B$GATEWAY$§!§g cannot be locked, the code says so§!"
+ wtmnb_colossus.1001.rm_hyperlane: "Sever $concept_hyperlane$"
+ wtmnb_colossus.1001.cage: "Imprisonment"
+ wtmnb_colossus.1001.cage.tip: "Imprison [wtmnb_target.Owner.GetName] in their home system [wtmnb_target.System.GetName]\n§LDestroy all colonies and starbases except those in [wtmnb_target.System.GetName], and remove $concept_hyperlane$ from [wtmnb_target.System.GetName]§!"
+ wtmnb_colossus.1001.kill_ships: "Sweep the System"
+ wtmnb_colossus.1001.kill_ships.tip: "Destroy almost all fleets in the system, including ours"
+ wtmnb_colossus.1001.kill_countries: "Taixu Sword God"
+ wtmnb_colossus.1001.kill_countries.tip: "All countries whose ships are in the system will perish, except us.\n§RMay cause event chain breaks§!\n§LThe divine, the ultimate of change, manifests in all things and cannot be described by form.§!"
 
  wtmnb_colossus.1001.diplo: "Diplomaticy"
  wtmnb_colossus.1001.gain_planet: "Occupation"
@@ -213,9 +244,9 @@
  wtmnb_diplomacy.1.b: "Murder [wtmnb_target.Owner.GetRulerTitle] §H[wtmnb_target.Owner.GetRulerName]§!"
  wtmnb_diplomacy.1.b.desc: "§H[wtmnb_target.Owner.GetRulerName]§! dead\n[wtmnb_target.Owner.GetName] is humiliated"
  wtmnb_diplomacy.1.c: "Declare war(vassal)"
- wtmnb_diplomacy.1.c.desc: "§H[wtmnb_target.Owner.GetName]§! will be vassal of §H[Root.GetName]§! \n- War starts in 30 days"
+ wtmnb_diplomacy.1.c.desc: "§H[wtmnb_target.Owner.GetName]§! will be vassal of §H[Root.GetName]§! \n- War starts in 30 days, meaning you have one month to §Hevacuate your fleets from [wtmnb_target.Owner.GetName]'s territory§!\n- You can actually move fleets while keeping this window open"
  wtmnb_diplomacy.1.d: "Declare war($war_goal_wg_cleansing$)"
- wtmnb_diplomacy.1.d.desc: "§RTotal War§!\n-War starts in 30 days"
+ wtmnb_diplomacy.1.d.desc: "§RTotal War§!\n-War starts in 30 days, meaning you have one month to §Hevacuate your fleets from [wtmnb_target.Owner.GetName]'s territory§!\n-You can actually move fleets while keeping this window open"
  wtmnb_diplomacy.1.e: "Declare §H[wtmnb_target.Owner.GetName]§! independence"
  wtmnb_diplomacy.1.e.desc: "§H[wtmnb_target.Owner.GetName]§!:Independence"
  wtmnb_diplomacy.1.f: "Close borders"
@@ -231,6 +262,7 @@
  wtmnb_diplomacy.1000.b: "Crap, misclick!"
  wtmnb_diplomacy.1000.c: "Guess what? I'm gonna to do it again"
  wtmnb_diplomacy.1000.d: "Alien Garbage -1"
+ wtmnb_diplomacy.1000.tip2: "§gNo rush, you'll have to wait§!"
 
  wtmnb_diplomacy.1001.name: "[Root.GetRulerTitle] was murdered"
  wtmnb_diplomacy.1001.desc: "§H[deadruler.GetName]§! died in communication with §H[From.GetName]§![From.GetRulerTitle]§H[From.GetRulerName]§!. All the signs indicate that it's what [From.GetName] did."
@@ -255,7 +287,7 @@
 
 
  wtmnb_species.100.name: "Specific Species Modify"
- wtmnb_species.100.desc: "$wtmnb_species.100.name$"
+ wtmnb_species.100.desc: "$trait_hive_mind$/$trait_machine_unit$/$trait_mechanical$"
  wtmnb_species.100.0: "Cancel"
  ############
  wtmnb_remove_megastructure_chain_title: "Dismantle Megastructure"
@@ -266,8 +298,6 @@
 
  wtmnb_open_fire_chain_title: "$wtmnb_fortress$ · Ultra-Range Fire"
  wtmnb_open_fire_chain_desc: "We will complete a task through this event chain that should have been accomplished using the $WTMNB_WEAPON$ Colossus weapon"
- WTMNB_OPEN_FIRE_SYSTEM_SELECT: "§B[This.System.GetName]§! System Selection"
- WTMNB_OPEN_FIRE_SYSTEM_SELECT_DESC: "Determining our target in §B[This.System.GetName]§! system"
  WTMNB_OPEN_FIRE_PLANET_SELECT: "§B[This.GetName]§! Celestial Body Selection"
  WTMNB_OPEN_FIRE_PLANET_SELECT_DESC: "We will deploy the $wtmnb_fortress$ against §B[This.GetName]§!"
  WTMNB_OPEN_FIRE_CANCEL: "Cancel Launch"
@@ -286,7 +316,6 @@
  terraform_needs_4th_key: "§B$WTMNB_4TH_KEY$§! needed"
  terraform_needs_4th_key_and_eden_star: "§B$WTMNB_4TH_KEY$§! and §B$WTMNB_9TH_KEY$§! should be in orbit."
  add_20_pop: "Add 20 £pops£$pop$ (random species)"
- REMOVE_PLANET_EFFECT: "§Y[This.GetName]§! is burn down"
  ringworld_will_be_not_colonizable: "Colonizable part destroyed"
  ####################
  decision_wtmnb_create_pop: "Cell replication protocol"
@@ -297,20 +326,29 @@
  decision_wtmnb_reroll: "Geological transformation"
  decision_wtmnb_reroll_desc: "We don't yet know what the consequences will be, but it's clear that the planet class won't change"
  decision_wtmnb_molten: "Meltdown"
- decision_wtmnb_molten_desc: "Made In Hell"
+ decision_wtmnb_molten_desc: "Set the Seas Ablaze"
  decision_wtmnb_planet_extend: "Districts expansion"
  decision_wtmnb_planet_extend_desc: "max district count  + 30 "
  decision_wtmnb_city: "Plan.$pc_wtmnb_city$"
- decision_wtmnb_city_desc: "Change planet class into §Y$pc_wtmnb_city$§!"
- decision_wtmnb_break_border: "Break the closing borders"
- decision_wtmnb_break_border_desc: "Trick them by using eden star."
+ decision_wtmnb_city_desc: "Intelligently retrofit this place"
+
  decision_wtmnb_11th_shield: "Elpsion Pedion"
  decision_wtmnb_11th_shield_desc: "Avoid others enter this system by jump driver"
  decision_wtmnb_11th_shield_off: "Cancel Elpsion Pedion"
  decision_wtmnb_11th_shield_off_desc: "Allow others to enter this system by jump driver"
+ decision_wtmnb_build_ship: "§B$wtmnb_fortress$§! Ground Production Line"
+ decision_wtmnb_build_ship_effect: "Create an Overwhelming Firepower Fleet"
+ decision_wtmnb_build_ship_desc: "No time to explain, get on the ship"
+ decision_wtmnb_build_colossus: "§B$wtmnb_fortress$§! Ground $colossus$ Production Line"
+ decision_wtmnb_build_colossus_effect: "Build a colossus using your ship designer"
+ decision_wtmnb_build_colossus_desc: "Use this to blast the xeno's head off"
+ decision_wtmnb_more_civic_point: "Additional Civic Points"
+ decision_wtmnb_more_civic_point_desc: "Fine-tune additional civic points. Can be removed via blocker clearing\n§LFinally no more alert icon in the corner because the civic list is too long for the UI§!"
+ decision_wtmnb_relic_cooldown: "Reset Relic Cooldown"
+ decision_wtmnb_relic_cooldown_desc: "Wait, the legendary Sacrificial Lance?"
  ##################
 
- pc_wtmnb_city: "Prometheus"
+ pc_wtmnb_city: "Super Balloon"
  pc_wtmnb_city_adj: "$pc_wtmnb_city$"
  pc_wtmnb_city_desc: "Brilliant artificial intelligence surfaces an entire planet as a terminal that can change the Designation of a planet in just a few days\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
  mod_pc_wtmnb_city_habitability: "$pc_wtmnb_city$ World Habitability"
@@ -355,33 +393,35 @@
  job_wtmnb_fooyouist_drone_desc: "$job_wtmnb_fooyouist_desc$"
  mod_job_wtmnb_fooyouist_drone_add: "$job_wtmnb_fooyouist_drone$"
 
- #
-
- col_ring_fortress: "$col_fortress$"
- col_ring_fortress_tt: "$col_fortress_tt$"
- col_ring_fortress_desc: "$col_fortress_desc$\n §gNot Vanilla§!"
 
  # ship design
  DESIGN_wtmnb_fortress: "$wtmnb_fortress$"
  NAME_wtmnb_cannon: "$wtmnb_cannon$"
 # sm
- sm_wtmnb_starbase_building: "Mass Replicator"
+ sm_wtmnb_starbase_building: "§M$wtmnb_fortress$§!"
  sm_wtmnb_starbase_building_tt1: "Increases national all produces based on the number of docked construction ships"
+ sm_wtmnb_starbase_building_desc: "In your opinion, why do birds fly?"
 
  # skills
 
- wtmnb_fortress_switch_shipyard_menu_title: "Switch Shipyard"
+ wtmnb_fortress_switch_shipyard: "Switch Shipyard"
+ wtmnb_fortress_switch_shipyard_menu_title: "$wtmnb_fortress_switch_shipyard$"
  wtmnb_fortress_switch_shipyard_button: "§H$wtmnb_fortress_switch_shipyard_menu_title$ Type§!\nCurrent: §Y[This.GetConstructionType]§!"
  wtmnb_fortress_switch_shipyard_activity_key: "$wtmnb_fortress_switch_shipyard_menu_title$"
 
- wtmnb_fortress_super_fire_menu_title: "Ultra-Range Fire"
+ wtmnb_fortress_super_fire: "Ultra-Range Fire"
+ wtmnb_fortress_super_fire_menu_title: "$wtmnb_fortress_super_fire$"
  wtmnb_fortress_super_fire_activity_key: "Gather Imaginary Internal Energy"
  wtmnb_fortress_super_fire_progress_activity_key: "Perform High-Dimensional Aiming"
  wtmnb_fortress_super_fire_button: "§H$wtmnb_fortress_super_fire_menu_title$§!\n[This.GetSuperFireDesc]"
  wtmnb_fortress_super_fire_button_desc: "§YNow, I grant you the right to gaze upon the sun!§!"
  wtmnb_fortress_super_fire_button_cancel_desc: "Pending"
 
- wtmnb_fortress_upgrading_mode_menu_title: "Upgrade Mode"
+ wtmnb_fortress_upgrading_mode: "Upgrade Mode"
+ wtmnb_fortress_upgrading_mode_menu_title: "$wtmnb_fortress_upgrading_mode$"
  wtmnb_fortress_upgrading_mode_activity_key: "Upgrade"
  wtmnb_fortress_upgrading_mode_button: "Enter Upgrade Mode to update weapons. Cannot move in Upgrade Mode\n§gDesign Ships > Click Upgrade Mode > Click blank map to deselect > Select $wtmnb_fortress$ > Click Upgrade§!"
+
+ AUTOMATION_OPT_EXPLORE_PREFER: "Prefer Exploration"
+ AUTOMATION_OPT_EXPLORE_PREFER_TT: "Prefer to explore unsurveyed systems"
 

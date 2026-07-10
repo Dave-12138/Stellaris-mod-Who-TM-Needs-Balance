@@ -5,23 +5,13 @@
 ###########
 
 ##################
- leader_trait_ruler_wtmnb_dc_r:0 "心理阴影"
- leader_trait_ruler_wtmnb_dc_r_desc:0 "一个噩梦\n她对此缄口不言\n你仍能从她现在的神态读出当时她的恐惧"
 
- leader_trait_ruler_wtmnb_dc_r2:0 "逆来顺受"
- leader_trait_ruler_wtmnb_dc_r2_desc:0 "这种随和，特别是对性行为的来者不拒，究竟是特殊的变故所致，还是她本性如此呢？"
 
  leader_trait_ruler_wtmnb_dc_r3:0 "妊娠"
  leader_trait_ruler_wtmnb_dc_r3_desc:0 "这位统治者处于显而易见的妊娠状态\n预产期[Leader.wtmnb_dc_r3_flag]"
 #########
  decision_wtmnb_dc_create_pop:0 "人工授精"
  decision_wtmnb_dc_create_pop_desc:0 "对于部分物种，授的未必是精，但我们仍按照传统，让AI调用硕大的假阳具终端，给予每位预先女体化改造的居民激烈以至于痛苦的性体验——最后将精液、排卵剂或者对对应物种能产生该作用的药物注满身体。"
-########
-
- district_wtmnb_seedbed:0 "触手苗床"
- district_wtmnb_seedbed_desc:0 "§L曾经，有学者想探究这些从机械化星球上长出来的触手到底那些部分是有机的，那些部分是无机的，故而踏入此地。\n再后来有人见到她的时候，她已经是一座只会娇喘的活雕像了。§!"
- district_wtmnb_seedbed_plural:0 "$district_wtmnb_seedbed$"
- district_wtmnb_seedbed_effect:0 ""
 #######
  wtmnb_diplomacy.1.dc_r:0 "雷♂普§H[wtmnb_target.Owner.GetRulerName]§!"
 

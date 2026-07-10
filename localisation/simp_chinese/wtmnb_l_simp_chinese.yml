@@ -161,7 +161,7 @@
  wtmnb_dyson_DESC: "(图文无关)“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
  wtmnb_dyson_MEGASTRUCTURE_DETAILS: "“膜”在“以太锚点”周围形成稳定的“流形”之后，借由恒星的热辐射进一步生长，出于某些人点了作弊按钮的原因，效率非常可观。"
  wtmnb_love_mark: "不许哈气机"
- wtmnb_love_mark_DESC: "其实我本来想直接叫心理定规的"
+ wtmnb_love_mark_DESC: "抵达尽头的人啊，到包容一切的乐园去！加入这盛大的颂歌与欢宴，听亿万又亿万颗心脏的跳动，拥你入怀"
  wtmnb_love_mark_MEGASTRUCTURE_DETAILS: "把这个放到对方国境内，对方就会对你+1500\n\n遗憾的是不开边境就用不了了"
  wtmnb_portal: "超空间桥梁建设机组"
  wtmnb_portal_DESC: "当第二个机组建设完成时，超空间航路就会生成\n警告：我也不知道同时多个帝国试图用这玩意会发生什么"
@@ -217,7 +217,7 @@
  wtmnb_planet_ex_desc: "别问原理，别问"
 
  wtmnb_star_11th_modifier: "$aura_judah$"
- wtmnb_star_11th_modifier_desc: "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n所以为了防止星系本身被摧毁，将神恩结界的范围限定在重力井之外是最低条件。"
+ wtmnb_star_11th_modifier_desc: "结界中一切动能、光、内能和虚数内能均被快速消除，生物电信号自然也包括在内；\n将结界扭曲成球壳，可以将这个星系与宇宙隔绝"
  avoid_enter_by_jump: "阻止其他国家通过跃迁引擎进入本星系"
 
 
@@ -408,7 +408,7 @@
  decision_wtmnb_reroll: "地质改造"
  decision_wtmnb_reroll_desc: "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
  decision_wtmnb_molten: "熔毁"
- decision_wtmnb_molten_desc: "使用第七律者权柄对星球表面清洗，除了可能蒸发一部分地质结构外，还通常会导致星球不再宜居"
+ decision_wtmnb_molten_desc: "点燃大海"
 
  decision_wtmnb_planet_extend: "可用区划拓展"
  decision_wtmnb_planet_extend_desc: "增加最大区划数\n+30,+10,+10,+10……"
@@ -416,9 +416,7 @@
  decision_wtmnb_city: "$pc_wtmnb_city$计划"
  decision_wtmnb_city_desc: "将这里智能化改造"
 
- decision_wtmnb_break_border: "开放边境"
- decision_wtmnb_break_border_desc: "让邻国边境对我们开放，但他们可能很快又关闭边境"
-
+ 
  decision_wtmnb_11th_shield: "$aura_judah$"
  decision_wtmnb_11th_shield_desc: "在重力井外展开神恩结界，从而阻止跃迁引擎正确定位本星系"
  decision_wtmnb_11th_shield_off: "解除$aura_judah$"
@@ -498,11 +496,6 @@
  # mod_job_wtmnb_fooyouist_drone_per_crime: "REPLACE_ME"
  # mod_job_wtmnb_fooyouist_drone_per_crime_desc: "REPLACE_ME"
  ##
- # 原版没有堡垒环
- not_vanilla: "(并非原版)"
- col_ring_fortress: "驻军型$col_ring_mix$"
- col_ring_fortress_tt: "该环世界区段到处充斥着轨道大炮、碉堡、要塞等等防御工事，要想入侵此环世界区段或者发动起义是非常困难的。\n§g$not_vanilla$§!"
- col_ring_fortress_desc: "$col_fortress_desc$"
 
 
 

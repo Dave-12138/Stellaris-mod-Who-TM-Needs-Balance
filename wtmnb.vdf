@@ -22,7 +22,7 @@ Arkship: a new ship size with colossus weapons. Choose between Star-Eater, Basti
 [*]超距射击：方舟舰技能按钮直接使用巨像武器；另有专用靶船，解散舰队或被打爆时自动触发
 Ultra-Range Fire: arkship skill button fires colossus weapon directly; a dedicated target ship triggers on disband or destruction.
 [*]在轨道上有上述方舟舰时可用的决议：生成人口、破坏殖民地、生成“浮游炮”舰船（需要行星护盾生成器建筑或星环基地）、重置遗物冷却、增加可用区划、禁止跃迁、增加国民理念、随机重排地块、改变星球类型（生成本mod的地块）
-Decisions available when arkship is in orbit: grow pop, destroy colony, spawn Floating Cannon ships (requires Planetary Shield Generator building or orbital ring), reset relic cooldown, add districts, disable FTL, add civics, randomize tiles, change planet class.
+Decisions available when arkship is in orbit: grow pop, destroy colony, spawn Floating Cannon ships (requires Planetary Shield Generator building or orbital ring), reset relic cooldown, add districts, disable jump, add civics, randomize tiles, change planet class.
 [*]一个星球类型（可能已经删了），但4.0没了区划后和理想城没多大区别，只有附赠的地块有用了
 A planet class (might have been removed already). Not much different from an Ecumenopolis after 4.0 removed districts, only the special deposit matters. Obtainable via decision.
 [*]那个地块，根据当前星球规划的不同让平民产出不同资源，在首都提供全帝国加成岗位，前文提到的建筑必须建在有该地块的行星上

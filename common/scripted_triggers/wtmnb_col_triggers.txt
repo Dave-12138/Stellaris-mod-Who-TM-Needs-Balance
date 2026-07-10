@@ -58,6 +58,7 @@ is_col_mining = {
 		has_designation = col_mining
 	}
 }
+
 # 研究
 is_col_research = {
 	OR = {
@@ -115,7 +116,6 @@ is_col_fortress = {
 	OR = {
 		has_designation = col_fortress
 		has_designation = col_habitat_fortress
-		has_designation = col_ring_fortress        #本mod
 	}
 }
 
@@ -128,7 +128,6 @@ is_col_capital = {
 		is_capital = yes
 	}
 }
-
 
 # 多彩
 is_col_lust = {
@@ -151,4 +150,3 @@ is_col_wg_neo_alpha = {
 is_col_wg_pantsu = {
 	has_designation = col_wg_pantsu
 }
-
