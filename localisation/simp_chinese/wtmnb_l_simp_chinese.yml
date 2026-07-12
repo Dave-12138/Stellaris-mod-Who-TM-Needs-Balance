@@ -526,6 +526,12 @@
  wtmnb_fortress_upgrading_mode_activity_key: "改装"
  wtmnb_fortress_upgrading_mode_button: "进入改装模式以更新武器，改装模式下无法移动\n§g设计舰船>点击改装模式>点击空白地图以取消选中>选中$wtmnb_fortress$>点击改装§!"
 
+ wtmnb_deep_scan: "$arkship_deep_scan$"
+ wtmnb_ark_survey: "$arkship_survey$"
+ wtmnb_subspace_image: "$arkship_subspace_image$"
+ wtmnb_strip_mine: "$arkship_strip_mine$"
+ wtmnb_strip_mine_auto: "$wtmnb_strip_mine$"
+ wtmnb_harvest_resources_constructor: "$logistic_harvest_resources$"
 
 
  # 自动

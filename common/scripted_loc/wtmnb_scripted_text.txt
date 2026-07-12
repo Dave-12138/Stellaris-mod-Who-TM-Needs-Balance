@@ -16,7 +16,7 @@ define_text = {
 	name = GetSuperFireDesc
 	random = no
 	text = {
-		trigger = { owner = { has_special_project = WTMNB_OPEN_FIRE_CANCEL } }
+		trigger = { has_fleet_flag = wtmnb_super_shooting }
 		localization_key = wtmnb_fortress_super_fire_button_cancel_desc
 	}
 	default = wtmnb_fortress_super_fire_button_desc

@@ -422,6 +422,14 @@
  wtmnb_fortress_upgrading_mode_activity_key: "Upgrade"
  wtmnb_fortress_upgrading_mode_button: "Enter Upgrade Mode to update weapons. Cannot move in Upgrade Mode\n§gDesign Ships > Click Upgrade Mode > Click blank map to deselect > Select $wtmnb_fortress$ > Click Upgrade§!"
 
+
+ wtmnb_deep_scan: "$arkship_deep_scan$"
+ wtmnb_ark_survey: "$arkship_survey$"
+ wtmnb_subspace_image: "$arkship_subspace_image$"
+ wtmnb_strip_mine: "$arkship_strip_mine$"
+ wtmnb_strip_mine_auto: "$wtmnb_strip_mine$"
+ wtmnb_harvest_resources_constructor: "$logistic_harvest_resources$"
+
  AUTOMATION_OPT_EXPLORE_PREFER: "Prefer Exploration"
  AUTOMATION_OPT_EXPLORE_PREFER_TT: "Prefer to explore unsurveyed systems"
 

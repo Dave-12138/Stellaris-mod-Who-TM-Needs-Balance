@@ -3,3 +3,4 @@
 
 *.bat
 .ignore
+.cwtools-ai/

@@ -25,13 +25,6 @@ utility_component_template = {
 	show_tech_unlock_if = {
 		always = no
 	}
-	scripted_action = {
-		wtmnb_fortress_upgrading_mode
-		wtmnb_strip_mine
-		wtmnb_strip_mine_auto
-		collect_waystation_stockpile
-		arkship_build_megastructure
-	}
 }
 
 # 二键 千界一乘 ftl
@@ -69,11 +62,6 @@ utility_component_template = {
 	show_tech_unlock_if = {
 		always = no
 	}
-	scripted_action = {
-		wtmnb_ark_survey
-		wtmnb_deep_scan
-		wtmnb_subspace_image
-	}
 }
 
 # 三键 涤罪七雷
@@ -92,10 +80,6 @@ utility_component_template = {
 		cost = {
 			alloys = 64
 		}
-	}
-	scripted_action = {
-		wtmnb_fortress_super_fire
-		# wtmnb_fortress_super_fire_stop
 	}
 	ai_weight = {
 		weight = 100
@@ -226,9 +210,6 @@ utility_component_template = {
 				dynamic_scale = no
 			}
 		}
-	}
-	scripted_action = {
-		wtmnb_fortress_switch_shipyard
 	}
 	ai_weight = {
 		weight = 100

@@ -322,7 +322,7 @@ wtmnb_strip_mine_auto = {
 		}
 		is_surveyed = {
 			who = from
-			status = no
+			status = yes
 		}
 		is_valid_harvest_target = yes
 	}
@@ -518,24 +518,13 @@ wtmnb_subspace_image = {
 	icon = GFX_fleet_action_button_arkship_subspace_image
 	icon_selected = GFX_fleet_action_button_arkship_subspace_image
 	possible = {
-		hidden_trigger = {
-			always = yes
-		}
 		custom_tooltip = {
 			fail_text = arkship_has_leader_tt_fail
 			success_text = arkship_has_leader_tt_success
 			exists = from.leader
 		}
 	}
-	button_visible = {
-		hidden_trigger = {
-			always = yes
-		}
-	}
 	button_clickable = {
-		hidden_trigger = {
-			always = yes
-		}
 		custom_tooltip = {
 			fail_text = arkship_has_leader_tt_fail
 			success_text = arkship_has_leader_tt_success
@@ -549,8 +538,7 @@ wtmnb_subspace_image = {
 	cooldown = 0
 	category = subspace_image
 	category_limit = 1
-	# 插件报错暂时禁用
-	# category_limit_fail_text = arkship_subspace_image_in_progress_tt
+	category_limit_fail_text = arkship_subspace_image_in_progress_tt
 	uses_vfx_type = survey_effect
 	cost = {
 		energy = 1
