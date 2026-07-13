@@ -160,11 +160,8 @@
  edict_wtmnb_edict_2_desc: "no wait, just skip\n§LReset CD of editing Civics and Gov type.§!"
  edict_wtmnb_edict_3: "Never Gonna Give You Up"
  edict_wtmnb_edict_3_desc: "Never Gonna Let You Down"
- edict_wtmnb_edict_4: "Dismantle Megastructure"
- edict_wtmnb_edict_4_desc: "Requires a Constructor within the system"
  edict_wtmnb_edict_5: "Resonate with $wtmnb_love_mark$"
  edict_wtmnb_edict_5_desc: "Significantly increased our rating of empires with emotional matrices within their borders"
- reset_gov_cooldown: "Cool government reform immediately"
 
  edict_wtmnb_edict_7: "I dont want \"first contact\" any more"
  edict_wtmnb_edict_7_desc: "Im gonna establish all communications now"
@@ -320,9 +317,6 @@
  ####################
  decision_wtmnb_create_pop: "Cell replication protocol"
  decision_wtmnb_create_pop_desc: "Simple copy-and-paste -- but the process of getting there is interesting in itself -- I mean, efficient."
- decision_wtmnb_open_fire: "§B$wtmnb_fortress$§!·Ultra-Range Fire"
- decision_wtmnb_open_fire_desc: "We don't need to travel to the destination every time to use the §B$wtmnb_fortress$§! on target planets. We can achieve an ultra-range fire through several special projects."
-
  decision_wtmnb_reroll: "Geological transformation"
  decision_wtmnb_reroll_desc: "We don't yet know what the consequences will be, but it's clear that the planet class won't change"
  decision_wtmnb_molten: "Meltdown"
@@ -420,7 +414,7 @@
  wtmnb_fortress_upgrading_mode: "Upgrade Mode"
  wtmnb_fortress_upgrading_mode_menu_title: "$wtmnb_fortress_upgrading_mode$"
  wtmnb_fortress_upgrading_mode_activity_key: "Upgrade"
- wtmnb_fortress_upgrading_mode_button: "Enter Upgrade Mode to update weapons. Cannot move in Upgrade Mode\n§gDesign Ships > Click Upgrade Mode > Click blank map to deselect > Select $wtmnb_fortress$ > Click Upgrade§!"
+ wtmnb_fortress_upgrading_mode_button: "Enter Upgrade Mode to change weapons or models. Cannot move in Upgrade Mode\n§gDesign Ships > Click Upgrade Mode > Click blank map to deselect > Select $wtmnb_fortress$ > Click Upgrade§!"
 
 
  wtmnb_deep_scan: "$arkship_deep_scan$"
@@ -429,6 +423,13 @@
  wtmnb_strip_mine: "$arkship_strip_mine$"
  wtmnb_strip_mine_auto: "$wtmnb_strip_mine$"
  wtmnb_harvest_resources_constructor: "$logistic_harvest_resources$"
+
+
+ wtmnb_constructor_remove_mega: "Dismantle Megastructure"
+ wtmnb_constructor_remove_mega_button: "Dismantle megastructures in [Root.System.GetName] via event chain"
+ wtmnb_constructor_remove_mega_activity_key: "Activate Cutter"
+ wtmnb_constructor_remove_mega_menu_title: "$wtmnb_constructor_remove_mega$"
+
 
  AUTOMATION_OPT_EXPLORE_PREFER: "Prefer Exploration"
  AUTOMATION_OPT_EXPLORE_PREFER_TT: "Prefer to explore unsurveyed systems"

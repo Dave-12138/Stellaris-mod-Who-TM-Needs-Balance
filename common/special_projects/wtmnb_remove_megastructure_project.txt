@@ -54,7 +54,7 @@ special_project = {
 			}
 			remove_megastructure = this
 		}
-		fromfrom = {
+		fromfrom.controller = {
 			# country
 			change_variable = {
 				which = wtmnb_rmmega_chain_count

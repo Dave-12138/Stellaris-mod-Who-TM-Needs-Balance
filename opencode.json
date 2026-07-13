@@ -1,9 +1,18 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "references": {
-    "script_documentation": {
-      "path": "../../logs/script_documentation",
-      "description": "所有可用的trigger、effect列表"
-    }
-  }
+	"$schema": "https://opencode.ai/config.json",
+	"references": {
+		"script_documentation": {
+			"path": "../../logs/script_documentation",
+			"description": "所有可用的trigger、effect列表"
+		}
+	},
+	"mcp": {
+		"cwtools": {
+			"type": "local",
+			"command": [
+				"node",
+				"C:\\Users\\Dave\\AppData\\Roaming\\Code\\User\\globalStorage\\foreverskywalker.foreverskywalker-stellaris-cwtools\\mcp\\cwtools-mcp.cjs"
+			]
+		}
+	},
 }

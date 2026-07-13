@@ -113,6 +113,7 @@ wtmnb_constructor = {
 		wtmnb_harvest_resources_constructor
 		collect_waystation_stockpile
 		logistic_drop_off_stockpile
+		wtmnb_constructor_remove_mega
 	}
 	construction_capabilities = {
 		starbase

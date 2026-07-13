@@ -108,15 +108,22 @@ on_arkship_subspace_image = {
 	}
 }
 
+# 改装
 on_wtmnb_fortress_upgrading_mode = {
 	events = {
 		wtmnb_ship_skill.3000
 	}
 }
+# 拆除巨构
+on_wtmnb_constructor_remove_mega={
+	events = {
+		wtmnb_ship_skill.10000
+	}
+}
 
 on_ship_order = {
 	events = {
-		wtmnb_scienceship.1000
+		wtmnb_scienceship.1000		# 亚空间导航秒到
 	}
 }
 

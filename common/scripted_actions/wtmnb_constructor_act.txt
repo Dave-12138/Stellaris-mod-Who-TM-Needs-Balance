@@ -1,0 +1,19 @@
+wtmnb_constructor_remove_mega = {
+	user_scope = fleet
+	scope = self
+	on_started = on_wtmnb_constructor_remove_mega
+	tooltip = wtmnb_constructor_remove_mega_button
+	icon = GFX_fleet_order_button_build_terraforming_station
+	activity_key = wtmnb_constructor_remove_mega_activity_key
+	context_menu_name = wtmnb_constructor_remove_mega_menu_title
+	button_visible = {
+		is_ship_size = wtmnb_constructor
+	}
+	shortcut = "SHIFT+B"
+	required_progress = 1
+	button_clickable = {
+		solar_system? = {
+			has_any_megastructure = yes
+		}
+	}
+}

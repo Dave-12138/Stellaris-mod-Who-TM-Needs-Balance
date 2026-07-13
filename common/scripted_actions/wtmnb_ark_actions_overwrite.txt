@@ -18,7 +18,7 @@ wtmnb_deep_scan = {
 				}
 			}
 			option = {
-				automation_setting = explore_prefer
+				automation_setting = unsurveyed_targets
 				default = yes
 				name = AUTOMATION_OPT_EXPLORE_PREFER
 				tooltip = AUTOMATION_OPT_EXPLORE_PREFER_TT
@@ -84,16 +84,6 @@ wtmnb_deep_scan = {
 		#From - Acting Fleet
 		weight = {
 			base = @ai_action_weight_15
-			modifier = {
-				factor = 0				#cannot afford
-				FROM.controller = {
-					resource_stockpile_compare = {
-						resource = energy
-						value < @arkship_deep_scan_cost
-						mult = 1.5
-					}
-				}
-			}
 			inline_script = {
 				script = scripted_actions/ai_distance_modifiers
 				LOCAL_SYSTEM_CHECK = "any_system_planet = { is_same_value = ROOT }"
@@ -172,7 +162,7 @@ wtmnb_deep_scan = {
 					who = FROM.controller
 				}
 				FROM = {
-					has_automation_setting = explore_prefer
+					has_automation_setting = unsurveyed_targets
 				}
 			}
 		}
@@ -182,26 +172,21 @@ wtmnb_deep_scan = {
 	}
 }
 
-
 wtmnb_ark_survey = {
 	user_scope = fleet
 	scope = planet
-
 	# This behaves as the Survey order from Science Ships
 	specific_behavior = scripted_survey_order
-
 	slot = 1
 	icon = GFX_fleet_order_button_survey_small
 	icon_selected = GFX_fleet_order_button_survey_small_selected
-
 	# 完全不显示，通过自动扫描调用
 	hide_from_context_menu = {
-		always=yes
+		always = yes
 	}
 	button_visible = {
 		always = no
 	}
-
 	possible = {
 		exists = from.leader
 		is_surveyed = {
@@ -209,15 +194,14 @@ wtmnb_ark_survey = {
 			status = no
 		}
 		NOT = {
-			is_being_surveyed = { who = from }
+			is_being_surveyed = {
+				who = from
+			}
 		}
 	}
-
-
 	button_clickable = {
 		exists = leader
 	}
-
 	ai = {
 		#This - Target Planet
 		#From - Acting Fleet
@@ -232,7 +216,6 @@ wtmnb_ark_survey = {
 		good_enough_weight = @ai_action_weight_30
 		ai_minister = interior
 	}
-
 	context_menu_name = arkship_survey
 }
 
@@ -357,16 +340,6 @@ wtmnb_strip_mine_auto = {
 		#From - Acting Fleet
 		weight = {
 			base = @ai_action_weight_20
-			modifier = {
-				factor = 0				#cannot afford
-				FROM.controller = {
-					resource_stockpile_compare = {
-						resource = energy
-						value < @arkship_strip_mine_cost
-						mult = 1.5
-					}
-				}
-			}
 			inline_script = {
 				script = scripted_actions/ai_distance_modifiers
 				LOCAL_SYSTEM_CHECK = "any_system_planet = { is_same_value = ROOT }"

@@ -191,13 +191,9 @@
 
  edict_wtmnb_edict_2: "绯红之王"
  edict_wtmnb_edict_2_desc: "跳过等待政府改革cd的时间\n§L重置政府改革(调整国民理念、政体)CD§!"
- reset_gov_cooldown: "立即冷却政府改革"
 
  edict_wtmnb_edict_3: "我是秦始皇"
  edict_wtmnb_edict_3_desc: "我去，是聊天记录，这下不得不信了"
-
- edict_wtmnb_edict_4: "拆除巨构"
- edict_wtmnb_edict_4_desc: "需要星系内有工程船"
 
  edict_wtmnb_edict_5: "我也要+1500吗？"
  edict_wtmnb_edict_5_desc: "§L对境内有$wtmnb_love_mark$巨构的国家评价大幅提升§!"
@@ -403,8 +399,6 @@
 
  decision_wtmnb_create_pop: "单元复制协议"
  decision_wtmnb_create_pop_desc: "简单的复制粘贴——但实现这一结果的过程本身很有趣——我是说，高效。"
- decision_wtmnb_open_fire: "§B$wtmnb_fortress$§!·超距射击"
- decision_wtmnb_open_fire_desc: "我们不用每次到目的地去，对着目标星球、使用§B$wtmnb_fortress$§!，我们可以用几个步骤实现一次超距射击"
  decision_wtmnb_reroll: "地质改造"
  decision_wtmnb_reroll_desc: "我们尚且无法预知改造的结果，但显然星球的类型不会改变"
  decision_wtmnb_molten: "熔毁"
@@ -524,7 +518,7 @@
  wtmnb_fortress_upgrading_mode: "改装模式"
  wtmnb_fortress_upgrading_mode_menu_title: "$wtmnb_fortress_upgrading_mode$"
  wtmnb_fortress_upgrading_mode_activity_key: "改装"
- wtmnb_fortress_upgrading_mode_button: "进入改装模式以更新武器，改装模式下无法移动\n§g设计舰船>点击改装模式>点击空白地图以取消选中>选中$wtmnb_fortress$>点击改装§!"
+ wtmnb_fortress_upgrading_mode_button: "进入改装模式以更改武器或模型，改装模式下无法移动\n§g设计舰船>点击改装模式>点击空白地图以取消选中>选中$wtmnb_fortress$>点击改装§!"
 
  wtmnb_deep_scan: "$arkship_deep_scan$"
  wtmnb_ark_survey: "$arkship_survey$"
@@ -532,6 +526,12 @@
  wtmnb_strip_mine: "$arkship_strip_mine$"
  wtmnb_strip_mine_auto: "$wtmnb_strip_mine$"
  wtmnb_harvest_resources_constructor: "$logistic_harvest_resources$"
+
+
+ wtmnb_constructor_remove_mega: "拆除巨构"
+ wtmnb_constructor_remove_mega_button: "通过事件链拆除当前恒星系([Root.System.GetName])中的巨构"
+ wtmnb_constructor_remove_mega_activity_key: "启动切割机"
+ wtmnb_constructor_remove_mega_menu_title: "$wtmnb_constructor_remove_mega$"
 
 
  # 自动
