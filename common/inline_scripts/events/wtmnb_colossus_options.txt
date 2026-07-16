@@ -14,6 +14,8 @@ inline_script = events/wtmnb_colossus/kill_countries
 
 # inline_script = events/wtmnb_colossus/create_colony
 inline_script = events/wtmnb_colossus/to_giga
+inline_script = events/wtmnb_colossus/ignit_star
+
 inline_script = events/wtmnb_colossus/ring
 inline_script = events/wtmnb_colossus/storm
 
