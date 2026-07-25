@@ -8,6 +8,7 @@
  WTMNB_FORT_CORE2: "月光王座(擎天堡模型)"
  WTMNB_FORT_CORE3: "月光王座(女王泰坦模型)"
  WTMNB_FORT_CORE4: "月光王座(民用方舟模型)"
+ WTMNB_FORT_CORE_BEAST: "月光王座(哈基龙模型)"
  swtmnb: "$wtmnb_fortress$"
 
  wtmnb_science: "拟态科研船"
