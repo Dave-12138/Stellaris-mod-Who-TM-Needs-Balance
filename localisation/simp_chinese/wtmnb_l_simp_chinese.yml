@@ -1,4 +1,4 @@
-﻿l_simp_chinese:
+l_simp_chinese:
  #################
 # 船
  wtmnb_fortress: "月光王座"
@@ -141,8 +141,6 @@
 
 
 
- trait_pc_wtmnb_city_preference: "$pc_wtmnb_city$偏好"
- trait_pc_wtmnb_city_preference_desc: "$trait_pc_arctic_preference_desc$"
 
  #####################
 
@@ -226,7 +224,7 @@
  #  | (_| |  __/ |_) | (_) \__ \ | |_\__ \
  #   \__,_|\___| .__/ \___/|___/_|\__|___/
  #             |_|
- deposit_wtmnb_city: "$pc_wtmnb_city$"
+ deposit_wtmnb_city: "超级气球"
  deposit_wtmnb_city_desc: "机械智能化辅助系统占据了一片大多数人不会注意到的地方"
  d_wtmnb_city_capital_tooltip: "基于§Y£job_civilian£$job_civilian_plural$§!或§Y£job_maintenance_drone£$job_maintenance_drone$§!的数量提供产出加成，最多计算400"
 
@@ -408,7 +406,7 @@
  decision_wtmnb_planet_extend: "可用区划拓展"
  decision_wtmnb_planet_extend_desc: "增加最大区划数\n+30,+10,+10,+10……"
 
- decision_wtmnb_city: "$pc_wtmnb_city$计划"
+ decision_wtmnb_city: "超级气球计划"
  decision_wtmnb_city_desc: "将这里智能化改造"
 
  
@@ -432,10 +430,6 @@
  decision_wtmnb_relic_cooldown_desc: "我去，传说中的祭礼枪"
  ##################
 
- pc_wtmnb_city: "超级气球"
- pc_wtmnb_city_adj: "$pc_wtmnb_city$"
- pc_wtmnb_city_desc: "蠢驴把区划与建筑耦合了，所以没有区划的本星球改名为超级气球。"
- mod_pc_wtmnb_city_habitability: "$pc_wtmnb_city$星球宜居性"
  ###############
 
  building_wtmnb_meeting_room: "战略忽悠会议室"

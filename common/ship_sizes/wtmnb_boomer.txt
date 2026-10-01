@@ -36,6 +36,7 @@ wtmnb_boomer = {
 	enable_default_design = yes    #if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes    #if yes, ship design will have a 3d view in the ship browser
 	combat_disengage_chance = -2
+	use_shipnames_from = corvette
 	is_designable = yes
 	components_add_to_cost = no
 	class = shipclass_military_special

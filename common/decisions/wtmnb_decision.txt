@@ -116,15 +116,6 @@ decision_wtmnb_reroll = {
 	}
 	effect = {
 		reroll_deposits = yes
-		if = {
-			limit = {
-				is_planet_class = pc_wtmnb_city
-				NOT = {
-					has_deposit = deposit_wtmnb_city
-				}
-			}
-			add_deposit = deposit_wtmnb_city
-		}
 	}
 	ai_weight = {
 		weight = 0

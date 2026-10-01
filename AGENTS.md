@@ -2,7 +2,7 @@
 
 ## Project
 
-纯脚本模组，Honkai Impact 3rd 主题的 cheat/OP mod。Stellaris v4.4.*。所有文件/标识符使用 `wtmnb_` 前缀。
+纯脚本模组，Honkai Impact 3rd 主题的 cheat/OP mod。Stellaris v4.5.*。所有文件/标识符使用 `wtmnb_` 前缀。
 
 ## 结构
 
@@ -72,4 +72,5 @@
 
 - remote: `Dave-12138` → `https://github.com/Dave-12138/Stellaris-mod-Who-TM-Needs-Balance.git`
 - commit message：中文或 `feat:`/`fix:`/`refactor:` 前缀
-- `.gitignore` 忽略 `.vscode/`、`*.vdf`、`*.bat`
+- `descriptor.mod` 的 `version` 格式为 `年.月.当月第几个版本`（如 `26.10.1` = 2026 年 10 月第 1 版）；只改 descriptor 的提交不 bump 版本号
+- `.gitignore` 忽略 `.vscode/`、`*.vdf`、`*.bat`（`wtmnb.vdf` 已被跟踪，仍会入库）

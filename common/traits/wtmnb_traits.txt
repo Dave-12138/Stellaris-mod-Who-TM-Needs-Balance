@@ -12,7 +12,7 @@ trait_wtmnb_stigmata = {
 	# leader_age_max = 15
 	# leader_age_min = 10
 	# 物种大类，代表可用于的物种
-	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT MONSTER PARASITE WHORE TENTACLE Magical_Bitch Magical_Girl Lust_Girl INNOCENTSHOJO TENTACLE LOVEMACHINE WARSHIPGIRL SHENHAI TOUHOUGIRLS UNITED_FLEET LILY Schale NYTO }
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT MONSTER PARASITE TENTACLE Magical_Bitch Magical_Girl Lust_Girl TENTACLE LOVEMACHINE WARSHIPGIRL SHENHAI TOUHOUGIRLS UNITED_FLEET LILY Schale NYTO }
 	icon = "gfx/interface/icons/traits/trait_wtmnb_stigmata.dds"
 	# 物种修饰时的前置科技
 	prerequisites = {

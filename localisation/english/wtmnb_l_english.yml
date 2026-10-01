@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # 船
  wtmnb_fortress: "Moonlight Throne"
@@ -99,8 +99,6 @@
  council_icon_with_bracket: "（£council£）"
  leader_trait_wtmnb_stigmata_tip: "§M$trait_wtmnb_stigmata$§![Root.GetIconIfCouncil]\n[Root.GetClassTexticon][Root.GetClass] Category"
  leader_trait_wtmnb_stigmata_desc: "This leader holds $leader_trait_wtmnb_stigmata$ on her body."
- trait_pc_wtmnb_city_preference: "$pc_wtmnb_city$ Preference"
- trait_pc_wtmnb_city_preference_desc: "$trait_pc_arctic_preference_desc$"
  WTMNB_WEAPON_W: "§M$wtmnb_fortress$§!"
  WTMNB_WEAPON_W_DESC: "Now, I bestow upon you the right to gaze upon the sun"
  WTMNB_WEAPON_W_ACTION: "Imaginary Invasion"
@@ -142,8 +140,8 @@
  avoid_enter_by_jump: "Avoid others entering this system by jump drive"
  wtmnb_country_produces_mult: "§M$wtmnb_fortress$§!"
  wtmnb_country_produces_mult_desc: "§M$wtmnb_fortress$§! Empire-wide production bonus\nMore constructors in orbit = higher bonus"
- deposit_wtmnb_city: "$pc_wtmnb_city$"
- deposit_wtmnb_city_desc: "$pc_wtmnb_city_desc_normal$"
+ deposit_wtmnb_city: "Super Balloon"
+ deposit_wtmnb_city_desc: "A mechanized intelligence assistance system occupies a spot most people won't notice."
  d_wtmnb_city_capital_tooltip: "Provides output bonuses based on the number of §Y£job_civilian£$job_civilian_plural$§! or §Y£job_maintenance_drone£$job_maintenance_drone$§!, up to 400"
  deposit_wtmnb_4th_key_expand: "$WTMNB_4TH_KEY$"
  deposit_wtmnb_4th_key_expand_desc: "Expanded exploitable areas"
@@ -259,7 +257,7 @@
  decision_wtmnb_molten_desc: "Set the Seas Ablaze"
  decision_wtmnb_planet_extend: "Districts expansion"
  decision_wtmnb_planet_extend_desc: "max district count  + 30 "
- decision_wtmnb_city: "Plan.$pc_wtmnb_city$"
+ decision_wtmnb_city: "Plan.Super Balloon"
  decision_wtmnb_city_desc: "Intelligently retrofit this place"
  decision_wtmnb_11th_shield: "Elpsion Pedion"
  decision_wtmnb_11th_shield_desc: "Avoid others entering this system by jump drive"
@@ -275,10 +273,6 @@
  decision_wtmnb_build_colossus_desc: "Use this to blast the xeno's head off"
  decision_wtmnb_relic_cooldown: "Reset Relic Cooldown"
  decision_wtmnb_relic_cooldown_desc: "Wait, the legendary Sacrificial Lance?"
- pc_wtmnb_city: "Super Balloon"
- pc_wtmnb_city_adj: "$pc_wtmnb_city$"
- pc_wtmnb_city_desc: "Brilliant artificial intelligence surfaces an entire planet as a terminal that can change the Designation of a planet in just a few days\n§L($COLONY_DESIGNATION_MANUALLY_PICKED$)§!"
- mod_pc_wtmnb_city_habitability: "$pc_wtmnb_city$ World Habitability"
  building_wtmnb_meeting_room: "Strategic Misinformation Chamber"
  building_wtmnb_meeting_room_desc: "Empire scale? What empire? What scale? We're still a developing civilization, mind your accusations"
  mod_planet_building_wtmnb_meeting_room_build_speed_mult: "$building_wtmnb_meeting_room$ Build Speed"

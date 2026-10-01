@@ -17,14 +17,12 @@ buildings: providing jobs to reduce Empire Size, producing rare resources, add r
 weapons(X,T,P), thruster, jump drive, aura
 [*]巨像武器：使用后触发事件，包含多种原版巨像和一些特殊功能
 Colossus weapon that triggers an event with multiple options: vanilla colossus effects (World Cracker, Global Pacifier, etc.) and special ones like summoning a space storm.
-[*]一种具有巨像武器的方舟舰，可选焚天神兵、擎天堡、女王泰坦或民用方舟舰模型，有技能按钮可以切换船坞模式和兽坞模式（动物朋友那个兽坞）
-Arkship: a new ship size with colossus weapons. Choose between Star-Eater, Bastion, Queen Titan, or Civilian Arkship model. Skill buttons to switch shipyard mode and beastport mode.
+[*]一种具有巨像武器的方舟舰，可选焚天神兵、擎天堡、女王泰坦、民用方舟舰或哈基龙模型，有技能按钮可以切换船坞模式和兽坞模式（动物朋友那个兽坞）
+Arkship: a new ship size with colossus weapons. Choose between Star-Eater, Bastion, Queen Titan, Civilian Arkship, or Behemoth-shape model. Skill buttons to switch shipyard mode and beastport mode.
 [*]超距射击：方舟舰技能按钮直接使用巨像武器；另有专用靶船，解散舰队或被打爆时自动触发
 Ultra-Range Fire: arkship skill button fires colossus weapon directly; a dedicated target ship triggers on disband or destruction.
-[*]在轨道上有上述方舟舰时可用的决议：生成人口、破坏殖民地、生成“浮游炮”舰船（需要行星护盾生成器建筑或星环基地）、重置遗物冷却、增加可用区划、禁止跃迁、增加国民理念、随机重排地块、改变星球类型（生成本mod的地块）
-Decisions available when arkship is in orbit: grow pop, destroy colony, spawn Floating Cannon ships (requires Planetary Shield Generator building or orbital ring), reset relic cooldown, add districts, disable jump, add civics, randomize tiles, change planet class.
-[*]一个星球类型（可能已经删了），但4.0没了区划后和理想城没多大区别，只有附赠的地块有用了
-A planet class (might have been removed already). Not much different from an Ecumenopolis after 4.0 removed districts, only the special deposit matters. Obtainable via decision.
+[*]在轨道上有上述方舟舰时可用的决议：生成人口、破坏殖民地、生成“浮游炮”舰船（需要行星护盾生成器建筑或星环基地）、重置遗物冷却、增加可用区划、禁止跃迁、增加国民理念、随机重排地块、添加“超级气球”地块
+Decisions available when arkship is in orbit: grow pop, destroy colony, spawn Floating Cannon ships (requires Planetary Shield Generator building or orbital ring), reset relic cooldown, add districts, disable jump, add civics, randomize tiles, add the "Super Balloon" deposit.
 [*]那个地块，根据当前星球规划的不同让平民产出不同资源，在首都提供全帝国加成岗位，前文提到的建筑必须建在有该地块的行星上
 A deposit that makes civilian pops produce resources (alloys, unity, etc.) based on planet designation. Provides empire-wide bonus jobs at the capital. The buildings above require this deposit.
 [*]几种法令

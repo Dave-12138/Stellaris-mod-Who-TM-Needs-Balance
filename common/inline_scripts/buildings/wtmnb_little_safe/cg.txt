@@ -38,7 +38,6 @@ triggered_country_modifier = {
 		}
 	}
 	country_base_lust_data_produces_add = @little_safe_prod
-	country_base_lust_princess_produces_add = @little_safe_prod
 	country_base_lust_metal_produces_add = @little_safe_prod
 	mult = $MULT$
 }
