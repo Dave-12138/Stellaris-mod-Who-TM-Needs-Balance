@@ -72,7 +72,7 @@
 
 ## 调试
 
-- script_documentation logs（`effects.log`、`triggers.log`）在 `opencode.json` 中已配置引用
+- script_documentation logs（`effects.log`、`triggers.log`）在仓库外的 `../../logs/script_documentation`
 - 纯脚本模组，无构建/测试/lint 系统
 
 ## 代码审核优先级
