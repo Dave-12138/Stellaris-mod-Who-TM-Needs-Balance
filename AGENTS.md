@@ -20,10 +20,10 @@
 `localisation/simp_chinese/*.yml` **必须**是 UTF-8 with BOM（首 3 字节 `EF BB BF`），否则游戏读不到中文；`localisation/english/*.yml` 不要 BOM。
 
 - 检查：`head -c3 <file> | od -An -tx1 | tr -d ' \n'` → `efbbbf`
-- 补 BOM（幂等，可反复执行）：`[ "$(head -c3 F | od -An -tx1 | tr -d ' \n')" = efbbbf ] || sed -i '1s/^/\xEF\xBB\xBF/' F`
+- 补 BOM：`node tools/fix_localisation_bom.mjs`（幂等；`--check` 只检查不改，缺 BOM 返回 1）
 - 文件工具会吞掉 BOM（已实测）：`read` 返回的首行不含 BOM，`edit` 哪怕只改别的行也会把 BOM 写没，`write` 仅在 content 以 `\uFEFF` 开头时才写出 BOM；因此用这些工具改过中文 yml 后必须按上面补回
 - `.gitattributes` 兜不住：`working-tree-encoding` 只认 iconv 支持的编码名，写 `UTF-8-BOM` 会让 `git add` 直接 `fatal: failed to encode`（已实测），故只能靠编辑侧保证
-- 发布闸门：`upload.bat` 开头会先调 `tools/check_localisation_bom.ps1`，任一文件缺 BOM 就中止上传；该脚本**必须保持纯 ASCII**，因为 PowerShell 5.1 会把无 BOM 的 `.ps1` 按系统 ANSI 码页解析
+- 发布闸门（自动修复）：`upload.bat` 开头先跑 `node tools/fix_localisation_bom.mjs` 自动补 BOM，只有脚本本身失败（如宿主 PATH 里没有 node）才中止上传；脚本输出保持 ASCII，不依赖宿主控制台代码页
 
 ## Namespaces
 

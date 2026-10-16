@@ -1,8 +1,8 @@
-@REM 上传前校验：中文本地化文件必须为 UTF-8 with BOM
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0tools\check_localisation_bom.ps1"
+@REM 上传前修复：给中文本地化文件补 UTF-8 BOM（node 缺失等异常会中止上传）
+node "%~dp0tools\fix_localisation_bom.mjs"
 if errorlevel 1 (
 	echo.
-	echo [ABORT] localisation BOM check failed - upload cancelled.
+	echo [ABORT] localisation BOM fix failed - upload cancelled.
 	pause
 	exit /b 1
 )
