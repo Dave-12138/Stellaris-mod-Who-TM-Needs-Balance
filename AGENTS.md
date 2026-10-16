@@ -85,5 +85,5 @@
 - remote: `Dave-12138` → `https://github.com/Dave-12138/Stellaris-mod-Who-TM-Needs-Balance.git`
 - commit message：中文或 `feat:`/`fix:`/`refactor:` 前缀
 - `descriptor.mod` 的 `version` 格式为 `年.月.当月第几个版本`（如 `26.10.1` = 2026 年 10 月第 1 版）；只改 descriptor 的提交不 bump 版本号
-- `.gitignore` 忽略 `.vscode/`、`*.vdf`、`*.bat`（`wtmnb.vdf` 已被跟踪，仍会入库）
+- `.gitignore` 实际只忽略 `.vscode/`、`.ignore`、`.cwtools-ai/`、`.dsh/*/`（`.dsh/` 顶层的文件仍可入库）；`upload.bat`、`wtmnb.vdf` 都是已跟踪文件（`*.vdf`/`*.bat` 并没有被忽略）
 - `wtmnb.vdf` 的 `description` 是一个跨多行的引号字符串，正文里**不能出现半角 `"`**（会提前截断 KeyValues，steamcmd 报 `RecursiveLoadFromBuffer` / `key name too long`）；需要引号时用全角 “”
